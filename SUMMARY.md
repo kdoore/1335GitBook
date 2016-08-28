@@ -1,6 +1,7 @@
 # Summary
 
-* [Introduction](README.md)* [Java Syntax](java_syntax.md)
+* [Introduction](README.md)
+* [Java Syntax](java_syntax.md)
 * [Typed-Variables](typed-variables.md)
 * [Functions](functions.md)
 * [Reference Data Types](reference_data_types.md)
