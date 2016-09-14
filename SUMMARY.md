@@ -2,14 +2,14 @@
 
 * [Introduction](README.md)
 * [Java Syntax](java_syntax.md)
-* [Typed-Variables](typed-variables.md)
+    * [Typed-Variables](typed-variables.md)
 * [Functions](functions.md)
 * [Reference Data Types](reference_data_types.md)
 * [Switch-Case Statement](switch-case_statement.md)
 * [Recursion](recursion.md)
 * [beginShape - Vertex Shapes](beginshape_-_vertex_shapes.md)
 * [HSB Color Mode](hsb_color_mode.md)
-* [Computational / Parametric Design](computational__parametric_design.md)
+* [Computational \/ Parametric Design](computational__parametric_design.md)
 * [Drawing Application](drawing_application.md)
 * [Creative Brushes](creative_brushes.md)
 * [Button States](button_states.md)
@@ -38,5 +38,4 @@
 * [Glossary](GLOSSARY.md)
 * [Resources](resources.md)
 * [Generative Design](generative_design.md)
-
 
