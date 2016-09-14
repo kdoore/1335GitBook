@@ -30,7 +30,7 @@ We are using the colorMode(HSB) so that we can simplify the code for the hover b
 
 [Link to example program](http://jsbin.com/yizuce/edit?js,output)
 
-{%ace edit=false, lang='java'%}
+```java
 // This is a simple button program where the button controls the //color of the ellipse.  
 // The button color is green when the button is on, and red when it's not on.
 // The button also displays 'hover' behavior.
@@ -102,7 +102,7 @@ void mouseClicked (){
       } 
     }
 
-{%endace%}
+```
 
 
 
