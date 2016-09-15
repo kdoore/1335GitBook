@@ -12,6 +12,7 @@
 * [Computational \/ Parametric Design](computational__parametric_design.md)
 * [Drawing Application](drawing_application.md)
 * [Creative Brushes](creative_brushes.md)
+* [Introduction to Objects](introduction-to-objects.md)
 * [Button States](button_states.md)
 * [Button Types](button_types.md)
 * [Modeling Buttons: States and Events](modelingstates_and_events_md.md)
@@ -37,5 +38,5 @@
 * [Game Sounds](game_sounds.md)
 * [Glossary](GLOSSARY.md)
 * [Resources](resources.md)
-* [Generative Design](generative_design.md)
+* [Introduction to Objects](introduction-to-objects.md)
 
