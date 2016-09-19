@@ -1,7 +1,14 @@
-# Simple Button Behavior
+t# Simple Button Behavior
 
 Below is a very simple program that creates an interactive button.
 
+When the user clicks on the button, the button's state toggles between on and not on (!on).
+
+This example uses a function: DrawButton() to define this behavior.
+
+How difficult would it be to create 10 different buttons?
+
+How could we insure that only 1 button is on at a time? In this case, we are requiring that the buttons have a relationship between each other, how can we enforce that relationship?
 
 ```java
 // Declare Global Variables
