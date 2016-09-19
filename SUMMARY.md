@@ -20,6 +20,7 @@
 * [Object References](object_references.md)
 * [Menu Buttons](menu_buttons.md)
 * [Arrays of Objects](arrays_of_objects.md)
+* [Simple Button Behavior](simple_button_behavior.md)
 * [MenuArray-Code](menuarray-code.md)
 * [Object Inheritance](object_inheritance.md)
 * [PImageButton](pimagebutton.md)
@@ -38,5 +39,4 @@
 * [Game Sounds](game_sounds.md)
 * [Glossary](GLOSSARY.md)
 * [Resources](resources.md)
-* [Simple Button Behavior](simple_button_behavior.md)
 
