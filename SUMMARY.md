@@ -2,10 +2,10 @@
 
 * [Introduction](README.md)
 * [Java Syntax](java_syntax.md)
-    * [Typed-Variables](typed-variables.md)
-    * [Functions](functions.md)
-    * [Reference Data Types](reference_data_types.md)
-    * [Switch-Case Statement](switch-case_statement.md)
+   * [Typed-Variables](typed-variables.md)
+   * [Functions](functions.md)
+   * [Reference Data Types](reference_data_types.md)
+   * [Switch-Case Statement](switch-case_statement.md)
 * [Recursion](recursion.md)
 * [beginShape - Vertex Shapes](beginshape_-_vertex_shapes.md)
 * [HSB Color Mode](hsb_color_mode.md)
@@ -38,5 +38,5 @@
 * [Game Sounds](game_sounds.md)
 * [Glossary](GLOSSARY.md)
 * [Resources](resources.md)
-* [Introduction to Objects](introduction-to-objects.md)
+* Simple Button Behavior
 
