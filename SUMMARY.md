@@ -38,5 +38,5 @@
 * [Game Sounds](game_sounds.md)
 * [Glossary](GLOSSARY.md)
 * [Resources](resources.md)
-* Simple Button Behavior
+* [Simple Button Behavior](simple_button_behavior.md)
 
