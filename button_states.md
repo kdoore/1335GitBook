@@ -21,7 +21,7 @@ In this project, we'll look at button behaviors like hover, pressed, and clicked
  
 Here, we will use global variables to maintain these button states, yet intuitively, it would make sense that the button display state information should only be used within the code to display the button.
 
-In the code below, we create a very simple program with a rectangle button and an ellipse, who's display color is controlled by interacting with the button. 
+In the code below, we create a very simple program with a rectangle button and an ellipse who's display color is controlled by interacting with the button. 
 
 We want the button to display some behavior in response to the user's mouse when the mouse hovers over the button's rectangular area to give the user indication that the button is interactive. We will have 2 types of dynamic behavior in this project, the first set of behaviors relate to how the button's displayed rectangle changes color with mouse interaction. Second, we also need to have the button-state control the display state of the ellipse, using the global state variable `on` :
 
@@ -37,47 +37,43 @@ We are using the colorMode(HSB) so that we can simplify the code for the hover b
 // The button also displays 'hover' behavior.
 
 // Declare Global Variables
-//create variables for hsb color values
-int hueValue,red, green, brightValue,light, dark;
 
 boolean on;  //buttonState
-int x, y, bwidth, bheight;
+int x, y, bWidth, bHeight;
 
 void setup () {  //initialize all values
     size (400, 400);
     colorMode(HSB);   //use HSB colorMode
     background (255, 0, 255);
-    red=255; green=100;
-    light=255; dark=100;
-    brightValue=light;   //initialize to bright
-    hueValue=red;       // initialize to red
-    fill (hueValue, 255,brightValue);  // start with bright red meaning it's off
+    
     on=false;       //initialize to off
     //button physical dimensions
     x=50;y=50;
-    bwidth=50; bheight=50;
+    bWidth=50; bHeight=50;
     stroke(150); 
 }
 
 void draw () {
-   drawButton (x, y, bwidth, bheight); 
+   drawButton (x, y, 50, 50); 
    drawEllipse(250, 250, 100, 100);
 }
 
 //Draw 
 void drawButton (int _x, int _y, int _width, int _height) {
+  int hueValue, brightValue;
+ 
   if(on){  //checking global button state
-        hueValue=green; // on color
+        hueValue=100; // on color, green
         }   
         else{
-            hueValue=red; // off color
+        hueValue=255; // off color, red
          }
    // check to see if the mouse is over the button
   if ((mouseX > _x && mouseX < (_x + _width) && (mouseY > _y && mouseY < (_y+_height)))){
-        brightValue=dark;  //dark hover color
+        brightValue=100;  //dark hover color
     }
     else{
-        brightValue=light; //default bright color
+        brightValue=255; //default bright color
     }
   fill(hueValue, 255, brightValue);  //set fill with hueValue, brightValue
   //draw button shape
@@ -97,7 +93,7 @@ void drawEllipse (int _x, int _y, int _width, int _height) {
  //Event Handler Code
 void mouseClicked (){  
    //check global dimensions of button 
-   if (mouseX > x && mouseX < (x + bwidth) && (mouseY > y && mouseY < (y+bheight))){
+   if (mouseX > x && mouseX < (x + bWidth) && (mouseY > y && mouseY < (y+bHeight))){
       on=!on; //change the button state
       println ("button state " + on);  
       } 
