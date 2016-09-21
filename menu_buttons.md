@@ -13,9 +13,8 @@ In the code below, we have created the Menu Class, we've added 3 button objects,
 class Menu{
   
   Button btn1, btn2, btn3;
-  float xPos, yPos, btnSize;
   
-   Menu( Button _btn1, Button _btn2, Button _btn3){
+  Menu( Button _btn1, Button _btn2, Button _btn3){
      btn1 = _btn1;
      btn2 = _btn2;
      btn3 = _btn3;
