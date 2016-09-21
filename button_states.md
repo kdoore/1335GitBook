@@ -34,7 +34,6 @@ We are using the colorMode(HSB) so that we can simplify the code for the hover b
 ```java
 // This is a simple button program where the button controls the //color of the ellipse.  
 // The button color is green when the button is on, and red when it's not on.
-// The button also displays 'hover' behavior.
 
 // Declare Global Variables
 
@@ -50,7 +49,6 @@ void setup () {  //initialize all values
     //button physical dimensions
     x=50;y=50;
     bWidth=50; bHeight=50;
-    stroke(150); 
 }
 
 void draw () {
@@ -68,14 +66,7 @@ void drawButton (int _x, int _y, int _width, int _height) {
         else{
         hueValue=255; // off color, red
          }
-   // check to see if the mouse is over the button
-  if ((mouseX > _x && mouseX < (_x + _width) && (mouseY > _y && mouseY < (_y+_height)))){
-        brightValue=100;  //dark hover color
-    }
-    else{
-        brightValue=255; //default bright color
-    }
-  fill(hueValue, 255, brightValue);  //set fill with hueValue, brightValue
+ fill(hueValue,255,255);
   //draw button shape
   rect(_x, _y, _width, _height);
   }
