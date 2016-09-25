@@ -39,5 +39,5 @@
 * [Game Sounds](game_sounds.md)
 * [Glossary](GLOSSARY.md)
 * [Resources](resources.md)
-* Projects Fall 16
+* [Projects Fall 16](projects_fall_16.md)
 
