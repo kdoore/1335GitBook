@@ -1,4 +1,4 @@
-t# Simple Button Behavior
+# Simple Button Behavior
 
 Below is a very simple program that creates an interactive button.
 
