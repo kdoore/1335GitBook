@@ -29,7 +29,7 @@
 * [Slider Controller](slider_controller.md)
 * [PShapePattern](pshapepattern.md)
 * [Rain-Drop Game](rain-drop_game.md)
-* [Inheritance Concepts](inheritance_concepts.md)
+* [Inheritance Concepts](inheritanceconcepts_md.md)
 * [Paddle Drop Game](paddle_drop_game.md)
 * [Paddle Object](paddle_object.md)
 * [Collision Detection](collision_detection.md)
