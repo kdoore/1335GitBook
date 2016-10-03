@@ -96,7 +96,7 @@ Processing provides type conversion functions to allow conversion between `int` 
 ###Modulus Operator
 
 
-The modulus operator `%` calculates the remainder of integer division. Modulus is often used to determine if a number is odd or even where n % 2 equals 0 if n is even.:
+The modulus operator `%` calculates the remainder of integer division. Modulus is often used to determine if a number is odd or even where n % 2 equals 0 if n is even.  Modulus restricts values to within a limited range, example: someVal % 12;  In the case where 12 is the value to the right of the modulus operator, values can range from 0 to 11, always 1 less than the modulus variable.  
 
 ```java
 println( 5 % 2 );   // 1    2 goes into 5 two times with a remainder of 1
