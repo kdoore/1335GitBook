@@ -71,3 +71,21 @@ abstract class Pattern{
 
 ```
 
+In the main tab, now we can use an instance of the child class patterns to control what pattern is created when a menu button is active.
+
+```java
+
+MenuArray myMenuArray;
+Pattern eraser;
+
+void setup() {
+  size(600, 600);
+  background(255);
+  eraser = new EraserPattern();
+   
+   ///code to create buttons and menuArray
+   
+   }
+
+```
+
