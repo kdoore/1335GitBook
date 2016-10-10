@@ -36,7 +36,6 @@ class Slider{
     bright=255;
     label="";
   }
-  
  
   //constructor with a full set of input parameters
   Slider( int _x, int _y, int _w, int _h,float _min, float _max, String _label ){
