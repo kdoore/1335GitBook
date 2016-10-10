@@ -93,13 +93,30 @@ class Slider{
 }
 ```
 
+###RectanglePattern
+```java
+class RectanglePattern extends Pattern{
+  
+  RectanglePattern(){
+    super(); //explicitly call Abstract class contructor
+  }
+  
+ void display(){
+   scale(scale);
+   fill(hue, sat-100, bright-100, alpha-50);  //shadow
+   rect(10,10, w, h); //shadow
+   fill(hue, sat, bright, alpha);
+   rect(0,0, w, h);  //primary pattern
+  }
+  
+}
+```
 ###Main Tab Code: 
 In the code below, we use a slider instance to control the scale of an ellipse [PShapePattern](https://kdoore.gitbooks.io/cs1335/content/pshapepattern.html)
 
 ```
 Slider mySlider;
-HueSlider myHueSlider;
-PShapePattern myPSP1;
+Pattern rectPattern;
 
 void setup(){
   size(800,800);
@@ -108,8 +125,7 @@ void setup(){
   //////Slider( x, y, w, h, min, max, label);
   mySlider = new Slider( 100,height - 125,250,30, 0.0, 2.0, "Scale"); //we are using this for length
  
-  PShape p1 = createShape(ELLIPSE, 0,0,50,50);
-  myPSP1 = new PShapePattern(p1);//not svg
+  rectPattern = new RectanglePattern();
   background(200);
 }
 
@@ -127,19 +143,19 @@ void drawSliders(){
 
 void drawPattern(){
      // base class object reference
-      Pattern curPattern = myPSP1;
-      
+      Pattern curPattern = rectPattern;
+
       /////connect to buttons
        int activeButton=0;
       switch(activeButton){
         case 0:
-          curPattern = myPSP1;
+          curPattern = rectPattern;
         break;
         default:  
       }  //end of switch
   
      if(mousePressed ){
-       curPattern.scale = mySlider.sliderVal;
+       curPattern.scale = mySlider.sliderVal; //set pattern scale based on slider sliderVal
        translate(mouseX, mouseY);
             curPattern.display();
        resetMatrix();
