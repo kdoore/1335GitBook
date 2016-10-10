@@ -12,7 +12,9 @@ A one dimensional slider is used to determine a value within a given range of va
 When we press down on the slider, we expect the indicator to move to our mouse position if we are currently positioned over the bar. This is similar to button behavior, the button and slider only change values when they are directly under the mouse and there is some mouse movement. 
 
 ###Map: 
-Our slider will use the processing map() function because it's core functionality is to provide users with the ability to select a value within a range.  The map function allows us to provide a visual range and an interactive indicator for the user to modify. In code, we create the mapping from the slider tool geometry: w, h, position, to determine the intended variation in the controlled value, such as hue or length.  
+Our slider will use the processing map() function because it's core functionality is to provide users with the ability to select a value within a range.  The map function allows us to provide a visual range and an interactive indicator for the user to modify. In code, we create the mapping from the slider tool geometry: w, h, position, to determine the intended variation in the controlled value, such as hue or length. 
+
+![](CS1335 - 9.png)
 
 ###Simple Linear Slider
 The code below creates a slider that controls the length of a rectangle.  It uses the map function. 
@@ -65,7 +67,7 @@ class Slider{
     fill(150);
     rect( x, y, w, h);
     fill(0);
-    rect(sliderX, y-4, 5, h+8); 
+    rect(sliderX-2, y-3, 4, h+6);  
   }
   
   void backgroundlayer(){
