@@ -37,19 +37,8 @@ class Slider{
     label="";
   }
   
-  Slider( int _x, int _y, int _w, int _h,float _min, float _max ){
-    x=_x;
-    y=_y;
-    w=_w;
-    h=_h;
-    min = _min;
-    max = _max;
-    sliderX= x + w/2;
-    sliderVal = map(sliderX, x, x+w, min, max);
-    label="";
-  }
-  
-  //constructor that also takes a label
+ 
+  //constructor with a full set of input parameters
   Slider( int _x, int _y, int _w, int _h,float _min, float _max, String _label ){
     x=_x;
     y=_y;
