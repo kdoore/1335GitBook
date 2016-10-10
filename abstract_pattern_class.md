@@ -71,7 +71,7 @@ abstract class Pattern{
 
 ```
 
-In the main tab, now we can use an instance of the child class patterns to control what pattern is created when a menu button is active.  We can use a baseClass 
+In the main tab, now we can create an instance of the child class patterns to control what pattern is created when a menu button is active.  We can use a baseClass, Pattern, object reference variable to refer to our child class object instances.  We initialize and create our child class instances by calling the default constructors: EraserPattern(), and RectanglesPattern()
 
 ```java
 
