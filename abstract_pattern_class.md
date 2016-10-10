@@ -71,21 +71,51 @@ abstract class Pattern{
 
 ```
 
-In the main tab, now we can use an instance of the child class patterns to control what pattern is created when a menu button is active.
+In the main tab, now we can use an instance of the child class patterns to control what pattern is created when a menu button is active.  We can use a baseClass 
 
 ```java
 
 MenuArray myMenuArray;
-Pattern eraser;
+Pattern eraser, rectangles;
 
 void setup() {
   size(600, 600);
   background(255);
   eraser = new EraserPattern();
-   
+  rectangles = new RectanglesPattern();
+  
    ///code to create buttons and menuArray
    
+   } //end setup
+   
+   void draw(){
+      drawPattern();  //put pattern drawing logic in a function
+      drawMenu();  //put menu-drawing logic in a funtion
    }
 
+  void drawPattern(){
+      switch( myMenuArray.activeButton){
+        case -1:
+          println("No button selected");
+        break;
+        
+        case 0:
+          println("Btn index 0");
+          eraser.display();
+        break;
+        
+        case 1:
+          println("Btn index 1");
+          rectangles.display();
+        break;
+        
+        default;
+          println("no button matched");
+        break;
+      
+      } // end switch
+  
+  
+  }// end drawPattern
 ```
 
