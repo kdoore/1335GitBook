@@ -33,11 +33,11 @@ Below are snippets of code for the Star class, where it inherits from the Drop c
 
 For our current version of the RainDrop game, the Drop class does not inherit from any other class::
 
-	class Star extends Drop{  
+	class Star extends Pattern{  
 		PShape s;
 		
-		Star(float _x){  // constructor lets us set the x-position
-			super(_x);  // call the Drop constructor as the first line of code
+		Star(){  // constructor lets us set the x-position
+			super();  // call the Drop constructor as the first line of code
 		
 		// First create the shape
 			s = createShape();
@@ -58,13 +58,17 @@ For our current version of the RainDrop game, the Drop class does not inherit fr
 			s.vertex(-47, -15);
 			s.vertex(-14, -20);
 			s.endShape(CLOSE);
-			}
-		}
+			}// end constructor
+            
+        void display(){
+             shape(s, 0,0);  //display at origin
+        }
+		}  //end Star Class
 	
 The code above is taken directly from the Processing `PShape` Tutorial, except that we've made the
 Star class a child class of the Drop class. 
 
-Because the Star class inherits from the Drop class, we don't need to explicitly
+Because the Star class inherits from the abstract Pattern class, we don't need to explicitly
 declare most of the instance variables.  However, notice that in the first line of 
 code in the constructor that we're calling ``super()``, this is the Drop class default constructor. 
 
