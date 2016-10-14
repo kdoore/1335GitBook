@@ -51,3 +51,33 @@ Example Image For ImageButton
 
 ![](pattern1Btn.png)
 
+
+In the code below, we pass in the PImage object, p.  This is more efficient than passing in the image file string, filename.
+
+
+```java
+
+class PImageButton extends Button{
+  PImage img;
+
+  //constructor
+  PImageButton(PImage p){
+       super();
+       img=p;
+  }
+
+ // constructor
+  PImageButton(float _x, float _y, float _w, float _h, PImage p){
+       super(_x, _y, _w, _h);
+       this.img= p;
+  }
+
+  //over-ride display() from base-class
+  void display(){
+        super.display();
+        image(img, x+5,y+5,w-10,h-10);
+  }  
+}
+
+
+```
