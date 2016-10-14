@@ -51,7 +51,7 @@ Example Image For ImageButton
 
 ![](pattern1Btn.png)
 
-
+###Computational Efficiency - Improved PImageButton Class
 In the code below, we pass in the PImage object, p.  This is more efficient than passing in the image file string, filename.
 
 
