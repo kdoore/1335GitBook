@@ -88,7 +88,8 @@ void draw(){
 ```
 
 ###Slider, Base-Class
-The Simple Slider code above has some serious limitations: we can only create a single slider, where it's position and size are fixed.  How can we define a Slider base class that allows us to create a slider of any size, at any position, that allows selection of values within any range?  The map( ) function will allow us to define a more generalized Slider base class.  
+The Simple Slider code above has some serious limitations: we can only create a single slider, where it's position and size are fixed.  How can we define a Slider base class that allows us to create a slider of any size, at any position, that allows selection of values within any range?  The map( ) function will allow us to define a more generalized Slider base class. 
+
 
 ```
 class Slider{
