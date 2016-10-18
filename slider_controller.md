@@ -43,9 +43,9 @@ class SimpleSlider{
   void display(){
     fill(255);
     stroke(100);
-    rect(x,y,w,h);
+    rect(x,y,w,h);  //background rectangle
     strokeWeight(2);
-    line(sliderX,y, sliderX, y+h);
+    line(sliderX,y, sliderX, y+h); //indicator line
     strokeWeight(1);
   }
   
@@ -87,8 +87,8 @@ void draw(){
 }
 ```
 
-
 ###Slider, Base-Class
+The code above has some serious limitations, we can only create a single slider, it's 
 ```
 class Slider{
   int x, y, w, h;
