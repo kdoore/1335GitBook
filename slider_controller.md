@@ -20,6 +20,13 @@ Our slider will use the processing map() function because it's core functionalit
 The code below creates a slider that controls the length of a rectangle.  It uses the map function. 
 When determining the slider rectangle's range of values, this is determined by the pixel width of the rectangle: w.  In order to determine the values we use to determine the slider's current position and current mapping output value, we need to also consider the x-offset of the slider.  In other words, if the slider's left-side is positioned along the left side of the canvas, then x offset is 0.  This would mean that if the indicator position: sliderX had a value of 20, and if the width of the slider was 40, we'd know that the slider indicator was at the middle of the range.   However, if sliderX had a value of 20, but the x coordinate of the slider rectangle was also 20, we'd know that the slider indicator would be at it's minimum value in the range. Since we want flexibility to position the slider anywhere on the canvas, we need to consider the x offset of the slider when determining the slider's value. So the possible values for the slider Indicator will fall in the range of: ( min: x, max: x+w ), and we'll use these ranges in the map function as the slider representation's min, max value.
 
+### Simple Slider:
+For our first attempt to create a slider, we'll create the most simple version possible, with the goal of understanding the main concepts, then we'll improve the class by making a more general slider in the second iteration. 
+
+
+
+
+
 ###Slider, Base-Class
 ```
 class Slider{
@@ -30,12 +37,6 @@ class Slider{
   float hue, sat, bright;
   String label;
   
-  //initialize default values for sat, bright, and label
-  Slider(){
-    sat=255;
-    bright=255;
-    label="";
-  }
  
   //constructor with a full set of input parameters
   Slider( int _x, int _y, int _w, int _h,float _min, float _max, String _label ){
