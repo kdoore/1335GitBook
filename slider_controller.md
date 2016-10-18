@@ -23,8 +23,69 @@ When determining the slider rectangle's range of values, this is determined by t
 ### Simple Slider:
 For our first attempt to create a slider, we'll create the most simple version possible, with the goal of understanding the main concepts, then we'll improve the class by making a more general slider in the second iteration. 
 
+###Simple slider:  no input parameters, fixed position (x=0, y=400) and fixed size ( w=255, h=50 )
+```java
+class SimpleSlider{
+  int x, y, w, h;
+  float sliderX;
+  float sliderVal;
+  
+  //constructor  
+  SimpleSlider(){
+    x=0;
+    y=400;
+    w=255;
+    h=50;
+    sliderX =  w/2;
+    sliderVal = sliderX;   
+  }
+  
+  void display(){
+    fill(255);
+    stroke(100);
+    rect(x,y,w,h);
+    strokeWeight(2);
+    line(sliderX,y, sliderX, y+h);
+    strokeWeight(1);
+  }
+  
+  void checkPressed(int mX, int mY){
+    if(mX > x && mX < x+w && mY > y && mY < y + h){
+      println("mouse is over slider");
+      sliderX = mouseX;
+      sliderVal = sliderX;
+      println("SliderVal " + sliderVal);
+    }
+  }
+  
+}
+```
+Below is an example of the main tab code where we use the sliderVal to color a rectangle.
 
+```java
+/// Main tab:
+SimpleSlider mySimpleSlider;
 
+void setup(){
+  size(600,600);
+  colorMode(HSB);
+  mySimpleSlider = new SimpleSlider( );  //no ability to customize
+}
+
+void draw(){
+  if(mousePressed){  //when mousePressed, see if slider has been changed
+    
+    mySimpleSlider.checkPressed(mouseX, mouseY);
+    //set fill based on sliderVal
+    stroke(0);
+   
+    fill(mySimpleSlider.sliderVal, 255,255);
+    rect(mouseX, mouseY, 100,100);
+  }
+  mySimpleSlider.display();
+ 
+}
+```
 
 
 ###Slider, Base-Class
