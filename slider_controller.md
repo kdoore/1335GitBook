@@ -166,7 +166,7 @@ class RectanglePattern extends Pattern{
 ###Main Tab Code: 
 In the code below, we use a slider instance to control the scale of an ellipse [PShapePattern](https://kdoore.gitbooks.io/cs1335/content/pshapepattern.html)
 
-```
+```java
 Slider mySlider;
 Pattern rectPattern;
 
@@ -219,7 +219,7 @@ Can you make a slider to control Hue?  Can we use the Slider base class to creat
 Below is the HueSlider class.  How would we create a Saturation and Brightness slider? 
 
 ###HueSlider, Child-class
-```
+```java
 class HueSlider extends Slider{
   
   HueSlider( int _x, int _y, int _w, int _h,float _min, float _max   ){
