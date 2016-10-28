@@ -109,7 +109,7 @@ void setup() {
           rectangles.display();
         break;
         
-        default;
+        default:
           println("no button matched");
         break;
       
