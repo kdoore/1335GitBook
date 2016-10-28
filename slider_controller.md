@@ -223,24 +223,20 @@ Below is the HueSlider class.  How would we create a Saturation and Brightness s
 class HueSlider extends Slider{
   
   HueSlider( int _x, int _y, int _w, int _h,float _min, float _max   ){
-    super( _x, _y, _w, _h, _min, _max );   ////calling base class constructor
+    super( _x, _y, _w, _h, _min, _max, "HUE" );   ////calling base class constructor
   }
   
-  //constructor that also takes a label parameter
-  HueSlider( int _x, int _y, int _w, int _h,float _min, float _max, String _label   ){
-    super( _x, _y, _w, _h, _min, _max, _label );   ////calling base class constructor
-  }
-  
+ 
   void display(){
     super.backgroundlayer();
     
-    for(int i=0;i < w; i ++){  //what's going on here?
-      float hue = map( i, 0, w, 0,255);
+    for(int i=0;i < w; i ++){  //what going on here?
+      float hue = map( i, 0, w, 0,255);  //what is wrong here, what should be used instead of 0, 255 for slider min, max range?
       stroke(hue, 255,255);
       line(i+x, y , i + x, y + h);
     }
     
-    float sliderHue=map(sliderX, x,x+w, 0, 255);
+    float sliderHue=map(sliderX, x,x+w, 0, 255);  //what is wrong here?
     fill(sliderHue, 255,255);
     stroke(0);
     rect(sliderX, y-4, 5, h+8); 
