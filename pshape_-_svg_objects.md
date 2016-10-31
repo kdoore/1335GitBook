@@ -105,7 +105,9 @@ the image has a text component where the designer's name is listed.  While we ne
 the designers in our programs, we need to remove that text in order for this .svg file to work in our
 programs. 
 
-![](seaHorse.svg)![](seaHorse2.svg)
+![](seaHorse.svg)
+
+![](seaHorse2.svg)
 
 ###Edit SVG Files
 
@@ -155,7 +157,7 @@ canvas origin to the svg corner point, then we'll draw the rectangle at (0,0).::
 
 ###Bounding Box
 
-In order to determine if we have a collision with the paddle, we need to define a bounding box
+In order to determine if we have a collision between 2 PShape objects, we can to define a bounding box
 for our PShape object that we'll use to determine contact with the Paddle object.  Shiffman's
 game used circular objects, and determining intersection with circular objects is a bit easier than
 it is with rectangular objects.  As noted above, we've translated the origin to the x,y position
