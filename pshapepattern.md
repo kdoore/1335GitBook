@@ -17,7 +17,7 @@ PShape s = createShape(RECT, 0,0,40,40);
 
 When we want to use these PShapes to create a drawing pattern, then we will want to be able to modify the size, shape, and styling of the PShape object.  However, for each different type of PShape object, we need to use slightly different syntax to modify these things.  So, can we create a generalized PShapePattern class that will allow us to use either type of PShape object?  
 
-|  | loadShape(svg) | createShape(vertex) |
+|  | loadShape(svg) | createShape(vertex), processing primitives |
 | -- | -- | -- |
 | size | width, height, scale() | scale() |
 | style | disableStyle(), fill() | setFill() |
