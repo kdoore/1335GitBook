@@ -89,24 +89,23 @@ void setup() {
    } //end setup
    
    void draw(){
+   if(mousePressed){
       drawPattern();  //put pattern drawing logic in a function
-      drawMenu();  //put menu-drawing logic in a funtion
+      }
+    drawMenu();  //put menu-drawing logic in a funtion
    }
 
   void drawPattern(){
+      Pattern curPattern = eraser;  //set eraser as default pattern
       switch( myMenuArray.activeButton){
-        case -1:
-          println("No button selected");
-        break;
-        
         case 0:
           println("Btn index 0");
-          eraser.display();
+          curPattern = eraser;
         break;
         
         case 1:
           println("Btn index 1");
-          rectangles.display();
+          curPattern = rectangles;
         break;
         
         default:
@@ -115,6 +114,7 @@ void setup() {
       
       } // end switch
   
+ curPattern.display();
   
   }// end drawPattern
 ```
