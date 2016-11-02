@@ -182,7 +182,9 @@ void setup(){
 }
 
 void draw(){
+  if(mousePressed){
   drawPattern();
+  }
   drawSliders();
 } // end of draw loop
 
@@ -206,12 +208,11 @@ void drawPattern(){
         default:  
       }  //end of switch
   
-     if(mousePressed ){
-       curPattern.scale = mySlider.sliderVal; //set pattern scale based on slider sliderVal
+      curPattern.scale = mySlider.sliderVal; //set pattern scale based on slider sliderVal
        translate(mouseX, mouseY);
-            curPattern.display();
+       curPattern.display();
        resetMatrix();
-     } // end if mouse pressed
+   
    } // end of drawPattern 
 
 ```
