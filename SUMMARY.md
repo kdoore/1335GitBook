@@ -22,7 +22,6 @@
 * [Menu Buttons](menu_buttons.md)
 * [Arrays of Objects](arrays_of_objects.md)
 * [MenuArray-Code](menuarray-code.md)
-* [Object Inheritance](object_inheritance.md)
 * [PImageButton](pimagebutton.md)
 * [Abstract Pattern Class](abstract_pattern_class.md)
 * [PShape - SVG Objects](pshape_-_svg_objects.md)
@@ -38,6 +37,7 @@
 * [Game Class](game_class.md)
 * [Game Sounds](game_sounds.md)
 * [Glossary](GLOSSARY.md)
+* [Object Inheritance](object_inheritance.md)
 * [Resources](resources.md)
 * [Projects Fall 16](projects_fall_16.md)
 
