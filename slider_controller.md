@@ -154,11 +154,13 @@ class RectanglePattern extends Pattern{
   }
   
  void display(){
+   pushMatrix();
    scale(scale);
    fill(hue, sat-100, bright-100, alpha-50);  //shadow
    rect(10,10, w, h); //shadow
    fill(hue, sat, bright, alpha);
    rect(0,0, w, h);  //primary pattern
+   popMatrix(); // undo scale transform
   }
   
 }
