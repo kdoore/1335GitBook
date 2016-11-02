@@ -4,20 +4,33 @@
 
 If we look at the code for the PImage Button below,in the first line, we see the keyword *extends* which is how we indicate that this class inherits from the Button base class. Then  we see that we are able to call the Button base class constructor using the *super* keyword to call the Button base class constructor ``super()``.  In addition, we can also use  *super* as a way to call the Button base class methods: ``super.display()``.  This allows us to first call the Button display method, which gives use the background display of the default Buttons, then we can display the image() to customize the appearance of the PImageButton.  
 
+```java
+//main tab
+
+PImage p;
+
+void setup(){
+     p= loadImage("MyIMage.png");
+     PImageButton(20,20,100,100, p);
+}
+
 ```
+
+
+```java
 class PImageButton extends Button{
   PImage img;
   
   //constructor
-  PImageButton(String _imgFile){
+  PImageButton(PImage _p){
        super();
-       this.img= loadImage(_imgFile); 
+       img = _p; 
   }
   
  // constructor
-  PImageButton(float _x, float _y, float _w, float _h, String _imgFile){
+  PImageButton(float _x, float _y, float _w, float _h, PImage _img){
        super(_x, _y, _w, _h);
-       this.img= loadImage(_imgFile); 
+       img = _img
   }
   
   //over-ride display() from base-class
