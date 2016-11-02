@@ -30,7 +30,7 @@ class PImageButton extends Button{
  // constructor
   PImageButton(float _x, float _y, float _w, float _h, PImage _img){
        super(_x, _y, _w, _h);
-       img = _img
+       img = _img;
   }
   
   //over-ride display() from base-class
