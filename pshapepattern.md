@@ -35,8 +35,7 @@ class PShapePattern extends Pattern{
   boolean isSvg; //how can we set this value?  we can only set it using a constructor, since it's not part of the Pattern base class.
   
   PShapePattern(PShape _s){
-   s=_s; 
-   isSvg = false;  
+  this(_s, false);
   }
   
    PShapePattern(PShape _s,boolean _isSvg){
@@ -63,4 +62,20 @@ class PShapePattern extends Pattern{
 
 ###DisableStyle()
 When using an SVG - based PShape, we need to use the  PShape method: disableStyle( ) if we want to modify the fill, stroke of a PShape object, however if we use disableStyle() with a vertex based PShape object, then we will have problems modifying the styles, so we need some approach to solve this problem.  Maybe we should create a boolean field that we use to determine whether s.DisbleStyle() should be called within the display() method, where would we set the value of this boolean field? For example:  boolean isSVG;
+
+However, we must be aware that we can only set the value of isSvg using the constructor, since we aren't defining it in the Pattern base class.  Typically we want to use a base class object reference, but that means that we can only call methods and properties that are defined in the Pattern base class.
+
+```java
+Pattern myPattern;
+PShape s = loadShape("Monster.svg");
+myPattern = PShapePattern(s);
+
+///incorrect
+myPattern.isSvg = true;  ////this will cause an error since Pattern doesn't have isSvg as an instance variable.
+
+//instead we must call the correct constructor:
+myPattern = PShapePattern(s, true);  //sets isSvg = true 
+
+
+```
 
