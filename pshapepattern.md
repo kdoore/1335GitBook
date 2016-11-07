@@ -32,11 +32,16 @@ How can we set the value of isSvg when we have a PShapePattern instance in our m
 ```
 class PShapePattern extends Pattern{
   PShape s;
-  boolean isSvg;
+  boolean isSvg; //how can we set this value?  we can only set it using a constructor, since it's not part of the Pattern base class.
   
   PShapePattern(PShape _s){
    s=_s; 
-   isSvg = false;
+   isSvg = false;  
+  }
+  
+   PShapePattern(PShape _s,boolean _isSvg){
+   s=_s; 
+   isSvg = _isSvg;
   }
   
   void display(){
