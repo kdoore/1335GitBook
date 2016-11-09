@@ -8,6 +8,15 @@
 ###Project 3:
 
 
-###Project 4:
+Starter Code for Classes:  Starter Code - gitbook links.
+
+
+Button, MenuArray : https://kdoore.gitbooks.io/cs1335/content/menuarray-code.html
+
+Slider classes and main tab code: https://kdoore.gitbooks.io/cs1335/content/slider_controller.html
+
+ PShapePattern: https://kdoore.gitbooks.io/cs1335/content/pshapepattern.html
+
+Abstract Pattern with instance variables: https://kdoore.gitbooks.io/cs1335/content/abstract_pattern_class.html#abstract-pattern-instance-variables
 
 
