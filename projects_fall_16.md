@@ -20,3 +20,5 @@ Slider classes and main tab code: https://kdoore.gitbooks.io/cs1335/content/slid
 Abstract Pattern with instance variables: https://kdoore.gitbooks.io/cs1335/content/abstract_pattern_class.html#abstract-pattern-instance-variables
 
 
+###Project 4
+
