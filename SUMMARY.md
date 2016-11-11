@@ -28,7 +28,7 @@
 * [PShape - SVG Objects](pshape_-_svg_objects.md)
 * [PShapePattern](pshapepattern.md)
 * [Slider Controller](slider_controller.md)
-* [Intersecting Agents](intersecting_agents.md)
+* [Intersecting Ball Objects](intersecting_agents.md)
 * [Rain-Drop Game](rain-drop_game.md)
 * [Paddle Drop Game](paddle_drop_game.md)
 * [Paddle Object](paddle_object.md)
