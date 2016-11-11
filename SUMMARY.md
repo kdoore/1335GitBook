@@ -27,6 +27,7 @@
 * [Abstract Pattern Class](abstract_pattern_class.md)
 * [PShape - SVG Objects](pshape_-_svg_objects.md)
 * [PShapePattern](pshapepattern.md)
+* Intersecting Agents
 * [Slider Controller](slider_controller.md)
 * [Rain-Drop Game](rain-drop_game.md)
 * [Paddle Drop Game](paddle_drop_game.md)
@@ -39,5 +40,4 @@
 * [Glossary](GLOSSARY.md)
 * [Resources](resources.md)
 * [Projects Fall 16](projects_fall_16.md)
-* Intersecting Agents
 
