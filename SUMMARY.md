@@ -29,6 +29,7 @@
 * [PShapePattern](pshapepattern.md)
 * [Slider Controller](slider_controller.md)
 * [Intersecting Ball Objects](intersecting_agents.md)
+* 
 * [Rain-Drop Game](rain-drop_game.md)
 * [Paddle Drop Game](paddle_drop_game.md)
 * [Paddle Object](paddle_object.md)
@@ -36,6 +37,7 @@
 * [PImage GameObjects](pimage_gameobjects.md)
 * [Level Class](level_class.md)
 * [Game Class](game_class.md)
+* 
 * [Game Sounds](game_sounds.md)
 * [Glossary](GLOSSARY.md)
 * [Resources](resources.md)
