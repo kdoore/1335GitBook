@@ -33,5 +33,5 @@
 * [Glossary](GLOSSARY.md)
 * [Resources](resources.md)
 * [Projects Fall 16](projects_fall_16.md)
-* Agent - Animated Objects
+* [Agent - Animated Objects](agent_-_animated_objects.md)
 
