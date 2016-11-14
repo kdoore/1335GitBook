@@ -209,6 +209,8 @@ void draw(){
 
 //given an PShapeAgent object, create a new object with the newly changed value of r,
 //the only way to change size is to create a new PShape object using the updated value of r
+//then return the new object 
+
 Agent createNewPShapeAgent(Agent curAgent){
        float size = curAgent.r;  //get updated r
        float alpha = curAgent.alpha;  //get current alpha
