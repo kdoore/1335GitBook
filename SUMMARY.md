@@ -31,8 +31,8 @@
 * [Slider Controller](slider_controller.md)
 * [Intersecting Ball Objects](intersecting_agents.md)
 * [Agent - Animated Objects](agent_-_animated_objects.md)
+* [PShapeAgent](pshapeagent.md)
 * [Glossary](GLOSSARY.md)
 * [Resources](resources.md)
 * [Projects Fall 16](projects_fall_16.md)
-* [PShapeAgent](pshapeagent.md)
 
