@@ -6,7 +6,7 @@
    * [Functions](functions.md)
    * [Reference Data Types](reference_data_types.md)
    * [Switch-Case Statement](switch-case_statement.md)
-   * Ternary Operator
+   * [Ternary Operator](ternary_operator.md)
 * [Recursion](recursion.md)
 * [beginShape - Vertex Shapes](beginshape_-_vertex_shapes.md)
 * [HSB Color Mode](hsb_color_mode.md)
