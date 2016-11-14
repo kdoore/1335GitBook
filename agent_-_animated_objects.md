@@ -67,7 +67,7 @@ class Agent extends Pattern{
   void grow(){
     if( r < 150){
          r++;
-         alpha = alpha > 50? alpha -= 2: 50;
+         alpha = alpha > 50? alpha -= 2: 50;  //ternary assignment operator
     }
   }
   
