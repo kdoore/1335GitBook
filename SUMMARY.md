@@ -34,5 +34,5 @@
 * [Glossary](GLOSSARY.md)
 * [Resources](resources.md)
 * [Projects Fall 16](projects_fall_16.md)
-* PShapeAgent
+* [PShapeAgent](pshapeagent.md)
 
