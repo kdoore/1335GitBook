@@ -3,8 +3,10 @@
 We can build on Shiffman's intersecting Ball objects, by creating an Agent Class that inherits from the Abstract Pattern Class.
 
 ###PVector
-We can use the processing PVector class to represent the idea that points in 2D space can be considered as 2D vector objects, with x, y components.  The PVector class provides a series of methods to operate on 2D or 3D vector objects.  
+We can use the processing PVector class to represent the idea that points in 2D space can be considered as 2D vector objects, with x, y components.  The PVector class provides a series of methods to operate on 2D or 3D vector objects.  We can use PVector to represent position and speed.  See the use of PVector below.
 
+
+###Class Agent inherits from Pattern
 ```java
 
 class Agent extends Pattern{
@@ -88,5 +90,81 @@ class Agent extends Pattern{
   
 }
 
+
+```
+
+###Main Tab: 
+
+```java
+
+Agent[] agents; //declare array of Ball objects
+int numAgents;
+PShape p ;
+int size;
+
+void setup(){
+  size(700,700);
+  
+  numAgents = 80;
+  agents = new Agent[numAgents];// initialize array
+  for (int i=0; i<numAgents; i++){
+    float x= random(0,width);
+    float y= random(0,height);
+    float size = random(15,45);
+    agents[i] = new Agent(x,y,size);
+    
+  }
+  colorMode(HSB);
+}
+
+
+void draw(){
+  background(50);
+  
+ ]
+  for (int i=0; i<numAgents; i++){
+    
+     if( keyPressed && keyCode == UP){
+      agents[i].grow();  //change r value
+     
+    }
+    else if(keyPressed && keyCode == DOWN){
+       agents[i].shrink();  //change r value
+       
+    }
+    else if(keyPressed && keyCode == RIGHT){
+      noLoop();
+    }
+    
+    for( int j = 0 ; j < numAgents; j++){
+      if( i != j){
+        if(agents[i].intersect( agents[j])){
+               agents[i].highlight();
+               agents[i].reverseSpeed();
+               agents[j].highlight();
+               agents[j].reverseSpeed();
+               strokeWeight(5);
+               PVector centerI = agents[i].getCenter();
+               PVector centerJ = agents[j].getCenter();
+               stroke(#0C1501, 255);
+               line( centerI.x, centerI.y , centerJ.x , centerJ.y  );
+               strokeWeight(1);
+        }
+      }
+     } ///end of inner for loop - j
+     ///for all Ball objects - move and display the objects
+    
+   
+    agents[i].move();
+    agents[i].display();
+    
+    } ///end of outer for loop - i
+  
+   ///check for keypressed? 
+}
+
+void mouseReleased() {
+  loop();
+}
 
 ```
