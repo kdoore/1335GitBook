@@ -3,7 +3,7 @@
 We can build on Shiffman's intersecting Ball objects, by creating an Agent Class that inherits from the Abstract Pattern Class. The Pattern class gives us hue, sat, bright variables that we've used as design parameters that are controlled by custom sliders.
 
 ###PVector
-We can use the processing PVector class to represent the idea that points in 2D space can be considered as 2D vector objects, with x, y components.  The PVector class provides a series of methods to operate on 2D or 3D vector objects.  We can use PVector to represent position and speed.  See the use of PVector below.
+We can use the processing PVector class to represent the idea that points in 2D space can be considered as 2D vector objects, with x, y components.  The PVector class provides a series of methods to operate on 2D or 3D vector objects.  We can use PVector to represent position ,speed and other variables with 2 or 3 components.  See the use of PVector below for the position and speed values of the Agent object instances.
 
 
 ###Class Agent inherits from Pattern
