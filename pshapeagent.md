@@ -5,7 +5,9 @@ Our goal now is to create a PShapeAgent class that inherits from the Agent class
 
 Now, we want to extend our functionality to include PVector objects to specify position and speed of each Agent object.
 
-PVectors can be used to represent a 2D or 3D value, where each PVector object has component values for x, y, (and z for 3D vectors).  
+PVectors can be used to represent a 2D or 3D value, where each PVector object has component values for x, y, (and z for 3D vectors). 
+
+There are some difficulties that we'll encounter when trying to create a PShapeAgent class that behaves similarly to the Agent class, since PShape ojbects have their x, y position defined relative to the upper-left corner of the object, rather than the center x,y position of our ellipse shaped Agent object.  This impacts both the intersection testing, which now must check for intersection of rectilinear shaped objects.  
 
 
 ###PShapeAgent inherits from class Agent
@@ -54,6 +56,8 @@ class PShapeAgent extends Agent{
 ```
 
 ###Main Tab code - Create PShapeAgents 
+
+With the PShapeAgent class, our goal is to be able to use a wide variety of PShape objects to create interesting patterns.   
 
 ```java
 Agent[] agents; //declare array of Agent objects
