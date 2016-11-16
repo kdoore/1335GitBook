@@ -3,7 +3,7 @@
 Our goal now is to create a PShapeAgent class that inherits from the Agent class. In the last section, we develped code for the Agent class, we specified that Agent inherits from the abstract Pattern class. [Agent extneds Pattern](https://kdoore.gitbooks.io/cs1335/content/agent_-_animated_objects.html)
 
 
-
+Now, we want to extend our functionality to include
 
 ###PShapeAgent inherits from class Agent
 
