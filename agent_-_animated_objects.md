@@ -123,7 +123,6 @@ void setup(){
 void draw(){
   background(50);
   
- ]
   for (int i=0; i<numAgents; i++){
     
      if( keyPressed && keyCode == UP){
