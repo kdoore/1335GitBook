@@ -64,10 +64,10 @@ class PShapeAgent extends Agent{
   void display(){
     translate(position.x, position.y);
     PShape c;
-    if(num == 0){ // no children
-      p.setFill(color(hue + 10*i,200,200,alpha));
+    if(p.getChildCount() == 0){ // no children
+      p.setFill(color(hue ,200,200,alpha));
       p.setStroke(color(50, alpha));
-      shape(c, 0, 0 );
+      shape(p, 0, 0 );
     }
     for(int i=0; i<= num; i++){
       c = p.getChild(i);
