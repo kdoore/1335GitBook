@@ -46,7 +46,7 @@ In the Pattern class above, there were no instance variables declared.  However,
 
 ![](/Screenshot 2016-03-17 15.17.57.png)
 
-### Abstract Pattern Instance Variables
+### Abstract Pattern class with Instance Variables
 
 ```
 abstract class Pattern{
