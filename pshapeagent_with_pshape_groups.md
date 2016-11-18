@@ -60,7 +60,6 @@ class PShapeAgent extends Agent{
    isSVG = false;
   }
   
-  
   void display(){
     translate(position.x, position.y);
     PShape c;
@@ -69,7 +68,7 @@ class PShapeAgent extends Agent{
       p.setStroke(color(50, alpha));
       shape(p, 0, 0 );
     }
-    for(int i=0; i<= num; i++){
+    for(int i=0; i<= num; i++){  //
       c = p.getChild(i);
       c.setFill(color(hue + 10*i,200,200,alpha));
       c.setStroke(color(50, alpha));
