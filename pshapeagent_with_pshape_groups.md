@@ -40,3 +40,41 @@ PShape createGroup(PShape g, float size){
 
 
 ```
+
+How can we use random variables to control how many children objects are displayed for each PShape group that is a PShapeAgent?
+We must define an instance variable to keep track of how many children we show per object.
+
+```java
+
+class PShapeAgent extends Agent{
+  PShape p;
+  boolean isSVG;
+  int num;
+
+//constructor - find the
+ PShapeAgent(PVector _position,PVector _speed, float _r, PShape _p){
+   super(_position, _speed, _r);
+   p = _p;
+   num = (int)random(0, p.getChildCount());
+  
+   isSVG = false;
+  }
+  
+  
+  void display(){
+    translate(position.x, position.y);
+    PShape c;
+    if(num == 0){ // no children
+      p.setFill(color(hue + 10*i,200,200,alpha));
+      p.setStroke(color(50, alpha));
+      shape(c, 0, 0 );
+    }
+    for(int i=0; i<= num; i++){
+      c = p.getChild(i);
+      c.setFill(color(hue + 10*i,200,200,alpha));
+      c.setStroke(color(50, alpha));
+      shape(c, 0, 0 );
+    }
+     
+  }
+  ```
