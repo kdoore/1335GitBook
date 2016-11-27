@@ -3,6 +3,9 @@
 
 PShape objects have the capability to have a group of PShape objects which comprise a group, this corresponds to the SVG specification of SVG groups.
 
+See Processing Documentation for adding child objects to PShape Group objects: 
+https://processing.org/reference/PShape_addChild_.html
+
 Below is an example of a function in the main tab that would create a PShape group and return that PShape group object so it can be used outside the function.
 
 ```java
