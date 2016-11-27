@@ -19,7 +19,7 @@ agents = new Agent[numAgents];// initialize array
     float x= random(0,width);
     float y= random(0,height);
     float size = random(50,100);
-     g = createGroup(g, size);  ///call custom function
+     g = createGroup(g, size);  ///call custom function below
      agents[i] = new PShapeAgent(x, y, size,g);
     }
  
@@ -27,7 +27,7 @@ agents = new Agent[numAgents];// initialize array
  ///other code in draw()
   }
   
-///Function on main tab to create a PShape group:
+///Function in main tab to create a PShape group:
 
 PShape createGroup(PShape g, float size){
     PShape p = createShape(RECT, 0,0,size,size);
@@ -50,16 +50,14 @@ We must define an instance variable to keep track of how many children we show p
 
 class PShapeAgent extends Agent{
   PShape p;
-  boolean isSVG;
   int num;
 
-//constructor - find the
+//constructor 
  PShapeAgent(PVector _position,PVector _speed, float _r, PShape _p){
-   super(_position, _speed, _r);
+   super(_position, _speed, _r);  //call the agent base-class constructor 
    p = _p;
-   num = (int)random(0, p.getChildCount());
+   num = (int)random(0, p.getChildCount());  //randomly set number of children each agent  will display
   
-   isSVG = false;
   }
   
   void display(){
@@ -76,6 +74,6 @@ class PShapeAgent extends Agent{
       c.setStroke(color(50, alpha));
       shape(c, 0, 0 );
     }
-     
+     resetMatrix();
   }
   ```
