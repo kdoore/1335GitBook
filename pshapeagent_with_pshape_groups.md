@@ -60,20 +60,24 @@ class PShapeAgent extends Agent{
   
   }
   
-  void display(){
+ void display(){
     translate(position.x, position.y);
-    PShape c;
-    if(p.getChildCount() == 0){ // no children
+    
+     if(p.getChildCount() == 0){ // no children
       p.setFill(color(hue ,200,200,alpha));
       p.setStroke(color(50, alpha));
       shape(p, 0, 0 );
-    }
-    for(int i=0; i<= num; i++){  //
+    } 
+    else{  //has children
+    PShape c;  //
+    for(int i=0; i<= num; i++){
       c = p.getChild(i);
       c.setFill(color(hue + 10*i,200,200,alpha));
       c.setStroke(color(50, alpha));
       shape(c, 0, 0 );
-    }
-     resetMatrix();
-  }
+     }
+    } // end else
+    resetMatrix();
+    
+  } // end display
   ```
