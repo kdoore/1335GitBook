@@ -27,7 +27,8 @@ agents = new Agent[numAgents];// initialize array
  ///other code in draw()
   }
   
-///Function to create a PShape group:
+///Function on main tab to create a PShape group:
+
 PShape createGroup(PShape g, float size){
     PShape p = createShape(RECT, 0,0,size,size);
     PShape p1 = createShape(RECT, 0,0,size/2,size/2);
@@ -38,8 +39,6 @@ PShape createGroup(PShape g, float size){
 
     return g;
 }
-
-
 
 
 ```
