@@ -113,6 +113,7 @@ void draw(){
                agents[j].highlight();
                agents[j].reverseSpeed();
                strokeWeight(5);
+               //get center so we can draw line between intersecting object centers
                PVector centerI = agents[i].getCenter();
                PVector centerJ = agents[j].getCenter();
                stroke(#0C1501, 255);
