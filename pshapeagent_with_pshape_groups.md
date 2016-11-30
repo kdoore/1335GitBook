@@ -44,7 +44,7 @@ PShape createGroup(PShape g, float size){
 ```
 
 How can we use random variables to control how many children objects are displayed for each PShape group that is a PShapeAgent?
-We must define an instance variable to keep track of how many children we show per object.
+We must define an instance variable to keep track of how many children we show per object.  From the previous page: [PShapeAgent](https://kdoore.gitbooks.io/cs1335/content/pshapeagent.html#pshapeagent-inherits-from-class-agent), make sure to include methods to override intersect and getCenter, because these must be different than the base class: Agent.
 
 ```java
 
