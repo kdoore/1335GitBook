@@ -38,3 +38,18 @@ void draw(){
   }// end of draw
   
 ```
+
+Within the draw( ) loop, we need to set both the highlightHue and basicHue for each agent.  Since the HueSlider only gives us 1 value, we can just modify that value slightly for the highlightHue, so that we can see a visual  distinction between agents that are intersecting compared to other agents.
+
+We'll want to put the code for setting these hue values within the outer for-loop where we loop through all agents, to insure we set the value for each agent.
+
+```java
+
+///for-loop to examine each Agent object
+for (int i=0; i<numAgents; i++){
+     
+    // hue gets set by basicHue and highlightHue
+    agents[i].basicHue = hueSlider.sliderVal;
+    agents[i].highlightHue = (hueSlider.sliderVal + (100)) % 255; 
+ 
+```
