@@ -62,7 +62,24 @@ for (int i=0; i<numAgents; i++){
 
 Finally, we'll need to add code to our custom function so that when we create a new PShapeAgent due to a grow() or shrink() event, we first get the current basicHue and highlightHue values of the current agent, then use those to set the values for the newly created agent: 
 
+
 ```java
+
+/// in main tab:
+
+///code to change size of an agent - must create a new PShapeAgent using
+///custom function listed below: createNewPShapeAgent( Agent a)  
+
+ if( keyPressed && keyCode == UP){
+      agents[i].grow();  //change r value
+      if (agents[i].getClass() == PShapeAgent.class){  //is this a PShapeAgent object at runtime?
+         agents[i] = createNewPShapeAgent(agents[i]);  //in order to resize, we need to create a new PShapeAgent object
+      }
+    }
+    
+ ////more code
+
+
 //given an PShapeAgent object, create a new object with the newly changed value of r,
 //the only way to change size is to create a new PShape object using the updated value of r
 Agent createNewPShapeAgent(Agent curAgent){
@@ -81,5 +98,7 @@ Agent createNewPShapeAgent(Agent curAgent){
 }
 
 
-
 ```
+
+###num instance variable - PShapeAgent Class
+Since the num instance variable that we've added to the PShapeAgent class is not part of the Agent class, the only way we can modify that value is either to add num as an instance variable to the 
