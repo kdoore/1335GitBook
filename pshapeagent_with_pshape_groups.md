@@ -78,19 +78,19 @@ PShapeAgent(float _x,float _y, float _r, PShape _p){
    num=0;
    }
    
-  }// end constructor
+}// end constructor
   
- void display(){
+void display(){
     translate(position.x, position.y);
     
-     if(p.getChildCount() == 0){ // no children
+    if(p.getChildCount() == 0){ // no children
       p.setFill(color(hue ,200,200,alpha));
       p.setStroke(color(50, alpha));
       shape(p, 0, 0 );
     } 
     else{  //has children
     PShape c;  //
-    for(int i=0; i<= num; i++){
+    for(int i=0; i< num; i++){
       c = p.getChild(i);
       c.setFill(color(hue + 10*i,200,200,alpha));
       c.setStroke(color(50, alpha));
@@ -98,6 +98,10 @@ PShapeAgent(float _x,float _y, float _r, PShape _p){
      }
     } // end else
     resetMatrix();
+
+    hue= basicHue; //reset hue to basicHue 
     
-  } // end display
+  }
+  
+  // must provide methods: intersect and getCenter to override the Agent class.
   ```
