@@ -50,15 +50,35 @@ We must define an instance variable to keep track of how many children we show p
 
 class PShapeAgent extends Agent{
   PShape p;
-  int num;
+  int num;  //variable to keep track of number of children to display  
 
-//constructor 
- PShapeAgent(PVector _position,PVector _speed, float _r, PShape _p){
-   super(_position, _speed, _r);  //call the agent base-class constructor 
+//constructor using float for position: x, y
+PShapeAgent(float _x,float _y, float _r, PShape _p){
+   super(_x, _y, _r);
    p = _p;
-   num = (int)random(0, p.getChildCount());  //randomly set number of children each agent  will display
-  
-  }
+   
+   if(p.getChildCount() > 0){
+     num = (int)random(1, p.getChildCount()); //randomly set number of children each agent  will display
+   }
+   else{
+     num=0;
+   }
+   
+  }//end constructor
+
+//constructor using PVectors for position, speed
+  PShapeAgent(PVector _position,PVector _speed, float _r, PShape _p){
+   super(_position, _speed, _r);
+   p = _p;
+   
+   if(p.getChildCount() > 0){
+   num = (int)random(1, p.getChildCount()); //randomly set number of children each agent  will display
+   }
+   else{
+   num=0;
+   }
+   
+  }// end constructor
   
  void display(){
     translate(position.x, position.y);
