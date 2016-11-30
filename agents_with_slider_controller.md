@@ -19,4 +19,16 @@ void setup(){
   ////other code
   }
 ```  
+
+
+In the draw loop, we should include code to check if the slider value has changed, if the mouse has been pressed.
+
+
+```java
+void draw(){
+  background(50);
+  if(mousePressed){
+      hueSlider.checkPressed(mouseX, mouseY);
+  }
   
+```
