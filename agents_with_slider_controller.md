@@ -58,7 +58,7 @@ for (int i=0; i<numAgents; i++){
     agents[i].highlightHue = (hueSlider.sliderVal + (100)) % 255; 
  
 ```
-
+If we want to 
 
 Finally, we'll need to add code to our custom function so that when we create a new PShapeAgent due to a grow() or shrink() event, we first get the current basicHue and highlightHue values of the current agent, then use those to set the values for the newly created agent: 
 
