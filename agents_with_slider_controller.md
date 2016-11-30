@@ -58,3 +58,30 @@ for (int i=0; i<numAgents; i++){
     agents[i].highlightHue = (hueSlider.sliderVal + (100)) % 255; 
  
 ```
+
+
+Finally, we'll need to add code to our custom function so that when we create a new PShapeAgent due to a grow() or shrink() event, we first get the current basicHue and highlightHue values of the current agent, then use those to set the values for the newly created agent: 
+
+```java
+//given an PShapeAgent object, create a new object with the newly changed value of r,
+//the only way to change size is to create a new PShape object using the updated value of r
+Agent createNewPShapeAgent(PShapeAgent curAgent){
+       float size = curAgent.r;  //get updated r
+       float hue = curAgent.hue;  //what is current hue
+       float highlightHue = curAgent.highlightHue;
+       float alpha = curAgent.alpha;  //get current alpha
+       PVector position = curAgent.position;  //get current position
+       PVector speed = curAgent.speed; //get current speed
+       int num = curAgent.num;
+       g = createGroup(g, size);
+       PShapeAgent newAgent = new PShapeAgent(position, speed, size, g);
+       newAgent.num = num;
+       newAgent.alpha = alpha;
+       newAgent.hue = hue;
+       newAgent.highlightHue=highlightHue;
+  return newAgent; 
+}
+
+
+
+```
