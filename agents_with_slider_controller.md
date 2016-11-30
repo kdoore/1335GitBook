@@ -41,7 +41,10 @@ void draw(){
 
 Within the draw( ) loop, we need to set both the highlightHue and basicHue for each agent.  Since the HueSlider only gives us 1 value, we can just modify that value slightly for the highlightHue, so that we can see a visual  distinction between agents that are intersecting compared to other agents.
 
-We want to insure that all hue values fall within the range of meaningful values, so we'll use modulus to 'wrap' values that exceed 255, so they 
+We want to insure that all hue values fall within the range of meaningful values, so we'll use modulus to 'wrap' values that exceed 255, so, for example, a hueSlider value of 200 can be used to create a highlightHue value of: 255 + 100 = 355.  Since 355 is greater than 255, it would display as red unless we use modulus to wrap the value back into the valid range:
+
+255 + 100 = 355, this displays as red    
+355 % 255 = 100, this displays as green
 
 We'll want to put the code for setting these hue values within the outer for-loop where we loop through all agents, to insure we set the value for each agent.
 
