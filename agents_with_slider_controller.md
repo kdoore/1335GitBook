@@ -17,6 +17,7 @@ void setup(){
   hueSlider = new Slider(50, height - 60, 150, 30, 0, 255, "HUE");
   
   ////other code
+  
   } //end of setup
 ```  
 
@@ -30,8 +31,8 @@ void draw(){
   if(mousePressed){
       hueSlider.checkPressed(mouseX, mouseY);
   }
-  ///more code
   
+  ///more code
   
   
   }// end of draw
