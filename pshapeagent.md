@@ -2,6 +2,7 @@
 
 Our goal now is to create a PShapeAgent class that inherits from the Agent class. In the last section, we develped code for the Agent class, we specified that Agent inherits from the abstract Pattern class. [Agent extends Pattern](https://kdoore.gitbooks.io/cs1335/content/agent_-_animated_objects.html)
 
+[The Processing PShape Tutorial](https://processing.org/tutorials/pshape/) provides good examples of how to use PShape Groups to create interesting objects.
 
 Now, we want to extend our functionality to include PVector objects to specify position and speed of each Agent object.
 
