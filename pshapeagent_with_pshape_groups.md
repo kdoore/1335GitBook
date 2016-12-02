@@ -13,7 +13,7 @@ Below is an example of a function in the main tab that would create a PShape gro
 
 void setup(){
 // other code
-
+///create our agent objects
 agents = new Agent[numAgents];// initialize array
   for (int i=0; i<numAgents; i++){
     float x= random(0,width);
