@@ -11,7 +11,7 @@ Below is an example of a function in the main tab that would create a PShape gro
 ```java
 //main tab code
 
-void draw(){
+void setup(){
 // other code
 
 agents = new Agent[numAgents];// initialize array
@@ -24,7 +24,7 @@ agents = new Agent[numAgents];// initialize array
     }
  
  
- ///other code in draw()
+ ///other code in setup()
   }
   
 ///Function in main tab to create a PShape group:
