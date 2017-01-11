@@ -40,7 +40,11 @@ float num3 = 5.0 //declare a floating point variable and assign it a literal dec
 
 ### Typed Variables
 
-When using P5js and the Khan-Academy Javascript Tutorials, variables were all of the type `var`. There was no distinction between different types of variables. However, with Processing, all variables must be declared as a specific data-type such as `int`, `float`, `boolean`, `char`, etc. Typed variables allows the computer to allocate enough memory to hold the value.
+When using P5js and the Khan-Academy Javascript Tutorials, variables were all of the type `var`. There was no distinction between different types of variables. However, with The Java Version of Processing, all variables must be declared as a specific data-type such as `int`, `float`, `boolean`, `char`, etc. Typed variables allows the computer to allocate enough memory to hold the value.  
+
+### Type Conversion
+
+When our programs are executing, the system will try to convert variables to the same data-type, and there are important reasons why we need to be aware of how the system does automatic type-conversion.   In Java, the compiler checks our code to insure our code doesn't do any auto-type conversions that might cause a mathematical error in our program.  The compiler follows strict rules to determine the validity of our mixed-type expressions.
 
 ### Integers
 
