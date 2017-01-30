@@ -2,11 +2,11 @@
 
 * [Introduction](README.md)
 * [Java Syntax](java_syntax.md)
-   * [Typed-Variables](typed-variables.md)
-   * [Functions](functions.md)
-   * [Reference Data Types](reference_data_types.md)
-   * [Switch-Case Statement](switch-case_statement.md)
-   * [Ternary Operator](ternary_operator.md)
+  * [Typed-Variables](typed-variables.md)
+  * [Functions](functions.md)
+  * [Reference Data Types](reference_data_types.md)
+  * [Switch-Case Statement](switch-case_statement.md)
+  * [Ternary Operator](ternary_operator.md)
 * [Recursion](recursion.md)
 * [beginShape - Vertex Shapes](beginshape_-_vertex_shapes.md)
 * [HSB Color Mode](hsb_color_mode.md)
@@ -37,4 +37,5 @@
 * [Glossary](GLOSSARY.md)
 * [Resources](resources.md)
 * [Projects Fall 16](projects_fall_16.md)
+* [Reading Assignments](reading-assignments.md)
 
