@@ -14,76 +14,88 @@ We have refactored our code so that all code is now executed using functions tha
 The starter code below provides the function specifications for the functions and provides an outline of the logic necessary to add a menu and a clear button to clear the canvas.  How can you modify the program so that there are even more available patterns, how can you customize the code so the patterns provide good design tools?
 
 
-```
+```java
 
-//global variables 
-int menuX, clearBtnX, clearBtnY, btnSize;
-boolean clearBtnOn;
+///Drawing Application using functions
+//Declare global variables - need several global variables for each button
 
-void setup(){
-  size(800, 600);
-  menuX= width -150;
-  btnSize=100;
-  clearBtnX= menuX + 25;
-  clearBtnY= 25;
-  clearBtnOn=false;
+boolean buttonState = false;  //clear button state variable
+boolean pButtonState = false; //patternButton state variable 
+
+//variables for button size and locations
+int btnX, btnY, btnSize; //clear button position and size
+int pBtnX,pBtnY;  //pattern button position
+
+void setup() {
+  size(600, 600);
   colorMode(HSB);
-  background(255);
+  ///initialize global variables
+  btnX = 20;
+  btnY = 20; 
+  btnSize = 100;
+  pBtnX = 20;
+  pBtnY = btnY * 2 + btnSize;
 }
 
-void draw(){
-  if(mousePressed){
-     drawPattern();
-  } 
-  clearCanvas();
-  drawMenu(menuX, 0, 150, height);
-  drawClearBtn(clearBtnX, clearBtnY, btnSize);
-  
-} ///end draw()
+void draw() {
+  if (mousePressed) {
+    translate(mouseX, mouseY);
+    drawPattern();
+    resetMatrix();
+  }
+  if(buttonState){
+    clearCanvas();
+  }
+  drawMenu();
+  drawButton(btnX, btnY, btnSize);  //draw clear button
+  drawButton(pBtnX, pBtnY, btnSize);  //drawPattern button
+}
+
+//draw either rectangles or ellipses depending on the state of pButtonState
+void drawPattern() {
+   fill( mouseX %255, 255, 255, 100);
+  if(pButtonState == true){
+     rect( 0, 0, 50, 50);
+  }
+  else if(pButtonState == false){
+     ellipse( 0, 0, 50, 50);
+  }
+}
+
+void drawMenu() {
+  fill(0);
+  rect(0,0,150, height);  //black background
+ }
+
+void drawButton( int bX, int bY, int bSize  ){
+  fill(200);
+  rect( bX,bY, bSize,  bSize);  //button shape
+}
 
 void clearCanvas(){
-  if( clearBtnOn==true){
-    fill(122, 0, 255,100);
-    rect(0,0, width, height);
-    clearBtnOn=false;
-  }
-}  //end clearCanvas()
-
-//function to draw menu  //parameter list
-void drawMenu(int x,int y, int w, int h){
-  fill(0);
-  rect(x, y, w, h);
+  println("Clear canvas is executed");
+  fill(255);
+  rect(0,0,width, height);  //draw rectangle over canvas
+  buttonState=false;  ///completed the task so turn it off
 }
 
-void drawClearBtn(int x,int y, int size){
-  fill(100);
-  rect(x, y, size, size);
-}  //end drawClearBtn
-
-void drawPattern(){
-  ///local function variables
-  float hueVal = map( mouseX, 0, width, 100, 200);
-  float satVal = map( mouseY, 0, height, 50,255);
-  float distance= dist( mouseX, mouseY, width/2, height/2);
-  float size= map( distance,0, 500, 120,12);
-  float brightVal=map(distance, 0, 200, 255,200); ///darker towards edges based on distance
-  float someRandVal=random(-5,10);
+void mouseClicked( ){
   
-  fill(hueVal, satVal, brightVal);  //set fill with mapped values
-    
-  translate(mouseX, mouseY);  //move origin to mouse position
-    ellipse(0,0, size+someRandVal, size-someRandVal);
-  resetMatrix();  //reset origin to initial position
-}  //end drawPattern
-
-void mouseClicked(){
-  if( (mouseX >= clearBtnX && mouseX<=(clearBtnX + btnSize) ) && (mouseY >= clearBtnY && mouseY <= (clearBtnY + btnSize) ) ){
-    
-    println("inside button, and pressed and released");
-    clearBtnOn=true;  
-    }
-}  
-
+  //event trigger button logic for clear button
+  if(mouseX > btnX && mouseX < btnX+btnSize && mouseY > btnY && mouseY< btnY + btnSize){
+    println("button has been clicked");
+    buttonState =true;  //always set to true - must set to false somewhere else
+  }
+  
+  
+  //toggle logic for pattern button
+  if(mouseX > pBtnX && mouseX < pBtnX+btnSize && mouseY > pBtnY && mouseY< pBtnY + btnSize){
+    println("button has been clicked");
+    pButtonState = !pButtonState;  //toggle between 2 states
+  }
+  
+  
+}
 
 ```
 
