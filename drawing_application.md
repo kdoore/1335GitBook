@@ -5,8 +5,8 @@ Based on the simple idea of drawing patterns when the mouse is pressed, we will 
 ##Programming Project
 
 Currently, the drawing application below has a default pattern which is drawn when the mouse is pressed and it is over the drawing-canvas area.  The program below has been extended to include a clear button which clears the canvas.   It will be necessary to a new state variable: ``clearBtnOn`` to keep track of the state of the clearButton which controls execution within the clearCanvas function. The ClearBtnOn is set within the mouseClicked( ) processing function.  Within the clearCanvas( ) function, we must reset the clearBtnOn state to false, once we have completed the function's task of drawing a white rectangle over the entire canvas.
+In addition, we've added a button that lets us toggle the pattern that is drawn - in one state, squares are drawn, in the other state, circles are drawn.
 
-[Link to live-code example](http://jsbin.com/vuqoyu/edit?js,output)
 
 ##Starter Code for Drawing Application
 We have refactored our code so that all code is now executed using functions that are called from the draw( ) function, this allows us to look at the draw function and understand the general logic of the program because we've created a separate function for each main task and we've named our functions with names that convey the task being done.  We can easily draw a flow-chart of our program's logic using the function names to describe the flow of logic in our program.
