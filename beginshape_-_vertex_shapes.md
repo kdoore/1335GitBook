@@ -76,22 +76,23 @@ if(framecount % 10 == 0){
 }
 ```
 
-```
+
+```java
+
 float length=150;
 
 void setup(){
-  size( 600,600, P2D);
-  strokeWeight(0);
-  background(255);
+  size( 600,600); //use size(600,600,P2D) if possible
 }
 void draw(){
    if(mousePressed && (frameCount % 10 == 0)){
-     translate(mouseX, mouseY);
-     //we could rotate using framecount and modulus
-    recursivePattern( length,0);  //here level is initialized at 0 because we increment it inside the recursive function
+        translate(mouseX, mouseY);
+        recursivePattern( length,0);  //here level is initialized at 0 because we increment it inside the recursive function
    }
 }
+
 ```
+
 
 ![](Screenshot 2016-01-23 23.43.26.png)
 
