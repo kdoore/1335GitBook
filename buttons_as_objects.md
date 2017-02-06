@@ -36,7 +36,64 @@ Processing provides tabs to allow us to organize our code when using classes, th
 When looking at the code in a Class definition, we can see a similarity with the structure of code that we've been writing in our previous examples. The table below shows these similarities, in the left column, we can see that the code we write in the main tab can be though of as having 3 sections, the top of our programs is where we declare global variables, then the setup() function is executed once, while the draw() function is where the main behavior of our program is typically executed. When we write code for a class definition, we are required to write our instance variables at the top, then we must write the constructor functions, these are similar to setup() in that the constructor for an object is a function that is only executed once, when the object is first created and it's used to initialize all of the instance variables for our object. Finally, the bottom of the tab contains all of the functions / methods that we write for our object's behaviors. Within these methods, we can also have local variables, but they will only exist for the duration of that method's execution. The instance variables exist for the life of the object instance, store all of the information about the state and configuration of our object instances throughout the duration of an object's lifetime.
 
 
+###Button Class Definition
 
+
+```java
+
+
+/* ------------BUTTON CLASS DEFINITION ------------
+----------------------------------------*/
+class Button{
+
+/* ------------BUTTON INSTANCE VARIABLES / PROPERTIES ------------
+----------------------------------------*/
+int x, y, w, h;
+color onColor, offColor;
+boolean btnOn;
+/* ------------ CLASS CONSTRUCTORS ------------
+-----Constructor is to initialize variables
+----------------------------------------*/
+Button(){ //default constructor
+x=0;
+y=0;
+w=50;
+h=50;
+onColor = color(#0AF207); ///green
+offColor = color(#F20742); //red
+btnOn = false;
+}
+Button(int xPos, int yPos, int _w, int _h){ //input parameters are used to initialize instance variable values
+x=xPos;
+y=yPos;
+this.w=_w; //`this` refers to the current object instance
+h=_h;
+onColor = color(#0AF207); ///green
+offColor = color(#F20742); //red;
+btnOn=false;
+}
+/* ------------ CLASS METHODS ------------
+-----Methods are Functions used by Object instances
+-----Methods provide implementation of object behaviors and functions
+----------------------------------------*/
+void Display(){
+if(btnOn){
+fill(onColor);
+}
+else{
+fill(offColor);
+}
+rect(x, y, w, h);
+} //end Display( )
+void Click(int mX, int mY){
+if( (mX >= x && mX<=(x + w) ) && (mY >= y && mY <= (y + h) ) ){
+println("button class, I was clicked! y value is: " + y); //print y variable lets us debug and verify which button was pressed
+btnOn = !btnOn; //whatever the current state, if the button was clicked, set to the opposite state value: true or false
+}
+} //end Click()
+}//end Button Class
+
+```
 
 
 ![](MainVsClass.png)
@@ -86,73 +143,6 @@ void mouseClicked(){
   myClearBtn.click(mouseX, mouseY);
 }
 
-```
-
-###Button Class Definition
-The code below belongs 
-
-```java
-
-
-/* ------------BUTTON CLASS DEFINITION  ------------
-     ----------------------------------------*/
-class Button{
-
-  /* ------------BUTTON INSTANCE VARIABLES / PROPERTIES  ------------
-     ----------------------------------------*/
-     
-  int x, y, w, h;   
-  color onColor, offColor;
-  boolean btnOn;
-  
-  /* ------------ CLASS CONSTRUCTORS  ------------
-     -----Constructor is to initialize variables
-     ----------------------------------------*/
-     
-  Button(){  //default constructor
-    x=0;
-    y=0;
-    w=50;
-    h=50;
-    onColor = color(#0AF207);  ///green
-    offColor = color(#F20742);  //red
-    btnOn = false;
-  }
-  
-  Button(int xPos, int yPos, int _w, int _h){  //input parameters are used to initialize instance variable values
-    x=xPos;
-    y=yPos;
-    this.w=_w;   //`this` refers to the current object instance
-    h=_h;
-    onColor = color(#0AF207);  ///green
-    offColor = color(#F20742);  //red;
-    btnOn=false;
-}
-  
-  /* ------------ CLASS METHODS  ------------
-     -----Methods are Functions used by Object instances
-     -----Methods provide implementation of object behaviors and functions
-     ----------------------------------------*/
-  
-  void Display(){
-    if(btnOn){
-      fill(onColor);
-    }
-    else{
-      fill(offColor);
-    }
-    rect(x, y, w, h);
-  }  //end Display( )
-  
-  void Click(int mX, int mY){
-    if( (mX >= x && mX<=(x + w) ) && (mY >= y && mY <= (y + h) ) ){
-      println("button class, I was clicked! y value is:  " + y);  //print y variable lets us debug and verify which button was pressed
-        btnOn = !btnOn;  //whatever the current state, if the button was clicked, set to the opposite state value: true or false
-    }
-  }  //end Click()
-  
-}//end Button Class
-  
 ```
 
 ###Questions
