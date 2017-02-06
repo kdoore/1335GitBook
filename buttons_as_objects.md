@@ -1,6 +1,6 @@
 #Buttons as Objects
 
-In the previous section, we discussed buttons in terms of features like: structure, function, and behaviors. Then we wrote code to implement these features, and this code is what turned a simple geometric shape into a user-interface element. How is a button different than a rectangle? A button is different than a rectangle only when we write the code to make it different. It is not difficult to imagine our program's buttons as objects because we all have experience using physical buttons in our daily routines, and we have an intuitive understanding of how buttons operate.
+In the previous sections, we discussed buttons in terms of features 
 
 Physical Objects
 ================
@@ -35,14 +35,18 @@ Processing provides tabs to allow us to organize our code when using classes, th
 
 When looking at the code in a Class definition, we can see a similarity with the structure of code that we've been writing in our previous examples. The table below shows these similarities, in the left column, we can see that the code we write in the main tab can be though of as having 3 sections, the top of our programs is where we declare global variables, then the setup() function is executed once, while the draw() function is where the main behavior of our program is typically executed. When we write code for a class definition, we are required to write our instance variables at the top, then we must write the constructor functions, these are similar to setup() in that the constructor for an object is a function that is only executed once, when the object is first created and it's used to initialize all of the instance variables for our object. Finally, the bottom of the tab contains all of the functions / methods that we write for our object's behaviors. Within these methods, we can also have local variables, but they will only exist for the duration of that method's execution. The instance variables exist for the life of the object instance, store all of the information about the state and configuration of our object instances throughout the duration of an object's lifetime.
 
+
+
+
+
 ![](MainVsClass.png)
 
-In [Shiffman's book](http://learningprocessing.org), he provides example code for how to make an Button class as part of his example problems: 9.8.  
+In [Shiffman's book](http://learningprocessing.org),he provides example code for how to make an Button class as part of his example problems: 9.8.  
 
 ###Main Tab - Creating Button Objects
 The code below is from the main tab for a simple program which uses the Button class to make Button objects.  The code shows the comparison between how to declare and initialize primitive variables like int.  When creating objects, it's necessary to call the class constructor function. 
 
-###Clear Button
+###Clear Butto
 The example code below also creates a clear button.  In the draw loop, we check to see if the myClearBtn.on is true, if it is, then we draw a large rectangle that is the size of the canvas.  Then we must remember to set the state to on=false.
 
 ```java
@@ -88,6 +92,8 @@ void mouseClicked(){
 The code below belongs 
 
 ```java
+
+
 /* ------------BUTTON CLASS DEFINITION  ------------
      ----------------------------------------*/
 class Button{
