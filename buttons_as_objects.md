@@ -48,47 +48,51 @@ class Button{
 
 /* ------------BUTTON INSTANCE VARIABLES / PROPERTIES ------------
 ----------------------------------------*/
-int x, y, w, h;
+float x, y, w, h;
 color onColor, offColor;
 boolean btnOn;
+
 /* ------------ CLASS CONSTRUCTORS ------------
 -----Constructor is to initialize variables
 ----------------------------------------*/
 Button(){ //default constructor
-x=0;
-y=0;
-w=50;
-h=50;
-onColor = color(#0AF207); ///green
-offColor = color(#F20742); //red
-btnOn = false;
+  x=0;
+  y=0;
+  w=50;
+  h=50;
+  onColor = color(#0AF207); ///green
+  offColor = color(#F20742); //red
+  btnOn = false;
 }
-Button(int xPos, int yPos, int _w, int _h){ //input parameters are used to initialize instance variable values
-x=xPos;
-y=yPos;
-this.w=_w; //`this` refers to the current object instance
-h=_h;
-onColor = color(#0AF207); ///green
-offColor = color(#F20742); //red;
-btnOn=false;
+
+Button(float _x, float _y, float _w, float _h){ //input parameters are used to initialize instance variable values
+  x=_x;
+  y=_y;
+  this.w=_w; //`this` refers to the current object instance
+  h=_h;
+  onColor = color(#0AF207); ///green
+  offColor = color(#F20742); //red;
+  btnOn=false;
 }
+
 /* ------------ CLASS METHODS ------------
 -----Methods are Functions used by Object instances
 -----Methods provide implementation of object behaviors and functions
 ----------------------------------------*/
 void Display(){
-if(btnOn){
-fill(onColor);
-}
-else{
-fill(offColor);
-}
-rect(x, y, w, h);
+  if(btnOn){
+    fill(onColor);
+  }
+  else{
+    fill(offColor);
+  }
+  rect(x, y, w, h);
 } //end Display( )
+
 void Click(int mX, int mY){
-if( (mX >= x && mX<=(x + w) ) && (mY >= y && mY <= (y + h) ) ){
-println("button class, I was clicked! y value is: " + y); //print y variable lets us debug and verify which button was pressed
-btnOn = !btnOn; //whatever the current state, if the button was clicked, set to the opposite state value: true or false
+  if( (mX >= x && mX<=(x + w) ) && (mY >= y && mY <= (y + h) ) ){
+  println("button class, I was clicked! y value is: " + y); 
+  btnOn = !btnOn; //toggle btnOn state between true or false
 }
 } //end Click()
 }//end Button Class
