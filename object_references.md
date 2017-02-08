@@ -1,10 +1,10 @@
 # Creating Object Instances
 
-###First: Create Class Definition
+###Class Definition
 To create an instance of an object, first we need to have the full definition of the class,  which includes 3 main components:  Instance Variables, Constructors, and Methods.
  
 
-###Second: Create Object Reference-Type Variable
+###Create Objects: Reference-Type Variable
 Once we have the class definition, such as our Button class, then in order to create an instance of a class object, we do several things:
 1.  **Create a Reference-Type variable:** We need to declare that we will make an object of that specific data-type, so we must create a reference variable that we can use to access (or refer) to our object instance.
     - Button myButton;   //declare a reference-type variable, this can point to a Button object (it can hold the memory address of a Button-type object);
