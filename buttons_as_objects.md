@@ -107,7 +107,7 @@ In [Shiffman's book](http://learningprocessing.org),he provides example code for
 ###Main Tab - Creating Button Objects
 The code below is from the main tab for a simple program which uses the Button class to make Button objects.  The code shows the comparison between how to declare and initialize primitive variables like int.  When creating objects, it's necessary to call the class constructor function. 
 
-###Clear Butto
+###Clear Button
 The example code below also creates a clear button.  In the draw loop, we check to see if the myClearBtn.on is true, if it is, then we draw a large rectangle that is the size of the canvas.  Then we must remember to set the state to on=false.
 
 ```java

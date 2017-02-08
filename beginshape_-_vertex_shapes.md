@@ -1,4 +1,4 @@
-# beginShape - Vertex Shapes
+# Vertex Shapes - Recursive Pattern
 
 The image below shows how we can create a simple polygon using the [Processing beginShape\( \), endShape\( \)](https://processing.org/reference/beginShape_.html) functions.
 
