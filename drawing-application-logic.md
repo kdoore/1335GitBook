@@ -34,9 +34,9 @@ _This assumes you will use the starter code for the project, which is included i
     
 ###Logic In Setup:  
 
-    - Set Canvas Size
-    - Set colorMode - HSB
-    - Initialize objects by calling constructors:
+- Set Canvas Size
+- Set colorMode - HSB
+- Initialize objects by calling constructors:
        - declare Array of Buttons 
        
           ```Button[] btnArray;``` 
@@ -55,23 +55,23 @@ _This assumes you will use the starter code for the project, which is included i
      ```myMenuArray = new MenuArray( btnArray, 3);```
     
 ###Logic In Draw:
-    - if MousePressed
+- if MousePressed
         - drawPattern
-    - drawMenu
+- drawMenu
     
 ###Logic In MouseClicked:
     
-    - myMenuArray.click
-    - clearButton.click
-    - if clearButton is on
+- myMenuArray.click
+- clearButton.click
+- if clearButton is on
        - clearCanvas
        - turn off clearButton
  
 ###Logic in drawPattern:
-     - translate origin to mouse position
-     - set fill color
-     - use Switch-Case structure
-     - switch: check which myMenuArray button is active
+- translate origin to mouse position
+- set fill color
+- use Switch-Case structure
+- switch: check which myMenuArray button is active
          
          ```java
          switch(myMenuArray.activeButton){
@@ -96,14 +96,15 @@ _This assumes you will use the starter code for the project, which is included i
  ###Logic in clearCanvas:
  
     called when clearBtn has been clicked and has on==true
-     - set fill
-     - draw rectangle behind buttons
+    
+ - set fill
+ - draw rectangle behind buttons
  
  ###Logic in drawMenu:
  
-     -  draw background rectangle
-     -  display menuArray object
-     -  display clearButton object 
+-  draw background rectangle
+-  display menuArray object
+-  display clearButton object 
     
      
  
