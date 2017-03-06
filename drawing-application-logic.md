@@ -4,7 +4,8 @@ For Project 2, you will create a simple drawing application where 3 buttons allo
 
 ![](/assets/Screenshot 2017-03-06 12.05.10.png)
 
-Project Logic:
+### Overall Project Logic
+
 
 Create a Group of 3 Buttons that function as a group
 
@@ -15,7 +16,7 @@ Create 3 simple patterns that can be drawn at the mouse position, the active pat
 Use Functions to organize main-tab Logic
 Use Classes to structure project logic.
 
-### Project Logic
+### Detailed Project Logic
 Classes:  Button, MenuArray
     
 Global Objects:
@@ -25,10 +26,24 @@ Global Objects:
     
 In Setup:  
 
-    - Set Size
-    - Set colorMode
+    - Set Canvas Size
+    - Set colorMode - HSB
     - Initialize objects by calling constructors:
- 
+       - declare Array of Buttons 
+       
+          ```Button[] btnArray;``` 
+       - initialize Array of Buttons
+       
+           ```btnArray = new Button[3];```
+       - initialize each Array element by calling Button Constructor
+           
+           ```myMenuArray[0] = new Button( parameters );```
+       - initialize clearButton by calling Button Constructor
+       
+       ```clearButton = new Button( parameters );```
+       
+       - initialize myMenuArray by calling MenuArray Constructor and pass buttonArray as a parameter
+     
     
 Logic In Draw:
     - if MousePressed
