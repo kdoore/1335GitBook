@@ -83,7 +83,8 @@ Use Classes to structure project logic.
             break;
             }
        ```
-          - resetMatrix
+       
+  - resetMatrix
           
           
  ###Logic in clearCanvas:
