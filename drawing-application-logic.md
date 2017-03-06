@@ -88,7 +88,12 @@ Use Classes to structure project logic.
           
  ###Logic in clearCanvas:
  
+    called when clearBtn has been clicked and has on==true
+     - set fill
+     - draw rectangle behind buttons
+ 
  ###Logic in drawMenu:
+ 
      -  draw background rectangle
      -  display menuArray object
      -  display clearButton object 
