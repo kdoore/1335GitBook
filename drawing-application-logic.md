@@ -12,9 +12,10 @@ Create a single Button to clear the canvas
 
 Create 3 simple patterns that can be drawn at the mouse position, the active pattern can be changed by selecting one of 3 buttons
 
-Use Functions to organize Logic
-Use Classes to simplify project logic.
+Use Functions to organize main-tab Logic
+Use Classes to structure project logic.
 
+### Project Logic
 Classes:  Button, MenuArray
     
 Global Objects:
