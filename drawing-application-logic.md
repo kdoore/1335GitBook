@@ -29,12 +29,12 @@ In Setup:
     Initialize objects by calling constructors:
  
     
-In Draw:
-    if(MousePressed)
+Logic In Draw:
+    if MousePressed
         drawPattern( )
     drawMenu( )
     
-In MouseClicked:
+Logic In MouseClicked:
     
     
     
