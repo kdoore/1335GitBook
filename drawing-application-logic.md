@@ -7,14 +7,14 @@ For Project 2, you will create a simple drawing application where 3 buttons allo
 ### Overall Project Logic
 
 
-Create a Group of 3 Buttons that function as a group
+- Create a Group of 3 Buttons that function as a group
 
-Create a single Button to clear the canvas
+- Create a single Button to clear the canvas
 
-Create 3 simple patterns that can be drawn at the mouse position, the active pattern can be changed by selecting one of 3 buttons
+- Create 3 simple patterns that can be drawn at the mouse position, the active pattern can be changed by selecting one of 3 buttons
 
-Use Functions to organize main-tab Logic
-Use Classes to structure project logic.
+- Use Functions to organize main-tab Logic
+- Use Classes to structure project logic.
 
 ## Detailed Project Logic
 
