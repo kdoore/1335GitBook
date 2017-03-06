@@ -62,7 +62,7 @@ Logic In MouseClicked:
  
  Logic in drawPattern:
  
- Logic in clearCanvas
+ Logic in clearCanvas:
  
  Logic in drawMenu:
      -  draw background rectangle
