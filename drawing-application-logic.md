@@ -43,7 +43,7 @@ In Setup:
        ```clearButton = new Button( parameters );```
        
        - initialize myMenuArray by calling MenuArray Constructor and pass buttonArray as a parameter
-     
+     ```myMenuArray = new MenuArray( btnArray, 3);```
     
 Logic In Draw:
     - if MousePressed
