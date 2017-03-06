@@ -63,9 +63,9 @@ _This assumes you will use the starter code for the project, which is included i
     
 - myMenuArray.click
 - clearButton.click
-- if clearButton is on
+- if clearButton is on ```if(clearButton.on)```
        - clearCanvas
-       - turn off clearButton
+       - turn off clearButton ```clearButton.on = false```
  
 ###Logic in drawPattern:
 - translate origin to mouse position
