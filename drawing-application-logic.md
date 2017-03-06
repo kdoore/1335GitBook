@@ -24,19 +24,33 @@ Global Objects:
     
 In Setup:  
 
-    Set Size
-    Set colorMode
-    Initialize objects by calling constructors:
+    - Set Size
+    - Set colorMode
+    - Initialize objects by calling constructors:
  
     
 Logic In Draw:
-    if MousePressed
-        drawPattern( )
-    drawMenu( )
+    - if MousePressed
+        - drawPattern
+    - drawMenu
     
 Logic In MouseClicked:
     
-    
+    - myMenuArray.click
+    - clearButton.click
+    - if clearButton is on
+       - clearCanvas
+       - turn off clearButton
+ 
+ 
+ Logic in drawPattern:
+ 
+ Logic in clearCanvas
+ 
+ Logic in drawMenu:
+     -  draw background rectangle
+     -  display menuArray object
+     -  display clearButton object 
     
     
  Functions:  
