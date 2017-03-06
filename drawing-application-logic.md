@@ -1,6 +1,10 @@
-###Drawing Application Logic
+###Drawing Application Logic - 
 
-For Project 2, you will create a simple drawing application where 3 buttons allow you to choose which pattern to draw. One additional button will clear the drawing canvas.  The image below shows a first iteration for this project
+###Initial Logic
+
+For Project 2, you will create a simple drawing application where 3 buttons allow you to choose which pattern to draw. One additional button will clear the drawing canvas.  
+
+**The code on this page, and the image below shows a first iteration for this project**
 
 ![](/assets/Screenshot 2017-03-06 12.05.10.png)
 
