@@ -16,15 +16,16 @@ Create 3 simple patterns that can be drawn at the mouse position, the active pat
 Use Functions to organize main-tab Logic
 Use Classes to structure project logic.
 
-### Detailed Project Logic
-Classes:  Button, MenuArray
+## Detailed Project Logic
+
+###Classes:  Button, MenuArray
     
-Global Objects:
+###Global Objects:
 
     MenuArray myMenuArray
     Button clearButton
     
-In Setup:  
+###Logic In Setup:  
 
     - Set Canvas Size
     - Set colorMode - HSB
@@ -46,12 +47,12 @@ In Setup:
        
      ```myMenuArray = new MenuArray( btnArray, 3);```
     
-Logic In Draw:
+###Logic In Draw:
     - if MousePressed
         - drawPattern
     - drawMenu
     
-Logic In MouseClicked:
+###Logic In MouseClicked:
     
     - myMenuArray.click
     - clearButton.click
@@ -59,16 +60,40 @@ Logic In MouseClicked:
        - clearCanvas
        - turn off clearButton
  
+###Logic in drawPattern:
+     - translate origin to mouse position
+     - set fill color
+     - use Switch-Case structure
+     - switch: check which myMenuArray button is active
+     cases:
+         
+         ```java
+         switch(myMenuArray.activeButton){
+         case 0:
+             //display pattern 0
+             break;
+          case 1:
+             //display pattern 1
+             break;
+          case 2:
+             //display pattern 2
+             break;
+          default:
+              //println - no match
+            break;
+            }
+       ```
+          - resetMatrix
+          
+          
+ ###Logic in clearCanvas:
  
- Logic in drawPattern:
- 
- Logic in clearCanvas:
- 
- Logic in drawMenu:
+ ###Logic in drawMenu:
      -  draw background rectangle
      -  display menuArray object
      -  display clearButton object 
     
-    
- Functions:  
+     
+ 
+   
  
