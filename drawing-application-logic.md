@@ -65,7 +65,6 @@ Use Classes to structure project logic.
      - set fill color
      - use Switch-Case structure
      - switch: check which myMenuArray button is active
-     cases:
          
          ```java
          switch(myMenuArray.activeButton){
@@ -84,7 +83,7 @@ Use Classes to structure project logic.
             }
        ```
        
-  - resetMatrix
+- resetMatrix
           
           
  ###Logic in clearCanvas:
