@@ -1,6 +1,6 @@
 # MenuArray Project - Starter Code
 
-MenuArray Class
+MenuArray Class - This code should not be modified by students, but students should understand how the logic of this class and how to use it to create a group of buttons where only one button can be active at a time.
 
 ```java
 class MenuArray{
@@ -38,7 +38,10 @@ class MenuArray{
   
 }// end class
 ```
-Button Class
+###Button Class 
+
+This is the code for a very simple Button, this class will be used as a base class for creating more specialized buttons types
+
 
 ```java
 
