@@ -121,7 +121,7 @@ void draw(){
 }
 
 void mouseClicked(){
- myMenuArray.click(mouseX, mouseY);
+      myMenuArray.click(mouseX, mouseY);
 }
 
 void drawPattern(){
