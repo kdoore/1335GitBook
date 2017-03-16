@@ -91,7 +91,7 @@ class Button{
 ###Simple Drawing Application 
 Below is code for a simple example of a Drawing Application using the MenuArray to manage a group of Buttons
 
-Main Tab
+This code would be in the main tab for a processing project and would need Button and MenuArray classes included in the project
 
 ```java
 
