@@ -83,8 +83,10 @@ class Button{
   } // end click
 
 }  //end of Button class
-```
 
+```
+###Simple Drawing Application 
+Below is code for a simple example of a Drawing Application using the MenuArray to manage a group of Buttons
 
 Main Tab
 
