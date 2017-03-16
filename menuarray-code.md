@@ -110,8 +110,7 @@ void setup(){
   btnArray[2] = new Button(50,100, size,size);
   
   myMenuArray = new MenuArray(btnArray, numButtons);
-   
-}                            
+ }                            
 
 void draw(){
   if(mousePressed){
@@ -126,6 +125,8 @@ void mouseClicked(){
       myMenuArray.click(mouseX, mouseY);
 }
 
+//simple function to connect button logic with drawing simple patterns
+
 void drawPattern(){
     // use a switch case statement instead of nested if/else 
    
@@ -137,7 +138,7 @@ void drawPattern(){
        fill(255);  //white
        ellipse(0,0,50,50);
    }
-   else{   //what is the value here?  
+   else{   //what is the value of myMenuArray.activeButton here?  
         fill(150);  //gray
         ellipse(0,0,50,50);
    }
