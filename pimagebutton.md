@@ -8,10 +8,11 @@ If we look at the code for the PImage Button below,in the first line, we see the
 //main tab
 
 PImage p;
+Button pBtn;
 
 void setup(){
      p= loadImage("MyIMage.png");
-     PImageButton(20,20,100,100, p);
+     pBtn = new PImageButton(20,20,100,100, p);
 }
 
 ```
