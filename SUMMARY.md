@@ -23,6 +23,7 @@
 * [Child-Class: PImageButton](pimagebutton.md)
 * [Modeling Buttons: States and Events](modelingstates_and_events_md.md)
 * [Menu Buttons](menu_buttons.md)
+* [TextButton](textbutton.md)
 * [Arrays of Objects](arrays_of_objects.md)
 * [Drawing Application - Logic](drawing-application-logic.md)
 * [MenuArray-Code](menuarray-code.md)
