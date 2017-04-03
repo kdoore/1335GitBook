@@ -105,9 +105,9 @@ the image has a text component where the designer's name is listed.  While we ne
 the designers in our programs, we need to remove that text in order for this .svg file to work in our
 programs. 
 
-![](seaHorse.svg)
+![](/assets/Screenshot 2017-04-03 07.42.40.png)
 
-![](seaHorse2.svg)
+
 
 ###Edit SVG Files
 
