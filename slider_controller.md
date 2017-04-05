@@ -284,6 +284,24 @@ class SatSlider extends Slider{
    
   
 } // end of class
+```
 
+###Main Tab Code
+Here's how we check the sliders and use the Hue Slider to set the hue value for the SatSlider before we display the SatSlider.
+
+```java
+
+void drawSliders(){
+  slider.display();
+  hueSlider.display();
+  satSlider.hue = hueSlider.sliderVal;  //before drawing sat slider, update hue value
+  satSlider.display();
+}
+
+void checkSliders(){
+   slider.checkPressed(mouseX, mouseY);
+   hueSlider.checkPressed(mouseX, mouseY);
+   satSlider.checkPressed(mouseX, mouseY);
+   }
 
 ```
