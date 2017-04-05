@@ -81,7 +81,10 @@ myPattern = PShapePattern(s, true);  //sets isSvg = true
 ```
 ###DrawPattern()
 
-```java
+
+
+```
+
 
 void drawPattern(){
   translate(mouseX, mouseY);
@@ -109,6 +112,9 @@ void drawPattern(){
   
   resetMatrix();
 }
-
-
 ```
+
+
+
+
+
