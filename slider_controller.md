@@ -257,3 +257,33 @@ void CheckSliders(){
     
 
 }
+
+//SAT SLIDER
+
+```java
+class SatSlider extends Slider{
+  
+  SatSlider(int _x, int _y, int _w, int _h, float _min, float _max){
+    super( _x, _y, _w, _h, _min, _max);
+    }
+  
+  void display(){
+    super.drawBackground();
+    for( int i=0; i < w ; i++){
+      float satVal = map( i, 0,w, min, max);  //changed
+      stroke( hue, satVal, 255); //calculate satVal for each line
+      line( x+i, y, x+i, y+h); 
+    }
+    ///indicator rectangle
+    stroke(0);  //reset stroke to default
+    fill(hue , sliderVal,255);   //use sliderVal to set the sat 
+    strokeWeight(2);
+    rect( sliderX-3, y-2, 6, h+4);
+    strokeWeight(1);
+  }
+   
+  
+} // end of class
+
+
+```
