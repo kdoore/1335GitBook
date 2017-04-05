@@ -52,9 +52,10 @@ class PShapePattern extends Pattern{
     else{
      s.setFill(color(hue, sat, bright , alpha));
     }
+    
     scale(scale);
     shape(s , 0 , 0);
-    resetMatrix();
+    resetMatrix();  //remove scale transformation
   }
   
 } // end of PShapePattern

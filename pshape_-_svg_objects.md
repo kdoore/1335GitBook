@@ -155,10 +155,3 @@ canvas origin to the svg corner point, then we'll draw the rectangle at (0,0).::
 		}
 		
 
-###Bounding Box
-
-In order to determine if we have a collision between 2 PShape objects, we can to define a bounding box
-for our PShape object that we'll use to determine contact with the Paddle object.  Shiffman's
-game used circular objects, and determining intersection with circular objects is a bit easier than
-it is with rectangular objects.  As noted above, we've translated the origin to the x,y position
-of our .svg file, this corresponds to the upper-upper left corner of the shape.  In the code above, we've added a rectangle near the bottom of the code, this draws a rectangle of the dimensions: sWidth, sHeight, so we can see the border size of the svg image.
