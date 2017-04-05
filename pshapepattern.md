@@ -79,4 +79,36 @@ myPattern = PShapePattern(s, true);  //sets isSvg = true
 
 
 ```
+###DrawPattern()
 
+```java
+
+void drawPattern(){
+  translate(mouseX, mouseY);
+  int myMenuArrayActiveButton = 0;
+  Pattern curPattern = p1;  ///problem if not initialized
+  switch(myMenuArrayActiveButton){
+    case 0:
+       curPattern = p1;
+    break;
+    
+    case 1:
+       curPattern = p2;
+    break;
+    
+    default:
+      println("No match on switch case");
+    break;
+    
+  }
+  curPattern.scale = slider.sliderVal;
+  curPattern.hue = hueSlider.sliderVal;
+  //curPattern.sat = satSlider.sliderVal;
+  //curPattern.bright = brightSlider.sliderVal;
+  curPattern.display();
+  
+  resetMatrix();
+}
+
+
+```
