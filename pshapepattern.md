@@ -83,7 +83,7 @@ myPattern = PShapePattern(s, true);  //sets isSvg = true
 
 
 
-```
+```java
 
 
 void drawPattern(){
