@@ -99,15 +99,17 @@ if we create an ellipse at (0,0) then we'll be able to observe where the center 
 Another way that we can use PShape is to load an .svg file.  There are may sources for .svg files, for
 this project, I'm using an svg file from `The Noun Project`.  This site has lots of .svg icon files
 that are free for use if you provide proper attribution for the designer of the .svg file.  I'm using
-an .svg file of a seahorse designed by: Agne Alesiute at http://thenounproject.com/ .  I am also using
-an .svg file of a jellyfish designed by: Eli Ratner.  Below is the jellyfish .svg file.  We can see that 
+an .svg file of a monster designed by: Joel McKinney at http://thenounproject.com/ .   Below is the monster .svg file.  We can see that 
 the image has a text component where the designer's name is listed.  While we need to provide credit to 
 the designers in our programs, we need to remove that text in order for this .svg file to work in our
 programs. 
 
 ![](/assets/Screenshot 2017-04-03 07.42.40.png)
 
+###SVG Fill, Stroke
+For our project, we will be modifying the fill property of the SVG object, so you will want to select an SVG object that has a fill property that can be modified, some SVG objects use only stroke.  If you want to use an SVG object with Stroke, then you'll need to change the PShapePattern project code to integrate Stroke modification code.
 
+ 
 
 ###Edit SVG Files
 
