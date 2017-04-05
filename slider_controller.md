@@ -248,3 +248,6 @@ class HueSlider extends Slider{
 } // end of class HueSlider
 
 ```
+
+To create Saturation and Brightness sliders, we need to consider that their display may be dependent on the Hue slider.  So, in the main tab of our project, When we check the HueSlider, and before we display the Bright or Sat Sliders, we can use the value of the HueSlider to set their hue attribute.
+
