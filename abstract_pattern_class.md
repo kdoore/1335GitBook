@@ -51,7 +51,7 @@ In the Pattern class above, there were no instance variables declared.  However,
 ```
 abstract class Pattern{
  float hue, sat, bright, scale;  // variables we would like to adjust
-
+int x, y, w, h; // optional variables
   ///initialize with some simple defaults
   Pattern(){
    

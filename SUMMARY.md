@@ -30,8 +30,8 @@
 * [Abstract Pattern Class](abstract_pattern_class.md)
 * [PShape - SVG Objects](pshape_-_svg_objects.md)
 * [PShapePattern](pshapepattern.md)
-* [RecursivePattern](recursivepattern.md)
 * [Slider Controller](slider_controller.md)
+* [RecursivePattern](recursivepattern.md)
 * [Intersecting Ball Objects](intersecting_agents.md)
 * [Agent - Animated Objects](agent_-_animated_objects.md)
 * [PShapeAgent](pshapeagent.md)
@@ -39,6 +39,6 @@
 * [Agents with Slider Controller](agents_with_slider_controller.md)
 * [Glossary](GLOSSARY.md)
 * [Resources](resources.md)
-* [Projects Fall 16](projects_fall_16.md)
+* [Projects ](projects_fall_16.md)
 * [Reading Assignments](reading-assignments.md)
 
