@@ -234,7 +234,7 @@ class HueSlider extends Slider{
     super.backgroundlayer();
     
     for(int i=0;i < w; i ++){  //what going on here?
-      float hue = map( i, 0, w, 0,255);  //what is wrong here, what should be used instead of 0, 255 for slider min, max range?
+      float hue = map( i, 0, w, min, max);  //what is wrong here, what should be used instead of 0, 255 for slider min, max range?
       stroke(hue, 255,255);
       line(i+x, y , i + x, y + h);
     }
