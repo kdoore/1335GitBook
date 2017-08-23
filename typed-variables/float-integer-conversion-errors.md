@@ -1,6 +1,6 @@
 #Float to Integer Conversion, Truncation, and Errors
 
-When using mixed types of data - integers and decimal values, it's important to understand how java handles data-type conversions when math expressions are evaluated.
+When using mixed-types of data - integers and decimal values, it's important to understand how java handles data-type conversions when math expressions are evaluated.
 
 ###Integer Division
 
@@ -9,12 +9,12 @@ When using mixed types of data - integers and decimal values, it's important to 
 int myIntValue = 5 / 2;  //myIntValue = 2; 
   
 ```
-The code statement above has 2 operations:
+The code statement above has 2 components: 
 
   1. A math expression: division operation:` 5 / 2 `
   2. Assignment operation: `myValue = ` 
 
-The right-hand-side: math expression is evaluated first, the left-hand-size: assignment operation occurs after the math expression has been evaluated.
+The _right-hand-side_: **math expression is evaluated first**, the _left-hand-size:_ assignment operation occurs after the math expression has been evaluated.
 
 1. **Expression** - code that is evaluated to result in a value.
 
