@@ -47,9 +47,35 @@ println( "myFloatVal " + myFloatVal); // myFloatVal = 2.0
 ```
 
 
- 3. **Mathematical Operators** - must operate on operands of the same data-type. Java will do _**implicit type-conversions**_. **Java will convert operands of smaller data-types to larger types, to match the size of the largest operand. ** This applies to both literal and variable operands.
+ 3. **Mathematical Operators** - must operate on operands of the same data-type. Java will do _**implicit type-conversions**_. **Java will convert operands of smaller (narrower) data-types to larger (wider) types, to match the size of the largest operand. ** This applies to both literal and variable operands.
+ 
+ In the code below, we have 2 different types of operands, 5.0 is a decimal value, (a double by default), and 2 is an integer value.  The java compiler does a conversion, it converts the smaller data-type: integer value, to match the other operand.  So the actual expression that's evaluated is 5.0 / 2.0;  This is floating point division, the result is 2.5, and it's valid for 2.5 to be stored in a floating point type variable. No error occurs
 
+```java
 
+float floatVal = 5.0 / 2;  
+println("floatVal " + floatVal); // floatVal = 2.5;
 
+///Error
+int intVal = 5.0 / 2; ///error occurs
+
+```
+
+In the code above, the error occurs when the result of the expression is assigned to a integer value...since the integer has no place to store the decimal part of the number, we're given an error to notify us that we're 'throwing away data'.
+
+###Explicit Type-Casting
+If we know that we're ok with losing data - due to truncation issues, we can use explicit type-casting, to let the compiler know that we are intensionally discarding the truncated data.  We are converting from a wider/ larger data-type to a smaller / narrower data-type:
+Example float to integer conversion
+
+**Explicit Type-Casting:  2 methods**
+
+```java
+int myIntVal1 = int( someFloatVal ); 
+int myIntVal2 = (int) someFloatVal;  
+
+//Example
+
+int myIntVal = (int) 5.0 / 2;   //no error 
+```
 
 
