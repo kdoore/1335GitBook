@@ -2,13 +2,11 @@
 
 When using mixed types of data - integers and decimal values, it's important to understand how java handles data-type conversions when math expressions are evaluated.
 
-
 ```java
 
 int myValue = 5 / 2;    
   
 ```
-
 The code statement above has 2 operations:
 
   1. A math expression: division operation:` 5 / 2 `
