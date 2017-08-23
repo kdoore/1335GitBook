@@ -32,8 +32,24 @@ The _left-hand-size:_ assignment operation occurs after the math expression has 
 ```java
 // integer division - truncation occurs
 float myFloatVal = 5 / 2;
+println( "myFloatVal " + myFloatVal); // myFloatVal = 2.0
+
 ```
-In the code above, the 
+In the code above, the expression: 5 / 2 is evaluated first, it is integer division, since both 5 and 2 are integer literals.  The result of 5 / 2 = 2, as shown above.  Then the result of  5 / 2 is assigned to the float variable.  Since float variables have a decimal component, the value of myFloatVal is 2.0 after the assignment operation has been completed.
+
+
+```java
+//this is equivalent code, showing intermediate integer result 
+
+int tempResult = 5 / 2;
+float myFloatVal = tempResult;
+println( "myFloatVal " + myFloatVal); // myFloatVal = 2.0
+```
+
+
+
+
+
  3. **Mathematical Operators** - must operate on operands of the same data-type. Java will do _implicit type-conversions_. Java will convert operands of smaller data-types to larger types, to match the size of the largest operand.  This applies to both literal and variable operands.
 
 
