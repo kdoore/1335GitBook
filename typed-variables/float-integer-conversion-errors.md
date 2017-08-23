@@ -76,6 +76,10 @@ int myIntVal2 = (int) someFloatVal;
 //Example
 
 int myIntVal = (int) 5.0 / 2;   //no error 
+
+myIntVal = int( 5.0 / 2.0 );  //no error
+
+myIntVal = (int) 5.0 / 2.0; ///error occurs since 2.0 hasn't been converted to an int
 ```
 
 
