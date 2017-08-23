@@ -47,10 +47,7 @@ println( "myFloatVal " + myFloatVal); // myFloatVal = 2.0
 ```
 
 
-
-
-
- 3. **Mathematical Operators** - must operate on operands of the same data-type. Java will do _implicit type-conversions_. Java will convert operands of smaller data-types to larger types, to match the size of the largest operand.  This applies to both literal and variable operands.
+ 3. **Mathematical Operators** - must operate on operands of the same data-type. Java will do _**implicit type-conversions**_. **Java will convert operands of smaller data-types to larger types, to match the size of the largest operand. ** This applies to both literal and variable operands.
 
 
 
