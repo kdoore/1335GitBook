@@ -1,11 +1,10 @@
 ###Float to Integer Conversion and Errors
 
 When using mixed types of data - integers and decimal values, it's important to understand how java handles data-type conversions when math expressions are evaluated.
-
 The code statement below has 2 operations:
 
-1. A math expression: division operation (5 / 2) 
-2. Assignment operation  
+  1. A math expression: division operation (5 / 2) 
+  2. Assignment operation  
 
 The right-hand-side: math expression is evaluated first, the left-hand-size: assignment operation occurs after the math expression has been evaluated.
 
