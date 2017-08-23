@@ -1,10 +1,12 @@
-###Float to Integer Conversion and Errors
+#Float to Integer Conversion, Truncation, and Errors
 
 When using mixed types of data - integers and decimal values, it's important to understand how java handles data-type conversions when math expressions are evaluated.
 
-```java
+###Integer Division
 
-int myValue = 5 / 2;    
+```java
+//integer division - truncation occurs
+int myIntValue = 5 / 2;  //myIntValue = 2; 
   
 ```
 The code statement above has 2 operations:
@@ -19,6 +21,11 @@ The right-hand-side: math expression is evaluated first, the left-hand-size: ass
 2. **Assignment** - operation that initializes or modifies the value stored in a variable.
 
 3. **Mathematical Operators** - must operate on operands of the same data-type. Java will do _implicit type-conversions_. Java will convert operands of smaller data-types to larger types, to match the size of the largest operand.  This applies to both literal and variable operands.
+
+```java
+// integer division - truncation occurs
+float myFloatVal = 5 / 2;
+```
  
 
 
