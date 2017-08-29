@@ -28,7 +28,7 @@ For an example function that adds 2 `int`   values, the function syntax is
  ```java
     //function definition
     int addNumbers( int val1, int val2){ // val1, vak2 are the functions parameters 
-        int sum= val1 + int(val2);
+        int sum= val1 + val2;
         return sum;
     }
     
