@@ -63,7 +63,15 @@ int intVal = 5.0 / 2; ///error occurs
 
 In the code above, the error occurs when the result of the expression is assigned to a integer value...since the integer has no place to store the decimal part of the number, we're given an error to notify us that we're 'throwing away data'.
 
-###Explicit Type-Casting
+###Implicit Type-Casting: Widening Conversion
+Java does automatic type-casting when a math operator has operands of 2 different data-types, it will convert a smaller data-type to a larger data-type, for example int -> float, so the operator can operate on 2 values of the same data-type.  This is hidden from us, it happens automatically, so it's called implicit.  
+
+```java
+float result = 5.0 / 2;   // 2 is auto-converted to 2.0
+// result = 5.0 / 2.0; this is result of implicit conversion done by java
+```
+
+###Explicit Type-Casting: Narrowing Conversion
 If we know that we're ok with losing data - due to truncation issues, we can use explicit type-casting, to let the compiler know that we are intensionally discarding the truncated data.  We are converting from a wider/ larger data-type to a smaller / narrower data-type:
 Example float to integer conversion
 
