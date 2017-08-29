@@ -22,10 +22,11 @@ For an example function that adds an `int` and a `float` values, the function sy
 -   **function return type:** `int  //the variable type of the function's return type must be declared, or it must specified as void if no value will be returned`
 -   **function parameters:** `int val1, float val2 //parameters must have a declared variable-type` 
 - **function arguments** `when calling a function, the values placed inside the function parentheses are called arguments, the argument values are used to initialize the function's input parameters`
+- **function signature** `the name and parameter list define the signature of a function.  A function's signature specifies information about how to use, or call a function. A compiler compares functions signatures to determine if 2 identically named functions are valid overloaded functions, the parameter lists must be unique, based on data-type or number of parameters.  `  
 
  ```java
     //function definition
-    int addNumbers( int val1, float val2){ // val1, vak2 are the functions parameters
+    int addNumbers( int val1, int val2){ // val1, vak2 are the functions parameters 
         int sum= val1 + int(val2);
         return sum;
     }
