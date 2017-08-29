@@ -36,6 +36,11 @@ For an example function that adds 2 `int`   values, the function syntax is
     int arg1=4;
     int arg2=2;
     int result = addNumbers(arg1, arg2);  //arg1 and arg2 are arguments
+    
+    //overloaded version is valid since parameters are different data-types than the addNumbers function above
+    float addNumbers( float val1, float val2){
+         return val1 + val2;
+    }
    
    ```    
 
