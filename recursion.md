@@ -13,6 +13,11 @@ The artwork below, created by M.C.Escher, can be considered to contain recursive
  ![](https://upload.wikimedia.org/wikipedia/en/5/55/Escher_Circle_Limit_III.jpg)		 
  		 
  Article Link:  [How to Create Repeating Hyperbolic Patterns Douglas Dunham](https://www.d.umn.edu/~ddunham/eccad09.pdf)
+ 
+###Recursive Drawing
+[Toby Schachman](http://tobyschachman.com/) created an interactive application that provides a visual interface for playing with recursion via 2D shape primitives. It's surprising how quickly the designs become disorienting, illustrating the power of recursion.   
+
+![](/assets/Screenshot 2017-08-31 13.08.06.png)
 
 ###Recursion in Programming
 Recursive programs refer to programs that contain at least 1 recursive function.  A recursive function is a function that has a function call to itself within the function definition. 
