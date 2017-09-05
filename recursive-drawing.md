@@ -1,4 +1,4 @@
-###Recursive Patterns:
+###Recursive Drawing - Patterns:
 With Recursion, we can often think of a set of rules being executed for each function call. This can be used to create interesting patterns, because we can often decompose graphic patterns to be expressed as a set of rules.  In the artwork below, a simple pattern of concentric rectangles is created wherever the mouse is pressed. 
 
 ![](Screenshot 2016-01-23 09.23.52.png)
