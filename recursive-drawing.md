@@ -50,7 +50,9 @@ Here we **define** a recursive function: `Pattern` so that it calls itself for `
 1. We need to add a **test for the termination condition **as the first task in the function:     
         
         ```java
-        if(level <= 1) { return }
+        if(level <= 1) { 
+            return; //stops recursion
+        }
          ```
 2.                
                 
