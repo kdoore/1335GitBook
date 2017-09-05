@@ -5,7 +5,7 @@ With Recursion, we can often think of a set of rules being executed for each fun
 
 ###Recursive Pattern Drawing Application 
 
-The recursive function: `Pattern(length, level)` takes input parameters that control the size of the rectangle and an integer value `level`, which controls the number of concentric rectangles drawn.  By adding slight random variation in the rotation angle, rectangle size, and hueValue of the fill and stroke for each drawn rectangle, the user can create a unique artwork each time they run the program.  The hueValue can be mapped to the `x` position of the mouse.  Using the `Hue, Saturation, Brightness: colorMode(HSB)` allows for slight random variations of the hueValue to give slight variations in the hue of the drawn pattern.  
+The recursive function: `Pattern(length, level)` takes 2 input parameters: `length` controls the size of the rectangle and `level`, which controls the number of concentric rectangles drawn.  By adding slight random variation in the rotation angle, rectangle size, and hueValue of the fill and stroke for each drawn rectangle, the user can create a unique artwork each time they run the program.  The hueValue can be mapped to the `x` position of the mouse.  Using the `Hue, Saturation, Brightness: colorMode(HSB)` allows for slight random variations of the hueValue to give slight variations in the hue of the drawn pattern.  
 
 ### Main Program Structure
 
@@ -60,14 +60,16 @@ Here we **define** a recursive function: `recursivePattern` so that it calls its
     rect( 0, 0, length, length); //draw at origin, use length parameter
     ```
         
-3. Call recursive function, within the function itself, make sure to modify the function parameters:             
+3. **Recursive function must call itself**, within the function , make sure to modify the function parameters:             
 
-    - **change length:** length * 0.8  
-    - **change level:**  level - 1 
+    -  change length:  length * 0.8  
+    -  change level:  level - 1 
     
-      ```java
-       recursivePattern( length * 0.8, level - 1 );   
-       ``` 
+  ```java
+   recursivePattern( length * 0.8, level - 1 );  
+   }  //end of function
+    
+   ``` 
                 
                 
 ### Complete Program
