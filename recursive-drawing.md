@@ -30,7 +30,7 @@ The recursive function: `Pattern(length, level)` takes input parameters that con
     
     ```java 
         
-        Pattern( 100, 5); //Recursive Pattern Called 
+        recursivePattern( 100, 5); //Recursive Pattern Called 
     ```
        
 4. Move Origin back to upper left corner
@@ -43,7 +43,7 @@ Here we **define** a recursive function: `Pattern` so that it calls itself for `
 
         ```java
         
-        void Pattern( float length, int level) {
+        void recursivePattern( float length, int level) {
         
         ```
         
@@ -57,7 +57,7 @@ Here we **define** a recursive function: `Pattern` so that it calls itself for `
 2.  We will **draw a shape at the origin using the ``length`` parameter**  
         
         ```java
-        fill( 255, 0, 0);// set some fill color
+        fill( 255, 255, 100);// set some fill color
         rect( 0, 0, length, length); 
         ```
         
@@ -66,8 +66,39 @@ Here we **define** a recursive function: `Pattern` so that it calls itself for `
     - change length: length * 0.8  
     - change level:  level - 1 
     
-       Pattern( length * 0.8, level - 1 );    
+      ```java
+       recursivePattern( length * 0.8, level - 1 );   
+       ``` 
                 
+                
+### Complete Program
+
+```java
+
+void setup(){
+  size( 600,600);
+  colorMode(HSB); 
+  }
+  
+  void draw(){
+    if(mousePressed){
+      translate(mouseX, mouseY); 
+          recursivePattern( 100, 5);   //call recursive function
+      resetMatrix();
+    }
+  }
+  
+  //define recursive function
+  void recursivePattern( float length, int level){
+    if ( level <= 0 ){  //test for termination
+      return; //termination condition is true
+    }
+    fill( (mouseX + length) % 255 , 255, 255, 100);  
+    rect( 0, 0, length, length);  //draw a pattern based on length parameter
+    recursivePattern( length * 0.8, level -1); //call recursive function
+    }
+    
+    ```
 
 ###Save Drawing
 If we want to save our image, we can use the processing save() function and we can call it whenever we press a certain key, like 's'.  This will save our image to our sketch folder. The file can be saved in a variety of file formats.
