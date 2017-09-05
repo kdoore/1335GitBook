@@ -54,14 +54,10 @@ Similarly, if we use a factorial function that doesn't use recursion, but uses a
 Below is code for the Recursive version of Factorial Program, we have added several println statements so we can better understand how the code actually executes
 
 ```java
-int n;
+ 
 void setup(){
-  n=6;
-  noLoop();
-}
-void draw(){
-   int finalResult = factorial( n );
-   println("final result " + finalResult);
+ int finalResult = factorial( 6 );
+ println("final result " + finalResult);
 }
 
 int factorial( int n){
