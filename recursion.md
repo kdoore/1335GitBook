@@ -80,7 +80,7 @@ int factorial( int n){
 
 From the above image we can see that the println statement within the factorial function that is located before the function calls itself gets printed in the order that the functions are called.  However, we can see that once we reach the base case, then the order changes.  As each function is completing it's calculation, it prints the end of factorial statement and then returns that value to the calling instance of the function.  So when we design recursive functions, the order of statements: before or after the recursive call has a large impact on the ordering of when the code is actually executed.
 
-###Writing Recursive Functions
+###Guidelines for Writing Recursive Functions
 When writing recursive functions there are several factors to consider:
 1. Identify the base-case or stopping condition
 2. Insure that the variable that controls the stopping condition will be modified in the recursive function so that it will eventually reach the stopping condition.
