@@ -11,60 +11,59 @@ The recursive function: `Pattern(length, level)` takes input parameters that con
 
 1. When the user presses the mouse
 
-    ```java
-    void Draw(){  //use processing Draw function
-    
-        if ( mousePressed){
-        //draw a pattern 
-        }
+```java
+void Draw(){  //use processing Draw function
+    if ( mousePressed){
+    //draw a pattern 
     }
-    ```
+}
+```
 
 2. Move the canvas origin to the current mouse position. 
   
-        ```java
-        translate(mouseX, mouseY);
-         ```
+    ```java
+    translate(mouseX, mouseY);
+     ```
 
 3. Draw some pattern based on ``length`` parameter, by **calling** the recursive function: recursivePattern( );
     
-    ```java 
+```java 
         
-        recursivePattern( 100, 5); //Recursive Pattern Called 
-    ```
+    recursivePattern( 100, 5); //Recursive Pattern Called 
+```
        
 4. Move Origin back to upper left corner
-         ```java
-        resetMatrix();
-        ```
+     ```java
+    resetMatrix();
+    ```
 
 ### Define Recursive Function
 Here we **define** a recursive function: `recursivePattern` so that it calls itself for `level` number of times, with a `length` parameter that determines the pattern size:
 
-        ```java
+    ```java
         
-        void recursivePattern( float length, int level) {
-        
-        ```
+    void recursivePattern( float length, int level) {
+    
+    ```
         
 1. We need to add a **test for the termination condition **as the first task in the function:     
         
-        ```java
-        if(level <= 1) { 
-            return; //stops recursion
-        }
-         ```
+    ```java
+    if(level <= 0) { 
+        return; //stops recursion
+    }
+     ```
 2.  We will **draw a shape at the origin using the ``length`` parameter**  
         
-        ```java
-        fill( 255, 255, 100);// set some fill color
-        rect( 0, 0, length, length); 
-        ```
+    ```java
+    fill( 255, 255, 100);// set some fill color
+    rect( 0, 0, length, length); //draw at origin, use length parameter
+    ```
         
 3. Call recursive function, within the function itself, make sure to modify the function parameters:             
 
-    - change length: length * 0.8  
-    - change level:  level - 1 
+    - **change length:** length * 0.8  
+    - **change level:**  level - 1 
     
       ```java
        recursivePattern( length * 0.8, level - 1 );   
