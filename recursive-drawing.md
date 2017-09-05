@@ -7,7 +7,7 @@ With Recursion, we can often think of a set of rules being executed for each fun
 
 The recursive function: `Pattern(length, level)` takes input parameters that control the size of the rectangle and an integer value `level`, which controls the number of concentric rectangles drawn.  By adding slight random variation in the rotation angle, rectangle size, and hueValue of the fill and stroke for each drawn rectangle, the user can create a unique artwork each time they run the program.  The hueValue can be mapped to the `x` position of the mouse.  Using the `Hue, Saturation, Brightness: colorMode(HSB)` allows for slight random variations of the hueValue to give slight variations in the hue of the drawn pattern.  
 
-Simplified rules for the pattern drawn above are:
+### Main Program Structure
 
 1. When the user presses the mouse
 
@@ -38,14 +38,22 @@ Simplified rules for the pattern drawn above are:
         resetMatrix();
         ```
 
-Here we **define** a recursive function: Pattern so that it calls itself for `level-1` number of times, with a smaller value of length:
+### Define Recursive Function
+Here we **define** a recursive function: `Pattern` so that it calls itself for `level` number of times, with a `length` parameter that determines the pattern size:
 
-        - void Pattern( float length, int level) 
+        ```java
         
-5. We need to add a test for the termination condition as the first task in the function:     
+        void Pattern( float length, int level) {
+        
+        ```
+        
+1. We need to add a **test for the termination condition **as the first task in the function:     
+        
         ```java
         if(level <= 1) { return }
-        ```
+         ```
+2.                
+                
 
 ###Save Drawing
 If we want to save our image, we can use the processing save() function and we can call it whenever we press a certain key, like 's'.  This will save our image to our sketch folder. The file can be saved in a variety of file formats.
