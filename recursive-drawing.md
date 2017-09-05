@@ -61,7 +61,12 @@ Here we **define** a recursive function: `Pattern` so that it calls itself for `
         rect( 0, 0, length, length); 
         ```
         
-3. Call recursive function, within the function itself, make sure to modify the function parameters: length * 0.8      
+3. Call recursive function, within the function itself, make sure to modify the function parameters:             
+
+    - change length: length * 0.8  
+    - change level:  level - 1 
+    
+       Pattern( length * 0.8, level - 1 );    
                 
 
 ###Save Drawing
