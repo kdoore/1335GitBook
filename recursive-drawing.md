@@ -3,6 +3,18 @@ With Recursion, we can often think of a set of rules being executed for each fun
 
 ![](Screenshot 2016-01-23 09.23.52.png)
 
+###Guidelines for Writing Recursive Functions
+When writing recursive functions there are several factors to consider:
+
+    1. Identify the base-case or stopping condition
+    2. Insure that the variable that controls the stopping condition will be modified in the recursive function so that it will eventually reach the stopping condition.
+    3. Locate the conditional test for the stopping condition before the recursive call to prevent the recursive call from occuring when the stopping condition has been met.
+    4. Determine whether the function task should be performed before or after the recursive call. 
+    5. Insure that input parameters to the recursive function provide all information needed at each step, and be careful when modifying values passed as arguments. 
+    6. Be aware that each instance of a recursive function call causes a unique instance of the function's code to be placed on the `call-stack`, this can potentially cause stack-overflow errors if the program runs out of available program-execution memory space.
+    
+    
+
 ###Recursive Pattern Drawing Application 
 
 The recursive function: `Pattern(length, level)` takes 2 input parameters: `length` controls the size of the rectangle and `level`, which controls the number of concentric rectangles drawn.  By adding slight random variation in the rotation angle, rectangle size, and hueValue of the fill and stroke for each drawn rectangle, the user can create a unique artwork each time they run the program.  The hueValue can be mapped to the `x` position of the mouse.  Using the `Hue, Saturation, Brightness: colorMode(HSB)` allows for slight random variations of the hueValue to give slight variations in the hue of the drawn pattern.  
