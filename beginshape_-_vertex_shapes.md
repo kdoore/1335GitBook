@@ -23,7 +23,7 @@ Finally, to simplify further, we can consider that if we translate the origin to
 ```
   PShape s = createShape();
   s.beginShape();
-  s.fill( mouseX % 255, 200, 255, 100 ); //HSB color and alpha as paramter 4
+  s.fill( 100, 200, 255, 100 ); 
   s.vertex(0,0);
   s.vertex( len, 0);
   s.vertex( len, len);
@@ -54,7 +54,7 @@ void recursivePattern( float length, float level){
 void vertexPattern( float len){
   PShape s = createShape();
   s.beginShape();
-  s.fill( mouseX % 255, 200, 255, 100 ); //HSB color and alpha as paramter 4
+  s.fill( 255, 200, 255, 100 );  
   s.vertex(0,0);
   s.vertex( len, 0);
   s.vertex( len, len);
