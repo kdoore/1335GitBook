@@ -73,7 +73,7 @@ Here we **define** a recursive function: `recursivePattern` so that it calls its
                 
                 
 ### Complete Program
-Here's a simple program that defines and uses a recursive function to create a pattern.  Where can randomness be used to make the design more interesting.
+Here's a simple program that defines and uses a recursive function to create a pattern.  Where can randomness be used to make the design more interesting?
 
 ```java
 
