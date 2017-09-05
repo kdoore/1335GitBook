@@ -26,7 +26,7 @@ The recursive function: `Pattern(length, level)` takes input parameters that con
         translate(mouseX, mouseY);
          ```
 
-3. Draw some pattern based on ``length`` parameter, by **calling** the recursive function: Pattern( );
+3. Draw some pattern based on ``length`` parameter, by **calling** the recursive function: recursivePattern( );
     
     ```java 
         
@@ -39,7 +39,7 @@ The recursive function: `Pattern(length, level)` takes input parameters that con
         ```
 
 ### Define Recursive Function
-Here we **define** a recursive function: `Pattern` so that it calls itself for `level` number of times, with a `length` parameter that determines the pattern size:
+Here we **define** a recursive function: `recursivePattern` so that it calls itself for `level` number of times, with a `length` parameter that determines the pattern size:
 
         ```java
         
