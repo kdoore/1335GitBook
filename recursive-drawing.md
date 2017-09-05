@@ -54,7 +54,14 @@ Here we **define** a recursive function: `Pattern` so that it calls itself for `
             return; //stops recursion
         }
          ```
-2.                
+2.  We will **draw a shape at the origin using the ``length`` parameter**  
+        
+        ```java
+        fill( 255, 0, 0);// set some fill color
+        rect( 0, 0, length, length); 
+        ```
+        
+3. Call recursive function, within the function itself, make sure to modify the function parameters: length * 0.8      
                 
 
 ###Save Drawing
