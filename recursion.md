@@ -20,10 +20,11 @@ The artwork below, created by M.C.Escher, can be considered to contain recursive
 ![](/assets/Screenshot 2017-08-31 13.08.06.png)
 
 ###Recursive Patterns
-When we look in nature, we see frequently see recursive patterning - we see a relationship between several objects - and we understand that these objects have a more complex relationship than simple repetition.  Often in recursive patterns, we can observe that some feature has been scaled larger or smaller, and this forms a pattern across a series of objects. 
+When we look in nature, we see frequently see recursive patterning - we see a relationship between several objects - and we understand that these objects have a more complex relationship than simple repetition.  Often in recursive patterns, we can observe that some feature has been scaled larger or smaller, where a self-similarity forms patterns across a series of objects. Recursive patterns often include parent-child relationships between objects.
 
 
 ![](https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/Floral_matryoshka_set_2_smallest_doll_nested.JPG/320px-Floral_matryoshka_set_2_smallest_doll_nested.JPG) 
+
 **Russian Nesting Dolls**
 The classic Russian nesting dolls provides a nice example of a set of physical objects that have a recursive relationship.  Each doll is positioned within it's parent object, and it's been scaled down to fit snuggly within.  
 
