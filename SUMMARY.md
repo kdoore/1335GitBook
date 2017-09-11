@@ -8,6 +8,7 @@
   * [Reference Data Types](reference_data_types.md)
   * [Switch-Case Statement](switch-case_statement.md)
   * [Ternary Operator](ternary_operator.md)
+  * [Arrays](arrays.md)
 * [Recursion](recursion.md)
 * [Recursive Drawing](recursive-drawing.md)
 * [Vertex Shapes - RecursivePattern](beginshape_-_vertex_shapes.md)
