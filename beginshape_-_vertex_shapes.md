@@ -42,12 +42,11 @@ P2D might not work on some computers, if not, then just use regular: size\(600,6
 ```java
 
 void recursivePattern( float length, float level){
-   if(level >5 ) { //termination condition
+   if(level <1 ) { //termination condition
    return;    //stop function execution by returning from the function
    }
-   level++;  //increment our counting variable to insure termination condition
    vertexPattern( length);
-   recursivePattern( length * .8, level  );  
+   recursivePattern( length * .8, level -1  );  
 }
 
 
@@ -96,7 +95,7 @@ void setup(){
 void draw(){
    if(mousePressed && (frameCount % 10 == 0)){
         translate(mouseX, mouseY);
-        recursivePattern( length,0);  //here level is initialized at 0 because we increment it inside the recursive function
+        recursivePattern( length,5);  //here level is initialized at 5 because we decrement it inside the recursive function
         resetMatrix();
    }
 }
