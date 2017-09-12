@@ -13,7 +13,7 @@
 * [Recursive Drawing](recursive-drawing.md)
 * [Vertex Shapes - RecursivePattern](beginshape_-_vertex_shapes.md)
 * [HSB Color Mode](hsb_color_mode.md)
-* [Computational Parametric Design](computational__parametric_design.md)
+* [Computational Design](computational_design.md)
 * [Drawing Application](drawing_application.md)
 * [Creative Brushes](creative_brushes.md)
 * [Button States](button_states.md)
