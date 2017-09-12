@@ -31,4 +31,7 @@ myInts[9] = 50; //assign 50 to the last array element
 
 Typically we'll use a `for-loop` to access items in an array...where we use the loop's count variable to access each item in the array sequentially.  
 
+```java
 
+
+```
