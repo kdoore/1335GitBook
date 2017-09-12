@@ -18,6 +18,6 @@
 * [Glossary](GLOSSARY.md)
 * [Resources](resources.md)
 * [Projects ](projects_fall_16.md)
-* Arrays for Grid Patterns
+* [Arrays for Grid Patterns](arrays-for-grid-patterns.md)
 * [Vasarely](vasarely.md)
 
