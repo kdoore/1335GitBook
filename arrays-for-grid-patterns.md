@@ -1,4 +1,4 @@
-# Arrays for Grid Patterns
+#Arrays for Grid Patterns
 
 ![](/assets/Screenshot 2017-09-12 12.10.55.png)
 
@@ -19,5 +19,7 @@ When we look at this image, we can see some design patterns - if we can decompos
 
 - Number of rows, 10 == number of columns 10
 - Cell width == cell height
+
+
 
 
