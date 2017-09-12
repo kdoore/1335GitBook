@@ -29,9 +29,11 @@ myInts[0] = 5; //assign 5 to the first array element
 myInts[9] = 50; //assign 50 to the last array element
 ```
 
-Typically we'll use a `for-loop` to access items in an array...where we use the loop's count variable to access each item in the array sequentially.  
-
-```java
+Typically we'll use a `for-loop` to access items in an array...where we use the loop's count variable to access each item in the array sequentially. Often we'll use the loop count variable as part of the expression to initialize arrays of numbers.  
 
 
+```
+for( int i=0; i < myInts.Length; i++){
+  myInts[i] = i * 10;  
+}
 ```
