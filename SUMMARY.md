@@ -15,7 +15,7 @@
 * [HSB Color Mode](hsb_color_mode.md)
 * [Computational Design](computational_design.md)
 * [Drawing Application](drawing_application.md)
-* [Creative Brushes](creative_brushes.md)
+<!--* [Creative Brushes](creative_brushes.md) 
 * [Button States](button_states.md)
 * [Button Types](button_types.md)
 * [Introduction to Objects](introduction-to-objects.md)
@@ -38,7 +38,7 @@
 * [Agent - Animated Objects](agent_-_animated_objects.md)
 * [PShapeAgent](pshapeagent.md)
 * [PShapeAgent With PShape Groups](pshapeagent_with_pshape_groups.md)
-* [Agents with Slider Controller](agents_with_slider_controller.md)
+* [Agents with Slider Controller](agents_with_slider_controller.md)-->
 * [Glossary](GLOSSARY.md)
 * [Resources](resources.md)
 * [Projects ](projects_fall_16.md)
