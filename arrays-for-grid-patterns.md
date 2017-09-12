@@ -16,5 +16,6 @@ Observable Rules in the design:
     
 - background color - grayscale changes across the rows and columns
 
-- Number of rows, 10 = number of columns 10
+- Number of rows, 10 == number of columns 10
+- Cell width == cell height
 
