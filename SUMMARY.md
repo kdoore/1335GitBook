@@ -19,4 +19,5 @@
 * [Resources](resources.md)
 * [Projects ](projects_fall_16.md)
 * Arrays for Grid Patterns
+* [Vasarely](vasarely.md)
 
