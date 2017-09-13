@@ -36,7 +36,7 @@
 * [Agent - Animated Objects](agent_-_animated_objects.md)
 * [PShapeAgent](pshapeagent.md)
 * [PShapeAgent With PShape Groups](pshapeagent_with_pshape_groups.md)
-* [Agents with Slider Controller](agents_with_slider_controller.md) --->
+* [Agents with Slider Controller](agents_with_slider_controller.md) 
 * [Glossary](GLOSSARY.md)
 * [Resources](resources.md)
 * [Projects ](projects_fall_16.md)
