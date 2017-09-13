@@ -1,4 +1,4 @@
-#Arrays for Grid Patterns
+#Grid Pattern Designs
 
 ![](/assets/Screenshot 2017-09-12 12.10.55.png)
 
