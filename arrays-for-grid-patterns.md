@@ -7,7 +7,7 @@ We'll use [Victor Vasarely's](https://kdoore.gitbooks.io/cs1335/content/vasarely
 
 When we look at this image, we can see some design patterns - if we can decompose the design to a set of rules, then we can begin to understand how to write code to create it.
 
-###Observable Rules in the design pattern: 
+###Observing Patterns and Rules in the Design: 
 
 - shapes are arranged in a grid of rows and columns
 - colors are changing across the rows and columns
