@@ -14,7 +14,7 @@
 * [Vertex Shapes - RecursivePattern](beginshape_-_vertex_shapes.md)
 * [HSB Color Mode](hsb_color_mode.md)
 * [Computational Design](computational_design.md)
-* [Vasarely](vasarely.md)
+* [Artist: Victor Vasarely](vasarely.md)
 * [Grid Pattern Design](arrays-for-grid-patterns.md)
 * [Glossary](GLOSSARY.md)
 * [Resources](resources.md)
