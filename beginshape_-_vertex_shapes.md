@@ -2,7 +2,9 @@
 
 The image below shows how we can create a simple polygon using the [Processing beginShape\( \), endShape\( \)](https://processing.org/reference/beginShape_.html) functions.
 
-For our recursive pattern project, it will be important to create a simple pattern that can be defined by a central point \(vertex\) and one length value.  You can see from the image below that if we design our pattern based on points on a square, this becomes straightforward.  For each recursive call, we want to make the length smaller, but keep the center point somewhat fixed.
+For our recursive pattern project, it will be important to create a simple pattern that can be defined by a central point \(vertex\) and one length value.  You can see from the image below that if we design our pattern based on points on a square, this becomes straightforward.  For each recursive call, we want to make the length smaller, but keep the center point somewhat fixed.  Each time we draw the shape, if we use a different value for the length parameter, the shape will be scaled according to that length dimension parameter. 
+
+Defining the shape based on a variable length means that if length 100, it should create a pattern that is 10 times larger than if we'd set length = 10.  
 
 ![](vertexShape.png)
 
@@ -31,6 +33,17 @@ Finally, to simplify further, we can consider that if we translate the origin to
   s.vertex( 0, len);
   s.endShape(CLOSE);
   shape( s, 0,0);  //this displays the shape on the canvas at point (0,0)
+
+```
+###Custom Draw Rectangles Function using Vertex Points 
+
+![](/assets/Screenshot 2017-09-14 18.30.05.png)
+The image above shows that we could define our own drawRectangle function, where we had xWidth, xHeight input parameters.  This will work just like the processing rectangle function, except that it doesn't take in x,y location, instead, we're hard-coding the position vertex at (0,0);  We can see from the code on the diagram how the input parameters are used to define 4 vertex points.  This way, if we call the function 2 times with different inputs, we'll have 2 different rectangles scaled according to the input values:
+
+```java
+//rectangles are scaled using the input parameters: xWidth, xHeight
+drawRectangle( 100,200 );
+drawRectangle( 200, 300);
 
 ```
 
