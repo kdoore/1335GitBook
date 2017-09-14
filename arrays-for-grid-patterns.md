@@ -20,6 +20,16 @@ When we look at this image, we can see some design patterns - if we can decompos
 - Number of rows, 10 == number of columns 10
 - Cell width == cell height
 
+###Variation
+
+Below we can see a more interesting design than the one above, where we've introduced a slight variation on the design in each grid position.  One modular unit has a smaller opening, and the sat / bright values are much lower for these modular units. Then we select randomly between these 2 modular units for each position based on 2 slight variations of the design motif. We've also added some randomization to the background color.  The resulting design is more interesting than the one above.  We see clusters of brightness that draw our interest.  Darker, duller areas recede in the design.
+
+
+![](/assets/Screenshot 2017-09-14 13.05.19.png)
+
+###Parametric Variation
+
+Parametric Design focuses on creating tools to allow designers to make incremental variations on a single design idea. So, rather than writing a program to create a single design, we can create a tool to let us make small changes to the basic design...by modifying the design parameters that we think will give us an iterative design process. 
 
 
 
