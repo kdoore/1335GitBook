@@ -31,7 +31,7 @@ Below we can see a more interesting design than the one above, where we've intro
 
 Parametric Design focuses on creating tools to allow designers to make incremental variations on a single design idea. So, rather than writing a program to create a single design, we can create a tool to let us make small changes to the basic design...by modifying the design parameters that we think will give us an iterative design process. 
 
-###Digital Prototyping
+###The Power of Digital Prototyping
 
 ![](/assets/Screenshot 2017-09-14 13.35.27.png)
 
