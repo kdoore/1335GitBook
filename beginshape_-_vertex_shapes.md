@@ -38,7 +38,7 @@ Finally, to simplify further, we can consider that if we translate the origin to
 ###Custom Draw Rectangles Function using Vertex Points 
 
 ![](/assets/Screenshot 2017-09-14 18.30.05.png)
-The image above shows that we could define our own drawRectangle function, where we had xWidth, xHeight input parameters.  This will work just like the processing rectangle function, except that it doesn't take in x,y location, instead, we're hard-coding the position vertex at (0,0);  We can see from the code on the diagram how the input parameters are used to define 4 vertex points.  This way, if we call the function 2 times with different inputs, we'll have 2 different rectangles scaled according to the input values:
+The image above shows that we could define our own drawRectangle(w, h) function, where we define xWidth, xHeight input parameters.  This will work just like the processing rectangle function, except that it doesn't take in x,y location input parameters. Instead, we're hard-coding the position vertex at (0,0);  We can see from the code on the diagram how the input parameters are used to define 4 vertex points.  This way, if we call the function 2 times with different inputs, we'll have 2 different rectangles scaled according to the input values:
 
 ```java
 //rectangles are scaled using the input parameters: xWidth, xHeight
