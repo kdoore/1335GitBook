@@ -7,7 +7,7 @@
   * [Functions](functions.md)
   * [Arrays](arrays.md)
   * [Reference Data Types](reference_data_types.md)
-  * Loops and Recursion
+  * [Loops and Recursion](loops-and-recursion.md)
   * [Switch-Case Statement](switch-case_statement.md)
   * [Ternary Operator](ternary_operator.md)
 * [Recursion](recursion.md)
