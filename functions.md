@@ -25,24 +25,27 @@ For an example function that adds 2 `int`   values, the function syntax is
 - **function arguments** `when calling a function, the values placed inside the function parentheses are called arguments, the argument values are used to initialize the function's input parameters`
 - **function signature** `the name and parameter list define the signature of a function.  A function's signature specifies information about how to use, or call a function. A compiler compares functions signatures to determine if 2 identically named functions are valid overloaded functions, the parameter lists must be unique, based on data-type or number of parameters.  `  
 
- ```java
-    //function definition
-    int addNumbers( int val1, int val2){ // val1, vak2 are the functions parameters 
-        int sum= val1 + val2;
-        return sum;
-    }
+```java
+ 
+//function definition
+int addNumbers( int val1, int val2){ // val1, vak2 are the functions parameters 
+    int sum= val1 + val2;
+    return sum;
+}
+    
+    //overloaded function definition
+float addNumbers( float val1, float val2){ // val1, vak2 are the functions parameters 
+    int sum= val1 + val2;  
+    return sum;
+}
     
     //example function call 
-    void draw( ){
-        int arg1=4;
-        int arg2=2;
-        int result = addNumbers(arg1, arg2);  //arg1 and arg2 are arguments
+void draw( ){
+  int arg1=4;
+  int arg2=2;
+  int result = addNumbers(arg1, arg2);  //arg1 and arg2 are arguments
     }
-    
-    //overloaded version - uses float parameters
-    float addNumbers( float val1, float val2){
-         return val1 + val2;
-    }
+
    
    ```    
 
