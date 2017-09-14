@@ -5,10 +5,11 @@
   * [Typed-Variables](typed-variables.md)
   * [Float - Integer Conversion Errors](typed-variables/float-integer-conversion-errors.md)
   * [Functions](functions.md)
+  * [Arrays](arrays.md)
   * [Reference Data Types](reference_data_types.md)
+  * Loops and Recursion
   * [Switch-Case Statement](switch-case_statement.md)
   * [Ternary Operator](ternary_operator.md)
-  * [Arrays](arrays.md)
 * [Recursion](recursion.md)
 * [Recursive Drawing](recursive-drawing.md)
 * [Vertex Shapes - RecursivePattern](beginshape_-_vertex_shapes.md)
@@ -17,7 +18,7 @@
 * [Artist: Victor Vasarely](vasarely.md)
 * [Grid Pattern Design](arrays-for-grid-patterns.md)
 * [Drawing Application](drawing_application.md)
-* [Creative Brushes](creative_brushes.md) 
+* [Creative Brushes](creative_brushes.md)
 * [Button States](button_states.md)
 * [Button Types](button_types.md)
 * [Introduction to Objects](introduction-to-objects.md)
@@ -40,14 +41,9 @@
 * [Agent - Animated Objects](agent_-_animated_objects.md)
 * [PShapeAgent](pshapeagent.md)
 * [PShapeAgent With PShape Groups](pshapeagent_with_pshape_groups.md)
-* [Agents with Slider Controller](agents_with_slider_controller.md) 
+* [Agents with Slider Controller](agents_with_slider_controller.md)
 * [Glossary](GLOSSARY.md)
 * [Resources](resources.md)
 * [Projects ](projects_fall_16.md)
 * [Reading Assignments](reading-assignments.md)
-
-
-
-
-
 

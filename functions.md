@@ -11,7 +11,7 @@ When writing a code for function, the following components define the syntax of 
 ```java
     returnType functionName( int arg1, float arg2){  // int and float input parameters 
         // body code of a function
-        return returnValue
+        return returnValue;
     }
     
     ```
