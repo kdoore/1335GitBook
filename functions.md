@@ -8,11 +8,18 @@ Functions should be designed to perform a well-defined, specific task. Functions
 ###Function Syntax
 
 When writing a code for function, the following components define the syntax of a function definition. :
+
 ```java
-    returnType functionName( int arg1, float arg2){  // int and float input parameters 
+
+    returnType functionName( int arg1, int arg2){  // int and float input parameters 
         // body code of a function
-        return returnValue;
+        return returnValue; //optional if void return type
     }
+    
+    void functionName( int arg1, int arg2){ // int and float input parameters 
+    // body code of a function
+    return; //optional if void return type
+}
     
     ```
 
@@ -21,7 +28,7 @@ For an example function that adds 2 `int`   values, the function syntax is
 - **function definition:** `the full code specification of a function.`
 -   **function name:** `addNumbers`
 -   **function return type:** `int  //the variable type of the function's return type must be declared, or it must specified as void if no value will be returned`
--   **function parameters:** `int val1, float val2 //parameters must have a declared variable-type` 
+-   **function parameters:** `int val1, int val2 //parameters must have a declared variable-type` 
 - **function arguments** `when calling a function, the values placed inside the function parentheses are called arguments, the argument values are used to initialize the function's input parameters`
 - **function signature** `the name and parameter list define the signature of a function.  A function's signature specifies information about how to use, or call a function. A compiler compares functions signatures to determine if 2 identically named functions are valid overloaded functions, the parameter lists must be unique, based on data-type or number of parameters.  `  
 
