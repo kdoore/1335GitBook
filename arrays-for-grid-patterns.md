@@ -35,7 +35,7 @@ Parametric Design focuses on creating tools to allow designers to make increment
 
 ![](/assets/Screenshot 2017-09-14 10.53.42.png)
 
-The image below shows an art quilt I had created in 1995. The design uses similar concepts of variations in saturation and brightness across modular units.  The ability to create a digital rapid prototype of the designs would have been extremely helpful during the design, as cutting-out and sewing each individual piece for each modular unit was a tedious process. 
+The image below shows an art quilt I had created in 1995. The design uses similar concepts of variations in saturation and brightness across modular units.  The ability to create a digital rapid-prototype of the designs would have been extremely helpful during the design and fabrication process, as cutting-out and sewing each individual piece for each modular unit was a tedious process. 
 
 ![](/assets/6fe73513013035befd149054d160506c.jpg)
 
