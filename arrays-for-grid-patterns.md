@@ -37,5 +37,7 @@ Parametric Design focuses on creating tools to allow designers to make increment
 
 The image below shows an art quilt I had created in 1995. The design uses similar concepts of variations in saturation and brightness across modular units.  The ability to create a digital rapid prototype of the designs would have been extremely helpful during the design, as cutting-out and sewing each individual piece for each modular unit was a tedious process. 
 
+![](/assets/6fe73513013035befd149054d160506c.jpg)
 
-
+[Vasarely - 1969 ](http://ncartmuseum.org/art/detail/ion) 
+Vasarely's op art piece was created in 1969, he would also have benefited from digital prototyping tools for his Op-Art designs. 
