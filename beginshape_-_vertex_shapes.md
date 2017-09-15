@@ -74,7 +74,7 @@ void vertexPattern( float len){
   PShape s = createShape();
   s.beginShape();
   s.fill( 255, 200, 255, 100 );  
-  s.vertex(0,0);
+  s.vertex(0,0);  
   s.vertex( len, 0);
   s.vertex( len, len);
   s.vertex( len/2, len/2);   
