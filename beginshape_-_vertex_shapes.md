@@ -61,7 +61,10 @@ P2D might not work on some computers, if not, then just use regular: size\(600,6
 
 
 ```java
-
+//recursive function to draw nested patterns
+//length is input as largest size, smaller patterns
+//are drawn with each recursive call
+// level determines how many patterns are drawn
 void recursivePattern( float length, float level){
    if(level <1 ) { //termination condition
    return;    //stop function execution by returning from the function
@@ -70,7 +73,8 @@ void recursivePattern( float length, float level){
    recursivePattern( length - 20, level -1  );  
 }
 
-
+//Draws one pattern each time it is called
+//pattern size is determined by input parameter: len
 void vertexPattern( float len){
   PShape s = createShape();
   s.beginShape();
@@ -122,7 +126,6 @@ void draw(){
 }
 
 ```
-
 
 ![](Screenshot 2016-01-23 23.43.26.png)
 
