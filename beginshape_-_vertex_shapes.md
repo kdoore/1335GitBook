@@ -114,10 +114,10 @@ void setup(){
 }
 
 void draw(){
-   if(mousePressed && (frameCount % 10 == 0)){
+   if(mousePressed){
         translate(mouseX, mouseY);
         recursivePattern( length,5);  //here level is initialized at 5 because we decrement it inside the recursive function
-        resetMatrix();
+   resetMatrix();
    }
 }
 
