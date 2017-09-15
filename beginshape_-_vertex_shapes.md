@@ -51,6 +51,25 @@ drawRectangle( 100,200 );
 drawRectangle( 200, 300);
 
 ```
+Below is an example vertex pattern function that takes in 2 input-parameters: xWidth, yHeight.  Within the function, 
+those input parameters define the vertices of a rectangle.  We've now created a function that will allow us to draw a rectangle of any size, and any location if we use the transform function to move the origin to the desired location prior to calling this function.  We've just redesigned the processing rectangle function using PShape objects.  What's much more interesting is that we can create functions to generate our own design motifs, as long as we design the pattern assuming  
+
+
+```java
+
+void drawRectangle( float xWidth, float yHeight){
+   PShape s = createShape();
+   s.beginShape();
+   s.vertex( 0,0);
+   s.vertex( xWidth, 0);
+   s.vertex( xWidth, yHeight);
+   s.vertex( 0, yHeight);
+   s.endShape( CLOSE);
+   shape( s, 0,0);
+ }
+
+```
+
 ###Processing P2D - Vertex Shading
 
 ```java
@@ -58,7 +77,6 @@ void setup(){
     size( 500, 600, P2D);
 }
 ```
-
 If we use the processing P2D rendering context, we can set a different fill value and stroke value for each vertex, this allows us to create visual depth in the pattern. When incorporated into a simple recursive function this can create interesting complex images.  
 P2D might not work on some computers, if not, then just use regular: size\(600,600\);.  You will need to create an interesting pattern using fill outside of the beginShape\(\) function that impacts the entire shape.
 
