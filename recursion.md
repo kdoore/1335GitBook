@@ -7,9 +7,31 @@ Recursion is a type of repetition. Recursion occurs when a thing is defined in t
 Recursive programs refer to programs that contain at least 1 recursive function.  **A recursive function is a function that has a function call to itself within the function definition. **
 
 ###Simple Example  - Nested Rectangles
+The code below would create a set of nested rectangles, the largest is drawn first, the value of length is reduced, then a smaller rectangle is drawn...this is repeated 5 times.
 
 ```java
+int length = 200;
+rect( 0, 0, length, length);
+length = length - 20;
+rect( 0, 0, length, length);
+length = length - 20;
+rect( 0, 0, length, length);
+length = length - 20;
+rect( 0, 0, length, length);
+length = length - 20;
+rect( 0, 0, length, length);
 
+```
+
+A smart programmer would cringe when writing such repetitive code, knowing that loops can provide a cleaner method to implement repetitive code:
+
+```java
+int count=5; 
+float length = 200;
+for( int i = count; i < 0 ; i++){ //loop control structure
+    rect( 0, 0, length, length);
+    length = length - 20;
+}
 
 ```
 
