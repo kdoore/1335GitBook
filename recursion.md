@@ -6,6 +6,26 @@ Recursion is a type of repetition. Recursion occurs when a thing is defined in t
 ###Recursion in Programming
 Recursive programs refer to programs that contain at least 1 recursive function.  **A recursive function is a function that has a function call to itself within the function definition. **
 
+###Simple Example  - Nested Rectangles
+
+```java
+
+
+```
+
+In the code below, the function: ``recursiveNestedRectangles( int length, int count);``, draws a series of nested rectangles, starting with the largest rectangle, stopping when the count variable is less than 0;
+
+```java
+void recursiveNestedRectangles( int length, int count ){
+    if(count < 0){
+     return;   //termination or end condition
+    }
+    rect( 0, 0, length, length);
+    recursiveNestedRectangles( length-20, count -1 );
+}
+
+```
+
  
 ###Recursive Drawing
 [Toby Schachman](http://tobyschachman.com/) created an interactive application that provides a visual interface for playing with recursion via 2D shape primitives. It's surprising how quickly the designs become disorienting, illustrating the power of recursion.   
@@ -15,12 +35,10 @@ Recursive programs refer to programs that contain at least 1 recursive function.
 ###Recursive Patterns
 When we look in nature, we see frequently see recursive patterning - we see a relationship between several objects - and we understand that these objects have a more complex relationship than simple repetition.  Often in recursive patterns, we can observe that some feature has been scaled larger or smaller, where a self-similarity forms patterns across a series of objects. Recursive patterns often include parent-child relationships between objects.
 
-
-![](https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/Floral_matryoshka_set_2_smallest_doll_nested.JPG/320px-Floral_matryoshka_set_2_smallest_doll_nested.JPG) 
-
 **Russian Nesting Dolls**
 The classic Russian nesting dolls provides a nice example of a set of physical objects that have a recursive relationship.  Each doll is positioned within it's parent object, and it's been scaled down to fit snuggly within.  
 
+![](https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/Floral_matryoshka_set_2_smallest_doll_nested.JPG/320px-Floral_matryoshka_set_2_smallest_doll_nested.JPG) 
 
 
 ###Factorial:  N!
