@@ -6,7 +6,6 @@ Recursion is a type of repetition. Recursion occurs when a thing is defined in t
 ###Recursion in Programming
 Recursive programs refer to programs that contain at least 1 recursive function.  **A recursive function is a function that has a function call to itself within the function definition. **
 
-
  
 ###Recursive Drawing
 [Toby Schachman](http://tobyschachman.com/) created an interactive application that provides a visual interface for playing with recursion via 2D shape primitives. It's surprising how quickly the designs become disorienting, illustrating the power of recursion.   
