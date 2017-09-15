@@ -46,6 +46,13 @@ drawRectangle( 100,200 );
 drawRectangle( 200, 300);
 
 ```
+###Processing P2D - Vertex Shading
+
+```java
+void setup(){
+    size( 500, 600, P2D);
+}
+```
 
 If we use the processing P2D rendering context, we can set a different fill value and stroke value for each vertex, this allows us to create visual depth in the pattern. When incorporated into a simple recursive function this can create interesting complex images.  
 P2D might not work on some computers, if not, then just use regular: size\(600,600\);.  You will need to create an interesting pattern using fill outside of the beginShape\(\) function that impacts the entire shape.
@@ -59,7 +66,7 @@ void recursivePattern( float length, float level){
    return;    //stop function execution by returning from the function
    }
    vertexPattern( length);
-   recursivePattern( length * .8, level -1  );  
+   recursivePattern( length - 20, level -1  );  
 }
 
 
