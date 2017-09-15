@@ -9,7 +9,7 @@ For our recursive pattern project, it will be important to create a simple patte
  
    You can see from the image below that if we design our pattern based on points on a square, this becomes straightforward.  For each recursive call, we want to make the length smaller, but keep the center-point location fixed.  Each time we draw the shape, if we use a different value for the length parameter, the shape will be scaled according to that length dimension parameter. 
 
-Defining the shape based on a variable length means that if length 100, it should create a pattern that is 10 times larger than if we'd set length = 10.  
+Defining the shape based on a variable length means that if length=100, it should create a pattern that is 10 times larger than if we'd set length = 10.  
 
 ![](vertexShape.png)
 
@@ -25,7 +25,7 @@ v3:  centerX - len/2, centerY
 v4:  centerX        , centerY - len/2
 ```
 
-Finally, to simplify further, we can consider that if we translate the origin to the position where we want to draw the pattern, we can consider centerX, centerY as the point \(0,0\).
+Finally, to simplify further, we can consider that if we translate the origin to the position where we want to draw the pattern, we can consider centerX, centerY as the origin point \(0,0\).
 
 ```
   PShape s = createShape();
