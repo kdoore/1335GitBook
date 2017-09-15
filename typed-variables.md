@@ -97,7 +97,8 @@ int num3 = val1;    // error cannot convert from a float to an int
 
 Processing provides type conversion functions to allow conversion between `int` and `float` variable types. There are 2 different but equivalent syntax conventions for type conversion displayed in the example code below:
 
-```
+```java
+
 float val1 = 5.2;  
 
 int num1 = int( val1 );  // 5   With this syntax, int( ) works like a function to convert a float value to an integer.  The value is truncated.
