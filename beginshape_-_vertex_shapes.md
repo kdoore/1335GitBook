@@ -65,7 +65,7 @@ void recursivePattern( float length, float level){
    if(level <1 ) { //termination condition
    return;    //stop function execution by returning from the function
    }
-   vertexPattern( length);
+   vertexPattern( length); //draws 1 instance of the pattern, size: length
    recursivePattern( length - 20, level -1  );  
 }
 
