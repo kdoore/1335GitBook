@@ -103,6 +103,13 @@ float val1 = 5.2;
 int num1 = int( val1 );  // 5   With this syntax, int( ) works like a function to convert a float value to an integer.  The value is truncated.
 
 int num2 = ( int )val1;   //5   This syntax also works to convert a float to an  int, and results in truncation of the number.
+
+int num3 = int( 3.0) + val1; //ERROR, val1 wasn't converted to an int
+
+//Safe approach, use parenthesis around full expression
+int num3 = int ( 3.0 + val1 ); //this converts the sum to 
+
+
 ```
 
 ### Modulus Operator
