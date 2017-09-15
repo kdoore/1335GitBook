@@ -1,6 +1,6 @@
 # Vertex Shapes - Recursive Pattern
 
-The image below shows how we can create a simple polygon using the [Processing beginShape\( \), endShape\( \)](https://processing.org/reference/beginShape_.html) functions.
+The image below shows how we can create a simple polygon using the [Processing PShape, createShape( ), beginShape\( \), endShape\( \)](https://processing.org/reference/beginShape_.html) functions.
 
 For our recursive pattern project, it will be important to create a simple pattern that can be defined by a central point \(vertex\) and one length value.  You can see from the image below that if we design our pattern based on points on a square, this becomes straightforward.  For each recursive call, we want to make the length smaller, but keep the center point somewhat fixed.  Each time we draw the shape, if we use a different value for the length parameter, the shape will be scaled according to that length dimension parameter. 
 
