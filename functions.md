@@ -16,10 +16,11 @@ When writing a code for function, the following components define the syntax of 
         return returnValue; //optional if void return type
     }
     
+    //function with no return value
     void functionName( int arg1, int arg2){ // int and float input parameters 
     // body code of a function
     return; //optional if void return type
-}
+    }
     
     ```
 
