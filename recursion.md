@@ -1,18 +1,12 @@
 # Recursion
 
-The artwork below, created by M.C.Escher, can be considered to contain recursive patterns which have been further analyzed in the following linked research papers. Researchers have been able to design programs based on recursive functions to create computer generated versions of Escher's amazing artwork.  The white blur in the center of the first image has been analyzed by researchers who have determined that further iterations of the artwork's pattern can be integrated into the existing artwork by use of recursive functions which draw spirals of smaller versions to continue the larger existing pattern. 
+Recursion is a type of repetition. Recursion occurs when a thing is defined in terms of itself or of its type.    [Wikipedia](https://en.wikipedia.org/wiki/Recursion)
 
-###Escher:  Print Gallery From Wikipedia
 
-![](https://upload.wikimedia.org/wikipedia/en/0/02/Print_Gallery_by_M._C._Escher.jpg)
+###Recursion in Programming
+Recursive programs refer to programs that contain at least 1 recursive function.  **A recursive function is a function that has a function call to itself within the function definition. **
 
- Article Link: [The Mathematical Structure of Escher’s Print Gallery, B. de Smit and H. W. Lenstra Jr](http://www.ams.org/notices/200304/fea-escher.pdf) 
- 		 
-###Escher: Circle Limit III from Wikipedia	
- 		 
- ![](https://upload.wikimedia.org/wikipedia/en/5/55/Escher_Circle_Limit_III.jpg)		 
- 		 
- Article Link:  [How to Create Repeating Hyperbolic Patterns Douglas Dunham](https://www.d.umn.edu/~ddunham/eccad09.pdf)
+
  
 ###Recursive Drawing
 [Toby Schachman](http://tobyschachman.com/) created an interactive application that provides a visual interface for playing with recursion via 2D shape primitives. It's surprising how quickly the designs become disorienting, illustrating the power of recursion.   
@@ -28,8 +22,7 @@ When we look in nature, we see frequently see recursive patterning - we see a re
 **Russian Nesting Dolls**
 The classic Russian nesting dolls provides a nice example of a set of physical objects that have a recursive relationship.  Each doll is positioned within it's parent object, and it's been scaled down to fit snuggly within.  
 
-###Recursion in Programming
-Recursive programs refer to programs that contain at least 1 recursive function.  **A recursive function is a function that has a function call to itself within the function definition. **
+
 
 ###Factorial:  N!
 Factorial is a mathematical formula that is used when determining probabilities. One example of the use of factorials can be observed when looking at a distinct set of `n` objects, the objects can be arranged in `n!` different configurations, so there are `n permutations` of arrangements for n distinct objects.    Factorials provide a nice example of a mathematical calculation that can be easily understood, and which can be written using a recursive function, factorial can also be calculated using standard for-loops.  In section 13.6 of Shiffman's book, he provides examples of both types of functions to calculate Factorial values, a recursive version of the factorial program code is included below.  
