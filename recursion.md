@@ -46,6 +46,9 @@ void recursiveNestedRectangles( int length, int count ){
     recursiveNestedRectangles( length-20, count -1 );
 }
 
+
+recursiveNestedRectangles( 200, 5); //call the function
+
 ```
 
  
