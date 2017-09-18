@@ -22,6 +22,7 @@ The syntax to create an array of PShape objects is:
        myShapes = new PShape[ rows * cols ]; //Initialize Array
      
     }
+    
 ```
   
     
@@ -31,6 +32,7 @@ The syntax to create an array of PShape objects is:
     
     
     ```java
+    
     int numShapes = myShapes.length; //use length property of array.
     for( int i=0; i< numShapes; i++){
     PShape tempShape = createShape(ELLIPSE, 0,0,cellSize-10,cellSize-5);
@@ -44,6 +46,7 @@ Let's put this logic into a function:
 Since arrays are objects, when we pass an object into a function we are actually passing the address of the object into the function, so anything done to elements of an array within a function are persisted to the object itself.  This is a good thing for us.
 
 ```java
+
 //function to put a PShape object in each array element 
 //shapes: PShape array
 //size: dimensions for each PShape design
@@ -57,6 +60,7 @@ void populateShapeList( PShape[ ] shapes, int size){
     } //end for-loop
 } //end function
 
+
 ```
 
 ###Display our shapes
@@ -68,6 +72,7 @@ A set of for-loops will allow us to ``iterate`` through the array to select each
 
 
  ```java
+ 
  
 void displayShapes( PShape shapes){
   float xPos=0;  //s coordinate to draw each shape
