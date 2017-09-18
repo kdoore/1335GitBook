@@ -59,7 +59,6 @@ void populateShapeList( PShape[ ] shapes, int size){
 
 ```
 
-
 ###Display our shapes
 In the code above, we've just stored a bunch of PShape objects, but we haven't drawn anything to the canvas using the shape( s, x, y) function for pshapes.  
 
@@ -71,10 +70,10 @@ A set of for-loops will allow us to ``iterate`` through the array to select each
  ```java
  
 void displayShapes( PShape shapes){
+  float xPos=0;  //s coordinate to draw each shape
 
-  float xPos=0;
-  float yPos = 0;
-  int curIndex = 0;
+  float yPos = 0;  //y coordinate to draw each shape
+  int curIndex = 0;  //keep track of current item to draw
   float size = width / rows;  //each grid's size
 
   for( int i= 0; i< rows; i++){ //each row
