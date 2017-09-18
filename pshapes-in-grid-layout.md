@@ -38,7 +38,9 @@ The syntax for an array of PShape objects is:
      
     }
     
-```
+    
+  ```
+  
   
     
  ###Initialize the PShape Array Elements
@@ -46,7 +48,7 @@ The syntax for an array of PShape objects is:
  After we initialize the array object, then we need to set each array element so that it contains some valid value.  We'll almost always use a for-loop to modify and access each array element.
     
     
-    ```java
+```java
     
     int numShapes = myShapes.length; //use length property of array.
     for( int i=0; i< numShapes; i++){
@@ -60,7 +62,9 @@ The syntax for an array of PShape objects is:
 Let's put this logic into a function:
 Since arrays are objects, when we pass an object into a function we are actually passing the address of the object into the function, so anything done to elements of an array within a function are persisted to the object itself.  This is a good thing for us.
 
-```java
+
+  ```java
+
 
 //function to put a PShape object in each array element 
 //shapes: PShape array
@@ -76,7 +80,7 @@ void populateShapeList( PShape[ ] shapes, int size){
 } //end function
 
 
-```
+  ```
 
 ###Display our shapes
 In the code above, we've just stored a bunch of PShape objects, but we haven't drawn anything to the canvas using the shape( s, x, y) function for pshapes.  
@@ -86,7 +90,7 @@ A set of for-loops will allow us to ``iterate`` through the array to select each
 ###Rows: i,  Columns:  j
 
 
- ```java
+   ```java
  
  
 void displayShapes( PShape shapes){
@@ -109,7 +113,7 @@ void displayShapes( PShape shapes){
  }// end function
 
 
-```
+  ```
 
 
 
