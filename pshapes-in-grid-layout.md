@@ -10,15 +10,16 @@ The syntax to create an array of PShape objects is:
     
 
 ```java
- 
-    PShape[ ] myShapes;
-    int rows = 10;
-    int cols = 10;
-    
+  
     void setup(){
        size( 400,400);
+       
+       PShape[ ] myShapes; //Declare Array
+       int rows = 10;
+       int cols = 10;
        //we need rows * cols shapes to fill the grid
-       myShapes = new PShape[ rows * cols ];
+       int size = width / cols; 
+       myShapes = new PShape[ rows * cols ]; //Initialize Array
      
     }
 ```
@@ -43,14 +44,18 @@ Let's put this logic into a function:
 Since arrays are objects, when we pass an object into a function we are actually passing the address of the object into the function, so anything done to elements of an array within a function are persisted to the object itself.  This is a good thing for us.
 
 ```java
+//function to put a PShape object in each array element 
+//shapes: PShape array
+//size: dimensions for each PShape design
 
-void populateShapeList( PShape[ ] shapes){
+void populateShapeList( PShape[ ] shapes, int size){
     int numShapes = shapes.length; //use length property of array.
    for( int i=0; i< numShapes; i++){
-        _shapes[ i ] = createShape(ELLIPSE,    0,0,cellSize-10,cellSize-5);
+        PShape tempShape = createShape(ELLIPSE,    0,0,size,size);
 
-   }
-}
+        _shapes[ i ] = tempShape 
+    } //end for-loop
+} //end function
 
 ```
 
