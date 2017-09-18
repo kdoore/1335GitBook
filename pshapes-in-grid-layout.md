@@ -4,10 +4,24 @@ The first approach for creating grid designs will use an ``Array`` of PShape Obj
 
 ###Declare and Initialize an Array of PShape Objects
 
-The syntax to create an array of PShape objects is: 
-    1. Declare the array:  ``PShape[ ] myShapes``;
-    2. In setup:  initialize the array by specifying the number of elements.
+The syntax for an array of PShape objects is: 
     
+   1. Declare the array:  
+   
+   `PShape[ ] myShapes;`
+     
+   2. Initialize the array by specifying the number of elements. 
+   
+   ` myShapes = new PShape[ 10 ];`
+   
+   3. Initialize each element in the array
+   
+  ` myShapes[ 0 ] = createShape( RECT, 0,0,30,30); `
+ 
+   4. remember array index values range from( 0 to length-1)  `myShapes[ 1]` is the second element in the array.
+    
+
+###Array - Declare and Initialize Code
 
 ```java
   
