@@ -17,6 +17,7 @@
 * [Computational Design](computational_design.md)
 * [Artist: Victor Vasarely](vasarely.md)
 * [Grid Pattern Design](arrays-for-grid-patterns.md)
+* [PShapes in Grid Layout](pshapes-in-grid-layout.md)
 * [Drawing Application](drawing_application.md)
 * [Creative Brushes](creative_brushes.md)
 * [Button States](button_states.md)
