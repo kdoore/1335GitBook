@@ -83,7 +83,7 @@ void displayShapes( PShape shapes){
        xPos+= size; //move to next column
      }  //end j-loop
   xPos=0; //restart at col 0
-  yPos += size; //move down a row 
+  yPos += size; //move yPositions down a row 
   } //end i=loop 
  
  }// end function
