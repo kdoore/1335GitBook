@@ -68,10 +68,7 @@ A set of for-loops will allow us to ``iterate`` through the array to select each
 ###Rows: i,  Columns:  j
 
 
-
-
-```java
-
+ ```java
 
 float xPos=0;
 float yPos = 0;
