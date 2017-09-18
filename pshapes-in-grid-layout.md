@@ -65,17 +65,18 @@ float xPos=0;
 float yPos = 0;
 int curIndex = 0;
 float size = width / rows;  //each grid's size
+
 for( int i= 0; i< rows; i++){ //each row
     for( int j=0; j< cols; j++){
-//draw custom shape
-   shape(shapes[curIndex], xPos,yPos);//drawShape
-   curIndex++;
+
+    shape(shapes[curIndex], xPos,yPos);
+    curIndex++;
     xPos+= size; //move to next column
      }
-xPos=0; //restart at col 0
-yPos += size; //move down a row
-}
-}
+  xPos=0; //restart at col 0
+  yPos += size; //move down a row
+  }
+ }
 
 ```
 
