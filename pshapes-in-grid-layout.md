@@ -39,8 +39,17 @@ The syntax to create an array of PShape objects is:
 ###Pass Array into Functions
 Let's put this logic into a function:
 
+
 ```java
 
+void populateShapeList( PShape[ ] shapes){
+    int numShapes = shapes.length; //use length property of array.
+   for( int i=0; i< numShapes; i++){
+        _shapes[ i ] = createShape(ELLIPSE,    0,0,cellSize-10,cellSize-5);
 
+   }
+}
 ```
+
+
 
