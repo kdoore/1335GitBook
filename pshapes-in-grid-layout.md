@@ -14,8 +14,6 @@ The syntax for an array of PShape objects is:
 ** 4. Remember: **array index values range from( 0 to length-1)  
  `myShapes[ 1]` is the second element in the array.
     
-
-
 ###Array - Declare and Initialize - Example Code
 
 ```java
