@@ -8,8 +8,11 @@ The syntax to create an array of PShape objects is:
     1. Declare the array:  ``PShape[ ] myShapes``;
     2. In setup:  initialize the array by specifying the number of elements.
     
-    ```java
-    
+   
+   
+
+```java
+ 
     PShape[ ] myShapes;
     int rows = 10;
     int cols = 10;
@@ -20,8 +23,11 @@ The syntax to create an array of PShape objects is:
        myShapes = new PShape[ rows * cols ];
      
     }
+```
+
+
     
-    ```
+    
     
  ###Initialize the PShape Array Elements
   
