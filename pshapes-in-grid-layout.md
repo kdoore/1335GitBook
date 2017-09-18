@@ -9,6 +9,7 @@ The syntax to create an array of PShape objects is:
     2. In setup:  initialize the array by specifying the number of elements.
     
     ```java
+    
     PShape[ ] myShapes;
     int rows = 10;
     int cols = 10;
@@ -51,6 +52,8 @@ void populateShapeList( PShape[ ] shapes){
 }
 
 ```
+
+
 ###Display our shapes
 In the code above, we've just stored a bunch of PShape objects, but we haven't drawn anything to the canvas using the shape( s, x, y) function for pshapes.  
 
@@ -59,7 +62,10 @@ A set of for-loops will allow us to ``iterate`` through the array to select each
 ###Rows: i,  Columns:  j
 
 
+
+
 ```java
+
 
 float xPos=0;
 float yPos = 0;
@@ -79,5 +85,7 @@ for( int i= 0; i< rows; i++){ //each row
  }
 
 ```
+
+
 
 
