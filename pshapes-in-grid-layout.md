@@ -22,4 +22,5 @@ The syntax to create an array of PShape objects is:
     
     ```
     
+    ###Initialize the PShape Array Elements
     
