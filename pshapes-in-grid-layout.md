@@ -22,5 +22,15 @@ The syntax to create an array of PShape objects is:
     
     ```
     
-    ###Initialize the PShape Array Elements
+ ###Initialize the PShape Array Elements
+  
+ After we initialize the array object, then we need to set each array element so that it contains some valid value.  
+    ```java
+    for( int i=0; i< numShapes; i++){
     
+         PShape tempShape = createShape(ELLIPSE, 0,0,cellSize-10,cellSize-5);
+         _shapes[ i ] = tempShape;  
+        }
+ 
+```    
+
