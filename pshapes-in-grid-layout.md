@@ -2,7 +2,7 @@
 
 The first approach for creating grid designs will use an array of PShape Objects and nested for-loops to control x,y positioning of each PShape object.
 
-###Array of PShape Objects
+###Declare and Initialize an Array of PShape Objects
 
 The syntax to create an array of PShape objects is: 
     1. Declare the array:  ``PShape[ ] myShapes``;
@@ -21,4 +21,5 @@ The syntax to create an array of PShape objects is:
     }
     
     ```
+    
     
