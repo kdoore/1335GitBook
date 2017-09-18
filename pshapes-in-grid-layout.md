@@ -78,7 +78,7 @@ void displayShapes( PShape shapes){
 
   for( int i= 0; i< rows; i++){ //each row
     for( int j=0; j< cols; j++){
-       shape(shapes[curIndex], xPos,yPos);
+       shape(shapes[curIndex], xPos,yPos);  //display Shape at xPos, yPos
        curIndex++;
        xPos+= size; //move to next column
      }  //end j-loop
