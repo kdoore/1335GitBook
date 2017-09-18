@@ -72,12 +72,12 @@ A set of for-loops will allow us to ``iterate`` through the array to select each
  
 void displayShapes( PShape shapes){
 
-float xPos=0;
-float yPos = 0;
-int curIndex = 0;
-float size = width / rows;  //each grid's size
+  float xPos=0;
+  float yPos = 0;
+  int curIndex = 0;
+  float size = width / rows;  //each grid's size
 
-for( int i= 0; i< rows; i++){ //each row
+  for( int i= 0; i< rows; i++){ //each row
     for( int j=0; j< cols; j++){
        shape(shapes[curIndex], xPos,yPos);
        curIndex++;
@@ -85,9 +85,10 @@ for( int i= 0; i< rows; i++){ //each row
      }  //end j-loop
   xPos=0; //restart at col 0
   yPos += size; //move down a row 
- } //end i=loop 
+  } //end i=loop 
  
  }// end function
+
 
 ```
 
