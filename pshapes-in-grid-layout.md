@@ -1,6 +1,6 @@
 #PShape Objects in a Grid Layout
 
-The first approach for creating grid designs will use an array of PShape Objects and nested for-loops to control x,y positioning of each PShape object.
+The first approach for creating grid designs will use an ``Array`` of PShape Objects and nested ``for-loops`` to control x,y positioning of each PShape object.
 
 ###Declare and Initialize an Array of PShape Objects
 
@@ -24,13 +24,23 @@ The syntax to create an array of PShape objects is:
     
  ###Initialize the PShape Array Elements
   
- After we initialize the array object, then we need to set each array element so that it contains some valid value.  
-    ```java
-    for( int i=0; i< numShapes; i++){
+ After we initialize the array object, then we need to set each array element so that it contains some valid value.  We'll almost always use a for-loop to modify and access each array element.
     
-         PShape tempShape = createShape(ELLIPSE, 0,0,cellSize-10,cellSize-5);
+    
+    ```java
+    int numShapes = myShapes.length; //use length property of array.
+    for( int i=0; i< numShapes; i++){
+    PShape tempShape = createShape(ELLIPSE, 0,0,cellSize-10,cellSize-5);
          _shapes[ i ] = tempShape;  
         }
  
 ```    
+
+###Pass Array into Functions
+Let's put this logic into a function:
+
+```java
+
+
+```
 
