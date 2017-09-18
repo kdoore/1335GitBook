@@ -8,8 +8,6 @@ The syntax to create an array of PShape objects is:
     1. Declare the array:  ``PShape[ ] myShapes``;
     2. In setup:  initialize the array by specifying the number of elements.
     
-   
-   
 
 ```java
  
@@ -24,10 +22,7 @@ The syntax to create an array of PShape objects is:
      
     }
 ```
-
-
-    
-    
+  
     
  ###Initialize the PShape Array Elements
   
@@ -45,7 +40,7 @@ The syntax to create an array of PShape objects is:
 
 ###Pass Array into Functions
 Let's put this logic into a function:
-
+Since arrays are objects, when we pass an object into a function we are actually passing the address of the object into the function, so anything done to elements of an array within a function are persisted to the object itself.  This is a good thing for us.
 
 ```java
 
