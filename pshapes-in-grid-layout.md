@@ -16,7 +16,7 @@ The syntax for an array of PShape objects is:
     
 
 
-###Array - Declare and Initialize Code 
+###Array - Declare and Initialize - Example Code
 
 ```java
   
