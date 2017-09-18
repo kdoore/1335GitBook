@@ -22,10 +22,9 @@ The syntax for an array of PShape objects is:
     `myShapes[ 1] //is the second element in the array.`
     
     
-    
 ###Array - Declare and Initialize - Example Code
 
-```java
+  ```java
   
     void setup(){
        size( 400,400);
