@@ -7,7 +7,7 @@ The first approach for creating grid designs will use an ``Array`` of PShape Obj
 The syntax for an array of PShape objects is: 
   1. **Declare the array: ** 
   
- ` PShape[ ] myShapes;`
+   ` PShape[ ] myShapes;`
  
   2. ** Initialize the array** by specifying the number of elements. 
   
