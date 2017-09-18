@@ -51,7 +51,32 @@ void populateShapeList( PShape[ ] shapes){
 }
 
 ```
+###Display our shapes
+In the code above, we've just stored a bunch of PShape objects, but we haven't drawn anything to the canvas using the shape( s, x, y) function for pshapes.  
+
+A set of for-loops will allow us to ``iterate`` through the array to select each PShape object and set it's xy position for display.
+
+###Rows: i,  Columns:  j
 
 
+```java
+
+float xPos=0;
+float yPos = 0;
+int curIndex = 0;
+float size = width / rows;  //each grid's size
+for( int i= 0; i< rows; i++){ //each row
+    for( int j=0; j< cols; j++){
+//draw custom shape
+   shape(shapes[curIndex], xPos,yPos);//drawShape
+   curIndex++;
+    xPos+= size; //move to next column
+     }
+xPos=0; //restart at col 0
+yPos += size; //move down a row
+}
+}
+
+```
 
 
