@@ -11,11 +11,11 @@ The syntax for an array of PShape objects is:
  
   2. ** Initialize the array** by specifying the number of elements. 
   
-    myShapes = new PShape[ 10 ];
+    `myShapes = new PShape[ 10 ];`
     
   3. ** Initialize each element in the array**
   
-    myShapes[ 0 ] = createShape( RECT, 0,0,30,30);
+    `myShapes[ 0 ] = createShape( RECT, 0,0,30,30);`
     
   4. ** Remember: ** array index values range from( 0 to length-1)  
   
