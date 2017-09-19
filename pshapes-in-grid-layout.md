@@ -40,8 +40,6 @@ The syntax for an array of PShape objects is:
     
     
   ```
-  
-  
     
  ###Initialize the PShape Array Elements
   
