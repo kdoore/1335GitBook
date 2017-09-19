@@ -111,7 +111,9 @@ Inside this loop, we have both index values available [ i ][ j ]
    doSomething( arrayElement[ i ][ j ] );
 
 ###Rows: i,  Columns:  j
+The code below shows nested for-loops to change xPos and yPos in a grid pattern, each time the inner loop code is executed, a single shape is displayed:  
 
+`shape( shapes[ shapeListIndex ], xPos, yPos);`
 
    ```java
  
@@ -120,12 +122,12 @@ void displayShapes( PShape shapes){
   float xPos=0;  //s coordinate to draw each shape
 
   float yPos = 0;  //y coordinate to draw each shape
-  int curIndex = 0;  //keep track of current item to draw
+  int shapeListIndex = 0;  //keep track of current item to draw
   float cellSize = width / rows;  //each grid's size
 
   for( int i= 0; i< rows; i++){ //each row
     for( int j=0; j< cols; j++){
-       shape(shapes[curIndex], xPos,yPos);  //display Shape at xPos, yPos
+       shape(shapes[shapeListIndex], xPos,yPos);  //display Shape at xPos, yPos
        curIndex++;
        xPos += cellSize; //move to next column
      }  //end j-loop
