@@ -69,15 +69,27 @@ Since arrays are objects, when we pass an object into a function we are actually
 //shapes: PShape array
 //size: dimensions for each PShape design
 
+//Takes PShape array, populates each element with a PShape object
+//size is a size parameter for the created PShape
 void populateShapeList( PShape[ ] shapes, int size){
     int numShapes = shapes.length; //use length property of array.
    for( int i=0; i< numShapes; i++){
-        PShape tempShape = createShape(ELLIPSE,    0,0,size,size);
-
+        PShape tempShape = vertexPattern1( length, hue);
         _shapes[ i ] = tempShape 
     } //end for-loop
 } //end function
 
+//function to create, and return a single vertex pattern 
+PShape vertexPattern1( float length, int hue){
+   PShape s = createShape();
+   s.beginShape();
+   s.fill( hue, 255, 255);
+   s.vertex( 0,0);
+   s.vertex( length, 0);
+   s.vertex( length, length);
+   s.endShape(CLOSE);
+   return s;
+}
 
   ```
 
@@ -85,6 +97,14 @@ void populateShapeList( PShape[ ] shapes, int size){
 In the code above, we've just stored a bunch of PShape objects, but we haven't drawn anything to the canvas using the shape( s, x, y) function for pshapes.  
 
 A set of for-loops will allow us to ``iterate`` through the array to select each PShape object and set it's xy position for display.
+
+We'll create nested for-loops:  
+
+the outer for-loop controls which row is being created
+
+the inner loop creates determines which column, so inside this loop, we have both index values available
+
+doSomething(  arrayElement[i][j] );
 
 ###Rows: i,  Columns:  j
 
