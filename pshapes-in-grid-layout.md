@@ -43,16 +43,17 @@ The syntax for an array of PShape objects is:
     
  ###Initialize the PShape Array Elements
   
- After we initialize the array object, then we need to set each array element so that it contains some valid value.  We'll almost always use a for-loop to modify and access each array element.
+ After we initialize the array object, then we need to set each array element so that it contains some valid value.  We'll almost always use a for-loop to modify and access each array element.  The code below assumes that we've got 
     
     
 ```java
     
     int numShapes = myShapes.length; //use length property of array.
     for( int i=0; i< numShapes; i++){
-    PShape tempShape = createShape(ELLIPSE, 0,0,cellSize-10,cellSize-5);
-         _shapes[ i ] = tempShape;  
+      shapes[i]= createShape( RECT, 0,0,100,100);
         }
+        
+   PShape      
  
 ```    
 
