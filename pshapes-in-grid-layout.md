@@ -102,13 +102,13 @@ A set of for-loops will allow us to ``iterate`` through the array to select each
 
 We'll create nested for-loops:  
 
-the outer for-loop controls which row is being created [i]
+the outer for-loop controls which row is being created [ i ]
 
-the inner loop creates determines which column [j] 
+the inner loop creates determines which column [ j ] 
 
-Inside this loop, we have both index values available [i][j]
+Inside this loop, we have both index values available [ i ][ j ]
 
-   doSomething( arrayElement[i][j] );
+   doSomething( arrayElement[ i ][ j ] );
 
 ###Rows: i,  Columns:  j
 
