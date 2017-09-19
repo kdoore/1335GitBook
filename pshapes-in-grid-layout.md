@@ -98,16 +98,16 @@ void displayShapes( PShape shapes){
 
   float yPos = 0;  //y coordinate to draw each shape
   int curIndex = 0;  //keep track of current item to draw
-  float size = width / rows;  //each grid's size
+  float cellSize = width / rows;  //each grid's size
 
   for( int i= 0; i< rows; i++){ //each row
     for( int j=0; j< cols; j++){
        shape(shapes[curIndex], xPos,yPos);  //display Shape at xPos, yPos
        curIndex++;
-       xPos+= size; //move to next column
+       xPos += cellSize; //move to next column
      }  //end j-loop
   xPos=0; //restart at col 0
-  yPos += size; //move yPositions down a row 
+  yPos += cellSize; //move yPositions down a row 
   } //end i=loop 
  
  }// end function
