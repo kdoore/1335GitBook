@@ -94,7 +94,9 @@ PShape vertexPattern1( float length, int hue){
   ```
 
 ###Display our shapes
-In the code above, we've just stored a bunch of PShape objects, but we haven't drawn anything to the canvas using the shape( s, x, y) function for pshapes.  
+In the code above, we've just stored a bunch of PShape objects, but we haven't drawn anything to the canvas using the shape( s, x, y) function for pshapes.
+
+###Grid - Nested for-loops    
 
 A set of for-loops will allow us to ``iterate`` through the array to select each PShape object and set it's xy position for display.
 
