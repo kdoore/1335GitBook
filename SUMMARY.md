@@ -47,4 +47,5 @@
 * [Resources](resources.md)
 * [Projects ](projects_fall_16.md)
 * [Reading Assignments](reading-assignments.md)
+* Grid Region Logic
 

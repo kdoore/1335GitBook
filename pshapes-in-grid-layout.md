@@ -27,7 +27,7 @@ The syntax for an array of PShape objects is:
   ```java
   
     void setup(){
-       size( 400,400);
+       size( 400,400, P2D);  //if you can use P2D otherwise size( 400,400);
        
        PShape[ ] myShapes; //Declare Array
        int rows = 10;
