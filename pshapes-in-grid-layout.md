@@ -128,7 +128,7 @@ void displayShapes( PShape shapes){
   for( int i= 0; i< rows; i++){ //each row
     for( int j=0; j< cols; j++){
        shape(shapes[shapeListIndex], xPos,yPos);  //display Shape at xPos, yPos
-       curIndex++;
+       curIndex++;  //move to the next shape in the array
        xPos += cellSize; //move to next column
      }  //end j-loop
   xPos=0; //restart at col 0
