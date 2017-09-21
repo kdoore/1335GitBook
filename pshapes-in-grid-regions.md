@@ -35,5 +35,14 @@ void drawGrid(int rows, int cols, int size ){
   }
  }
  
+ void drawLines( int xPos,int yPos, int i, int j, int size){
+   line( xPos, yPos, xPos+size, yPos); //horizontal lines
+      line( xPos, yPos, xPos, yPos+size);
+      textSize(14);
+      textAlign(CENTER);
+      fill(0);
+      text( "( " + i  +", " + j + " )", xPos+(size/2) , yPos + (size/2));
+}
+ 
  ```
  
