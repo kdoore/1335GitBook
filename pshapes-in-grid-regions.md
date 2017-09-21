@@ -29,11 +29,11 @@ void drawGrid(int rows, int cols, int size ){
       }
       drawLines( xPos, yPos, i, j, size);
       xPos += size;
-    }
+    } //end inner for-loop: j
     xPos=0;
     yPos += size;
-  }
- }
+  } //end outer for-loop: i
+ } //end drawGrid
  
  //function to draw cell boundries and i,j values
  void drawLines( int xPos,int yPos, int i, int j, int size){
