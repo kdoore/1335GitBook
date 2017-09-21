@@ -113,17 +113,20 @@ Inside this loop, we have both index values available [ i ][ j ]
 ###Rows: i,  Columns:  j
 The code below shows nested for-loops to change xPos and yPos in a grid pattern, each time the inner loop code is executed, a single shape is displayed:  
 
+**Display a single PShape from our shapes array:**
+
 `shape( shapes[ shapeListIndex ], xPos, yPos);`
+
+###Code to display 
 
    ```java
  
  
-void displayShapes( PShape shapes){
+void displayShapes( PShape shapes, float cellSize,  int rows, int cols){
+//variables to increment position and shapes in for-loop
   float xPos=0;  //s coordinate to draw each shape
-
   float yPos = 0;  //y coordinate to draw each shape
   int shapeListIndex = 0;  //keep track of current item to draw
-  float cellSize = width / rows;  //each grid's size
 
   for( int i= 0; i< rows; i++){ //each row
     for( int j=0; j< cols; j++){
