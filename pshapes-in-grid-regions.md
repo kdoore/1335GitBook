@@ -9,7 +9,31 @@ As we look to increase the complexity of our design, one approach would be to ad
 
 The image below shows a grid, with the (i,j) indexes for drawn in each cell.  The yellow section represents a region that we'd like to add items to.
 
-We can define this region as having index values: `i < 3  && j < 3 `
+We can define this region as having index values: `( i < 3  && j < 3 ) `
 
 ![](/assets/Screenshot 2017-09-21 14.00.02.png)
 
+We could use logic like this to define what shapes are drawn within a region:
+
+```java
+
+void drawGrid(int rows, int cols, int size ){
+   int xPos = 0;
+   int yPos =0;
+  for(int i=0;i< rows; i++){
+    for( int j=0; j< cols; j++){
+      if( i < rows/2 && j< cols/2){  //logic for region 1
+         fill(40,255,255);
+          rect( xPos, yPos, size, size);
+        drawLines( xPos, yPos, i, j, size);
+      }
+      drawLines( xPos, yPos, i, j, size);
+      xPos += size;
+    }
+    xPos=0;
+    yPos += size;
+  }
+ }
+ 
+ ```
+ 
