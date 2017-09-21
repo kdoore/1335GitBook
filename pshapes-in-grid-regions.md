@@ -23,9 +23,9 @@ void drawGrid(int rows, int cols, int size ){
   for(int i=0;i< rows; i++){
     for( int j=0; j< cols; j++){
       if( i < rows/2 && j< cols/2){  //logic for region1
-         fill(40,255,255); //yellow
+          fill(40,255,255); //yellow
           rect( xPos, yPos, size, size); //draw a yellow square for each cell in this region
-        drawLines( xPos, yPos, i, j, size);
+          drawLines( xPos, yPos, i, j, size);
       }
       drawLines( xPos, yPos, i, j, size);
       xPos += size;
