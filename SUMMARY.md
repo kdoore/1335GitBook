@@ -18,8 +18,9 @@
 * [Artist: Victor Vasarely](vasarely.md)
 * [Grid Pattern Design](arrays-for-grid-patterns.md)
 * [PShapes in Grid Layout](pshapes-in-grid-layout.md)
-* [Pattern Preview - Transforms: Translate & Scale](pattern-preview-transforms-translate-and-scale.md)
 * [-&gt; PShapes in Grid Regions](pshapes-in-grid-regions.md)
+* [Grid Region Logic](grid-region-logic.md)
+* [Pattern Preview - Transforms: Translate & Scale](pattern-preview-transforms-translate-and-scale.md)
 * [-- Old Content Below Here --](-old-content-below-here-.md)
 * [Drawing Application](drawing_application.md)
 * [Creative Brushes](creative_brushes.md)
@@ -50,5 +51,4 @@
 * [Resources](resources.md)
 * [Projects ](projects_fall_16.md)
 * [Reading Assignments](reading-assignments.md)
-* [Grid Region Logic](grid-region-logic.md)
 

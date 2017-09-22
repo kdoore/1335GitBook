@@ -4,6 +4,12 @@ If we want to get a preview of our designs, we can make a mini version below the
 
 We'll need to change the canvas size, so it's larger to give space for our mini-preview.  Also, we'll need to change how we calculate the cellSize for our grid, since we're no longer using the full canvas width:
 
+The steps to create the mini-pattern preview are the same as the logic for creating a normal grid: 2 nested for-loops to position designs across columns and down rows.  The only diffference here is that we're going to translate the origin to the x,y position as the first step, this way we can put the grid whevever we want.  Second, we want to scale the grid smaller, so we'll pass in a scaleFactor parameter - this will scale the entire canvas smaller, if the scaleFactor is smaller than 1.
+
+NewCanvasSize = scaleFactor * CanvasSize:
+If scaleFactor = .20, then
+160 = .20 * 800;  //mini canvas dimension is 160x160
+
 ###Code to create mini pattern preview
 
  
