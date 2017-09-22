@@ -2,17 +2,17 @@
 
 If we want to get a preview of our designs, we can make a mini version below the canvas area where we are designing our grid pattern.  We'll use Processing Transform Functions, to move the origin, then a single for-loop to draw each PShape in our arrays.  
 
-We'll need to change the canvas size:  ``size( 800,800); ``   Also, we'll need to change how we calculate the cellSize for our grid, since we're no longer using the full canvas width:
+We'll need to change the canvas size, so it's larger to give space for our mini-preview.  Also, we'll need to change how we calculate the cellSize for our grid, since we're no longer using the full canvas width:
 
 ###Code to create mini pattern preview
 
     ```java
    void setup(){
    size( 800,800);
-   int gridSize = 600; //new variable for 
+   int artBoard = 600; //new variable for artwork size
    int rows = 6
    int cols = 6;
-   int cellSize = gridSize/rows;
+   int cellSize = artBoard/rows;
    
    shapes1 = new PShape[rows * cols ];  //initialize array
    populateShapeList1(shapes1, cellSize);
