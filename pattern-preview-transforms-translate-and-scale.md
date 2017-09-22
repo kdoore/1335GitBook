@@ -50,6 +50,4 @@ We'll need to change the canvas size, so it's larger to give space for our mini-
 
 ```
 
-
-
-![](/assets/Screenshot 2017-09-22 14.02.40.png)
+![](/assets/Screenshot 2017-09-22 14.14.26.png)
