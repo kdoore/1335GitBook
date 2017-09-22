@@ -1,8 +1,8 @@
-#Transforms for Grid Regions
+#Logic for Grid Regions
 
-While we can go down the path of putting our complex pattern logic within a nested for-loop, we'll quickly get overwhelmed trying to organize our logic so it's easy to conceptualize.   
+We can determine logic to define grid-regions within a nested for-loop, and we can display certain patterns within these regions using this logic. 
 
-After, stepping back to get an overview of the design challenge, we can try a different approach, and this will lead us toward an object-oriented approach to design our prototyping tool.
+
 
 ![](/assets/Screenshot 2017-09-22 14.46.17.png)
 
@@ -25,4 +25,40 @@ Even Cells: (i+j) % 2 == 0
 Region3: i >= rows/2 && j < cols/2
 Even Cells: (i+j) % 2 == 0 
 Region4: i >= rows/2 && j >= cols/2
+
+#Example Code for the images above
+
+
+
+```java
+void displayShapeList( PShape[] _shapes1, PShape[] _shapes2, float cellSize, int rows, int cols) {
+  int xPos =0;
+  int yPos = 0;
+  int shapeIndex=0;
+  for ( int i=0; i<rows; i++) { 
+    for (int j=0; j<cols; j++) {  //draw a shape in each column
+      if(  i < (rows/2) && j < (cols/2)  ){  //region 1
+          shape(_shapes1[shapeIndex], xPos, yPos);   //display the shape
+      }
+      else if( i >= (rows/2) && j >= (cols/2)){  //region 4
+         shape(_shapes1[shapeIndex], xPos, yPos);   //display the shap
+      }
+      else if( (i + j) % 2 == 0 ){  //even position in region 2,3
+        shape(_shapes1[shapeIndex], xPos, yPos);   //display the shap
+      }else{ //every position in region 2, 3
+        fill( 50);
+        rect(xPos, yPos, cellSize, cellSize);
+        shape(_shapes2[shapeIndex], xPos, yPos);   //display the shap
+      }
+      xPos += cellSize;
+      shapeIndex++;
+    }
+    xPos = 0;
+    yPos += cellSize;
+  }  //end outer for loop
+}   //end displayShapeList
+
  
+```
+
+
