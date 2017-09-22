@@ -6,7 +6,10 @@ We'll need to change the canvas size, so it's larger to give space for our mini-
 
 ###Code to create mini pattern preview
 
-    ```java
+ 
+
+```java
+
    void setup(){
    size( 800,800);
    int artBoard = 600; //new variable for artwork size
@@ -44,6 +47,9 @@ We'll need to change the canvas size, so it's larger to give space for our mini-
   popMatrix();  //restore transformation matrix 
 }
 
+
 ```
+
+
 
 ![](/assets/Screenshot 2017-09-22 14.02.40.png)
