@@ -42,7 +42,7 @@ void displayShapeList( PShape[] _shapes1, PShape[] _shapes2, float cellSize, int
       }
       else if( (i + j) % 2 == 0 ){  //even position in region 2,3
         shape(_shapes1[shapeIndex], xPos, yPos);   //display the shap
-      }else{ //every position in region 2, 3
+      }else{ //remaining positions in region 2, 3
         fill( 50);
         rect(xPos, yPos, cellSize, cellSize);
         shape(_shapes2[shapeIndex], xPos, yPos);   //display the shap
