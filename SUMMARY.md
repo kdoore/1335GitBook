@@ -18,6 +18,8 @@
 * [Artist: Victor Vasarely](vasarely.md)
 * [Grid Pattern Design](arrays-for-grid-patterns.md)
 * [PShapes in Grid Layout](pshapes-in-grid-layout.md)
+* [Grid Region Logic](grid-region-logic.md)
+* [-- Old Content Below --](-old-content-below-.md)
 * [Drawing Application](drawing_application.md)
 * [Creative Brushes](creative_brushes.md)
 * [Button States](button_states.md)
@@ -47,5 +49,4 @@
 * [Resources](resources.md)
 * [Projects ](projects_fall_16.md)
 * [Reading Assignments](reading-assignments.md)
-* Grid Region Logic
 

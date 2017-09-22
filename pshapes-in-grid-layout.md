@@ -118,7 +118,7 @@ The code below shows nested for-loops to change xPos and yPos in a grid pattern,
    ```java
  
  
-void displayShapes( PShape shapes){
+void displayShapes( PShape[] shapes){
   float xPos=0;  //s coordinate to draw each shape
 
   float yPos = 0;  //y coordinate to draw each shape
