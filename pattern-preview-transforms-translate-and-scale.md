@@ -1,4 +1,5 @@
-#Pattern Preview - Transforms: Translate and Scale
+#Mini-Preview of Shapes  
+###Transforms: Translate and Scale
 
 If we want to get a preview of our designs, we can make a mini version below the canvas area where we are designing our grid pattern.  We'll use Processing Transform Functions, to move the origin, then a single for-loop to draw each PShape in our arrays.  
 
