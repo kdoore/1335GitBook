@@ -13,7 +13,9 @@ We can define this region as having index values: `( i < 3  && j < 3 ) `
 
 ![](/assets/Screenshot 2017-09-21 14.00.02.png)
 
-We could use logic like this to define what shapes are drawn within a region:
+We could use logic like this to define what shapes are drawn within a region.  The logic is defined within the nested for-loops:  
+
+`if( i < rows/2 && j < cols/2){  //draw region1 shapes   }`
 
 ```java
 
@@ -24,7 +26,7 @@ void drawGrid(int rows, int cols, int size ){
     for( int j=0; j< cols; j++){
       if( i < rows/2 && j< cols/2){  //logic for region1
           fill(40,255,255); //yellow
-          rect( xPos, yPos, size, size); //draw a yellow square for each cell in this region
+          rect( xPos, yPos, size, size); //draw a yellow square for each cell in  region1
           drawLines( xPos, yPos, i, j, size);
       }
       drawLines( xPos, yPos, i, j, size);
@@ -46,4 +48,6 @@ void drawGrid(int rows, int cols, int size ){
 }
  
  ```
+ 
+ 
  
