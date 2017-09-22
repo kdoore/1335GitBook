@@ -2,9 +2,9 @@
 
 If we want to get a preview of our designs, we can make a mini version below the canvas area where we are designing our grid pattern.  We'll use Processing Transform Functions, to move the origin, then a single for-loop to draw each PShape in our arrays.  
 
-We'll need to change the canvas size, so it's larger to give space for our mini-preview.  Also, we'll need to change how we calculate the cellSize for our grid, since we're no longer using the full canvas width:
+We'll need to change the project canvas size: `size(800,800)`, To create space for our mini-preview below the artwork area.  Also, we'll need to change how we calculate the cellSize for our grid, since we're no longer using the full canvas width:
 
-The steps to create the mini-pattern preview are the same as the logic for creating a normal grid: 2 nested for-loops to position designs across columns and down rows.  The only diffference here is that we're going to translate the origin to the x,y position as the first step, this way we can put the grid whevever we want.  Second, we want to scale the grid smaller, so we'll pass in a scaleFactor parameter - this will scale the entire canvas smaller, if the scaleFactor is smaller than 1.
+The steps to create the mini-pattern preview are the same as the logic for creating a normal grid: 2 nested for-loops to position designs across columns and down rows.  The only difference here is that we're going to translate the origin to the x,y position as the first step, this way we can put the grid wherever we want.  Second, we want to scale the grid smaller, so we'll pass in a scaleFactor parameter - this will scale the entire canvas smaller, if the scaleFactor is smaller than 1. We'll use pushMatrix() and popMatrix() to wrap this logic, this will prevent our transforms from impacting other code in our program.
 
 NewCanvasSize = scaleFactor * CanvasSize:
 If scaleFactor = .20, then
