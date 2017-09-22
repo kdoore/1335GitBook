@@ -19,7 +19,7 @@
 * [Grid Pattern Design](arrays-for-grid-patterns.md)
 * [PShapes in Grid Layout](pshapes-in-grid-layout.md)
 * [-&gt; PShapes in Grid Regions](pshapes-in-grid-regions.md)
-* -- Old Content Below Here --
+* [-- Old Content Below Here --](-old-content-below-here-.md)
 * [Drawing Application](drawing_application.md)
 * [Creative Brushes](creative_brushes.md)
 * [Button States](button_states.md)
