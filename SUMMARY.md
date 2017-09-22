@@ -21,6 +21,7 @@
 * [PShapes in Grid Regions](pshapes-in-grid-regions.md)
 * [Grid Region Logic](grid-region-logic.md)
 * [Pattern Preview - Transforms: Translate & Scale](pattern-preview-transforms-translate-and-scale.md)
+* [Transforms for Region Logic](transforms-for-region-logic.md)
 * [-- Old Content Below Here --](-old-content-below-here-.md)
 * [Drawing Application](drawing_application.md)
 * [Creative Brushes](creative_brushes.md)
