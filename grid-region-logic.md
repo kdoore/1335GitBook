@@ -26,8 +26,7 @@ Region3: i >= rows/2 && j < cols/2
 Even Cells: (i+j) % 2 == 0 
 Region4: i >= rows/2 && j >= cols/2
 
-#Example Code for the images above
-
+#Example Code for the Region-Based Design Patterns
 
 
 ```java
