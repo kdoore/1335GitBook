@@ -78,7 +78,7 @@ map takes one value in a given range and calculates the corresponding value for 
  
  `float value2 = map( value1, range1Min, range1Max, range2Min, range2Max); `
  
- `float fractionalAmt = map( k, 0, rows+cols, 0, 1);`
+ `float amt = map( k, 0, rows+cols, 0.0, 1.0);`
  
 ###Example Code 
 ```
