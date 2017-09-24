@@ -22,7 +22,8 @@ As seen in the image below, when we have a linear ordering for our colors (1-Dim
 Now is a good time to consider switching to 2-Dimensional arrays to store our modular design units. 
 If we create our and store our shapes using a 2-Dimensional data-structure , then we can store higher-order relationships between our design units, such as 2-D color gradients. 
 
-Example:  Declare and initialize a 2D array of PShapes
+Example:  Declare and initialize a 2D array of 100 elements, to hold PShape objects.
+
 `PShape[][] shapesMatrix = new PShape[10][10];`
 
 ###Diagonal Color Gradients
