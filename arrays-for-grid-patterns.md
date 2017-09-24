@@ -43,3 +43,7 @@ The image above shows an art quilt I had created in the early 90's. The design u
 
 [Vasarely - 1969 ](http://ncartmuseum.org/art/detail/ion) 
 Vasarely's op art piece was created in 1969, he would also have benefited from digital prototyping tools for his Op-Art designs. 
+
+###Digital Prototype 
+![](/assets/Screenshot 2017-09-23 21.17.28.png)
+The image below was created using Processing as a digital prototyping tool.  
