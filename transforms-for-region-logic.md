@@ -20,8 +20,8 @@ Using the sum of grid indexes for color logic gives us a simple approach to crea
     
 
 ```java
-      int k= i + j; 
-      fill( 150 + (k * 10) );
+      int k= i + j; //i,j are for-loop indexes
+      fill( 150 + (k * 10) );  //gradient logic
 ```
 
 ![](/assets/Screenshot 2017-09-24 09.00.41.png)
@@ -30,7 +30,7 @@ Using the sum of grid indexes for color logic gives us a simple approach to crea
 We can also use this sum variable: `k` for determining odd-even logic.  When we use the modulus operator `%`, we focus on the remainder component, so when `k%2` has no remainder `( k%2 == 0 )`, we have a way to implement odd-even logic in our patterns. In the image below, we've combined it with the gradient color fill logic. If we  have an _odd_ item, then we use a light gray `fill(240)`, otherwise, we use our gradient logic to create our fill.
 
 ```java
-      int k= i + j;
+      int k= i + j;  //i,j are for-loop indexes
       if(k % 2 == 0){
          fill( 100 + k *10); //gradient logic
       }
