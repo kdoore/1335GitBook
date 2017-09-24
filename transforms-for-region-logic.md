@@ -1,10 +1,11 @@
-#2D Arrays for Grid Gradient Patterns
+#2D Arrays for Gradient Grid Patterns
 
 After creating our mini-pattern preview, it might inspire us to rethink the complex logic that we've been using for creating regions in our designs. This will begin our transition into object oriented thinking.
 
 ###New Idea: Position ShapeGrids with Transform Functions 
 
 Instead of having complex logic within a single display-function's for-loop, let's create a set of simplified grid modules and position them using Processing's transform functions.  This can lead us to simplified logic, which can allow for more complex patterns.  In addition, we can implement logic for layering patterns on top of other patterns to achieve complex designs from simplified logic.  
+
 
 ![](/assets/Screenshot 2017-09-24 13.42.33.png)
 ###1-Dimensional Arrays - Design Limitations
@@ -13,6 +14,9 @@ As seen in the image above, when we have a linear ordering for our colors (1-Dim
 ###2-Dimensional Arrays for Storing our Shapes
 Now is a good time to consider switching to 2-Dimensional arrays to store our modular design units. 
 If we create our and store our shapes using a 2-Dimensional data-structure , then we can store higher-order relationships between our design units, such as 2-D color gradients. 
+
+Example:  Declare and initialize a 2D array of PShapes
+`PShape[][] shapesMatrix = new PShape[10][10];`
 
 ###Diagonal Color Gradients
 ![](/assets/Screenshot 2017-09-24 08.43.41.png) 
