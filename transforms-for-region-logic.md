@@ -49,17 +49,7 @@ We can also use this sum variable for determining odd-even logic.  When we use t
 ![](/assets/Screenshot 2017-09-24 09.33.22.png)
 
 
-###Declare and initialize a 2D array:
 
-
-
-```java
-int rows= 5 ;
-int cols = 5;
-PShape[][] shapeGrid; //declare a 2D array
-shapeGrid = new PShape[ rows ][ cols ];
-
-```
 
 
 
