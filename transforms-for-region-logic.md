@@ -44,6 +44,10 @@ We can also use this sum variable for determining odd-even logic.  When we use t
 ![](/assets/Screenshot 2017-09-24 09.08.55.png)
 
 
+###Random Patterning Logic 
+
+![](/assets/Screenshot 2017-09-24 09.33.22.png)
+
 
 ###Declare and initialize a 2D array:
 
@@ -57,8 +61,6 @@ shapeGrid = new PShape[ rows ][ cols ];
 
 ```
 
-
-###Processing lerpColor( ) Function
 
 
 
