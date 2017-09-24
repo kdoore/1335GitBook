@@ -51,6 +51,10 @@ Logic for image above:
   
   `color interColor = lerpColor( startColor, endColor, amt);`
   
+4.  The first square shows the startColor since `amt = 0.0`
+
+5.  The last square shows the endColor since `amt = 1.0`
+  
 ###Example Code
 
 ```java
