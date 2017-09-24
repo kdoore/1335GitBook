@@ -1,4 +1,4 @@
-#Transforms for Region Logic
+#2D Arrays for Grid Gradient Patterns
 
 After creating our mini-pattern preview, it should cause us to rethink the complex logic that we've been using for creating regions in our designs. This will begin our transition into object oriented thinking.
 
