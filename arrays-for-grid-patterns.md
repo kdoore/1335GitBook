@@ -45,5 +45,8 @@ The image above shows an art quilt I had created in the early 90's. The design u
 Vasarely's op art piece was created in 1969, he would also have benefited from digital prototyping tools for his Op-Art designs. 
 
 ###Digital Prototype 
+
+The image below was created using Processing as a digital prototyping tool.  Using the PShape object to create vertex defined shapes arranged along diagonal gradient color grids.  Processing lerpColor( ) function does linear interpolation between 2 colors parameterized by stepsize.
+
 ![](/assets/Screenshot 2017-09-23 21.17.28.png)
-The image below was created using Processing as a digital prototyping tool.  
+

@@ -1,10 +1,11 @@
 #PShape Objects in a Grid Layout
 
-The first approach for creating grid designs will use an ``Array`` of PShape Objects and nested ``for-loops`` to control x,y positioning of each PShape object.
+The first approach for creating grid designs will use a 1-dimensional ``Array`` of PShape Objects and nested ``for-loops`` to control x,y positioning of each PShape object.
 
 ###Declare and Initialize an Array of PShape Objects
 
-The syntax for an array of PShape objects is: 
+The syntax for an array of PShape objects is:
+ 
   1. **Declare the array: ** 
   
    ` PShape[ ] myShapes;`
@@ -98,7 +99,7 @@ In the code above, we've just stored a bunch of PShape objects, but we haven't d
 
 ###Grid: Nested for-loops    
 
-A set of for-loops will allow us to ``iterate`` through the array to select each PShape object and set it's xy position for display.
+A pair of for-loops will allow us to ``iterate`` through the array to select each PShape object and set it's xy position for display.
 
 We'll create nested for-loops:  
 
