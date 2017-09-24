@@ -1,4 +1,4 @@
-# Vertex Shapes - Recursive Pattern
+#Project 1: Vertex Shapes - Recursive Pattern
 
 The image below shows how we can create a simple polygon using the [Processing PShape, createShape( ), beginShape\( \), endShape\( \)](https://processing.org/reference/beginShape_.html) functions.
 
