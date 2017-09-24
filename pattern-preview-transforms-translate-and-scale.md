@@ -1,7 +1,7 @@
 #Mini-Preview of Shapes  
 ###Transforms: Translate and Scale
 
-If we want to get a preview of our designs, we can make a mini version below the canvas area where we are designing our grid pattern.  We'll use Processing Transform Functions, to move the origin, then nested for-loops to draw each PShape in our arrays.  
+If we want to get a preview of the color gradients in our designs, we can make a mini version below the canvas area where we are designing our grid pattern.  We'll use Processing Transform Functions, to move the origin, then nested for-loops to draw each PShape in our 1D arrays.  
 
 We'll need to change the project canvas size: `size(800,800)`, To create space for our mini-preview below the artwork area.  Also, we'll need to change how we calculate the cellSize for our grid, since we're no longer using the full canvas width:
 

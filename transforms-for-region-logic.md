@@ -1,14 +1,16 @@
 #2D Arrays for Grid Gradient Patterns
 
-After creating our mini-pattern preview, it should cause us to rethink the complex logic that we've been using for creating regions in our designs. This will begin our transition into object oriented thinking.
+After creating our mini-pattern preview, it might inspire us to rethink the complex logic that we've been using for creating regions in our designs. This will begin our transition into object oriented thinking.
 
 ###New Idea: Position ShapeGrids with Transform Functions 
 
-Instead of having complex logic within a single display-function for-loop, let's create simplified grid modules and position them using Processing's transform functions.  This can lead us to simplified logic, which can allow for more complex patterns.  In addition, we can implement logic for layering patterns on top of other patterns to achieve complex designs from simplified logic.  
+Instead of having complex logic within a single display-function's for-loop, let's create a set of simplified grid modules and position them using Processing's transform functions.  This can lead us to simplified logic, which can allow for more complex patterns.  In addition, we can implement logic for layering patterns on top of other patterns to achieve complex designs from simplified logic.  
 
 ###2-Dimensional Arrays for Storing our Shapes
-So far, we have focused on using 1 dimensional arrays to store our shapes as we've created them.  Now is a good time to consider switching to 2D arrays, as the logic we've been learning can be useful as we store our designs. 
+So far, we have focused on using 1-Dimensional arrays to store our shapes as we've created them.  Now is a good time to consider switching to 2-Dimensional arrays to store our modular design units. 
 If we create and store shapes using linear (1D) logic, then we need complex logic to have 2D gradients, however, if we create our and store our shapes as 2D patterns, then  it is easier to incorporate higher level design ideas. 
+
+
 
  ###Diagonal Color Gradients
  ![](/assets/Screenshot 2017-09-24 08.43.41.png) 
