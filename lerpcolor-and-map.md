@@ -32,16 +32,27 @@ lerpColor takes 2 color values as input parameters, and takes a floating point f
 
 ![](/assets/Screenshot 2017-09-24 16.01.04.png)
 
-If we set colors using the colorSelector tool, we need to make sure to set HSB as below.
+Using the colorSelector tool, we need to make sure to set HSB as below. This sets the range of values for Hue: 0-260, Sat: 0-100, Brightness: 0-100
 
-`colorMode(HSB, 360,100,100); //corresponds to the colorSelector color values`
+`colorMode(HSB, 360, 100, 100 ); //corresponds to the colorSelector color values`
 
-Logic for image above:  Select a start and end colors
+Logic for image above:  
+
+1. Select a start and end colors
      
-  `color c1 = color(180, 100,100); //bright cyan`
-  `color c2 = color(75, 90, 70); //pea green`
+  `color startColor = color(180, 100,100); //bright cyan`
+  `color endColor = color(75, 90, 70); //pea green`
   
-  Determine calculated color using lerpColor and very the amount variable - it takes decimal values between 0.0 - 1.0
+2. Set (and modify) the amount variable - it takes decimal values between 0.0 - 1.0
+ 
+ `float amt = (.10 * i );  //i is loop index `
+ 
+3.  Determine calculated color:
+  
+  `color interColor = lerpColor( startColor, endColor, amt);`
+  
+  
+  
   
   
 
