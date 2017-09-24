@@ -1,4 +1,4 @@
-#PShape Objects in a Grid Layout
+#1 Dimensional Array of PShape Objects for Grid Layout
 
 The first approach for creating grid designs will use a 1-dimensional ``Array`` of PShape Objects and nested ``for-loops`` to control x,y positioning of each PShape object.
 Arrays are a data structure, a structure for storing data.  In this case, our 'data' is PShape objects that represent a graphical element we can render on the canvas, for now, we just want to create the PShape objects by setting the vertices and fill properties, we can access the data elements at a later time, to display them on the canvas.

@@ -17,7 +17,7 @@
 * [Computational Design](computational_design.md)
 * [Artist: Victor Vasarely](vasarely.md)
 * [Grid Pattern Design](arrays-for-grid-patterns.md)
-* [PShapes in Grid Layout](pshapes-in-grid-layout.md)
+* [1D - Array of PShapes for Grid Layout](pshapes-in-grid-layout.md)
 * [PShapes in Grid Regions](pshapes-in-grid-regions.md)
 * [Grid Region Logic](grid-region-logic.md)
 * [Pattern Preview - Transforms: Translate & Scale](pattern-preview-transforms-translate-and-scale.md)
