@@ -21,7 +21,7 @@ Using the sum of grid indexes for color logic gives us a simple approach to crea
 
 ```java
       int k= i + j; 
-      fill( 150 + k *10);
+      fill( 150 + (k * 10) );
 ```
 
 ![](/assets/Screenshot 2017-09-24 09.00.41.png)
