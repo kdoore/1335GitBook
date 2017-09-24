@@ -1,6 +1,7 @@
 #PShape Objects in a Grid Layout
 
 The first approach for creating grid designs will use a 1-dimensional ``Array`` of PShape Objects and nested ``for-loops`` to control x,y positioning of each PShape object.
+Arrays are a data structure, a structure for storing data.  In this case, our 'data' is PShape objects that represent a graphical element we can render on the canvas, for now, we just want to create the PShape objects by setting the vertices and fill properties, we can access the data elements at a later time, to display them on the canvas.
 
 ###Declare and Initialize an Array of PShape Objects
 
@@ -44,7 +45,10 @@ The syntax for an array of PShape objects is:
     
  ###Initialize the PShape Array Elements
   
- After we initialize the array object, then we need to set each array element so that it contains some valid value.  We'll almost always use a for-loop to modify and access each array element.  The code below assumes that we've got 
+After we initialize the array object, then we need to set each array element so that it contains some valid value.  We'll almost always use a for-loop to modify and access each array element.  
+
+###Iteration
+Iteration 
     
     
 ```java
