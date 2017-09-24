@@ -6,9 +6,14 @@ Processing provides a function that creates a series of intermediate colors betw
 Our first attempt used a hue variable that we incremented within a for-loop, where the fill for our pattern was defined using colorMode(HSB);
 
 ![](/assets/Screenshot 2017-09-24 15.33.05.png)
+![](/assets/Screenshot 2017-09-24 15.36.26.png)
 
-Problems occurred when we reached hue values greater than 255, as all shapes were then colored red.  We could create our own work-arounds, such as using modulus to insure hue values stayed in 0-255 range.  Other problems occurred if we wanted to have colors that varied in all HSB parameters, or if we wanted hue values that decreased, as negative HSB parameters generate weird behavior.
+Hue >= 255  corresponds to Red
+Hue <= 0    correspond to Red
     
+Problems occurred when we reached hue values greater than 255, as all shapes were then colored red.  We could create our own work-arounds, such as using modulus to insure hue values stayed in 0-255 range.  Other problems occurred if we wanted to have colors that varied in all HSB parameters.  
+
+
     
 
 ```
