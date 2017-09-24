@@ -144,6 +144,6 @@ void displayShapes( PShape[] shapes, float cellSize,  int rows, int cols){
 
   ```
 
-
+![](/assets/Screenshot 2017-09-22 14.51.04.png)
 
 
