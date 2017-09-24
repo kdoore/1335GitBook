@@ -68,8 +68,6 @@ for( int i=0; i<= 10; i++){
 
 ###map( ) Function
 The Processing `map( )` function can be helpful in calculating the lerpColor fractional amount parameter since the value must be between the range `[0.0, 1.0]`  Often we'll have a different range of values that we'd like to use to control how the color varies.  If we're creating a diagonal gradient for a grid, we may want to use a variable that represents the sum of loop index terms:  `int k = i + j;`   The values of i, j, and k depend on the number of rows and columns that we're working with.
-
-![](/assets/Screenshot 2017-09-24 16.35.37.png)
  
 ###Use map( ) to determine lerpColor fractional value
 The code below shows how we can use the map function to determine a valid value for fractional amount for intermediate color. 
@@ -95,8 +93,10 @@ map takes one value in a given range and calculates the corresponding value for 
   }
   
 ```
+###Grid Gradient using lerpColor( ) and map( )
+The image below shows i,j values and the corresponding lerpColor fractional amount that was calculated using the map function in the code above.
 
-
+![](/assets/Screenshot 2017-09-24 17.00.20.png)
   
   
 
