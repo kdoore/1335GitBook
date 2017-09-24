@@ -51,7 +51,8 @@ We can also use this sum variable: `k` for determining odd-even logic.  When we 
 In the images below, we can see that there are 2 different design units, shape1 has 2 colored vertically-stacked triangles on a dark background, shape 2 is a rotation - so the colored triangles have left/right orientation.  
 By randomly selecting between these units, we have an additional design pattern. 
 
-![](/assets/Screenshot 2017-09-24 14.01.11.png)
+![](/assets/Screenshot 2017-09-24 14.01.11.png)  
+Shape1  ... Shape2
 
 ![](/assets/Screenshot 2017-09-24 14.02.04.png)
 

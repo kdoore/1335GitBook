@@ -1,0 +1,2 @@
+#lerpColor( ) and map( ) Functions
+
