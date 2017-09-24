@@ -66,7 +66,10 @@ for( int i=0; i<= 10; i++){
       }
 ```
 
+###map( ) Function
+The Processing `map( )` function can be helpful in calculating the lerpColor fractional amount parameter since the value must be between the range `[0.0, 1.0]`  Often we'll have a different range of values that we'd like to use to control how the color varies.  If we're creating a diagonal gradient for a grid, we may want to use a variable that represents the sum of loop index terms:  `int k = i + j;`   The values of i, j, and k depend on the number of rows and columns that we're working with.
 
+map
   
   
   
