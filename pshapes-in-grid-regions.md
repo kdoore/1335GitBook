@@ -1,10 +1,10 @@
 #PShapes in Grid Regions
 
-In the previous section we created a function: displayShapes, to take 1 array of PShapes, the cellSize and the number of rows and columns in our canvas.  
+In the previous section we created a function: displayShapes, to take a 1 Dimensional array of PShapes, the cellSize and the number of rows and columns in our canvas.  
 ```
-displayShapes( PShape shapes, float cellSize,  int rows, int cols)
+displayShapes( PShape[] shapes, float cellSize,  int rows, int cols)
 ```
-###Pattern in Grid Regions
+###Select Grid Regions - to define patterns
 As we look to increase the complexity of our design, one approach would be to add logic to our for-loops to identify regions in each grid, where we could selectively display some portion of shapes in one of our shapes lists.
 
 The image below shows a grid, with the (i,j) indexes for drawn in each cell.  The yellow section represents a region that we'd like to add items to.
@@ -16,6 +16,10 @@ We can define this region as having index values: `( i < 3  && j < 3 ) `
 We could use logic like this to define what shapes are drawn within a region.  The logic is defined within the nested for-loops:  
 
 `if( i < rows/2 && j < cols/2){  //draw region1 shapes   }`
+
+###Grid Logic - Select Grid Region based on i,j index values: 
+In the code below, we add logic within the nested for-loops to select cells within a region.  This will get to be complex if we try to add design logic using this approach.
+
 
 ```java
 
