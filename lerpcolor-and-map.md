@@ -31,7 +31,19 @@ Problems occurred when we reached hue values greater than 255, as all shapes wer
 ###Using lerpColor( color c1, color c2, float amount) 
 lerpColor takes 2 color values as input parameters, and takes a floating point fractional value to indicate the fractional distance between the 2 colors to calculate the intermediate color that is returned.
 
+![](/assets/Screenshot 2017-09-24 16.01.04.png)
+
 If we set colors using the colorSelector tool, we need to make sure to set HSB as below.
 
 `colorMode(HSB, 360,100,100); //corresponds to the colorSelector color values`
+
+Logic for image above:  Select a start and end colors
+     
+  `color c1 = color(180, 100,100); //bright cyan`
+  `color c2 = color(75, 90, 70); //pea green`
+  
+  Determine calculated color using lerpColor and very the amount variable - it takes decimal values between 0.0 - 1.0
+  
+  
+
 
