@@ -51,7 +51,18 @@ Logic for image above:
   
   `color interColor = lerpColor( startColor, endColor, amt);`
   
-  
+###Example Code
+
+```java
+for( int i=0; i<= 10; i++){
+      float amt = i * 0.1;
+      color intermediateColor = lerpColor( startColor, endColor, amt);
+      fill(intermediateColor);
+      rect( i* size, 0, size, size);
+      }
+```
+
+
   
   
   
