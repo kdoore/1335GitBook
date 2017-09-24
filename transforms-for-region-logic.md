@@ -15,4 +15,7 @@ int cols = 5;
 PShape[][] shapeGrid; //declare a 2D array
 shapeGrid = new PShape[ rows ][ cols ];
 
+###Processing lerpColor( ) Function
+
+
 
