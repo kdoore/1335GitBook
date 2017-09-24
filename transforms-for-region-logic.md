@@ -6,10 +6,17 @@ After creating our mini-pattern preview, it might inspire us to rethink the comp
 
 Instead of having complex logic within a single display-function's for-loop, let's create a set of simplified grid modules and position them using Processing's transform functions.  This can lead us to simplified logic, which can allow for more complex patterns.  In addition, we can implement logic for layering patterns on top of other patterns to achieve complex designs from simplified logic.  
 
+###Grid Sections - Translated, Rotated, Scaled
+In the image below, one grid pattern is used multiple times to create the entire design pattern. The basic grid section is displayed normally in region1.  The same grid section is also used in region2, region3 and region4...where rotations, translations, and offsets change the orientation and position.  Finally, 4 additional grid sections are used to create the inner design, this section is scaled to quarter size, it's rotated by 45 degrees, and it's translated to the center of the design.
+
+![](/assets/Screenshot 2017-09-24 14.58.17.png)
+
+###1-Dimensional Arrays - Design Limitations
+As seen in the image below, when we have a linear ordering for our colors (1-Dimensional array), then when we display those in a grid we see this linear ordering, which we perceive as rows of (grayscale) colors. This is a linearity is a limitation if we want more complex color relationships between neighboring cell items.
+
 
 ![](/assets/Screenshot 2017-09-24 13.42.33.png)
-###1-Dimensional Arrays - Design Limitations
-As seen in the image above, when we have a linear ordering for our colors (1-Dimensional array), then when we display those in a grid we see this linear ordering, which we perceive as rows of colors. This is a problem if we want more complex color relationships between neighboring items.
+
 
 ###2-Dimensional Arrays for Storing our Shapes
 Now is a good time to consider switching to 2-Dimensional arrays to store our modular design units. 
