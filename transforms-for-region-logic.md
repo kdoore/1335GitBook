@@ -14,8 +14,6 @@ As seen in the image above, when we have a linear ordering for our colors (1-Dim
 Now is a good time to consider switching to 2-Dimensional arrays to store our modular design units. 
 If we create our and store our shapes using a 2-Dimensional data-structure , then we can store higher-order relationships between our design units, such as 2-D color gradients. 
 
-
-
 ###Diagonal Color Gradients
 ![](/assets/Screenshot 2017-09-24 08.43.41.png) 
  
@@ -50,8 +48,32 @@ We can also use this sum variable: `k` for determining odd-even logic.  When we 
 
 
 ###Random Patterning Logic 
+In the images below, we can see that there are 2 different design units, shape1 has 2 colored vertically-stacked triangles on a dark background, shape 2 is a rotation - so the colored triangles have left/right orientation.  
+By randomly selecting between these units, we have an additional design pattern. 
 
-![](/assets/Screenshot 2017-09-24 09.33.22.png)
+![](/assets/Screenshot 2017-09-24 14.01.11.png)
+
+![](/assets/Screenshot 2017-09-24 14.02.04.png)
+
+###Logic for Randomized 2-pattern arrangement:
+We can use the Processing random(min,max ) function to simulate random events. We define and initialize a random variable: `rand` that will be assigned a decimal value between 0.0 and 2.0.   We determine that if `rand > 1`, then we `createShapeOne( )`, like a coin flip, roughly half the time we'll have `rand < 1` and instead we'll `createShapeTwo( )`.  
+          
+
+```java
+ //Code snippet for random logic to determine which shape is created.
+          
+   float rand= random(0,2); 
+   if(rand > 1){
+        createShapeOne(size, foreground, background);
+    }
+    else{
+        createShapeTwo(size, foreground, background); 
+    }
+
+```
+
+
+
 
 
 
