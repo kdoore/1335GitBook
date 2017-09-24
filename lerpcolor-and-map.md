@@ -69,8 +69,34 @@ for( int i=0; i<= 10; i++){
 ###map( ) Function
 The Processing `map( )` function can be helpful in calculating the lerpColor fractional amount parameter since the value must be between the range `[0.0, 1.0]`  Often we'll have a different range of values that we'd like to use to control how the color varies.  If we're creating a diagonal gradient for a grid, we may want to use a variable that represents the sum of loop index terms:  `int k = i + j;`   The values of i, j, and k depend on the number of rows and columns that we're working with.
 
-map
+![](/assets/Screenshot 2017-09-24 16.35.37.png)
+ 
+###Use map( ) to determine lerpColor fractional value
+The code below shows how we can use the map function to determine a valid value for fractional amount for intermediate color. 
+
+map takes one value in a given range and calculates the corresponding value for a second range.  In this case, we have the value of k, we know it can range from 0 to rows+cols because when `k = rows + cols` when i,j are at their max values: `i=rows` and `j=cols`.  We know that we're looking to find the fractional amount for lerpColor and that value must be within the range (0.0 to 1.0).  Map calculates this for us when used as below. 
+ 
+ `float value2 = map( value1, range1Min, range1Max, range2Min, range2Max); `
+ 
+ `float fractionalAmt = map( k, 0, rows+cols, 0, 1);`
+ 
+###Example Code 
+```
+ color startColor = color(180, 100,100); //bright cyan
+  color endColor = color(75, 90, 70); //pea green
+  for( int i = 0; i < rows; i++){
+    for( int j = 0; j < cols; j++){
+      int k = i + j;
+      float amt = map( k,0,rows + cols, 0.0, 1.0);
+      color intermediateColor = lerpColor( startColor, endColor, amt);
+      fill(intermediateColor);
+      rect( i* size, j * size, size, size);
+    }
+  }
   
+```
+
+
   
   
 
