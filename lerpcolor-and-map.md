@@ -13,14 +13,13 @@ Hue <= 0    correspond to Red
     
 Problems occurred when we reached hue values greater than 255, as all shapes were then colored red.  We could create our own work-arounds, such as using modulus to insure hue values stayed in 0-255 range.  Other problems occurred if we wanted to have colors that varied in all HSB parameters.     
 
-```
+```java
 //Code Snippets - Initial Attempt - Increment Hue
   int hue = 50;
     for( int i=0; i< numShapes; i++ ){
        shapes[i] = vertexPattern( size, hue);
        hue += 5;
    }
-  
   
   PShape vertexPattern( float len, int hue){
       fill( hue, 255 , 255);
