@@ -17,23 +17,20 @@ In the image above, we see a diagonal color gradient in both the foreground and 
 For example:  `fill( 150 + (k * 10)); ` 
 
 ###Gradient Logic:
+Using the sum of grid indexes for color logic gives us a simple approach to create complex patterns.
     
 
-```
-      int k= i + j;
+```java
+      int k= i + j; 
       fill( 150 + k *10);
 ```
-
-
-
 
 ![](/assets/Screenshot 2017-09-24 09.00.41.png)
 
 ###Odd-Even Gradient Logic
+We can also use this sum variable for determining odd-even logic.  When we use the modulus operator `%`, we're looking at remainder, so when k%2 has no remainder, we have a way to implement odd-even logic in our patterns, here we've combined it with the gradient color fill logic. If we don't have an 'even' square, then we use a light gray fill(240), otherwise, we use our gradient logic to create our fill.
 
-
-
-```
+```java
       int k= i + j;
       if(k % 2 == 0){
       fill( 100 + k *10);
@@ -44,17 +41,22 @@ For example:  `fill( 150 + (k * 10)); `
 ```
 
 
-      
-      
 ![](/assets/Screenshot 2017-09-24 09.08.55.png)
 
 
 
 ###Declare and initialize a 2D array:
+
+
+
+```java
 int rows= 5 ;
 int cols = 5;
 PShape[][] shapeGrid; //declare a 2D array
 shapeGrid = new PShape[ rows ][ cols ];
+
+```
+
 
 ###Processing lerpColor( ) Function
 
