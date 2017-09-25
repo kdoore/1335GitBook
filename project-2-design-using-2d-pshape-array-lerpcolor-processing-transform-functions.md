@@ -14,7 +14,6 @@ Overall Project Structure:
     
     PShape vertexPattern2( float len, color foreground, color background);
     
-    
 2.  Create 2 functions to create 2-Dimensional Grids of PShape objects, these are the drive functions that determine pattern logic.
 
 
@@ -26,8 +25,7 @@ PShape[][] populateGradientDiaGrid( int rows, int cols,int size, color c1, color
         for( int j=0; j< cols; j++){
           float colorAmount = map( i+j, 0, rows + cols, 0.0,1.0);
           color foreground = lerpColor( c1, c2, colorAmount);
-          color background = lerpColor( c3, c4, colorAmount);
-          shapesMatrix[i][j] = createOneShape(size, foreground, background); 
+          shapesMatrix[i][j] = vertexPattern1(size,foreground); 
         }
        }
        return shapesMatrix;
