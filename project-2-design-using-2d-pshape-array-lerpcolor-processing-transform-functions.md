@@ -1,10 +1,10 @@
 #Project 2 - Design using 2D PShape Array, lerpColor, map, and Processing Transform Functions
 
-For Project 2, students will create a Processing program to create a 2D Grid Artwork using 2 different PShape vertex patterns.  Project 2 builds on understanding learned in Project 1, creating PShape objects by specifying a set of vertex points.
+For Project 2, students will create a Processing program to create custom 2D-Grid Artwork using 2 different PShape vertex patterns.  Project 2 builds on understanding learned in Project 1, creating PShape objects by specifying a set of vertex points.
 
-We'll create a 2D Array of PShape objects, where we'll create grid patterns using HSB color mode to specify the color used to  to create grid patterns.
+We'll create a 2D Array of PShape objects, where we'll create grid patterns using HSB color mode and lerpColor to specify the color used to  to create grid patterns.
 
-Overall Project Structure:
+Project Functions:
 
 1.  Create 2 functions to create PShape vertex objects using float length, color foreground, and optional color: background as input parameters:
 
