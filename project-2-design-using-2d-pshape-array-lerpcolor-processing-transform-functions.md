@@ -6,7 +6,7 @@ Create a 2D Array of PShape objects,  create grid patterns using HSB colorMode a
 
 **Project Structure: Functions:**
 
-1.  Create 2 functions to create PShape vertex objects using float length, color foreground, and optional color: background as input parameters:
+1.Create 2 functions to create PShape vertex objects using float length, color foreground, and optional color: background as input parameters:
 
     `PShape vertexPattern1( float len, color foreground)`
     
@@ -42,7 +42,7 @@ PShape vertexPattern1( float len, color foreground, color background) {
 
 ```
     
-2.  Create at least 2 functions to create 2-Dimensional Grids of PShape objects: these are the driver-functions that determine pattern logic, use colorLerp and map functions.  Suggestion: create and return PShape[][] objects within the function.
+2.Create at least 2 functions to create 2-Dimensional Grids of PShape objects: these are the driver-functions that determine pattern logic, use colorLerp and map functions.  Suggestion: create and return PShape[][] objects within the function.
 
 
 ```java
@@ -79,7 +79,24 @@ PShape[][] shapeMatrix1 = populateGradientGrid1( rows, cols, size, c1, c2);
 ```
 
 
-3. 
+3. Create functions to display each shapeMatrix.  These functions should take input parameters:`PShape[][] shapes`, `int xPos`, `int yPos`, `int rows`, `int cols`, `int size`
+
+Use processing transform functions to translate the origin to the position where the shapeMatrix should be displayed.  Add rotation if needed to re-orient the shapeMatrix.
+
+```java
+
+void displayShapeMatrix(PShape[][] shapes, int xPos, int yPos, int rows, int cols, int size){
+  pushMatrix();
+  translate( xPos, yPos);
+      for( int i=0; i< rows; i++){
+        for( int j=0; j< cols; j++){
+          shape(shapes[i][j], i * size, j* size);
+        }  
+      }
+  popMatrix();
+}
+
+```
 
 
 
