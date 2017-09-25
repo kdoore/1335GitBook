@@ -4,7 +4,7 @@ For Project 2, students will create a Processing program to create custom 2D-Gri
 
 We'll create a 2D Array of PShape objects, where we'll create grid patterns using HSB color mode and lerpColor to specify the color used to  to create grid patterns.
 
-Project Functions:
+**Project Structure: Functions:**
 
 1.  Create 2 functions to create PShape vertex objects using float length, color foreground, and optional color: background as input parameters:
 
@@ -12,7 +12,7 @@ Project Functions:
     
     `PShape vertexPattern2( float len, color foreground, color background);`
     
-2.  Create 2 functions to create 2-Dimensional Grids of PShape objects, these are the drive functions that determine pattern logic.
+2.  Create 2 functions to create 2-Dimensional Grids of PShape objects: these are the driver-functions that determine pattern logic, use colorLerp and map functions.
 
 
 ```java
