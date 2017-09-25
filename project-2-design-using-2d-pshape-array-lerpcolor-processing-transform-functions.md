@@ -42,12 +42,12 @@ PShape vertexPattern1( float len, color foreground, color background) {
 
 ```
     
-2.  Create 2 functions to create 2-Dimensional Grids of PShape objects: these are the driver-functions that determine pattern logic, use colorLerp and map functions.
+2.  Create at least 2 functions to create 2-Dimensional Grids of PShape objects: these are the driver-functions that determine pattern logic, use colorLerp and map functions.  Suggestion: create and return PShape[][] objects within the function.
 
 
 ```java
    
-PShape[][] populateGradientDiaGrid( int rows, int cols,int size, color c1, color c2 ){
+PShape[][] populateGradientGrid( int rows, int cols,int size, color c1, color c2 ){
       PShape[][] shapesMatrix = new PShape[rows][cols];
       for( int i=0; i<rows; i++){
         for( int j=0; j< cols; j++){
@@ -59,7 +59,7 @@ PShape[][] populateGradientDiaGrid( int rows, int cols,int size, color c1, color
        return shapesMatrix;
 }
 
-PShape[][] populateGradientDiaGrid2( int rows, int cols,int size, color c1, color c2, color c3, color c4 ){
+PShape[][] populateGradientGrid2( int rows, int cols,int size, color c1, color c2, color c3, color c4 ){
       PShape[][] shapesMatrix = new PShape[rows][cols];
       for( int i=0; i<rows; i++){
         for( int j=0; j< cols; j++){
@@ -71,6 +71,10 @@ PShape[][] populateGradientDiaGrid2( int rows, int cols,int size, color c1, colo
        }
        return shapesMatrix;
 }
+
+//example function call:
+
+PShape[][] shapeMatrix1 = populateGradientGrid1( rows, cols, size, c1, c2);
 
 ```
 
