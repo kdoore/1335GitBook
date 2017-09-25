@@ -10,9 +10,9 @@ Overall Project Structure:
 
 1.  Create 2 functions to create PShape vertex objects using float length, color foreground, and optional color: background as input parameters:
 
-    PShape vertexPattern1( float len, color foreground)
+    `PShape vertexPattern1( float len, color foreground)`
     
-    PShape vertexPattern2( float len, color foreground, color background);
+    `PShape vertexPattern2( float len, color foreground, color background);`
     
 2.  Create 2 functions to create 2-Dimensional Grids of PShape objects, these are the drive functions that determine pattern logic.
 
@@ -33,6 +33,8 @@ PShape[][] populateGradientDiaGrid( int rows, int cols,int size, color c1, color
 
 ```
 
+
+3. 
 
 
 
