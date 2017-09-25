@@ -13,12 +13,12 @@ Create a 2D Array of PShape objects,  create grid patterns using HSB colorMode a
     `PShape vertexPattern2( float len, color foreground, color background);`
    
     
-###Example vertexPattern code using PShape Group to create layered PShape object
+###Example vertexPattern code using PShape Group 
+The code below uses PShape group functionality.  Multiple PShape objects can be layered to create a single PShape group object.  Below, 3 PShape objects are created, s1 and s are added as child objects to PShape g which is a group object.  The ordering that child objects are added to the group corresponds to the layer ordering for their display, s1 is designed as a background layer.
  
 ```java
 
 PShape vertexPattern1( float len, color foreground, color background) {
-  PShape g = createShape(GROUP);
   PShape s1 = createShape( RECT,0,0,len,len);
   s1.setFill( background);
   PShape s = createShape( );
@@ -32,6 +32,7 @@ PShape vertexPattern1( float len, color foreground, color background) {
   s.vertex(0, len);
   s.vertex( len/2, len/2);
   s.endShape(CLOSE);
+  PShape g = createShape(GROUP);
   g.addChild(s1);
   g.addChild(s);
   return g;
