@@ -2,7 +2,7 @@
 
 For Project 2, students will create a Processing program to create custom 2D-Grid Artwork using 2 different PShape vertex patterns.  Project 2 builds on understanding learned in Project 1, creating PShape objects by specifying a set of vertex points.
 
-We'll create a 2D Array of PShape objects, where we'll create grid patterns using HSB color mode and lerpColor to specify the color used to  to create grid patterns.
+Create a 2D Array of PShape objects,  create grid patterns using HSB colorMode and lerpColor to specify the color used.  If using color-selector tool, specify colorMode(HSB, 360,100,100);
 
 **Project Structure: Functions:**
 
@@ -41,8 +41,6 @@ PShape[][] populateGradientDiaGrid2( int rows, int cols,int size, color c1, colo
        }
        return shapesMatrix;
 }
-
-
 
 ```
 
