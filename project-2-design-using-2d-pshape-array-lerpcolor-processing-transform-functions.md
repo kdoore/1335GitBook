@@ -2,7 +2,7 @@
 
 For Project 2, students will create a Processing program to create custom 2D-Grid Artwork using 2 different PShape vertex patterns.  Project 2 builds on understanding learned in Project 1, creating PShape objects by specifying a set of vertex points.
 
-Create a 2D Array of PShape objects,  create grid patterns using HSB colorMode and lerpColor to specify the color used.  If using color-selector tool, specify colorMode(HSB, 360,100,100);
+Create a 2D Array of PShape objects,  create grid patterns using HSB colorMode and lerpColor to specify the color used.  If using color-selector tool, specify `colorMode(HSB, 360,100,100); //specify max range values` 
 
 **Project Structure: Functions:**
 
@@ -11,6 +11,35 @@ Create a 2D Array of PShape objects,  create grid patterns using HSB colorMode a
     `PShape vertexPattern1( float len, color foreground)`
     
     `PShape vertexPattern2( float len, color foreground, color background);`
+   
+    
+###Example vertexPattern code using PShape Group to create layered PShape object
+ 
+```java
+
+PShape vertexPattern1( float len, color foreground, color background) {
+  PShape g = createShape(GROUP);
+  PShape s1 = createShape( RECT,0,0,len,len);
+  s1.setFill( background);
+  PShape s = createShape( );
+  s.beginShape();
+  s.fill(foreground);
+  s.vertex(len/2, len/2);
+  s.vertex( 0, 0);
+  s.vertex(len, 0);
+  s.vertex( len/2, len/2);
+  s.vertex( len, len);
+  s.vertex(0, len);
+  s.vertex( len/2, len/2);
+  s.endShape(CLOSE);
+  g.addChild(s1);
+  g.addChild(s);
+  return g;
+}  //end createOneShape
+
+
+
+```
     
 2.  Create 2 functions to create 2-Dimensional Grids of PShape objects: these are the driver-functions that determine pattern logic, use colorLerp and map functions.
 
