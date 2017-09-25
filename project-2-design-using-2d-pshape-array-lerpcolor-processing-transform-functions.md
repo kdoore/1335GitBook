@@ -51,7 +51,8 @@ PShape[][] populateGradientGrid( int rows, int cols,int size, color c1, color c2
       PShape[][] shapesMatrix = new PShape[rows][cols];
       for( int i=0; i<rows; i++){
         for( int j=0; j< cols; j++){
-          float colorAmount = map( i+j, 0, rows + cols, 0.0,1.0);
+          int k = i + j;  //diagonal index
+          float colorAmount = map( k, 0, rows + cols, 0.0,1.0);
           color foreground = lerpColor( c1, c2, colorAmount);
           shapesMatrix[i][j] = vertexPattern1(size,foreground); 
         }
@@ -63,7 +64,8 @@ PShape[][] populateGradientGrid2( int rows, int cols,int size, color c1, color c
       PShape[][] shapesMatrix = new PShape[rows][cols];
       for( int i=0; i<rows; i++){
         for( int j=0; j< cols; j++){
-          float colorAmount = map( i+j, 0, rows + cols, 0.0,1.0);
+        int k = i + j; //diagonal index
+          float colorAmount = map( k, 0, rows + cols, 0.0,1.0);
           color foreground = lerpColor( c1, c2, colorAmount);
           color background = lerpColor( c3, c4, colorAmount);
           shapesMatrix[i][j] = vertexPattern2(size,foreground, background ); 
@@ -81,7 +83,9 @@ PShape[][] shapeMatrix1 = populateGradientGrid1( rows, cols, size, c1, c2);
 
 3. Create functions to display each shapeMatrix.  These functions should take input parameters:`PShape[][] shapes`, `int xPos`, `int yPos`, `int rows`, `int cols`, `int size`
 
-Use processing transform functions to translate the origin to the position where the shapeMatrix should be displayed.  Add rotation if needed to re-orient the shapeMatrix.
+Use processing transform functions to translate the origin to the position where the shapeMatrix should be displayed.  Add rotation if needed to re-orient the shapeMatrix.  
+
+The code below has simple logic to step through each shapes[][] element and display it using the nested for loop to change the position of x and y across rows and columns.
 
 ```java
 
