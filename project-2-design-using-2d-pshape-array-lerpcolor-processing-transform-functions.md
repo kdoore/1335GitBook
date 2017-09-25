@@ -18,8 +18,7 @@ Overall Project Structure:
 2.  Create 2 functions to create 2-Dimensional Grids of PShape objects, these are the drive functions that determine pattern logic.
 
 
-
-```
+```java
    
 PShape[][] populateGradientDiaGrid( int rows, int cols,int size, color c1, color c2, color c3, color c4 ){
       PShape[][] shapesMatrix = new PShape[rows][cols];
@@ -35,5 +34,8 @@ PShape[][] populateGradientDiaGrid( int rows, int cols,int size, color c1, color
 }
 
 ```
+
+
+
 
 
