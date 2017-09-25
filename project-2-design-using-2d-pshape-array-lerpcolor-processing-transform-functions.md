@@ -1,10 +1,8 @@
 #Project 2 - Design using 2D PShape Array, lerpColor, map, and Processing Transform Functions
 
-For Project 2, students will create a Processing program to create a 2D Grid Artwork using 2 different PShape vertex patterns.  
+For Project 2, students will create a Processing program to create a 2D Grid Artwork using 2 different PShape vertex patterns.  Project 2 builds on understanding learned in Project 1, creating PShape objects by specifying a set of vertex points.
 
-Project 2 builds on understanding learned in project 1, creating PShape objects by specifying a set of vertex points.
-
-We'll create a 2D array of PShape objects, where we'll create grid patterns using HSB color mode to specify the fill to create grid patterns.
+We'll create a 2D Array of PShape objects, where we'll create grid patterns using HSB color mode to specify the color used to  to create grid patterns.
 
 Overall Project Structure:
 
@@ -19,7 +17,7 @@ Overall Project Structure:
 
 ```java
    
-PShape[][] populateGradientDiaGrid( int rows, int cols,int size, color c1, color c2, color c3, color c4 ){
+PShape[][] populateGradientDiaGrid( int rows, int cols,int size, color c1, color c2 ){
       PShape[][] shapesMatrix = new PShape[rows][cols];
       for( int i=0; i<rows; i++){
         for( int j=0; j< cols; j++){
@@ -30,6 +28,21 @@ PShape[][] populateGradientDiaGrid( int rows, int cols,int size, color c1, color
        }
        return shapesMatrix;
 }
+
+PShape[][] populateGradientDiaGrid2( int rows, int cols,int size, color c1, color c2, color c3, color c4 ){
+      PShape[][] shapesMatrix = new PShape[rows][cols];
+      for( int i=0; i<rows; i++){
+        for( int j=0; j< cols; j++){
+          float colorAmount = map( i+j, 0, rows + cols, 0.0,1.0);
+          color foreground = lerpColor( c1, c2, colorAmount);
+          color background = lerpColor( c3, c4, colorAmount);
+          shapesMatrix[i][j] = vertexPattern2(size,foreground, background ); 
+        }
+       }
+       return shapesMatrix;
+}
+
+
 
 ```
 
