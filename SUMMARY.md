@@ -23,6 +23,7 @@
 * [Pattern Preview - Transforms: Translate & Scale](pattern-preview-transforms-translate-and-scale.md)
 * [2D Arrays for Gradient Logic](transforms-for-region-logic.md)
 * [lerpColor\( \)  and map\( \) Functions](lerpcolor-and-map.md)
+* [Transforms for Position, Rotation, Scale of ShapeMatrix Elements](transforms-for-position-rotation-scale-of-shapematrix-elements.md)
 * [Project 2 - Design using 2D PShape Array,  lerpColor, Processing transform functions](project-2-design-using-2d-pshape-array-lerpcolor-processing-transform-functions.md)
 * [-- Old Content Below Here --](-old-content-below-here-.md)
 * [Drawing Application](drawing_application.md)
