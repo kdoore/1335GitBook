@@ -51,6 +51,11 @@ void displayRotateRegion2(PShape[][] shapesMatrix,int rows, int cols, int cellSi
 }
 ```
 
+###Rotation-Based Pattern
 
+![](/assets/Screenshot 2017-09-28 12.44.51.png)
+
+###Scale-For Mirroring Pattern
+![](/assets/Screenshot 2017-09-28 12.45.18.png)
 
 
