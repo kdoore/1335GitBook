@@ -6,10 +6,17 @@ Image from: [TomJewett.com](http://www.tomjewett.com/colors/hsb.html)
 Processing provides functions to allow working with both [RGB and HSB color-spaces](https://processing.org/reference/colorMode_.html).  HSB color-space is very useful when trying to create visual designs through programming.  
 
 ###HSB Color 
-The image above shows the HSB color-space.  From this diagram, we can see that if we want to understand a specific HSB color, in terms of Hue, Saturation, and Brightness parameter values, it is easiest to read a HSB color starting with the brightness parameter which corresponds to the verticle axis of the color-cone.  
+The image above shows the HSB color-space.  From this diagram, we can see that if we want to understand a specific HSB color, in terms of Hue, Saturation, and Brightness parameter values, it is easiest to read a HSB color starting with the brightness parameter which corresponds to the vertical axis of the color-cone. 
+
+###Analyze HSB Color in Brightness, Saturation, Hue Order
+When trying to interpret the value associated with an HSB color value, we should start with the Brightness value, If it's non-zero, then we should proceed to analyze the Saturation value, if it's non-zero, then we should consider the Hue value.  
+
+###Processing ColorMode(HSB)
+To use HSB in processing, we need to set the colorMode property to HSB mode:  `colorMode(HSB)`.  In addition, processing provides a method for us to set the max range values for HSB colormode, by default, each value can range from 0-255, just as with RGB.  Since the processing color selector tool uses HSB with ranges:   Hue: 0-360, Sat: 0-100, Bright: 0-100, if you'll be using the colorSelector to choose color values, you can set these range max values when you specify colorMode:
+`colorMode(HSB, 360, 100, 100);`  //sets range max so they correspond to the colorSelector tool.
 
 ###Brightness
-The brightness scale defines grayscale colors, where a brightness value of 0 corresponds to black, and the max-brightness corresponds to white.  So, if we see an HSB value with O for brightness, the other values (H,S) don't have an impact on the color because the colorspace is at the lowest tip of the cone, and black is the only color in this region.  So for a fill() function with 3 values fill(H, S, B), we should start reading the color from the right-most parameter, the B value.  If the B value is 255 (the max value), then we can see that these colors correspond to the top surface of the cone.  
+The brightness scale defines grayscale colors, where a brightness value of 0 corresponds to black, and the max-brightness corresponds to white.  So, if we see an HSB value with 0 for brightness, the other values (H,S) don't have an impact on the color because the colorspace is at the lowest tip of the cone, and black is the only color in this region.  So for a fill() function with 3 values fill(H, S, B), we should start reading the color from the right-most parameter, the B value.  If the B value is 255 (the max value), then we can see that these colors correspond to the top surface of the cone.  
 
 ###Saturation
 Within this circular slice, we can see that the center of the circle is white, and as the radius increases, the saturation increases so the outer rim of the circle has full saturation values.  So, when analyzing an HSB value, once we've determined that B is greater than 0, we next need to look at the S value to determine the saturation level.  This corresponds to moving outwards from the center-point of the circle, to colors with higher saturation intensity.  
