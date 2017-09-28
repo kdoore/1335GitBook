@@ -21,7 +21,7 @@ void displayRotateRegion2(PShape[][] shapesMatrix,int rows, int cols, int cellSi
  int w= artWorkSize;
   pushMatrix();
   translate( w, 0);
-  rotate( PI/2);
+  rotate( PI/2);  // same as: rotate(radians( 90));
   displayShapeMatrix(shapesMatrix, 0 ,0, rows , cols ,cellSize);
   popMatrix();
 }
