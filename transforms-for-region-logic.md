@@ -88,11 +88,20 @@ We can use the Processing random(min,max ) function to simulate random events. W
 
 ###Other Patterns based on i, j index
 
-![](/assets/Screenshot 2017-09-27 19.22.19.png)
+![](/assets/Screenshot 2017-09-27 19.38.40.png)
 
-The logic for the image above uses the fact that along square shaped sections, like the outer top-row and the left-colum both share the feature that the minimum value of the i,j index for each element is 0.
+###Min( i, j)
+The logic for the image above uses the fact that along square shaped sections, like the outer top-row and the left-column both share the feature that the minimum value of the i,j index for each element is 0.
 
- k = min( i, j);  
+ k = min( i, j); 
+ 
+ ###Max( i, j);
+The logic for the image above uses the fact that along square shaped sections, like the outer bottom-row and the right-column both share the feature that the max value of the i,j index for each element is 5.
+ 
+![](/assets/Screenshot 2017-09-27 19.40.34.png)  
+  
+
+ 
  
  The [lerpColor( ) function](https://kdoore.gitbooks.io/cs1335/content/lerpcolor-and-map.html) can use a factor like k to determine color for each grid cell. 
 
