@@ -81,7 +81,7 @@ PShape[][] shapeMatrix1 = populateGradientGrid1( rows, cols, size, c1, c2);
 ```
 
 
-3. Create functions to display each shapeMatrix.  These functions should take input parameters:`PShape[][] shapes`, `int xPos`, `int yPos`, `int rows`, `int cols`, `int size`
+3. Create functions to display each shapeMatrix.  These functions should take input parameters like:`PShape[][] shapes`, `int xPos`, `int yPos`, `int rows`, `int cols`, `int size`
 
 Use processing transform functions to translate the origin to the position where the shapeMatrix should be displayed.  Add rotation if needed to re-orient the shapeMatrix.  
 
@@ -104,6 +104,25 @@ void displayShapeMatrix(PShape[][] shapes, int xPos, int yPos, int rows, int col
       }
   popMatrix();
 }
+
+//display shapeMatrix in region2, use rotate( radians);
+void displayRotateRegion2(PShape[][] shapesMatrix,int rows, int cols, int cellSize, int artWorkSize){
+  pushMatrix();
+  translate( artWorkSize, 0);
+  rotate( PI/2);  //or rotate( radians(90));
+  displayShapeMatrix(shapesMatrix, 0 ,0, rows , cols ,cellSize);
+  popMatrix();
+}
+
+//display shapeMatrix in Region2, use scale(scaleX, scaleY);
+void displayScaleRegion2(PShape[][] shapesMatrix,int rows, int cols, int cellSize, int artWorkSize){
+  pushMatrix();
+  translate( artWorkSize, 0);
+  scale( -1.0, 1.0);
+  displayShapeMatrix(shapesMatrix, 0 ,0, rows , cols ,cellSize);
+  popMatrix();
+}
+
 ```
 
 
