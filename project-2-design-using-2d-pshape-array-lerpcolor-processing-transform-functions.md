@@ -18,7 +18,23 @@ The code below uses PShape group functionality.  Multiple PShape objects can be 
  
 ```java
 
-PShape vertexPattern1( float len, color foreground, color background) {
+PShape vertexPattern1( float len, color foreground) {
+  PShape s = createShape( );
+  s.beginShape();
+  s.fill(foreground);
+  s.vertex(len/2, len/2);
+  s.vertex( 0, 0);
+  s.vertex(len, 0);
+  s.vertex( len/2, len/2);
+  s.vertex( len, len);
+  s.vertex(0, len);
+  s.vertex( len/2, len/2);
+  s.endShape(CLOSE);
+  return s;
+}  //end createOneShape
+
+//Use PShapes Group to add Background PShape
+PShape vertexPattern2( float len, color foreground, color background) {
   PShape s1 = createShape( RECT,0,0,len,len);
   s1.setFill( background);
   PShape s = createShape( );
@@ -64,7 +80,7 @@ PShape[][] populateGradientGrid2( int rows, int cols,int size, color c1, color c
       PShape[][] shapesMatrix = new PShape[rows][cols];
       for( int i=0; i<rows; i++){
         for( int j=0; j< cols; j++){
-        int k = i + j; //diagonal index
+          int k = i + j; //diagonal index
           float colorAmount = map( k, 0, rows + cols, 0.0,1.0);
           color foreground = lerpColor( c1, c2, colorAmount);
           color background = lerpColor( c3, c4, colorAmount);
