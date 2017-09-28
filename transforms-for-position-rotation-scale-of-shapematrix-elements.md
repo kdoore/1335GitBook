@@ -16,8 +16,9 @@ The image above shows that a combination of rotation and translation can be used
 
 ```java
 void displayRotateRegion2(PShape[][] shapesMatrix,int rows, int cols, int cellSize, int artWorkSize){
+ int w= artWorkSize;
   pushMatrix();
-  translate( artWorkSize, 0);
+  translate( w, 0);
   rotate( PI/2);
   displayShapeMatrix(shapesMatrix, 0 ,0, rows , cols ,cellSize);
   popMatrix();
@@ -29,8 +30,9 @@ void displayRotateRegion2(PShape[][] shapesMatrix,int rows, int cols, int cellSi
 
 ```java
 void displayRotateRegion2(PShape[][] shapesMatrix,int rows, int cols, int cellSize, int artWorkSize){
+  int w= artWorkSize;
   pushMatrix();
-  translate( artWorkSize, 0);
+  translate( w, 0);
   scale(-1.0, 1.0);
   displayShapeMatrix(shapesMatrix, 0 ,0, rows , cols ,cellSize);
   popMatrix();
