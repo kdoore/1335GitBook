@@ -105,6 +105,13 @@ void displayShapeMatrix(PShape[][] shapes, int xPos, int yPos, int rows, int col
   popMatrix();
 }
 
+```
+
+###Use Rotate, Translate, Scale to display ShapeMatrix across other Regions.  
+Within these functions, the canvas is transformed prior to calling the displayShapeMatrix code above. An example of using both Rotate and Scale are shown, for creating a ShapeMatrix in Region2.  Similar functions should be created for Region3 and Region4
+
+
+```java
 //display shapeMatrix in region2, use rotate( radians);
 void displayRotateRegion2(PShape[][] shapesMatrix,int rows, int cols, int cellSize, int artWorkSize){
   pushMatrix();
@@ -124,6 +131,43 @@ void displayScaleRegion2(PShape[][] shapesMatrix,int rows, int cols, int cellSiz
 }
 
 ```
+
+###Final Code Setup:
+
+
+
+
+```
+
+void setup(){
+  size(400,400);
+  background(0);
+  colorMode(HSB, 360,100,100);
+  color c1= color( 71, 100, 100); //chartruse
+  color c2 = color(278,95,30);// bright purple
+  
+  int artWorkRows = 20; //even number - rows, cols
+  int artWorkCols= artWorkRows;
+  int artWorkSize=400;
+  int cellSize = artWorkSize/artWorkRows;
+  
+  //dimensions for grid motif that occupies 1/4 size of the artWork 
+  int rows = artWorkRows/2;
+  int cols = artWorkCols/2;
+  
+  //create smaller grid sections - 
+  PShape[][] shapesMatrix1 = populateGradientGrid(rows , cols ,cellSize, c1, c2  );
+  PShape[][] shapesMatrix2 = populateGradientGrid2(rows , cols ,cellSize, c1, c2   );
+  
+  //add comments
+  displayShapeMatrix(shapesMatrix1, 0 ,0, rows , cols ,cellSize);
+  displayScaleRegion2(shapesMatrix2, rows , cols , cellSize, artWorkSize);
+  displayScaleRegion3(shapesMatrix2, rows , cols , cellSize, artWorkSize);
+  displayRotateRegion4(shapesMatrix1, rows , cols , cellSize, artWorkSize);
+} 
+
+```
+
 
 
 
