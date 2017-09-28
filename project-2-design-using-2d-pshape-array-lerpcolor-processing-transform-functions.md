@@ -132,6 +132,8 @@ void displayScaleRegion2(PShape[][] shapesMatrix,int rows, int cols, int cellSiz
 
 ```
 
+![](/assets/Screenshot 2017-09-28 13.26.58.png)
+
 ###Final Code Setup:
 
 
