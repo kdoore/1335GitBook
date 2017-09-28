@@ -11,6 +11,8 @@ Given a simple grid design element, shown positioned at the origin, repetition o
 ###Rotation of Grid Units:
 Given a single grid unit positioned at the canvas origin, let's look at the result of rotations of a single grid unit through 90, 180, and 270 degrees, where rotation always occurs around the canvas origin.
 
+
+
 ![](/assets/Screenshot 2017-09-28 09.36.59.png)
 
 The image above shows that a combination of rotation and translation can be used to create design patterns from a single grid module.  When writing these display functions.  Region1 shows the position of the origin at the upper left corner.  The larger, light-blue square located to the upper left of region 1 uses simple rotation to create a larger composition from a single unit.  
@@ -48,6 +50,7 @@ void displayRotateRegion2(PShape[][] shapesMatrix,int rows, int cols, int cellSi
   popMatrix();
 }
 ```
+
 
 
 
