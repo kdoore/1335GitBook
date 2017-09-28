@@ -9,4 +9,5 @@ Given a single grid unit positioned at the canvas origin, let's look at the resu
 
 ![](/assets/Screenshot 2017-09-27 21.27.32.png)
 
-The image above shows that a combination of rotation and translation can be used to create design patterns from a single grid module.  When writing these display functions, 
+The image above shows that a combination of rotation and translation can be used to create design patterns from a single grid module.  When writing these display functions.  
+
