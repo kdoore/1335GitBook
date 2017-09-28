@@ -102,7 +102,7 @@ The logic for the image above uses the fact that along square shaped sections, l
  
  The [lerpColor( ) function](https://kdoore.gitbooks.io/cs1335/content/lerpcolor-and-map.html) can use a factor like k to determine color for each grid cell. 
 
-The image below uses logic:  color factor k = min( i, j).  In addition, there are color gradients on both the forground and background colors.
+The image below uses logic:  color factor k = min( i, j).  In addition, there are color gradients on both the forground and background colors.  The primary block unit has been repeated 4 times across adjacent regions, where  `scale( scaleX, scaleY)` has been used to create [mirror-images](https://kdoore.gitbooks.io/cs1335/content/transforms-for-position-rotation-scale-of-shapematrix-elements.html) of the basic unit 
 ![](/assets/Screenshot 2017-09-27 19.58.32.png)
 
 
