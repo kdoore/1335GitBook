@@ -53,8 +53,11 @@ When creating a 2 dimensional array, it is customary to have the first bracket i
   int rows = 5;
   int cols = 4;
   int size=60;
-  int[][] intMatrix = new int[rows][cols];
-
+  
+  int[][] intMatrix ;  //declare 2D array of integers
+  intMatrix = new int[rows][cols]; //initialize 
+  
+  //nested for loops to access each element
   for ( int i=0; i< rows; i++) {
     for ( int j=0; j<cols; j++) {
       int k=  i + j;  //create a variable to use for fill logic
