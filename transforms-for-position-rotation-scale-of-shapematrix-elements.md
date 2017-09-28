@@ -26,7 +26,7 @@ void displayRotateRegion2(PShape[][] shapesMatrix,int rows, int cols, int cellSi
 ```
 
 ###Example code for Region2 Grid  - Scale( -1.0, 1.0);
-
+In some situations, rotation of the grid doesn't provide the correct arrangement of cells.  If your design requires mirroring about an axis, then the Processing Scale transformation functions may work better for you.  The code below shows that using `scale( -1.0, 1.0)` 
 
 ```java
 void displayRotateRegion2(PShape[][] shapesMatrix,int rows, int cols, int cellSize, int artWorkSize){
