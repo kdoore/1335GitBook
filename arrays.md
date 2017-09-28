@@ -49,17 +49,22 @@ Syntax:
 When creating a 2 dimensional array, it is customary to have the first bracket index represent the rows, with the j index representing columns.  A for-loop is usually used to step through each element in the collection, where intMatrix[i][j]  refers to a single array element in the i'th row and j'th column position.
 
 ```java
-int rows = 5;
-int cols = 4;
-int[][] intMatrix = new int[rows][cols]
 
-for( int i=0; i< rows; i++){
-  for( int j=0; j<cols; j++){
-  intMatrix[i][j] = i + j;   
-  
+  int rows = 5;
+  int cols = 4;
+  int size=60;
+  int[][] intMatrix = new int[rows][cols];
+
+  for ( int i=0; i< rows; i++) {
+    for ( int j=0; j<cols; j++) {
+      int k=  i + j;  //create a variable to use for fill logic
+      intMatrix[i][j] = k; //store this value for each cell
+      fill(100+(k*30));  //set fill based on k value
+      rect( i* size, j * size, size, size);
+     
     }
   }
 ```
 
-
+![](/assets/Screenshot 2017-09-28 13.42.54.png)
 
