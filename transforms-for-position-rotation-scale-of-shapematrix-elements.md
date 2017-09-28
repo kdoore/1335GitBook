@@ -60,3 +60,4 @@ void displayRotateRegion2(PShape[][] shapesMatrix,int rows, int cols, int cellSi
 
 ###Additional Patterns using Rotate and Scale
 
+![](/assets/Screenshot 2017-09-28 12.58.55.png)
