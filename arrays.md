@@ -41,3 +41,25 @@ for( int i=0; i < myInts.Length; i++){
   myInts[i] = i * 10;  
 }
 ```
+##2 Dimensional Arrays
+2 Dimensional arrays work well as a data-structure for 2-Dimensional data, such as data associated with a grid structure.
+
+Syntax:
+
+When creating a 2 dimensional array, it is customary to have the first bracket index represent the rows, with the j index representing columns.  A for-loop is usually used to step through each element in the collection, where intMatrix[i][j]  refers to a single array element in the i'th row and j'th column position.
+
+```java
+int rows = 5;
+int cols = 4;
+int[][] intMatrix = new int[rows][cols]
+
+for( int i=0; i< rows; i++){
+  for( int j=0; j<cols; j++){
+  intMatrix[i][j] = i + j;   
+  
+    }
+  }
+```
+
+
+
