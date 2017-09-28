@@ -28,8 +28,9 @@ Example:  Declare and initialize a 2D array of 100 elements, to hold PShape obje
 
 ###Diagonal Color Gradients
 ![](/assets/Screenshot 2017-09-24 08.43.41.png) 
- 
-In the image above, we see a diagonal color gradient in both the foreground and background colors. The logic associated with this can be seen in the image below.  If we define a new variable: `int k = i + j;` , where k is the sum of the i, j index variables, we see that the value of k increases along the grid's diagonal direction.  Then we can use k as a factor to determine the fill color. 
+
+###Define variable k to determine color pattern.
+In the image above, we see a diagonal color gradient in both the foreground and background colors. The logic associated with this can be seen in the image below.  If we define a new variable: `int k = i + j;` , where k is the sum of the i, j index variables, we see that the value of k increases along the grid's diagonal direction.  Then we can **use k as a factor to determine the fill color**. 
 
 ###Color Gradient Logic:
 Using the sum of grid indexes for color logic gives us a simple approach to create complex patterns.  We can observe a pattern that forms when we consider i,j indexes of each cell:  if we add i + j indexes for a cell, then neighboring cells along diagonal lines have equal values of i + j.  We can use this relationship to determine fill values for cells, so we can create a gradient fill diagonally across a grid of cells.  
@@ -69,7 +70,7 @@ Shape1  ... Shape2
 ![](/assets/Screenshot 2017-09-24 14.02.04.png)
 
 ###Logic for Randomized 2-pattern arrangement:
-We can use the Processing random(min,max ) function to simulate random events. We define and initialize a random variable: `rand` that will be assigned a decimal value between 0.0 and 2.0.   We determine that if `rand > 1`, then we `createShapeOne( )`, like a coin flip, roughly half the time we'll have `rand < 1` and instead we'll `createShapeTwo( )`.  
+We can use the Processing random(min,max ) function to simulate random events. We define and initialize a random variable: `rand` that will be assigned a decimal value between 0.0 and 2.0.   We determine that if `rand > 1`, then we `vertexPattern1( )`, like a coin flip, roughly half the time we'll have `rand < 1` and instead we'll `vertexPattern2( )`.  
           
 
 ```java
@@ -77,17 +78,23 @@ We can use the Processing random(min,max ) function to simulate random events. W
           
    float rand= random(0,2); 
    if(rand > 1){
-        createShapeOne(size, foreground, background);
+        vertexPattern1(size, foreground, background);
     }
     else{
-        createShapeTwo(size, foreground, background); 
+        vertexPattern2(size, foreground, background); 
     }
 
 ```
 
+###Other Patterns based on i, j index
 
+![](/assets/Screenshot 2017-09-27 19.22.19.png)
 
+The logic for the image above uses the fact that along square shaped sections, like the outer top-row and the left-colum both share the feature that the minimum value of the i,j index for each element is 0.
 
+ k = min( i, j);  
+ 
+ The [lerpColor( ) function](https://kdoore.gitbooks.io/cs1335/content/lerpcolor-and-map.html) can use a factor like k to determine color for each grid cell. 
 
 
 
