@@ -11,7 +11,7 @@ Given a single grid unit positioned at the canvas origin, let's look at the resu
 
 The image above shows that a combination of rotation and translation can be used to create design patterns from a single grid module.  When writing these display functions.  Region1 shows the position of the origin at the upper left corner.  The larger, light-blue square located to the upper left of region 1 uses simple rotation to create a larger composition from a single unit.  
 
-The larger, light green square to the lower right of region 1 uses translation and rotation to form a larger composition using repetition of the basic square unit shown in region1.  The yellow circles show where the origin has been translated.  The code below shows the transformations required for positioning the square at the Region2 location using rotation and translation. 
+The larger, light green square to the lower right of region 1 uses translation and rotation to form a larger composition using repetition of the basic square unit shown in region1.  The yellow circles show where the origin has been translated.  The red circle shows the canvas origin where the original Region1 square is positioned. The code below shows the transformations required for positioning the square at the Region2 location using rotation and translation. When using an asymmetric design, this method of repetition shows rotational asymmetry.
 
 ###Example code for Region2 Grid - Rotate 90 degrees
 
@@ -26,11 +26,13 @@ void displayRotateRegion2(PShape[][] shapesMatrix,int rows, int cols, int cellSi
   popMatrix();
 }
 ```
+###Mirroring - Using Processing scale( x, y)
 
-###Example code for Region2 Grid  - Scale( -1.0, 1.0);
-In some situations, rotation of the grid doesn't provide the correct arrangement of cells.  If your design requires mirroring about an axis, then the Processing Scale transformation functions may work better for you.  The code  uses `scale( -1.0, 1.0)` along with translate( )  to achieve similar results as the with rotate, but results in mirroring the pattern.
+In some situations, rotation of the grid doesn't provide the desired repetition configuration.  If your design requires mirroring about an axis, then the Processing scale transformation functions can be useful.  The image below uses `scale( scaleX, scaleY)` along with translate( )  to achieve similar results as the with rotate, but results in mirroring the pattern.  
 
 ![](/assets/Screenshot 2017-09-28 09.34.56.png)
+
+###Example code for Region2 Grid  - Scale( -1.0, 1.0);
 
 ```java
 void displayRotateRegion2(PShape[][] shapesMatrix,int rows, int cols, int cellSize, int artWorkSize){
