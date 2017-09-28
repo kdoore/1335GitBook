@@ -135,9 +135,7 @@ void displayScaleRegion2(PShape[][] shapesMatrix,int rows, int cols, int cellSiz
 ###Final Code Setup:
 
 
-
-
-```
+```java
 
 void setup(){
   size(400,400);
