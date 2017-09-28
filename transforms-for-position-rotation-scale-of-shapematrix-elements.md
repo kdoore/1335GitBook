@@ -4,7 +4,7 @@ We can use the Processing transform functions to position  our shapeMatrix eleme
 
 To create a complete artwork, we can take several simple 2D grids and position them adjacent to each other to form a larger artwork composition.  There are several ways to reorient the blocks to create interesting design patterns.
 
-Given a simple grid design element, shown positioned at the origin, repetition of this single motif, using Processing transform functions: translate( x, y), rotate( angle), scale( scaleX, scaleY); can provide a simple way to create an interesting design composition.
+Given a simple grid design element, shown positioned at the origin, repetition of this single motif, using Processing transform functions: `translate( x, y)`, `rotate( angle)`, `scale( scaleX, scaleY)`; can provide a simple way to create an interesting design composition.
 
 ![](/assets/Screenshot 2017-09-28 09.49.38.png)
 
