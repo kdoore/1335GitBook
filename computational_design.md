@@ -3,14 +3,15 @@
 Wikipedia: 
 Parametric design is a process based on algorithmic thinking that enables the expression of parameters and rules that, together, define, encode and clarify the relationship between design intent and design response.[ Wikipedia Link](https://en.wikipedia.org/wiki/Parametric_design)  
 
-Dr. Mihai Nadin was an early proponent of of use of computers as part of the design process.  "He founded the world’s first program in Computational Design in 1994 at the University of Wuppertal (Germany). Its purpose was twofold: 1. development of a theory of computational design; 2. the design of products and processes through digital means. Currently Mihai Nadin is a professor at the University of Texas at Dallas, appointed to the Ashbel Smith Professorship in Interactive Arts, Technology, and Computer Science. He is director of the Institute for Research in Anticipatory Systems."  [Wikipedia Link ](https://en.wikipedia.org/wiki/Mihai_Nadin#Computational_design) 
+Dr. Mihai Nadin was an early proponent of of use of computers as part of the design process.  
+>He founded the world’s first program in Computational Design in 1994 at the University of Wuppertal (Germany). Its purpose was twofold: 1. development of a theory of computational design; 2. the design of products and processes through digital means. Currently Mihai Nadin is a professor at the University of Texas at Dallas, appointed to the Ashbel Smith Professorship in Interactive Arts, Technology, and Computer Science. He is director of the Institute for Research in Anticipatory Systems.  [Wikipedia ](https://en.wikipedia.org/wiki/Mihai_Nadin#Computational_design) 
 
-"I think that the most interesting shift in recent design experience is that we have passed from designing objects to designing networks and processes. "   [Francesco Cingolani](http://ecosistemaurbano.org/english/francesco-cingolani-eu-collaborators/)
+Designing Processes rather than Objects 
+>I think that the most interesting shift in recent design experience is that we have passed from designing objects to designing networks and processes.   [Francesco Cingolani](http://ecosistemaurbano.org/english/francesco-cingolani-eu-collaborators/)
 
 
-###But what is the difference between “parametric design” and “computational design” ?
-
-"I don’t know. “Computational design” refers to the use of computers and mathematical approach to the generation of geometries, objects and architecture. “Parametric design” is about using parameters to design things. It means that if parameters changes, the result change. Regardless of which expression is the best, what interests me the most is the idea of focusing on design process instead of designed objects."  [Francesco Cingolani](http://www.immaginoteca.com/parametric-vs-computational-design/)
+###What is the difference between “parametric design” and “computational design” ?
+>I don’t know. “Computational design” refers to the use of computers and mathematical approach to the generation of geometries, objects and architecture. “Parametric design” is about using parameters to design things. It means that if parameters changes, the result change. Regardless of which expression is the best, what interests me the most is the idea of focusing on design process instead of designed objects.  [Francesco Cingolani](http://www.immaginoteca.com/parametric-vs-computational-design/)
 
 ###Programming as a Design System
  In the introduction to his graduate course: Programing Design Systems, Rune Madsen provides an excellent in-depth article on the [History of Design Systems](http://printingcode.runemadsen.com/lecture-intro/) by Rune Skjoldborg Madsen
