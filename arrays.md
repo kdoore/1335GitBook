@@ -10,7 +10,7 @@ Since Arrays are java objects, they are a Reference data-type, this means that t
 ###Arrays as Function Input Parameters
 When we pass array objects into functions, we're actually passing the memory address of the array into the function, so changes made to an array's elements within a function are persisted to the array after the function completes execution.
 
-In the code example below, we declare and initialize a 1 dimensional array of integer values.  The array is passed as an input parameter into the function: initializeVals, where each element in the array is initialized to the value of initVal, which in this case is 12.  
+In the code example below, we declare and initialize a 1 dimensional array of integer values.  The array is passed as an input parameter into the function: initializeVals, where each element in the array is initialized to the value of initVal, which in this case is 12.  In the second function, modifyOneVal, both input parameters are integers, not objects, so only a copy of the parameter's value is passed into the function.  This is referred to as pass by copy.  In the case of the Array object, the address of the array is passed into the function, so the function modifies the original array object. 
 
 ```java
 
