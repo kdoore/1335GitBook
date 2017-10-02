@@ -5,7 +5,42 @@ Arrays are an data-structure that can hold multiple values.   We can consider an
 Arrays are objects in java, so we'll start to learn how to work with objects as we learn to work with arrays.
 
 ###Object-Reference Data-Type
-Since Arrays are java objects, they are a Reference data-type, this means that the array's name variable actually contains a reference, or pointer, to the location in heap memory space where the array's data is stored as contiguous items.  When we pass array objects into functions, we're actually passing the memory address of the array into the function, so changes made to an array's elements within a function are persisted to the array and visible after the function completes execution.
+Since Arrays are java objects, they are a Reference data-type, this means that the array's name variable actually contains a reference, or pointer, to the location in heap memory space where the array's data is stored as contiguous items.  
+
+###Arrays as Function Input Parameters
+When we pass array objects into functions, we're actually passing the memory address of the array into the function, so changes made to an array's elements within a function are persisted to the array after the function completes execution.
+
+In the code example below, we declare and initialize a 1 dimensional array of integer values.  The array is passed as an input parameter into the function: initializeVals, where each element in the array is initialized to the value of initVal, which in this case is 12.  
+
+```java
+
+int[] intVals = new int[10];
+
+//call function, pass intVal array as function input:  value
+initializeVals( intVals, 12 );
+println( "intVal0: " + intVals[0] );  //intVal0: 12 
+
+//call function, pass one array element, as function input: int value, the array element value is not modified, only a copy of the integer value is passed to the function
+
+modifyOneVal( intVals[0], 13 );
+println( "intVal0: " + intVals[0] );  //intVal0: 12
+
+//function definitions below
+
+void initializeVals( int[] intArray, int initVal ){
+      for( int i=0; i< intArray.length; i++){
+      
+       intArray[i] = initVal;
+      }
+}
+
+void modifyOneVal( int val1, int val2){
+     val1 = val2;
+}
+
+initializeVals( intVals
+```
+
 
 ###Declare an Array
 When we want to create an array, we need to learn the unique syntax that java uses for arrays.  To declare an array, we start by declaring the type of data that we want to store in the list, then we use brackets to indicate that we want an array of these values. To initialize the array object we use the ``new`` keyword to indicate that we're creating a java array object, then we must specify the number of elements in our array.  The code below shows how to declare and initialize the array structure for several different types of data.
