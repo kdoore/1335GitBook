@@ -5,7 +5,7 @@ In the previous section we created a function: displayShapes, to take a 1 Dimens
 displayShapes( PShape[] shapes, float cellSize,  int rows, int cols)
 ```
 ###Select Grid Regions - to define patterns
-As we look to increase the complexity of our design, one approach would be to add logic to our for-loops to identify regions in each grid, where we could selectively display some portion of shapes in one of our shapes lists.
+As we look to increase the complexity of our design, one approach would be to add logic to our nested for-loops to identify regions in each grid, where we could selectively display some portion of shapes in one of our shapes lists.
 
 The image below shows a grid, with the (i,j) indexes for drawn in each cell.  The yellow section represents a region that we'd like to add items to.
 
