@@ -4,26 +4,13 @@ The image below shows how we can create a simple polygon using the [Processing P
 
 For our recursive pattern project, it will be important to create a simple pattern that can be defined by a central point \(vertex\) and one **length** value. 
 
-``vertexPattern( length );``
-
+`vertexPattern( length );`
  
    You can see from the image below that if we design our pattern based on points on a square, this becomes straightforward.  For each recursive call, we want to make the length smaller, but keep the center-point location fixed.  Each time we draw the shape, if we use a different value for the length parameter, the shape will be scaled according to that length dimension parameter. 
 
 Defining the shape based on a variable length means that if length=100, it should create a pattern that is 10 times larger than if we'd set length = 10.  
 
-![](vertexShape.png)
-
-For the image below, we could have a drawPattern\( \) function that uses the vertex pattern from the above image.
-
 For the vertices: if we start in the center, then rotate clockwise, we can determine the vertices as:
-
-```
-v0:  centerX, centerY
-v1:  centerX + len/2, centerY + len/2
-v2:  centerX - len/2, centerY + len/2
-v3:  centerX - len/2, centerY
-v4:  centerX        , centerY - len/2
-```
 
 Finally, to simplify further, we can consider that if we translate the origin to the position where we want to draw the pattern, we can consider centerX, centerY as the origin point \(0,0\).
 
@@ -34,10 +21,20 @@ Finally, to simplify further, we can consider that if we translate the origin to
   s.vertex(0,0);
   s.vertex( len, 0);
   s.vertex( len, len);
-  s.vertex( len/2, len/2);   
   s.vertex( 0, len);
   s.endShape(CLOSE);
   shape( s, 0,0);  //this displays the shape on the canvas at point (0,0)
+
+//example shape 2 - Use factor of .5 to scale len parameter
+  PShape s2 = createShape();
+  s2.beginShape( );
+  s2.vertex( 0, 0);
+  s2.vertex( len * .5, len * .5);
+  s2.vertex( len, len);
+  s2.vertex( len * .5, len);
+  s2.vertex( 0, len);
+  s2.endShape( CLOSE);
+  shape( s2, 200, 200);
 
 ```
 ###Custom Draw Rectangles Function using Vertex Points 
@@ -151,9 +148,9 @@ void draw(){
 
 ![](Screenshot 2016-01-23 23.43.26.png)
 
-# HSB ColorMode
+# HSB Colormode - Set Fill at the Vertex Level
 
-Once a design has been developed using grayscale color values as show above, then it's very easy using HSB colormode to add hueValues.  Design your pattern using grayscale values to see if the pattern has a dynamic quality.
+Once a design has been developed using grayscale color values as show above, then it's very easy using HSB colormode to add hueValues.  Processing using P2D mode as specified in the size( 600,600, P2D) supports vertex shaders, where gradient colors are computed for fill( ) values specified between vertex for PShape objects. 
 
 ![](Screenshot 2016-01-24 18.37.32.png)
 
