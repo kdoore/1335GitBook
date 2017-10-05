@@ -15,6 +15,12 @@ Create a 2D Array of PShape objects,  create grid patterns using HSB colorMode a
     
 ###Example vertexPattern code using PShape Group 
 The code below uses PShape group functionality.  Multiple PShape objects can be layered to create a single PShape group object.  Below, 3 PShape objects are created, s1 and s are added as child objects to PShape g which is a group object.  The ordering that child objects are added to the group corresponds to the layer ordering for their display, s1 is designed as a background layer.
+
+###PShape defined using len parameter - 
+
+Here, PShapes are defined using vertices and the input parameter len , or some multiplicative factor times len.  Here, many vertices are defined using **len * .5**.  Since all vertices are defined in terms of the len input parameter, then we can vary the value of len when calling the function, and the displayed shape will be the same shape, but scaled at a different size depending on the value of len.
+
+**Notice, to define our vertices, we are using `len * factor`, we are not using `len + factor`,  we want to use len to control the size of our pattern. We can control any offset or `x,y`positioning of our pattern at the time we draw the pattern using the PShape: shape( s, x, y) function. **  
  
 ```java
 
@@ -22,13 +28,13 @@ PShape vertexPattern1( float len, color foreground) {
   PShape s = createShape( );
   s.beginShape();
   s.fill(foreground);
-  s.vertex(len/2, len/2);
+  s.vertex(len * .5, len * .5);
   s.vertex( 0, 0);
   s.vertex(len, 0);
-  s.vertex( len/2, len/2);
+  s.vertex( len * .5, len * .5);
   s.vertex( len, len);
   s.vertex(0, len);
-  s.vertex( len/2, len/2);
+  s.vertex( len * .5, len * .5);
   s.endShape(CLOSE);
   return s;
 }  //end createOneShape
