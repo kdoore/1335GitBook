@@ -21,10 +21,13 @@ The code below uses PShape group functionality.  Multiple PShape objects can be 
 Here, PShapes are defined using vertices and the input parameter len , or some multiplicative factor times len.  Here, many vertices are defined using **len * .5**.  Since all vertices are defined in terms of the len input parameter, then we can vary the value of len when calling the function, and the displayed shape will be the same shape, but scaled at a different size depending on the value of len.
 
 **Notice, to define our vertices, we are using `len * factor`, we are not using `len + factor`,  we want to use len to control the size of our pattern. We can control any offset or `x,y`positioning of our pattern at the time we draw the pattern using the PShape: shape( s, x, y) function. **  
+
+**Please notice that s.fill(forground) might not work for all computers, in that case, rather than provide color at a vertex level, we should set fill as the first line in the vertexPattern function**
  
 ```java
 
 PShape vertexPattern1( float len, color foreground) {
+  //fill(foreground); ///alternative way to set the PShape color
   PShape s = createShape( );
   s.beginShape();
   s.fill(foreground);
