@@ -14,6 +14,16 @@ PShape s = createShape(RECT, 0,0,40,50);
 ///then to display it
 s.setFill(color(255, 0, 0));  //set color to red
 shape(s, 20,20);  //specify x, y location
+
+###Types of PShapes:
+There are actually 3 different types of Processing PShape objects: one type is created by loading a .svg image file. In that case, we initialize the PShape object using the LoadShape function, example:
+PShape s = loadShape("myImg.svg");
+
+
+The other type of PShape object is created using the Processing primitive shape modes: RECT, etc, or by defining a series of verticies. For these types of PShapes, we initialize the PShape object using the CreateShape function, example:
+PShape s = createShape(RECT, 0,0,40,40);
+When we want to use these PShapes to create a drawing pattern, then we will want to be able to modify the size, shape, and styling of the PShape object. However, for each different type of PShape object, we need to use slightly different syntax to modify these things. So, can we create a generalized PShapePattern class that will allow us to use either type of PShape object?
+
 ```
 ###PShape Fill
 For each different type of PShape, either vertex pattern, processing primitive, or loaded external .svg file, there are quite a few ways that we can modify the color of a PShape object.  Sometimes, only 1 color method might work, so the options are listed below:
