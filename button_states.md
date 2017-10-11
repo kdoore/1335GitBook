@@ -28,9 +28,6 @@ We want the button to display some behavior in response to the user's mouse when
 We are using the colorMode(HSB) so that we can simplify the code for the hover behavior, where we simply modify the HSB `Brightness` parameter when the user's mouse is positioned directly over the button. 
 
 
-[Link to example program](http://jsbin.com/yizuce/edit?js,output)
-
-
 ```java
 // This is a simple button program where the button controls the //color of the ellipse.  
 // The button color is green when the button is on, and red when it's not on.
