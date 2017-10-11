@@ -22,7 +22,7 @@ Here, PShapes are defined using vertices and the input parameter len , or some m
 
 **Notice, to define our vertices, we are using `len * factor`, we are not using `len + factor`,  we want to use len to control the size of our pattern. We can control any offset or `x,y`positioning of our pattern at the time we draw the pattern using the PShape: shape( s, x, y) function. **  
 
-**Please notice that s.fill(forground) might not work for all computers, in that case, rather than provide color at a vertex level, we should set fill as the first line in the vertexPattern function**
+**PShape fill issues:** Please notice that s.fill(forground) might not work for all computers, in that case, rather than provide color at a vertex level, we should set fill as the first line in the vertexPattern function:  fill(foreground);
  
 ```java
 
