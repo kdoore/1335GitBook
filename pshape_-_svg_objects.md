@@ -15,7 +15,15 @@ PShape s = createShape(RECT, 0,0,40,50);
 s.setFill(color(255, 0, 0));  //set color to red
 shape(s, 20,20);  //specify x, y location
 ```
+###PShape Fill
+For each different type of PShape, either vertex pattern, processing primitive, or loaded external .svg file, there are quite a few ways that we can modify the color of a PShape object.  Sometimes, only 1 color method might work, so the options are listed below:
 
+```java
+
+PShape s = createShape();
+s.beginShape();
+
+```
 
 ###Stars
 
