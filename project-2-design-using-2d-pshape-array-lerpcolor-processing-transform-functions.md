@@ -87,10 +87,11 @@ PShape[][] populateGradientGrid( int rows, int cols,int size, color c1, color c2
 
 PShape[][] populateGradientGrid2( int rows, int cols,int size, color c1, color c2, color c3, color c4 ){
       PShape[][] shapesMatrix = new PShape[rows][cols];
-      for( int i=0; i<rows; i++){
+      for( int i=0; i < rows; i++){
         for( int j=0; j< cols; j++){
           int k = i + j; //diagonal index
-          float colorAmount = map( k, 0, rows + cols-2, 0.0,1.0);
+          // adjust the map function variables to change design features
+          float colorAmount = map( k, 0, (rows + cols - 2), 0.0,1.0);
           color foreground = lerpColor( c1, c2, colorAmount);
           color background = lerpColor( c3, c4, colorAmount);
           shapesMatrix[i][j] = vertexPattern2(size,foreground, background ); 
