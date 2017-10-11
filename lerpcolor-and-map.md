@@ -72,7 +72,7 @@ The Processing `map( )` function can be helpful in calculating the lerpColor fra
 ###Use map( ) to determine lerpColor fractional value
 The code below shows how we can use the map function to determine a valid value for fractional amount for intermediate color. 
 
-map takes one value in a given range and calculates the corresponding value for a second range.  In this case, we have the value of k, we know it can range from 0 to rows+cols. When i, j are at their max values, then `k = rows + cols`.  We know that range2 is the value we're trying to find, it corresponds to the range (0.0 to 1.0).  Map calculates this for us when used as below. 
+map takes one value in a given range and calculates the corresponding value for a second range.  In this case, we have the value of k, we know it can range from 0 to rows+cols. When i, j are at their max values, then `k = rows + cols - 2`. We need to subtract 2 because i and j are indexes and the numbering ranges from 0 to rows.length-1, or O to cols.length-1  We know that range2 is the value we're trying to find, it corresponds to the range (0.0 to 1.0).  Map calculates this for us when used as below. 
  
  `float value2 = map( value1, range1Min, range1Max, range2Min, range2Max); `
  
@@ -85,7 +85,7 @@ map takes one value in a given range and calculates the corresponding value for 
   for( int i = 0; i < rows; i++){
     for( int j = 0; j < cols; j++){
       int k = i + j;
-      float amt = map( k,0,rows + cols, 0.0, 1.0);
+      float amt = map( k,0,rows + cols-2, 0.0, 1.0);
       color intermediateColor = lerpColor( startColor, endColor, amt);
       fill(intermediateColor);
       rect( i* size, j * size, size, size);
