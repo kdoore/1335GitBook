@@ -63,10 +63,23 @@ PShape vertexPattern2( float len, color foreground, color background) {
   return g;
 }  //end createOneShape
 
-
-
 ```
-    
+###Test and Verify VertexPattern functions
+After writing the vertexPattern functions, it's a good idea see what one of them looks like and to make sure they are displaying something, we can do this in setup
+
+```java
+
+void setup(){
+size(600,600);
+colorMode(HSB, 300,100,100);
+color c1 = color(0, 255,255); //red
+PShape testShape = vertexPattern1( 100, c1); //hardcode value for len
+shape( testShape, 300,300);//display at canvas center
+}
+
+ ```
+ 
+       
 2.Create at least 2 functions to create 2-Dimensional Grids of PShape objects: these are the driver-functions that determine pattern logic, use colorLerp and map functions.  Suggestion: create and return PShape[][] objects within the function.
 
 
