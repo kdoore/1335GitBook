@@ -9,11 +9,13 @@ a variety of ways to use PShape, let's start by creating simple Rectangle PShape
 ###Processing Primitives
 The easiest way to create a PShape object is to use the Processing Primitives mode, this allows us to create a PShape object using processing shape primitives:
 
-```
+```java
+
 PShape s = createShape(RECT, 0,0,40,50);
 ///then to display it
 s.setFill(color(255, 0, 0));  //set color to red
 shape(s, 20,20);  //specify x, y location
+```
 
 ###Types of PShapes:
 There are actually 3 different types of Processing PShape objects: one type is created by loading a .svg image file. In that case, we initialize the PShape object using the LoadShape function, example:
@@ -24,15 +26,32 @@ The other type of PShape object is created using the Processing primitive shape 
 PShape s = createShape(RECT, 0,0,40,40);
 When we want to use these PShapes to create a drawing pattern, then we will want to be able to modify the size, shape, and styling of the PShape object. However, for each different type of PShape object, we need to use slightly different syntax to modify these things. So, can we create a generalized PShapePattern class that will allow us to use either type of PShape object?
 
-```
-###PShape Fill
-For each different type of PShape, either vertex pattern, processing primitive, or loaded external .svg file, there are quite a few ways that we can modify the color of a PShape object.  Sometimes, only 1 color method might work, so the options are listed below:
 
+###PShape Fill Options
+For each different type of PShape, either vertex pattern, processing primitive, or loaded external .svg file, there are quite a few ways that we can modify the color of a PShape object. 
+The code below shows 3 ways to set the fill of a vertex type PShape object.  Copy the code and try the various methods.
+
+**PShape using vertex( )**
 ```java
-
-PShape s = createShape();
-s.beginShape();
-
+void setup(){
+size( 400,400);
+float len=100;
+color red = color(255,0,0);
+color blue = color( 0,0,255);
+color green = color(0,255,0);
+//fill(green); // using fill before creating the shape
+PShape s2 = createShape();
+s2.beginShape( );
+//s2.fill(color( 255,0,0)); //after calling beginShape() the object,specify fill using color
+s2.vertex( 0, 0);
+s2.vertex( len * .5, len * .5);
+s2.vertex( len, len);
+s2.vertex( len * .5, len);
+s2.vertex( 0, len);
+s2.endShape( CLOSE);
+//s2.setFill( blue); //can change color once endShape( ) has been called
+shape( s2, 200, 200);
+}
 ```
 
 ###Stars
