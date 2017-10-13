@@ -1,7 +1,11 @@
 ###Button
 
-```java
 
+
+
+
+
+```java
 class Button{
   //instance variables - add comments
   float x, y; //position
@@ -43,4 +47,6 @@ class Button{
     }
   }
 }
+
 ```
+
