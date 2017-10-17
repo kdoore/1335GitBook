@@ -23,6 +23,8 @@ class Button{
     label = "";
   }
   
+  //constructor
+  //add comments
    Button(float x,float y,float w,float h, color selectedColor, color defaultColor){
     this.x = x;
     this.y = y;
@@ -35,6 +37,8 @@ class Button{
      label = "";
   }
   
+  //constructor
+  //add comments
    Button(float x,float y,float w,float h, color selectedColor, String label){
     this.x = x;
     this.y = y;
@@ -47,7 +51,7 @@ class Button{
     currentColor = defaultColor;
   }
   
-  
+  //add comments
   void display(){
     fill(currentColor);
      if( selected){
