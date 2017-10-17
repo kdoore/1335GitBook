@@ -53,8 +53,8 @@ class Button{
   
   //add comments
   void display(){
-    fill(currentColor);
-     if( selected){
+    fill(currentColor);  //current color is changed when button is clicked
+     if( selected){  //set stroke if selected
       stroke(300);
      }
     else{
