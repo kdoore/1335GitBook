@@ -1,26 +1,26 @@
-f# PShapePattern
+### PShapePattern
 
 If we want to create a pattern class that can be used for creating patterns using any types of PShape, then we need to design a flexible PShapePattern class.  
 
 ###Types of PShapes:
-There are actually 2 different types of [Processing PShape objects:](https://processing.org/reference/PShape.html)  one type is created by loading a .svg image file.  In that case, we initialize the PShape object using the LoadShape function, example:
+There are actually 3 different types of [Processing PShape objects:](https://processing.org/reference/PShape.html)  one type is created by loading a .svg image file.  In that case, we initialize the PShape object using the LoadShape function, example:
 
 ```
 PShape s = loadShape("myImg.svg"); 
 ```
 
-The other type of PShape object is created using the Processing primitive shape modes: RECT, etc, or by defining a series of verticies.  For these types of PShapes, we initialize the PShape object using the CreateShape function, example:
+The other types of PShape objects are created using the Processing PShape function createShape(). There are 2 basic types of these PShapes, the first type are created primitive shape modes: RECT, ELLIPSE, etc.  The second type are created defining a series of verticies.  For both of these types of PShapes, we initialize the PShape object using the CreateShape function, example:
 
 ```
 PShape s = createShape(RECT, 0,0,40,40);
 ```
 
-When we want to use these PShapes to create a drawing pattern, then we will want to be able to modify the size, shape, and styling of the PShape object.  However, for each different type of PShape object, we need to use slightly different syntax to modify these things.  So, can we create a generalized PShapePattern class that will allow us to use either type of PShape object?  
+When we want to use these PShapes to create a drawing pattern, then we will want to be able to modify the size, shape, and styling of the PShape object.  However, for each different type of PShape object, we need to use slightly different syntax to modify these properties.  So, can we create a generalized PShapePattern class that will allow us to use either type of PShape object?  
 
 |  | loadShape(svg) | createShape(vertex), processing primitives |
 | -- | -- | -- |
 | size | width, height, scale() | scale() |
-| style | disableStyle(), fill() | setFill() |
+| style | disableStyle(), fill() | fill, setFill() |
 
 So, we need to create a pattern class that can give us control over these slight variations in syntax.  
 
