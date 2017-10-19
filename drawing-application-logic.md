@@ -2,7 +2,7 @@
 
 ###Initial Logic
 
-For Project 2, you will create a simple drawing application where 3 buttons allow you to choose which pattern to draw. One additional button will clear the drawing canvas.  
+For Project 3, you will create a simple drawing application where 3 buttons allow you to choose which pattern to draw. One additional button will clear the drawing canvas.  
 
 **The code on this page, and the image below shows a first iteration for this project**
 
@@ -25,11 +25,11 @@ _This assumes you will use the starter code for the project, which is included i
 
 ## Detailed Project Logic
 
-###Classes:  Button, MenuArray
+###Classes:  Button, ButtonGroup
     
 ###Global Objects:
 
-    MenuArray myMenuArray
+    ButtonGroup buttonGroup
     Button clearButton
     
 ###Logic In Setup:  
@@ -45,27 +45,27 @@ _This assumes you will use the starter code for the project, which is included i
            ```btnArray = new Button[3];```
        - initialize each Array element by calling Button Constructor
            
-           ```myMenuArray[0] = new Button( parameters );```
+           ```buttonGroup[0] = new Button( parameters );```
        - initialize clearButton by calling Button Constructor
        
        ```clearButton = new Button( parameters );```
        
-       - initialize myMenuArray by calling MenuArray Constructor and pass buttonArray as a parameter
+       - initialize buttonGroup by calling ButtonGroup Constructor and pass buttonArray as a parameter
        
-     ```myMenuArray = new MenuArray( btnArray, 3);```
+     ```buttonGroup = new ButtonGroup( btnArray);```
     
 ###Logic In Draw:
-- if MousePressed
+- if mousePressed
         - drawPattern
 - drawMenu
     
 ###Logic In MouseClicked:
     
-- myMenuArray.click
+- buttonGroup.click
 - clearButton.click
 - if clearButton is on ```if(clearButton.on)```
-       - clearCanvas
-       - turn off clearButton ```clearButton.on = false```
+       - clearCanvas - draw rectangle over the canvas surface
+       - reset the clearButton```
  
 ###Logic in drawPattern:
 - translate origin to mouse position
@@ -74,7 +74,7 @@ _This assumes you will use the starter code for the project, which is included i
 - switch: check which myMenuArray button is active
          
          ```java
-         switch(myMenuArray.activeButton){
+         switch(buttonGroup.activeButton){
          case 0:
              //display pattern 0
              break;

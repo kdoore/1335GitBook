@@ -34,7 +34,6 @@
 * [OOP - Inheritance](object_inheritance.md)
 * [PShape - SVG Objects](pshape_-_svg_objects.md)
 * [-- Old Content Below Here --](-old-content-below-here-.md)
-* [Drawing Application](drawing_application.md)
 * [Creative Brushes](creative_brushes.md)
 * [Child-Class: PImageButton](pimagebutton.md)
 * [Menu Buttons](menu_buttons.md)
