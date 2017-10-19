@@ -1,4 +1,4 @@
-#Reference-Types vs Primitive-Types
+#Object Reference-Types vs Primitive-Types
 
 When we covered Functions, we discussed variable scope, we were discussing how primitive data type variables are defined as being visible, or available for use by the executing program.  Primitive data types are what we've been using so far: ``int, float, boolean, char``.   
 

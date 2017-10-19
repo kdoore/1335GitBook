@@ -5,7 +5,7 @@
   * [Typed-Variables](typed-variables.md)
   * [Float - Integer Conversion Errors](typed-variables/float-integer-conversion-errors.md)
   * [Functions](functions.md)
-  * [Reference Data Types](reference_data_types.md)
+  * [Object Reference Data Types](reference_data_types.md)
   * [Arrays](arrays.md)
   * [Loops and Recursion](loops-and-recursion.md)
   * [Switch-Case Statement](switch-case_statement.md)
