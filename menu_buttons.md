@@ -3,14 +3,14 @@
 Now that we've created our button class, which is our template to create button objects, it's time to leverage our hard work to simplify the drawing application
 
 ###Composition:  A Menu *Has* Button Objects
-We will create the Menu class, and it will be composed of a set of button objects.  The button objects are responsible for most of their own behavior, however, since we want these buttons to work together as a radio-button type menu, we're going to have to add some additional logic to the Menu class to insure that only 1 button is active at a time.  
+We will create the ButtonGroup class, and it will be composed of an array of button objects.  The button objects are responsible for most of their own behavior, however, since we want these buttons to work together as a radio-button type group, we're going to have to add some additional logic to the Menu class to insure that only 1 button is active at a time.  
 
 
 ### Menu Code: 
-In the code below, we have created the Menu Class, we've added 3 button objects, they are initialized in the constructor and we've created a ``display()`` and ``click()`` method. Within the Menu ``display()`` method, we simply call the ``display()`` method for each button. However, right now these buttons don't have the required logic needed for them to function as a menu, we still need to add additional control logic to the ``click()`` method. Currently, each of these buttons each works independently.  
+In the code below, we have created the ButtonGroup Class, we've added 3 button objects, they are initialized in the constructor and we've created a ``display()`` and ``clicked()`` method. Within the Menu ``display()`` method, we simply call the ``display()`` method for each button. However, right now these buttons don't have the required logic needed for them to function as a menu, we still need to add additional control logic to the ``clicked()`` method. Currently, each of these buttons each works independently.  
 
 ```java
-class Menu{
+class ButtonGroup{
   
   Button btn1, btn2, btn3;
   
@@ -28,9 +28,9 @@ class Menu{
  
  //this isn't working correctly, each button functions independently
   void click(int mx, int my){
-       btn1.click(mx, my);
-       btn2.click(mx, my);
-       btn3.click(mx, my);
+       btn1.clicked(mx, my);
+       btn2.clicked(mx, my);
+       btn3.clicked(mx, my);
   }
   
 }  //end class
@@ -60,11 +60,11 @@ void setup(){
 }                            
 
 void draw(){
-  myMenu.Display();
+  myMenu.display();
 }
 
 void mouseClicked(){
-  myMenu.Click(mouseX, mouseY);
+  myMenu.clicked(mouseX, mouseY);
 }
 
 ```
@@ -87,7 +87,7 @@ final button3 = 3;   // this makes our code easier to understand
 ```
  
 ###Menu Click Method()
-In the code above, when a click event happens we simply call all menu-button click events, and after those events, we may have several buttons in the on-state.  It's impossible for us to know which button was most recently clicked, or which button had already been in the on state.  So, we need to add some logical structure to our code so we can determine which button should be identified as the activeButton.   
+In the code above, when a click event happens we simply call all button click events, and after those events, we may have several buttons in the on-state.  It's impossible for us to know which button was most recently clicked, or which button had already been in the on state.  So, we need to add some logical structure to our code so we can determine which button should be identified as the activeButton.   
 
 ###Button1 Click()
 Based on the image above, we can start to think about this logic by focusing on just Button1.  We can see from the image that the only time we need to worry about button1 being clicked is when it isn't currently the ``activeButton``.  If we verify that activeButton != button1, then we can check the state of btn1 after the button1.click() method is executed, if it is now in the on state:  ``btn1.on==true``, then we know to change set activeButton=button1.  In addition, as shown in the FSM image above, we also know that we need to manually set both btn2 and btn3 off, we do this by setting btn2.on=false.  We don't need to know which state was the previous active state...it could have been either button2 or button3, but we set both of their internal states to off and we're on our way to having working radio buttons.  We simply need to write similar tests for the cases when we know that button2 is not the activeButton, and similarly with button3.  The code below shows the logic for button1.
