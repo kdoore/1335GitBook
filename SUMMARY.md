@@ -49,4 +49,6 @@
   * [Button](project-3-class-definitions/button.md)
   * [ButtonGroup](project-3-class-definitions/buttongroup.md)
   * [Pattern](project-3-class-definitions/pattern.md)
+  * [ColorChip](project-3-class-definitions/colorchip.md)
+  * [ColorScheme](project-3-class-definitions/colorscheme.md)
 
