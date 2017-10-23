@@ -10,35 +10,22 @@ class Button{
   String label;
   
   //constructor
-  //add comments
-  Button(float x,float y,float w,float h){
-    this.x = x;
-    this.y = y;
-    this.w = w;
-    this.h = h;
-    selected = false;
-    selectedColor = color( 225);
-    defaultColor = color( 100 );
-    currentColor = defaultColor;
-    label = "";
-  }
   
-  //constructor
   //add comments
-   Button(float x,float y,float w,float h, color selectedColor, color defaultColor){
+   Button(float x,float y,float w,float h, color defaultColor, color selectedColor, String label){
     this.x = x;
     this.y = y;
     this.w = w;
     this.h = h;
     selected = false;
     this.selectedColor = selectedColor;
-    this.defaultColor =defaultColor;
+    this.defaultColor = defaultColor;
     currentColor = defaultColor;
-     label = "";
+    this.label = label;
   }
   
-  //constructor
   //add comments
+  //button with a single color and a label
    Button(float x,float y,float w,float h, color selectedColor, String label){
     this.x = x;
     this.y = y;
@@ -51,28 +38,41 @@ class Button{
     currentColor = defaultColor;
   }
   
-  //add comments
+  // add comments
   void display(){
-    fill(currentColor);  //current color is changed when button is clicked
-     if( selected){  //set stroke if selected
-      stroke(300);
+    pushStyle();
+    fill(currentColor);
+     if( selected){
+      stroke(200);
      }
     else{
       stroke(0);
     }
     strokeWeight(3);
     rect( x,y,w,h);
-    fill(200);
-    textSize(14);
+    fill(150);  //text color
+    textSize(16);
     textAlign(CENTER);
     text( label, x+ (w/2) , y + h/2);
     textAlign(LEFT);
+    popStyle();
+  }
+  
+  void updateColor(color selectedColor, color defaultColor){
+    this.selectedColor = selectedColor;
+    this.defaultColor =defaultColor;
+    currentColor = defaultColor;
+  }
+  
+  void reset( ){
+    this.selected = false;
+    currentColor = defaultColor;
   }
   
   // add comments
   void clicked( int mx, int my){
     if( (mx > x && mx < x + w)  &&( my > y && my < y + h)){
-      if( selected==true){  //had been on, now turn off
+      if( selected==true){  //if it had been on, now turn off
         selected = false;
         currentColor = defaultColor;
       }
@@ -83,6 +83,6 @@ class Button{
       }
     }
   }
-}
+} // end class Button
 ```
 
