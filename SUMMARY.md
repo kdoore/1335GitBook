@@ -34,6 +34,7 @@
 * [OOP - Inheritance](object_inheritance.md)
 * [PShape - SVG Objects](pshape_-_svg_objects.md)
 * [-- Old Content Below Here --](-old-content-below-here-.md)
+* [Drawing Application - Logic](drawing-application-logic.md)
 * [Creative Brushes](creative_brushes.md)
 * [Child-Class: PImageButton](pimagebutton.md)
 * [ButtonGroup](menu_buttons.md)
@@ -47,5 +48,4 @@
 * [Project 3 - Class Definitions](project-3-class-definitions.md)
   * [Button](project-3-class-definitions/button.md)
   * [ButtonGroup](project-3-class-definitions/buttongroup.md)
-* [Drawing Application - Logic](drawing-application-logic.md)
 

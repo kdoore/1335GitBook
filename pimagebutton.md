@@ -48,16 +48,19 @@ To create a PImage object in the main tab, we must first make sure we have an im
 
 ###Processing PImage 
 To learn more about how to use PImage objects, refer to the Processing.org [PImage](https://processing.org/reference/PImage.html) Reference. To create a PImage button, we can create a reference-type variable of type PImageButton and then we pass the filename to the PImageButton constructor.
-```
-//Main Tab code
+ 
 
-String imgfile = "pattern1Btn.png";
-PImageButton pimageBtn=new PImageButton(50,150,50,50,imgfile); 
-```
-###Inherited Method: Click( ) 
- In the mouseClicked funtion we need to call the click() method.``pimageBtn.click()``.  We haven't explicitly defined the click( ) method in the code above because we want to use the Button base-class click( ) method. By not redefining click( ) in the child class, any child class instances will execute the click() method of the Button base class.
 
-###Over-ride Method: Display()
+```java
+p= loadImage("MyIMage.png");
+pBtn = new PImageButton(20,20,100,100, p);
+```
+
+
+###Inherited Method: clicked( ) 
+ In the mouseClicked function we need to call the click() method.``pimageBtn.click()``.  We haven't explicitly defined the clicked( ) method in the code above because we want to use the Button base-class clicked( ) method. By not redefining clicked( ) in the child class, any child class instances will execute the clicked() method of the Button base class.
+
+###Over-ride Method: display()
 In the draw loop we need to call the display method of our pimageBtn:
 ``pimageBtn.display()``. Since we have provided explicit implementation of the display() method in the child class, then when a PImage object instance executes the display( ) method, it is this PImageButton child method that is executed.  As discussed above, the code: ``super.display()`` in the PImageButton class calls the Button base class display() method to draw the background rectangle before drawing the PImage image.
 
