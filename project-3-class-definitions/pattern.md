@@ -5,8 +5,6 @@
 //add comments here
 class Pattern{
   PShape s ;
-  float x, y; // position to drawshape 
-  float size;
   color shapeColor;
 
  //Pattern Constructor 
