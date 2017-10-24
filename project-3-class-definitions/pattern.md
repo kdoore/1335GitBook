@@ -1,5 +1,7 @@
 #Pattern
 
+The Pattern class is a wrapper class for geometric shapes that can be displayed at any x,y position.  The shapeColor allows programatic modification of the color.
+
 
 ```java
 //add comments here
