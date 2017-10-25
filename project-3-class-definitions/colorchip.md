@@ -1,5 +1,7 @@
 #ColorChip
 
+The ColorChip class creates an object that contains a button 
+
 ```java
 class ColorChip {
 
