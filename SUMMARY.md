@@ -1,6 +1,7 @@
 # Summary
 
 * [Introduction](README.md)
+###Java Syntax
 * [Java Syntax](java_syntax.md)
   * [Typed-Variables](typed-variables.md)
   * [Float - Integer Conversion Errors](typed-variables/float-integer-conversion-errors.md)
@@ -25,6 +26,7 @@
 * [lerpColor\( \)  and map\( \) Functions](lerpcolor-and-map.md)
 * [Transforms for Position, Rotation, Scale of ShapeMatrix Elements](transforms-for-position-rotation-scale-of-shapematrix-elements.md)
 * [Project 2 - Design using 2D PShape Array,  lerpColor, Processing transform functions](project-2-design-using-2d-pshape-array-lerpcolor-processing-transform-functions.md)
+###Object Oriented Programming
 * [Introduction to Objects](introduction-to-objects.md)
 * [Button States](button_states.md)
 * [Buttons as Objects](buttons_as_objects.md)
@@ -34,17 +36,21 @@
 * [OOP - Inheritance](object_inheritance.md)
 * [Child-Class: PImageButton](pimagebutton.md)
 * [PShape - SVG Objects](pshape_-_svg_objects.md)
-* [-- Old Content Below Here --](-old-content-below-here-.md)
 * [Drawing Application - Logic](drawing-application-logic.md)
-* [Creative Brushes](creative_brushes.md)
 * [ButtonGroup](menu_buttons.md)
 * [Arrays of Objects](arrays_of_objects.md)
+
+* [-- Old Content Below Here --](-old-content-below-here-.md)
+* [Creative Brushes](creative_brushes.md)
 * [Abstract Pattern Class](abstract_pattern_class.md)
 * [PShapePattern](pshapepattern.md)
 * [Slider Controller](slider_controller.md)
 * [RecursivePattern](recursivepattern.md)
 * [Glossary](GLOSSARY.md)
 * [Reading Assignments](reading-assignments.md)
+
+
+###Project 3
 * [Project 3 - Class Definitions](project-3-class-definitions.md)
   * [Button](project-3-class-definitions/button.md)
   * [ButtonGroup](project-3-class-definitions/buttongroup.md)
