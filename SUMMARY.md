@@ -39,7 +39,6 @@
 * [Drawing Application - Logic](drawing-application-logic.md)
 * [ButtonGroup](menu_buttons.md)
 * [Arrays of Objects](arrays_of_objects.md)
-
 * [-- Old Content Below Here --](-old-content-below-here-.md)
 * [Creative Brushes](creative_brushes.md)
 * [Abstract Pattern Class](abstract_pattern_class.md)
