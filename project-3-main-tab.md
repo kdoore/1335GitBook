@@ -10,7 +10,7 @@ For any objects that will be used in multiple main tab functions such as draw an
 Button ClearButton;  //example of an object that needs to be global
 ButtonGroup buttonGroup;
 Pattern pattern0, pattern1, pattern2
-//declare other global objects
+//declare other global objects like color array, colorScheme
 ```
 
 ###Setup to initialize variables
@@ -84,6 +84,13 @@ void drawMenu( ){
 
 //draw all Button objects
 clearButton.display();
+
+}
+
+
+###MouseClicked Function
+
+void mouseClicked( ){
 
 }
 
