@@ -24,7 +24,7 @@ void setup(){
     
     //initialize objects by calling appropriate constructor
     color defaultBtnColor = color( 280, 100, 100);
-    Button ClearButton = new Button( 10, 10, 100, 100, defaultBtnColor, "Clear" ); 
+    ClearButton = new Button( 10, 10, 100, 100, defaultBtnColor, "Clear" ); 
 
 }
 ```
