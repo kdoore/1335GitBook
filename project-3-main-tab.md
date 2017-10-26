@@ -30,7 +30,7 @@ void setup(){
 ```
 
 ###Draw function for Displaying Objects
-
+Within the draw function, use functions call logical modules 
 
 
 ```java
@@ -46,4 +46,7 @@ drawMenu( ); //put logic for displaying buttons in drawMenu( ) function
 
 
 ```
+
+
+
 
