@@ -9,7 +9,7 @@ For any objects that will be used in multiple main tab functions such as draw an
 ```java
 Button ClearButton;  //example of an object that needs to be global
 ButtonGroup buttonGroup;
-
+Pattern pattern0, pattern1, pattern2
 //declare other global objects
 ```
 
@@ -48,5 +48,41 @@ drawMenu( ); //put logic for displaying buttons in drawMenu( ) function
 ```
 
 ###Modular Functions for Main Tab Logic
+
+```java
+void drawPatterns( ){
+//logic here to draw patterns
+
+// use switch case structure for button logic
+
+int activeButton = 0;  //will change this to use buttonGroup
+Pattern curPattern = pattern0; //start with the default pattern - eraser
+switch ( activeButton  ){
+     case 0:
+        curPattern = pattern0;
+        break;
+        
+        
+   //logic for other cases
+     default:
+        println("no pattern selected");
+     break;
+
+} // end of switch-case structure
+
+}//end draw Patterns
+
+void drawMenu( ){
+//logic for upper menu
+
+//draw rectangle behind buttons 
+
+//draw all Button objects
+clearButton.display();
+
+}
+
+
+```
 
 
