@@ -50,7 +50,12 @@ drawMenu( ); //put logic for displaying buttons in drawMenu( ) function
 ###Modular Functions for Main Tab Logic
 ###drawPattern function 
 The drawPattern function should use a switch-case statement to determine which button is active and then set the corresponding pattern to be the curPattern that will be displayed.
+
+
+
 ```java
+
+
 void drawPatterns( ){
 //logic here to draw patterns
 
@@ -75,12 +80,15 @@ switch ( activeButton  ){
 
 curPattern.display(mouseX, mouseY);   //draw current pattern at mouse position
 }//end drawPattern function
+
 ```
+
+
 
 ###drawMenu
 
 
-```
+```java
 void drawMenu( ){
 //logic for upper menu
 
@@ -97,9 +105,10 @@ clearButton.display();
 
 ###MouseClicked Function
 
-```
+```java
 void mouseClicked( ){
  clearButton.clicked( mouseX, mouseY );
+ //call .clicked for other buttons
 }
 ```
 
