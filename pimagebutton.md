@@ -40,7 +40,7 @@ Button pBtn;
 void setup(){
 //declare a PImage object reference variable, initialize using loadImage()
 PImage p = loadImage("pattern1Btn.png");  //this file must be in the project data folder
-pBtn = new PImageButton(20,20,100,100, p);
+pBtn = new PImageButton(20,20,100,100, p);  //call PImageButton constructor
 }
 
 void draw(){

@@ -50,6 +50,7 @@
 
 * [Project 3 - Class Definitions](project-3-class-definitions.md)
   * [Button](project-3-class-definitions/button.md)
+  * [PImageButton](project-3-class-definitions/pimagebutton.md)
   * [ButtonGroup](project-3-class-definitions/buttongroup.md)
   * [Pattern](project-3-class-definitions/pattern.md)
   * [ColorChip](project-3-class-definitions/colorchip.md)
