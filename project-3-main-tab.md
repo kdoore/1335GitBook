@@ -75,8 +75,12 @@ switch ( activeButton  ){
 
 curPattern.display(mouseX, mouseY);   //draw current pattern at mouse position
 }//end drawPattern function
+```
+
+###drawMenu
 
 
+```
 void drawMenu( ){
 //logic for upper menu
 
@@ -87,14 +91,15 @@ clearButton.display();
 
 }
 
+```
+
+
 
 ###MouseClicked Function
 
+```
 void mouseClicked( ){
  clearButton.clicked( mouseX, mouseY );
 }
-
-
 ```
-
 
