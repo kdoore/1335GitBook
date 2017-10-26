@@ -4,19 +4,7 @@
 
 If we look at the code for the PImage Button below,in the first line, we see the keyword *extends* which is how we indicate that this class inherits from the Button base class. Then  we see that we are able to call the Button base class constructor using the *super* keyword to call the Button base class constructor ``super()``.  In addition, we can also use  *super* as a way to call the Button base class methods: ``super.display()``.  This allows us to first call the Button display method, which gives use the background display of the default Buttons, then we can display the image() to customize the appearance of the PImageButton.  
 
-```java
-//main tab
-
-PImage p;
-Button pBtn;
-
-void setup(){
-     p= loadImage("MyIMage.png");
-     pBtn = new PImageButton(20,20,100,100, p);
-}
-
-```
-
+###Class PImageButton
 
 ```java
 class PImageButton extends Button{
@@ -40,6 +28,29 @@ class PImageButton extends Button{
         image(img, x+5,y+5,w-10,h-10);
   }  
 }
+```
+###Create a PImageButton Object in Main Tab
+The code below shows that we 
+```java
+//main tab
+
+ 
+Button pBtn;
+
+void setup(){
+//declare a PImage object reference variable, initialize using loadImage()
+PImage p = loadImage("pattern1Btn.png");  //this file must be in the project data folder
+pBtn = new PImageButton(20,20,100,100, p);
+}
+
+void draw(){
+pBtn.display();
+}
+
+void mouseClicked(){
+pBtn.clicked( mouseX, mouseY) ;
+}
+
 ```
 ###Processing Data Folder
 To create a PImage object in the main tab, we must first make sure we have an image that we can use in our project.  In order to use any files as data files for our project, we must create a `data` folder inside our current processing project folder. We need to place any images or other resources that we'll use in our projects within this data folder, so Processing knows where to locate these assets and we don't need to specify the file path to this folder. 
