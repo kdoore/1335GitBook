@@ -47,6 +47,6 @@ drawMenu( ); //put logic for displaying buttons in drawMenu( ) function
 
 ```
 
-
+###Modular Functions for Main Tab Logic
 
 
