@@ -91,7 +91,7 @@ clearButton.display();
 ###MouseClicked Function
 
 void mouseClicked( ){
-
+ clearButton.clicked( mouseX, mouseY );
 }
 
 
