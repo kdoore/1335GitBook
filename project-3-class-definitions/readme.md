@@ -9,4 +9,6 @@ You can customize the files as needed, for example, change color of text fill to
 Please add comments to the class code to clarify your understanding of the code.
 
 The image below shows the UML Class Diagram for the classes used in Project 3
+
+UML Class Diagram
 ![](/assets/Screenshot 2017-10-26 08.24.23.png)
