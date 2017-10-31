@@ -30,17 +30,23 @@ The PImageButton class is a child-class of the Button class.  The extends keywor
 //add comments
 class PImageButton extends Button {
 
+  //PROPERTIES
+  
   PImage img;
   //constructor
 
-  // constructor
+  //CONSTRUCTORS
+  
   //add comments
   PImageButton(float x, float y, float w, float h, color c1, color c2, PImage img) {
     super(x, y, w, h, c1, c2, "");  //call constructor with empty string for label
     this.img = img;
   }
   
+  //METHODS
+  
   //over-ride display() from base-class
+  //add comments
   void display() {
     super.display();  //call base-class: button display method to create background button
     image(img, x+20, y+20, w-40, h-40);  //adjust as needed
