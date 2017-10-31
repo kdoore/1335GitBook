@@ -6,17 +6,19 @@ The Pattern class is a wrapper class for geometric shapes that can be displayed 
 ```java
 //add comments here
 class Pattern{
+  //PROPERTIES
   PShape s ;
   color shapeColor;
 
- //Pattern Constructor 
- //@PShape s shape to display
+  //CONSTRUCTOR 
+  //add comments
  
   Pattern( PShape s ,  color shapeColor){
     this.s = s;
     this.shapeColor = shapeColor;
    }
   
+  //METHODS
   //add comments
   void display(int mx, int my){
     color fillColor = color(hue(shapeColor), saturation(shapeColor), brightness( shapeColor), 50); //set alpha to 100

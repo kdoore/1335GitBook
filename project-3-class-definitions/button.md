@@ -2,6 +2,9 @@
 
 ```java
 class Button{
+  
+  //PROPERTIES
+  
   //instance variables - add comments
   float x, y; //position
   float w, h; //size
@@ -9,7 +12,7 @@ class Button{
   boolean selected;
   String label;
   
-  //constructor
+  //CONSTRUCTORS
   
   //add comments
    Button(float x,float y,float w,float h, color defaultColor, color selectedColor, String label){
@@ -37,6 +40,8 @@ class Button{
     defaultColor = selectedColor;
     currentColor = defaultColor;
   }
+  
+  //METHODS
   
   // add comments
   void display(){

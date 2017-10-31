@@ -27,22 +27,29 @@ buttonGroup.clicked( mouseX, mouseY); //manages button selection logic
 ###Class Definition
 
 ```java
+//add comments
 class ButtonGroup{
   
+  //PROPERTIES
   Button[] buttons;
   int activeButton;
   
+  //CONSTRUCTORS
+  //add comments
   ButtonGroup(Button[] buttons){
     this.buttons = buttons;
     activeButton = -1;  //start with none selected
   }
   
+  //METHODS
+  //add comments
   void display(){
     for( int i=0; i< buttons.length; i++){
       buttons[i].display();
     }
   }
   
+  //add comments
   int clicked(int mx, int my){
     int selected = -1;
      for( int i=0; i< buttons.length; i++){

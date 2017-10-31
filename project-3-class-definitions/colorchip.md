@@ -5,14 +5,17 @@ The ColorChip class creates an object that contains a button
 ```java
 class ColorChip {
 
-  //Properties add commenets
+  //PROPERTIES
+  
+  //add comments
   Button button;
   float hue, sat, bright;
   float x, y, w, h;
   color chipColor;
   int index;
 
-  //Constructors 
+  //CONSTRUCTORS
+  
   //default constructor -  add comments 
   ColorChip( float x, float y, float w, float h, color chipColor, int i) {
     this.x = x;
@@ -28,7 +31,8 @@ class ColorChip {
   }
 
 
-  //Methods 
+  //METHODS
+  
   //add comments
   void display() {
     pushStyle();
