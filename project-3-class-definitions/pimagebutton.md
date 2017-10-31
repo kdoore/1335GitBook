@@ -11,6 +11,7 @@ The PImageButton class is a child-class of the Button class.  The extends keywor
 //main tab
   PImage img1 = loadImage( "eraser.png"); //must have image in data folder inside processing project
   
+  //can use Button data-type for object reference variable 
   Button imgButton = new PImageButton( btnX, btnY,   buttonSize,buttonSize, color1 ,color2 ,  img1);
   
   imgButton.display();  //overrides Button display() method
