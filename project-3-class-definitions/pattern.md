@@ -23,7 +23,7 @@ class Pattern{
   
   //add comments
   void display(int mx, int my){
-    color fillColor = color(hue(shapeColor), saturation(shapeColor), brightness( shapeColor), 50); //set alpha to 100
+    color fillColor = color(hue(shapeColor), saturation(shapeColor), brightness( shapeColor), 50); //set alpha to 100 for no transparency
     s.setFill(fillColor);
     s.setStroke(shapeColor);
     shape(s, mx, my );
