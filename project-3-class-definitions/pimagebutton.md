@@ -23,9 +23,6 @@ The PImageButton class is a child-class of the Button class.  The extends keywor
 ```
 
 
-
-
-
 ###Class Definition Code
 
 ```java

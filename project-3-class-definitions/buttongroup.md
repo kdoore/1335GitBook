@@ -1,4 +1,13 @@
+#ButtonGroup
+The ButtonGroup class manages an array of Button objects, only 1 button can be selected at any time.  The variable: activeButton provides the index of the currently selected Button object.  
 
+
+###Example Usage
+
+
+
+
+###Class Definition
 
 ```java
 class ButtonGroup{
