@@ -3,8 +3,29 @@
 ###Class PImageButton
 The PImageButton class is a child-class of the Button class.  The extends keyword in the first line of code in the class definition below shows the syntax for defining this class as a child-class of the Button class.  As a child class, PImageButton inherits all properties and methods of the Button class.  
 
-###Over-ride display( ) method
+###Example use:
 
+  
+
+```java
+//main tab
+  PImage img1 = loadImage( "eraser.png"); //must have image in data folder inside processing project
+  
+  Button imgButton = new PImageButton( btnX, btnY,   buttonSize,buttonSize, color1 ,color2 ,  img1);
+  
+  imgButton.display();  //overrides Button display() method
+  
+  //in mouseClicked function
+  
+  imgButton.clicked( mouseX, mouseY);  //uses Button clicked( ) method
+
+```
+
+
+
+
+
+###Class Definition Code
 
 ```java
 
