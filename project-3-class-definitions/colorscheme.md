@@ -12,13 +12,16 @@ the activeIndex maintains the index of the currrently selected colorChip.
 */
 class ColorScheme{
   
+  //PROPERTIES
+  
   color[] colors;  //array of colors represented in the scheme
   ColorChip[] colorChips;  //a colorChip object is created for each color in the list
   int  activeIndex = 0;  //start wtih no active color - index keeps track of which ever color is currently selected
   float x, y; //location of the top-left edge of the ColorScheme object
   float size; // size of each each ColorChip - used when creating each colorChip
   
-  //Constructor
+  //CONSTRUCTORS
+  
   //Add comments to explain constructor parameters
   ColorScheme(color[] colors, float x, float y, float size){
     this.colors = colors;
@@ -32,6 +35,8 @@ class ColorScheme{
           colorChips[i] = new ColorChip(x+(size *i)+ xOffset , y , size,size, colors[i], i);
      } 
   }  //end constructor
+  
+  //METHODS
   
   //add comments
   void display(){
