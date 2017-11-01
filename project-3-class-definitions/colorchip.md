@@ -30,7 +30,6 @@ class ColorChip {
     button = new Button(x, y, w-3, h, chipColor, "C" + i);
   }
 
-
   //METHODS
   
   //add comments
