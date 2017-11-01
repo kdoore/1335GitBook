@@ -1,5 +1,11 @@
 ###Project 3 - Main Tab Organization
 
+###Noun Project
+You can use .png or .svg images from the Noun Project.  Please make sure to give credit to the icon designer somewhere in the comments for the main tab of your code
+[Noun Project weblink](https://thenounproject.com/)
+
+
+###Overview of Project 3 Structure - Main Tab Code
 For Project 3, we'll learn how to create custom classes and then use those classes to create objects in the main tab.
 
 For any objects that will be used in multiple main tab functions such as draw and mouseClicked, then the objects should be declared as globals.
