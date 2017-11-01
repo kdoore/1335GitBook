@@ -10,7 +10,9 @@
   * [Loops and Recursion](loops-and-recursion.md)
   * [Switch-Case Statement](switch-case_statement.md)
   * [Ternary Operator](ternary_operator.md)
+
 ---
+
 * [Project 1: Vertex Shapes - RecursivePattern](beginshape_-_vertex_shapes.md)
 * [Recursion](recursion.md)
 * [Recursive Drawing](recursive-drawing.md)
@@ -26,8 +28,8 @@
 * [lerpColor\( \)  and map\( \) Functions](lerpcolor-and-map.md)
 * [Transforms for Position, Rotation, Scale of ShapeMatrix Elements](transforms-for-position-rotation-scale-of-shapematrix-elements.md)
 * [Project 2 - Grid Based Design, Vertex Patterns](project-2-design-using-2d-pshape-array-lerpcolor-processing-transform-functions.md)
----
-###Object Oriented Programming
+
+## Object Oriented Programming
 
 * [Introduction to Objects](introduction-to-objects.md)
 * [Button States](button_states.md)
@@ -48,9 +50,8 @@
 * [Slider Controller](slider_controller.md)
 * [RecursivePattern](recursivepattern.md)
 * [Glossary](GLOSSARY.md)
-* [Reading Assignments](reading-assignments.md)
----
-### Project 3
+
+## Project 3
 
 * [Project 3 - Main Tab ](project-3-main-tab.md)
 * [Project 3 - Class Definitions](project-3-class-definitions.md)

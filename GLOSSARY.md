@@ -2,7 +2,7 @@
 
 ## Finite State Machine
 
-A formal mathematical model used to represent the dynamic behavior of a system.  The system is modeled as an abstract machine that exists in one of a finite number of states.  The behavior of the system is well defined. For each possible system state, for each specific events that can occur, each allowable events causes a transition of the system to a specific state.
+A Finite State Machine (FSM) is a formal mathematical model used to represent the dynamic behavior of a system.  The system is modeled as an abstract machine that exists in one of a finite number of states.  The behavior of the system is well defined. An FSM relies on specification of the list of all possible states and events for the system. For each possible system state,a diagram or table specify the allowable events which cause the system to change to a different state. FSM provides a logical structure to represent an event-driven system, once a system has been specified as an FSM using either a diagram or state-transition table, then writing code to represent the dynamics of system is straightforward.   
 
 ## Variables
 
