@@ -44,11 +44,7 @@
 * [ButtonGroup](menu_buttons.md)
 * [Arrays of Objects](arrays_of_objects.md)
 * [-- Old Content Below Here --](-old-content-below-here-.md)
-* [Creative Brushes](creative_brushes.md)
-* [Abstract Pattern Class](abstract_pattern_class.md)
-* [PShapePattern](pshapepattern.md)
 * [Slider Controller](slider_controller.md)
-* [RecursivePattern](recursivepattern.md)
 * [Glossary](GLOSSARY.md)
 
 ## Project 3
