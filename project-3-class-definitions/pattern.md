@@ -22,11 +22,11 @@ class Pattern{
   //METHODS
   
   //add comments
-  void display(int mx, int my){
+  void display(int x, int y){
     color fillColor = color(hue(shapeColor), saturation(shapeColor), brightness( shapeColor), 50); //set alpha to 100 for no transparency
     s.setFill(fillColor);
     s.setStroke(shapeColor);
-    shape(s, mx, my );
+    shape(s, x, y );
   } // end display
  
 } // end Pattern class
