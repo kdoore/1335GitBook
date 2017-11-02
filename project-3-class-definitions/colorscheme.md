@@ -30,6 +30,7 @@ class ColorScheme{
     int xOffset = 3;
     
     // add comments here
+    //initialize colorChip array with array of colors
     colorChips = new ColorChip[colors.length]; //initialize array of colorChips, one for each color 
     for( int i=0; i< colors.length; i++){
           colorChips[i] = new ColorChip(x+(size *i)+ xOffset , y , size,size, colors[i], i);
@@ -38,8 +39,8 @@ class ColorScheme{
   
   //METHODS
   
-  //add comments
-  void display(){
+  //add comments - how does display work?
+ void display(){
     fill(0);
     rect(0, y-5, width, 200); //background rectangle
     for( int i=0; i< colorChips.length; i++){
