@@ -1,6 +1,11 @@
 #ColorChip
-
 The ColorChip class creates an object that contains a button 
+
+###Example Usage
+ColorChips can be created independently, or they can be created as part of a ColorScheme object.  Each ColorChip displays it's chipColor, it also displays it's HSB component values.  This class can be expanded to include sliders to allow programatic modification of the ColorChip's chipColor.
+
+###ColorChip Class Definition
+
 
 ```java
 class ColorChip {
