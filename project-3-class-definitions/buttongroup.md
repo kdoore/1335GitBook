@@ -21,7 +21,7 @@ buttonGroup.clicked( mouseX, mouseY); //manages button selection logic
 
 ```
 
-###Class Definition
+###ButtonGroup Class Definition
 
 ```java
 //add comments
