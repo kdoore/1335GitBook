@@ -1,5 +1,5 @@
 #ColorScheme
-
+ColorScheme object takes an array of colors and creates and manages a set of colorChip objects, the activeIndex keeps track of the currently active colorChip.  Similar to the ButtonGroup class, the clicked method determines and updates the activeIndex, which corresponds to the index of the  color array property that is passed to the constructor when creating the ColorScheme object.
 
 
 ```
@@ -16,7 +16,7 @@ class ColorScheme{
   
   color[] colors;  //array of colors represented in the scheme
   ColorChip[] colorChips;  //a colorChip object is created for each color in the list
-  int  activeIndex = 0;  //start wtih no active color - index keeps track of which ever color is currently selected
+  int  activeIndex = -1;  //start witn no active color - index keeps track of which ever color is currently selected
   float x, y; //location of the top-left edge of the ColorScheme object
   float size; // size of each each ColorChip - used when creating each colorChip
   
