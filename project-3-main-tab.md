@@ -56,7 +56,7 @@ drawMenu( ); //put logic for displaying buttons in drawMenu( ) function
 ###Modular Functions for Main Tab Logic
 ###drawPattern function 
 The drawPattern function should use a switch-case statement to determine which button is active and then set the corresponding pattern to be the curPattern that will be displayed.
-
+curPattern is a local variable in drawPatterns that gets set according to the current active button of the buttonGroup within each switch-case statement.  Since the buttonGroup is initialized to have -1 as the starting value for the activeButton instance variable, we need to keep that in mind when writing the logic to deterime which pattern is initially active.  
 
 
 ```java
