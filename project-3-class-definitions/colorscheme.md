@@ -2,6 +2,13 @@
 ColorScheme object takes an array of colors and creates and manages a set of colorChip objects, the activeIndex keeps track of the currently active colorChip.  Similar to the ButtonGroup class, the clicked method determines and updates the activeIndex, which corresponds to the index of the  color array property that is passed to the constructor when creating the ColorScheme object.
 
 
+###Example Usage:
+
+
+
+
+###ColorScheme Class
+
 ```
 /*
 ColorScheme - The object has an array of colorChips, where each represents a color and 
