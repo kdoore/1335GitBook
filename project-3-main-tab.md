@@ -16,6 +16,7 @@ For any objects that will be used in multiple main tab functions such as draw an
 Button ClearButton;  //example of an object that needs to be global
 ButtonGroup buttonGroup;
 Pattern pattern0, pattern1, pattern2
+color[] colorList;
 //declare other global objects like colors array, colorScheme object
 ```
 
@@ -27,11 +28,22 @@ Use setup to set canvas size and to setup colorMode(HSB), and to initialize all 
 void setup(){
     size( 700,700);
     colorMode( HSB, 360, 100, 100);
+   
+   //initialize objects by calling appropriate constructor
     
-    //initialize objects by calling appropriate constructor
-    color defaultBtnColor = color( 280, 100, 100);
-    ClearButton = new Button( 10, 10, 100, 100, defaultBtnColor, "Clear" ); 
+    colorList = new color[3];  //you need 7 colors
+    colorList[0] = color(280,100,100); //purple
+    colorList[1] = color( 0,0,100);//white
+    colorList[2] = color( 0,0,0); //black
 
+    ClearButton = new Button( 10, 10, 100, 100, colorList[0], "Clear" ); 
+    Button[] buttons = new Button[3];  //declare array of Buttons
+   
+    buttons[0] = new Button( 120, 10, 100 ,100, colorList[1] ,colorList[2] );
+   
+    buttonGroup = new ButtonGroup(buttons);
+
+//initialize remaining objects
 }
 ```
 
