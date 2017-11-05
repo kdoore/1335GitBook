@@ -113,7 +113,13 @@ clearButton.display();
 
 ```java
 void mouseClicked( ){
+ 
  clearButton.clicked( mouseX, mouseY );
+ if(clearButton.selected){
+     //draw big rectangle to clear screen
+     //reset clearButton.
+ }
+ 
  //call .clicked for other buttons
 }
 ```
