@@ -90,6 +90,7 @@ switch ( buttonGroup.activeButton ){
         
         
    //logic for other cases
+     
      default:
         println("no pattern selected");
      break;
