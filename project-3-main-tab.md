@@ -42,6 +42,9 @@ void setup(){
    //initialize other buttons
     buttonGroup = new ButtonGroup(buttons);
 
+    PShape s1 = createShape( ELLIPSE, 0,0,40,40);
+    pattern0 = new Pattern(s1, colorList[1] );
+
    //initialize remaining objects
 }
 ```
