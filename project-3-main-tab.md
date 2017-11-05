@@ -67,9 +67,9 @@ void drawPatterns( ){
 
 // use switch case structure for button logic
 
-int activeButton = 0;  //will change this to use buttonGroup
+
 Pattern curPattern = pattern0; //start with the default pattern - eraser
-switch ( activeButton  ){
+switch ( buttonGroup.activeButton ){
      case 0:
         curPattern = pattern0;
         break;
@@ -121,6 +121,6 @@ void mouseClicked( ){
  }
  
  //call .clicked for other buttons
-}
+}  //end mouseClicked
 ```
 
