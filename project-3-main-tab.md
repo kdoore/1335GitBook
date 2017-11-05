@@ -38,12 +38,11 @@ void setup(){
 
     ClearButton = new Button( 10, 10, 100, 100, colorList[0], "Clear" ); 
     Button[] buttons = new Button[3];  //declare array of Buttons
-   
-    buttons[0] = new Button( 120, 10, 100 ,100, colorList[1] ,colorList[2] );
-   
+    buttons[0] = new Button( 120, 10, 100 ,100, colorList[1] ,colorList[2] ); 
+   //initialize other buttons
     buttonGroup = new ButtonGroup(buttons);
 
-//initialize remaining objects
+   //initialize remaining objects
 }
 ```
 
