@@ -96,7 +96,7 @@ curPattern.display(mouseX, mouseY);   //draw current pattern at mouse position
 
 ```java
 void drawMenu( ){
-//logic for upper menu
+//logic for displaying buttons menu
 
 //draw rectangle behind buttons 
 
