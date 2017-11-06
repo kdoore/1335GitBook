@@ -2,9 +2,10 @@
 The ColorChip class creates an object that represents a selectable color button, the ColorChip class is designed to be used in conjunction with the ColorScheme class, where a selectable ColorChip object is created for each color array element. 
 
 ###Example Usage
-ColorChips can be created independently, or they can be created as part of a ColorScheme object.  Each ColorChip displays it's chipColor, it also displays it's HSB component values.  This class can be expanded to include sliders to allow programatic modification of the ColorChip's chipColor.
+ColorChips are created as part of a ColorScheme object.  Each ColorChip displays it's chipColor, it also displays it's HSB component values.  This class can be expanded to include sliders to allow programatic modification of the ColorChip's chipColor.
 
-///Example creation based on an array of colors, created inside the colorScheme constructor:
+
+The ColorChip class creates objects that are used within ColorScheme objects.  
 
 
 ###ColorChip Class Definition
