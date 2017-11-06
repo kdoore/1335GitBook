@@ -81,7 +81,6 @@ void drawPatterns( ){
 
 // use switch case structure for button logic
 
-
 Pattern curPattern = pattern0; //start with the default pattern - eraser
 switch ( buttonGroup.activeButton ){
      case 0:

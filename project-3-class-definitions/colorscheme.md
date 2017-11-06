@@ -4,8 +4,25 @@ ColorScheme object takes an array of colors and creates and manages a set of col
 
 ###Example Usage:
 
+//Main tab
 
+//declare global objects
+ColorScheme colorScheme;
+color[] colorList;
+ 
+//initialize in setup 
+colorList = new color[ 3 ];  //you'll have 7 colors
+colorList[0] = color(278, 100, 100);  //purple
+colorList[1] = color(0, 0, 100);  //white
+colorList[2] = color(0, 0, 0);  //black
 
+colorScheme = new ColorScheme(colorList, xPos, yPos,buttonSize);
+ 
+//in drawMenu
+colorScheme.display(); //displays each colorChip
+
+// in mouseClicked
+colorScheme.clicked( mouseX, mouseY);
 
 ###ColorScheme Class
 

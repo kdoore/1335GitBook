@@ -41,8 +41,7 @@ class Pattern{
   
   //add comments
   void display(int x, int y){
-    color fillColor = color(hue(shapeColor), saturation(shapeColor), brightness( shapeColor), 50); //set alpha to 100 for no transparency
-    s.setFill(fillColor);
+    s.setFill(shapeColor);
     s.setStroke(shapeColor);
     shape(s, x, y );
   } // end display
