@@ -5,7 +5,9 @@ The ColorChip class creates an object that represents a selectable color button,
 ColorChips are created as part of a ColorScheme object.  Each ColorChip displays it's chipColor, it also displays it's HSB component values.  This class can be expanded to include sliders to allow programatic modification of the ColorChip's chipColor.
 
 
-The ColorChip class creates objects that are used within ColorScheme objects.  
+The ColorChip class creates objects that are used within ColorScheme objects.
+
+Height of a colorChip is 36 pixels taller than the input parameter height value, this provides room for the HSB text labels.
 
 
 ###ColorChip Class Definition
@@ -51,7 +53,7 @@ class ColorChip {
       stroke(0);
     }
     fill(50);
-    rect( x, y-2, w-2, h+32);  //background square 
+    rect( x, y-2, w-2, h+36);  //background square 
     String label = String.format( "%1$.0f, %2$.0f, %3$.0f", hue, sat, bright);
     fill(150); //text color
     textSize(12);
