@@ -49,15 +49,16 @@ void drawPattern() {
  ###Determine Active Pattern - ButtonGroup
 The ButtonGroup object, buttonGroup, manages the pattern Buttons, where the buttonGroup's instance variable: activeButton keeps track of the index of the current active button in the ButtonGroup.  We can use a switch-case to match this activeButton to the pattern represented by the buttonGroup's activeButton.  
 
-1.  Create a local variable:  Pattern currentPattern, this gets initialized to refer to the eraserPattern, then it is updated in the switch-case statement to refer to whichever pattern button is active:
-
+1.  Create a local variable:  `Pattern currentPattern`, this gets initialized to refer to the eraserPattern.
+2.  Update `currentPattern` in the switch-case statement to refer to whichever pattern button is active:
+3.  Display `currentPattern` after color has been set.
 
 
 ```java
 
 void drawPattern() {
 
-//determine active Pattern
+//DETERMINE ACTIVE PATTERN
 
 Pattern currentPattern = eraserPattern; 
    switch(buttonGroup.activeButton ){
@@ -85,9 +86,44 @@ Pattern currentPattern = eraserPattern;
  }
 ```
 
-
-
- 
- 
  
  ###Determine Active Color - ColorScheme
+ The colorScheme object has an instance variable: activeIndex that refers to the currently active colorChip.  The colorChip displays the color from the colors[] array.  The activeIndex allows us to retrieve the active color from the ColorScheme.  
+ 
+```
+int activeIndex = colorScheme.activeIndex;
+```
+
+If the activeIndex = -1, then no color has been selected.  In addition, if the current selected pattern is the eraser, then the color must be the backgroundColor instead of the colorScheme's active color.  
+ 
+ 1. Create local variable: `color curColor;` 
+ 2. Initialize to background color if eraserPattern is active or if no colorChip has been selected yet
+ 3. Otherwise, set curColor using the activeIndex of the colorScheme object to get the corresponding colorChip color.
+  
+ 
+ ```java
+
+void drawPattern() {
+
+  //determine active Pattern
+  //switch-case statement code
+  
+  //DETERMINE ACTIVE COLOR
+   int activeIndex = colorScheme.activeIndex;
+   color curColor;
+   if( activeIndex == -1 || currentPattern == eraserPattern){  //no color has been selected or eraser
+     curColor = backgroundColor;
+   }
+   else{ // use activeIndex to get colorScheme color[]
+    //println("curColor " + activeIndex);
+    curColor = colorScheme.colors[activeIndex];  //find activeColor
+  }
+   currentPattern.strokeColor = backgroundColor;
+   currentPattern.shapeColor = curColor; 
+  
+  //display currentPattern
+ }
+```
+###Display Current Pattern
+
+
