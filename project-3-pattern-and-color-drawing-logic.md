@@ -126,4 +126,24 @@ void drawPattern() {
 ```
 ###Display Current Pattern
 
+Once the logic above has been used, then we can display the current pattern:
+
+
+
+```java
+void drawPattern(){
+
+  //determine active Pattern
+  //switch-case statement code
+
+  //determine active color
+  
+  //display currentPattern
+ 
+   currentPattern.strokeColor = backgroundColor;
+   currentPattern.shapeColor = curColor; 
+   currentPattern.display(mouseX, mouseY); 
+
+}
+```
 
