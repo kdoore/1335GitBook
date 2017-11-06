@@ -22,30 +22,26 @@ pattern1.display( mouseX, mouseY);
 ###Pattern Class Definition
 
 ```java
-//add comments here
 class Pattern{
-
+  
   //PROPERTIES
-  PShape s ;
-  color shapeColor;
-
-  //CONSTRUCTOR 
-  //add comments
- 
-  Pattern( PShape s ,  color shapeColor){
+   PShape s;
+   color shapeColor;
+   color strokeColor;
+  
+  //CONSTRUCTORS
+  Pattern( PShape s, color shapeColor){
     this.s = s;
     this.shapeColor = shapeColor;
-   }
+  }
+  
   
   //METHODS
-  
-  //add comments
-  void display(int x, int y){
-    s.setFill(shapeColor);
-    s.setStroke(shapeColor);
-    shape(s, x, y );
-  } // end display
- 
-} // end Pattern class
+  void display(int mx, int my){
+    s.setStroke( strokeColor);
+    s.setFill( shapeColor);
+    shape( s, mx, my);
+    } 
+}//end PatternClass
 ```
 
