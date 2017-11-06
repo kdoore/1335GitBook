@@ -1,0 +1,93 @@
+#Project 3 - Pattern and Color Logic
+
+ In the main tab, we need logic to determine which pattern is active and to set the color for the pattern based on the ColorScheme's active ColorChip and the active pattern Button in the ButtonGroup. 
+ 
+###DrawPattern
+In the main tab, the pattern and color logic are to be connected in the drawPatterns function.  drawPatterns is called within the Processing draw( ) function if the mouse is pressed: 
+
+
+
+```java
+//declare global variables
+Button[] patternButtons;
+ButtonGroup buttonGroup;
+Pattern eraserPattern, pattern1, pattern2;
+
+//declare other variables
+
+void setup(){
+//other initialization code
+ 
+  PShape s0 = createShape( ELLIPSE, 0, 0, 40, 40); //Eraser
+  PShape s1 = createShape( RECT, 0, 0, 40, 40);
+  //intialize other shapes
+  
+  eraserPattern = new Pattern( s0, backgroundColor);  //Eraser
+  pattern1 = new Pattern( s1, colorList[1]);
+//initialize other patterns
+}
+
+
+void draw() {
+  if (mousePressed && mouseY >120 ) {
+    drawPattern();
+  }
+    ////display buttons last in draw()
+ drawMenu();
+}
+
+
+void drawPattern() {
+
+  //determine active Pattern
+  //determine active Color
+  //display currentPattern
+  
+    }
+```
+
+ ###Determine Active Pattern - ButtonGroup
+The ButtonGroup object, buttonGroup, manages the pattern Buttons, where the buttonGroup's instance variable: activeButton keeps track of the index of the current active button in the ButtonGroup.  We can use a switch-case to match this activeButton to the pattern represented by the buttonGroup's activeButton.  
+
+1.  Create a local variable:  Pattern currentPattern, this gets initialized to refer to the eraserPattern, then it is updated in the switch-case statement to refer to whichever pattern button is active:
+
+
+
+```java
+
+void drawPattern() {
+
+//determine active Pattern
+
+Pattern currentPattern = eraserPattern; 
+   switch(buttonGroup.activeButton ){
+     
+     case 0: 
+          currentPattern = eraserPattern;   //eraser
+          currentPattern.shapeColor = backgroundColor;
+     break;
+     
+     case 1:
+          currentPattern = pattern1;
+     break;
+     
+    ////add other cases
+     
+     default:
+          println("NO match");
+     break;  
+     
+   }
+
+  
+  //determine active Color
+  //display currentPattern
+ }
+```
+
+
+
+ 
+ 
+ 
+ ###Determine Active Color - ColorScheme
