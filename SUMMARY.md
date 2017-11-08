@@ -50,7 +50,7 @@
 ## Project 3
 
 * [Project 3 - Main Tab ](project-3-main-tab.md)
-* [Project 3 - Pattern and Color Drawing Logic](project-3-pattern-and-color-drawing-logic.md)
+* [Project 3 - Pattern and Color Logic](project-3-pattern-and-color-drawing-logic.md)
 * [Project 3 - Class Definitions](project-3-class-definitions.md)
   * [Button](project-3-class-definitions/button.md)
   * [PImageButton](project-3-class-definitions/pimagebutton.md)

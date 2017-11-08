@@ -48,15 +48,15 @@ void setup(){
     
     //initialize PShapes - use VertexPatterns
     PShape s1 = createShape( ELLIPSE, 0,0,40,40);
-pattern0 = new Pattern(s1, colorList[1] );
-//initialize other patterns
+    pattern0 = new Pattern(s1, colorList[1] );
+    //initialize other patterns
 
     ClearButton = new Button( 10, 10, 100, 100, colorList[0], "Clear" ); 
     Button[] buttons = new Button[3];  //declare array of Buttons
     buttons[0] = new Button( 120, 10, 100 ,100, colorList[1] ,colorList[2], "Eraser" ); 
-    //buttons[1] = PShapeButton(  parameters);
-    //buttons[2] = PShapeButton( parameters);
-   //initialize other buttons
+    //buttons[1] = PShapeButton( parameter values to match the constructor);
+    //buttons[2] = PShapeButton( parameter values to match the constructor);
+    //initialize other buttons
     
     buttonGroup = new ButtonGroup(buttons);
 
@@ -64,7 +64,7 @@ pattern0 = new Pattern(s1, colorList[1] );
    /*initialize remaining objects including colorScheme:
    //where to draw colorScheme along y axis
    float y = height - buttonSize -40; 
-  colorScheme = new ColorScheme(colorList, 10,  y , buttonSize  );
+   colorScheme = new ColorScheme(colorList, 10,  y , buttonSize  );
    */
    
 }
@@ -90,6 +90,8 @@ drawMenu( ); //put logic for displaying buttons in drawMenu( ) function
 
 ###Modular Functions for Main Tab Logic
 ###drawPatterns function 
+See this page for more detail: [Project 3 - Pattern and Color Logic](/project-3-pattern-and-color-drawing-logic.md)
+
 The drawPattern function should use a switch-case statement to determine which button is active and then set the corresponding pattern to be the curPattern that will be displayed.
 curPattern is a local variable in drawPatterns that gets set according to the current active button of the buttonGroup within each switch-case statement.  Since the buttonGroup is initialized to have -1 as the starting value for the activeButton instance variable, we need to keep that in mind when writing the logic to deterime which pattern is initially active.  
 
@@ -115,12 +117,12 @@ switch ( buttonGroup.activeButton ){
    //logic for other cases
      
      default:
-        println("no pattern selected");
+        currentPattern = pattern0; //let eraser be default pattern
      break;
 
 } // end of switch-case structure
 
-//set color of pattern here
+//set color of pattern here see Project 3 - Pattern and Color Logic page for details
 
 curPattern.display(mouseX, mouseY);   //draw current pattern at mouse position
 }//end drawPattern function
@@ -141,7 +143,7 @@ void drawMenu( ){
 //draw all Button objects
 clearButton.display();
 
-// display buttonGroup, colorScheme
+// also display buttonGroup, colorScheme
 }
 
 ```
@@ -159,9 +161,9 @@ void mouseClicked( ){
      //reset clearButton.
  }
 
- //call clicked for other buttons -
- //call clicked for buttonGroup, colorScheme
-}  //end mouseClicked
+    //call clicked for other buttons -
+    //call clicked for buttonGroup, colorScheme
+}   //end mouseClicked
 ```
 
 ###VertexPattern Functions
