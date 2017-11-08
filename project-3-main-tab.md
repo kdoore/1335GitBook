@@ -11,6 +11,8 @@ For Project 3, we'll learn how to create custom classes and then use those class
 For any objects that will be used in multiple main tab functions such as draw and mouseClicked, then the objects should be declared as globals.
 
 ###Declare Global Objects
+Your code might have more or less global objects than listed below.  Several of these objects declared here should actually be local within setup such as: colorList, and patternButtons.
+
 
 ```java
 
