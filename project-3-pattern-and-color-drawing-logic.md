@@ -1,11 +1,16 @@
 #Project 3 - Pattern and Color Logic
 
- In the main tab, we need logic to determine which pattern is active and to set the color for the pattern based on the ColorScheme's active ColorChip and the active pattern Button in the ButtonGroup. 
+ In the main tab, we need logic to determine which pattern is active and to set the color for the pattern based on the ColorScheme's active ColorChip and the active pattern Button in the ButtonGroup. This page is focused on the logic in the drawPattern function, it is divided into sections based on the functionality of logic for each task.
+ 
+ Tasks:
+ 1.  Determine active pattern to be displayed - determined by buttonGroup.activeButton.  We use switch/case structure to connect the patternButtons to the patterns to be drawn.
+ 2.  Determine active color to be displayed - determined by colorScheme.activeIndex.  We use the activeIndex to access the color[] array of the colorScheme
+ 3.  Create and set variables for currentPattern and currentColor that are updated based on the buttonGroup.activeButton and colorScheme.activeIndex.
+ 4. display the currentPattern
+ 5. make sure logic is designed to handle the initial case when no buttons are selected, make sure the eraserPattern doesn't have it's color changed, it should always be the background pattern.
  
 ###DrawPattern
-In the main tab, the pattern and color logic are to be connected in the drawPatterns function.  drawPatterns is called within the Processing draw( ) function if the mouse is pressed: 
-
-
+In the main tab, the pattern and color logic are to be connected in the drawPatterns function.  drawPatterns() is called within the Processing draw( ) function if the mouse is pressed: 
 
 ```java
 //declare global variables
@@ -13,26 +18,29 @@ Button[] patternButtons;
 ButtonGroup buttonGroup;
 Pattern eraserPattern, pattern1, pattern2;
 
-//declare other variables
+//declare other global variables
 
 void setup(){
 //other initialization code
  
+ 
   PShape s0 = createShape( ELLIPSE, 0, 0, 40, 40); //Eraser
-  PShape s1 = createShape( RECT, 0, 0, 40, 40);
+  PShape s1 = vertexPattern1( 80); 
   //intialize other shapes
   
   eraserPattern = new Pattern( s0, backgroundColor);  //Eraser
   pattern1 = new Pattern( s1, colorList[1]);
-//initialize other patterns
-}
+  
+  
+//initialize other objects
+}  //end of setup
 
 
 void draw() {
-  if (mousePressed && mouseY >120 ) {
+  if (mousePressed  ) {
     drawPattern();
   }
-    ////display buttons last in draw()
+    ////display buttons as last code executed in draw()
  drawMenu();
 }
 
