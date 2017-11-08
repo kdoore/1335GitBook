@@ -98,7 +98,7 @@ curPattern is a local variable in drawPatterns that gets set according to the cu
 void drawPatterns( ){
 //logic here to draw patterns
 
-// use switch case structure for button logic
+// use switch case structure for button logic to connect 
 
 Pattern curPattern = pattern0; //start with the default pattern - eraser
 switch ( buttonGroup.activeButton ){
@@ -106,7 +106,10 @@ switch ( buttonGroup.activeButton ){
         curPattern = pattern0;
         break;
         
-        
+     case 1:
+        curPattern = pattern1;
+        break;     
+           
    //logic for other cases
      
      default:
@@ -136,6 +139,7 @@ void drawMenu( ){
 //draw all Button objects
 clearButton.display();
 
+// display buttonGroup, colorScheme
 }
 
 ```
@@ -152,8 +156,12 @@ void mouseClicked( ){
      //draw big rectangle to clear screen
      //reset clearButton.
  }
- 
- //call .clicked for other buttons
+
+ //call clicked for other buttons -
+ //call clicked for buttonGroup, colorScheme
 }  //end mouseClicked
 ```
 
+###VertexPattern Functions
+At the bottom of the main tab you can put code to draw your vertexPatterns, these functions should be modified so they 
+PS
