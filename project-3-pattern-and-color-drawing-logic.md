@@ -68,12 +68,11 @@ void drawPattern() {
 
 //DETERMINE ACTIVE PATTERN
 
-Pattern currentPattern = eraserPattern; 
+Pattern currentPattern= eraserPattern; 
    switch(buttonGroup.activeButton ){
      
      case 0: 
           currentPattern = eraserPattern;   //eraser
-          currentPattern.shapeColor = backgroundColor;
      break;
      
      case 1:
@@ -83,7 +82,7 @@ Pattern currentPattern = eraserPattern;
     ////add other cases
      
      default:
-          println("NO match");
+          currentPattern = eraserPattern;  //this is the default situation
      break;  
      
    }
@@ -118,20 +117,55 @@ void drawPattern() {
   
   //DETERMINE ACTIVE COLOR
    int activeIndex = colorScheme.activeIndex;
-   color curColor;
+   color curColor = backgroundColor;
    if( activeIndex == -1 || currentPattern == eraserPattern){  //no color has been selected or eraser
      curColor = backgroundColor;
    }
    else{ // use activeIndex to get colorScheme color[]
-    //println("curColor " + activeIndex);
     curColor = colorScheme.colors[activeIndex];  //find activeColor
   }
-   currentPattern.strokeColor = backgroundColor;
-   currentPattern.shapeColor = curColor; 
-  
-  //display currentPattern
- }
+  ```java
+
+void drawPattern() {
+
+//determine active Pattern
+//switch-case statement code
+//DETERMINE ACTIVE COLOR
+int activeIndex = colorScheme.activeIndex;
+color curColor = backgroundColor;
+if( activeIndex == -1 || currentPattern == eraserPattern){ //no color has been selected or eraser
+curColor = backgroundColor;
+}
+else{ // use activeIndex to get colorScheme color[]
+curColor = colorScheme.colors[activeIndex]; //find activeColor
+}
+//currentPattern.strokeColor = backgroundColor; //optional add strokeColor to the pattern class instance variables
+currentPattern.shapeColor = curColor;
+//display currentPattern
+}
 ```
+
+###Alternate version with more concise code for Color matching logic: 
+We can write less code if we use the negated versions of our conditional logic, we can say that if both are true: activeIndex != -1, and currentPattern is not the eraserPattern, then let the color be set by the colorChip buttons.  While negated cases are more concise, sometimes it's easier to understand the logic written with more code as shown above.  The goal is to write code that is easy for you to understand when you return to look at the code 2 years from now.
+
+```java
+
+void drawPattern() {
+
+//determine active Pattern
+//switch-case statement code
+//DETERMINE ACTIVE COLOR
+
+int activeIndex = colorScheme.activeIndex;
+color curColor = backgroundColor;
+if( activeIndex != -1 && currentPattern != eraserPattern){   curColor = colorScheme.colors[activeIndex]; //find activeColor
+}
+currentPattern.shapeColor = curColor;
+//display currentPattern
+}
+```
+
+
 ###Display Current Pattern
 
 Once the logic above has been used, then we can display the current pattern:
