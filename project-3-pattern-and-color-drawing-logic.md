@@ -165,7 +165,6 @@ currentPattern.shapeColor = curColor;
 }
 ```
 
-
 ###Display Current Pattern
 
 Once the logic above has been used, then we can display the current pattern:
