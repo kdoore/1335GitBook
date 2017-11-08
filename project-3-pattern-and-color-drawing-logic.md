@@ -181,7 +181,7 @@ void drawPattern(){
   
   //display currentPattern
  
-   currentPattern.strokeColor = backgroundColor;
+   //currentPattern.strokeColor = backgroundColor; //optional to add strokeColor to the Pattern class and use it in display
    currentPattern.shapeColor = curColor; 
    currentPattern.display(mouseX, mouseY); 
 
