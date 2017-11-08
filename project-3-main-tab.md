@@ -13,6 +13,7 @@ For any objects that will be used in multiple main tab functions such as draw an
 ###Declare Global Objects
 
 ```java
+
 Button clearButton;
 Button[] patternButtons;
 
