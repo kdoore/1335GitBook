@@ -13,11 +13,18 @@ For any objects that will be used in multiple main tab functions such as draw an
 ###Declare Global Objects
 
 ```java
-Button ClearButton;  //example of an object that needs to be global
+Button clearButton;
+Button[] patternButtons;
+
 ButtonGroup buttonGroup;
-Pattern pattern0, pattern1, pattern2
+Pattern pattern1, pattern2, pattern3;
+
+ColorScheme colorScheme;
+
+float buttonSize = 100;
+color backgroundColor;
 color[] colorList;
-//declare other global objects like colors array, colorScheme object
+
 ```
 
 ###Setup to initialize variables
