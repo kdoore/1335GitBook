@@ -22,7 +22,7 @@ Pattern pattern1, pattern2, pattern3;
 
 ColorScheme colorScheme;
 
-float buttonSize = 100;
+float buttonSize;
 color backgroundColor;
 color[] colorList;
 
@@ -43,17 +43,28 @@ void setup(){
     colorList[0] = color(280,100,100); //purple
     colorList[1] = color( 0,0,100);//white
     colorList[2] = color( 0,0,0); //black
+    
+    //initialize PShapes - use VertexPatterns
+    PShape s1 = createShape( ELLIPSE, 0,0,40,40);
+pattern0 = new Pattern(s1, colorList[1] );
+//initialize other patterns
 
     ClearButton = new Button( 10, 10, 100, 100, colorList[0], "Clear" ); 
     Button[] buttons = new Button[3];  //declare array of Buttons
-    buttons[0] = new Button( 120, 10, 100 ,100, colorList[1] ,colorList[2] ); 
+    buttons[0] = new Button( 120, 10, 100 ,100, colorList[1] ,colorList[2], "Eraser" ); 
+    //buttons[1] = PShapeButton(  parameters);
+    //buttons[2] = PShapeButton( parameters);
    //initialize other buttons
+    
     buttonGroup = new ButtonGroup(buttons);
 
-    PShape s1 = createShape( ELLIPSE, 0,0,40,40);
-    pattern0 = new Pattern(s1, colorList[1] );
 
-   //initialize remaining objects
+   /*initialize remaining objects including colorScheme:
+   //where to draw colorScheme along y axis
+   float y = height - buttonSize -40; 
+  colorScheme = new ColorScheme(colorList, 10,  y , buttonSize  );
+   */
+   
 }
 ```
 
