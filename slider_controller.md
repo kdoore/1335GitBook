@@ -20,68 +20,7 @@ Our slider will use the processing map() function because it's core functionalit
 The code below creates a slider that controls the length of a rectangle.  It uses the map function. 
 When determining the slider rectangle's range of values, this is determined by the pixel width of the rectangle: w.  In order to determine the values we use to determine the slider's current position and current mapping output value, we need to also consider the x-offset of the slider.  In other words, if the slider's left-side is positioned along the left side of the canvas, then x offset is 0.  This would mean that if the indicator position: sliderX had a value of 20, and if the width of the slider was 40, we'd know that the slider indicator was at the middle of the range.   However, if sliderX had a value of 20, but the x coordinate of the slider rectangle was also 20, we'd know that the slider indicator would be at it's minimum value in the range. Since we want flexibility to position the slider anywhere on the canvas, we need to consider the x offset of the slider when determining the slider's value. So the possible values for the slider Indicator will fall in the range of: ( min: x, max: x+w ), and we'll use these ranges in the map function as the slider representation's min, max value.
 
-### Simple Slider:
-For our first attempt to create a slider, we'll create the most simple version possible, with the goal of understanding the main concepts, then we'll improve the class by making a more general slider in the second iteration. 
 
-###Simple slider:  no input parameters, fixed position (x=0, y=400) and fixed size ( w=255, h=50 )
-```java
-class SimpleSlider{
-  int x, y, w, h;
-  float sliderX;
-  float sliderVal;
-  
-  //constructor  
-  SimpleSlider(){
-    x=0;
-    y=400;
-    w=255;
-    h=50;
-    sliderX =  w/2;
-    sliderVal = sliderX;   
-  }
-  
-  void display(){
-    fill(255);
-    stroke(100);
-    rect(x,y,w,h);  //background rectangle
-    strokeWeight(2);
-    line(sliderX,y, sliderX, y+h); //indicator line
-    strokeWeight(1);
-  }
-  
-  void checkPressed(int mX, int mY){
-    if(mX > x && mX < x+w && mY > y && mY < y + h){
-      println("mouse is over slider");
-      sliderX = mouseX;
-      sliderVal = sliderX;
-      println("SliderVal " + sliderVal);
-    }
-  }
-  
-}
-```
-Below is an example of the main tab code where we use the sliderVal to color a rectangle.
-
-```java
-SimpleSlider mySimpleSlider;
-
-void setup(){
-size(600,600);
-colorMode(HSB);
-mySimpleSlider = new SimpleSlider( ); //no ability to customize
-}
-
-void draw(){
-if(mousePressed){ //when mousePressed, see if slider has been changed
-mySimpleSlider.checkPressed(mouseX, mouseY);
-//set fill based on sliderVal
-}
-stroke(0);
-fill(mySimpleSlider.sliderVal, 255,255);
-rect(200, 200, 100,100);
-mySimpleSlider.display();
-}
-```
 
 ###Slider, Base-Class
 The Simple Slider code above has some serious limitations: we can only create a single slider, where it's position and size are fixed.  How can we define a Slider base class that allows us to create a slider of any size, at any position, that allows selection of values within any range?  The map( ) function will allow us to define a more generalized Slider base class. 
@@ -95,21 +34,24 @@ class Slider{
   float min, max;
   float hue, sat, bright;
   String label;
-  
- 
+
+
   //constructor with a full set of input parameters
-  Slider( int _x, int _y, int _w, int _h,float _min, float _max, String _label ){
-    x=_x;
-    y=_y;
-    w=_w;
-    h=_h;
-    min = _min;
-    max = _max;
+  Slider( int x, int y, int w, int h,float min, float max, String label ){
+    this.x=x;
+    this.y=y;
+    this.w=w;
+    this.h=h;
+    this.min = min;
+    this.max = max;
     sliderX= x + w/2;
     sliderVal = map(sliderX, x, x+w, min, max);
-    label = _label;
+    this.label = label;
+    sat = 255;
+    bright = 255;
+    hue = 0;
   }
-  
+
   void display(){
     backgroundlayer();
     fill(150);
@@ -117,19 +59,19 @@ class Slider{
     fill(0);
     rect(sliderX-2, y-3, 4, h+6);  
   }
-  
+
   void backgroundlayer(){
     fill(220);
     noStroke();
     rect( x-7, y-20, w+14, h+28);
     fill(0);
-    //display SliderVal and Label
+    //display SliderVal to 2 decimal digits and Label
     textAlign(LEFT);
-    text(int(sliderVal), x, y-7);  //display as an integer
+    text(int(sliderVal), x,y-7);
     textAlign(RIGHT);
     text(label, x+w, y-6);
   }
-  
+
   void checkPressed(int mx, int my){
     if( mx >= x && mx <= (x+w) && my>=y && my<=(y + h)){
       sliderX = mx;
@@ -137,36 +79,17 @@ class Slider{
       //println("sliderVal " + sliderVal);
     }
   }
-  
-}
+
+}// end class
 ```
 
-###RectanglePattern
-```java
-class RectanglePattern extends Pattern{
-  
-  RectanglePattern(){
-    super(); //explicitly call Abstract class contructor
-  }
-  
- void display(){
-   pushMatrix();
-   scale(scale);
-   fill(hue, sat-100, bright-100, alpha-50);  //shadow
-   rect(10,10, w, h); //shadow
-   fill(hue, sat, bright, alpha);
-   rect(0,0, w, h);  //primary pattern
-   popMatrix(); // undo scale transform
-  }
-  
-}
-```
+
 ###Main Tab Code: 
-In the code below, we use a slider instance to control the scale of an ellipse [PShapePattern](https://kdoore.gitbooks.io/cs1335/content/pshapepattern.html)
+In the code below, we use a slider instance to control the scale of an ellipse 
 
 ```java
 Slider mySlider;
-Pattern rectPattern;
+
 
 void setup(){
   size(800,800);
@@ -174,9 +97,7 @@ void setup(){
   
   //////Slider( x, y, w, h, min, max, label);
   mySlider = new Slider( 100,height - 125,250,30, 0.0, 2.0, "Scale"); //we are using this for length
- 
-  rectPattern = new RectanglePattern();
-  background(200);
+ background(200);
 }
 
 void draw(){
@@ -194,22 +115,7 @@ void drawSliders(){
 }
 
 void drawPattern(){
-     // base class object reference
-      Pattern curPattern = rectPattern;
-
-      /////connect to buttons
-       int activeButton=0;
-      switch(activeButton){
-        case 0:
-          curPattern = rectPattern;
-        break;
-        default:  
-      }  //end of switch
-  
-      curPattern.scale = mySlider.sliderVal; //set pattern scale based on slider sliderVal
-       translate(mouseX, mouseY);
-       curPattern.display();
-       resetMatrix();
+   
    
    } // end of drawPattern 
 
