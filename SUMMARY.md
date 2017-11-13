@@ -43,7 +43,6 @@
 * [Drawing Application - Logic](drawing-application-logic.md)
 * [ButtonGroup](menu_buttons.md)
 * [Arrays of Objects](arrays_of_objects.md)
-* [-- Old Content Below Here --](-old-content-below-here-.md)
 * [Slider Controller](slider_controller.md)
 * [Glossary](GLOSSARY.md)
 

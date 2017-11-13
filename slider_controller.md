@@ -1,4 +1,4 @@
-``# Slider Controller
+# Slider Controller
 
 A slider controller is a user-interface element that we are probably all familiar with.  How can we create our own custom slider controller?  What is the structure, function, behavior of a slider control?
 
@@ -63,27 +63,23 @@ class SimpleSlider{
 Below is an example of the main tab code where we use the sliderVal to color a rectangle.
 
 ```java
-/// Main tab:
 SimpleSlider mySimpleSlider;
 
 void setup(){
-  size(600,600);
-  colorMode(HSB);
-  mySimpleSlider = new SimpleSlider( );  //no ability to customize
+size(600,600);
+colorMode(HSB);
+mySimpleSlider = new SimpleSlider( ); //no ability to customize
 }
 
 void draw(){
-  if(mousePressed){  //when mousePressed, see if slider has been changed
-    
-    mySimpleSlider.checkPressed(mouseX, mouseY);
-    //set fill based on sliderVal
-    stroke(0);
-   
-    fill(mySimpleSlider.sliderVal, 255,255);
-    rect(mouseX, mouseY, 100,100);
-  }
-  mySimpleSlider.display();
- 
+if(mousePressed){ //when mousePressed, see if slider has been changed
+mySimpleSlider.checkPressed(mouseX, mouseY);
+//set fill based on sliderVal
+}
+stroke(0);
+fill(mySimpleSlider.sliderVal, 255,255);
+rect(200, 200, 100,100);
+mySimpleSlider.display();
 }
 ```
 
@@ -127,9 +123,9 @@ class Slider{
     noStroke();
     rect( x-7, y-20, w+14, h+28);
     fill(0);
-    //display SliderVal to 2 decimal digits and Label
+    //display SliderVal and Label
     textAlign(LEFT);
-    text(nfs(sliderVal,0,2), x,y-7);
+    text(int(sliderVal), x, y-7);  //display as an integer
     textAlign(RIGHT);
     text(label, x+w, y-6);
   }
