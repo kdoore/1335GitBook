@@ -57,4 +57,5 @@
   * [Pattern](project-3-class-definitions/pattern.md)
   * [ColorChip](project-3-class-definitions/colorchip.md)
   * [ColorScheme](project-3-class-definitions/colorscheme.md)
+* [Project 4](project-4.md)
 

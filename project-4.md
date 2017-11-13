@@ -1,0 +1,9 @@
+#Project 4
+For this project, we'll combine projects 2 and 3 to create a parametrically controlled grid pattern application.
+
+We can use the ColorScheme colors to change gradient color values used in the design.  We can use slider controllers to allow changing of the ColorScheme colors.
+
+We will create a Class:  ShapeMatrix that incorporates all of the logic for creating and displaying a ShapeMatrix object.  The ShapeMatrix will now be a 2D array of Pattern Objects.  
+
+The Pattern class must be updated so that it can handle logic for more complex PShape objects, we can check to see if the PShape is a group, we can unpack the child objects and we can use separate colors to color the child objects.  
+
