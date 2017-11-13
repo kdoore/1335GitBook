@@ -27,60 +27,72 @@ The Simple Slider code above has some serious limitations: we can only create a 
 
 
 ```java
+//Class slider 
+//creates a horizontal slider
+//uses map function to match displayed slider rectangle and 
+//indicatror rectangles with the min, max values provided as input parameters
 class Slider{
-  int x, y, w, h;
+  float x, y;
+  float w, h;
+  float min, max;
   float sliderX;
   float sliderVal;
-  float min, max;
-  float hue, sat, bright;
   String label;
-
-
-  //constructor with a full set of input parameters
-  Slider( int x, int y, int w, int h,float min, float max, String label ){
-    this.x=x;
-    this.y=y;
-    this.w=w;
-    this.h=h;
+  
+  Slider( float x, float y, float w, float h, float min, float max, String label){
+    this.x = x;
+    this.y = y;
+    this.w = w;
+    this.h = h;
     this.min = min;
     this.max = max;
-    sliderX= x + w/2;
-    sliderVal = map(sliderX, x, x+w, min, max);
-    this.label = label;
-    sat = 255;
-    bright = 255;
-    hue = 0;
+    this.label = label;  
+    sliderX = x + (w/2);
+    sliderVal = map( sliderX, x, x+w, min, max);
+    println( "SliderVal initial value " + sliderVal);
   }
-
+  
+  //display split into 2 methods, the background layer displayes 
   void display(){
-    backgroundlayer();
-    fill(150);
-    rect( x, y, w, h);
-    fill(0);
-    rect(sliderX-2, y-3, 4, h+6);  
+   backgroundLayer();
+   fill( 300);
+   rect( x, y, w, h);   //slider rectangle  
+   fill(360); //inidcator rectangle
+   rect( sliderX-2, y-3, 4, h + 6);
+   text( int(sliderVal), sliderX + 2, y-4);  //display the sliderValue
   }
-
-  void backgroundlayer(){
-    fill(220);
-    noStroke();
-    rect( x-7, y-20, w+14, h+28);
-    fill(0);
-    //display SliderVal to 2 decimal digits and Label
-    textAlign(LEFT);
-    text(int(sliderVal), x,y-7);
-    textAlign(RIGHT);
-    text(label, x+w, y-6);
+  //display background rectangle that has text display 
+  //for min, max, label
+  void backgroundLayer(){
+     fill( 100);
+     rect( x-10, y-20, w+20, h+40);  ////outer background rectangle
+     fill( 360);  //fill for the text
+     // Create text for min, max, label
+     textSize( 12);
+     textAlign(LEFT);
+     text( int(min),  x, y+h+15);
+     textAlign(RIGHT);
+     text( int( max), x+w-10, y+h+15);
+     textAlign(CENTER);
+     textSize(14);
+     text( label, x+(w/2), y+h +15);
   }
-
-  void checkPressed(int mx, int my){
-    if( mx >= x && mx <= (x+w) && my>=y && my<=(y + h)){
+  
+  //test mouse coordinates to determine if within the slider rectangle
+  //if not changed, return false
+  //set sliderX to current mouseX position
+  boolean checkPressed(int mx, int my){
+    boolean isChanged = false;
+    if( mx >= x && mx <= x+w && my> y && my< y +h){
+      isChanged = true;
       sliderX = mx;
-      sliderVal = map(sliderX, x, x+w, min, max);
-      //println("sliderVal " + sliderVal);
+      sliderVal = map( sliderX, x, x+w, min, max);
     }
+    return isChanged;
   }
-
-}// end class
+  
+  
+} // end class Slider
 ```
 
 
@@ -88,36 +100,28 @@ class Slider{
 In the code below, we use a slider instance to control the scale of an ellipse 
 
 ```java
-Slider mySlider;
-
+Slider slider1;
+float hue;   //modified by the slider
 
 void setup(){
-  size(800,800);
-  colorMode(HSB);
-  
-  //////Slider( x, y, w, h, min, max, label);
-  mySlider = new Slider( 100,height - 125,250,30, 0.0, 2.0, "Scale"); //we are using this for length
- background(200);
+  size( 700, 700);
+  colorMode( HSB, 360,100,100);
+  slider1 = new Slider( 200,200, 200, 30, 0, 360, "Hue");
+  hue = slider1.sliderVal;  //initialize hue using slider to set the initial value
 }
 
 void draw(){
-  if(mousePressed){
-  drawPattern();
+  background( 0);
+   if( mousePressed){
+    boolean isChanged = slider1.checkPressed( mouseX, mouseY);
+    if(isChanged){
+        hue = slider1.sliderVal; //update hue using updated sliderVal
+    }
   }
-  drawSliders();
-} // end of draw loop
-
-void drawSliders(){
-  if(mousePressed){
-    mySlider.checkPressed(mouseX, mouseY);
-  }
-  mySlider.display();
+  slider1.display();
+  fill( hue, 100, 100); //hue modified by slider1
+  rect( 20,20, 50,50); //rectangle hue modified by slider1 
 }
-
-void drawPattern(){
-   
-   
-   } // end of drawPattern 
 
 ```
 Can you make a slider to control Hue?  Can we use the Slider base class to create a HueSlider class, how do we create a ROYGBIV Gradient Rectangle?
@@ -127,8 +131,8 @@ Below is the HueSlider class.  How would we create a Saturation and Brightness s
 ```java
 class HueSlider extends Slider{
   
-  HueSlider( int _x, int _y, int _w, int _h,float _min, float _max   ){
-    super( _x, _y, _w, _h, _min, _max, "HUE" );   ////calling base class constructor
+  HueSlider( int x, int y, int w, int h,float min, float max   ){
+    super( x, y, w, h, min, max, "Hue" );   ////calling base class constructor
   }
   
  
@@ -136,13 +140,12 @@ class HueSlider extends Slider{
     super.backgroundlayer();
     
     for(int i=0;i < w; i ++){  //what going on here?
-      float hue = map( i, 0, w, min, max);  //what is wrong here, what should be used instead of 0, 255 for slider min, max range?
-      stroke(hue, 255,255);
+      float hue = map( i, 0, w, min, max);  
+      stroke(hue, 100,100);
       line(i+x, y , i + x, y + h);
     }
-    
-    float sliderHue=map(sliderX, x,x+w, 0, 255);  //what is wrong here?
-    fill(sliderHue, 255,255);
+    float sliderHue=map(sliderX, x,x+w, min, max); 
+    fill(sliderHue, 100,100);
     stroke(0);
     rect(sliderX, y-4, 5, h+8); 
   }  // end of display
@@ -165,20 +168,20 @@ void CheckSliders(){
 ```java
 class SatSlider extends Slider{
   
-  SatSlider(int _x, int _y, int _w, int _h, float _min, float _max){
-    super( _x, _y, _w, _h, _min, _max);
+  SatSlider(int x, int y, int w, int h, float min, float max){
+    super( x, y, w, h, min, max);
     }
   
   void display(){
-    super.drawBackground();
+    super.backgroundLayer();
     for( int i=0; i < w ; i++){
-      float satVal = map( i, 0,w, min, max);  //changed
-      stroke( hue, satVal, 255); //calculate satVal for each line
+      float satVal = map( i, 0,w, min, max);  
+      stroke( hue, satVal, 100); //calculate satVal for each line
       line( x+i, y, x+i, y+h); 
     }
     ///indicator rectangle
     stroke(0);  //reset stroke to default
-    fill(hue , sliderVal,255);   //use sliderVal to set the sat 
+    fill(hue , sliderVal, 100);   //use sliderVal to set the sat 
     strokeWeight(2);
     rect( sliderX-3, y-2, 6, h+4);
     strokeWeight(1);
