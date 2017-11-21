@@ -17,13 +17,12 @@ Our slider will use the processing map() function because it's core functionalit
 ![](CS1335 - 9.png)
 
 ###Simple Linear Slider
-The code below creates a slider that controls the length of a rectangle.  It uses the map function. 
-When determining the slider rectangle's range of values, this is determined by the pixel width of the rectangle: w.  In order to determine the values we use to determine the slider's current position and current mapping output value, we need to also consider the x-offset of the slider.  In other words, if the slider's left-side is positioned along the left side of the canvas, then x offset is 0.  This would mean that if the indicator position: sliderX had a value of 20, and if the width of the slider was 40, we'd know that the slider indicator was at the middle of the range.   However, if sliderX had a value of 20, but the x coordinate of the slider rectangle was also 20, we'd know that the slider indicator would be at it's minimum value in the range. Since we want flexibility to position the slider anywhere on the canvas, we need to consider the x offset of the slider when determining the slider's value. So the possible values for the slider Indicator will fall in the range of: ( min: x, max: x+w ), and we'll use these ranges in the map function as the slider representation's min, max value.
+The code below creates a slider that controls the length of a rectangle.  It uses the map function. When determining the slider rectangle's range of values, this is determined by the pixel width of the rectangle: w.  In order to determine the values we use to determine the slider's current position and current mapping output value, we need to also consider the x-offset of the slider.  In other words, if the slider's left-side is positioned along the left side of the canvas, then x offset is 0.  This would mean that if the indicator position: sliderX had a value of 20, and if the width of the slider was 40, we'd know that the slider indicator was at the middle of the range.   However, if sliderX had a value of 20, but the x coordinate of the slider rectangle was also 20, we'd know that the slider indicator would be at it's minimum value in the range. Since we want flexibility to position the slider anywhere on the canvas, we need to consider the x offset of the slider when determining the slider's value. So the possible values for the slider Indicator will fall in the range of: ( min: x, max: x+w ), and we'll use these ranges in the map function as the slider representation's min, max value.
 
 
 
 ###Slider, Base-Class
-The Simple Slider code above has some serious limitations: we can only create a single slider, where it's position and size are fixed.  How can we define a Slider base class that allows us to create a slider of any size, at any position, that allows selection of values within any range?  The map( ) function will allow us to define a more generalized Slider base class. 
+How can we define a Slider base class that allows us to create a slider of any size, at any position, that allows selection of values within any range?  The map( ) function will allow us to define a generalized Slider base class. 
 
 
 ```java
@@ -31,67 +30,82 @@ The Simple Slider code above has some serious limitations: we can only create a 
 //creates a horizontal slider
 //uses map function to match displayed slider rectangle and 
 //indicatror rectangles with the min, max values provided as input parameters
-class Slider{
+class Slider {
   float x, y;
   float w, h;
   float min, max;
   float sliderX;
   float sliderVal;
   String label;
-  
-  Slider( float x, float y, float w, float h, float min, float max, String label){
+  float hue, sat, bright; //these need initialized or they are 0;
+
+  Slider( float x, float y, float w, float h, float min, float max, String label) {
     this.x = x;
     this.y = y;
     this.w = w;
     this.h = h;
     this.min = min;
     this.max = max;
-    this.label = label;  
+    this.label = label; 
+    hue = 100;
+    sat = 100;
+    bright = 100;
     sliderX = x + (w/2);
     sliderVal = map( sliderX, x, x+w, min, max);
-    println( "SliderVal initial value " + sliderVal);
+
+    //provide initialization values to these variables that are used in child classes
+    hue = sliderVal;
+    sat = 100;
+    bright=100;
   }
-  
+
   //display split into 2 methods, the background layer displayes 
-  void display(){
-   backgroundLayer();
-   fill( 300);
-   rect( x, y, w, h);   //slider rectangle  
-   fill(360); //inidcator rectangle
-   rect( sliderX-2, y-3, 4, h + 6);
-   text( int(sliderVal), sliderX + 2, y-4);  //display the sliderValue
+  void display() {
+    backgroundLayer();
+
+    fill(300);
+    rect( x, y, w, h);   //slider rectangle  - this is changed in child classes 
+
+    fill(360); //inidcator rectangle
+    rect( sliderX-2, y-3, 4, h + 6);
+    text( int(sliderVal), sliderX + 2, y-4);  //display the sliderValue
   }
   //display background rectangle that has text display 
   //for min, max, label
-  void backgroundLayer(){
-     fill( 100);
-     rect( x-10, y-20, w+20, h+40);  ////outer background rectangle
-     fill( 360);  //fill for the text
-     // Create text for min, max, label
-     textSize( 12);
-     textAlign(LEFT);
-     text( int(min),  x, y+h+15);
-     textAlign(RIGHT);
-     text( int( max), x+w-10, y+h+15);
-     textAlign(CENTER);
-     textSize(14);
-     text( label, x+(w/2), y+h +15);
+  void backgroundLayer() {
+    pushStyle();
+    fill( 100); 
+    rect( x-10, y-20, w+20, h+40);  ////outer background rectangle
+    fill( 360);  //fill for the text
+    // Create text for min, max, label - displayed under slider rectangle
+    textSize( 12);
+    textAlign(LEFT);
+    text( int(min), x, y+h+15);
+    textAlign(RIGHT);
+    text( int( max), x+w-10, y+h+15);
+    textAlign(CENTER);
+    textSize(14);
+    text( label, x+(w/2), y+h +15);
+    popStyle();
   }
-  
+
+  void setSliderVal( float sliderVal) {
+    this.sliderVal = sliderVal;
+    this.sliderX = map( sliderVal, min, max, x, x+w);
+  }
+
   //test mouse coordinates to determine if within the slider rectangle
   //if not changed, return false
   //set sliderX to current mouseX position
-  boolean checkPressed(int mx, int my){
+  boolean checkPressed(int mx, int my) {
     boolean isChanged = false;
-    if( mx >= x && mx <= x+w && my> y && my< y +h){
+    if ( mx >= x && mx <= x+w && my> y && my< y +h) { //test for >= so endpoints are included
       isChanged = true;
       sliderX = mx;
       sliderVal = map( sliderX, x, x+w, min, max);
     }
     return isChanged;
   }
-  
-  
 } // end class Slider
 ```
 
@@ -129,27 +143,21 @@ Below is the HueSlider class.  How would we create a Saturation and Brightness s
 
 ###HueSlider, Child-class
 ```java
-class HueSlider extends Slider{
-  
-  HueSlider( int x, int y, int w, int h,float min, float max   ){
-    super( x, y, w, h, min, max, "Hue" );   ////calling base class constructor
+class HueSlider extends Slider {
+  HueSlider( int x, int y, int w, int h, float min, float max ) {
+    super( x, y, w, h, min, max, "Hue" ); ////calling base class constructor
   }
-  
- 
-  void display(){
-    super.backgroundlayer();
-    
-    for(int i=0;i < w; i ++){  //what going on here?
-      float hue = map( i, 0, w, min, max);  
-      stroke(hue, 100,100);
-      line(i+x, y , i + x, y + h);
+  void display() {
+    super.backgroundLayer();
+    for (int i=0; i < w; i ++) { //what going on here?
+      float hueVal = map( i, 0, w, min, max);
+      stroke(hueVal, 100, 100);
+      line(i+x, y, i + x, y + h);
     }
-    float sliderHue=map(sliderX, x,x+w, min, max); 
-    fill(sliderHue, 100,100);
+    fill(sliderVal, 100, 100);
     stroke(0);
-    rect(sliderX, y-4, 5, h+8); 
-  }  // end of display
-  
+    rect(sliderX, y-4, 5, h+8);
+  } // end of display
 } // end of class HueSlider
 
 ```
