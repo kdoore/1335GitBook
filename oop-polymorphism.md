@@ -20,7 +20,5 @@ Animal[2] = new Cat( );
 
 ```
 
-
-
 ###Over-riding Methods
 
