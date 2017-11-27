@@ -38,6 +38,7 @@
 * [Button Types](button_types.md)
 * [Modeling Buttons: States and Events](modelingstates_and_events_md.md)
 * [OOP - Inheritance](object_inheritance.md)
+* [OOP - Polymorphism](oop-polymorphism.md)
 * [Child-Class: PImageButton](pimagebutton.md)
 * [PShape - SVG Objects](pshape_-_svg_objects.md)
 * [Drawing Application - Logic](drawing-application-logic.md)

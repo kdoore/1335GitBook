@@ -13,7 +13,8 @@ A graphical representation of the features of a class including: name, variables
 
 ![](Screenshot 2015-10-25 16.59.21.png)
 
-## map( )
+
+### map( )
 The Processing [map( )](https://processing.org/reference/map_.html) function provides a method to find a value in a given range, given an input value from another range.  We can use the map() function to convert a value from it's current range to a target range. If we start with an input hueAngle, and we want to convert it to an 8 bit, 0-255 target range, then we write the function as shown below: 
 ```
     // map(inputValue, valueStart, valueStop, targetStart, targetStop)
