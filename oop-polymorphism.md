@@ -20,7 +20,7 @@ Animal[2] = new Cat( );
 ```
 
 ###Over-riding Methods
-
+OOP Polymorphism means that when a child-class object executes a method, then the 'system' will determine whether to execute a child-class method or a base-class method, by examining the child class definition to see if the method has been implemented in the child-class so that it over-rides the base-class method.  Method over-riding allows us to treat objects using the more general, base-class, references, but that the 'system' will determine the run-time type of each object instance, and determine whether a base-class or child-class method will be executed.  
 
 ###Object Oriented Design 
-
+Polymorphism should be considered when designing classes with inheritance relationships.  Only methods defined in the base-class can be called on base-class object references, even if the object refers to a child-class object.  Therefore, UML class diagrams provide a graphical representation to aid design and use of OOP classes and objects.
