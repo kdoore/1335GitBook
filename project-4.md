@@ -7,5 +7,3 @@ We will create a Class:  ShapeMatrix that incorporates all of the logic for crea
 
 
 
-The Pattern class can be updated so that it can handle logic for more complex PShape objects, we can check to see if the PShape is a group, we can unpack the child objects and we can use separate colors to color the child objects.  
-
