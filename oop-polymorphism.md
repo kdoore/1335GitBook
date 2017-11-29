@@ -9,16 +9,18 @@ We can create an object reference variable of the base-class type, and this vari
 ###Array of base-class object references
 ```
 Animal[] animals= new Animal[3] //array of base-class object references
-animal[0] = new Animal( ); //base-class object
+animals[0] = new Animal( ); //base-class object
 
 Dog dog1 = new Dog( );  //child-class object
-animal[1] = new Dog( );  //base-class type object reference, child-class object
+animals[1] = new Dog( );  //base-class type object reference, child-class object
 
 Cat cat1 = new Cat( );
-animal[2] = new Cat( );
+animals[2] = new Cat( );
 
-//These will cause errors:
-cat1 = Animal
+//IMPORTANT:  Note that these will cause errors:
+cat1 = animals[0];  //child-class reference, base-class object
+
+
 
 ```
 
