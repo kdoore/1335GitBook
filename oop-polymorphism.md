@@ -18,9 +18,9 @@ Cat cat1 = new Cat( );
 animals[2] = new Cat( );
 
 //IMPORTANT:  Note that these will cause errors:
-cat1 = animals[0];  //child-class reference, base-class object
+cat1 = animals[0];  //child-class reference-type, base-class object
 
-
+cat1 = dog1; //child class reference-type
 
 ```
 
