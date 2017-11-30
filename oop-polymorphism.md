@@ -33,3 +33,5 @@ Polymorphism should be considered when designing classes with inheritance relati
 ###UML Diagram of Inheritance Relationships
 
 ![](/assets/Screen Shot 2017-11-30 at 2.09.48 PM.png)
+
+The diagram above shows a base-class: Creature, and 3 Child classes:  Zombie, Cat, Fish 
