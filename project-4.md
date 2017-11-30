@@ -5,5 +5,8 @@ We can use the ColorScheme colors to change gradient color values used in the de
 
 We will create a Class:  ShapeMatrix that incorporates all of the logic for creating and displaying a ShapeMatrix object from project 2.  The ShapeMatrix will represent a 2D array of Pattern Objects. 
 
+UML Class Diagram for Project 4 Classes
+The diagram below shows the classes and class relationships for Project 4.
 
+![](/assets/Screen Shot 2017-11-30 at 10.03.28 AM.png)
 
