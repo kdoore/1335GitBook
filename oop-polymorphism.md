@@ -29,3 +29,7 @@ OOP Polymorphism means that when a child-class object executes a method, then th
 
 ###Object Oriented Design 
 Polymorphism should be considered when designing classes with inheritance relationships.  Only methods defined in the base-class can be called on base-class object references, even if the object refers to a child-class object.  Therefore, UML class diagrams provide a graphical representation to aid design and use of OOP classes and objects.
+
+###UML Diagram of Inheritance Relationships
+
+![](/assets/Screen Shot 2017-11-30 at 2.09.48 PM.png)
