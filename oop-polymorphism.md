@@ -1,4 +1,4 @@
-#Polymorphism
+#Polymorphism and Object Oriented Design
 
 Polymorphism is one of 3 foundational concepts of Object Oriented Programming.  Polymorphism can be translated to mean _many forms_.  In OOP, polymorphism means that one object can be considered to have many forms, specifically, an object from a child-class can be treated as both a base-class object and a child-class object.  So, polymorphism means that child-class objects to be treated as their more general, base-class type, and this reflects our intuition about relationships between real-world objects.  My pet, Charlie, is an instance of a dog object, but he can also be considered as an animal, which would be the more general concept, or base-class concept.  
 
