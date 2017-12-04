@@ -1,13 +1,30 @@
 #Polymorphism and Object Oriented Design
 
-Polymorphism is one of 3 foundational concepts of Object Oriented Programming.  Polymorphism can be translated to mean _many forms_.  In OOP, polymorphism means that one object can be considered to have many forms, specifically, an object from a child-class can be treated as both a base-class object and a child-class object.  So, polymorphism means that child-class objects to be treated as their more general, base-class type, and this reflects our intuition about relationships between real-world objects.  My pet, Charlie, is an instance of a dog object, but he can also be considered as an animal, which would be the more general concept, or base-class concept.  
+Polymorphism is one of 3 foundational concepts of Object Oriented Programming.  Polymorphism can be translated to mean _many forms_.  In OOP, polymorphism means that one object can be considered to have many forms. An object-reference of the base-class type can refer to either a base-class object or a child-class object.  Another way to consider this is that when we have a collection of similar objects, where we refer to them with the more generalized format (base-class type object-reference variable), that variable can refer to any of the child-class objects.
+
+In the example below, this is intuitive for us:  a dog is an animal, a cat is an animal, an animal is an animal.  However, a dog is not a cat, and we can'd force some instance of an animal to be strictly a cat, we would expect this to cause errors as in the example code below.
+
+```java
+
+Animal[ ] animals = new Animal[3];
+animal[0] = new Dog();
+animal[1] = new Cat();
+animal[2] = new Animal( );
+
+Cat cat = new Cat( );
+cat = new Dog( ); ///this will cause an error
+cat = new Animal( );  ///this will cause an error
+```
+
+So, polymorphism means that child-class objects can be to be treated as their more general, base-class type, and this reflects our intuition about relationships between real-world objects.  My pet, Charlie, is an instance of a dog object, but he can also be considered as an animal, which would be the more general concept, or base-class concept.    
 
 ###Object References
 We can create an object reference variable of the base-class type, and this variable can be used to reference either a base-class object, or any object that is of a child-class type.  We can imagine a set of classes, where Animal is the base-class, where Cat and Dog would be child-classes that extend Animal.  Below are examples using default constructors to demonstrate  using base-class object references to refer to child-class object instances.  It is important to note that the reverse is not true, you can not use an object-reference of the Child-class type to refer to a base class object.
 
 
 ###Array of base-class object references
-```
+
+```java
 Animal[] animals= new Animal[3] //array of base-class object references
 animals[0] = new Animal( ); //base-class object
 
@@ -25,10 +42,10 @@ cat1 = dog1; //child class reference-type
 ```
 
 ###Over-riding Methods
-OOP Polymorphism means that when a child-class object executes a method, then the 'system' will determine whether to execute a child-class method or a base-class method, by examining the child class definition to see if the method has been implemented in the child-class so that it over-rides the base-class method.  Method over-riding allows us to treat objects using the more general, base-class, references, but that the 'system' will determine the run-time type of each object instance, and determine whether a base-class or child-class method will be executed.  
+OOP Polymorphism means that when a child-class object executes a method, then the 'system' will determine whether to execute a child-class method or a base-class method, by examining the child class definition to see if the method has been implemented in the child-class so that it over-rides the base-class method.  Method over-riding allows us to treat objects using the more general, base-class, references, but that the 'system' will determine the run-time type of each object instance, and determine whether a base-class or child-class method will be executed.  If a method has not been over-ridden in a child class, the child-class object can still call any method specified in the base-class, the child-class 'gets' everything in the base-class 'for free' when it extends the base-class to become a child-class.
 
 ###Object Oriented Design 
-Polymorphism should be considered when designing classes with inheritance relationships.  Only methods defined in the base-class can be called on base-class object references, even if the object refers to a child-class object.  Therefore, UML class diagrams provide a graphical representation to aid design and use of OOP classes and objects.
+Polymorphism should be considered when designing classes with inheritance relationships.  Only methods defined in the base-class can be called on using base-class object references, even if the object refers to a child-class object.  Therefore, UML class diagrams provide a graphical representation to aid design and use of OOP classes and objects.
 
 ###UML Diagram of Inheritance Relationships
 
