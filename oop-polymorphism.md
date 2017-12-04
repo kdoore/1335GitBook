@@ -77,10 +77,10 @@ Example 2: ** Child-class object-reference variable:**
  This object can call any methods specified in either it's base-class, or it's own class (Fish)
  
  
-     fish.attack( fish );
+     fish.attack( fish );  //no error doing this
      fish.glubGlub( );
      
- ###Object Oriented Design 
+ ###Object Oriented Design - Add methods to the base-class to provide access to specialized behavior in child-classes.
  When designing classes, as in the example above, we should identify any specialized behavior that will be exhibited by any child-class and create a method in the base-class that represents the generalized behaivor.  
  
  Example:  We have a child-class: Fish, where the fish has a specialized behavior:  glubGlub( ).  Let's assume that can be considered as a more generalized concept:  makeNoise( ), where other child classes might also share this behavior.  If we define the method:  makeNoise( ) in the base-class, then, within the Fish class, we can over-ride makeNoise( ), and call the glubGlub( ) method within makeNoise( ).  Then any base-class object can call makeNoise( ), if the object happens to be a Fish, child-class object, it will have it's glubGlub( ) behavior executed.
