@@ -1,14 +1,14 @@
-#Project 1: Vertex Shapes - Recursive Pattern
+# Project 1: Vertex Shapes - Recursive Pattern
 
-The image below shows how we can create a simple polygon using the [Processing PShape, createShape( ), beginShape\( \), endShape\( \)](https://processing.org/reference/beginShape_.html) functions.
+The image below shows how we can create a simple polygon using the [Processing PShape, createShape\( \), beginShape\( \), endShape\( \)](https://processing.org/reference/beginShape_.html) functions.
 
-For our recursive pattern project, it will be important to create a simple pattern that can be defined by a central point \(vertex\) and one **length** value. 
+For our recursive pattern project, it will be important to create a simple pattern that can be defined by a central point \(vertex\) and one **length** value.
 
 `vertexPattern( length );`
- 
-   You can see from the image below that if we design our pattern based on points on a square, this becomes straightforward.  For each recursive call, we want to make the length smaller, but keep the center-point location fixed.  Each time we draw the shape, if we use a different value for the length parameter, the shape will be scaled according to that length dimension parameter. 
 
-Defining the shape based on a variable length means that if length=100, it should create a pattern that is 10 times larger than if we'd set length = 10.  
+You can see from the image below that if we design our pattern based on points on a square, this becomes straightforward.  For each recursive call, we want to make the length smaller, but keep the center-point location fixed.  Each time we draw the shape, if we use a different value for the length parameter, the shape will be scaled according to that length dimension parameter.
+
+Defining the shape based on a variable length means that if length=100, it should create a pattern that is 10 times larger than if we'd set length = 10.
 
 For the vertices: if we start in the center, then rotate clockwise, we can determine the vertices as:
 
@@ -35,24 +35,23 @@ Finally, to simplify further, we can consider that if we translate the origin to
   s2.vertex( 0, len);
   s2.endShape( CLOSE);
   shape( s2, 200, 200);
-
 ```
-###Custom Draw Rectangles Function using Vertex Points 
 
-![](/assets/Screenshot 2017-09-14 18.30.05.png)
-The image above shows that we could define our own drawRectangle(w, h) function, where we define xWidth, xHeight input parameters.  This will work just like the processing rectangle function, except that it doesn't take in x,y location input parameters. Instead, we're hard-coding the position vertex at (0,0);  We can see from the code on the diagram how the input parameters are used to define 4 vertex points that represent the rectangle corners.  This way, if we call the function 2 times with different inputs, we'll have 2 different rectangles scaled according to the input values:
+### Custom Draw Rectangles Function using Vertex Points
+
+![](/assets/Screenshot 2017-09-14 18.30.05.png)  
+The image above shows that we could define our own drawRectangle\(w, h\) function, where we define xWidth, xHeight input parameters.  This will work just like the processing rectangle function, except that it doesn't take in x,y location input parameters. Instead, we're hard-coding the position vertex at \(0,0\);  We can see from the code on the diagram how the input parameters are used to define 4 vertex points that represent the rectangle corners.  This way, if we call the function 2 times with different inputs, we'll have 2 different rectangles scaled according to the input values:
 
 ```java
 //rectangles are scaled using the input parameters: xWidth, xHeight
 drawRectangle( 100,200 );
 drawRectangle( 200, 300);
-
 ```
-Below is an example vertex pattern function that takes in 2 input-parameters: xWidth, yHeight.  Within the function, 
-those input parameters define the vertices of a rectangle.  We've now created a function that will allow us to draw a rectangle of any size, and any location if we use the transform function to move the origin to the desired location prior to calling this function.  We've just redesigned the processing rectangle function using PShape objects.  What's much more interesting is that we can create functions to generate our own design motifs, as long as we design the pattern using parameters variables to define the actual design geometry. 
+
+Below is an example vertex pattern function that takes in 2 input-parameters: xWidth, yHeight.  Within the function,   
+those input parameters define the vertices of a rectangle.  We've now created a function that will allow us to draw a rectangle of any size, and any location if we use the transform function to move the origin to the desired location prior to calling this function.  We've just redesigned the processing rectangle function using PShape objects.  What's much more interesting is that we can create functions to generate our own design motifs, as long as we design the pattern using parameters variables to define the actual design geometry.
 
 ```java
-
 void drawRectangle( float xWidth, float yHeight){
    PShape s = createShape();
    s.beginShape();
@@ -63,21 +62,20 @@ void drawRectangle( float xWidth, float yHeight){
    s.endShape( CLOSE);
    shape( s, 0,0);
  }
-
 ```
 
-###Processing P2D - Vertex Shading
+### Processing P2D - Vertex Shading
 
 ```java
 void setup(){
     size( 500, 600, P2D);
 }
 ```
+
 If we use the processing P2D rendering context, we can set a different fill value and stroke value for each vertex, this allows us to create visual depth in the pattern. When incorporated into a simple recursive function this can create interesting complex images.  
 P2D might not work on some computers, if not, then just use regular: size\(600,600\);.  You will need to create an interesting pattern using fill outside of the beginShape\(\) function that impacts the entire shape.
 
-###recursivePattern and vertexPattern Functions
-
+### recursivePattern and vertexPattern Functions
 
 ```java
 //recursive function to draw nested patterns
@@ -106,30 +104,27 @@ void vertexPattern( float len){
   s.endShape(CLOSE);
   shape( s, 0,0);  //this displays the shape on the canvas at point (0,0)
 }
-
-
 ```
 
-If we look at the fill\( grayScaleVal, alphaVal\) in the drawSimpleShape\(\) function, we can see a simple pattern, we're increasing the value of grayScaleVal, it increases between each call:  25, 75,150,200,250.  We want to have it change based on the number of vertices in our shape, and it should increase each time we call it.  This suggests we should create a function:  setFill\( int vertexNumber\);   
+If we look at the fill\( grayScaleVal, alphaVal\) in the drawSimpleShape\(\) function, we can see a simple pattern, we're increasing the value of grayScaleVal, it increases between each call:  25, 75,150,200,250.  We want to have it change based on the number of vertices in our shape, and it should increase each time we call it.  This suggests we should create a function:  setFill\( int vertexNumber\);  
 We could call the function using an integer variable vertNum=1;  setFill\(vertNum++\).
 
 What would setFill\(int vertNumber\) fuction definition look like?  Could we expand this function definition so that we use set: hue, sat, and brightness within the function using a single vertNum as the input parameter?
 
 We can use frameCount and modulus, to add a timer to the draw loop and \(we can also rotate the pattern each time it is drawn using a similar technique\)
 
-#Framecount as a timer
-```java
+# Framecount as a timer
 
+```java
 if(framecount % 10 == 0){ 
    //this event occurs every 10 frames
    //doSomething every 10 frames
 }
 ```
 
-#Main Program where Recursive function is used  in draw( )
+# Main Program where Recursive function is used  in draw\( \)
 
 ```java
-
 float length=150;
 
 void setup(){
@@ -143,14 +138,13 @@ void draw(){
    resetMatrix();
    }
 }
-
 ```
 
 ![](Screenshot 2016-01-23 23.43.26.png)
 
 # HSB Colormode - Set Fill at the Vertex Level
 
-Once a design has been developed using grayscale color values as show above, then it's very easy using HSB colormode to add hueValues.  Processing using P2D mode as specified in the size( 600,600, P2D) supports vertex shaders, where gradient colors are computed for fill( ) values specified between vertex for PShape objects. 
+Once a design has been developed using grayscale color values as show above, then it's very easy using HSB colormode to add hueValues.  Processing using P2D mode as specified in the size\( 600,600, P2D\) supports vertex shaders, where gradient colors are computed for fill\( \) values specified between vertex for PShape objects.
 
 ![](Screenshot 2016-01-24 18.37.32.png)
 
