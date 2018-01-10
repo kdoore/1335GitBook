@@ -23,7 +23,7 @@ rect( 0, 0, length, length);
 
 ```
 
-A smart programmer would cringe when writing such repetitive code, knowing that loops can provide a cleaner method to implement repetitive code:
+An experienced programmer would cringe when writing such repetitive code, knowing that loops can provide a cleaner method to implement repetitive code:
 
 ```java
 int count=5; 
