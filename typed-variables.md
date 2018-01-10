@@ -14,7 +14,7 @@ Primitive-type variables involve a single piece of information like integers: `i
 
 ### Composite Data Types
 
-Composite-type values refer to more complex data-types like arrays and objects; the memory-size required storing the data elements for complex variables, is not as easy for the system to determine when the program is being compiled, so a variable of this type actually refers to the memory-address of the starting location in memory where the data is stored.  Typically the remainder of the data is stored in adjacent memory locations.  For an array or string, the   Composite-type variables are commonly called `reference` data types, these include Array, ArrayList, String, and custom Class-Objects.  `Reference` variables `refer` to a location in memory where the data is stored.
+Composite-type values refer to more complex data-types like arrays and objects; the memory-size required storing the data elements for complex variables, is not as easy for the system to determine when the program is being compiled. For this reason, a variable of this type actually refers to the memory-address of the starting location in memory where the data is stored.  If the reference-variable does not contain a valid memory address, then it has a value of 'null'.  Typically the remainder of the data is stored in adjacent memory locations.  Composite-type variables are commonly called `reference` data types, these include Array, ArrayList, String, and custom Class-Objects.  `Reference` variables `refer` to a location in memory where the data is stored.
 
 ### Primitive vs. Reference Data-types: Function Parameters
 
