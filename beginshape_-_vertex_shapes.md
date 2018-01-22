@@ -2,7 +2,7 @@
 
 The image below shows how we can create a simple polygon using the [Processing PShape, createShape\( \), beginShape\( \), endShape\( \)](https://processing.org/reference/beginShape_.html) functions.
 
-For our recursive pattern project, it will be important to create a simple pattern that can be defined by a central point \(vertex\) and one **length** value.
+For our recursive pattern project, it will be important to create a simple pattern that can be defined by a location point \(vertex\) and one **length** value.
 
 `vertexPattern( length );`
 
