@@ -2,7 +2,7 @@
 
 Using HSB ColorMode allows us to configure and modify colors in our programs based changing values for the Hue, Saturation, or Brightness.
 
-For Project 1, We're using recursion to create a series of PShape objects, where we modify the shape's length parameter with each recursive call.   The code below shows that when we set the colorMode to HSB, we also have the ability to set the maximum value for each of the parameters, and this is one way we can control color for our patterns:  colorMode( HSB, HueMax, SatMax, BrightMax).
+For Project 1, We're using recursion to create a series of PShape objects, where we modify the shape's length parameter with each recursive call.   The code below shows that when we set the colorMode to HSB, we also have the ability to set the maximum value for each of the parameters, and this is one way we can control color for our patterns:  colorMode( HSB, HueMax, SatMax, BrightMax).  One choice for setting these values is to use ColorMode(HSB, 360, 100,100) because this corresponds to the HSB values in the processing color selector tool.
 
 
 ```java
@@ -10,7 +10,7 @@ For Project 1, We're using recursion to create a series of PShape objects, where
 void setup(){
     size( 600,600);
     float lenMax = 200;
-    colorMode( HSB, HueMax, SatMax, BrightMax); 
+    colorMode( HSB, HueMax, SatMax, BrightMax); //What are these values: ?
     VertexPattern( lenMax );
     VertexPattern( lenMax - 50);
 }
