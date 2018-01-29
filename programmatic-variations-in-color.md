@@ -6,7 +6,6 @@ For Project 1, We're using recursion to create a series of PShape objects, where
 
 
 ```java
- 
 
 void setup(){
     size( 600,600);
@@ -16,7 +15,7 @@ void setup(){
     VertexPattern( len - 50);
 }
 
-void VertexPattern( float len){
+void vertexPattern( float len){
     PShape s = createShape();
     s.beginShape();
     s.fill( ?, ?, ? );//what values for HSB can be set here to change shape's color in a meaningful way?
@@ -41,8 +40,9 @@ float len;
 void setup(){
 len = 200;
 colorMode( HSB, 360, 100, len );  //use max value for len to set max value for Brightness in setup
+
 }
-void VertexPattern( float len){
+void vertexPattern( float len){
     PShape s = createShape();
     s.beginShape();
     s.fill(0, 100, len );// fully saturated red color, with brightness dependent on the len input parameter.
