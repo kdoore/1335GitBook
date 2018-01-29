@@ -14,6 +14,7 @@
 ---
 
 * [Project 1: Vertex Shapes - RecursivePattern](beginshape_-_vertex_shapes.md)
+* [Vertex Pattern Centered at Origin](vertex-pattern-centered-at-origin.md)
 * [Recursion](recursion.md)
 * [Recursive Drawing](recursive-drawing.md)
 * [HSB Color Mode](hsb_color_mode.md)

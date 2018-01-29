@@ -30,7 +30,7 @@ void vertexPattern( float len){
 
 
 ###Brightness Gradient:  BrightnessMax = LenMax.
-If we use a gradient for the brightness of an abstract pattern, we can enhance the illusion of depth for 2D design.  
+If we use a gradient for the brightness of an abstract pattern, we can enhance the illusion of depth for 2D designs.  
 
 Since we're using `float len` as an input parameter to determine the size of the shape, we can also use this value of len to help determine a good value to control varying the brightness each time we drawn a shape.  One way to do this is to set the max value for Brightness using the max value for Len:
 
@@ -54,6 +54,8 @@ void vertexPattern( float len){
 }
 
 ```
+
+###Map Function to convert values between ranges:
 
 
 
