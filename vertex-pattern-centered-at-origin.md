@@ -35,6 +35,7 @@ void vertexPattern( float len){
 
 ```
 
-  
+###Processing Coordinate System:  
+Since the processing coordinate system has the x-axis increase to the right, but the y-axis increases in the downward direction, we need to be careful with the sign of each vertex point.  All vertex points in the upper-left quadrant will have negative values for both x and y.  All points in the upper right will have positive x, negative y values.  All points in the lower right will have positive x and y values.  All points in the lower left will have negative x, positive y values. 
   
   
