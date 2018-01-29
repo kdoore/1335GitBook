@@ -17,6 +17,7 @@
 * [Recursion](recursion.md)
 * [Recursive Drawing](recursive-drawing.md)
 * [HSB Color Mode](hsb_color_mode.md)
+* [Programmatic Variations in Color](programmatic-variations-in-color.md)
 * [Computational Design](computational_design.md)
 * [Artist: Victor Vasarely](vasarely.md)
 * [Grid Pattern Design](arrays-for-grid-patterns.md)
