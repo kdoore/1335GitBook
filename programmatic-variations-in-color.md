@@ -70,8 +70,8 @@ float brightMin, brightMax;
 void setup(){
     lenMax = 200;
     lenMin = 30;
-    hueMin = 100;
-    hueMax = 130;
+    hueMin = 100; //green
+    hueMax = 160; //cyan
     brightMin = 50;
     brightMax = 100;
 
@@ -83,7 +83,6 @@ void vertexPattern( float len){
 //use map function to determine how hueVal, brightVal vary with changes in len.  
     float hueVal = map( len, lenMin, lenMax, hueMin, hueMax);
     float brightVal = map( len, lenMin, lenMax, brightMin, brightMax); 
-
     PShape s = createShape();
     s.beginShape();
     s.fill(hueVal, 100 , brightVal );// fully saturated custom color, with brightness dependent on the len input parameter.
