@@ -9,10 +9,10 @@ For Project 1, We're using recursion to create a series of PShape objects, where
 
 void setup(){
     size( 600,600);
-    float len = 200;
+    float lenMax = 200;
     colorMode( HSB, HueMax, SatMax, BrightMax); 
-    VertexPattern( len );
-    VertexPattern( len - 50);
+    VertexPattern( lenMax );
+    VertexPattern( lenMax - 50);
 }
 
 void vertexPattern( float len){
@@ -36,11 +36,12 @@ Since we're using `float len` as an input parameter to determine the size of the
 
 ```java
 
-float len;
+float lenMax;
 void setup(){
-len = 200;
-colorMode( HSB, 360, 100, len );  //use max value for len to set max value for Brightness in setup
-
+lenMax = 200;
+colorMode( HSB, 360, 100, lenMax );  //use max value: lenMax to set max value for Brightness in setup
+vertexPattern( lenMax);
+vertexPattern( lenMax - 50);
 }
 void vertexPattern( float len){
     PShape s = createShape();
@@ -55,7 +56,7 @@ void vertexPattern( float len){
 
 ```
 
-###Map Function to convert values between ranges:
+
 
 
 
