@@ -80,9 +80,46 @@ Here we **define** a recursive function: `recursivePattern` so that it calls its
   ```java
    recursivePattern( length * 0.8, level - 1 );  
    }  //end of function
-    
-   ``` 
-                
+   ```
+
+   
+**Complete Recursive Function  ** 
+ 
+
+```java
+
+void recursivePattern( float length, int level) {
+    if(level <= 0) {
+    return; //stops recursion
+    }
+    fill( 255, 255, 100);// set some fill color
+    rect( 0, 0, length, length); //draw at origin, use length parameter
+    //recursive call
+    recursivePattern( length * 0.8, level - 1 );  
+}
+```
+###Example 2:  Recursive Function
+Below is a slight variation on the recursive function, here we're using a global variable: lenMin to determine when to terminate the recursion.  In addition, we're using global variables to determine the fill values for Hue and Brightness, where we'll set colorMode in the setup function:   colorMode(HSB, 360, 100, 100);
+
+
+```java
+//global Variables
+float lenMin = 30;
+float lenMax = 100;
+
+ void recursivePattern( float length){
+if ( level < lenMin ){ //test for termination
+return; //termination condition is true
+}
+float hueVal = map( length, lenMin, lenMax, 130, 160);
+float brightVal = map( length, lenMin, lenMax, 0, 100);
+fill( hueVal, 100, brightVal, 100); //alpha is 100
+rect( 0, 0, length, length); //draw a pattern based on length parameter
+recursivePattern( length * 0.8 ); //call recursive function
+}  
+```
+
+                            
                 
 ### Complete Program
 Here's a simple program that defines and uses a recursive function to create a pattern. In this case, we're just creating a rectangle as our recursive task. Notice that in this case we are using global variables: lenMin, lenMax as the range values for the Map( ) function which is determining the fill for the rectangle.  Also, lenMin is used as the termination test conditional expression.
