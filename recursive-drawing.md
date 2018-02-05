@@ -85,43 +85,51 @@ Here we **define** a recursive function: `recursivePattern` so that it calls its
                 
                 
 ### Complete Program
-Here's a simple program that defines and uses a recursive function to create a pattern.  Where can randomness be used to make the design more interesting?
+Here's a simple program that defines and uses a recursive function to create a pattern. In this case, we're just creating a rectangle as our recursive task. 
 
 ```java
+float lenMax = 100;
+float lenMin = 30;
 
 void setup(){
   size( 600,600);
-  colorMode(HSB); 
+  colorMode(HSB, 360, 100, 100); 
   }
   
   void draw(){
     if(mousePressed){
       translate(mouseX, mouseY); 
-          recursivePattern( 100, 5);   //call recursive function
+          recursivePattern( 100 );   //call recursive function
       resetMatrix();
     }
   }
   
   //define recursive function
-  void recursivePattern( float length, int level){
-    if ( level <= 0 ){  //test for termination
+  void recursivePattern( float length){
+    if ( level < lenMin ){  //test for termination
       return; //termination condition is true
     }
-    fill( (mouseX + length) % 255 , 255, 255, 100);  
+    float hueVal = map( length, lenMin, lenMax, 130, 160);
+    float brightVal = map( length, lenMin, lenMax, 0, 100); 
+    fill( hueVal, 100, brightVal, 100); //alpha is 100 
     rect( 0, 0, length, length);  //draw a pattern based on length parameter
-    recursivePattern( length * 0.8, level -1); //call recursive function
+    recursivePattern( length * 0.8 ); //call recursive function
     }
     
     ```
 
-###Save Drawing
-If we want to save our image, we can use the processing save() function and we can call it whenever we press a certain key, like 's'.  This will save our image to our sketch folder. The file can be saved in a variety of file formats.
-[Processing Reference: save()](https://processing.org/reference/save_.html)
+###Recursive Pattern with VertexPattern
+In the code below, we're calling our vertexPattern function inside the recursivePattern, so the color logic will need to be moved to inside our vertexPattern function
 
 ```java
-void keyPressed(){
-  if( key == 's' || key == 'S'){
-    save("big.png");
-  }
-  
-  ```
+
+//define recursive function
+void recursivePattern( float length){
+    if ( length < lenMin ){ //test for termination
+     return; //termination condition is true
+    }
+    vertexPattern( length );
+    recursivePattern( length * 0.8); //call recursive function
+}
+```
+

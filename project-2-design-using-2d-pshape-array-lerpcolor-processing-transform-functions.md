@@ -20,7 +20,7 @@ The code below uses PShape group functionality.  Multiple PShape objects can be 
 
 Here, PShapes are defined using vertices and the input parameter len , or some multiplicative factor times len.  Here, many vertices are defined using **len * .5**.  Since all vertices are defined in terms of the len input parameter, then we can vary the value of len when calling the function, and the displayed shape will be the same shape, but scaled at a different size depending on the value of len.
 
-**Notice, to define our vertices, we are using `len * factor`, we are not using `len + factor`,  we want to use len to control the size of our pattern. We can control any offset or `x,y`positioning of our pattern at the time we draw the pattern using the PShape: shape( s, x, y) function. **  
+**Note: to define our vertices, we are using `len * factor`, we are not using `len + factor`.  By using a fractional value for `factor`, we're scaling the size of our pattern, since want to use len to control the size of our pattern.  If we add a factor, `len + factor`, that would create a position offset or `x,y`positioning of our pattern at the time we draw the pattern using the PShape: shape( s, x, y) function. **  
 
 **PShape fill issues:** Please notice that s.fill(forground) might not work for all computers, in that case, rather than provide color at a vertex level, we should set fill as the first line in the vertexPattern function:  fill(foreground);
  
