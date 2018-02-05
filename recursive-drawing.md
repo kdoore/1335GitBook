@@ -77,10 +77,16 @@ Here we **define** a recursive function: `recursivePattern` so that it calls its
     -  change length:  length * 0.8  
     -  change level:  level - 1 
     
-  ```java
+ 
+
+```java
+
    recursivePattern( length * 0.8, level - 1 );  
    }  //end of function
-   ```
+ 
+
+```
+
 
    
 **Complete Recursive Function  ** 
