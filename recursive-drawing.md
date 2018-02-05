@@ -85,7 +85,7 @@ Here we **define** a recursive function: `recursivePattern` so that it calls its
                 
                 
 ### Complete Program
-Here's a simple program that defines and uses a recursive function to create a pattern. In this case, we're just creating a rectangle as our recursive task. 
+Here's a simple program that defines and uses a recursive function to create a pattern. In this case, we're just creating a rectangle as our recursive task. Notice that in this case we are using global variables: lenMin, lenMax as the range values for the Map( ) function which is determining the fill for the rectangle.  Also, lenMin is used as the termination test conditional expression.
 
 ```java
 float lenMax = 100;
@@ -119,7 +119,7 @@ void setup(){
     ```
 
 ###Recursive Pattern with VertexPattern
-In the code below, we're calling our vertexPattern function inside the recursivePattern, so the color logic will need to be moved to inside our vertexPattern function
+In the code below, we're calling our vertexPattern function inside the recursivePattern, so the color logic will need to be moved to inside our vertexPattern function.  Each time we call recursivePattern, we have reduced the size of the length parameter.
 
 ```java
 
@@ -129,7 +129,7 @@ void recursivePattern( float length){
      return; //termination condition is true
     }
     vertexPattern( length );
-    recursivePattern( length * 0.8); //call recursive function
+    recursivePattern( length - 20 ); //call recursive function
 }
 ```
 
