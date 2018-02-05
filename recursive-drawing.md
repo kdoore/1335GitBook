@@ -61,7 +61,7 @@ Here we **define** a recursive function: `recursivePattern` so that it calls its
 1. We need to add a **test for the termination condition **as the first task in the function:     
         
     ```java
-    if(level <= 1) { 
+    if(level < 1) { 
         return; //stops recursion
     }
      ```
@@ -95,7 +95,7 @@ Here we **define** a recursive function: `recursivePattern` so that it calls its
 ```java
 
 void recursivePattern( float length, int level) {
-    if(level <= 1) {
+    if(level < 1) {
     return; //stops recursion
     }
     fill( 255, 255, 100);// set some fill color
@@ -114,7 +114,7 @@ float lenMin = 30;
 float lenMax = 100;
 
  void recursivePattern( float length){
-    if ( level < lenMin ){ //test for termination
+    if ( length < lenMin ){ //test for termination
         return; //termination condition is true
     }
     float hueVal = map( length, lenMin, lenMax, 130, 160);
@@ -149,7 +149,7 @@ void setup(){
   
   //define recursive function
   void recursivePattern( float length){
-    if ( level < lenMin ){  //test for termination
+    if ( length < lenMin ){  //test for termination
       return; //termination condition is true
     }
     float hueVal = map( length, lenMin, lenMax, 130, 160);
