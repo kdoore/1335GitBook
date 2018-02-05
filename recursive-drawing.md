@@ -136,7 +136,7 @@ void setup(){
   void draw(){
     if(mousePressed){
       translate(mouseX, mouseY); 
-          recursivePattern( 100 );   //call recursive function
+          recursivePattern( lenMax );   //call recursive function
       resetMatrix();
     }
   }
@@ -149,7 +149,7 @@ void setup(){
     float hueVal = map( length, lenMin, lenMax, 130, 160);
     float brightVal = map( length, lenMin, lenMax, 0, 100); 
     fill( hueVal, 100, brightVal, 100); //alpha is 100 
-    rect( 0, 0, length, length);  //draw a pattern based on length parameter
+    rect( 0, 0, length, length);  //draw a pattern based on length parameter - Replace this with a call to your vertexPattern( length ) function
     recursivePattern( length * 0.8 ); //call recursive function
     }
     
