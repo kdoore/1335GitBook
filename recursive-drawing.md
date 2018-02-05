@@ -108,14 +108,14 @@ float lenMin = 30;
 float lenMax = 100;
 
  void recursivePattern( float length){
-if ( level < lenMin ){ //test for termination
-return; //termination condition is true
-}
-float hueVal = map( length, lenMin, lenMax, 130, 160);
-float brightVal = map( length, lenMin, lenMax, 0, 100);
-fill( hueVal, 100, brightVal, 100); //alpha is 100
-rect( 0, 0, length, length); //draw a pattern based on length parameter
-recursivePattern( length * 0.8 ); //call recursive function
+    if ( level < lenMin ){ //test for termination
+        return; //termination condition is true
+    }
+    float hueVal = map( length, lenMin, lenMax, 130, 160);
+    float brightVal = map( length, lenMin, lenMax, 0, 100);
+    fill( hueVal, 100, brightVal, 100); //alpha is 100
+    rect( 0, 0, length, length); //draw a pattern based on length parameter
+    recursivePattern( length * 0.8 ); //call recursive function
 }  
 ```
 
