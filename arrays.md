@@ -84,9 +84,11 @@ int[] intVals = new int[10];
 initializeVals( intVals, 12 );
 println( "intVal0: " + intVals[0] ); //intVal0: 12
 
-//call function, pass one array element, as function input: int value, the array element value is not modified, only a copy of the integer value is passed to the function
+//call function, pass one array element, as function input: int value, the array element value is not modified, 
+//only a copy of the integer value is passed to the function.  
+//This function DOES NOT actually modify the value of this array element.
 
-modifyOneVal( intVals[0], 13 );
+modifyOneVal_Useless( intVals[0], 13 );
 println( "intVal0: " + intVals[0] ); //intVal0: 12
 
 //function definitions below
@@ -97,10 +99,10 @@ intArray[i] = initVal;
 }
 }
 
-void modifyOneVal( int val1, int val2){
+void modifyOneVal_Useless( int val1, int val2){
 val1 = val2;
 }
 
-initializeVals( intVals
+
 ```
 
