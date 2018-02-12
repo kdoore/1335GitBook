@@ -115,7 +115,7 @@ Inside this loop, we have both index values available [ i ][ j ]
 
    doSomething( arrayElement[ i ][ j ] );
 
-###Rows: i,  Columns:  j
+###Rows: i,  Columns:  j  and Row-Major Order
 The code below shows nested for-loops to change xPos and yPos in a grid pattern, each time the inner loop code is executed, a single shape is displayed: 
 NOTE:   In the textbook, Shiffman uses the opposite convention for specifying rows, columns in section 13-9.  Processing.org examples use the same syntax as I am using.  These 2 approaches are termed - row-major, or column-major ordering.  [Row and Column Order, wikipedia ](https://en.wikipedia.org/wiki/Row-_and_column-major_order)  
 
