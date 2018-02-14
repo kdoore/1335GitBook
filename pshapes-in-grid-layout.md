@@ -99,7 +99,8 @@ PShape vertexPattern1( float length, int hue){
   ```
 
 ###Display our shapes
-In the code above, we've just stored a bunch of PShape objects, but we haven't drawn anything to the canvas using the shape( s, x, y) function for pshapes.
+In the code above, we've just stored a bunch of PShape objects, but we haven't drawn anything to the canvas using the shape( s, x, y) function for PShapes.  Our shapes are stored in a 1-Dimensional array, we can think of that as a long vertical list of PShape items, with one PShape item in each row of the list.  
+
 
 ###Grid: Nested for-loops    
 
@@ -111,9 +112,9 @@ the outer for-loop controls which row is being created [ i ]
 
 the inner loop creates determines which column [ j ] 
 
-Inside this loop, we have both index values available [ i ][ j ]
+For a single item in the grid, we can refer to that item as having grid coordinates:  [ row: i, column: j ].  
 
-   doSomething( arrayElement[ i ][ j ] );
+  
 
 ###Rows: i,  Columns:  j  and Row-Major Order
 The code below shows nested for-loops to change xPos and yPos in a grid pattern, each time the inner loop code is executed, a single shape is displayed: 
