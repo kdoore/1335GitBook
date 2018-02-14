@@ -96,7 +96,7 @@ map takes one value in a given range and calculates the corresponding value for 
 ###Grid Gradient using lerpColor( ) and map( )
 The image below shows i,j values and the corresponding lerpColor fractional amount that was calculated using the map function in the code above.
 
-![](/assets/Screenshot 2017-09-24 17.00.20.png)
+![](/assets/Screen Shot 2018-02-14 at 9.25.25 AM.png)
   
   
 
