@@ -58,11 +58,11 @@ Logic for image above:
 ###Example Code
 
 ```java
-for( int i=0; i<= 10; i++){
-      float amt = i * 0.1;
+for( int j=0; j<= 10; j++){ //j index for columns
+      float amt = j * 0.1;
       color intermediateColor = lerpColor( startColor, endColor, amt);
       fill(intermediateColor);
-      rect( i* size, 0, size, size);
+      rect( j* size, 0, size, size);
       }
 ```
 
@@ -76,11 +76,11 @@ map takes one value in a given range and calculates the corresponding value for 
  
  `float value2 = map( value1, range1Min, range1Max, range2Min, range2Max); `
  
- `float amt = map( k, 0, rows+cols, 0.0, 1.0);`
+ `float amt = map( k, 0, rows+cols-2, 0.0, 1.0);`
  
 ###Example Code 
 ```
- color startColor = color(180, 100,100); //bright cyan
+  color startColor = color(180, 100,100); //bright cyan
   color endColor = color(75, 90, 70); //pea green
   for( int i = 0; i < rows; i++){
     for( int j = 0; j < cols; j++){
@@ -88,8 +88,11 @@ map takes one value in a given range and calculates the corresponding value for 
       float amt = map( k,0,rows + cols-2, 0.0, 1.0);
       color intermediateColor = lerpColor( startColor, endColor, amt);
       fill(intermediateColor);
-      rect( i* size, j * size, size, size);
+      rect( xPos, yPos, size, size);
+      xPos += size; //move xPos over by size amount
     }
+    xPos = 0;  //reset xPos back to 0 to begin next row
+    yPos += size; //move yPos down to next row
   }
   
 ```
