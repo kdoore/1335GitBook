@@ -69,7 +69,7 @@ When creating a 2 dimensional array, it is customary to have the first bracket i
   }
 ```
 
-![](/assets/Screenshot 2017-09-28 13.42.54.png)
+
 
 ###Arrays as Function Input Parameters
 When we pass array objects into functions, we're actually passing the memory address of the array into the function, so changes made to an array's elements within a function are persisted to the array after the function completes execution.
