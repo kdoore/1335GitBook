@@ -74,8 +74,9 @@ When creating a 2 dimensional array, it is customary to have the first bracket i
 ```
 ###Grid Index: (rows: i, cols: j )
 The image below shows a grid with row and column indexes
-( i: rows, j: cols ).  As in the code above, the outer for-loop sets the row: i value, while the inner for-loop 
-![](/assets/Screen Shot 2018-02-19 at 1.15.23 PM.png)
+( i: rows, j: cols ).  As in the code above, the outer for-loop sets the row: i value, while the inner for-loop: j moves across each row to set the column value.  As in the code above, we can use these i, j values to set the value for each item in the cell.  Here, the value for each cell is calculated as k = i + j
+
+![](/assets/Screen Shot 2018-02-19 at 1.24.35 PM.png)
 
 ###Arrays as Function Input Parameters
 When we pass array objects into functions, we're actually passing the memory address of the array into the function, so changes made to an array's elements within a function are persisted to the array after the function completes execution.
