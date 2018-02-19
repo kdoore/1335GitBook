@@ -50,26 +50,32 @@ When creating a 2 dimensional array, it is customary to have the first bracket i
 
 ```java
 
-  int rows = 5;
+  int rows = 4;
   int cols = 4;
   int size=60;
   
   int[][] intMatrix ;  //declare 2D array of integers
   intMatrix = new int[rows][cols]; //initialize 
-  
+  int xPos = 0;
+  int yPos = 0;
   //nested for loops to access each element
   for ( int i=0; i< rows; i++) {
     for ( int j=0; j<cols; j++) {
       int k=  i + j;  //create a variable to use for fill logic
       intMatrix[i][j] = k; //store this value for each cell
       fill(100+(k*30));  //set fill based on k value
-      rect( i* size, j * size, size, size);
-     
+      
+      rect( xPos, yPos, size, size);
+      xPos += size;  //move xPos across to each new column
     }
+    xPos = 0; //reset xPos to 0 for new row
+    yPos += size; //move yPos down for the next row
   }
 ```
-
-
+###Grid Index: (rows: i, cols: j )
+The image below shows a grid with row and column indexes
+( i: rows, j: cols ).  As in the code above, the outer for-loop sets the row: i value, while the inner for-loop 
+![](/assets/Screen Shot 2018-02-19 at 1.15.23 PM.png)
 
 ###Arrays as Function Input Parameters
 When we pass array objects into functions, we're actually passing the memory address of the array into the function, so changes made to an array's elements within a function are persisted to the array after the function completes execution.
