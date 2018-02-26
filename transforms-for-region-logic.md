@@ -26,6 +26,41 @@ Example:  Declare and initialize a 2D array of 100 elements, to hold PShape obje
 
 `PShape[][] shapesMatrix = new PShape[10][10];`
 
+When working with 2D arrays, we'll use 2-nested for-loops, where the outer for-loop: with index `i` corresponds to moving down the rows and the inner for-loop corresponds to index:` j` moving across each column. 
+
+###Nested for-loops to create a grid of rows and columns.
+
+```java
+ void setup() {
+  size(400, 400);
+  int rows = 5;
+  int cols = 5;
+  int size=width/rows;
+  int[][] intMatrix = new int[rows][cols];
+  int xPos = 0;
+  int yPos = 0;
+  for ( int i=0; i< rows; i++) {
+    for ( int j=0; j<cols; j++) {
+      int k=  i + j;  //k will be used to determine color fill
+      fill(80+(k*20)); //use k to calculate grayscale fill
+      intMatrix[i][j] = k;  //store k in each cell
+      rect( xPos,yPos , size, size);
+      fill(0);
+      textAlign(CENTER);
+      text( "k=" +intMatrix[i][j], xPos +20, yPos +20);
+      text( "(" + i + "," + j +")", xPos +20, yPos +40);
+      xPos += size; //move xPos to next column (each time j changes)
+  } //end inner j loop
+  xPos = 0; //reset xPos to first column
+  yPos += size; //move yPos down for next row
+  } //end outer i loop
+} //end setup
+
+
+```
+The image below is drawn using the code above. 
+![](/assets/Screen Shot 2018-02-26 at 3.25.44 PM.png)
+
 ###Diagonal Color Gradients
 ![](/assets/Screenshot 2017-09-24 08.43.41.png) 
 
