@@ -41,7 +41,7 @@ When working with 2D arrays, we'll use 2-nested for-loops, where the outer for-l
   int yPos = 0;
   for ( int i=0; i< rows; i++) {
     for ( int j=0; j<cols; j++) {
-      int k=  i + j;  //k will be used to determine color fill
+      int k=  i + j;  //k determined from i,j values for each cell
       fill(80+(k*20)); //use k to calculate grayscale fill
       intMatrix[i][j] = k;  //store k in each cell
       rect( xPos,yPos , size, size);
