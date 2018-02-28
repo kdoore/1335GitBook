@@ -22,13 +22,13 @@
 * [1D - Array of PShapes for Grid Layout](pshapes-in-grid-layout.md)
 * [Pattern Preview - Transforms: Translate & Scale](pattern-preview-transforms-translate-and-scale.md)
 * [PShapes in Grid Regions](pshapes-in-grid-regions.md)
+* [Grid Region Logic](grid-region-logic.md)
 
 ## Project 2
 
 * [Project 2 - 2D Arrays for Gradient Logic](transforms-for-region-logic.md)
 * [Grid Patterns using 2D Array Indexes: i, j](grid-patterns-using-2d-array-indexes-i-j.md)
 * [lerpColor\( \)  and map\( \) Functions](lerpcolor-and-map.md)
-* [Grid Region Logic](grid-region-logic.md)
 * [Transforms for Position, Rotation, Scale of ShapeMatrix Elements](transforms-for-position-rotation-scale-of-shapematrix-elements.md)
 * [Project 2 - Grid Based Design, Vertex Patterns](project-2-design-using-2d-pshape-array-lerpcolor-processing-transform-functions.md)
 
