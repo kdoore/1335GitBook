@@ -71,7 +71,46 @@ The image below is drawn using the code above.
 ![](/assets/Screen Shot 2018-02-26 at 3.25.44 PM.png)
 
 ###Modifications to Code to use Map( ) and LerpColor( )
-For the code above, we simply 
+For the code above, we simply calculated the value of k = i + j, then used it to calculate some grayscale fill.  Without much additional effort, we can create color gradients by using map( ) and lerpColor( ) functions.  
+
+
+```
+
+void setup(){
+  size( 400,400);
+  colorMode(HSB, 360, 100,100); //corresponds to the color selector
+  int rows = 6;  int cols = 6;
+  int cellSize = width/cols;
+  int[][] intMatrix = new int[rows][cols];//2D array of ints
+  int xPos = 0; //variables to control where rectangle is drawn
+  int yPos = 0;
+  color c1 = color(157, 83, 56); //pick end colors for gradient 
+  color c2 = color(258, 66, 96); //bright purple
+  
+  for( int i=0; i< rows; i++){
+    for( int j=0; j< cols; j++){
+         int k = i + j;
+         intMatrix[i][j]= k; //calculate k
+         float kFraction = map( k, 0, (rows-1) + (cols-1),0.0, 1.0);  //use map to turn k into a value between 0.0, 1.0
+         
+         color c3 = lerpColor(c1, c2, kFraction);
+         fill( c3 ); ///use our lerpColor
+         rect(xPos, yPos, cellSize, cellSize);
+         fill(300);//white text
+         text( "k=" + k, xPos + cellSize/2, yPos + cellSize/2);
+         text( "(" + i + "," + j + ")", xPos + cellSize/2 , yPos-14 + cellSize/2);
+         text( kFraction, xPos + cellSize/2,14+ yPos + cellSize/2);
+         
+         xPos += cellSize; //increment for drawing the next column
+    } //end of inner loop (cols)
+    yPos +=cellSize; //move yPos for drawing next row
+    xPos = 0;
+  } //end of outer loop (rows) 
+}
+
+```
+
+
 
 
 ###Diagonal Color Gradients
