@@ -1,6 +1,9 @@
 # Summary
 
 * [Introduction](README.md)
+
+##Java Syntax
+
 * [Java Syntax](java_syntax.md)
   * [Typed-Variables](typed-variables.md)
   * [Float - Integer Conversion Errors](typed-variables/float-integer-conversion-errors.md)
