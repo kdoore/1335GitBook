@@ -91,16 +91,11 @@ void setup(){
     for( int j=0; j< cols; j++){
          int k = i + j;
          intMatrix[i][j]= k; //calculate k
-         float kFraction = map( k, 0, (rows-1) + (cols-1),0.0, 1.0);  //use map to turn k into a value between 0.0, 1.0
-         
+         float kFraction = map( k, 0, (rows-1) + (cols-1),0.0, 1.0);  //use map to turn k into a value between 0.0, 1.)
          color c3 = lerpColor(c1, c2, kFraction);
          fill( c3 ); ///use our lerpColor
          rect(xPos, yPos, cellSize, cellSize);
-         fill(300);//white text
-         text( "k=" + k, xPos + cellSize/2, yPos + cellSize/2);
-         text( "(" + i + "," + j + ")", xPos + cellSize/2 , yPos-14 + cellSize/2);
-         text( kFraction, xPos + cellSize/2,14+ yPos + cellSize/2);
-         
+         //code for text display removed
          xPos += cellSize; //increment for drawing the next column
     } //end of inner loop (cols)
     yPos +=cellSize; //move yPos for drawing next row
