@@ -43,27 +43,25 @@ Then, nested for-loops are used to step through each element in the 2D array; wh
 ```java
  void setup() {
   size(400, 400);
+  colorMode(HSB, 360,100,100); //color selector tool settings
   int rows = 5;
   int cols = 5;
-  int size=width/cols;
+  int cellSize= width/cols; //determine cellSize
   
   int[][] intMatrix = new int[rows][cols]; //declare and initialize 2D integer array
   int xPos = 0;
   int yPos = 0;
-  for ( int i=0; i< rows; i++) { //outer loop controls rows
-    for ( int j=0; j<cols; j++) { //inner loop controls cols
+  for ( int i=0; i < rows; i++ ) { //outer loop controls rows
+    for ( int j=0; j <cols; j++ ) { //inner loop controls cols
       int k=  i + j;  //k determined from i,j values for each cell
-      fill(80+(k*20)); //use k to calculate grayscale fill
+      fill(80+(k*20)); //use k to calculate some grayscale fill
       intMatrix[i][j] = k;  //store k in each cell
-      rect( xPos,yPos , size, size);//draw rect in each grid
-      fill(0);
-      textAlign(CENTER);
-      text( "k=" +intMatrix[i][j], xPos +20, yPos +20); //display k value for each 2D Array element
-      text( "(" + i + "," + j +")", xPos +20, yPos +40);
-      xPos += size; //move xPos to next column (each time j changes)
+      rect( xPos, yPos , cellSize, cellSize);//draw rect in each grid
+      //code for text removed
+      xPos += cellSize; //move xPos to next column (each time j changes)
   } //end inner j loop
   xPos = 0; //reset xPos to first column
-  yPos += size; //move yPos down for next row
+  yPos += cellSize; //move yPos down for next row
   } //end outer i loop
 } //end setup
 
@@ -71,6 +69,10 @@ Then, nested for-loops are used to step through each element in the 2D array; wh
 ```
 The image below is drawn using the code above. 
 ![](/assets/Screen Shot 2018-02-26 at 3.25.44 PM.png)
+
+###Modifications to Code to use Map( ) and LerpColor( )
+For the code above, we simply 
+
 
 ###Diagonal Color Gradients
 ![](/assets/Screenshot 2017-09-24 08.43.41.png) 
