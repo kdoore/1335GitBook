@@ -31,6 +31,7 @@ fill(240); //light gray
 }
 ```
 
+![](/assets/Screenshot 2017-09-24 09.08.55.png)
 
 ###Random Patterning Logic
 In the images below, we can see that there are 2 different design units, shape1 has 2 colored vertically-stacked triangles on a dark background, shape 2 is a rotation - so the colored triangles have left/right orientation.
@@ -69,7 +70,7 @@ vertexPattern2(size, foreground, background);
 
 ```
 
-The image below uses logic: color factor k = min( i, j). In addition, there are color gradients on both the forground and background colors. The primary block unit has been repeated 4 times across adjacent regions, where `scale( scaleX, scaleY)` has been used to create [mirror-images](https://kdoore.gitbooks.io/cs1335/content/transforms-for-position-rotation-scale-of-shapematrix-elements.html) of the basic unit 
+The image below uses logic: color factor k = min( i, j). In addition, there are color gradients on both the foreground and background colors. The primary block unit has been repeated 4 times across adjacent regions, where `scale( scaleX, scaleY)` has been used to create [mirror-images](https://kdoore.gitbooks.io/cs1335/content/transforms-for-position-rotation-scale-of-shapematrix-elements.html) of the basic unit 
 
 ![](/assets/Screenshot 2017-09-27 19.58.32.png)
 
