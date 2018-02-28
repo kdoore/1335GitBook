@@ -79,6 +79,7 @@ For the code above, we simply calculated the value of k = i + j, then used it to
 void setup(){
   size( 400,400);
   colorMode(HSB, 360, 100,100); //corresponds to the color selector
+  //DEFINE AND INITIALIZE VARIABLES
   int rows = 6;  int cols = 6;
   int cellSize = width/cols;
   int[][] intMatrix = new int[rows][cols];//2D array of ints
@@ -87,6 +88,7 @@ void setup(){
   color c1 = color(157, 83, 56); //pick end colors for gradient 
   color c2 = color(258, 66, 96); //bright purple
   
+  //NESTED FOR-LOOPS FOR ROW, COLUMN GRID LOGIC
   for( int i=0; i< rows; i++){
     for( int j=0; j< cols; j++){
          int k = i + j;
