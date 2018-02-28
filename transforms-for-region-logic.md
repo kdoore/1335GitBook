@@ -45,12 +45,13 @@ Then, nested for-loops are used to step through each element in the 2D array; wh
   size(400, 400);
   int rows = 5;
   int cols = 5;
-  int size=width/rows;
-  int[][] intMatrix = new int[rows][cols];
+  int size=width/cols;
+  
+  int[][] intMatrix = new int[rows][cols]; //declare and initialize 2D integer array
   int xPos = 0;
   int yPos = 0;
-  for ( int i=0; i< rows; i++) {
-    for ( int j=0; j<cols; j++) {
+  for ( int i=0; i< rows; i++) { //outer loop controls rows
+    for ( int j=0; j<cols; j++) { //inner loop controls cols
       int k=  i + j;  //k determined from i,j values for each cell
       fill(80+(k*20)); //use k to calculate grayscale fill
       intMatrix[i][j] = k;  //store k in each cell
