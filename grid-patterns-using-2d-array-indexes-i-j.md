@@ -44,6 +44,35 @@ Shape1 ... Shape2
 ###Logic for Randomized 2-pattern arrangement:
 We can use the Processing random(min,max ) function to simulate random events. We define and initialize a random variable: `rand` that will be assigned a decimal value between 0.0 and 2.0. We determine that if `rand > 1`, then we `vertexPattern1( )`, like a coin flip, roughly half the time we'll have `rand < 1` and instead we'll `vertexPattern2( )`.  
 
+###Other Patterns based on i, j index
+
+![](/assets/Screenshot 2017-09-27 19.38.40.png)
+
+###Min( i, j)
+The logic for the image above uses the fact that along square shaped sections, like the outer top-row and the left-column both share the feature that the minimum value of the i,j index for each element is 0.
+
+k = min( i, j);
+###Max( i, j);
+The logic for the image above uses the fact that along square shaped sections, like the outer bottom-row and the right-column both share the feature that the max value of the i,j index for each element is 5.
+![](/assets/Screenshot 2017-09-27 19.40.34.png)
+The [lerpColor( ) function](https://kdoore.gitbooks.io/cs1335/content/lerpcolor-and-map.html) can use a factor like k to determine color for each grid cell.
+
+```java
+//Code snippet for random logic to determine which shape is created.
+float rand= random(0,2);
+if(rand > 1){
+vertexPattern1(size, foreground, background);
+}
+else{
+vertexPattern2(size, foreground, background);
+}
+
+```
+
+The image below uses logic: color factor k = min( i, j). In addition, there are color gradients on both the forground and background colors. The primary block unit has been repeated 4 times across adjacent regions, where `scale( scaleX, scaleY)` has been used to create [mirror-images](https://kdoore.gitbooks.io/cs1335/content/transforms-for-position-rotation-scale-of-shapematrix-elements.html) of the basic unit 
+
+![](/assets/Screenshot 2017-09-27 19.58.32.png)
+
 
 
 
