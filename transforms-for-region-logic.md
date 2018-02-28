@@ -7,7 +7,7 @@ After creating our mini-pattern preview, it might inspire us to rethink the comp
 Instead of having complex logic within a single display-function's for-loop, let's create a set of simplified grid modules and position them using Processing's transform functions.  This can lead us to simplified logic, which can allow for more complex patterns.  In addition, we can implement logic for layering patterns on top of other patterns to achieve complex designs from simplified logic.  
 
 ###Grid Sections - Translated, Rotated, Scaled
-In the image below, one grid pattern is used multiple times to create the entire design pattern. The basic grid section is displayed normally in region1.  The same grid section is also used in region2, region3 and region4...where rotations, translations, and offsets change the orientation and position.  Finally, 4 additional grid sections are used to create the inner design, this section is scaled to quarter size, it's rotated by 45 degrees, and it's translated to the center of the design.
+In the image below, a single grid pattern is used multiple times to create the entire design pattern. The basic grid section is displayed normally in region1.  The same grid section is also used in region2, region3 and region4...where rotations, translations, and offsets change the orientation and position.  Finally, 4 additional grid sections are used to create the inner design, this section is scaled to quarter size, it's rotated by 45 degrees, and it's translated to the center of the design.
 
 ![](/assets/Screenshot 2017-09-24 14.58.17.png)
 
@@ -28,7 +28,11 @@ Example:  Declare and initialize a 2D array of 100 elements, to hold PShape obje
 
 When working with 2D arrays, we'll use 2-nested for-loops, where the outer for-loop: with index `i` corresponds to moving down the rows and the inner for-loop corresponds to index:` j` moving across each column. 
 
-###Nested for-loops to create a grid of rows and columns.
+###2D Arrays and Nested for-loops.
+The code below creates a 2D array of ints:  `intMatrix[][]`
+Then, nested for-loops are used to step through each element in the 2D array, where each array element is accessed using the [i][j] index values associated with the nested for-loops.
+
+
 
 ```java
  void setup() {
@@ -44,10 +48,10 @@ When working with 2D arrays, we'll use 2-nested for-loops, where the outer for-l
       int k=  i + j;  //k determined from i,j values for each cell
       fill(80+(k*20)); //use k to calculate grayscale fill
       intMatrix[i][j] = k;  //store k in each cell
-      rect( xPos,yPos , size, size);
+      rect( xPos,yPos , size, size);//draw rect in each grid
       fill(0);
       textAlign(CENTER);
-      text( "k=" +intMatrix[i][j], xPos +20, yPos +20);
+      text( "k=" +intMatrix[i][j], xPos +20, yPos +20); //display k value for each 2D Array element
       text( "(" + i + "," + j +")", xPos +20, yPos +40);
       xPos += size; //move xPos to next column (each time j changes)
   } //end inner j loop
