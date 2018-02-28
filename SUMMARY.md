@@ -15,6 +15,9 @@
 
 * [Recursion](recursion.md)
 * [HSB Color Mode](hsb_color_mode.md)
+
+## Project 1
+
 * [Project 1: Vertex Shapes - RecursivePattern](beginshape_-_vertex_shapes.md)
   * [Project 1: Vertex Pattern Centered at Origin](vertex-pattern-centered-at-origin.md)
   * [Project 1: Recursive Drawing](recursive-drawing.md)
@@ -25,6 +28,9 @@
 * [1D - Array of PShapes for Grid Layout](pshapes-in-grid-layout.md)
 * [Pattern Preview - Transforms: Translate & Scale](pattern-preview-transforms-translate-and-scale.md)
 * [PShapes in Grid Regions](pshapes-in-grid-regions.md)
+
+## Project 2
+
 * [Project 2 - 2D Arrays for Gradient Logic](transforms-for-region-logic.md)
   * [lerpColor\( \)  and map\( \) Functions](lerpcolor-and-map.md)
   * [Grid Region Logic](grid-region-logic.md)
