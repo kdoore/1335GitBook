@@ -2,7 +2,6 @@
 
 * [Introduction](README.md)
 
-
 ## Recursion
 
 * [Recursion](recursion.md)
@@ -27,6 +26,7 @@
 ## Project 2
 
 * [Project 2 - 2D Arrays for Gradient Logic](transforms-for-region-logic.md)
+* [Grid Patterns using 2D Array Indexes: i, j](grid-patterns-using-2d-array-indexes-i-j.md)
 * [lerpColor\( \)  and map\( \) Functions](lerpcolor-and-map.md)
 * [Grid Region Logic](grid-region-logic.md)
 * [Transforms for Position, Rotation, Scale of ShapeMatrix Elements](transforms-for-position-rotation-scale-of-shapematrix-elements.md)
@@ -63,7 +63,7 @@
   * [ColorScheme](project-3-class-definitions/colorscheme.md)
 * [Project 4](project-4.md)
 
-##Java Syntax
+## Java Syntax
 
 * [Java Syntax](java_syntax.md)
   * [Typed-Variables](typed-variables.md)
@@ -74,6 +74,4 @@
   * [Loops and Recursion](loops-and-recursion.md)
   * [Switch-Case Statement](switch-case_statement.md)
   * [Ternary Operator](ternary_operator.md)
-
-
 
