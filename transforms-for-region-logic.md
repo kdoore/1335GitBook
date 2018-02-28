@@ -57,7 +57,7 @@ Then, nested for-loops are used to step through each element in the 2D array; wh
       fill(80+(k*20)); //use k to calculate some grayscale fill
       intMatrix[i][j] = k;  //store k in each cell
       rect( xPos, yPos , cellSize, cellSize);//draw rect in each grid
-      //code for text removed
+      //code for display text removed
       xPos += cellSize; //move xPos to next column (each time j changes)
   } //end inner j loop
   xPos = 0; //reset xPos to first column
