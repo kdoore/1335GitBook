@@ -32,10 +32,10 @@
 ## Project 2
 
 * [Project 2 - 2D Arrays for Gradient Logic](transforms-for-region-logic.md)
-  * [lerpColor\( \)  and map\( \) Functions](lerpcolor-and-map.md)
-  * [Grid Region Logic](grid-region-logic.md)
-  * [Transforms for Position, Rotation, Scale of ShapeMatrix Elements](transforms-for-position-rotation-scale-of-shapematrix-elements.md)
-  * [Project 2 - Grid Based Design, Vertex Patterns](project-2-design-using-2d-pshape-array-lerpcolor-processing-transform-functions.md)
+* [lerpColor\( \)  and map\( \) Functions](lerpcolor-and-map.md)
+* [Grid Region Logic](grid-region-logic.md)
+* [Transforms for Position, Rotation, Scale of ShapeMatrix Elements](transforms-for-position-rotation-scale-of-shapematrix-elements.md)
+* [Project 2 - Grid Based Design, Vertex Patterns](project-2-design-using-2d-pshape-array-lerpcolor-processing-transform-functions.md)
 
 ## Object Oriented Programming
 
