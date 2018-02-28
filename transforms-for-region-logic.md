@@ -29,8 +29,13 @@ Example:  Declare and initialize a 2D array of 100 elements, to hold PShape obje
 When working with 2D arrays, we'll use 2-nested for-loops, where the outer for-loop: with index `i` corresponds to moving down the rows and the inner for-loop corresponds to index:` j` moving across each column. 
 
 ###2D Arrays and Nested for-loops.
-The code below creates a 2D array of ints:  `intMatrix[][]`
-Then, nested for-loops are used to step through each element in the 2D array, where each array element is accessed using the [i][j] index values associated with the nested for-loops.
+The code below creates a 2D-array of ints:  `intMatrix[][]`
+Then, nested for-loops are used to step through each element in the 2D array; where each array element: `intMatrix[i][j] ` is accessed using the [i][j] index values associated with the nested for-loops. 
+
+- outer for-loop, with index i, corresponds to the grid-rows
+- inner for-loop, with index j, corresponds to the grid-cols
+- int xPos corresponds to the x-position of a grid-cell, it gets incremented by the cellSize, each time the inner loop is executed, it controls movement to each column.  It is reset to 0 for each new row (outer-loop logic)
+- int yPos corresponds to y-position
 
 
 
