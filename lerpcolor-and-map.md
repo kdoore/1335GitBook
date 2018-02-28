@@ -8,8 +8,8 @@ Our first attempt used a hue variable that we incremented within a for-loop, whe
 ![](/assets/Screenshot 2017-09-24 15.33.05.png)
 ![](/assets/Screenshot 2017-09-24 15.36.26.png)
 
-Hue >= 255  corresponds to Red
-Hue <= 0    correspond to Red
+- Hue greater than 255 corresponds to Red
+- Hue less than 0  correspond to Red
     
 Problems occurred when we reached hue values greater than 255, as all shapes were then colored red.  We could create our own work-arounds, such as using modulus to insure hue values stayed in 0-255 range.  Other problems occurred if we wanted to have colors that varied in all HSB parameters.     
 
