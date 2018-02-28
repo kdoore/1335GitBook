@@ -2,17 +2,6 @@
 
 * [Introduction](README.md)
 
-##Java Syntax
-
-* [Java Syntax](java_syntax.md)
-  * [Typed-Variables](typed-variables.md)
-  * [Float - Integer Conversion Errors](typed-variables/float-integer-conversion-errors.md)
-  * [Functions](functions.md)
-  * [Object Reference Data Types](reference_data_types.md)
-  * [Arrays](arrays.md)
-  * [Loops and Recursion](loops-and-recursion.md)
-  * [Switch-Case Statement](switch-case_statement.md)
-  * [Ternary Operator](ternary_operator.md)
 
 ## Recursion
 
@@ -73,4 +62,18 @@
   * [ColorChip](project-3-class-definitions/colorchip.md)
   * [ColorScheme](project-3-class-definitions/colorscheme.md)
 * [Project 4](project-4.md)
+
+##Java Syntax
+
+* [Java Syntax](java_syntax.md)
+  * [Typed-Variables](typed-variables.md)
+  * [Float - Integer Conversion Errors](typed-variables/float-integer-conversion-errors.md)
+  * [Functions](functions.md)
+  * [Object Reference Data Types](reference_data_types.md)
+  * [Arrays](arrays.md)
+  * [Loops and Recursion](loops-and-recursion.md)
+  * [Switch-Case Statement](switch-case_statement.md)
+  * [Ternary Operator](ternary_operator.md)
+
+
 
