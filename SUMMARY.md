@@ -23,11 +23,11 @@
 * [Artist: Victor Vasarely](vasarely.md)
 * [Grid Pattern Design](arrays-for-grid-patterns.md)
 * [1D - Array of PShapes for Grid Layout](pshapes-in-grid-layout.md)
+* [Pattern Preview - Transforms: Translate & Scale](pattern-preview-transforms-translate-and-scale.md)
 * [PShapes in Grid Regions](pshapes-in-grid-regions.md)
 * [Project 2 - 2D Arrays for Gradient Logic](transforms-for-region-logic.md)
   * [lerpColor\( \)  and map\( \) Functions](lerpcolor-and-map.md)
   * [Grid Region Logic](grid-region-logic.md)
-  * [Pattern Preview - Transforms: Translate & Scale](pattern-preview-transforms-translate-and-scale.md)
   * [Transforms for Position, Rotation, Scale of ShapeMatrix Elements](transforms-for-position-rotation-scale-of-shapematrix-elements.md)
   * [Project 2 - Grid Based Design, Vertex Patterns](project-2-design-using-2d-pshape-array-lerpcolor-processing-transform-functions.md)
 
