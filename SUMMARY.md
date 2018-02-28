@@ -11,7 +11,7 @@
   * [Switch-Case Statement](switch-case_statement.md)
   * [Ternary Operator](ternary_operator.md)
 
----
+## Recursion
 
 * [Recursion](recursion.md)
 * [HSB Color Mode](hsb_color_mode.md)
@@ -23,7 +23,7 @@
 * [Project 1: Recursive Drawing](recursive-drawing.md)
 * [Project 1: Programmatic Variations in Color](programmatic-variations-in-color.md)
 
-#Grid-Based Designs
+## Grid Based Designs
 
 * [Computational Design](computational_design.md)
 * [Artist: Victor Vasarely](vasarely.md)
