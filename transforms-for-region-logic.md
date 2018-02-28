@@ -34,8 +34,9 @@ Then, nested for-loops are used to step through each element in the 2D array; wh
 
 - outer for-loop, with index i, corresponds to the grid-rows
 - inner for-loop, with index j, corresponds to the grid-cols
-- int xPos corresponds to the x-position of a grid-cell, it gets incremented by the cellSize, each time the inner loop is executed, it controls movement to each column.  It is reset to 0 for each new row (outer-loop logic)
-- int yPos corresponds to y-position
+- int xPos corresponds to the x-position of a grid-cell, it gets incremented by the cellSize, each time the inner loop (j) is executed, it controls positioning of each column.  It is reset to 0 for each new row (outer-loop logic)
+- int yPos corresponds to y-position of a grid cell, it gets incremented by cellSize each time the outer-loop (i) is executed, it controls positioning of each row 
+- int k is a variable calculated based on the value of i, j for each grid cell, k can be used for color-pattern logic. Here, k = i + j, this creates a diagonal gradient, when used to set grayscale fill as seen in the image below.
 
 
 
