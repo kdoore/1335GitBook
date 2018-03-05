@@ -6,7 +6,7 @@ The example code below shows how we can use the i, j indexes of a for-loop to cr
 We can notice that the values of k in the grid forms 2 patterns: 
 
   - Pattern1: k values across diagonal lines (from lower-left to upper-right) have the same value for k. We can use k to determine color, where each item along a diagonal will have the same color.  
-  - Pattern 2: k increases from 0 at the upper-left to a max value: k= rows+cols-2 at the lower right. We can use this information to create a color gradient along that diagonal, since lerpColor can calculate a color gradient based on a linear mapping between 2 colors.  
+  - Pattern 2: k increases along diagonal (from upper-left to lower-right) k ranges from min value of: `k = 0`, to max value: `k = rows+cols-2`. We can use this information to create a color gradient along that diagonal, since lerpColor can calculate a color gradient based on a linear mapping between 2 colors.  
 
 
 ###Example Code 
