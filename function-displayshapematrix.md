@@ -1,9 +1,8 @@
 #Function: DisplayShapeMatrix( )
 
-In this section, we will refactored the code to create a custom function: DisplayShapeMatrix( ), that can draw a 2D PShape array in a grid layout, at any x
+In this section, we will refactor the code to create a custom function: displayShapeMatrix( ), that can render a 2D PShape array in a grid layout, at any x,y location.
 
 The function below is used to determine the grid-layout, and actually calls the PShape `shape( ) `function that is used to render each PShape object on the screen.
-
 
 
 ```java
