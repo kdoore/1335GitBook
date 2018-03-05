@@ -48,7 +48,7 @@ We can notice that the values of k in the grid forms 2 patterns:
   
 ```
 ###Grid Gradient using lerpColor( ) and map( )
-The image below shows i,j values and the corresponding lerpColor fractional amount that was calculated using the map function in the code above.
+The image below shows i, j values and the corresponding lerpColor fractional amount that was calculated using the map function in the code above.
 
 ![](/assets/Screen Shot 2018-02-14 at 9.25.25 AM.png)
   
