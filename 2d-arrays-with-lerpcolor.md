@@ -20,17 +20,22 @@ We can notice that the values of k in the grid forms 2 patterns:
   int[][] intMatrix = new int[rows][cols];//2D array of ints
   int xPos=0; //variables to control where rectangle is drawn
   int yPos = 0;
-  color c1=color(157, 83, 56);
-  color c2 = color(258, 66, 96);
-  for( int i=0; i< rows; i++){
-    for( int j=0; j< cols; j++){
-         int k = i + j;
+  color c1=color(157, 83, 56); //gradient color1
+  color c2 = color(258, 66, 96); //gradient color2
+  for( int i=0; i< rows; i++){  //outer loop
+    for( int j=0; j< cols; j++){ //inner loop
+         int k = i + j; //calculate k using i,j index values
          intMatrix[i][j]= k;
-         float kFraction = map( k, 0, (rows-1) + (cols-1),0.0, 1.0);
          
+         //calculate color and set fill
+         float kFraction = map( k, 0, (rows-1) + (cols-1),0.0, 1.0);
          color c3 = lerpColor(c1, c2, kFraction);
          fill( c3 ); ///use map? max of k is 10
+         
+         //draw shape
          rect(xPos, yPos, cellSize, cellSize);
+         
+         //move to next column's x Position
          xPos += cellSize; //increment for drawing the next column
     } //end of inner loop (cols)
     yPos +=cellSize; //move yPos for drawing next row
