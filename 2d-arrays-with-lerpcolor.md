@@ -22,6 +22,9 @@ We can notice that the values of k in the grid forms 2 patterns:
   int yPos = 0;
   color c1=color(157, 83, 56); //gradient color1
   color c2 = color(258, 66, 96); //gradient color2
+  
+  //nested for loops to calculate color gradient
+  //and to draw shape in grid-layout
   for( int i=0; i< rows; i++){  //outer loop
     for( int j=0; j< cols; j++){ //inner loop
          int k = i + j; //calculate k using i,j index values
