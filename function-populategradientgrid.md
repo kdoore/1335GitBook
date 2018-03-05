@@ -7,7 +7,7 @@ The code in the previous sections needs should be refactored so it's using funct
   
   
 - displaying the shape-color units in a grid layout
-   - The layout and positioning in grid configuration will be done using a different function: displayShapeMatrix( )
+   - The layout and positioning in grid configuration will be done using a different function: [displayShapeMatrix( )](/function-displayshapematrix.md)
 
 ```java
 
