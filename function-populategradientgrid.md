@@ -41,7 +41,7 @@ PShape[][] PopulateGradientGrid(int rows, int cols, int cellSize, color c1, colo
 ```
 
 ###Program using PopulateGradientGrid
-In the code example project below,  
+In the code example project below, the following code shows how we call the new function:  So, basic  
 PShape[][] shapeMatrix = PopulateGradientGrid( rows, cols, cellSize);
 
 
