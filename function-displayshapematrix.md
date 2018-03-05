@@ -4,7 +4,6 @@ In this section, we will refactor the code to create a custom function: displayS
 
 The function below is used to determine the grid-layout, and actually calls the PShape `shape( ) `function that is used to render each PShape object on the screen.
 
-
 ```java
 
 void displayShapeMatrix(PShape[][] shapes, int x , int y , int rows, int cols, int size){
@@ -21,6 +20,6 @@ The function below is used to determine the grid-layout, and actually calls the 
     yPos += size;     
   } //end outer for-loop (i:rows)
   popMatrix(); // undo transforms up to prior pushMatrix()
-  }
+ } //end function
 ```
 
