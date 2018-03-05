@@ -52,10 +52,10 @@ PShape rectPattern( float len, color c1){
 ###Alternate PShapes Grid-Pattern
 In the code segments below, we use additional logic, is the value of k odd or even, calculated using modulus `k % 2`  Where we draw a circle or rectangle if odd or even, still using the color gradient logic.  
 
-    ![](/assets/Screen Shot 2018-03-05 at 9.16.50 AM.png)    
+![](/assets/gradientShapes.png)       
 
 ```java
-
+//inside setup()
 ////code inside nested for-loop
 
 PShape curShape;
@@ -67,7 +67,12 @@ curShape = rectPattern( cellSize-10, c3);
 }
 
 
-//function to create a PShape circle
+///more for-loop code
+//end of setup
+
+
+//Additional code: 
+//new function to create a PShape circle
 PShape cirPattern( float len, color c1){
   PShape s = createShape( ELLIPSE, len/2,len/2, len, len);
   s.setFill(c1);
