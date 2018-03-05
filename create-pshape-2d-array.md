@@ -46,11 +46,32 @@ PShape rectPattern( float len, color c1){
   return s;
 }
 
+```
+###Alternate PShapes Grid-Pattern
+
+
+
+        
+
+```java
+
+////code inside nested for-loop
+
+PShape curShape;
+if( k %2==0){
+//create Shape and setFill
+curShape = cirPattern( cellSize-10, c3);
+} else{
+curShape = rectPattern( cellSize-10, c3);
+}
+
+
 //function to create a PShape circle
 PShape cirPattern( float len, color c1){
   PShape s = createShape( ELLIPSE, len/2,len/2, len, len);
   s.setFill(c1);
   return s;
 }
+
 ```
 
