@@ -1,8 +1,13 @@
 #Function: PopulateGradientGrid( ) 
 
-The code in the previous sections needs should be refactored so it's using functions, this will allow us to separate the code-logic: designing the shape-color units, from the code-logic for: displaying the shape-color patterns 
+The code in the previous sections needs should be refactored so it's using functions, this will allow us to separate the code-logic:
 
-Notice, there are no `xPos, yPos` variables used in `PopulateGradientGrid`, instead, this function only populates our 2D data-structure, the layout and positioning in grid configuration will be done using a different function: displayShapeMatrix( )
+- creating the shape-color units using design logic
+  - Notice, there are no `xPos, yPos` variables used in `PopulateGradientGrid`, instead, this function only populates our 2D data-structure.
+  
+  
+- displaying the shape-color units in a grid layout
+   - The layout and positioning in grid configuration will be done using a different function: displayShapeMatrix( )
 
 ```java
 
@@ -81,6 +86,6 @@ PShape vertexPattern1( float len, color c1 ){
 }
 ```
 ###Logic to render each PShape at a given x,y location 
-//This code should also be refactored into a function so we can call it multiple times to have the shapeMatrix drawn at different initial x,y positions.
+//This code should also be refactored into a function so we can call it multiple times to have the shapeMatrix drawn at different initial x,y positions.  This is done in the following section: Function: [DisplayShapeMatrix()](/function-displayshapematrix.md)
 
 
