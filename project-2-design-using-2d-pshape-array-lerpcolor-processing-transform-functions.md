@@ -186,6 +186,8 @@ void setup(){
   colorMode(HSB, 360,100,100);
   color c1= color( 71, 100, 100); //chartruse
   color c2 = color(278,95,30);// bright purple
+  color c3 = color(0);
+  color c4=  color(200);
   
   int artWorkRows = 20; //even number - rows, cols
   int artWorkCols= artWorkRows;
@@ -198,7 +200,7 @@ void setup(){
   
   //create smaller grid sections - 
   PShape[][] shapesMatrix1 = populateGradientGrid(rows , cols ,cellSize, c1, c2  );
-  PShape[][] shapesMatrix2 = populateGradientGrid2(rows , cols ,cellSize, c1, c2   );
+  PShape[][] shapesMatrix2 = populateGradientGrid2(rows , cols ,cellSize, c1, c2, c3, c4   );
   
   //add comments
   displayShapeMatrix(shapesMatrix1, 0 ,0, rows , cols ,cellSize);
@@ -208,7 +210,6 @@ void setup(){
 } 
 
 ```
-
 
 
 
