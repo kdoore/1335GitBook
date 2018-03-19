@@ -10,53 +10,89 @@ Below is a UML (Unified Modeling Language)  Class diagram which gives an overvie
 
 
 ```java
-class Ball {
-
-  int x, y, size; ///instance variables
+class Ball{
+  //instance variables or properties
+  float x; 
+  float y;
+  float size;
+  float speedX;
+  float speedY;
   color ballColor;
-
-  ////Constructor
-
-  Ball() {  //default constructor
-    this( 20, 50, 30);  //default instance variables
-  }
-
-  Ball(int _x, int _y, int _size) {
-    x=_x;
-    y= _y;
-    size = _size;
-    ballColor = color(255, 0, 0);
-  }
-
-  ///Methods
-  void display() {
-    fill(ballColor);
-    ellipse(x, y, size, size);
+  
+  //////Class Constructors - to initialize instance variables
+  /////Overloaded versions - each with a unique parameter list
+  Ball(){  //default constructor takes no input parameters
+    this( 5, 5, 50); //calls the Ball constructor Ball(5,5,50)
   }
   
-  void move(){
-    x += 3;
-    println(" x " + x);
+  Ball(float _x, float y, float size ){
+    x = _x;  //initialize instance variable: x
+    this.y  = y;  //initialize instance variable: y
+    this.size = size;
+    speedX = 5;  //the same for every object
+    speedY = 10;  //the same for every object
+    ballColor = color( 100); //default ball color is gray
   }
-
-}////end of Ball class
+  
+  Ball(float _x, float y, float size, float speedX, float speedY, color ballColor ){
+    x = _x;  //initialize instance variable: x
+    this.y  = y;
+    this.size = size;
+    this.speedX = speedX;  //the same for every object
+    this.speedY = speedY;  //the same for every object
+    this.ballColor = ballColor;
+  }
+  
+  ////////////Methods or functions
+  
+  //displays the ball
+  void display(){
+    fill( ballColor);
+    ellipse( x, y, size, size); //diameter
+  }
+  
+  //determines new position for ball each time this is executed
+  void move(){
+    if( x > width || x < 0){
+      speedX *= -1;
+    }
+     if( y > height || y < 0){
+      speedY *= -1;
+    }
+    x += speedX;
+    y += speedY;
+    
+  }
+  
+} //end of class Ball
 
 ////Main Tab Code:
 
-Ball ball1; ///declared Ball object reference 
-int myVal;   //declare int variable
+Ball ball1, ball2, ball3;   //ball1 = null
+//declare a variable that can point to a ball object's data in heap memory
 
-void setup(){
-  size(400,400);
-  myVal = 5;   //initializing our integer
-  ball1 = new Ball();  //initializing our Ball object 
+void setup() {
+  size( 600, 600);
+  ///create 3 different Ball object instances
+  ball1 = new Ball(20, 20, 30, 15, 5, color(255, 0, 0)); //new is the keyword used to create an object instance
+  ball2 = new Ball(40, 40, 40, 5, 10, color(255, 0, 255)); //new is the keyword used to create an object instance
+  ball3 = new Ball(20, 50, 50, 10, 15, color(255, 255, 0)); //new is the keyword used to create an object instance
 }
 
-void draw(){
+void draw() {
   background(255);
+  
+  //have each ball execute it's move method
   ball1.move();
-  ball1.display();   //dot notation to call a method
-  }
+  ball2.move();
+  ball3.move();
+  
+  //have each ball display itself
+  ball1.display();
+  ball2.display();
+  ball3.display();
+}
+
 
 ```
 
