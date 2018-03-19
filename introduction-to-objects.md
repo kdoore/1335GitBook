@@ -10,11 +10,15 @@ Below is a UML (Unified Modeling Language)  Class diagram which gives an overvie
 
 
 ```java
+//Definition for Ball Class
+
 class Ball{
   //instance variables or properties
   float x; 
   float y;
   float size;
+ 
+   //additional variables (these ones are not shown in UML Class Diagram)
   float speedX;
   float speedY;
   color ballColor;
@@ -49,7 +53,7 @@ class Ball{
   void display(){
     fill( ballColor);
     ellipse( x, y, size, size); //diameter
-  }
+  } //end display method
   
   //determines new position for ball each time this is executed
   void move(){
@@ -61,8 +65,7 @@ class Ball{
     }
     x += speedX;
     y += speedY;
-    
-  }
+  } // end move method
   
 } //end of class Ball
 
