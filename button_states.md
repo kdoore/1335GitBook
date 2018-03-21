@@ -25,8 +25,9 @@ In the code below, we create a very simple program with a rectangle button and a
 
 We want the button to display some behavior in response to the user's mouse when the mouse hovers over the button's rectangular area to give the user indication that the button is interactive. We will have 2 types of dynamic behavior in this project, the first set of behaviors relate to how the button's displayed rectangle changes color with mouse interaction. Second, we also need to have the button-state control the display state of the ellipse, using the global state variable `on` :
 
-We are using the colorMode(HSB) so that we can simplify the code for the hover behavior, where we simply modify the HSB `Brightness` parameter when the user's mouse is positioned directly over the button. 
-
+We are using the colorMode(HSB) so that we can simplify the code for the hover behavior, where we simply modify the HSB `Brightness` parameter when the user's mouse is positioned directly over the button.
+ 
+###Button - not Object-Oriented 
 
 ```java
 // This is a simple button program where the button controls the //color of the ellipse.  
