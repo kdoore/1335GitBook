@@ -87,12 +87,12 @@ void Display(){
   rect(x, y, w, h);
 } //end Display( )
 
-void Click(int mX, int mY){
+void Clicked(int mX, int mY){
   if( (mX >= x && mX<=(x + w) ) && (mY >= y && mY <= (y + h) ) ){
   println("button class, I was clicked! y value is: " + y); 
   btnOn = !btnOn; //toggle btnOn state between true or false
 }
-} //end Click()
+} //end Clicked()
 }//end Button Class
 
 ```
@@ -140,9 +140,9 @@ void draw(){
 }
 
 void mouseClicked(){
-  myButton.Click(mouseX, mouseY); 
-  myButton2.Click(mouseX, mouseY);
-  myClearBtn.click(mouseX, mouseY);
+  myButton.Clicked(mouseX, mouseY); 
+  myButton2.Clicked(mouseX, mouseY);
+  myClearBtn.clicked(mouseX, mouseY);
 }
 
 ```
