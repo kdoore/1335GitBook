@@ -71,29 +71,42 @@ class Ball{
 
 ////Main Tab Code:
 
-Ball ball1, ball2, ball3;   //ball1 = null
+Ball ball1;   //ball1 = null
 //declare a variable that can point to a ball object's data in heap memory
+
+Ball[] balls; //declare the array of Ball objects
 
 void setup() {
   size( 600, 600);
-  ///create 3 different Ball object instances
+  colorMode(HSB, 360,100,100);
+  ///create 1 Ball object instance
   ball1 = new Ball(20, 20, 30, 15, 5, color(255, 0, 0)); //new is the keyword used to create an object instance
-  ball2 = new Ball(40, 40, 40, 5, 10, color(255, 0, 255)); //new is the keyword used to create an object instance
-  ball3 = new Ball(20, 50, 50, 10, 15, color(255, 255, 0)); //new is the keyword used to create an object instance
-}
+
+balls = new Ball[100]; //initialize the array
+
+  for ( int i=0; i< balls.length; i++) {
+    float x = random(0, width);
+    float y = random(0, height);
+    float hue = random(0, 360);
+    balls[i] = new Ball(x, y, 20, 5, 10, color( hue, 100, 100)); //called the constructor - we have an object instance
+  } //end of for
+}//end of setup
+
 
 void draw() {
   background(255);
   
   //have each ball execute it's move method
   ball1.move();
-  ball2.move();
-  ball3.move();
-  
+ 
   //have each ball display itself
   ball1.display();
-  ball2.display();
-  ball3.display();
+  
+  //use for-loop to move and display all balls
+  for ( int i=0; i< balls.length; i++) {
+    balls[i].move();
+    balls[i].display();
+  } //end for
 }
 
 
