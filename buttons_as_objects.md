@@ -85,14 +85,14 @@ void display(){
     fill(offColor);
   }
   rect(x, y, w, h);
-} //end Display( )
+} //end display( )
 
 void clicked(int mX, int mY){
   if( (mX >= x && mX<=(x + w) ) && (mY >= y && mY <= (y + h) ) ){
   println("button class, I was clicked! y value is: " + y); 
   btnOn = !btnOn; //toggle btnOn state between true or false
 }
-} //end Clicked()
+} //end clicked()
 }//end Button Class
 
 ```
