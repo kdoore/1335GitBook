@@ -77,7 +77,7 @@ Button(float _x, float _y, float _w, float _h){ //input parameters are used to i
 -----Methods are Functions used by Object instances
 -----Methods provide implementation of object behaviors and functions
 ----------------------------------------*/
-void Display(){
+void display(){
   if(btnOn){
     fill(onColor);
   }
@@ -87,7 +87,7 @@ void Display(){
   rect(x, y, w, h);
 } //end Display( )
 
-void Clicked(int mX, int mY){
+void clicked(int mX, int mY){
   if( (mX >= x && mX<=(x + w) ) && (mY >= y && mY <= (y + h) ) ){
   println("button class, I was clicked! y value is: " + y); 
   btnOn = !btnOn; //toggle btnOn state between true or false
@@ -127,8 +127,8 @@ void setup(){
 }                            
 
 void draw(){
-  myButton.Display();   //we use 'dot-notation' to call the Button Display() method
-  myButton2.Display();
+  myButton.display();   //we use 'dot-notation' to call the Button Display() method
+  myButton2.display();
   myClearBtn.display();
   
   if(myClearBtn.on == true){  //see if the clear button has been clicked
@@ -140,8 +140,8 @@ void draw(){
 }
 
 void mouseClicked(){
-  myButton.Clicked(mouseX, mouseY); 
-  myButton2.Clicked(mouseX, mouseY);
+  myButton.clicked(mouseX, mouseY); 
+  myButton2.clicked(mouseX, mouseY);
   myClearBtn.clicked(mouseX, mouseY);
 }
 
