@@ -78,4 +78,5 @@
   * [Loops and Recursion](loops-and-recursion.md)
   * [Switch-Case Statement](switch-case_statement.md)
   * [Ternary Operator](ternary_operator.md)
+* [Class](class.md)
 
