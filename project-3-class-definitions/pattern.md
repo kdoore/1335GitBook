@@ -18,7 +18,6 @@ pattern1 = new Pattern( s1, color( 280, 100,100));
 pattern1.display( mouseX, mouseY);
 ```
 
-
 ###Pattern Class Definition
 
 ```java
