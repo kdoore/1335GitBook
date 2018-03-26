@@ -50,7 +50,7 @@
 * [PShape - SVG Objects](pshape_-_svg_objects.md)
 * [Drawing Application - Logic](drawing-application-logic.md)
 * [ButtonGroup](menu_buttons.md)
-* [Arrays of Objects](arrays_of_objects.md)
+* [Array of Buttons](arrays_of_objects.md)
 * [Slider Controller](slider_controller.md)
 * [Glossary](GLOSSARY.md)
 
