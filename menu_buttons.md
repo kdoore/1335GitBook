@@ -6,7 +6,7 @@ Now that we've created our button class, which is our template to create button 
 We will create the ButtonGroup class, and it will be composed of an array of button objects.  The button objects are responsible for most of their own behavior, however, since we want these buttons to work together as a radio-button type group, we're going to have to add some additional logic to the Menu class to insure that only 1 button is active at a time.  
 
 
-### Menu Code: 
+###ButtonGroup Version 1: 
 In the code below, we have created the ButtonGroup Class, we've added 3 button objects, they are initialized in the constructor and we've created a ``display()`` and ``clicked()`` method. Within the Menu ``display()`` method, we simply call the ``display()`` method for each button. However, right now these buttons don't have the required logic needed for them to function as a menu, we still need to add additional control logic to the ``clicked()`` method. Currently, each of these buttons each works independently.  
 
 ```java

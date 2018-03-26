@@ -20,13 +20,13 @@ For maximum flexibility for collections of objects like our Menu that is compose
 When we pass an object into any function, what we are actually doing is passing the reference, or memory address, of that object into the function. Since a constructor is a special type of function, objects passed to constructors are also *passed by reference*.  This is extremely helpful for us.  See the section on [Reference Data Types](reference_data_types.md) for more detail on this.   
 
 ```java
-//Create Class MenuArray 
-class MenuArray{
+//Create Class ButtonGroup
+class ButtonGroup{
     //instance variables
     Button[] btnArray;  //declare an array of Buttons
     int numButtons;     //how many Buttons are there?
     
-    MenuArray( Button _btnArray, int _numButtons){
+    ButtonGroup( Button _btnArray, int _numButtons){
       btnArray=_btnArray;  //initialize instance variables with 
       numButtons=_numButtons;
     }
@@ -40,7 +40,7 @@ Below is the code in the program's main tab to initialize the btnArray.
 
 Button[] btnArray; //declare an array of Button objects
 
-MenuArray myMenuArray;
+ButtonGroup myBtnGroup;
 
 void setup(){
     btnArray=new Button[3];   // initialize array that will hold 3 button
@@ -49,7 +49,7 @@ void setup(){
     for(int i=0;i < 3; i++){  //Arrays are indexed starting at 0.
         btnArray[i]= new Button(0,(i * 50),50,50);  // for each array element, call the Button constructor, to initialize a Button object.
     }
-    myMenuArray = new MenuArray( btnArray, 3);  //call menu constructor using an array input parameter
+    myBtnGroup = new ButtonGroup( btnArray, 3);  //call menu constructor using an array input parameter
 }
 ```
 If we look at the code for our initial attempt at writing the Menu class, can discover patterns that can help us now that we're trying to modify our code to use an Array of Button objects in our Menu Class.
