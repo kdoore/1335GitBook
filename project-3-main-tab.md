@@ -22,8 +22,6 @@ Button[] patternButtons;
 ButtonGroup buttonGroup;
 Pattern pattern1, pattern2, pattern3;
 
-ColorScheme colorScheme;
-
 float buttonSize;
 color backgroundColor;
 color[] colorList;
