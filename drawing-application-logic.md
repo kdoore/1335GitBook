@@ -23,39 +23,40 @@ For Project 3, you will create a simple drawing application where 3 buttons allo
 
 ## Detailed Project Logic
 
-###Classes:  Button, ButtonGroup
+###Classes:  Button, ButtonGroup, Pattern, PShapePattern, EraserPattern, PImagePattern
     
 ###Global Objects:
 
     ButtonGroup buttonGroup
     Button clearButton
     
+    
 ###Logic In Setup:  
 
 - Set Canvas Size
 - Set colorMode - HSB
 - Initialize objects by calling constructors:
-       - declare Array of Buttons 
+       - declare an Array of Buttons //local to setup
        
-          ```Button[] btnArray;``` 
+          Button[] btnArray; 
        - initialize Array of Buttons
        
-           ```btnArray = new Button[3];```
+           btnArray = new Button[3]; 
        - initialize each Array element by calling Button Constructor
            
-           ```buttonGroup[0] = new Button( parameters );```
+            btnArray[0] = new Button( parameters ); 
        - initialize clearButton by calling Button Constructor
        
-       ```clearButton = new Button( parameters );```
+       clearButton = new Button( parameters ); 
        
        - initialize buttonGroup by calling ButtonGroup Constructor and pass buttonArray as a parameter
        
-     ```buttonGroup = new ButtonGroup( btnArray);```
+      buttonGroup = new ButtonGroup( btnArray); 
     
 ###Logic In Draw:
 - if mousePressed
         - drawPattern
-- drawMenu
+- drawMenu //always draw menu of Buttons
     
 ###Logic In MouseClicked:
     
