@@ -1,14 +1,12 @@
-#Project 3 Class Definitons
-
-![](/assets/Screenshot 2017-10-26 08.24.23.png)
+#Project 3 Class Definitions
 
 **Button Class**
  
    Summary - used to create a single button
 
-Button myButton = new Button( 
+    Button myButton = new Button( );
 
-myButton.display();
+    myButton.display();
 
 **PImageButton**
 
