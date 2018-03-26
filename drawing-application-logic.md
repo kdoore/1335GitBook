@@ -23,7 +23,7 @@ For Project 3, you will create a simple drawing application where 3 buttons allo
 
 ## Detailed Project Logic
 
-###Classes:  Button, ButtonGroup, Pattern, PShapePattern, EraserPattern, PImagePattern
+###Classes:  Button, ButtonGroup, Pattern
     
 ###Global Objects:
 
@@ -97,12 +97,13 @@ For Project 3, you will create a simple drawing application where 3 buttons allo
     called when clearBtn has been clicked and has on==true
     
  - set fill
- - draw rectangle behind buttons
+ - draw background-color rectangle to clear the canvas.
  
- ###Logic in drawMenu:
+ ###Logic in drawMenu: 
  
--  draw background rectangle
--  display menuArray object
+ //4 buttons - 3 patterns, 1 clearButton
+-  draw a menu - background (rectangle)
+-  display buttonGroup object
 -  display clearButton object 
     
      
