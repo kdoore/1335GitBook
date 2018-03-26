@@ -4,8 +4,8 @@
  
  Tasks:
  1.  Determine active pattern to be displayed - determined by buttonGroup.activeButton.  We use switch/case structure to connect the patternButtons to the patterns to be drawn.
- 2.  Determine active color to be displayed - determined by colorScheme.activeIndex.  We use the activeIndex to access the color[] array of the colorScheme
- 3.  Create and set variables for currentPattern and currentColor that are updated based on the buttonGroup.activeButton and colorScheme.activeIndex.
+ 2.  Determine color to be displayed 
+ 3.  Create and set variables for currentPattern and currentColor that are updated based on the buttonGroup.activeButton.
  4. display the currentPattern
  5. make sure logic is designed to handle the initial case when no buttons are selected, make sure the eraserPattern doesn't have it's color changed, it should always be the background pattern.
  
