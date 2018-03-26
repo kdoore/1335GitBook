@@ -6,8 +6,6 @@ For Project 3, you will create a simple drawing application where 3 buttons allo
 
 **The code on this page, and the image below shows a first iteration for this project**
 
-_This assumes you will use the starter code for the project, which is included in the project assignment document_
-
 
 ![](/assets/Screenshot 2017-03-06 12.05.10.png)
 

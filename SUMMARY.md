@@ -48,7 +48,6 @@
 * [OOP - Polymorphism](oop-polymorphism.md)
 * [Child-Class: PImageButton](pimagebutton.md)
 * [PShape - SVG Objects](pshape_-_svg_objects.md)
-* [Drawing Application - Logic](drawing-application-logic.md)
 * [ButtonGroup](menu_buttons.md)
 * [Array of Buttons](arrays_of_objects.md)
 * [Slider Controller](slider_controller.md)
@@ -56,12 +55,13 @@
 
 ## Project 3
 
+* [Drawing Application - Logic](drawing-application-logic.md)
 * [Project 3 - Class Definitions](project-3-class-definitions.md)
   * [Button](project-3-class-definitions/button.md)
   * [PImageButton](project-3-class-definitions/pimagebutton.md)
   * [ButtonGroup](project-3-class-definitions/buttongroup.md)
   * [Pattern](project-3-class-definitions/pattern.md)
-  
+
 ## Project 4
 
 * [Project 4](project-4.md)
