@@ -40,61 +40,60 @@ When looking at the code in a Class definition, we can see a similarity with the
 ```java
 
 
-/* ------------BUTTON CLASS DEFINITION ------------
-----------------------------------------*/
 class Button{
-
-/* ------------BUTTON INSTANCE VARIABLES / PROPERTIES ------------
-----------------------------------------*/
-float x, y, w, h;
-color onColor, offColor;
-boolean btnOn;
-
-/* ------------ CLASS CONSTRUCTORS ------------
------Constructor is to initialize variables
-----------------------------------------*/
-Button(){ //default constructor
-  x=0;
-  y=0;
-  w=50;
-  h=50;
-  onColor = color(#0AF207); ///green
-  offColor = color(#F20742); //red
-  btnOn = false;
-}
-
-Button(float _x, float _y, float _w, float _h){ //input parameters are used to initialize instance variable values
-  x=_x;
-  y=_y;
-  this.w=_w; //`this` refers to the current object instance
-  h=_h;
-  onColor = color(#0AF207); ///green
-  offColor = color(#F20742); //red;
-  btnOn=false;
-}
-
-/* ------------ CLASS METHODS ------------
------Methods are Functions used by Object instances
------Methods provide implementation of object behaviors and functions
-----------------------------------------*/
-void display(){
-  if(btnOn){
-    fill(onColor);
+  ////Instance Variables - Properties
+  float x, y;   //position
+  float w, h;   //size dimensions
+  boolean selected;
+  color defaultColor, selectedColor, currentColor;
+  String label;  ///text to display
+  
+  /////Constructor Methods
+  /////Initialize our instance variables
+  ////Overloaded versions of constructors - unique parameter lists
+  
+  Button( float _x, float y, float w, float h, color onColor, color offColor, String label){
+    x = _x;   //set value for class variable x, using parameter _x
+    this.y = y;
+    this.w = w; 
+    this.h = h;
+    selectedColor = onColor;
+    defaultColor = offColor;
+    currentColor = defaultColor;  ///button is off to begin with, so use default color 
+    selected = false;
+    this.label = label;
   }
-  else{
-    fill(offColor);
+  
+////Class Methods
+  void display(){
+    fill(currentColor);
+    rect( x, y, w, h);
+    fill(0); //black
+    textAlign(CENTER);
+    textSize(20);
+    text(label, x + w/2, y + h/2);  //display label
   }
-  rect(x, y, w, h);
-} //end display( )
+  
+  void clicked(int mx, int my){
+    if( mx > x && mx < x+w && my >y && my < y+h){   //button has been clicked
+      if( selected == true){
+        selected = false;
+        currentColor = defaultColor;
+      }else{      //had been selected == false
+         selected = true;
+         currentColor = selectedColor;
+      } //end else
+    }  //end outer if
+  } ///end of clicked
+    
+    //sets the button to off state
+    void reset(){
+       selected = false;
+       currentColor = defaultColor;
+    }
+    
 
-void clicked(int mX, int mY){
-  if( (mX >= x && mX<=(x + w) ) && (mY >= y && mY <= (y + h) ) ){
-  println("button class, I was clicked! y value is: " + y); 
-  btnOn = !btnOn; //toggle btnOn state between true or false
-}
-} //end clicked()
-}//end Button Class
-
+}  ///end of the Button Class
 ```
 
 
@@ -110,39 +109,46 @@ The example code below also creates a clear button.  In the draw loop, we check 
 
 ```java
 //Global Variable Declaration
-int someVal;  //we declare the type: int, then the name someVal
-Button myButton;  //we declare the type: Button, then the name: myButton
-Button myButton2;
+Button button1;  //we declare the type: Button, then the name: myButton
+Button button2;
 Button myClearBtn;
 
 //initialization
 void setup(){
   size(400,400);
-  someVal=5;  //we initialize the int variable
-  myButton = new Button();  //for objects, we must call the constructor method
-                            //to instantiate a new object
-                            //here we call the default constructor - it takes no input arguments
-  myButton2= new Button(100,100,50,50); // use Constructor with arguments
-  myClearBtn = new Button( 0,0,50, 50);
+  colorMode( HSB, 360, 100,100);
+  color colorOn = color(250, 50, 100);//purple
+  color colorOff = color(250, 50, 50);//dark purple
+  
+   button1 = new Button(30,30,100,100, colorOn, colorOff, "Btn1" );  //create object-instance using 'new' keyword, call a constructor
+  button2 = new Button(30,130,100,100, colorOn, colorOff, "Btn2" );  //create object-instance using 'new' keyword, call a constructor
+  myClearButton = new Button(30,230,100,100, colorOn, colorOff, "Clear" );  //create object-instance using 'new' keyword, call a constructor
+
 }                            
 
 void draw(){
-  myButton.display();   //we use 'dot-notation' to call the Button Display() method
-  myButton2.display();
+  button1.display();   //we use 'dot-notation' to call the Button Display() method
+  button2.display();
   myClearBtn.display();
-  
-  if(myClearBtn.on == true){  //see if the clear button has been clicked
-    fill(255);
-    rect(0,0,width, height);
-    myClearBtn.on = false;   //turn the button off!
-    println("ClearScreen");
-  }
 }
 
+//check to see if each button has been clicked
 void mouseClicked(){
-  myButton.clicked(mouseX, mouseY); 
-  myButton2.clicked(mouseX, mouseY);
+  button1.clicked(mouseX, mouseY); 
+  button2.clicked(mouseX, mouseY);
   myClearBtn.clicked(mouseX, mouseY);
+  
+  //add logic to clear the screen
+  if(myClearBtn.on == true){  //see if the clear button has been clicked
+    myClearBtn.clearScreen();
+    myClearBtn.reset();   //turn the button off!
+  }
+  
+}
+
+void clearScreen(){
+  fill(255);
+  rect(0,0,width, height);
 }
 
 ```
