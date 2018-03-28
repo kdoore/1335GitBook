@@ -108,25 +108,24 @@ The code below is from the main tab for a simple program which uses the Button c
 The example code below also creates a clear button.  In the draw loop, we check to see if the myClearBtn.on is true, if it is, then we draw a large rectangle that is the size of the canvas.  Then we must remember to set the state to on=false.
 
 ```java
-//Global Variable Declaration
-Button button1;  //we declare the type: Button, then the name: myButton
+//initialization
+Button button1; //we declare the type: Button, then the name: myButton
 Button button2;
 Button myClearBtn;
 
-//initialization
 void setup(){
   size(400,400);
   colorMode( HSB, 360, 100,100);
   color colorOn = color(250, 50, 100);//purple
   color colorOff = color(250, 50, 50);//dark purple
-  
-   button1 = new Button(30,30,100,100, colorOn, colorOff, "Btn1" );  //create object-instance using 'new' keyword, call a constructor
-  button2 = new Button(30,130,100,100, colorOn, colorOff, "Btn2" );  //create object-instance using 'new' keyword, call a constructor
-  myClearButton = new Button(30,230,100,100, colorOn, colorOff, "Clear" );  //create object-instance using 'new' keyword, call a constructor
 
+  button1 = new Button(30,30,100,100, colorOn, colorOff, "Btn1" );  //create object-instance using 'new' keyword, call a constructor
+  button2 = new Button(30,130,100,100, colorOn, colorOff, "Btn2" );  //create object-instance using 'new' keyword, call a constructor
+  myClearBtn = new Button(30,230,100,100, colorOn, colorOff, "Clear" );  //create object-instance using 'new' keyword, call a constructor
 }                            
 
 void draw(){
+  background(255);
   button1.display();   //we use 'dot-notation' to call the Button Display() method
   button2.display();
   myClearBtn.display();
@@ -137,20 +136,18 @@ void mouseClicked(){
   button1.clicked(mouseX, mouseY); 
   button2.clicked(mouseX, mouseY);
   myClearBtn.clicked(mouseX, mouseY);
-  
+
   //add logic to clear the screen
-  if(myClearBtn.on == true){  //see if the clear button has been clicked
-    myClearBtn.clearScreen();
+  if(myClearBtn.selected == true){  //see if the clear button has been clicked
+    clearScreen();
     myClearBtn.reset();   //turn the button off!
   }
-  
 }
 
 void clearScreen(){
   fill(255);
   rect(0,0,width, height);
 }
-
 ```
 
 ###Questions
