@@ -7,48 +7,54 @@ If we look at the code for the PImage Button below,in the first line, we see the
 ###Class PImageButton
 
 ```java
-class PImageButton extends Button{
+//add comments
+class PImageButton extends Button {
+
+  //PROPERTIES
+
   PImage img;
-  
-  //constructor
-  PImageButton(PImage _p){
-       super();
-       img = _p; 
+ 
+ //CONSTRUCTORS
+
+  //add comments
+  PImageButton(float x, float y, float w, float h, color c1, color c2, PImage img) {
+    super(x, y, w, h, c1, c2, "");  //call constructor with empty string for label
+    this.img = img;
   }
-  
- // constructor
-  PImageButton(float _x, float _y, float _w, float _h, PImage _img){
-       super(_x, _y, _w, _h);
-       img = _img;
-  }
-  
+
+  //METHODS
+
   //over-ride display() from base-class
-  void display(){
-        super.display();
-        image(img, x+5,y+5,w-10,h-10);
-  }  
-}
+  //add comments
+  void display() {
+    super.display();  //call base-class: button display method to create background button
+    image(img, x+20, y+20, w-40, h-40);  //adjust as needed
+  }
+
+}  //end class PImageButton
 ```
 ###Create a PImageButton Object in Main Tab
 The code below shows that we 
 ```java
 //main tab
-
- 
 Button pBtn;
 
 void setup(){
+  size( 400,400);
+  color colorOn = color(250, 50, 100);//purple
+  color colorOff = color(250, 50, 50);//dark purple
 //declare a PImage object reference variable, initialize using loadImage()
-PImage p = loadImage("pattern1Btn.png");  //this file must be in the project data folder
-pBtn = new PImageButton(20,20,100,100, p);  //call PImageButton constructor
-}
+  PImage img = loadImage("pattern1Btn.png");  //this file must be in the project data folder
+
+  pBtn = new PImageButton(20,20,100,100,onColor, offColor, img);  //call PImageButton constructor
+} //end setup
 
 void draw(){
-pBtn.display();
+  pBtn.display();
 }
 
 void mouseClicked(){
-pBtn.clicked( mouseX, mouseY) ;
+  pBtn.clicked( mouseX, mouseY) ;
 }
 
 ```
@@ -63,8 +69,8 @@ To learn more about how to use PImage objects, refer to the Processing.org [PIma
 
 
 ```java
-p= loadImage("MyIMage.png");
-pBtn = new PImageButton(20,20,100,100, p);
+PImage img = loadImage("myImage.png");
+pBtn = new PImageButton(20,20,100,100,color(100), color(200), img );
 ```
 
 
@@ -79,33 +85,3 @@ Example Image For ImageButton
 
 ![](pattern1Btn.png)
 
-###Computational Efficiency - Improved PImageButton Class
-In the code below, we pass in the PImage object, p.  This is more efficient than passing in the image file string, filename.
-
-
-```java
-
-class PImageButton extends Button{
-  PImage img;
-
-  //constructor
-  PImageButton(PImage p){
-       super();
-       img=p;
-  }
-
- // constructor
-  PImageButton(float _x, float _y, float _w, float _h, PImage p){
-       super(_x, _y, _w, _h);
-       this.img= p;
-  }
-
-  //over-ride display() from base-class
-  void display(){
-        super.display();
-        image(img, x+5,y+5,w-10,h-10);
-  }  
-}
-
-
-```
