@@ -16,7 +16,7 @@ class PImageButton extends Button {
  
  //CONSTRUCTORS
 
-  //add comments
+  //First line of code executed in a child-class constructor must be a call to the base-class constructor
   PImageButton(float x, float y, float w, float h, color c1, color c2, PImage img) {
     super(x, y, w, h, c1, c2, "");  //call constructor with empty string for label
     this.img = img;
