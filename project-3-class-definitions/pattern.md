@@ -25,20 +25,20 @@ class Pattern{
   
   //PROPERTIES
    PShape s;
-   color shapeColor;
+   color fillColor;
    color strokeColor;
   
   //CONSTRUCTORS
-  Pattern( PShape s, color shapeColor){
+  Pattern( PShape s, color fillColor){
     this.s = s;
-    this.shapeColor = shapeColor;
+    this.fillColor = fillColor;
   }
   
   
   //METHODS
   void display(int mx, int my){
     s.setStroke( strokeColor);
-    s.setFill( shapeColor);
+    s.setFill( fillColor);
     shape( s, mx, my);
     } 
 }//end PatternClass
