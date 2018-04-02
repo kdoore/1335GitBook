@@ -69,7 +69,7 @@ For Project 3, you will create a simple drawing application where 3 buttons allo
 ###Logic in drawPattern:
 - translate origin to mouse position
 - set fill color
-- use Switch-Case structure
+- use switch-case structure
 - switch: check which myMenuArray button is active
          
          ```java
