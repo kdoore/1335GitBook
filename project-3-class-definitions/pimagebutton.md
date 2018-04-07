@@ -4,6 +4,8 @@
 The PImageButton class is a child-class of the Button class.  The extends keyword in the first line of code in the class definition below shows the syntax for defining this class as a child-class of the Button class.  As a child class, PImageButton inherits all properties and methods of the Button class.  
 
 ###Example use:
+To use the PImageButton class, you must first have an image in your project folder that you can use for displaying on the button.  You must create a new folder inside your project folder with the name: data
+
 
   
 
