@@ -52,12 +52,13 @@ class PImageButton extends Button {
   //add comments
   void display() {
     super.display();  //call base-class: button display method to create background button
-    image(img, x+20, y+20, w-40, h-40);  //adjust as needed
+    image(img, x+10, y+10, w-20, h-20);  //adjust as needed
   }
 
 }  //end class PImageButton
 
 ```
 **PImageButtons shown on the Drawing Application**
+You can adjust the dimensions of the image in the display( ) method in the PImageButton class, depending on the size of your buttons.  The dimensions used in the code above work well for a button that is 100 px x 100 px.
 
 ![](/assets/Screen Shot 2018-04-07 at 3.13.55 PM.png)
