@@ -79,7 +79,7 @@ Pattern curPattern = pattern0;  //temporary Pattern variable initially pointing 
 
 int activeButton = ButtonGroup.activeButton;
 
-//switch-case control structure
+//switch-case control structure determines which pattern corresponds to the current activeButton
 switch( activeButton ){
   case 0: //pattern0 and button0
     curPattern = pattern0;
