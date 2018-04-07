@@ -4,7 +4,7 @@
  
    Summary - used to create a single button
 
-    Button myButton = new Button( );
+   
 
     myButton.display();
 

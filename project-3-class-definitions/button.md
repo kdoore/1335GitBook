@@ -1,5 +1,26 @@
 ###Button
+For this project, you will create 4 buttons.  1 Button, the clearButton, will be a basic Button using the constructor to set the x, y, w, h for the button's position and size, and then specifying 2 colors and a String, label, that's used to display text on the Button.  You will also define a child class, either PImageButton or PShapeButton so you can create Buttons that display an image.
 
+###Example Use
+
+
+
+```java
+//Button Constructor showing parameter details
+//Button( int x, int y, int w, int h, color c1, color c2, String label)
+
+Button button1 = new Button( 10, 10, 100, 100, color1, color2, "Button1");
+
+//display the button
+button1.display();
+
+//click the button
+button1.click( mouseX, mouseY);
+
+```
+
+
+###Class Code
 
 ```java
 class Button{
