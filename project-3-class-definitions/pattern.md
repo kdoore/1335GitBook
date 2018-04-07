@@ -78,7 +78,7 @@ Notice that we use a temporary variable: Pattern curPattern;, to match-up the ac
 ```java
 void drawPattern( ){
 
-Pattern curPattern = pattern0;  //temporary Pattern variable
+Pattern curPattern = pattern0;  //temporary Pattern variable initially pointing to the pattern0 object.
 
 int activeButton = ButtonGroup.activeButton;
 
