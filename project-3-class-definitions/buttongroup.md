@@ -8,10 +8,11 @@ The ButtonGroup class manages an array of Button objects, only 1 button can be s
 
  
 //main tab 
+//create buttons by specifying x, y, w, h and 2 colors for each Button.
 
 Button[] buttons = new Button[3]; //declare button array
-   buttons[0] = new Button( btnX, btnY,   buttonSize,buttonSize,colo1 ,color2, "P1");
-   buttons[1] = new Button( btnX + 110, btnY, buttonSize,buttonSize,color1 ,color2, "P2");
+   buttons[0] = new Button( 10, 10, 100, 100, color1, color2, "P1");
+   buttons[1] = new Button( 10, 120, 100, 100, color1, color2, "P2");
    ButtonGroup buttonGroup = new ButtonGroup( buttons);
 }
    
