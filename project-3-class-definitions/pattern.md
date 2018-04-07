@@ -101,7 +101,6 @@ switch( activeButton ){
   
   //now display the curPattern
   curPattern.display( mouseX, mouseY); //display at mouse position
-  
 }
 ```
 
