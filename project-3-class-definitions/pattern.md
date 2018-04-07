@@ -36,14 +36,11 @@ class Pattern{
   Pattern( PShape s ){
     this.s = s;
   }
-
-  
+    
   Pattern( PShape s, color fillColor){
     this.s = s;
     this.fillColor = fillColor;
   }
-  
-
 
   //METHODS
   void display(int mx, int my){
@@ -82,7 +79,8 @@ Pattern curPattern = pattern0;  //temporary Pattern variable initially pointing 
 
 int activeButton = ButtonGroup.activeButton;
 
-switch( activeButton){
+//switch-case control structure
+switch( activeButton ){
   case 0: //pattern0 and button0
     curPattern = pattern0;
     curPattern.fillColor = color( 50,100,100); //set color
