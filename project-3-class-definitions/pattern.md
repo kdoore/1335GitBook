@@ -72,6 +72,8 @@ pattern1 = new Pattern( s1);  //call constructor
 ```
 
 ### Match Patterns to ButtonGroup Buttons in DrawPattern
+The code below shows how to connect the ButtonGroup logic with the Pattern logic in the drawPattern( ) function.  
+Notice that we use a temporary variable: Pattern curPattern;, to match-up the activeButton with this temporary variable: curPattern, so that once the switch-case logic has completed, then we display which ever pattern is referenced by the curPattern variable.
 
 ```java
 void drawPattern( ){
@@ -98,8 +100,8 @@ switch( activeButton){
  break;
 
 }//end of switch statement logic
-//now display the curPattern
   
+  //now display the curPattern
   curPattern.display( mouseX, mouseY); //display at mouse position
   
 }
