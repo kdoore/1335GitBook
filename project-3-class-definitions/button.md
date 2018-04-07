@@ -69,11 +69,19 @@ class Button{
     currentColor = defaultColor;
   }
   
+  //sets the button to be on
+  void setActive(){
+       selected = true;
+       currentColor = selectedColor;
+    }
+  
+  //sets the button to be off
   void reset( ){
     this.selected = false;
     currentColor = defaultColor;
   }
   
+
   // add comments
   void clicked( int mx, int my){
     if( (mx > x && mx < x + w)  &&( my > y && my < y + h)){
