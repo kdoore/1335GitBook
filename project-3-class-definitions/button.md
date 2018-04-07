@@ -9,6 +9,7 @@ For this project, you will create 4 buttons.  1 Button, the clearButton, will be
 //Button Constructor showing parameter details
 //Button( int x, int y, int w, int h, color c1, color c2, String label)
 
+//Declare and initialize
 Button button1 = new Button( 10, 10, 100, 100, color1, color2, "Button1");
 
 //display the button
