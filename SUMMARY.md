@@ -61,6 +61,7 @@
   * [PImageButton](project-3-class-definitions/pimagebutton.md)
   * [ButtonGroup](project-3-class-definitions/buttongroup.md)
   * [Pattern](project-3-class-definitions/pattern.md)
+    * [Setting Colors For Patterns](project-3-class-definitions/pattern/setting-colors-for-patterns.md)
 
 ## Project 4
 
@@ -80,6 +81,4 @@
   * [Switch-Case Statement](switch-case_statement.md)
   * [Ternary Operator](ternary_operator.md)
   * [Class](class.md)
-
-
 

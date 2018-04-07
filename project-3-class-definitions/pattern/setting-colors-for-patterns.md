@@ -1,0 +1,2 @@
+###Setting Colors for Patterns
+
