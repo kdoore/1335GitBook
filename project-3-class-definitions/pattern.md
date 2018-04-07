@@ -12,14 +12,14 @@ Pattern pattern1, pattern2, eraserPattern;
 
 //initialize PShape and Pattern in setup
 PShape s1 = createShape( RECT, 0,0,40,40);
-pattern1 = new Pattern( s1);  //call constructor
+pattern0 = new Pattern( s1);  //call constructor
 
 //use similar code to initialize all patterns
 
 
 //display 
-pattern1.fillColor = color(100,100,100); //set fill color
-pattern1.display( mouseX, mouseY);
+pattern0.fillColor = color(100,100,100); //set fill color
+pattern0.display( mouseX, mouseY);
 ```
 
 ### Pattern Class Definition
@@ -54,10 +54,56 @@ class Pattern{
 }//end PatternClass
 ```
 
+###Pattern objects for Project 3
 For this project, you will create 3 global pattern objects:  
 
-Pattern pattern1, pattern2, eraserPattern;
+```java
+Pattern pattern0, pattern1, eraserPattern;
+```
 
-These are initialized in setup by calling the Pattern constructor.
+### Initialize in setup  
+First you must create 3 PShape objects, then these PShape objects are passed into the Pattern constructor.
+
+```java
+
+//initialize PShape and Pattern in setup
+PShape s1 = createShape( RECT, 0,0,40,40);
+pattern1 = new Pattern( s1);  //call constructor
+```
+
+### Match Patterns to ButtonGroup Buttons in DrawPattern
+
+```java
+void drawPattern( ){
+
+Pattern curPattern = pattern0;  //temporary Pattern variable
+
+int activeButton = ButtonGroup.activeButton;
+
+switch( activeButton){
+  case 0: //pattern0 and button0
+    curPattern = pattern0;
+    curPattern.fillColor = color( 50,100,100);
+  break;
+  
+  case 1: //pattern1 and button1
+    curPattern = pattern1;
+    curPattern.fillColor = color( 150,100,100);
+  break;
+ 
+ case 2: //eraser pattern and button
+    curPattern = eraserPattern;
+    curPattern.fillColor = backgroundColor;
+    curPattern.strokeColor = backgroundColor;
+ break;
+
+}//end of switch statement logic
+//now display the curPattern
+  
+  curPattern.display( mouseX, mouseY); //display at mouse position
+  
+}
+```
+
 
 
