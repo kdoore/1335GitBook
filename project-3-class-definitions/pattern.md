@@ -85,12 +85,12 @@ int activeButton = ButtonGroup.activeButton;
 switch( activeButton){
   case 0: //pattern0 and button0
     curPattern = pattern0;
-    curPattern.fillColor = color( 50,100,100);
+    curPattern.fillColor = color( 50,100,100); //set color
   break;
   
   case 1: //pattern1 and button1
     curPattern = pattern1;
-    curPattern.fillColor = color( 150,100,100);
+    curPattern.fillColor = color( 150,100,100); //set color
   break;
  
  case 2: //eraser pattern and button
