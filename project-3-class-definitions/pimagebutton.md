@@ -12,10 +12,17 @@ The images were created by taking screenshots of the canvas after the patterns h
 
 ```java
 //main tab
+ 
+  color color1 = color(250, 50, 100);//purple
+  color color2 = color(250, 50, 50);//dark purple
+
   PImage img1 = loadImage( "eraser.png"); //must have image in data folder inside processing project
   
   //can use Button data-type for object reference variable 
   Button imgButton = new PImageButton( btnX, btnY,   buttonSize,buttonSize, color1 ,color2 ,  img1);
+  
+  
+  //displays the button
   
   imgButton.display();  //overrides Button display() method
   
