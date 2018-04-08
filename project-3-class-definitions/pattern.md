@@ -87,8 +87,8 @@ switch( activeButton ){
   break;
   
   case 1: //pattern1 and button1
-    curPattern = pattern1;
-    curPattern.fillColor = color( 150,100,100); //set color
+    curPattern = pattern1; //first we need to set the pattern
+    curPattern.fillColor = color( 150,100,100); //then we can set color
   break;
  
  case 2: //eraser pattern and button
