@@ -25,100 +25,67 @@ button1.click( mouseX, mouseY);
 
 ```java
 class Button{
-  
-  //PROPERTIES
-  
-  //instance variables - add comments
-  float x, y; //position
-  float w, h; //size
-  color currentColor, selectedColor, defaultColor;
+  ////Instance Variables - Properties
+  float x, y;   //position
+  float w, h;   //size dimensions
   boolean selected;
-  String label;
+  color defaultColor, selectedColor, currentColor;
+  String label;  ///text to display
   
-  //CONSTRUCTORS
+  /////Constructor Methods
+  /////Initialize our instance variables
+  ////Overloaded versions of constructors - unique parameter lists
+  Button(  ){    //default constructor
+   this(20,20,100,100, color(360), color(100),"");   //call constructor with matching input parameters 
+  }
   
-  //add comments
-   Button(float x,float y,float w,float h, color defaultColor, color selectedColor, String label){
-    this.x = x;
+  Button( float _x, float y, float w, float h, color onColor, color offColor, String label){
+    x = _x;   //set value for class variable x, using parameter _x
     this.y = y;
-    this.w = w;
+    this.w = w; 
     this.h = h;
+    selectedColor = onColor;
+    defaultColor = offColor;
+    currentColor = defaultColor;  ///button is off to begin with, so use default color 
     selected = false;
-    this.selectedColor = selectedColor;
-    this.defaultColor = defaultColor;
-    currentColor = defaultColor;
     this.label = label;
   }
   
-  //add comments
-  //button with a single color and a label
-   Button(float x,float y,float w,float h, color selectedColor, String label){
-    this.x = x;
-    this.y = y;
-    this.w = w;
-    this.h = h;
-    selected = false;
-    this.label = label;
-    this.selectedColor = selectedColor;
-    defaultColor = selectedColor;
-    currentColor = defaultColor;
-  }
-  
-  //METHODS
-  
-  // add comments
+////Class Methods
   void display(){
-    pushStyle();
     fill(currentColor);
-     if( selected){
-      stroke(200);
-     }
-    else{
-      stroke(0);
-    }
-    strokeWeight(3);
-    rect( x,y,w,h);
-    fill(150);  //text color
-    textSize(16);
+    rect( x, y, w, h);
+    fill(0); //black
     textAlign(CENTER);
-    text( label, x+ (w/2) , y + h/2);
-    textAlign(LEFT);
-    popStyle();
+    textSize(20);
+    text(label, x + w/2, y + h/2);  //display label
   }
   
-  void updateColor(color selectedColor, color defaultColor){
-    this.selectedColor = selectedColor;
-    this.defaultColor =defaultColor;
-    currentColor = defaultColor;
-  }
-  
-  //sets the button to be on
-  void setActive(){
-       selected = true;
-       currentColor = selectedColor;
-    }
-  
-  //sets the button to be off
-  void reset( ){
-    this.selected = false;
-    currentColor = defaultColor;
-  }
-  
-
-  // add comments
-  void clicked( int mx, int my){
-    if( (mx > x && mx < x + w)  &&( my > y && my < y + h)){
-      if( selected==true){  //if it had been on, now turn off
+  void clicked(int mx, int my){
+    if( mx > x && mx < x+w && my >y && my < y+h){   //button has been clicked
+      if( selected == true){
         selected = false;
         currentColor = defaultColor;
-      }
-      else{
-        selected = true;
-        currentColor = selectedColor;
-        //println("Selected is true");
-      }
+      }else{      //had been selected == false
+         selected = true;
+         currentColor = selectedColor;
+      } //end else
+    }  //end outer if
+  } ///end of clicked
+    
+    //sets the button to off state
+    void reset(){
+       selected = false;
+       currentColor = defaultColor;
     }
-  }
-} // end class Button
+    
+    //allows us to set a button as active via code
+    void setActive(){
+         selected = true;
+         currentColor = selectedColor;
+    }
+    
+
+}  ///end of the Button Class
 ```
 
