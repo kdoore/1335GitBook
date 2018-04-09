@@ -83,6 +83,7 @@ ButtonGroup buttonGroup;
 - switch: check which myMenuArray button is active
          
          ```java
+         
          switch(buttonGroup.activeButton){
          case 0:
              //display pattern 0
