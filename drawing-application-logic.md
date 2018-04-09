@@ -27,8 +27,18 @@ For Project 3, you will create a simple drawing application where 3 buttons allo
     
 ###Global Objects:
 
-    ButtonGroup buttonGroup
-    Button clearButton
+
+
+```java
+  
+Pattern pattern0, pattern1, eraserPattern;
+
+color bkgColor;   //declare global variable
+Button myClearBtn; ///simple Button for Clear
+ButtonGroup buttonGroup; 
+
+```
+
     
     
 ###Logic In Setup:  
