@@ -48,10 +48,10 @@ ButtonGroup buttonGroup;
 - Initialize objects by calling constructors:
        - declare an Array of Buttons //local to setup
        
-          Button[] btnArray; 
+          ```Button[] btnArray; ```
        - initialize Array of Buttons
        
-           btnArray = new Button[3]; 
+           `btnArray = new Button[3]; `
        - initialize each Array element by calling Button Constructor
            
             btnArray[0] = new Button( parameters ); 
