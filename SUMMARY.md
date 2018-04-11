@@ -66,8 +66,7 @@
 ## Project 4
 
 * [Project 4](project-4.md)
-* [ColorChip](project-3-class-definitions/colorchip.md)
-* [ColorScheme](project-3-class-definitions/colorscheme.md)
+
 
 ## Java Syntax
 
