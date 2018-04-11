@@ -37,7 +37,7 @@ class Slider {
   float sliderX;
   float sliderVal;
   String label;
-  float hue, sat, bright; //these need initialized or they are 0;
+ 
 
   Slider( float x, float y, float w, float h, float min, float max, String label) {
     this.x = x;
@@ -47,16 +47,10 @@ class Slider {
     this.min = min;
     this.max = max;
     this.label = label; 
-    hue = 100;
-    sat = 100;
-    bright = 100;
+   
     sliderX = x + (w/2);
     sliderVal = map( sliderX, x, x+w, min, max);
-
-    //provide initialization values to these variables that are used in child classes
-    hue = sliderVal;
-    sat = 100;
-    bright=100;
+    
   }
 
   //display split into 2 methods, the background layer displayes 
