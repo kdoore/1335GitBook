@@ -194,21 +194,42 @@ class SatSlider extends Slider{
 ```
 
 ###Main Tab Code
-Here's how we check the sliders and use the Hue Slider to set the hue value for the SatSlider before we display the SatSlider.
+Here's how we check the sliders and use the Hue Slider to set the hue value for the SatSlider before we display the SatSlider.  The sizeSlider is a base-class type slider.  Notice that the reference variable data type for all sliders is of the base-class type.
 
 ```java
 
-void drawSliders(){
-  slider.display();
-  hueSlider.display();
-  satSlider.hue = hueSlider.sliderVal;  //before drawing sat slider, update hue value
-  satSlider.display();
-}
+Slider sizeSlider,hueSlider, satSlider;
 
-void checkSliders(){
-   slider.checkPressed(mouseX, mouseY);
-   hueSlider.checkPressed(mouseX, mouseY);
-   satSlider.checkPressed(mouseX, mouseY);
-   }
+void setup(){
+  size( 600,600);
+  colorMode(HSB, 360,100,100);
+  
+  // Slider( float x, float y, float w, float h, float min, float max, String label  ){
+ sizeSlider = new Slider( 20, 40, 200, 30, 0, 200, "Size");
+ hueSlider = new HueSlider( 20, 140, 200, 30, 0, 360);
+ satSlider = new SatSlider( 20, 230, 200, 30, 0, 100);
+}  //end of setup
+
+void draw(){
+   background(0);
+   if(mousePressed){
+     sizeSlider.checkPressed(mouseX,mouseY);
+     hueSlider.checkPressed(mouseX,mouseY);
+     satSlider.checkPressed(mouseX,mouseY);
+  }
+  
+  sizeSlider.display();
+  hueSlider.display();
+  satSlider.hue = hueSlider.sliderVal;  //dependency between hue and sat slider
+  satSlider.display();
+  
+  
+  float hue = hueSlider.sliderVal;
+  float size = sizeSlider.sliderVal;
+  float sat = satSlider.sliderVal;
+  fill( hue, sat,100); //use the sliderVal to change the hue of the ellipse
+  ellipse( 400,400, size,size);
+  
+} //end of draw
 
 ```
