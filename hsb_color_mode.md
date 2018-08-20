@@ -41,3 +41,4 @@ In a similar manner, we can use map( ) to determine the hue value based on the x
 ```
    hueValue=map(mouseX, 0, width, 0, 255);
    ```
+
