@@ -1,6 +1,10 @@
 #HSB Color-Wheel
 The images below show 2 color wheels, both color-wheels have an outer ring of full saturation and brightness.  The first color-wheel has saturation reduced toward the center.  The second color-wheel has brightness decreased toward the center.  
 
+The programs use a custom function: drawColorWheel( int size)  that draws a color-wheel using the size input parameter to determine the size of the wheel.  For the images below, the function is called multiple times, each time the brightness or saturation is reduced before each smaller color-wheel is drawn.
+
+Can you change the program below so that both versions of the color-wheel can be shown in a single program?  Hint, use the draw function, have one version drawn if the mouse is pressed, and the other version drawn if the mouse is not pressed.
+
 ![Decreased Saturation](/assets/Screen Shot 2018-08-27 at 6.55.00 AM.png) ![Decreased Brightness](/assets/Screen Shot 2018-08-27 at 6.53.34 AM.png)
 
 
@@ -46,7 +50,8 @@ void drawColorWheel(float size) {
   int numSlices = 360/angleSize; //how many to draw - should be an int
   //loop to draw color arcs to cover full 360 degrees
   for (int i=0; i< numSlices; i++) {
-    hue = (startDegree + (angleSize/2))%360 ; //modulus keeps hue in range <=360
+    //calculate hue for middle position of each arc
+    hue = (startDegree + (angleSize/2))%360 ; //modulus keeps hue in range <=360 
     fill(hue, sat, bright);
     int endDegree = startDegree + angleSize;
     arc( width/2, height/2, size, size, radians(startDegree), radians( endDegree));
