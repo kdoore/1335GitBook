@@ -6,6 +6,7 @@
 
 * [Recursion](recursion.md)
 * [HSB Color Mode](hsb_color_mode.md)
+  * [HSB Color Wheel](hsb_color_mode/hsb-color-wheel.md)
 
 ## Project 1
 
@@ -66,7 +67,6 @@
 ## Project 4
 
 * [Project 4](project-4.md)
-
 
 ## Java Syntax
 
