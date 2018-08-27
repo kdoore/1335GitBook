@@ -1,9 +1,7 @@
-#HSB Color Wheel
-
+#HSB Color-Wheel
+The images below show 2 color wheels, both color-wheels have an outer ring of full saturation and brightness.  The first color-wheel has saturation reduced toward the center.  The second color-wheel has brightness decreased toward the center.  
 
 ![Decreased Saturation](/assets/Screen Shot 2018-08-27 at 6.55.00 AM.png) ![Decreased Brightness](/assets/Screen Shot 2018-08-27 at 6.53.34 AM.png)
-
-
 
 
 ```java
