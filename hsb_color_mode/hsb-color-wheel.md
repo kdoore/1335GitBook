@@ -9,58 +9,57 @@ Can you change the program below so that both versions of the color-wheel can be
 
 
 ```java
-
-//Global variables
-int startDegree = 0;
-int angleSize = 10;
-
-int hue = 0; //start with Red 
-int sat = 100; //start with full saturation
-int bright = 100; //start with full brightness
-
-//initialize
+////Global Variables
+int  sat, bright;
+///for initialization
 void setup() {
-  size( 400, 400);
-  colorMode(HSB, 360, 100, 100); //Hue range 0-360, Sat, Bright range 0-100
-  background(0); //black
+  size( 800, 800);
+  colorMode(HSB, 360, 100, 100);
+  background(0);
+  sat = 100; //initialize to full value saturation
+  bright = 100;
   noStroke();
- 
-} //end setup
-
-
-void draw(){
-  sat = 100;
-  bright=100;
-  drawColorWheel(width);
-  
-  //draw inset wheels with reduced saturation
-  sat = 85;  //reduce saturation
-  drawColorWheel(width * .75);
-  sat = 75; //reduce saturation
-  drawColorWheel(width * .5);
-  sat = 50; //reduce saturation
-  drawColorWheel(width * .25);
-  sat = 25; //reduce saturation
-  drawColorWheel(width * .075);
- 
 }
 
-//Function to draw colorwheel, input size of colorwheel
-void drawColorWheel(float size) {
-  int numSlices = 360/angleSize; //how many to draw - should be an int
-  //loop to draw color arcs to cover full 360 degrees
-  for (int i=0; i< numSlices; i++) {
-    //calculate hue for middle position of each arc
-    hue = (startDegree + (angleSize/2))%360 ; //modulus keeps hue in range <=360 
-    fill(hue, sat, bright);
-    int endDegree = startDegree + angleSize;
-    arc( width/2, height/2, size, size, radians(startDegree), radians( endDegree));
-    
-    //change startDegree for next arc
-    startDegree =(startDegree + angleSize);
-  } //end for-loop
-} //end function
+void draw() {
+  //when mousePressed, show Saturation version
+  if (mousePressed) {
+    bright=100; //make sure bright and sat start at full values for outer circle
+    sat=100;
+    drawColorWheel(width);
+    sat = 75;
+    drawColorWheel(width * .75);
+    sat = 50;
+    drawColorWheel(width * .50);
+    sat = 25;
+    drawColorWheel(width * .25);
+  }else{ //otherwise show brightness variation version
+  sat=100;
+  bright=100;
+  drawColorWheel(width);
+  bright = 75;
+  drawColorWheel(width * .75);
+  bright = 50;
+  drawColorWheel(width * .50);
+  bright = 25;
+  drawColorWheel(width * .25);
+  }
+}
 
+//draws a full color wheel 
+void drawColorWheel( float size   ) {
+  int angleSize=10;    //declare and intialize local variables
+  int startDegree=0;  //used for drawing arc, value changes in loop after each arc is drawn
+  int numSlices = 360/angleSize; ///loop maximum value: how many slices to draw?
+
+  for (int i=0; i < numSlices; i++) {
+    int endDegree = startDegree + angleSize;
+    int hue = startDegree + ( angleSize / 2); //calculate hue for middle of arc
+    fill( hue, sat, bright); //set fill
+    arc( width/2, height/2, size, size, radians(startDegree), radians( endDegree));
+    startDegree += angleSize;  //change startDegree for each new slice to be drawn
+  }
+}
 
 ```
 
