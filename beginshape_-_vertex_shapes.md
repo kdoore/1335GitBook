@@ -31,23 +31,22 @@ For our recursive pattern project, it will be important to create a simple patte
 
 `vertexPattern( length );`
 
-You can see from the image below that if we design our pattern based on points on a square, this becomes straightforward.  For each recursive call, we want to make the length smaller, but keep the center-point location fixed.  Each time we draw the shape, if we use a different value for the length parameter, the shape will be scaled according to that length dimension parameter.
+If we design our pattern based on points on a rectangle, the code below shows this requires us to specify 4 corners as vertex points.  
 
 Defining the shape based on a variable length means that if length=100, it should create a pattern that is 10 times larger than if we'd set length = 10.
 
-For the vertices: if we start in the center, then rotate clockwise, we can determine the vertices as:
+Finally, to simplify further, we can specify the object's position at the canvas origin, (0,0), we can use translate( x, y) for drawing the object at (x, y).
 
-Finally, to simplify further, we can consider that if we translate the origin to the position where we want to draw the pattern, we can consider centerX, centerY as the origin point \(0,0\).
-
-```
+```java
   PShape s = createShape();
   s.beginShape();
-  s.fill( 100, 200, 255, 100 ); 
+  s.fill( 100, 200, 255, 100 ); //set shape's fill
   s.vertex(0,0);
   s.vertex( len, 0);
   s.vertex( len, len);
   s.vertex( 0, len);
   s.endShape(CLOSE);
+  
   shape( s, 0,0);  //this displays the shape on the canvas at point (0,0)
 
 //example shape 2 - Use factor of .5 to scale len parameter
@@ -59,7 +58,12 @@ Finally, to simplify further, we can consider that if we translate the origin to
   s2.vertex( len * .5, len);
   s2.vertex( 0, len);
   s2.endShape( CLOSE);
-  shape( s2, 200, 200);
+  
+  //to draw at location: 200,200, use transform functions
+  pushMatrix();
+  translate( 200,200);//translate origin to 200,200
+  shape( s2, 0, 0); //display 
+  popMatrix();
 ```
 
 ### Custom Draw Rectangles Function using Vertex Points
