@@ -1,8 +1,11 @@
-# Project 1: Vertex Shapes - Recursive Pattern
+#Project 1: Vertex Shapes - Recursive Pattern
 
 The image below shows how we can create a simple polygon using the [Processing PShape, createShape\( \), beginShape\( \), endShape\( \)](https://processing.org/reference/beginShape_.html) functions.
 
-For our recursive pattern project, it will be important to create a simple pattern that can be defined by a location point \(vertex\) and one **length** value.
+#PShape - Processing
+PShape is a wrapper class for shapes in processing.  It provides a class that can be used to create objects using scalable vector graphic images (.svg), processing primitive shape functions, and shapes created by specifying vertex points.  In this project, we'll use the PShapes created by specifying a set of vertex points.  
+
+For our recursive pattern project, it will be important to create a simple pattern that can be defined by a location point \(shape's origin point\) and one **length** value.
 
 `vertexPattern( length );`
 
