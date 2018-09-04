@@ -29,20 +29,39 @@ void vertexPattern( float len){
 ```
 
 
-###Brightness Gradient:  BrightnessMax = LenMax.
+###Gradients:  BrightnessMax = LenMax.
 If we use a gradient for the brightness of an abstract pattern, we can enhance the illusion of depth for 2D designs.  
 
 Since we're using `float len` as an input parameter to determine the size of the shape, we can also use this value of len to help determine a good value to control varying the brightness each time we drawn a shape.  One way to do this is to set the max value for Brightness using the max value for Len:
+
+![](/assets/Screen Shot 2018-09-04 at 12.17.58 PM.png)
 
 ```java
 
 float lenMax;
 void setup(){
-    lenMax = 200;
-    colorMode( HSB, 360, 100, 100 );  
-    vertexPattern( lenMax);
-    vertexPattern( lenMax - 50);
+lenMax = 150;
+colorMode( HSB, 360, 100, 100 );  
+
 }
+
+void draw(){
+//draw vertexPattern at mouse position
+  translate(mouseX, mouseY);
+  recursivePattern(lenMax,5);
+  resetMatrix();
+}
+
+void recursivePattern( float len, int count){
+  if( count< 1){
+    return;
+  }
+  vertexPattern( len);
+  recursivePattern( len*.8, count-1);
+}
+
+//vertex pattern with internal contour
+//and programmatic variation of color
 void vertexPattern( float len){
     PShape s = createShape();
     float bright = map( len, 0, lenMax, 0, 100);
