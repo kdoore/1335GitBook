@@ -111,16 +111,6 @@ We could call the function using an integer variable vertNum=1;  setFill\(vertNu
 
 What would setFill\(int vertNumber\) fuction definition look like?  Could we expand this function definition so that we use set: hue, sat, and brightness within the function using a single vertNum as the input parameter?
 
-We can use frameCount and modulus, to add a timer to the draw loop and \(we can also rotate the pattern each time it is drawn using a similar technique\)
-
-# Framecount as a timer
-
-```java
-if(framecount % 10 == 0){ 
-   //this event occurs every 10 frames
-   //doSomething every 10 frames
-}
-```
 
 # Main Program where Recursive function is used  in draw\( \)
 
@@ -147,4 +137,15 @@ void draw(){
 Once a design has been developed using grayscale color values as show above, then it's very easy using HSB colormode to add hueValues.  Processing using P2D mode as specified in the size\( 600,600, P2D\) supports vertex shaders, where gradient colors are computed for fill\( \) values specified between vertex for PShape objects.
 
 ![](Screenshot 2016-01-24 18.37.32.png)
+
+We can use frameCount and modulus, to add a timer to the draw loop and \(we can also rotate the pattern each time it is drawn using a similar technique\)
+
+# Framecount as a timer
+
+```java
+if(framecount % 10 == 0){ 
+   //this event occurs every 10 frames
+   //doSomething every 10 frames
+}
+```
 
