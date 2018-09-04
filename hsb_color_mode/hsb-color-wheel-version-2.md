@@ -17,7 +17,7 @@ void setup() {
 }
 
 void draw( ) {
-  background(0);
+  background(0); //black background
   if (mousePressed) {
     brightGradientColorWheel(width);
   } else {
@@ -25,6 +25,9 @@ void draw( ) {
   }
 }
 
+//Function to draw 1 full colorWheel 
+//parameter size - control size of colorWheel
+//angleSize = 10 degrees
 void drawColorWheel(float size ) {
   int angleSize = 10;
   int startDegree =0;
@@ -39,6 +42,7 @@ void drawColorWheel(float size ) {
   }
 }// end drawColorWheel
 
+//Function to create 20 nested colorWheels with saturation gradient 
 void satGradientColorWheel( float size){
     bright=100;
     for( int i=100; i>0; i-=5){
@@ -47,6 +51,7 @@ void satGradientColorWheel( float size){
     }
 }
 
+//Function to create 20 nested colorWheels with brightness gradient 
 void brightGradientColorWheel( float size){
     sat=100;
     for( int i=100; i>0; i-=5){
