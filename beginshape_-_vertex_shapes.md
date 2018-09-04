@@ -153,26 +153,31 @@ void draw(){
 
 Once a design has been developed using grayscale color values as show above, then it's very easy using HSB colormode to add hueValues.  Processing using P2D mode as specified in the size\( 600,600, P2D\) supports vertex shaders, where gradient colors are computed for fill\( \) values specified between vertex for PShape objects.
 
-![](Screenshot 2016-01-24 18.37.32.png)
-
+![](/assets/Screen Shot 2018-09-04 at 1.42.09 PM.png)
 ```java
- size(600,600, P2D);
- float len = 100;
-  PShape s = createShape();
-  s.beginShape();
-  s.fill(200, 100, 100 );      // blue, HSB
-  s.vertex( 0, 0 );               //point origin
-  s.fill(200, 100, 90 );      // blue, HSB
-  s.vertex( len *.4, 0 );          //point(40,0)
-  s.fill(200, 100, 80 );      // blue, HSB
-  s.vertex( len *.6, len*.6 );    //point(60,60);
-  s.fill(200, 100, 70 );      // blue, HSB
-  s.vertex( 0, len *.4 );         //point(0,40);
-  s.fill(200, 100, 60 );      // blue, HSB
-  s.vertex( 0, 0 );
-  s.endShape(CLOSE);             //end shape
-  shape(s, 0, 0);
+size(600,600, P2D);
+colorMode(HSB, 360,100,100);
+fill(0);
+float len = 100;
+rect(0,0,len, len);
+PShape s = createShape();
+s.beginShape();
+s.fill(200, 100, 100 ); // blue, HSB
+s.vertex( 0, 0 ); //point origin
+s.fill(200, 100, 80 ); // blue, HSB
+s.vertex( len *.4, 0 ); //point(40,0)
+s.fill(200, 100, 60 ); // blue, HSB
+s.vertex( len *.6, len*.6 ); //point(60,60);
+s.fill(200, 100, 40 ); // blue, HSB
+s.vertex( 0, len *.4 ); //point(0,40);
+s.fill(200, 100, 20 ); // blue, HSB
+s.vertex( 0, 0 );
+s.endShape(CLOSE); //end shape
+shape(s, 0, 0);
 ```
+###Vertex Shading Example
+The image below uses fill variation between each vertex, as shown above, to create enhanced depth for the pattern. 
+![](Screenshot 2016-01-24 18.37.32.png)
 
 
 ### Framecount as a timer - Option
