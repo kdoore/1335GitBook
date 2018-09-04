@@ -2,7 +2,6 @@
 
 Using HSB ColorMode allows us to configure and modify colors in our programs based changing values for the Hue, Saturation, or Brightness.
 
-
 ###Gradients:  Brightness Max = LenMax.
 If we use a gradient for the brightness of an abstract pattern, we can enhance the illusion of depth for 2D designs.  
 
