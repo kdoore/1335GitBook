@@ -15,13 +15,13 @@ The code below shows that PShape can have an inner cutout created using the begi
  PShape s = createShape();
   s.beginShape();
   s.fill(200, 100,100 ); //HSB - blue full sat, bright
-  s.vertex( 0,0); //point1 for outer shape
+  s.vertex( 0,0); //point1 for outer shape (clock-wise rotation for drawing points)
   s.vertex( len*.4,0);
   s.vertex( len*.6, len*.6);
   s.vertex( 0, len*.4);
   s.vertex( 0,0); //last point for outer shape
  
-   ////start of inner cutout
+   ////start of inner cutout - counter-clockwise ordering
   s.beginContour(); //make internal cutout 
   s.vertex( len*.25,len*.45); //inner cutouts
   s.vertex(len*.5, len*.5);
