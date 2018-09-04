@@ -9,6 +9,9 @@ The image above shows an intricate pattern created using a recursive function an
 ###PShape with Contour
 The code below shows that PShape can have an inner cutout created using the beginContour(), endContour() functions.  The vertex points specified within those 2 functions will be cut-out of the larger shape that was specified before the beginContour() function.
 
+
+
+```java
  PShape s = createShape();
   s.beginShape();
   s.fill(200, 100,100 ); //HSB - blue full sat, bright
@@ -27,3 +30,6 @@ The code below shows that PShape can have an inner cutout created using the begi
   
   s.endShape(CLOSE); //end shape
   shape( s, 0,0);  //this displays the shape on the canvas at point (0,0)
+
+```
+
