@@ -26,12 +26,15 @@ The recursive function: `recursivePattern(length, level)` takes 2 input paramete
 ```java
 void Draw(){  //use processing Draw function
     if ( mousePressed){
-    //draw a pattern 
+    //Draw a Pattern at the Origin
+        translate(mouseX, mouseY); //move origin to mouse position
+        recursivePattern( 100, 5); //draw 5 nested patterns
+        resetMatrix();  //move origin back to upper-left corner 
     }
 }
 ```
 
-    - Draw a Pattern: move the canvas origin to the current mouse position. 
+    - **Draw a Pattern at Origin:** move the canvas origin to the current mouse position. 
   
 ```java
     translate(mouseX, mouseY);
