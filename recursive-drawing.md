@@ -155,7 +155,7 @@ void setup(){
   
   //define recursive function
   void recursivePattern( float length, int level){
-    if ( level < 5 ){  //test for termination
+    if ( level < 1 ){  //test for termination
       return; //termination condition is true
     }
     float hueVal = map( length, lenMin, lenMax, 130, 160);
