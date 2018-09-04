@@ -4,7 +4,6 @@ The image below shows how we can create a simple polygon using the [Processing P
 
 For the code below, we've created a variable: length, which we'll use to constrain the shape to a rectangle of (length x length ) dimensions.  The points must be ordered in clockwise direction, starting from point at the beginning of the shape, listing all intermediate vertices, and ending with s.endShape( CLOSE) if we want the shape to have a colored fill.
 
-Then we declare our PShape object:  s, and ini
 
 ![](/assets/Screen Shot 2018-09-04 at 1.47.47 PM.png)
 
@@ -25,9 +24,8 @@ Then we declare our PShape object:  s, and ini
 ```
 
 
-
 #PShape - Processing
-PShape is a wrapper class for shapes in processing.  It provides a class that can be used to create objects using scalable vector graphic images (.svg), processing primitive shape functions, and shapes created by specifying vertex points.  In this project, we'll use the PShapes created by specifying a set of vertex points.  Processing expects the points to be specified in a clockwise rotating pattern.
+[PShape](https://processing.org/reference/PShape.html) is a wrapper class for shapes in processing.  It provides a class that can be used to create objects using scalable vector graphic images (.svg), processing primitive shape functions, and shapes created by specifying vertex points.  In this project, we'll use the PShapes created by specifying a set of vertex points.  Processing expects the points to be specified in a clockwise rotating pattern.
 
 For our recursive pattern project, it will be important to create a simple pattern that can be defined by a location point \(shape's origin point\) and one **length** value.
 
