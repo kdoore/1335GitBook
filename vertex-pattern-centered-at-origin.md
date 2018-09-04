@@ -1,4 +1,4 @@
-#Vertex Pattern Centered at the Origin
+#Option: Vertex Pattern Centered at the Origin
 
 If we want a Vertex Pattern centered at the origin, so that each time we call the `vertexPattern( len ) `function, with a different value for the `len parameter`, we'll have a concentric set of shapes, then we need to define our vertex pattern with it's center point at ( 0, 0).  This means that if the pattern is drawn at the canvas origin, only the lower-right quadrant of our design will show.  For this project, that's ok, since we'll be drawing the pattern at the current mouse position.   
 
