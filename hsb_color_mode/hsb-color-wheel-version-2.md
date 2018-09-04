@@ -33,7 +33,7 @@ void drawColorWheel(float size ) {
   int startDegree =0;
   int numSlices = 360/angleSize;
   noStroke();
-  for (int i = 0; i< numSlices; i++) { //should this be <=?
+  for (int i = 0; i< numSlices; i++) { 
     int endDegree = startDegree + angleSize;
     hue = startDegree + (angleSize/2);
     fill( hue, sat, bright);
@@ -47,7 +47,7 @@ void satGradientColorWheel( float size){
     bright=100;
     for( int i=100; i>0; i-=5){
       sat = i;
-      drawColorWheel(size * i/100.0); 
+      drawColorWheel(size * i/100.0); //what happens if we use 100 on bottom instead of 100.0? We'll have (size * 0)
     }
 }
 
@@ -56,7 +56,8 @@ void brightGradientColorWheel( float size){
     sat=100;
     for( int i=100; i>0; i-=5){
       bright = i;
-      drawColorWheel(size * i/100.0); 
+      drawColorWheel(size * i/100.0); //what happens if we use 100 on bottom instead of 100.0? We'll have (size * 0)
+
     }
 }
 ```
