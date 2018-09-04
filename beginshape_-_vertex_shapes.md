@@ -1,6 +1,25 @@
-#Project 1: Vertex Shapes - Recursive Pattern
+#Project 1: PShapes - Recursive Pattern
 
 The image below shows how we can create a simple polygon using the [Processing PShape, createShape\( \), beginShape\( \), endShape\( \)](https://processing.org/reference/beginShape_.html) functions.
+
+![](/assets/Screen Shot 2018-09-04 at 1.32.53 PM.png)
+
+
+
+```java
+ float len = 100;
+  PShape s = createShape();
+  s.beginShape();
+  s.fill(200, 100, 100 );      // blue, HSB
+  s.vertex( 0, 0 );               //point origin
+  s.vertex( len *.4, 0 );          //point(40,0)
+  s.vertex( len *.6, len*.6 );    //point(60,60);
+  s.vertex( 0, len *.4 );         //point(0,40);
+  s.vertex( 0, 0 );
+  s.endShape(CLOSE);             //end shape
+```
+
+
 
 #PShape - Processing
 PShape is a wrapper class for shapes in processing.  It provides a class that can be used to create objects using scalable vector graphic images (.svg), processing primitive shape functions, and shapes created by specifying vertex points.  In this project, we'll use the PShapes created by specifying a set of vertex points.  
