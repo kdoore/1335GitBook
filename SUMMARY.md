@@ -7,6 +7,7 @@
 * [Recursion](recursion.md)
 * [HSB Color Mode](hsb_color_mode.md)
   * [HSB Color Wheel](hsb_color_mode/hsb-color-wheel.md)
+  * [HSB Color Wheel - Version 2](hsb_color_mode/hsb-color-wheel-version-2.md)
 
 ## Project 1
 

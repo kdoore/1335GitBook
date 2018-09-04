@@ -26,7 +26,8 @@ void draw() {
   if (mousePressed) {
     bright=100; //make sure bright and sat start at full values for outer circle
     sat=100;
-    drawColorWheel(width);
+    //How can we simplify this repetitive code using a custom function with a loop?
+    drawColorWheel(width); 
     sat = 75;
     drawColorWheel(width * .75);
     sat = 50;
@@ -36,6 +37,7 @@ void draw() {
   }else{ //otherwise show brightness variation version
   sat=100;
   bright=100;
+  //How can we simplify this repetitive code using a custom function with a loop?
   drawColorWheel(width);
   bright = 75;
   drawColorWheel(width * .75);
