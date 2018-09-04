@@ -21,7 +21,7 @@ The recursive function: `recursivePattern(length, level)` takes 2 input paramete
 
 ### Main Program Structure
 
-1. When the user presses the mouse
+    - When the user presses the mouse
 
 ```java
 void Draw(){  //use processing Draw function
@@ -31,32 +31,33 @@ void Draw(){  //use processing Draw function
 }
 ```
 
-2. Move the canvas origin to the current mouse position. 
+    - Draw a Pattern: move the canvas origin to the current mouse position. 
   
-    ```java
+```java
     translate(mouseX, mouseY);
-     ```
+ ```
 
-3. Draw some pattern based on ``length`` parameter, by **calling** the recursive function: recursivePattern( );
+    - Draw some pattern based on ``length`` parameter, by **calling** the recursive function: recursivePattern( );
     
 ```java 
         
     recursivePattern( 100, 5); //Recursive Pattern Called 
 ```
        
-4. Move Origin back to upper left corner
-     ```java
+    - Move Origin back to upper left corner
+
+ ```java
     resetMatrix();
-    ```
+```
 
 ### Define Recursive Function
 Here we **define** a recursive function: `recursivePattern` so that it calls itself for `level` number of times, with a `length` parameter that determines the pattern size:
 
-    ```java
+```java
         
     void recursivePattern( float length, int level) {
     
-    ```
+```
         
 1. We need to add a **test for the termination condition **as the first task in the function:     
         
@@ -104,7 +105,7 @@ void recursivePattern( float length, int level) {
     recursivePattern( length * 0.8, level - 1 );  
 }
 ```
-###Example 2:  Recursive Function
+###Example 2:  Recursive Function Variation
 Below is a slight variation on the recursive function, here we're using a global variable: lenMin to determine when to terminate the recursion.  In addition, we're using global variables to determine the fill values for Hue and Brightness, where we'll set colorMode in the setup function:   colorMode(HSB, 360, 100, 100);
 
 
@@ -131,8 +132,8 @@ float lenMax = 100;
 Here's a simple program that defines and uses a recursive function to create a pattern. In this case, we're just creating a rectangle as our recursive task. Notice that in this case we are using global variables: lenMin, lenMax as the range values for the Map( ) function which is determining the fill for the rectangle.  Also, lenMin is used as the termination test conditional expression.
 
 ```java
-float lenMax = 100;
-float lenMin = 30;
+float lenMax  = 100.0;
+float lenMin = 20;
 
 void setup(){
   size( 600,600);
@@ -142,21 +143,23 @@ void setup(){
   void draw(){
     if(mousePressed){
       translate(mouseX, mouseY); 
-          recursivePattern( lenMax );   //call recursive function
+          
+          int numLevels = 5;
+          recursivePattern( len, numLevels );   //call recursive function
       resetMatrix();
     }
   }
   
   //define recursive function
-  void recursivePattern( float length){
-    if ( length < lenMin ){  //test for termination
+  void recursivePattern( float length, int level){
+    if ( level < 5 ){  //test for termination
       return; //termination condition is true
     }
     float hueVal = map( length, lenMin, lenMax, 130, 160);
     float brightVal = map( length, lenMin, lenMax, 0, 100); 
     fill( hueVal, 100, brightVal, 100); //alpha is 100 
     rect( 0, 0, length, length);  //draw a pattern based on length parameter - Replace this with a call to your vertexPattern( length ) function
-    recursivePattern( length * 0.8 ); //call recursive function
+    recursivePattern( length * 0.8, level-1 ); //call recursive function
     }
     
     ```
@@ -167,12 +170,12 @@ In the code below, we're calling our vertexPattern function inside the recursive
 ```java
 
 //define recursive function
-void recursivePattern( float length){
+void recursivePattern( float length, int level){
     if ( length < lenMin ){ //test for termination
      return; //termination condition is true
     }
-    vertexPattern( length );
-    recursivePattern( length - 20 ); //call recursive function
+    vertexPattern( length ); //your custom vertexPattern
+    recursivePattern( length - 20, level-1 ); //call recursive function
 }
 ```
 
