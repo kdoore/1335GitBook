@@ -13,6 +13,7 @@
 
 * [Project 1: Vertex Shapes - RecursivePattern](beginshape_-_vertex_shapes.md)
   * [Vertex Pattern Centered at Origin](vertex-pattern-centered-at-origin.md)
+  * [PShape with Cutout - Inner Contour](pshape-with-cutout-inner-contour.md)
 * [Project 1: Recursive Drawing](recursive-drawing.md)
 * [Project 1: Programmatic Variations in Color](programmatic-variations-in-color.md)
 
