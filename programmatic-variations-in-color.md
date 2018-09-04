@@ -39,20 +39,28 @@ Since we're using `float len` as an input parameter to determine the size of the
 float lenMax;
 void setup(){
     lenMax = 200;
-    colorMode( HSB, 360, 100, lenMax );  //use max value: lenMax to set max value for Brightness in setup
+    colorMode( HSB, 360, 100, 100 );  
     vertexPattern( lenMax);
     vertexPattern( lenMax - 50);
 }
 void vertexPattern( float len){
     PShape s = createShape();
+    float bright = map( len, 0, lenMax, 0, 100);
+    float hue = map( mouseX, 0, width, 200, 300);
     s.beginShape();
-    s.fill(0, 100, len );// fully saturated red color, with brightness dependent on the len input parameter.
+    s.fill(hue, 100, bright  );// fully saturatedcolor, with brightness dependent on the len input parameter.
     s.vertex( 0,0);
-    s.vertex( len/4,0);
-    s.vertex( len/2, len/2);
-    s.vertex( 0, len/4);
-    s.endShape( CLOSE);
-    shape( s, 0, 0);
+    s.vertex( len*.4,0);
+    s.vertex( len*.6, len*.6);
+    s.vertex( 0, len*.4);
+    s.vertex( 0,0);
+    s.beginContour(); //make internal cutout 
+    s.vertex( len*.25,len*.45);
+    s.vertex(len*.5, len*.5);
+    s.vertex( len*.45, len*.25);
+    s.endContour(); //end internal cutout
+    s.endShape(CLOSE); //end shape
+    shape( s, 0,0);  //this displays the shape on the canvas at point (0,0)
 }
 
 ```
