@@ -147,7 +147,7 @@ void draw(){
 
 ![](Screenshot 2016-01-23 23.43.26.png)
 
-# HSB Colormode - Set Fill at the Vertex Level
+###HSB Colormode - Set Fill at the Vertex Level - Option
 
 Once a design has been developed using grayscale color values as show above, then it's very easy using HSB colormode to add hueValues.  Processing using P2D mode as specified in the size\( 600,600, P2D\) supports vertex shaders, where gradient colors are computed for fill\( \) values specified between vertex for PShape objects.
 
@@ -155,7 +155,7 @@ Once a design has been developed using grayscale color values as show above, the
 
 We can use frameCount and modulus, to add a timer to the draw loop and \(we can also rotate the pattern each time it is drawn using a similar technique\)
 
-# Framecount as a timer
+### Framecount as a timer - Option
 
 ```java
 if(framecount % 10 == 0){ 
