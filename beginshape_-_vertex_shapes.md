@@ -2,9 +2,7 @@
 
 The image below shows how we can create a simple polygon using the [Processing PShape, createShape\( \), beginShape\( \), endShape\( \)](https://processing.org/reference/beginShape_.html) functions.
 
-![](/assets/Screen Shot 2018-09-04 at 1.32.53 PM.png)
-
-
+![](/assets/Screen Shot 2018-09-04 at 1.47.47 PM.png)
 
 ```java
  float len = 100;
@@ -155,11 +153,9 @@ Once a design has been developed using grayscale color values as show above, the
 
 ![](/assets/Screen Shot 2018-09-04 at 1.42.09 PM.png)
 ```java
-size(600,600, P2D);
+size(600,600, P2D); //vertex shading using P2D
 colorMode(HSB, 360,100,100);
-fill(0);
 float len = 100;
-rect(0,0,len, len);
 PShape s = createShape();
 s.beginShape();
 s.fill(200, 100, 100 ); // blue, HSB
