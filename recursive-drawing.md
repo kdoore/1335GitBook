@@ -12,8 +12,7 @@ When writing recursive functions there are several factors to consider:
 4. Determine whether the function task should be performed before or after the recursive call. 
 5. Insure that input parameters to the recursive function provide all information needed at each step, and be careful when modifying values passed as arguments. 
 6. Be aware that each instance of a recursive function call causes a unique instance of the function's code to be placed on the `call-stack`, this can potentially cause stack-overflow errors if the program runs out of available program-execution memory space.
-    
-    
+       
 
 ###Recursive Pattern Drawing Application 
 
@@ -177,7 +176,7 @@ void recursivePattern( float length, int level){
     if ( length < lenMin ){ //test for termination
      return; //termination condition is true
     }
-    vertexPattern( length ); //your custom vertexPattern
+    vertexShape( length ); //your custom vertexPattern
     recursivePattern( length - 20, level-1 ); //call recursive function
 }
 ```
