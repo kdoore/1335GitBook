@@ -6,7 +6,6 @@
 The code below shows that PShape can have an inner cutout created using the beginContour(), endContour() functions.  The vertex points specified within those 2 functions will be cut-out of the larger shape that was specified before the beginContour() function.
 
 
-
 ```java
   PShape s = createShape();
   s.beginShape();

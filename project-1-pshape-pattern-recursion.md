@@ -9,9 +9,9 @@ In the code below, we define a Recursive function: `recursivePattern()` that cre
  ###vertexShape( float len)  function
 
 ```java
-    //Draws one pattern each time it is called
-    //pattern size is determined by input parameter: len
-    void vertexPattern( float len){
+    //Draws one PShape each time it is called
+    //PShape size is determined by input parameter: len
+    void vertexShape( float len){
         PShape s = createShape();
         s.beginShape();
         s.fill( 255, 200, 255, 100 ); //rgb with alpha
@@ -39,8 +39,6 @@ In the code below, we define a Recursive function: `recursivePattern()` that cre
         recursivePattern( length - 20, level -1 ); //recursive call
     }
 ```
-
-
 ### Program using recursivePattern
 
 ```java
