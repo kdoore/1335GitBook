@@ -1,4 +1,4 @@
-#vertexPattern and recursivePattern
+#vertexShape and recursivePattern
 
 In the code below, we define a Recursive function: `recursivePattern()` that creates repeated versions of the vertexPattern.  
     - parameter: float length - size of the pattern
@@ -6,7 +6,7 @@ In the code below, we define a Recursive function: `recursivePattern()` that cre
     - recursivePattern() defines the repetition structure
     - vertexPattern( ) is the task that is repeated
  
- ###vertexPattern( float len)  function
+ ###vertexShape( float len)  function
 
 ```java
     //Draws one pattern each time it is called
@@ -35,7 +35,7 @@ In the code below, we define a Recursive function: `recursivePattern()` that cre
         if(level <1 ) { //termination condition
             return; //stop function execution by returning from the function
         }
-        vertexPattern( length); //- task - draws 1 instance of the pattern
+        vertexShape( length); //- task - draws 1 instance of the pattern
         recursivePattern( length - 20, level -1 ); //recursive call
     }
 ```
@@ -71,7 +71,7 @@ Once a design has been developed using grayscale color values as show above, the
         //float len = 100;
         
         //reducing brightness value between vertex points
-        void vertexPattern(float len){
+        void vertexShape(float len){
             PShape s = createShape();
             s.beginShape();
             s.fill(200, 100, 100 ); // blue, HSB
