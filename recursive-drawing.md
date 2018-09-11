@@ -166,8 +166,8 @@ void setup(){
     
     ```
 
-###Recursive Pattern with VertexPattern
-In the code below, we're calling our vertexPattern function inside the recursivePattern, so the color logic will need to be moved to inside our vertexPattern function.  Each time we call recursivePattern, we have reduced the size of the length parameter.
+###Recursive Pattern with VertexShape
+In the code below, we're calling our vertexShape function inside the recursivePattern, so the color logic will need to be moved to inside our vertexShape function.  Each time we call recursivePattern, we have reduced the size of the length parameter.
 
 ```java
 
