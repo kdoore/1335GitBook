@@ -1,58 +1,61 @@
-#recursivePattern and vertexPattern
+#vertexPattern and recursivePattern
 
 In the code below, we define a Recursive function: `recursivePattern()` that creates repeated versions of the vertexPattern.  
     - parameter: float length - size of the pattern
     - parameter: float level - controls number of repeats - insures termination 
     - recursivePattern() defines the repetition structure
     - vertexPattern( ) is the task that is repeated
-   
+ 
+ ###vertexPattern( float len)  function
+
+```java
+    //Draws one pattern each time it is called
+    //pattern size is determined by input parameter: len
+    void vertexPattern( float len){
+        PShape s = createShape();
+        s.beginShape();
+        s.fill( 255, 200, 255, 100 ); //rgb with alpha
+        s.vertex(0,0);
+        s.vertex( len, 0);
+        s.vertex( len, len);
+        s.vertex( len * .5, len * .5);
+        s.vertex( 0, len);
+        s.endShape(CLOSE);
+        shape( s, 0,0); //this displays the shape at the origin
+    }
+```
+  
 ###recursivePattern( float length, float level ) function
 ```java
-//recursive function to draw nested patterns
-//length is input as largest size, smaller patterns are drawn with each recursive call
-//level determines how many patterns are drawn
-//level MUST be decremented in each recursive call to insure termination
-void recursivePattern( float length, float level){
-if(level <1 ) { //termination condition
-return; //stop function execution by returning from the function
-}
-vertexPattern( length); //- task - draws 1 instance of the pattern
-recursivePattern( length - 20, level -1 ); //recursive call
-}
+    //recursive function to draw nested patterns
+    //length is input as largest size, smaller patterns are drawn with each recursive call
+    //level determines how many patterns are drawn
+    //level MUST be decremented in each recursive call to insure termination
+    void recursivePattern( float length, float level){
+        if(level <1 ) { //termination condition
+            return; //stop function execution by returning from the function
+        }
+        vertexPattern( length); //- task - draws 1 instance of the pattern
+        recursivePattern( length - 20, level -1 ); //recursive call
+    }
 ```
 
-###vertexPattern( float len)  function
-```java
-//Draws one pattern each time it is called
-//pattern size is determined by input parameter: len
-void vertexPattern( float len){
-PShape s = createShape();
-s.beginShape();
-s.fill( 255, 200, 255, 100 ); //rgb with alpha
-s.vertex(0,0);
-s.vertex( len, 0);
-s.vertex( len, len);
-s.vertex( len * .5, len * .5);
-s.vertex( 0, len);
-s.endShape(CLOSE);
-shape( s, 0,0); //this displays the shape at the origin
-}
-```
+
 ### Program using recursivePattern
 
 ```java
 float length=150;
 
 void setup(){
-size( 600,600); //use size(600,600,P2D) if possible
+    size( 600,600); //use size(600,600,P2D) if possible
 }
 
 void draw(){
-if(mousePressed){
-    translate(mouseX, mouseY);
-    recursivePattern( length,5); //here level is initialized at 5 because we decrement it inside the recursive function
-    resetMatrix();
-}
+    if(mousePressed){
+        translate(mouseX, mouseY);
+        recursivePattern( length,5); //here level is initialized at 5 because we decrement it inside the recursive function
+        resetMatrix();
+    }
 }
 ```
 
