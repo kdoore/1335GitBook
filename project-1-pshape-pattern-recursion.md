@@ -39,7 +39,7 @@ In the code below, we define a Recursive function: `recursivePattern()` that cre
         recursivePattern( length - 20, level -1 ); //recursive call
     }
 ```
-### Program using recursivePattern
+### Program using recursivePattern function
 
 ```java
 float length=150;
