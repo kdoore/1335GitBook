@@ -12,7 +12,7 @@ The code below shows that PShape can have an inner cutout created using the begi
 
 
 ```java
- PShape s = createShape();
+  PShape s = createShape();
   s.beginShape();
   s.fill(200, 100,100 ); //HSB - blue full sat, bright
   s.vertex( 0,0); //point1 for outer shape (clock-wise rotation for drawing points)
