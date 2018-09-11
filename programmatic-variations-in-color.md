@@ -22,7 +22,7 @@ void setup(){
 }
 
 void draw(){
-    //draw vertexPattern at mouse position
+    //draw nested vertexShapes at mouse position
       translate(mouseX, mouseY);
       recursivePattern(lenMax,5);
       resetMatrix();
@@ -32,13 +32,13 @@ void recursivePattern( float len, int count){
   if( count< 1){
     return;
   }
-  vertexPattern( len);
+  vertexShape( len);
   recursivePattern( len*.8, count-1);
 }
 
 //vertex pattern with internal contour
 //and programmatic variation of color
-void vertexPattern( float len){
+void vertexShape( float len){
     PShape s = createShape();
     float bright = map( len, 0, lenMax, 0, 100);
     float hue = map( mouseX, 0, width, 200, 300);
