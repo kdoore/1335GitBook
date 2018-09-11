@@ -91,8 +91,14 @@ Once a design has been developed using grayscale color values as show above, the
         }
 ```
 ###Vertex Shading Example
-The image below uses fill variation between each vertex, as shown above, to create enhanced depth for the pattern.
+
 ![](Screenshot 2016-01-24 18.37.32.png)
+
+
+The image above uses fill variation between each vertex, as shown above, to create enhanced depth for the pattern.
+
+If we use the processing P2D rendering context, we can set a different fill value and stroke value for each vertex, this allows us to create visual depth in the pattern. When incorporated into a simple recursive function this can create interesting complex images.  
+P2D might not work on some computers, if not, then just use regular: size\(600,600\);.  You will need to create an interesting pattern using fill outside of the beginShape\(\) function that impacts the entire shape.
 
 
 ### Framecount as a timer - Option

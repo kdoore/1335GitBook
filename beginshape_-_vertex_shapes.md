@@ -1,5 +1,10 @@
 #Project 1: PShapes  
 
+
+#PShape - Processing
+[PShape](https://processing.org/reference/PShape.html) is a wrapper class for shapes in processing. It provides a class that can be used to create objects using scalable vector graphic images (.svg), processing primitive shape functions, and shapes created by specifying vertex points. In this project, we'll use the PShapes created by specifying a set of vertex points. Processing expects the points to be specified in a clockwise rotating pattern.
+
+
 The image below shows how we can create a simple polygon using the [Processing PShape, createShape\( \), beginShape\( \), endShape\( \)](https://processing.org/reference/beginShape_.html) functions.
 
 For the code below, we've created a variable: length, which we'll use to constrain the shape to a rectangle of (length x length ) dimensions.  The points must be ordered in clockwise direction, starting from point at the beginning of the shape, listing all intermediate vertices, and ending with s.endShape( CLOSE) if we want the shape to have a colored fill.
@@ -22,10 +27,6 @@ For the code below, we've created a variable: length, which we'll use to constra
   
   shape(s, 0,0); //display shape at origin
 ```
-
-
-#PShape - Processing
-[PShape](https://processing.org/reference/PShape.html) is a wrapper class for shapes in processing.  It provides a class that can be used to create objects using scalable vector graphic images (.svg), processing primitive shape functions, and shapes created by specifying vertex points.  In this project, we'll use the PShapes created by specifying a set of vertex points.  Processing expects the points to be specified in a clockwise rotating pattern.
 
 For our recursive pattern project, it will be important to create a simple pattern that can be defined by a location point \(shape's origin point\) and one **length** value.
 
@@ -94,6 +95,4 @@ void drawRectangle( float xWidth, float yHeight){
 ```
 
 
-If we use the processing P2D rendering context, we can set a different fill value and stroke value for each vertex, this allows us to create visual depth in the pattern. When incorporated into a simple recursive function this can create interesting complex images.  
-P2D might not work on some computers, if not, then just use regular: size\(600,600\);.  You will need to create an interesting pattern using fill outside of the beginShape\(\) function that impacts the entire shape.
 
