@@ -6,7 +6,7 @@ In the code below, we define a Recursive function: `recursivePattern()` that cre
     - recursivePattern() defines the repetition structure
     - vertexPattern( ) is the task that is repeated
    
-###recursivePattern function
+###recursivePattern( float length, float level ) function
 ```java
 //recursive function to draw nested patterns
 //length is input as largest size, smaller patterns are drawn with each recursive call
@@ -21,7 +21,7 @@ recursivePattern( length - 20, level -1 ); //recursive call
 }
 ```
 
-###vertexPattern function
+###vertexPattern( float len)  function
 
 ```java
 //Draws one pattern each time it is called
@@ -39,14 +39,7 @@ s.endShape(CLOSE);
 shape( s, 0,0); //this displays the shape at the origin
 }
 ```
-
-If we look at the fill\( grayScaleVal, alphaVal\) in the drawSimpleShape\(\) function, we can see a simple pattern, we're increasing the value of grayScaleVal, it increases between each call: 25, 75,150,200,250. We want to have it change based on the number of vertices in our shape, and it should increase each time we call it. This suggests we should create a function: setFill\( int vertexNumber\);  
-We could call the function using an integer variable vertNum=1; setFill\(vertNum++\).
-
-What would setFill\(int vertNumber\) fuction definition look like? Could we expand this function definition so that we use set: hue, sat, and brightness within the function using a single vertNum as the input parameter?
-
-
-#Example Program using recursivePattern, vertexPattern
+### Program using recursivePattern
 
 ```java
 float length=150;
