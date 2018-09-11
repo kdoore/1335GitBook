@@ -1,9 +1,5 @@
 #PShape with Cut-out, Inner-contour
 
-![](/assets/Screen Shot 2018-09-04 at 12.17.58 PM.png)
-
-The image above shows an intricate pattern created using a recursive function and a PShape that has an inner cut-out, contour.
-
 ![](/assets/Screen Shot 2018-09-04 at 12.22.32 PM.png)
 
 ###PShape with Contour
@@ -32,4 +28,10 @@ The code below shows that PShape can have an inner cutout created using the begi
   shape( s, 0,0);  //this displays the shape on the canvas at point (0,0)
 
 ```
+###Repeat Pattern using PShape with contour
+The image below shows an intricate pattern created using a recursive function and a PShape that has an inner cut-out, contour.
+
+![](/assets/Screen Shot 2018-09-04 at 12.17.58 PM.png)
+
+
 
