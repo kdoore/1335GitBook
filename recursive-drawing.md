@@ -19,9 +19,9 @@ When writing recursive functions there are several factors to consider:
 
 The recursive function: `recursivePattern(length, level)` takes 2 input parameters: `length` controls the size of the rectangle and `level`, which controls the number of concentric rectangles drawn.  By adding slight random variation in the rotation angle, rectangle size, and hueValue of the fill and stroke for each drawn rectangle, the user can create a unique artwork each time they run the program.  The hueValue can be mapped to the `x` position of the mouse.  Using the `Hue, Saturation, Brightness: colorMode(HSB)` allows for slight random variations of the hueValue to give slight variations in the hue of the drawn pattern.  
 
-### Main Program Structure
+### Overview:  Main Program Structure
 
-    - When the user presses the mouse
+    - **If the user is pressing the mouse** 
 
 ```java
 void Draw(){  //use processing Draw function
@@ -34,7 +34,7 @@ void Draw(){  //use processing Draw function
 }
 ```
 
-    - **Draw a Pattern at Origin:** move the canvas origin to the current mouse position. 
+    - **Draw a Pattern (drawn at origin):** move the canvas origin to the current mouse position. 
   
 ```java
     translate(mouseX, mouseY);
@@ -93,7 +93,7 @@ Here we **define** a recursive function: `recursivePattern` so that it calls its
 
 
    
-**Complete Recursive Function  ** 
+###Complete Recursive Function Definition
  
 
 ```java
