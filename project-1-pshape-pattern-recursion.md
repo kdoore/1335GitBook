@@ -67,23 +67,28 @@ Once a design has been developed using grayscale color values as show above, the
 
 ![](/assets/Screen Shot 2018-09-04 at 1.42.09 PM.png)
 ```java
-size(600,600, P2D); //vertex shading using P2D
-colorMode(HSB, 360,100,100);
-float len = 100;
-PShape s = createShape();
-s.beginShape();
-s.fill(200, 100, 100 ); // blue, HSB
-s.vertex( 0, 0 ); //point origin
-s.fill(200, 100, 80 ); // blue, HSB
-s.vertex( len *.4, 0 ); //point(40,0)
-s.fill(200, 100, 60 ); // blue, HSB
-s.vertex( len *.6, len*.6 ); //point(60,60);
-s.fill(200, 100, 40 ); // blue, HSB
-s.vertex( 0, len *.4 ); //point(0,40);
-s.fill(200, 100, 20 ); // blue, HSB
-s.vertex( 0, 0 );
-s.endShape(CLOSE); //end shape
-shape(s, 0, 0);
+   
+        //size(600,600, P2D); //vertex shading using P2D
+        //colorMode(HSB, 360,100,100);
+        //float len = 100;
+        
+        //reducing brightness value between vertex points
+        void vertexPattern(float len){
+            PShape s = createShape();
+            s.beginShape();
+            s.fill(200, 100, 100 ); // blue, HSB
+            s.vertex( 0, 0 ); //point origin
+            s.fill(200, 100, 80 ); // blue, HSB
+            s.vertex( len *.4, 0 ); //point(40,0)
+            s.fill(200, 100, 60 ); // blue, HSB
+            s.vertex( len *.6, len*.6 ); //point(60,60);
+            s.fill(200, 100, 40 ); // blue, HSB
+            s.vertex( 0, len *.4 ); //point(0,40);
+            s.fill(200, 100, 20 ); // blue, HSB
+            s.vertex( 0, 0 );
+            s.endShape(CLOSE); //end shape
+            shape(s, 0, 0);
+        }
 ```
 ###Vertex Shading Example
 The image below uses fill variation between each vertex, as shown above, to create enhanced depth for the pattern.
