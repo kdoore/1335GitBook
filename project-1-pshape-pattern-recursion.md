@@ -1,18 +1,17 @@
-#vertexPattern Function with Recursion
+#recursivePattern and vertexPattern
 
 In the code below, we define a Recursive function: `recursivePattern()` that creates repeated versions of the vertexPattern.  
-
+    - parameter: float length - size of the pattern
+    - parameter: float level - controls number of repeats - insures termination 
     - recursivePattern() defines the repetition structure
     - vertexPattern( ) is the task that is repeated
-    - parameter: length - size of the pattern
-    - parameter: level - controls number of repeats - insures termination 
-
+   
 ###recursivePattern function
 ```java
 //recursive function to draw nested patterns
-//length is input as largest size, smaller patterns
-//are drawn with each recursive call
-// level determines how many patterns are drawn
+//length is input as largest size, smaller patterns are drawn with each recursive call
+//level determines how many patterns are drawn
+//level MUST be decremented in each recursive call to insure termination
 void recursivePattern( float length, float level){
 if(level <1 ) { //termination condition
 return; //stop function execution by returning from the function
