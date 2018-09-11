@@ -22,7 +22,6 @@ recursivePattern( length - 20, level -1 ); //recursive call
 ```
 
 ###vertexPattern( float len)  function
-
 ```java
 //Draws one pattern each time it is called
 //pattern size is determined by input parameter: len
