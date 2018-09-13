@@ -20,10 +20,9 @@ The image below shows that we can create a complex asymmetric design using mirro
 
 ```java
 void recursivePattern( float len, int count){
-  if( count < 1){
+  if( count < 1){ //termination test - variable must be modified somewhere in recursive function to insure termination
     return;  //termination condition
   }
-  
  
   float bright = map(len, 0, lenMax, 100,50); //bright changes with len
 
