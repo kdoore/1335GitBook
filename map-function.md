@@ -1,4 +1,4 @@
-#Map Function
+#Map Function - Create relationships between variables
 
 The Processing map function is a very useful function which converts a value from one range into a corresponding value in a second range. [processing.org: map function](https://processing.org/reference/map_.html) 
 
