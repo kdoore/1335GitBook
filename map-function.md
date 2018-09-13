@@ -21,6 +21,19 @@ We can use the Map function to create relationships between features of our prog
 
 In Project 1, we can use the changing value of the length parameter for drawn patterns as the known value that is changing, we can use it to give us changing values of color components, such as hue, saturation, or brightness.  
 
+ 
+
+```java
+  float hue = map(mouseX, 0,width, 100, 250);
+  float bright = map(len, 5, lenMax, 100,50);
+  float sat = map(len, 5, lenMax, 100,20);
+ 
+  fill( hue, sat, bright );
+```
+
+
+ 
+
 
 
 
