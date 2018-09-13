@@ -32,29 +32,18 @@ void recursivePattern( float len, int count){
   if( count< 1){
     return;
   }
-  vertexShape( len);
-  recursivePattern( len*.8, count-1);
+  //set fill before calling vertexShape function
+  float bright = map( len, 0, lenMax, 0, 100);
+  float hue = map( mouseX, 0, width, 200, 300);
+  fill(hue, 100, bright);// brightness dependent on the len input parameter.
+
+  vertexShape( len); //task - draw shape
+  recursivePattern( len*.8, count-1); //Recursive call
 }
 
-//vertex pattern with internal contour
-//and programmatic variation of color
+
 void vertexShape( float len){
-    PShape s = createShape();
-    float bright = map( len, 0, lenMax, 0, 100);
-    float hue = map( mouseX, 0, width, 200, 300);
-    s.beginShape();
-    s.fill(hue, 100, bright  );// fully saturatedcolor, with brightness dependent on the len input parameter.
-    s.vertex( 0,0);
-    s.vertex( len*.4,0);
-    s.vertex( len*.6, len*.6);
-    s.vertex( 0, len*.4);
-    s.vertex( 0,0);
-    s.beginContour(); //make internal cutout 
-    s.vertex( len*.25,len*.45);
-    s.vertex(len*.5, len*.5);
-    s.vertex( len*.45, len*.25);
-    s.endContour(); //end internal cutout
-    s.endShape(CLOSE); //end shape
+   PShape s = createShape(RECT, 10, 10, 100, 100); //placeholder pattern
     shape( s, 0,0);  //this displays the shape on the canvas at point (0,0)
 }
 
