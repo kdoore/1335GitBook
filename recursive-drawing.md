@@ -145,7 +145,6 @@ void setup(){
   void draw(){
     if(mousePressed){
       translate(mouseX, mouseY); 
-          
           int numLevels = 5;
           recursivePattern( len, numLevels );   //call recursive function
       resetMatrix();
