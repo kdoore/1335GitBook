@@ -19,6 +19,7 @@
 * [Project 1: Programmatic Variations in Color](programmatic-variations-in-color.md)
 * [VertexShape Centered at Origin](vertex-pattern-centered-at-origin.md)
 * [Map Function](map-function.md)
+* [Scale Transform for Mirroring](scale-transform-for-mirroring.md)
 
 ## Grid Based Designs
 
