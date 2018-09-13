@@ -18,6 +18,8 @@ The image below shows that we can create a complex asymmetric design using mirro
 
 ![](/assets/Screen Shot 2018-09-13 at 4.36.48 PM.png)
 
+###RecursivePattern with scale for mirroring
+
 ```java
 void recursivePattern( float len, int count){
   if( count < 1){ //termination test - variable must be modified somewhere in recursive function to insure termination
@@ -29,13 +31,13 @@ void recursivePattern( float len, int count){
   fill( 200, 100, bright ); //blue
   vertexShape( len );  //draw the shape using current value of len -- largest to smallest
   
-  /////Draw on pattern in -y, +x quadrant 
+  /////Draw pattern mirrored into region4 
   pushMatrix(); //take snapshot of prior transforms
   scale(1.0, -1.0); //mirror across X-axis //region4
   vertexShape( len ); 
   popMatrix(); // restore transforms to prior snapshot
   
-  /////Draw on pattern in +y, -x quadrant
+  /////Draw on pattern mirrored in region2
   pushMatrix(); //take snapshot of prior transforms
   scale(-1.0, +1.0); //mirror across Y-axix //region2
   vertexShape( len ); 
@@ -43,7 +45,7 @@ void recursivePattern( float len, int count){
   
   recursivePattern( len * 0.8, count - 1); ///RECURISVE CALL
   
-  ///shape drawn after recursive call are stacked in reverse order, smallest to largest
+  ///shape drawn after recursive call are stacked in reverse order, smallest to largest - asymmetry
   fill( 200, 100, bright );  //blue
   vertexShape( -len );   ///we can use -len to draw in region3
     
