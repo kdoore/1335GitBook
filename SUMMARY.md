@@ -18,6 +18,7 @@
 * [Project 1: Recursive Drawing](recursive-drawing.md)
 * [Project 1: Programmatic Variations in Color](programmatic-variations-in-color.md)
 * [VertexShape Centered at Origin](vertex-pattern-centered-at-origin.md)
+* [Map Function](map-function.md)
 
 ## Grid Based Designs
 
