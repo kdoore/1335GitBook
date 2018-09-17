@@ -159,9 +159,24 @@ void setup(){
     float hueVal = map( length, lenMin, lenMax, 130, 160);
     float brightVal = map( length, lenMin, lenMax, 0, 100); 
     fill( hueVal, 100, brightVal, 100); //alpha is 100 
-    rect( 0, 0, length, length);  //draw a pattern based on length parameter - Replace this with a call to your vertexPattern( length ) function
+    vertexShape( length ); //this is our task
     recursivePattern( length * 0.8, level-1 ); //call recursive function
     }
+    
+    
+    //Draws one PShape each time it is called
+//PShape size is determined by input parameter: len
+void vertexShape( float len){
+    PShape s = createShape();
+    s.beginShape();
+    s.vertex(0,0);//list points in clockwise order
+    s.vertex( len, 0);
+    s.vertex( len, len);
+    s.vertex( len * .5, len * .5);
+    s.vertex( 0, len);
+    s.endShape(CLOSE);
+    shape( s, 0,0); //this displays the shape at the origin
+}
     
     ```
 

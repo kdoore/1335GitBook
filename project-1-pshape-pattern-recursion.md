@@ -14,9 +14,9 @@ In the code below, we define a Recursive function: `recursivePattern()` that cre
     void vertexShape( float len){
         PShape s = createShape();
         s.beginShape();
-        s.fill( 255, 200, 255, 100 ); //rgb with alpha
-        s.vertex(0,0);
-        s.vertex( len, 0);
+        s.vertex(0,0);//list points in clockwise order
+
+        s.vertex( len, 0); 
         s.vertex( len, len);
         s.vertex( len * .5, len * .5);
         s.vertex( 0, len);
