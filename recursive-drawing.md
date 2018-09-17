@@ -131,22 +131,26 @@ float lenMax = 100;
                             
                 
 ### Complete Program
-Here's a simple program that defines and uses a recursive function to create a pattern. In this case, we're just creating a rectangle as our recursive task. Notice that in this case we are using global variables: lenMin, lenMax as the range values for the Map( ) function which is determining the fill for the rectangle.  Also, lenMin is used as the termination test conditional expression.
+Here's a simple program that defines and uses a recursive function to create a pattern.  Notice that in this case we are using global variable:  lenMax as the range values for the Map( ) function which is determining the fill for the vertexShape.  
+
+###Recursive Pattern with VertexShape
+In the code below, we're calling our vertexShape function inside the recursivePattern. Each time we call recursivePattern, we have reduced the size of the length parameter.
+
 
 ```java
 float lenMax  = 100.0;
-float lenMin = 20;
 
 void setup(){
   size( 600,600);
   colorMode(HSB, 360, 100, 100); 
+  background(0);//black backgroujd
   }
   
   void draw(){
     if(mousePressed){
       translate(mouseX, mouseY); 
           int numLevels = 5;
-          recursivePattern( len, numLevels );   //call recursive function
+          recursivePattern( lenMax, numLevels );   //call recursive function
       resetMatrix();
     }
   }
@@ -156,8 +160,8 @@ void setup(){
     if ( level < 1 ){  //test for termination
       return; //termination condition is true
     }
-    float hueVal = map( length, lenMin, lenMax, 130, 160);
-    float brightVal = map( length, lenMin, lenMax, 0, 100); 
+    float hueVal = map( length, 0, lenMax, 130, 260);
+    float brightVal = map( length, 0, lenMax, 20, 100); 
     fill( hueVal, 100, brightVal, 100); //alpha is 100 
     vertexShape( length ); //this is our task
     recursivePattern( length * 0.8, level-1 ); //call recursive function
@@ -179,19 +183,4 @@ void vertexShape( float len){
 }
     
     ```
-
-###Recursive Pattern with VertexShape
-In the code below, we're calling our vertexShape function inside the recursivePattern, so the color logic will need to be moved to inside our vertexShape function.  Each time we call recursivePattern, we have reduced the size of the length parameter.
-
-```java
-
-//define recursive function
-void recursivePattern( float length, int level){
-    if ( length < lenMin ){ //test for termination
-     return; //termination condition is true
-    }
-    vertexShape( length ); //your custom vertexPattern
-    recursivePattern( length - 20, level-1 ); //call recursive function
-}
-```
 
