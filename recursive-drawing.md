@@ -131,9 +131,9 @@ float lenMax = 100;
                             
                 
 ### Complete Program
-Here's a simple program that defines and uses a recursive function to create a pattern.  Notice that in this case we are using global variable:  lenMax as the range values for the Map( ) function which is determining the fill for the vertexShape.  
+Here's a simple program that defines and uses a recursive function to create a pattern.  Notice that in this case we are using global variable:  lenMax as the range value for the Map( ) function which is determining the fill for the vertexShape.  
 
-###Recursive Pattern with VertexShape
+**Recursive Pattern with VertexShape**
 In the code below, we're calling our vertexShape function inside the recursivePattern. Each time we call recursivePattern, we have reduced the size of the length parameter.
 
 
@@ -157,14 +157,14 @@ void setup(){
   
   //define recursive function
   void recursivePattern( float length, int level){
-    if ( level < 1 ){  //test for termination
+    if ( level < 1 ){  //test for termination - termination variable
       return; //termination condition is true
     }
     float hueVal = map( length, 0, lenMax, 130, 260);
     float brightVal = map( length, 0, lenMax, 20, 100); 
     fill( hueVal, 100, brightVal, 100); //alpha is 100 
     vertexShape( length ); //this is our task
-    recursivePattern( length * 0.8, level-1 ); //call recursive function
+    recursivePattern( length * 0.8, level-1 ); //call recursive function - reduce value of variables 
     }
     
     
