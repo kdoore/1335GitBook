@@ -57,7 +57,7 @@ Iteration or Repetition - When working with arrays, we'll often use some type of
     int numShapes = myShapes.length; //use length property of array.
     for( int i=0; i< numShapes; i++){
         myShapes[i]= createShape( RECT, 0,0,100,100);
-        }
+    }
             
  
 ```    
