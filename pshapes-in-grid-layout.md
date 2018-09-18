@@ -48,17 +48,17 @@ The syntax for an array of PShape objects is:
 After we initialize the array object, then we need to set each array element so that it contains some valid value.  We'll almost always use a for-loop to modify and access each array element.  
 
 ###Iteration / Repetition 
-Iteration or Repetition - When working with arrays, we'll often use some type of looping structure so we can do some task with each element of the array.  This repetition is also called iteration, and it's a fundamental control-structure used in programming.  
+Iteration or Repetition - When working with arrays, we'll often use some type of looping structure so we can do some task with each element of the array.  This repetition is also called iteration, and it's a fundamental control-structure used in programming.  In the example below, 
     
     
 ```java
+    //initialize each array element using a for-loop
     
     int numShapes = myShapes.length; //use length property of array.
     for( int i=0; i< numShapes; i++){
-      shapes[i]= createShape( RECT, 0,0,100,100);
+      myShapes[i]= createShape( RECT, 0,0,100,100);
         }
-        
-   PShape      
+            
  
 ```    
 
