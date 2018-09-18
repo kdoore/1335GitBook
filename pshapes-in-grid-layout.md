@@ -52,7 +52,7 @@ Iteration or Repetition - When working with arrays, we'll often use some type of
     
     
 ```java
-    //initialize each array element using a for-loop
+    //initialize each array element using a for-loop structure
     
     int numShapes = myShapes.length; //use length property of array.
     for( int i=0; i< numShapes; i++){
