@@ -1,6 +1,5 @@
 #Functions
 
-
 Functions allow modular design and re-usability of program components.
 
 Functions should be designed to perform a well-defined, specific task. Functions should be designed so that they are not inter-dependent on code external to the function and so that they don't cause unintended side-effects to code outside of the function.
