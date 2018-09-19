@@ -90,6 +90,10 @@ When we define a function that has input parameters that are some type of object
 
 In the code below, the initializeVals function takes an integer array (object-type)  as the first input parameter, the second input parameter is a regular primitive-type variable.  
 
+When a primitive data-type variable is used as an argument for a function, a copy of that variable's value is actually passed into the function, so the variable itself is unchanged, see `startPos` below 
+
+In contrast: when an object-type variable is used as an argument for a function, the object's memory address (reference) is passed into the function, so the function modifies the object itself when the function executes.  see `xPos` below 
+
 
 ```java
 void setup(){
