@@ -85,3 +85,27 @@ Often when designing functions, we can design multiple versions of a function, w
 
     fill(float hueVal, float saturationVal, float brightnessVal);  // now the fill color is HSB
 
+###Functions with Object-type input parameters
+When we define a function that has input parameters that are some type of object, it's important we understand that the memory address of that object is actually passed into the function, so changes to an object within a function are persisted (permanent) in the object after the function has completed execution
+
+In the code below, the initializeVals function takes an integer array (object-type)  as the first input parameter, the second input parameter is a regular primitive-type variable.  
+
+
+```java
+void setup(){
+    int[] xPos = new int[20]; //declare and initialize array
+    int startPos= 10;
+    initializeVals( xPos, startPos ); //call the function with variable arguments
+    println("startPos " + startPos); //startPos = 10 //unchanged by the function execution
+    println("xPos[0] " + xPos[0] ); //xPos[0] = 10  //changed in the function execution
+}
+
+void initializeVals( int[] intArray, int initVal ){
+    for( int i=0; i< intArray.length; i++){
+    intArray[i] = initVal;
+}
+}
+```
+
+
+
