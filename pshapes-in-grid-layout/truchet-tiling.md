@@ -6,6 +6,9 @@ The code below shows an example of Truchet Tiling -[ Wikipedia](https://en.wikip
 ![](/assets/Screen Shot 2018-09-20 at 2.17.57 PM.png)
 
 
+###Code Example 
+This code example shows how we can use a 1-Dimensional array of PShapes to create a grid arrangement of shapes.  
+
 ```java
 PShape[] shapes;
 int colWidth=30;
