@@ -83,6 +83,7 @@
   * [Functions](functions.md)
   * [Object Reference Data Types](reference_data_types.md)
   * [Arrays](arrays.md)
+    * [Class Example Code](arrays/class-example-code.md)
   * [Switch-Case Statement](switch-case_statement.md)
   * [Ternary Operator](ternary_operator.md)
   * [Class](class.md)
