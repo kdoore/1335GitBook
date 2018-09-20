@@ -1,7 +1,7 @@
 Truchet Tiling
 
 The code below shows an example of Truchet Tiling -[ Wikipedia](https://en.wikipedia.org/wiki/Truchet_tiles)
-
+The 
 
 ![](/assets/Screen Shot 2018-09-20 at 2.17.57 PM.png)
 
@@ -23,8 +23,8 @@ void setup() {
   drawGrid(shapes, colWidth, rowHeight);
 }
 
-void draw() {
-
+void draw() { //draw must be included for mouseReleased event function to work
+  
 }
 
 PShape[] populateArray( float xSize, float ySize){
