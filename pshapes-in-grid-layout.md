@@ -153,7 +153,7 @@ void displayShapes( PShape[] shapes, float cellSize,  int rows, int cols){
 
   ```
   
-![](/assets/Screen Shot 2018-02-12 at 8.57.48 AM.png) 
+![](/assets/Screen Shot 2018-09-26 at 7.28.10 AM.png) 
 
 ###Design Based on Grid Regions 
 We can see that the design below is more interesting, so how can we create this type of pattern where the overall design shows 4 different regions of patterns?
@@ -161,4 +161,62 @@ The next section of the gitbook will discuss logic to create this region-based d
 
 ![](/assets/Screenshot 2017-09-22 14.51.04.png)
 
+
+###Complete Code
+
+
+```java
+void setup() {
+  size( 400, 400 );
+  colorMode(HSB, 360,100,100);
+  background(0);
+  PShape[ ] myShapes; //Declare Array
+  int rows = 10;
+  int cols = 10;
+  //we need rows * cols shapes to fill the grid
+  int size = width / cols;
+  myShapes = new PShape[ rows * cols ]; //Initialize Array
+  populateShapeList(myShapes, size);
+  displayShapes(myShapes, size, rows, cols);
+} //end setup
+
+void populateShapeList( PShape[ ] shapes, int size) {
+  int numShapes = shapes.length; //use length property of array.
+  for ( int i=0; i< numShapes; i++) {
+    PShape tempShape = vertexPattern1( size, i*3);
+    shapes[ i ] = tempShape;
+  } //end for-loop
+} //end function
+
+//function to create, and return a single vertex pattern
+PShape vertexPattern1( float length, int hue) {
+  PShape s = createShape();
+  s.beginShape();
+  s.fill( hue, 100, 100);
+  s.vertex( 0, 0);
+  s.vertex( length, 0);
+  s.vertex( length, length);
+  s.endShape(CLOSE);
+  return s;
+} //end vertexPattern1
+
+void displayShapes( PShape[] shapes, float cellSize, int rows, int cols) {
+  //variables to increment position and shapes in for-loop
+  float xPos=0; //s coordinate to draw each shape
+  float yPos = 0; //y coordinate to draw each shape
+  int k = 0; //keep track of current item to draw
+
+  for ( int i= 0; i< rows; i++) { //each row
+    for ( int j=0; j< cols; j++) {
+      shape(shapes[k], xPos, yPos); //display Shape at xPos, yPos
+      k++; //move to the next shape in the array
+      xPos += cellSize; //move to next column
+    } //end j-loop
+    xPos=0; //restart at col 0
+    yPos += cellSize; //move yPositions down a row
+  } //end i=loop
+}// end function
+
+
+```
 
