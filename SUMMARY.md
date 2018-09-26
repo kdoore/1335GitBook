@@ -35,6 +35,7 @@
 ## Project 2
 
 * [Project 2 - 2D Arrays for Gradient Logic](transforms-for-region-logic.md)
+  * [2D Array Grid with Labels](transforms-for-region-logic/2d-array-grid-with-labels.md)
 * [Grid Patterns using 2D Array Indexes: i, j](grid-patterns-using-2d-array-indexes-i-j.md)
 * [lerpColor\( \)  and map\( \) Functions](lerpcolor-and-map.md)
 * [2D Arrays with lerpColor](2d-arrays-with-lerpcolor.md)

@@ -75,6 +75,5 @@ The image below uses logic: color factor k = min( i, j). In addition, there are 
 ![](/assets/Screenshot 2017-09-27 19.58.32.png)
 
 
-
-
 ![](/assets/Screenshot 2017-09-24 09.08.55.png)
+
