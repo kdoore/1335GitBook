@@ -13,18 +13,21 @@ We can determine logic to define grid-regions within a nested for-loop, and we c
 The code below shows that we can use for-loop logic that looks at the index values: i, j to determine 4 regions where we can display different shapes to develop a more interesting pattern.  
 
 **Region Logic:**
-Region 1: i < rows/2 && j < cols/2
-Region 2: i < rows/2 && j >= cols/2
-Even Cells: (i+j) % 2 == 0 
-Region 3: i >= rows/2 && j < cols/2
-Even Cells: (i+j) % 2 == 0 
-Region 4: i >= rows/2 && j >= cols/2
+  - Region 1: i < rows/2 && j < cols/2
+
+  - Region 2: i < rows/2 && j >= cols/2
+    - Even Cells: (i+j) % 2 == 0 
+
+  - Region 3: i >= rows/2 && j < cols/2
+    - Even Cells: (i+j) % 2 == 0 
+
+  - Region 4: i >= rows/2 && j >= cols/2
 
 **Region Design Patterns: Fill grid cells **
-Region1:  display Shape1
-Region2:  display Shape2, if even cells, display Shape1
-Region3:  display Shape2, if even cells, display Shape1
-Region4:  display Shape1
+  - Region1:  display Shape1
+  - Region2:  display Shape2, if even cells, display Shape1
+  - Region3:  display Shape2, if even cells, display Shape1
+  - Region4:  display Shape1
 
 #Example Code for the Region-Based Design Patterns
 
