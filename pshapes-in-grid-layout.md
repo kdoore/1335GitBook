@@ -70,31 +70,27 @@ Since arrays are objects, when we pass an object into a function we are actually
   ```java
 
 
-//function to put a PShape object in each array element 
-//shapes: PShape array
-//size: dimensions for each PShape design
-
-//Takes PShape array, populates each element with a PShape object
-//size is a size parameter for the created PShape
-void populateShapeList( PShape[ ] shapes, int size){
-    int numShapes = shapes.length; //use length property of array.
-   for( int i=0; i< numShapes; i++){
-        PShape tempShape = vertexPattern1( length, hue);
-        _shapes[ i ] = tempShape 
-    } //end for-loop
+void populateShapeList( PShape[ ] shapes, int size) {
+  int numShapes = shapes.length; //use length property of array.
+  for ( int i=0; i< numShapes; i++) {
+    int hueVal = i*3;
+    PShape tempShape = vertexPattern1( size, hueVal);
+    shapes[ i ] = tempShape;
+  } //end for-loop
 } //end function
 
-//function to create, and return a single vertex pattern 
-PShape vertexPattern1( float length, int hue){
-   PShape s = createShape();
-   s.beginShape();
-   s.fill( hue, 255, 255);
-   s.vertex( 0,0);
-   s.vertex( length, 0);
-   s.vertex( length, length);
-   s.endShape(CLOSE);
-   return s;
-}
+//function to create, and return a single vertex pattern
+PShape vertexPattern1( float length, int hue) {
+  PShape s = createShape();
+  s.beginShape();
+  s.fill( hue, 100, 100);
+  s.vertex( 0, 0);
+  s.vertex( length, 0);
+  s.vertex( length, length);
+  s.endShape(CLOSE);
+  return s;
+} //end vertexPattern1
+
 
   ```
 
@@ -132,23 +128,22 @@ We will follow the convention that the outer for-loop `(i)` is specifying the ro
    ```java
  
  
-void displayShapes( PShape[] shapes, float cellSize,  int rows, int cols){
-//variables to increment position and shapes in for-loop
-  float xPos=0;  //s coordinate to draw each shape
-  float yPos = 0;  //y coordinate to draw each shape
-  int shapeListIndex = 0;  //keep track of current item to draw
+void displayShapes( PShape[] shapes, float cellSize, int rows, int cols) {
+  //variables to increment position and shapes in for-loop
+  float xPos=0; //s coordinate to draw each shape
+  float yPos = 0; //y coordinate to draw each shape
+  int k = 0; //keep track of current item to draw
 
-  for( int i= 0; i< rows; i++){ //each row
-    for( int j=0; j< cols; j++){
-       shape(shapes[shapeListIndex], xPos,yPos);  //display Shape at xPos, yPos
-       curIndex++;  //move to the next shape in the array
-       xPos += cellSize; //move to next column
-     }  //end j-loop
-  xPos=0; //restart at col 0
-  yPos += cellSize; //move yPositions down a row 
-  } //end i=loop 
- 
- }// end function
+  for ( int i= 0; i< rows; i++) { //each row
+    for ( int j=0; j< cols; j++) {
+      shape(shapes[k], xPos, yPos); //display Shape at xPos, yPos
+      k++; //move to the next shape in the array
+      xPos += cellSize; //move to next column
+    } //end j-loop
+    xPos=0; //restart at col 0
+    yPos += cellSize; //move yPositions down a row
+  } //end i=loop
+}// end function
 
 
   ```
