@@ -19,7 +19,7 @@ We could use logic like this to define what shapes are drawn within a region.  T
 
 ###Design Based on Grid Regions 
 We can see that the design below is more interesting than those previously shown. So how can we create this type of pattern where the overall design shows 4 different regions of patterns?
-The next section of the gitbook will discuss logic to create this region-based designs. [Grid Regions](/pshapes-in-grid-regions.md)
+The next section will discuss logic to create this region-based designs. 
 
 ![](/assets/Screenshot 2017-09-22 14.51.04.png)
 
