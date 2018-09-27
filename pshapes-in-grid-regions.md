@@ -17,12 +17,6 @@ We could use logic like this to define what shapes are drawn within a region.  T
 
 `if( i < rows/2 && j < cols/2){  //draw region1 shapes   }`
 
-###Design Based on Grid Regions 
-We can see that the design below is more interesting than those previously shown. So how can we create this type of pattern where the overall design shows 4 different regions of patterns?
-The next section will discuss logic to create this region-based designs. 
-
-![](/assets/Screenshot 2017-09-22 14.51.04.png)
-
 
 
 ###Grid Logic - Select Grid Region based on i,j index values: 
@@ -61,5 +55,13 @@ void drawGrid(int rows, int cols, int size ){
  
  ```
  
- 
+ ###Design Based on Grid Regions 
+We can see that the design below is more interesting than those previously shown. So how can we create this type of pattern where the overall design shows 4 different regions of patterns?
+
+
+![](/assets/Screenshot 2017-09-22 14.51.04.png)
+
+
+
+
  
