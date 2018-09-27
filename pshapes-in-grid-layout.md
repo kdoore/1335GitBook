@@ -150,11 +150,7 @@ void displayShapes( PShape[] shapes, float cellSize, int rows, int cols) {
   
 ![](/assets/Screen Shot 2018-09-26 at 7.28.10 AM.png) 
 
-###Design Based on Grid Regions 
-We can see that the design below is more interesting, so how can we create this type of pattern where the overall design shows 4 different regions of patterns?
-The next section of the gitbook will discuss logic to create this region-based designs. [Grid Regions](/pshapes-in-grid-regions.md)
 
-![](/assets/Screenshot 2017-09-22 14.51.04.png)
 
 
 ###Complete Code

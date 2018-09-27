@@ -17,6 +17,14 @@ We could use logic like this to define what shapes are drawn within a region.  T
 
 `if( i < rows/2 && j < cols/2){  //draw region1 shapes   }`
 
+###Design Based on Grid Regions 
+We can see that the design below is more interesting than those previously shown. So how can we create this type of pattern where the overall design shows 4 different regions of patterns?
+The next section of the gitbook will discuss logic to create this region-based designs. [Grid Regions](/pshapes-in-grid-regions.md)
+
+![](/assets/Screenshot 2017-09-22 14.51.04.png)
+
+
+
 ###Grid Logic - Select Grid Region based on i,j index values: 
 In the code below, we add logic within the nested for-loops to select cells within a region.  This will get to be complex if we try to add design logic using this approach.
 
