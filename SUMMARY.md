@@ -28,9 +28,9 @@
 * [Grid Pattern Design](arrays-for-grid-patterns.md)
 * [1D - Array of PShapes for Grid Layout](pshapes-in-grid-layout.md)
   * [Truchet Tiling](pshapes-in-grid-layout/truchet-tiling.md)
-* [Pattern Preview - Transforms: Translate & Scale](pattern-preview-transforms-translate-and-scale.md)
 * [PShapes in Grid Regions](pshapes-in-grid-regions.md)
 * [Grid Region Logic](grid-region-logic.md)
+* [Pattern Preview - Transforms: Translate & Scale](pattern-preview-transforms-translate-and-scale.md)
 
 ## Project 2
 
