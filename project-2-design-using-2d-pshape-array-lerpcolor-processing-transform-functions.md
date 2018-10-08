@@ -6,7 +6,8 @@ Create a 2D Array of PShape objects,  create grid patterns using HSB colorMode a
 
 **Project Structure: Functions:**
 
-1.Create 2 functions to create PShape vertex objects using float length, color foreground, and optional color: background as input parameters:
+** Step 1 - VertexPattern **   
+- Create 2 functions to create PShape vertex objects using float length, color foreground, and optional color: background as input parameters:
 
     PShape vertexPattern1( float len, color foreground)
     
@@ -79,8 +80,8 @@ shape( testShape, 300,300);//display at canvas center
 
  ```
  
-       
-2.Create at least 2 functions to create 2-Dimensional Grids of PShape objects: these are the driver-functions that determine pattern logic, use colorLerp and map functions.  Suggestion: create and return PShape[][] objects within the function.
+** Step 2 - 2D Arrays of PShape Objects **     
+ - Create at least 2 functions to create 2-Dimensional Arrays of PShape objects: these are the driver-functions that determine pattern logic, use colorLerp and map functions.  Suggestion: create and return PShape[][] objects within the function.
 
 
 ```java
@@ -119,8 +120,10 @@ PShape[][] shapeMatrix1 = populateGradientGrid1( rows, cols, size, c1, c2);
 
 ```
 
+**Step 3 Display Primary Grid Function**
+- Create functions to display each shapeMatrix.  These functions should take input parameters like:`PShape[][] shapes`, `int xPos`, `int yPos`, `int rows`, `int cols`, `int size`
 
-3. Create functions to display each shapeMatrix.  These functions should take input parameters like:`PShape[][] shapes`, `int xPos`, `int yPos`, `int rows`, `int cols`, `int size`
+**Step 4 Display Grid Function**
 
 Use processing transform functions to translate the origin to the position where the shapeMatrix should be displayed.  Add rotation if needed to re-orient the shapeMatrix.  
 
@@ -146,6 +149,7 @@ void displayShapeMatrix(PShape[][] shapes, int x , int y , int rows, int cols, i
 
 ```
 
+**Step 4 Display Grid in Other Regions**
 ###Use Rotate, Translate, Scale to display ShapeMatrix across other Regions.  
 Within these functions, the canvas is transformed prior to calling the displayShapeMatrix code above. An example of using both Rotate and Scale are shown, for creating a ShapeMatrix in Region2.  Similar functions should be created for Region3 and Region4
 
@@ -184,8 +188,8 @@ void setup(){
   size(400,400);
   background(0);
   colorMode(HSB, 360,100,100);
-  color c1= color( 71, 100, 100); //chartruse
-  color c2 = color(278,95,30);// bright purple
+  color c1= color( 71, 100, 100); //yellow-green
+  color c2 = color(278,95,30);// dark purple
   color c3 = color(0);
   color c4=  color(200);
   
