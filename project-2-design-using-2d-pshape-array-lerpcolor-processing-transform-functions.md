@@ -6,8 +6,8 @@ Create a 2D Array of PShape objects,  create grid patterns using HSB colorMode a
 
 **Project Structure: Functions:**
 
-** Step 1 - VertexPattern **   
-- Create 2 functions to create PShape vertex objects using float length, color foreground, and optional color: background as input parameters:
+** Step 1 - VertexPattern Functions **   
+- Create **2 functions** to create PShape vertex objects using float length, color foreground, and optional color: background as input parameters:
 
     PShape vertexPattern1( float len, color foreground)
     
