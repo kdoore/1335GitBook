@@ -180,7 +180,7 @@ void displayScaleRegion2(PShape[][] shapesMatrix,int rows, int cols, int cellSiz
 ###Final Code Setup:
 The code below shows the setup function where we're defining our variables and calling our functions, since there's no animation or interactivity in this project, setup can be used for organizing and executing our project logic.  
 
-Now that we're creating smaller grid units and combining those to create a larger artwork, we need new variables to clarify these concepts.  I've decided the larger composition will be called the artWork, it has width = height = artWorkSize.  It is no longer true that the artWorkSize is the same as the processing canvas size, as we'll want room around our artWork to put design tools that we create.  I also define artWorkRows and artWorkCols, this is to create a distinction between the rows and cols that are used for creating a PShape[][] shapes matrix, that will be likely be smaller than the full artWorkSize.  Each shapeMatrix in my  artwork has rows = artWorkRows / 2, cols = artWorkCols / 2.
+Now that we're creating smaller grid units and combining those to create a larger artwork, we need new variables to clarify these concepts.  I've decided the larger composition will be called the artWork, it has width = height = artWorkSize.  Each artwork is composed of 4 regions, where a 2D array of PShapes occupy one region of space. Each shapeMatrix in my  artwork has size defined by regionWidth = artworkSize/2, rows = 20, cols = 20. cellSize is defined as regionWidth/cols.
 
 ```java
 
