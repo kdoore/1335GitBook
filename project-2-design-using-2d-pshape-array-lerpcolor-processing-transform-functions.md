@@ -193,15 +193,14 @@ void setup(){
   color c3 = color(0);
   color c4=  color(200);
   
-  int artWorkRows = 20; //even number - rows, cols
-  int artWorkCols= artWorkRows;
-  int artWorkSize=400;
-  int cellSize = artWorkSize/artWorkRows;
+ int artWorkSize=width;
+ int regionWidth = artWorkSize/2;
   
   //dimensions for grid motif that occupies 1/4 size of the artWork 
-  int rows = artWorkRows/2;
-  int cols = artWorkCols/2;
-  
+  int rows = 20;
+  int cols = rows;
+  int cellSize = regionWidth/cols;
+    
   //create smaller grid sections - 
   PShape[][] shapesMatrix1 = populateGradientGrid(rows , cols ,cellSize, c1, c2  );
   PShape[][] shapesMatrix2 = populateGradientGrid2(rows , cols ,cellSize, c1, c2, c3, c4   );
