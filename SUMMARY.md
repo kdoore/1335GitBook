@@ -1,7 +1,6 @@
 # Summary
 
 * [Introduction](README.md)
-* [Learning Science](learning-science.md)
 
 ## Recursion
 
@@ -89,4 +88,5 @@
   * [Switch-Case Statement](switch-case_statement.md)
   * [Ternary Operator](ternary_operator.md)
   * [Class](class.md)
+  * [Learning Science](learning-science.md)
 
