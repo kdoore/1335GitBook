@@ -1,6 +1,7 @@
 # Summary
 
 * [Introduction](README.md)
+* [Learning Science](learning-science.md)
 
 ## Recursion
 
