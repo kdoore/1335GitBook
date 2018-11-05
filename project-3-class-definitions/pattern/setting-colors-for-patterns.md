@@ -46,5 +46,50 @@ pattern0.display(mouseX, mouseY); //displayed using color1
 
 ```
 
+###Pattern Class that handles all types of PShapes
+This version of the Pattern class introduces a PShapeType integer variable, this allows us to customize the logic in the display method depending on the type of PShape Object we're dealing with:  
+
+
+```java
+class Pattern{
+   
+  //PROPERTIES
+  PShape s;
+  color shapeColor, strokeColor;
+  int PShapeType; //type 1, type 2, type 3
+  //type 1:  vertex type
+  //type 2:  processing primitive
+  //type 3:  external .svg file
+  
+  //CONSTRUCTOR
+  Pattern( PShape s, color shapeColor){
+    this.s = s;
+    this.shapeColor = shapeColor;
+    PShapeType = 1;  //default, assume vertex type
+  }
+  
+  Pattern( PShape s, color shapeColor, int type){
+    this.s = s;
+    this.shapeColor = shapeColor;
+    PShapeType = type;
+  }
+  
+  
+  //METHODS
+  void display( int mx, int my){
+   if( PShapeType == 1){
+   s.setFill( shapeColor);
+   s.setStroke(strokeColor);
+   }
+   else if( PShapeType == 2){
+     fill(shapeColor);
+     stroke(strokeColor);
+   }
+     shape( s, mx, my );
+  }
+  
+}
+
+```
 
 
