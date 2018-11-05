@@ -61,16 +61,18 @@ class Button{
     text(label, x + w/2, y + h/2);  //display label
   }
   
-  void clicked(int mx, int my){
+  //checks to see if mouse is within the button geometry
+  //returns the final selected state of button //true or false
+  boolean clicked(int mx, int my){
     if( mx > x && mx < x+w && my >y && my < y+h){   //button has been clicked
-      if( selected == true){
-        selected = false;
-        currentColor = defaultColor;
-      }else{      //had been selected == false
-         selected = true;
-         currentColor = selectedColor;
+     selected = ! selected; //change to opposite value
+      if( selected ){ //now set to selected is true
+        currentColor = selectedColor;
+       }else{      //not selected
+         currentColor = defaultColor;
       } //end else
     }  //end outer if
+    return selected; //returns true if selected 
   } ///end of clicked
     
     //sets the button to off state

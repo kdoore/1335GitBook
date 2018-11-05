@@ -51,13 +51,13 @@ class ButtonGroup{
   }
   
   //add comments
-  int clicked(int mx, int my){
-    int selected = -1;
+  boolean clicked(int mx, int my){
+    boolean isChanged = false; //has a new button been selected
      for( int i=0; i< buttons.length; i++){
         if( buttons[i].selected == false){  //if buttons[i] was not previously selected
              buttons[i].clicked(mx, my); //check to see if it's been clicked
              if( buttons[i].selected == true){  // if it's now selected
-                 selected = i;  //set to currently active button
+                 isChanged = true;
                  activeButton = i;
                for( int j=0; j< buttons.length; j++){  //for all other buttons
                  if( i != j){    
@@ -68,7 +68,7 @@ class ButtonGroup{
         }
          
      }  
-     return selected;
+     return isChanged;
   }//end clicked method 
   
 } // end class ButtonGroup
