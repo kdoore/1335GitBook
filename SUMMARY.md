@@ -71,10 +71,7 @@
   * [ButtonGroup](project-3-class-definitions/buttongroup.md)
   * [Pattern](project-3-class-definitions/pattern.md)
     * [Setting Colors For Patterns](project-3-class-definitions/pattern/setting-colors-for-patterns.md)
-
-## Project 4
-
-* [Project 4](project-4.md)
+  * Slider
 
 ## Java Syntax
 

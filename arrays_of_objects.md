@@ -23,18 +23,20 @@ When we pass an object into any function, what we are actually doing is passing 
 //Create Class ButtonGroup
 class ButtonGroup{
     //instance variables
-    Button[] btnArray;  //declare an array of Buttons
-    int numButtons;     //how many Buttons are there?
+    Button[] buttons;  //declare an array of Buttons
+    int numButtons;    //how many Buttons are there?
+    int activeBtnIndex; //currently selected Button (FSM memory)
     
-    ButtonGroup( Button _btnArray, int _numButtons){
-      btnArray=_btnArray;  //initialize instance variables with 
-      numButtons=_numButtons;
+    ButtonGroup( Button buttons){ //constructor method
+      this.buttons =buttons;  //initialize instance variables with 
+      numButtons=buttons.length;
+      activeBtnIndex=0; //set default
     }
   //methods 
 }
 ```
-### Use Loops to Iterate through Array Elements
-Below is the code in the program's main tab to initialize the btnArray.
+### Initialize Button Array in Main Tab
+Below is the code in the program's main tab to initialize the `buttons` array.
 ```java
 //main tab code 
 
@@ -43,56 +45,40 @@ Button[] btnArray; //declare an array of Button objects
 ButtonGroup myBtnGroup;
 
 void setup(){
+    color c1 = color(100);
+    color c2 = color(250);
+
     btnArray=new Button[3];   // initialize array that will hold 3 button
-    objects in array positions: btnArray[0], btnArray[1], btnArray[2].
-    // use loop to initialize btnArray
-    for(int i=0;i < 3; i++){  //Arrays are indexed starting at 0.
-        btnArray[i]= new Button(0,(i * 50),50,50);  // for each array element, call the Button constructor, to initialize a Button object.
-    }
-    myBtnGroup = new ButtonGroup( btnArray, 3);  //call menu constructor using an array input parameter
+    btnArray[0]= new Button(0,0,50,50,c1, c2, "Btn1" );  // for 
+    btnArray[1]= new Button(0,50,50,50,c1, c2, "Btn2"); 
+    btnArray[2]= new Button(0,100,50,50,c1, c2, "Btn3"); each array element, call the Button constructor, to initialize a Button object.
+    
+    myBtnGroup = new ButtonGroup( btnArray);  //call menu constructor using an array input parameter
 }
 ```
-If we look at the code for our initial attempt at writing the Menu class, can discover patterns that can help us now that we're trying to modify our code to use an Array of Button objects in our Menu Class.
+If we look at the code for our initial attempt at writing the [ButtonGroup class](/menu_buttons.md), can discover patterns that can help us now that we're trying to modify our code to use an Array of Button objects in our Menu Class.
 
-How can we convert the following code so that it's implemented using an array instead of hard coded Button objects?
-
-```java
-void click(int mX, int mY){
-        // check to make sure btn1 is not the current activeButton
-      if(activeButton != button1){
-        btn1.click(mX, mY);   //call the click method for btn1
-        if(btn1.on==true){  //the button has just been activated by the click event
-            activeButton=button1;  //set to activeButton
-            btn2.on=false;  //set btn2 off
-            btn3.on=false;  //set btn3 off
-         }// end if btn.on
-        } // end if activeButton
-       //this code must be completed for each of the buttons
-      } // end click function
-      ```
       
-###Array and For-Loop Version
-Below is the array version of the above code.  For some sections of the code, psudo-code is used in comments to indicate that additional code needs to be added to implement the specified functionality.  
+###ButtonGroup clicked(int mx, int my)
+Below is the array version of the above code.  See comments to indicate that additional code was added to implement the specified functionality.  
 
-Can you complete the code below, given the hints telling the logic that needs to be implemented?
 
 ```java
 
-void click(int mX, int mY){
-    for(int i=0;i< numButtons; i++){//outer loop through each button
-            // check to make sure btn1 is not the current activeButton
-    if(activeButton != btnArray[i]{
-        btnArray[i].click(mX, mY)//call the click method for btn1
-        if(btnArray[i].on){  //check to see if btn has been turned on
-           activeButton=btnArray[i];  //set activeButton
-                    //shut all other buttons off
-           for( var j=0;j <numButtons; j++){
-                    //for all buttons that aren't i==j
-                    //turn button to off state
-           }
-        }
-    } //end if activeButton  
-    }// end outer for-loop
-}//end click function
+void clicked ( int mx, int my){
+    for( int i=0; i< numButtons; i++){  //for each button in the array of buttons
+      if( buttons[i].selected == false){ //if this button is not currently active
+      if(buttons[i].clicked( mx, my)){  //true if buttons[i].clicked returns true
+          activeBtnIndex = i; //keep track of current active Button
+          for ( int j=0; j< numButtons; j++){ //nested loop to turn off all other buttons
+            if( i != j){
+              buttons[j].reset();  //turn off the non active button
+             } //end if
+          } //end inner for loop
+        } // end is current button clicked == true
+      } //end is current button off
+    } //end outer for loop
+  }  //end clicked
+  
 
 ```
