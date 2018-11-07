@@ -2,7 +2,7 @@
 
 ###Initial Logic
 
-For Project 3, you will create a simple drawing application where 3 buttons allow you to choose which pattern to draw. One additional button will clear the drawing canvas.  
+For Project 3, you will create a simple drawing application where 4 buttons allow you to choose which pattern to draw. One additional button will clear the drawing canvas.  3 Sliders will be used to change the hue, saturation, brightness of the pattern that's drawn.
 
 **The code on this page, and the image below shows a first iteration for this project**
 
@@ -12,11 +12,13 @@ For Project 3, you will create a simple drawing application where 3 buttons allo
 ### Overall Project Logic
 
 
-- Create a Group of 3 Buttons that function as a group
+- Create a Group of 4 Buttons that function as a group
 
-- Create a single Button to clear the canvas
+- Create an additional 5th Button that will clear the canvas
 
-- Create 3 simple patterns that can be drawn at the mouse position, the active pattern can be changed by selecting one of 3 buttons
+- Create 3 simple patterns that can be drawn at the mouse position, the active pattern can be changed by selecting one of 3 pattern buttons.
+
+- Add logic to have 1 of the 4 pattern buttons work as an eraser ( draw an ellipse with background color)
 
 - Use Functions to organize main-tab Logic
 - Use Classes to structure project logic.
