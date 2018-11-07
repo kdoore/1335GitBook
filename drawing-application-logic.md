@@ -12,7 +12,7 @@ For Project 3, you will create a simple drawing application where 4 buttons allo
 ### Overall Project Logic
 
 
-- Create a Group of 4 Buttons that function as a group
+- Create an array of 4 Buttons that function as a ButtonGroup to control which pattern is drawn.
 
 - Create an additional 5th Button that will clear the canvas
 
@@ -33,7 +33,7 @@ For Project 3, you will create a simple drawing application where 4 buttons allo
 
 ```java
   
-Pattern pattern0, pattern1, eraserPattern;
+Pattern pattern0, pattern1, pattern2; //eraser will not use a pattern object
 
 color bkgColor;   //declare global variable
 Button myClearBtn; ///simple Button for Clear
@@ -43,27 +43,36 @@ ButtonGroup buttonGroup;
 
     
     
-###Logic In Setup:  
+###Logic In Main Tab:  Setup:  
 
-- Set Canvas Size
+- Set Canvas Size: min: 800 x 600
 - Set colorMode - HSB
-- Initialize objects by calling constructors:
-       - declare an Array of Buttons //local to setup
+- **Initialize objects by calling constructors:**
+       - **declare an Array of Buttons** 
        
-          ```Button[] btnArray; ```
-       - initialize Array of Buttons
+          ```Button[] buttons; ```
+       - **initialize Array of Buttons**
        
-           `btnArray = new Button[3]; `
-       - initialize each Array element by calling Button Constructor
+           `buttons = new Button[4]; `
+       - **initialize each Array element by calling Button Constructor**
            
-            btnArray[0] = new Button( parameters ); 
-       - initialize clearButton by calling Button Constructor
+    ```java
+     buttons[0] = new Button( parameters, "Eraser" ); 
+     buttons[1] = new PImageButton( parameters ); 
+     buttons[2] = new PImageButton( parameters ); 
+     buttons[3] = new PImageButton( parameters ); 
+            
+    ```
+   
+ - **initialize buttonGroup** by calling ButtonGroup Constructor and pass buttonArray as a parameter
        
-       clearButton = new Button( parameters ); 
-       
-       - initialize buttonGroup by calling ButtonGroup Constructor and pass buttonArray as a parameter
-       
-      buttonGroup = new ButtonGroup( btnArray); 
+      `buttonGroup = new ButtonGroup( buttons);` 
+      
+  - **initialize clearButton** by calling Button Constructor 
+      
+    `clearButton = new Button( parameters );`
+    
+    - 
     
 ###Logic In Draw:
 - if mousePressed
