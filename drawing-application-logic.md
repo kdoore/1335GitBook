@@ -68,34 +68,33 @@ ButtonGroup buttonGroup;
        
       `buttonGroup = new ButtonGroup( buttons);` 
       
-  - **initialize clearButton** by calling Button Constructor 
+  - **initialize clearButton** by calling Button Constructor - use either Button or PImageButton
       
     `clearButton = new Button( parameters );`
-    
-    - 
-    
+        
 ###Logic In Draw:
 - if mousePressed
-        - drawPattern
-- drawMenu //always draw menu of Buttons
+        - translate(mouseX, mouseY);
+        - drawPattern( );
+        - resetMatrix();
+- drawMenu( ) //always draw menu of Buttons
     
 ###Logic In MouseClicked:
     
-- buttonGroup.click
-- clearButton.click
-- if clearButton is on ```if(clearButton.on)```
-       - clearCanvas - draw rectangle over the canvas surface
+- buttonGroup.clicked( parameters )
+- clearButton.click( parameters )
+- if clearButton is selected
+       - clearCanvas( ) - draw rectangle over the canvas surface
        - reset the clearButton```
  
 ###Logic in drawPattern:
-- translate origin to mouse position
 - set fill color
 - use switch-case structure
 - switch: check which myMenuArray button is active
          
          ```java
          
-         switch(buttonGroup.activeButton){
+         switch(buttonGroup.activeBtnIndex){
          case 0:
              //display pattern 0
              break;
@@ -105,14 +104,16 @@ ButtonGroup buttonGroup;
           case 2:
              //display pattern 2
              break;
+          case 3:
+             //display pattern 2
+             break;
+
           default:
               //println - no match
             break;
             }
        ```
-       
-- resetMatrix
-          
+                
           
  ###Logic in clearCanvas:
  
@@ -123,7 +124,7 @@ ButtonGroup buttonGroup;
  
  ###Logic in drawMenu: 
  
- //4 buttons - 3 patterns, 1 clearButton
+ //5 buttons: 4 buttons in buttonGroup, 1 clearButton
 -  draw a menu - background (rectangle)
 -  display buttonGroup object
 -  display clearButton object 
