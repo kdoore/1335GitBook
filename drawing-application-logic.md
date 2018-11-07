@@ -14,18 +14,19 @@ For Project 3, you will create a simple drawing application where 4 buttons allo
 
 - Create an array of 4 Buttons that function as a ButtonGroup to control which pattern is drawn.
 
-- Create an additional 5th Button that will clear the canvas
+- Create an additional 5th Button that will clear the canvas, but is not part of the ButtonGroup buttons.
 
-- Create 3 simple patterns that can be drawn at the mouse position, the active pattern can be changed by selecting one of 3 pattern buttons.
+- Create 3 simple patterns (PShapes) that can be drawn at the mouse position, the active pattern can be changed by selecting one of 3 pattern buttons.
 
 - Add logic to have 1 of the 4 pattern buttons work as an eraser ( draw an ellipse with background color)
+
 
 - Use Functions to organize main-tab Logic
 - Use Classes to structure project logic.
 
 ## Detailed Project Logic
 
-###Classes:  Button, ButtonGroup, Pattern
+###Classes:  Button, PImageButton, ButtonGroup, Pattern,  
     
 ###Global Objects:
 
