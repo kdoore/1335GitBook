@@ -38,7 +38,7 @@ class ButtonGroup{
   //add comments
   ButtonGroup(Button[] buttons){
     this.buttons = buttons;
-    activeButton = -1;  //start with none selected
+    activeButton = -1;  //start with no button selected 
   }
   
   //METHODS

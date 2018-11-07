@@ -43,8 +43,7 @@ class PImageButton extends Button {
   //PROPERTIES
   
   PImage img;
-  //constructor
-
+  
   //CONSTRUCTORS
   
   //add comments
