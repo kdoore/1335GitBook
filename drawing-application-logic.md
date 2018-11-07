@@ -47,7 +47,7 @@ ButtonGroup buttonGroup;
 ```
   
     
-###Logic In Main Tab:  Setup:  
+###Logic In Main Tab:  setup( ):  
 
 - Set Canvas Size: min: 800 x 600
 - Set colorMode - HSB
@@ -89,14 +89,14 @@ ButtonGroup buttonGroup;
         Pattern1 = new Pattern( shape1 );
 ```  
         
-###Logic In Draw:
+###Logic In draw( ):
 - if mousePressed
         - translate(mouseX, mouseY);
         - drawPattern( );
         - resetMatrix();
 - drawButtonMenu( ) //always draw menu of Buttons
  
-###Logic in drawPattern:
+###Logic in drawPattern( ):
 - set fill color
 - use switch-case structure
 - switch: check which myMenuArray button is active
@@ -131,7 +131,7 @@ ButtonGroup buttonGroup;
 -  buttonGroup.display();
 -  clearButton.display();
    
- ###Logic In MouseClicked:
+ ###Logic In MouseClicked(  ):
     
 - buttonGroup.clicked( parameters )
 - clearButton.click( parameters )
