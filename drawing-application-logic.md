@@ -14,29 +14,23 @@ For Project 3, you will create a simple drawing application where 4 buttons allo
 ###Button[ ] and ButtonGroup
 - Create an array of 4 Buttons that function as a ButtonGroup to control which pattern is drawn.
 
-- Create 3 simple patterns (PShapes) that can be drawn at the mouse position, the active pattern can be changed by selecting one of 3 pattern buttons.
+- Create 4 simple patterns (PShapes) that can be drawn at the mouse position, the active pattern can be changed by selecting one of 4 pattern buttons.
 
-- Add logic to have 1 of the 4 pattern buttons work as an eraser ( draw an ellipse with background color)
+- Add logic to have 1 of the 4 pattern buttons work as an eraser ( draw an ellipse with background color, the eraser color should not be modified by the sliders)
 
 ###Individual Button to Clear Canvas
 - Create an additional 5th Button that will clear the canvas, but is not part of the ButtonGroup buttons.
 
 ###Pattern Objects to draw patterns
-- Create 3 Pattern Object instances.  Switch-case structure allows one pattern to be set active by using the activeBtnIndex of the ButtonGroup, to set an active pattern to be drawn on the canvas.
-
-###Eraser Button
-- A
+- Create 4 Pattern Object instances.  Switch-case structure allows one pattern to be set active by using the activeBtnIndex of the ButtonGroup, to set an active pattern to be drawn on the canvas.
 
 ###Main Tab Create Functions for Structure
 - Use Functions to organize main-tab Logic
 - Use Classes to structure project logic.
 
-# Detailed Project Logic
+# Detailed Project Logic - Part 1 (no sliders): 
 
-###Classes:  Button, PImageButton, ButtonGroup, Pattern,  
-    
-###Global Objects:
-
+###Classes:  Button, PImageButton, ButtonGroup, Pattern  
 
 
 ```java
