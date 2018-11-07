@@ -147,6 +147,8 @@ ButtonGroup buttonGroup;
  - set fill
  - draw background-color rectangle to clear the canvas.
    
+ #Detailed Logic for Adding Sliders to Drawing Application
  
+ //todo
    
  
