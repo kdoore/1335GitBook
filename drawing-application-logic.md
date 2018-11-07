@@ -9,7 +9,7 @@ For Project 3, you will create a simple drawing application where 4 buttons allo
 
 ![](/assets/Screenshot 2017-03-06 12.05.10.png)
 
-### Overall Project Logic
+### Overall Project Logic - Phase 1
 
 ###Button[ ] and ButtonGroup
 - Create an array of 4 Buttons that function as a ButtonGroup to control which pattern is drawn.
@@ -22,28 +22,30 @@ For Project 3, you will create a simple drawing application where 4 buttons allo
 - Create an additional 5th Button that will clear the canvas, but is not part of the ButtonGroup buttons.
 
 ###Pattern Objects to draw patterns
-- Create 4 Pattern Object instances.  Switch-case structure allows one pattern to be set active by using the activeBtnIndex of the ButtonGroup, to set an active pattern to be drawn on the canvas.
+- Create 4 Pattern Object instances. 
+ 
+###Switch-case Control Structure
+Switch-case structure allows one pattern to be set as active by using the activeBtnIndex of the ButtonGroup, to set an active pattern to be drawn on the canvas.
 
 ###Main Tab Create Functions for Structure
 - Use Functions to organize main-tab Logic
 - Use Classes to structure project logic.
 
-# Detailed Project Logic - Part 1 (no sliders): 
+## Detailed Project Logic - Part 1 (no sliders): 
 
 ###Classes:  Button, PImageButton, ButtonGroup, Pattern  
 
-
 ```java
-  
-Pattern pattern0, pattern1, pattern2; //eraser will not use a pattern object
+//Global Variables
+
+Pattern eraserPattern, pattern1, pattern2, pattern3; 
 
 color bkgColor;   //declare global variable
 Button myClearBtn; ///simple Button for Clear
 ButtonGroup buttonGroup; 
 
 ```
-
-    
+  
     
 ###Logic In Main Tab:  Setup:  
 
@@ -73,21 +75,26 @@ ButtonGroup buttonGroup;
   - **initialize clearButton** by calling Button Constructor - use either Button or PImageButton
       
     `clearButton = new Button( parameters );`
+    
+    - initialize Pattern Objects
+        - Create 4 PShapes, pass to Pattern Constructor 
+    - Example initialization for 2 Patterns shown below
+    - 4 pattern objects required
+
+```java
+        PShape EraserPShape = createShape( ELLIPSE, 0,0,30,30);
+        EraserPattern = new Pattern( EraserPShape);
+    
+        PShape shape1 = createShape( RECT, 0,0,30, 80);
+        Pattern1 = new Pattern( shape1 );
+```  
         
 ###Logic In Draw:
 - if mousePressed
         - translate(mouseX, mouseY);
         - drawPattern( );
         - resetMatrix();
-- drawMenu( ) //always draw menu of Buttons
-    
-###Logic In MouseClicked:
-    
-- buttonGroup.clicked( parameters )
-- clearButton.click( parameters )
-- if clearButton is selected
-       - clearCanvas( ) - draw rectangle over the canvas surface
-       - reset the clearButton```
+- drawButtonMenu( ) //always draw menu of Buttons
  
 ###Logic in drawPattern:
 - set fill color
@@ -116,22 +123,30 @@ ButtonGroup buttonGroup;
             }
        ```
                 
-          
- ###Logic in clearCanvas:
+ 
+ ###Logic in drawButtonMenu( ): 
+ 
+ Draw 5 buttons: 4 buttons in buttonGroup, 1 clearButton
+-  draw a menu-background (rectangle)
+-  buttonGroup.display();
+-  clearButton.display();
+   
+ ###Logic In MouseClicked:
+    
+- buttonGroup.clicked( parameters )
+- clearButton.click( parameters )
+- if clearButton is selected
+       - clearCanvas( ) - draw rectangle over the canvas surface
+       - reset the clearButton
+   
+      
+  ###Logic in clearCanvas( ):
  
     called when clearBtn has been clicked and has on==true
     
  - set fill
  - draw background-color rectangle to clear the canvas.
- 
- ###Logic in drawMenu: 
- 
- //5 buttons: 4 buttons in buttonGroup, 1 clearButton
--  draw a menu - background (rectangle)
--  display buttonGroup object
--  display clearButton object 
-    
-     
+   
  
    
  
