@@ -57,8 +57,8 @@
 * [OOP - Polymorphism](oop-polymorphism.md)
 * [Child-Class: PImageButton](pimagebutton.md)
 * [PShape - SVG Objects](pshape_-_svg_objects.md)
-* [ButtonGroup](menu_buttons.md)
-* [Array of Buttons](arrays_of_objects.md)
+* [Menu of Buttons](menu_buttons.md)
+* [ButtonGroup - Final Version](arrays_of_objects.md)
 * [Slider Controller](slider_controller.md)
 * [Glossary](GLOSSARY.md)
 
