@@ -58,10 +58,16 @@ ButtonGroup buttonGroup;
        - **initialize Array of Buttons**
        
            `buttons = new Button[4]; `
-       - **initialize each Array element by calling Button Constructor**
+           
+       - **initialize each Array element by calling Button , PImageButton Constructors** 
+       _You need to figure out Button constructor parameter values so that buttons are positioned in a vertical stack._
            
     ```java
-     buttons[0] = new Button( parameters, "Eraser" ); 
+      color onColor = color(300);  //set custom button colors
+      color offColor = color(100);
+     buttons[0] = new Button( 20, 20, 100, 100, onColor, offColor,"Eraser" );
+ 
+     //similar parameters for other buttons
      buttons[1] = new PImageButton( parameters ); 
      buttons[2] = new PImageButton( parameters ); 
      buttons[3] = new PImageButton( parameters ); 
