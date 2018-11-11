@@ -107,26 +107,39 @@ ButtonGroup buttonGroup;
 - use switch-case structure
 - switch: check which myMenuArray button is active
          
-         ```java
-         
-         switch(buttonGroup.activeBtnIndex){
-         case 0:
-             //display pattern 0
-             break;
-          case 1:
-             //display pattern 1
-             break;
-          case 2:
-             //display pattern 2
-             break;
-          case 3:
-             //display pattern 2
-             break;
+ ```java
+ 
+ void drawPattern( ){
+     
+     Pattern currentPatttern = eraserPattern;
+     color curColor = color( 200, 100, 100); //will be set by sliders
+     currentPattern.setFill(curColor);
+     
+     switch(buttonGroup.activeBtnIndex){
+        case 0:
+             currentPattern.setFill(bkgColor);
+             currentPatttern = eraserPattern;
+        break;
+        
+        case 1:
+             currentPatttern = pattern1;
+        break;
+        
+        case 2:
+             currentPatttern = pattern2;
+        break;
+        
+        case 3:
+             currentPatttern = pattern3;
+        break;
 
-          default:
+        default:
               //println - no match
-            break;
-            }
+         }//end switch-case
+        
+        currentPattern.display();
+        
+    } // end drawPattern();
        ```
                 
  
