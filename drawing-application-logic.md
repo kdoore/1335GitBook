@@ -51,6 +51,7 @@ ButtonGroup buttonGroup;
 - Set Canvas Size: min: 800 x 600
 - Set colorMode - HSB
 - **Initialize objects by calling constructors:**
+
        - **declare an Array of Buttons** 
        
           ```Button[] buttons; ```
