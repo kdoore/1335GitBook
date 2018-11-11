@@ -9,7 +9,7 @@ For Project 3, you will create a simple drawing application where 4 buttons allo
 
 ![](/assets/Screenshot 2017-03-06 12.05.10.png)
 
-### Overall Project Logic - Phase 1
+# Overall Project Logic - Phase 1
 
 ###Button[ ] and ButtonGroup
 - Create an array of 4 Buttons that function as a ButtonGroup to control which pattern is drawn.
@@ -31,9 +31,9 @@ Switch-case structure allows one pattern to be set as active by using the active
 - Use Functions to organize main-tab Logic
 - Use Classes to structure project logic.
 
-## Detailed Project Logic - Part 1 (no sliders): 
+# Detailed Project Logic - Part 1 (no sliders): 
 
-###Classes:  Button, PImageButton, ButtonGroup, Pattern  
+###Declare Global Variables in Main Tab
 
 ```java
 //Global Variables
@@ -44,10 +44,9 @@ color bkgColor;   //declare global variable
 Button myClearBtn; ///simple Button for Clear
 ButtonGroup buttonGroup; 
 
-```
-  
+``` 
     
-###Logic In Main Tab:  setup( ):  
+###Logic In Main Tab:  setup( )  
 
 - Set Canvas Size: min: 800 x 600
 - Set colorMode - HSB
