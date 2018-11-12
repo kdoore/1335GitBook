@@ -82,4 +82,32 @@ class Slider {
 } // end class Slider
 ```
 
+###Main Tab Code: 
+In the code below, we use a slider instance to control the scale of an ellipse 
+
+```java
+Slider slider1;
+float hue;   //modified by the slider
+
+void setup(){
+  size( 700, 700);
+  colorMode( HSB, 360,100,100);
+  slider1 = new Slider( 200,200, 200, 30, 0, 360, "Hue");
+  hue = slider1.sliderVal;  //initialize hue using slider to set the initial value
+}
+
+void draw(){
+  background( 0);
+   if( mousePressed){
+    boolean isChanged = slider1.checkPressed( mouseX, mouseY);
+    if(isChanged){
+        hue = slider1.sliderVal; //update hue using updated sliderVal
+    }
+  }
+  slider1.display();
+  fill( hue, 100, 100); //hue modified by slider1
+  rect( 20,20, 50,50); //rectangle hue modified by slider1 
+}
+
+```
 
