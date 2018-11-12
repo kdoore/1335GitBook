@@ -49,7 +49,7 @@ class Slider {
   //can be used in child classes
   
   void backgroundLayer() {
-    pushStyle();
+   
     fill( 100); 
     rect( x-10, y-20, w+20, h+40);  ////outer background rectangle
     fill( 360);  //fill for the text
@@ -63,7 +63,7 @@ class Slider {
     textAlign(CENTER);
     textSize(14);
     text( label, x+(w/2), y+h +15);
-    popStyle();
+  
   }
 
  
