@@ -96,6 +96,9 @@ switch( activeButton ){
     curPattern.fillColor = backgroundColor;
     curPattern.strokeColor = backgroundColor;
  break;
+ 
+ default:
+   println("no match on switch case");
 
 }//end of switch statement logic
   
