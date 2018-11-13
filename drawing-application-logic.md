@@ -177,4 +177,13 @@ ButtonGroup buttonGroup;
  
  //todo
    
+In this project, sliders will be used to control Hue, Saturation, Brightness of the patterns drawn.  
+
+The sliders must be checked each time the draw-loop executes, to see if the sliderVal has changed.  
+
+Sliders must always be checked for changes in sliderVal before drawing any patterns.
+
+ `checkSliders( )` is a custom function in the main tab, that contains logic for checking each slider. 
+
+The sliders 
  
