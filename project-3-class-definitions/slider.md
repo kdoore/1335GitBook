@@ -6,7 +6,7 @@ Slider Base Class
 //Class slider 
 //creates a horizontal slider
 //uses map function to match displayed slider rectangle and 
-//indicatror rectangles with the min, max values provided as input parameters
+//indicator rectangles with the min, max values provided as input parameters
 class Slider {
   float x, y;
   float w, h;
@@ -40,7 +40,7 @@ class Slider {
 
     fill(360); //indicator rectangle
     rect( sliderX-2, y-3, 4, h + 6);
-    text( int(sliderVal), sliderX + 2, y-4);  //display the sliderValue
+    text( int(sliderVal), sliderX + 2, y-4);  //display the sliderValue, typecast to int to remove trailing fractional digits
   }
   
   
