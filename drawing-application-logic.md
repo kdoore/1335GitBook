@@ -136,7 +136,14 @@ ButtonGroup buttonGroup;
         default:
               //println - no match
          }//end switch-case
-        
+        if( currentPattern != eraserPattern){
+            //set color using sliders sliderVal
+          float hue = 200; //will be set by hue slider
+          float sat = 100; //will be set by sat slider
+          float bright = 100; // will be set by bright slider
+          color currentColor = color( hue, sat, bright);
+          currentPattern.setFill(currentColor);
+        }
         currentPattern.display();
         
     } // end drawPattern();
