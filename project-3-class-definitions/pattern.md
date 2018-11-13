@@ -43,10 +43,10 @@ class Pattern{
   }
 
   //METHODS
-  void display(int mx, int my){
+  void display( ){
     s.setStroke( strokeColor);
     s.setFill( fillColor);
-    shape( s, mx, my);
+    shape( s, 0, 0);
     } 
 }//end PatternClass
 ```
@@ -77,18 +77,18 @@ void drawPattern( ){
 
 Pattern curPattern = pattern0;  //temporary Pattern variable initially pointing to the pattern0 object.
 
-int activeButton = ButtonGroup.activeButton;
+int activeButton = buttonGroup.activeBtnIndex;
 
 //switch-case control structure determines which pattern corresponds to the current activeButton
 switch( activeButton ){
   case 0: //pattern0 and button0
     curPattern = pattern0;
-    curPattern.fillColor = color( 50,100,100); //set color
+    
   break;
   
   case 1: //pattern1 and button1
     curPattern = pattern1; //first we need to set the pattern
-    curPattern.fillColor = color( 150,100,100); //then we can set color
+   
   break;
  
  case 2: //eraser pattern and button
@@ -100,7 +100,12 @@ switch( activeButton ){
 }//end of switch statement logic
   
   //now display the curPattern
-  curPattern.display( mouseX, mouseY); //display at mouse position
+  if( curPattern != eraserPattern){
+  //set fill if this is not the eraser
+  curPattern.fillColor = color( 150,100,100); //then we can set 
+  }
+    color - this will use slider values to determine fill
+  curPattern.display( ); //display at mouse position
 }
 ```
 
