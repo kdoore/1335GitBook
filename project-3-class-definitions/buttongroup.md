@@ -31,14 +31,14 @@ class ButtonGroup{
   //PROPERTIES
   
   Button[] buttons;
-  int activeButton;
+  int activeBtnIndex;
   
   //CONSTRUCTORS
   
   //add comments
   ButtonGroup(Button[] buttons){
     this.buttons = buttons;
-    activeButton = -1;  //start with no button selected 
+    activeBtnIndex = 0;  //start with no button selected 
   }
   
   //METHODS
@@ -58,7 +58,7 @@ class ButtonGroup{
              buttons[i].clicked(mx, my); //check to see if it's been clicked
              if( buttons[i].selected == true){  // if it's now selected
                  isChanged = true;
-                 activeButton = i;
+                 activeBtnIndex = i;
                for( int j=0; j< buttons.length; j++){  //for all other buttons
                  if( i != j){    
                    buttons[j].reset() ;  //turn the buttons off
