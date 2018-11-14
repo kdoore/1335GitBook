@@ -24,7 +24,7 @@ For Project 3, you will create a simple drawing application where 4 buttons allo
 ###Pattern Objects to draw patterns
 - Create 4 Pattern Object instances. 
 
-###CheckSliders( ) must occur before DrawPattern( ) 
+###CheckSliders( ) must occur before drawPattern( ) 
 - CheckSlider( ) method, checks each slider to see if it's value has changed.  Also includes logic for color dependency between sliders:  
     - satSlider's hue is set by the hueSlider's sliderVal;
     - brightSlider's hue is set by the hueSlider's sliderVal;
@@ -33,16 +33,15 @@ For Project 3, you will create a simple drawing application where 4 buttons allo
 ###DrawPattern( ) Switch-case Control Structure
 Switch-case structure allows one pattern to be set as active by using the activeBtnIndex of the ButtonGroup, to set an active pattern to be drawn on the canvas.
 
-###Sliders set fillColor for Patterns in DrawPattern( )
-   
+###Sliders set fillColor for Patterns in drawPattern( )
+before displaying the currentPattern, we'll use custom sliders to set the hue, saturation, brightness of the drawn patterns.  This logic will be near the bottom of drawPattern(), just before displaying the currentPattern.
+ See code details below below:  
 
-
-
-###Main Tab Create Functions for Structure
+#Main Tab Logic: 
 - Use Functions to organize main-tab Logic
 - Use Classes to structure project logic.
 
-##Detailed Project Logic (no sliders): 
+##Detailed Project Logic: 
 
 ###Declare Global Variables in Main Tab
 
