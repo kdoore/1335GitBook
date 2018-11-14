@@ -122,23 +122,24 @@ Slider hueSlider, satSlider, brightSlider;
         
 ###Logic In draw( ):
 - if mousePressed
+        - checkSliders( );
         - translate(mouseX, mouseY);
         - drawPattern( );
         - resetMatrix();
 - drawButtonMenu( ) //always draw menu of Buttons
  
 ###Logic in drawPattern( ):
-- set fill color
+- connects buttons to determine currentPattern
+- sets fill for currentPattern using slider's sliderVal
+- eraserPattern color is not changed by sliders, should have fillColor, strokeColor set to global bkgColor;
 - use switch-case structure
-- switch: check which myMenuArray button is active
+- switch: check which buttonGroup button is active
          
  ```java
  
  void drawPattern( ){
      
      Pattern currentPatttern = eraserPattern;
-     color curColor = color( 200, 100, 100); //will be set by sliders
-     currentPattern.setFill(curColor);
      
      switch(buttonGroup.activeBtnIndex){
         case 0: 
