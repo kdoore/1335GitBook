@@ -127,7 +127,7 @@ ButtonGroup buttonGroup;
      currentPattern.setFill(curColor);
      
      switch(buttonGroup.activeBtnIndex){
-        case 0:
+        case 0: 
              currentPattern.setFill(bkgColor);
              currentPattern.setStroke(bkgColor);
              currentPatttern = eraserPattern;
