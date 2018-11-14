@@ -165,7 +165,7 @@ Slider hueSlider, satSlider, brightSlider;
          }//end switch-case
         if( currentPattern != eraserPattern){
             //set color using sliders sliderVal if not the eraserPattern
-          float hue=hueSlider.sliderVal;
+          float hue = hueSlider.sliderVal;
           float sat = satSlider.sliderVal;
           float bright = brightSlider.sliderVal;
           color currentColor = color( hue, sat, bright);
