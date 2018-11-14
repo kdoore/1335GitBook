@@ -252,10 +252,12 @@ void checkSliders(){
 }
 ```
 
-###Logic in 
+###Additional Logic
 
+# clearButton
 
  ###Logic in clearCanvas( ):
 called when clearBtn has been clicked and has on==true
 - set fill
 - draw background-color rectangle to clear the canvas.
+- reset the button to off (call reset( ) method)
