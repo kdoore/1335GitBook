@@ -55,6 +55,8 @@ color bkgColor;   //declare global variable
 Button myClearBtn; ///simple Button for Clear
 ButtonGroup buttonGroup; 
 
+Slider hueSlider, satSlider, brightSlider;
+
 ``` 
     
 ###Logic In Main Tab:  setup( )  
@@ -105,6 +107,18 @@ ButtonGroup buttonGroup;
         PShape shape1 = createShape( RECT, 0,0,30, 80);
         Pattern1 = new Pattern( shape1 );
 ```  
+
+    - **Initialize Sliders**
+       Initialize Sliders by calling constructors with proper input parameters to determine position, size, min, max range
+    
+    ```
+     hueSlider = new HueSlider( 40, height-100, 200, 50, 0, 360 );
+    satSlider = new SatSlider( parameters );
+    brightSlider = new BrightSlider(  parameters );
+    ```
+    
+    
+    
         
 ###Logic In draw( ):
 - if mousePressed
