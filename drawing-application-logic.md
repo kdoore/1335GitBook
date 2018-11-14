@@ -111,7 +111,7 @@ Slider hueSlider, satSlider, brightSlider;
     - **Initialize Sliders**
        Initialize Sliders by calling constructors with proper input parameters to determine position, size, min, max range
     
-    ```
+    ```java
      hueSlider = new HueSlider( 40, height-100, 200, 50, 0, 360 );
     satSlider = new SatSlider( parameters );
     brightSlider = new BrightSlider(  parameters );
@@ -202,6 +202,29 @@ The sliders must be checked each time the draw-loop executes if the mousePressed
 Sliders must always be checked for changes in sliderVal before drawing any patterns.
 
  `checkSliders( )` is a custom function in the main tab, that contains logic for checking each slider. 
+ 
+ - Declare global variables:  
+     `Slider hueSlider, satSlider, brightSlider;`
+ - Initialize 3 Sliders in setup( ) by calling child class constructors: example
+     `hueSlider = new HueSlider( 40, height-100, 200, 50, 0, 360 );`
+ - Incorporate Sliders into project using custom functions:
+  - void checkSliders( );
+  - void drawSliders ( );
+  - in drawPattern( ) - set currentPattern fillColor using sliderVal
+      - see drawPattern above for integration of this example code:
+
+```java
+if( currentPattern != eraserPattern){
+//set color using sliders sliderVal if not the eraserPattern
+float hue = hueSlider.sliderVal;
+float sat = satSlider.sliderVal;
+float bright = brightSlider.sliderVal;
+color currentColor = color( hue, sat, bright);
+currentPattern.setFill(currentColor);
+}
+```
+
+
 
 ###Logic in CheckSliders
 
