@@ -161,7 +161,7 @@ Slider hueSlider, satSlider, brightSlider;
         break;
 
         default:
-              //println - no match
+              println("no match");
          }//end switch-case
         if( currentPattern != eraserPattern){
             //set color using sliders sliderVal if not the eraserPattern
