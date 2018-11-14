@@ -169,7 +169,6 @@ Slider hueSlider, satSlider, brightSlider;
           float sat = satSlider.sliderVal;
           float bright = brightSlider.sliderVal;
           color currentColor = color( hue, sat, bright);
-          
           currentPattern.setFill(currentColor);
         }
         currentPattern.display();
@@ -188,7 +187,7 @@ Slider hueSlider, satSlider, brightSlider;
  ###Logic In MouseClicked(  ):
     
 - buttonGroup.clicked( parameters )
-- clearButton.click( parameters )
+- clearButton.click( parameters )  
 - if clearButton is selected
        - clearCanvas( ) - draw rectangle over the canvas surface
        - reset the clearButton
