@@ -254,7 +254,7 @@ void checkSliders(){
 
 ###Additional Logic
 
-# clearButton
+### clearButton
 
  ###Logic in clearCanvas( ):
 called when clearBtn has been clicked and has on==true
