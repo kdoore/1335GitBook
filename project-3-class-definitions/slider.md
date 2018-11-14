@@ -110,7 +110,9 @@ void draw(){
 }
 
 ```
-#Hue Slider
+#HueSlider
+For the HueSlider child class, we override the display( ) method.  We use a for-loop to draw vertical lines across the rectangle, where each line's color is determined by the map function.  The map function calculates what the hueValue should be for each value of i in the for-loop.  The for-loop is executed once for every pixel of width in the display's rectangle. So, one line is drawn for every value of i, so map calculates what the hueValue should be, based on i having a range of values from 0-w, where the hueValue should have a range of values from min to max.  
+
 
 ```java
 class HueSlider extends Slider {
@@ -119,16 +121,51 @@ class HueSlider extends Slider {
   }
   void display() {
     super.backgroundLayer();
-    for (int i=0; i < w; i ++) { //what going on here?
-      float hueVal = map( i, 0, w, min, max);
-      stroke(hueVal, 100, 100);
-      line(i+x, y, i + x, y + h);
+    for (int i=0; i < w; i ++) { 
+      float hueVal = map( i, 0, w, min, max); //calculate hueValue for each vertical line drawn at (x+i,y) as i changes
+      stroke(hueVal, 100, 100); //color the line using stroke
+      line(i+x, y, i + x, y + h); //vertical lines drawn in rectangle
     }
-    fill(sliderVal, 100, 100);
-    stroke(0);
-    rect(sliderX, y-4, 5, h+8);
+    fill(sliderVal, 100, 100); //color for indicator rectangle
+    stroke(50);
+    rect(sliderX, y-4, 5, h+8); //indicator rectangle
   } // end of display
 } // end of class HueSlider
+
+```
+
+###SatSlider
+The SatSlider also overrides the display( ) method from the base-class.  It has logic to determine how the saturation value should change for each vertical line drawn from i=0 to i=w (the width of the rectangle).  
+
+```java
+
+class SatSlider extends Slider{
+  //no child-class instance variables 
+  
+  //base class slider constructor
+  // Slider(int x, int y, int w, int h, float min, float max, String label ){
+  
+    //Define constructor
+    SatSlider( int x, int y, int w, int h, float min, float max  ){
+    super(x, y, w, h, min, max, "Sat"  );  //call base-class constructor
+  }
+  
+  //Draw vertical lines where the saturation changes from min to max
+  void display(){
+    super.backgroundLayer();
+    float satValue = 0;  ///this will be used to color the line
+    ///creates saturation varied background of the hitbox rectangle
+    for( int i = 0; i< w; i++){
+      satValue = map( i, 0, w, min, max); ///convert pixels to colors
+      stroke( hue, satValue, 100);
+      line( x + i, y, x+i, y+h);
+    }
+    stroke( 50);
+    fill(hue ,sliderVal, 100);
+    rect( sliderX-2, y-3, 4, h+6); 
+  } //end display
+  
+} // end satSlider
 
 ```
 
