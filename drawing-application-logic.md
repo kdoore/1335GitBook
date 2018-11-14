@@ -214,14 +214,15 @@ Sliders must always be checked for changes in sliderVal before drawing any patte
       - see drawPattern above for integration of this example code:
 
 ```java
-if( currentPattern != eraserPattern){
-//set color using sliders sliderVal if not the eraserPattern
-float hue = hueSlider.sliderVal;
-float sat = satSlider.sliderVal;
-float bright = brightSlider.sliderVal;
-color currentColor = color( hue, sat, bright);
-currentPattern.setFill(currentColor);
-}
+    //Code chunk from drawPattern( ) in main tab
+    if( currentPattern != eraserPattern){
+    //set color using sliders sliderVal if not the eraserPattern
+    float hue = hueSlider.sliderVal;
+    float sat = satSlider.sliderVal;
+    float bright = brightSlider.sliderVal;
+    color currentColor = color( hue, sat, bright);
+    currentPattern.setFill(currentColor);
+    }
 ```
 
 
