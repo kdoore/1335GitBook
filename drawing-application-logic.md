@@ -95,8 +95,8 @@ Slider hueSlider, satSlider, brightSlider;
       
     `clearButton = new Button( parameters );`
     
-    - initialize Pattern Objects
-        - Create 4 PShapes, pass to Pattern Constructor 
+ - **initialize Pattern Objects**
+        - Create 4 PShapes, pass one to each Pattern Constructor 
     - Example initialization for 2 Patterns shown below
     - 4 pattern objects required
 
@@ -115,14 +115,11 @@ Slider hueSlider, satSlider, brightSlider;
      hueSlider = new HueSlider( 40, height-100, 200, 50, 0, 360 );
     satSlider = new SatSlider( parameters );
     brightSlider = new BrightSlider(  parameters );
-    ```
-    
-    
-    
+    ```    
         
 ###Logic In draw( ):
 - if mousePressed
-        - checkSliders( );
+        - checkSliders( );  //check before drawPattern, when mousePressed
         - translate(mouseX, mouseY);
         - drawPattern( );
         - resetMatrix();
