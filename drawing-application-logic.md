@@ -210,7 +210,7 @@ Sliders must always be checked for changes in sliderVal before drawing any patte
  - Incorporate Sliders into project using custom functions:
   - void checkSliders( );
   - void drawSliders ( );
-  - in drawPattern( ) - set currentPattern fillColor using sliderVal
+  - in drawPattern( ) - set currentPattern fillColor using sliderVal right before currentPattern is displayed: `currentPattern.display()`
       - see drawPattern above for integration of this example code:
 
 ```java
@@ -225,10 +225,20 @@ Sliders must always be checked for changes in sliderVal before drawing any patte
     }
 ```
 
+###Logic in DrawSliders( )
+This code is similar to DrawButtons, we simply want to draw a rectangle behind the sliders, and then have each slider display itself by calling the over-ridden display( ) method.
 
+```java
+void drawSliders( ){
+  //draw background rectangle behind sliders
+  //display hueSlider, example:
+  hueSlider.display();
+  //display other sliders
 
-###Logic in CheckSliders
-
+}
+```
+###Logic in CheckSliders( )
+In CheckSliders, we must check to see if each slider has been pressed.  We need to set the hue value for the satSlider using the current sliderVal of the hueSlider since the display of satSlider should change when the hueSlider is changed.  Similarly for the brightSlider, it must have it's hue and sat reset to reflect current hueSlider and satSlider values.
 
 ```java
 void checkSliders(){
@@ -242,6 +252,7 @@ void checkSliders(){
 }
 ```
 
+###Logic in 
 
 
  ###Logic in clearCanvas( ):
