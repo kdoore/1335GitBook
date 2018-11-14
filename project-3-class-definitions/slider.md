@@ -110,4 +110,25 @@ void draw(){
 }
 
 ```
+#Hue Slider
+
+```java
+class HueSlider extends Slider {
+  HueSlider( int x, int y, int w, int h, float min, float max ) {
+    super( x, y, w, h, min, max, "Hue" ); ////calling base class constructor
+  }
+  void display() {
+    super.backgroundLayer();
+    for (int i=0; i < w; i ++) { //what going on here?
+      float hueVal = map( i, 0, w, min, max);
+      stroke(hueVal, 100, 100);
+      line(i+x, y, i + x, y + h);
+    }
+    fill(sliderVal, 100, 100);
+    stroke(0);
+    rect(sliderX, y-4, 5, h+8);
+  } // end of display
+} // end of class HueSlider
+
+```
 
