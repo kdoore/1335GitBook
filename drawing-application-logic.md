@@ -9,7 +9,7 @@ For Project 3, you will create a simple drawing application where 4 buttons allo
 
 ![](/assets/Screenshot 2017-03-06 12.05.10.png)
 
-## Overall Project Logic - Phase 1
+## Overall Project Logic - Including Slider Logic
 
 ###Button[ ] and ButtonGroup
 - Create an array of 4 Buttons that function as a ButtonGroup to control which pattern is drawn.
@@ -23,9 +23,20 @@ For Project 3, you will create a simple drawing application where 4 buttons allo
 
 ###Pattern Objects to draw patterns
 - Create 4 Pattern Object instances. 
+
+###CheckSliders( ) must occur before DrawPattern( ) 
+- CheckSlider( ) method, checks each slider to see if it's value has changed.  Also includes logic for color dependency between sliders:  
+    - satSlider's hue is set by the hueSlider's sliderVal;
+    - brightSlider's hue is set by the hueSlider's sliderVal;
+    - brightSlider's sat is set by the satSlider's sliderVal;
  
-###Switch-case Control Structure
+###DrawPattern( ) Switch-case Control Structure
 Switch-case structure allows one pattern to be set as active by using the activeBtnIndex of the ButtonGroup, to set an active pattern to be drawn on the canvas.
+
+###Sliders set fillColor for Patterns in DrawPattern( )
+   
+
+
 
 ###Main Tab Create Functions for Structure
 - Use Functions to organize main-tab Logic
@@ -118,6 +129,7 @@ ButtonGroup buttonGroup;
      switch(buttonGroup.activeBtnIndex){
         case 0:
              currentPattern.setFill(bkgColor);
+             currentPattern.setStroke(bkgColor);
              currentPatttern = eraserPattern;
         break;
         
@@ -137,11 +149,12 @@ ButtonGroup buttonGroup;
               //println - no match
          }//end switch-case
         if( currentPattern != eraserPattern){
-            //set color using sliders sliderVal
-          float hue = 200; //will be set by hue slider
-          float sat = 100; //will be set by sat slider
-          float bright = 100; // will be set by bright slider
+            //set color using sliders sliderVal if not the eraserPattern
+          float hue=hueSlider.sliderVal;
+          float sat = satSlider.sliderVal;
+          float bright = brightSlider.sliderVal;
           color currentColor = color( hue, sat, bright);
+          
           currentPattern.setFill(currentColor);
         }
         currentPattern.display();
@@ -164,26 +177,35 @@ ButtonGroup buttonGroup;
 - if clearButton is selected
        - clearCanvas( ) - draw rectangle over the canvas surface
        - reset the clearButton
-   
       
-  ###Logic in clearCanvas( ):
- 
-    called when clearBtn has been clicked and has on==true
-    
- - set fill
- - draw background-color rectangle to clear the canvas.
-   
  #Detailed Logic for Adding Sliders to Drawing Application
- 
- //todo
-   
+    
 In this project, sliders will be used to control Hue, Saturation, Brightness of the patterns drawn.  
 
-The sliders must be checked each time the draw-loop executes, to see if the sliderVal has changed.  
+The sliders must be checked each time the draw-loop executes if the mousePressed, to see if the sliderVal has changed.  
 
 Sliders must always be checked for changes in sliderVal before drawing any patterns.
 
  `checkSliders( )` is a custom function in the main tab, that contains logic for checking each slider. 
 
-The sliders 
- 
+###Logic in CheckSliders
+
+
+```java
+void checkSliders(){
+  ///update sliders if the mouse has been pressed within their hitbox
+  hueSlider.checkPressed( mouseX, mouseY);
+  satSlider.hue = hueSlider.sliderVal;
+  satSlider.checkPressed( mouseX, mouseY);
+  brightSlider.hue = hueSlider.sliderVal;
+  brightSlider.sat = satSlider.sliderVal;
+  brightSlider.checkPressed( mouseX, mouseY);
+}
+```
+
+
+
+ ###Logic in clearCanvas( ):
+called when clearBtn has been clicked and has on==true
+- set fill
+- draw background-color rectangle to clear the canvas.
