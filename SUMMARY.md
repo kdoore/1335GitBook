@@ -70,7 +70,7 @@
   * [PImageButton](project-3-class-definitions/pimagebutton.md)
   * [ButtonGroup](project-3-class-definitions/buttongroup.md)
   * [Pattern](project-3-class-definitions/pattern.md)
-    * PShapes - SVG, Vertex Shapes
+    * [PShapes - SVG, Vertex Shapes](project-3-class-definitions/pattern/pshapes-svg-vertex-shapes.md)
     * [Setting Colors For Patterns](project-3-class-definitions/pattern/setting-colors-for-patterns.md)
   * [Slider](project-3-class-definitions/slider.md)
 
