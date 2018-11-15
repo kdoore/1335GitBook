@@ -5,7 +5,9 @@ Setting the fill and stroke for PShapes is non-trivial since the PShape class is
 We can make modifications to the Pattern class to help smooth out these difficulties.
 
 The Noun Project  [https://thenounproject.com/](https://thenounproject.com/)
-Provides an easy way to get some simple svg's that we can use to create patterns.
+Provides an easy way to get some simple svg's that we can use to create patterns.  
+
+Instructions to remove text from SVG:
 
 #Table of Fill, Stroke Syntax for PShapes
 
