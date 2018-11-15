@@ -29,8 +29,6 @@ pattern0.display(mouseX, mouseY); //displayed using color1
 To have dynamic color change for the Pattern objects, we can just modify the value for the Pattern object's variables: fillColor or strokeColor, right before we call the display( ) method.  
 
 
-
-
 ```java
 
 //main tab - initialization in setup()

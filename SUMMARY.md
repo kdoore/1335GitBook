@@ -71,6 +71,7 @@
   * [ButtonGroup](project-3-class-definitions/buttongroup.md)
   * [Pattern](project-3-class-definitions/pattern.md)
     * [Setting Colors For Patterns](project-3-class-definitions/pattern/setting-colors-for-patterns.md)
+  * PShapes - SVG, Vertex Shapes
   * [Slider](project-3-class-definitions/slider.md)
 
 ## Java Syntax
