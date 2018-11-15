@@ -14,9 +14,22 @@ We can make modifications to the Pattern class to help smooth out these difficul
 |  s = loadShape("shape.svg" )| external svg file | s.disableStyle( ); fill(color(100) ); |
 
 
-### Updated Pattern Class
+## Updated Pattern Class - For All PShapes
 
+The code below can be used with all types of PShapes. When using the external svg version, you must set the value of isSVG = true  in the main tab after creating the Pattern object.
 
+**example main tab code**
+ 
+
+```java
+ PShape s1 = loadShape( "nounPattern.svg");
+  pattern1 = new Pattern(s1);
+  pattern1.isSVG = true;
+  pattern1.fillColor = color( 200, 100, 100);
+  pattern1.display();
+```
+
+###Pattern Class
 
 ```java
 class Pattern{
