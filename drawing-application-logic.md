@@ -250,21 +250,21 @@ void checkSliders(){
 ###Additional Logic
 
 ### clearButton
-The clearButton is a regular button that is used to clear the canvas.  The clearButton must be declared as a global object-reference variable.
+The clearButton is a regular button that is used to clear the canvas.  The clearButton must be declared as a global object-reference variable. The clearButton behaves like a door-bell, meaning it never displays that it is in the selected state.  When the clearButton is clicked, it clears the canvas, then the reset( ) method is called to turn the button off.  
 
 ```
 //global variable
 Button clearButton;
 ```
 **Initialize in setup()**
-
+The clearButton is not part of the buttonGroup buttons, but it's parameters should be defined so that the button is displayed below the other buttons that are part of the buttonGroup.  `
 
 ```
-clearButton = new Button(  parameters );
+//in setup()
+clearButton = new Button(  parameters ); 
 ```
 
 **Add code in displayButtons( ), to display the clearButton**
-
 
 ```java
 void displayButtons(){
