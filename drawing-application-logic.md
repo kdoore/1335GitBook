@@ -250,9 +250,46 @@ void checkSliders(){
 ###Additional Logic
 
 ### clearButton
+The clearButton is a regular button that is used to clear the canvas.  The clearButton must be declared as a global object-reference variable.
+
+```
+//global variable
+Button clearButton;
+```
+**Initialize in setup()**
+
+
+```
+clearButton = new Button(  parameters );
+```
+
+**Add code in displayButtons( ), to display the clearButton**
+
+
+```java
+void displayButtons(){
+//draw background rectangle
+buttonGroup.display();
+clearButton.display();
+}
+```
+**Add code in mouseClicked( )**
+Add code to check if the clearButton has been clicked. Then, check to see if the clearButton is currently selected, if it is, then call custom function:  clearCanvas( ), then turn-off the clearButton by calling the reset( ) method.
+
+
+```java
+void mouseClicked(){
+  buttonGroup.clicked( mouseX, mouseY);
+  clearButton.clicked( mouseX, mouseY); //check to see if it's been clicked
+  if( clearButton.selected){
+    //do something
+    clearCanvas();
+    clearButton.reset(); //turn the button  off
+  }
+}
+```
 
  ###Logic in clearCanvas( ):
 called when clearBtn has been clicked and has on==true
-- set fill
-- draw background-color rectangle to clear the canvas.
-- reset the button to off (call reset( ) method)
+- set fill to global background color: bkgColor
+- draw a rectangle, the size of the entire canvas, to clear the canvas.  `rect( 0, 0, width, height)`
