@@ -13,33 +13,32 @@ This code example shows how we can use a 1-Dimensional array of PShapes to creat
 PShape[] shapes;
 int colWidth=30;
 int rowHeight = 30;
-  
 void setup() {
   size(600, 600);
-  background(200, 0, 200);
+  colorMode(HSB, 360, 100, 100);
+  background(200, 100, 100);
+  strokeJoin(ROUND);
   stroke(0);
   strokeWeight(15);
-  shapes = populateArray(colWidth, rowHeight); 
+  shapes = populateArray(colWidth, rowHeight);
   drawGrid(shapes, colWidth, rowHeight);
 }
 
 void draw() { //draw must be included for mouseReleased event function to work
-  
 }
 
-PShape[] populateArray( float xSize, float ySize){
+PShape[] populateArray( float xSize, float ySize) {
   PShape[] shapes;
   int numRows =int( height/ySize);
   int numCols =int( width/xSize);
   shapes = new PShape[numRows * numCols];
   PShape block1 = createBlock( xSize, ySize, true);
-  PShape block2 = createBlock( xSize, ySize, false); 
-  for( int i=0; i< numRows* numCols; i++){
-    float rand = random(0,2); 
-    if( rand > 1){ //flip a coin
+  PShape block2 = createBlock( xSize, ySize, false);
+  for ( int i=0; i< numRows* numCols; i++) {
+    float rand = random(0, 2);
+    if ( rand > 1) { //flip a coin
       shapes[i]= block1; ///use block 1
-    }
-    else{
+    } else {
       shapes[i]= block2;
     }
   }
@@ -47,16 +46,16 @@ PShape[] populateArray( float xSize, float ySize){
 }
 
 void mouseReleased() {
-  background(200, 0, 200);
+  background(random(360), 100,100);
   shapes = populateArray(colWidth, rowHeight);
   drawGrid(shapes, colWidth, rowHeight);
 }
 
-PShape createBlock( float xSize,float ySize,boolean mode ) {
-  PShape  s2;
+PShape createBlock( float xSize, float ySize, boolean mode ) {
+  PShape s2;
   s2=createShape();
   s2.beginShape();
-  if( mode == true) { //arrangement 0
+  if ( mode == true) { //arrangement 0
     s2.vertex( 0, 0);
     s2.vertex( xSize, ySize);
   } else {
@@ -66,7 +65,7 @@ PShape createBlock( float xSize,float ySize,boolean mode ) {
   s2.endShape();
   return s2;
 }
-void drawGrid(PShape[] shapes, int colWidth,int rowHeight ) {
+void drawGrid(PShape[] shapes, int colWidth, int rowHeight ) {
   int numRows = height/rowHeight;
   int numCols = width/colWidth;
   int xPos=0;
@@ -83,6 +82,7 @@ void drawGrid(PShape[] shapes, int colWidth,int rowHeight ) {
     yPos += rowHeight;
   }
 }
+
 
 ```
 
