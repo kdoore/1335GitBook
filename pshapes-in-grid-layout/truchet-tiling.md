@@ -24,16 +24,13 @@ void setup() {
   drawGrid(shapes, colWidth, rowHeight);
 }
 
-void draw() { //draw must be included for mouseReleased event function to work
-}
-
-PShape[] populateArray( float xSize, float ySize) {
+PShape[] populateArray( float colWidth, float rowHeight) {
   PShape[] shapes;
-  int numRows =int( height/ySize);
-  int numCols =int( width/xSize);
+  int numRows =int( height/rowHeight);
+  int numCols =int( width/colWidth);
   shapes = new PShape[numRows * numCols];
-  PShape block1 = createBlock( xSize, ySize, true);
-  PShape block2 = createBlock( xSize, ySize, false);
+  PShape block1 = createBlock( colWidth, rowHeight, true);
+  PShape block2 = createBlock( colWidth, rowHeight, false);
   for ( int i=0; i< numRows* numCols; i++) {
     float rand = random(0, 2);
     if ( rand > 1) { //flip a coin
@@ -45,11 +42,6 @@ PShape[] populateArray( float xSize, float ySize) {
   return shapes;
 }
 
-void mouseReleased() {
-  background(random(360), 100,100);
-  shapes = populateArray(colWidth, rowHeight);
-  drawGrid(shapes, colWidth, rowHeight);
-}
 
 PShape createBlock( float xSize, float ySize, boolean mode ) {
   PShape s2;
@@ -65,6 +57,8 @@ PShape createBlock( float xSize, float ySize, boolean mode ) {
   s2.endShape();
   return s2;
 }
+
+
 void drawGrid(PShape[] shapes, int colWidth, int rowHeight ) {
   int numRows = height/rowHeight;
   int numCols = width/colWidth;
@@ -83,6 +77,14 @@ void drawGrid(PShape[] shapes, int colWidth, int rowHeight ) {
   }
 }
 
+void draw() { //draw must be included for mouseReleased event function to work
+}
+
+void mouseReleased() {
+  background(random(360), 100,100);
+  shapes = populateArray(colWidth, rowHeight);
+  drawGrid(shapes, colWidth, rowHeight);
+}
 
 ```
 
