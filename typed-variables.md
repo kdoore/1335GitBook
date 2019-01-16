@@ -12,7 +12,7 @@ When we initialize variables, we often write a number or character symbol to rep
 
 Primitive-type variables involve a single piece of information like integers: `int`, decimal numbers: `float, double`, booleans: `boolean`, and characters: `char`. Primitive-types use a fixed, system-defined size of memory-space. Primitive data-types \(also called value-types\) are pre-defined as part of the Java language, the primitive-type names are Java reserved keywords. [Java Reference](http://docs.oracle.com/javase/tutorial/java/nutsandbolts/datatypes.html)
 
-### Composite Data Types
+### Object Data Types
 
 Composite-type values refer to more complex data-types like arrays and objects; the memory-size required storing the data elements for complex variables, is not as easy for the system to determine when the program is being compiled. For this reason, a variable of this type actually refers to the memory-address of the starting location in memory where the data is stored.  If the reference-variable does not contain a valid memory address, then it has a value of 'null'.  Typically the remainder of the data is stored in adjacent memory locations.  Composite-type variables are commonly called `reference` data types, these include Array, ArrayList, String, and custom Class-Objects.  `Reference` variables `refer` to a location in memory where the data is stored.
 
@@ -40,7 +40,7 @@ float num3 = 5.0 //declare a floating point variable and assign it a literal dec
 
 ### Typed Variables
 
-When using P5js and the Khan-Academy Javascript Tutorials, variables were all of the type `var`. There was no distinction between different types of variables. However, with The Java Version of Processing, all variables must be declared as a specific data-type such as `int`, `float`, `boolean`, `char`, etc. Typed variables allows the computer to allocate enough memory to hold the value.  
+When using P5js and the Khan-Academy Javascript Tutorials, variables were all of the type `var`. There was no distinction between different types of variables. However, with The Java Version of Processing, all variables must be declared as a specific data-type such as `int`, `float`, `boolean`, `char`, etc. Typed variables allows the computer to allocate enough memory to hold the value.
 
 ### Type Conversion
 
@@ -98,7 +98,6 @@ int num3 = val1;    // error cannot convert from a float to an int
 Processing provides type conversion functions to allow conversion between `int` and `float` variable types. There are 2 different but equivalent syntax conventions for type conversion displayed in the example code below:
 
 ```java
-
 float val1 = 5.2;  
 
 int num1 = int( val1 );  // 5   With this syntax, int( ) works like a function to convert a float value to an integer.  The value is truncated.
@@ -108,9 +107,7 @@ int num2 = ( int )val1;   //5   This syntax also works to convert a float to an 
 int num3 = int( 3.0) + val1; //ERROR, val1 wasn't converted to an int
 
 //Safe approach, use parenthesis around full expression
-int num3 = int ( 3.0 + val1 ); //this converts the sum to 
-
-
+int num3 = int ( 3.0 + val1 ); //this converts the sum to
 ```
 
 ### Modulus Operator
