@@ -1,12 +1,12 @@
-#HSB Color-Wheel
-The images below show 2 color wheels, both color-wheels have an outer ring of full saturation and brightness.  The first color-wheel has saturation reduced toward the center.  The second color-wheel has brightness decreased toward the center.  
+# HSB Color-Wheel
 
-The programs use a custom function: drawColorWheel( int size)  that draws a color-wheel using the size input parameter to determine the size of the wheel.  For the images below, the function is called multiple times, each time the brightness or saturation is reduced before each smaller color-wheel is drawn.
+The images below show 2 color wheels, both color-wheels have an outer ring of full saturation and brightness.  The first color-wheel has saturation reduced toward the center.  The second color-wheel has brightness decreased toward the center.
+
+The programs use a custom function: drawColorWheel\( int size\)  that draws a color-wheel using the size input parameter to determine the size of the wheel.  For the images below, the function is called multiple times, each time the brightness or saturation is reduced before each smaller color-wheel is drawn.
 
 Can you change the program below so that both versions of the color-wheel can be shown in a single program?  Hint, use the draw function, have one version drawn if the mouse is pressed, and the other version drawn if the mouse is not pressed.
 
 ![Decreased Saturation](/assets/Screen Shot 2018-08-27 at 6.55.00 AM.png) ![Decreased Brightness](/assets/Screen Shot 2018-08-27 at 6.53.34 AM.png)
-
 
 ```java
 ////Global Variables
@@ -62,6 +62,7 @@ void drawColorWheel( float size   ) {
     startDegree += angleSize;  //change startDegree for each new slice to be drawn
   }
 }
-
 ```
+
+
 

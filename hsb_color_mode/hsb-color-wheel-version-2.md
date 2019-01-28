@@ -1,10 +1,8 @@
-#HSB ColorWheel Version 2
+# HSB ColorWheel Version 2
 
 The code in version 1 has several sections of repetitive code in the draw loop, where we're drawing smaller versions of the color-wheel.  How can we use functions and loops to simplify the logic?
 
-
 ```java
-
 ///Global variables
 int hue, sat, bright;
 void setup() {
@@ -61,4 +59,6 @@ void brightGradientColorWheel( float size){
     }
 }
 ```
+
+
 
