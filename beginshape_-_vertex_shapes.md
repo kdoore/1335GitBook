@@ -13,14 +13,14 @@ For the code below, we've created a variable: length, which we'll use to constra
 ![](/assets/Screen Shot 2018-09-04 at 1.47.47 PM.png)
 
 ```java
- float length = 100;
+ float len  = 100;
   PShape s; //declare the PShape object named s
   s = createShape(); //initialize the PShape object
   s.beginShape(); //starts a vertex shape
   s.fill(200, 100, 100 );      // blue, HSB
   s.vertex( 0, 0 );               //point origin
-  s.vertex( length *.4, 0 );          //point(40,0)
-  s.vertex( length *.6, length*.6 );    //point(60,60);
+  s.vertex( len  *.4, 0 );          //point(40,0)
+  s.vertex( len  *.6, len *.6 );    //point(60,60);
   s.vertex( 0, len *.4 );         //point(0,40);
   s.vertex( 0, 0 );              //last point
   s.endShape(CLOSE);             //end shape
@@ -28,7 +28,7 @@ For the code below, we've created a variable: length, which we'll use to constra
   shape(s, 0,0); //display shape at origin
 ```
 
-For our recursive pattern project, it will be important to create a simple pattern that can be defined by a location point \(shape's origin point\) and one **length** value.
+For our recursive pattern project, it will be important to create a simple pattern that can be defined by a location point \(shape's origin point\) and one **len ** value.
 
 `vertexPattern( length );`
 
