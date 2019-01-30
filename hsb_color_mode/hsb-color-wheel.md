@@ -9,8 +9,9 @@ Can you change the program below so that both versions of the color-wheel can be
 ![Decreased Saturation](/assets/Screen Shot 2018-08-27 at 6.55.00 AM.png) ![Decreased Brightness](/assets/Screen Shot 2018-08-27 at 6.53.34 AM.png)
 
 ```java
-////Global Variables
-int  sat, bright;
+
+///Global Variables
+float sat, bright;
 ///for initialization
 void setup() {
   size( 800, 800);
@@ -27,41 +28,42 @@ void draw() {
     bright=100; //make sure bright and sat start at full values for outer circle
     sat=100;
     //How can we simplify this repetitive code using a custom function with a loop?
-    drawColorWheel(width); 
+    drawColorWheel(width);
     sat = 75;
     drawColorWheel(width * .75);
     sat = 50;
     drawColorWheel(width * .50);
     sat = 25;
     drawColorWheel(width * .25);
-  }else{ //otherwise show brightness variation version
-  sat=100;
-  bright=100;
-  //How can we simplify this repetitive code using a custom function with a loop?
-  drawColorWheel(width);
-  bright = 75;
-  drawColorWheel(width * .75);
-  bright = 50;
-  drawColorWheel(width * .50);
-  bright = 25;
-  drawColorWheel(width * .25);
+  } else { //otherwise show brightness variation version
+    sat=100;
+    bright=100;
+    //How can we simplify this repetitive code using a custom function with a loop?
+    drawColorWheel(width);
+    bright = 75;
+    drawColorWheel(width * .75);
+    bright = 50;
+    drawColorWheel(width * .50);
+    bright = 25;
+    drawColorWheel(width * .25);
   }
 }
 
-//draws a full color wheel 
-void drawColorWheel( float size   ) {
-  int angleSize=10;    //declare and intialize local variables
-  int startDegree=0;  //used for drawing arc, value changes in loop after each arc is drawn
-  int numSlices = 360/angleSize; ///loop maximum value: how many slices to draw?
+//draws a full color wheel
+void drawColorWheel( float size ) {
+  float angleSize=10; //declare and intialize local variables
+  float startDegree=0; //used for drawing arc, value changes in loop after each arc is drawn
+  int numSlices = int(360/angleSize); ///loop maximum value: how many slices to draw?
 
   for (int i=0; i < numSlices; i++) {
-    int endDegree = startDegree + angleSize;
-    int hue = startDegree + ( angleSize / 2); //calculate hue for middle of arc
+    float endDegree = startDegree + angleSize;
+    float hue = startDegree + ( angleSize / 2); //calculate hue for middle of arc
     fill( hue, sat, bright); //set fill
     arc( width/2, height/2, size, size, radians(startDegree), radians( endDegree));
-    startDegree += angleSize;  //change startDegree for each new slice to be drawn
+    startDegree += angleSize; //change startDegree for each new slice to be drawn
   }
 }
+
 ```
 
 
