@@ -30,7 +30,7 @@ For the code below, we've created a variable: length, which we'll use to constra
 
 For our recursive pattern project, it will be important to create a simple pattern that can be defined by a location point \(shape's origin point\) and one **len ** value.
 
-`vertexPattern( length );`
+`vertexPattern( len  );`
 
 If we design our pattern based on points on a rectangle, the code below shows this requires us to specify 4 corners as vertex points.  
 
