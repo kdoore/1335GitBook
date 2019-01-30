@@ -31,7 +31,7 @@ For any selected pixel, which we identify as having the current color, we can fi
 ```java
 
 ////Global Variables
-int  sat, bright;
+float sat, bright;
 ///for initialization
 void setup() {
   size( 800, 800);
@@ -45,66 +45,58 @@ void setup() {
 void draw() {
   if (mousePressed) { //when mousePressed, show Saturation version
     satGradientColorWheel(600);
-  }else{ //otherwise show brightness variation version
+  } else { //otherwise show brightness variation version
     brightGradientColorWheel(600);
   }
- //create complimentary colorPalette using get( ) function to find color of pixel at mouse position
+  //create complimentary colorPalette using get( ) function to find color of pixel at mouse position
   color curColor = get( mouseX, mouseY);
-  createColorPalette( curColor, 0,0); //createColorPalette with currentColor under mouse, at 0,0
-  
+  createColorPalette( curColor, 0, 0); //createColorPalette with currentColor under mouse, at 0,0
 }
 
-void createColorPalette(color curColor, int x, int y){
+void createColorPalette(color curColor, int x, int y) {
   float _hue = hue(curColor);
   float _sat = saturation(curColor);
   float complimentHue = (_hue + 180)% 360;
-  
   fill(_hue, _sat * .6, 70); //first one darkest, dullest
-  rect( x,y, 100,100); 
-  
+  rect( x, y, 100, 100);
   fill(_hue, _sat * .7, 100 );//second one, brighter than first
   rect( x + 100, y, 100, 100);
-   
   fill(curColor);
-  rect( x+200,y, 100,100); //current one in the middle
-  
-  fill( complimentHue, _sat,  70); //darker compliment
+  rect( x+200, y, 100, 100); //current one in the middle
+  fill( complimentHue, _sat, 70); //darker compliment
   rect( x+ 300, y, 100, 100);
-  
-   fill( complimentHue, _sat*.8,  100); //lighter compliment
+  fill( complimentHue, _sat*.8, 100); //lighter compliment
   rect( x+ 400, y, 100, 100);
-  
 } //end colorPalette
 
-void satGradientColorWheel( float size){
+void satGradientColorWheel( float size) {
   bright=100; //make sure bright and sat start at full values for outer circle
-    for( int i= 100; i>0; i -= 5){
+  for ( int i= 100; i>0; i -= 5) {
     sat=i;
     drawColorWheel(size * i / 100.0 );
-    }
+  }
 }
 
-void brightGradientColorWheel(float size){
-    sat=100; //make sure bright and sat start at full values for outer circle
-    for( int i= 100; i>0; i -= 5){
+void brightGradientColorWheel(float size) {
+  sat=100; //make sure bright and sat start at full values for outer circle
+  for ( int i= 100; i>0; i -= 5) {
     bright=i;
     drawColorWheel(size * i / 100.0 );
-    }
-  
+  }
 }
 
-//draws a full color wheel 
-void drawColorWheel( float size   ) {
-  int angleSize=10;    //declare and intialize local variables
-  int startDegree=0;  //used for drawing arc, value changes in loop after each arc is drawn
-  int numSlices = 360/angleSize; ///loop maximum value: how many slices to draw?
+//draws a full color wheel
+void drawColorWheel( float size ) {
+  float angleSize=10; //declare and intialize local variables
+  float startDegree=0; //used for drawing arc, value changes in loop after each arc is drawn
+  int numSlices = int(360/angleSize); ///loop maximum value: how many slices to draw?
 
   for (int i=0; i < numSlices; i++) {
-    int endDegree = startDegree + angleSize;
-    int hue = startDegree + ( angleSize / 2); //calculate hue for middle of arc
+    float endDegree = startDegree + angleSize;
+    float hue = startDegree + ( angleSize / 2); //calculate hue for middle of arc
     fill( hue, sat, bright); //set fill
     arc( width/2, height/2, size, size, radians(startDegree), radians( endDegree));
-    startDegree += angleSize;  //change startDegree for each new slice to be drawn
+    startDegree += angleSize; //change startDegree for each new slice to be drawn
   }
 }
 
