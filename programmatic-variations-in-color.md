@@ -2,8 +2,8 @@
 
 Using HSB ColorMode allows us to configure and modify colors in our programs based changing values for the Hue, Saturation, or Brightness.
 
-###Gradients:  Brightness Max = LenMax.
-If we use a gradient for the brightness of an abstract pattern, we can enhance the illusion of depth for 2D designs.  
+###Gradients:
+If we use a gradient (programatic change) for the brightness of an abstract pattern, we can enhance the illusion of depth for 2D designs.  
 
 Since we're using `float len` as an input parameter to determine the size of the shape, we can also use this value of len to help determine a good value to control varying the brightness each time we drawn a shape.  One way to do this is to set the max value for Brightness using the max value for Len:
 
@@ -15,9 +15,11 @@ In the example below, we are creating a relationship between the current value o
 
 ```java
 
-float lenMax;
+float lenMax, lenMin;
+
 void setup(){
     lenMax = 150;
+    lenMin = 20;
     colorMode( HSB, 360, 100, 100 );  
 }
 
@@ -33,7 +35,7 @@ void recursivePattern( float len, int count){
     return;
   }
   //set fill before calling vertexShape function
-  float bright = map( len, 0, lenMax, 0, 100);
+  float bright = map( len, lenMin, lenMax, 0, 100);
   float hue = map( mouseX, 0, width, 200, 300);
   fill(hue, 100, bright);// brightness dependent on the len input parameter.
 
