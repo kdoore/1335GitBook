@@ -1,81 +1,43 @@
 In class code for Monday Feb 4, Wed Feb 6, 2019
 
 ```java
-float lenMin, lenMax;
 
-void setup(){
+float lenMax, lenMin;
+
+void setup() {
   size( 600, 600);
   colorMode(HSB, 360, 100, 100, 100);
-  background(0);
-  rectMode( CENTER);
-  lenMin = 5;
-  lenMax = 100;
-  
+  rectMode(CENTER); //sets x,y for rectangles as the center of the rectangle
+  background( 0);
+  lenMin = 20;
+  lenMax = 200;
 }
 
-
-
-void draw(){
-  if(mousePressed  ){
-    
-    //left region
-    float fraction;
-    float dimension;
-    color c1 = color( 182, 100, 100); //cyan
-    color c2 = color( 84, 100, 100); //.lime
-    color c4 = color( 40, 100,80); ////orange
-    color c5 = color(280, 100, 100 ); // purple
-    
+void draw() {
+  if ( mousePressed) {
     translate( mouseX, mouseY);
-    if( mouseX < width/2){
-     dimension = map( mouseX, 0, width/2, lenMax, lenMin);
-     fraction = map( mouseX, 0, width/2, 1.0, 0.0);
-     color c3 = lerpColor( c1, c2, fraction); //changes as mouseX changes
-     pattern1( dimension, c3);
-    }
-    else{   //right region
-     dimension = map( mouseX,  width/2, width, lenMin, lenMax);
-     fraction = map( mouseX,  width/2, width, 0.0, 1.0);  
-     color c6 = lerpColor( c4, c5, fraction); //changes- orange to purple as mouseX changes
-     pattern2( dimension, c6);
-    } //end if-else
+    color c1 = color(270, 100, 80);
+    float len = map(  mouseX, 0, width, lenMin, lenMax); //as mouseX gets bigger, len gets bigger
+    PShape myShape = customShape1( len, c1); //get a shape based in input values: float len, color c1
+    shape( myShape, 0, 0); //display a shape
     resetMatrix();
-  } 
-  
-}//end draw
-
-
-
-void pattern1(float len, color c1 ){
-  
-  PShape s = shape1( len, c1);
-  shape( s, 0, 0);
+  }
 }
 
 
-void pattern2( float len,  color c1){
-  PShape s = shape2( len, c1);
-  shape( s, 0, 0);
-  
+//creates and returns one PShape object using input parameters
+PShape customShape1(  float len, color c1) {
+  PShape s = createShape(RECT, 0, 0, len, len);
+  s.setFill( c1 );
+  PShape s2  = createShape( RECT, 0, 0, len * 0.8, len * 0.8);
+  s2.setFill( color(hue( c1 ), saturation ( c1), int(brightness( c1 ) * 0.8)));
+
+  PShape s3 = createShape( GROUP); //create a group type PShape
+
+  s3.addChild( s); //add both children to the group
+  s3.addChild( s2);
+  return s3; //return the group PShape
 }
-
-//creates a single shape 
-PShape shape1( float len, color c1){
-  fill( c1);
-  PShape s = createShape( RECT, 0,0, len, len);
-  return s;
-}
-
-
-//creates a single shape 
-PShape shape2( float len, color c1){
-  fill( c1);
-  PShape s = createShape( ELLIPSE, 0,0, len, len);
-  return s;
-}
-
-
-
 
 
 ```
