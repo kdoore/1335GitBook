@@ -21,7 +21,7 @@
 * [VertexShape Centered at Origin](vertex-pattern-centered-at-origin.md)
 * [Map Function](map-function.md)
 * [Scale Transform for Mirroring](scale-transform-for-mirroring.md)
-* [In Class - Feb 4](in-class-feb-4.md)
+* [In Class Code - Feb 4-6](in-class-feb-4.md)
 
 ## Grid Based Designs
 
