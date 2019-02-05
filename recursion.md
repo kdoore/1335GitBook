@@ -3,7 +3,7 @@
 Recursion is a type of repetition. Recursion occurs when a thing is defined in terms of itself or of its type.    [Wikipedia](https://en.wikipedia.org/wiki/Recursion)
 
 ###Recursive Painting - From Flowing Data.com -
-[See the article about the image below:](https://flowingdata.com/2019/02/05/recursive-painting-in-real-life/)
+[See the FlowingData.com article about the image below:](https://flowingdata.com/2019/02/05/recursive-painting-in-real-life/)
 First, a woman painted a photo, Then someone took a photo of her holding the painting.  Then he painted the photo, and took a photo of him holding his painting, and so on....This is recursion.
 
 ![](https://i1.wp.com/flowingdata.com/wp-content/uploads/2019/02/recursive-painting-1.png?resize=750%2C484&ssl=1)
