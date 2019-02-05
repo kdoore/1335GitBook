@@ -8,7 +8,7 @@ First, a woman painted a photo, Then someone took a photo of her holding the pai
 
 ![](https://i1.wp.com/flowingdata.com/wp-content/uploads/2019/02/recursive-painting-1.png?resize=750%2C484&ssl=1)
 
-Interactive Data Visualization of the recursion relationships for a growing series of these recursive paintings[link](http://nubleh.github.io/i_painted/)
+Interactive Data Visualization of the recursion relationships for a growing series of these recursive paintings [visualization link](http://nubleh.github.io/i_painted/)
 
 
 ###Recursion in Programming
