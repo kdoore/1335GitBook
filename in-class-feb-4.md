@@ -94,6 +94,8 @@ To introduce the idea of Recursion, we first went to look at repeating a single 
 
 In order for a repeat to be visibly noticible, we'd like to have 1 shape drawn at the same position, but we'd like to have each successive shape-motif be slightly smaller and darker than the one drawn previously.  So, as with the code on Feb 4, we want to change len, and the brightness of c1 each time we create and render a shape.
 
+
+
 ```java
 float lenMax, lenMin;
 
