@@ -85,4 +85,74 @@ PShape customShape2(  float len, color c1) {
 
 ```
 
-# Class Code - Feb 6, 2019
+# Loops, Introduction to Recursion:  
+### Repeat to create Nested Shapes
+
+Class Code - Feb 6, 2019
+
+
+
+```java
+float lenMax, lenMin;
+
+void setup() {
+  size( 1000, 1000);
+  colorMode(HSB, 360, 100, 100, 100);
+  //rectMode(CENTER); //remove this code, we want an asymetric form to create interesting patterns
+  background( 0);
+  lenMin = 20;
+  lenMax = 200;
+}
+
+void draw() {
+  if ( mousePressed && frameCount % 5 == 0 ) { //no remainder happens every 10 frames
+    translate( mouseX, mouseY);
+    color c1 = color(270, 100, 100);
+    float len = map(  mouseX, 0, width, lenMin, lenMax); //as mouseX gets bigger, len gets bigger
+    int numRepeats = 5;
+    repeatPattern( len, c1, numRepeats);
+    resetMatrix();
+  }
+}
+
+//create a recursivePattern: 
+//recursive function must have a recursive call statement ( where it calls itself)
+void recursivePattern(float len, color c1, int count  ) {
+  //test for termination - must happen before the recursive call
+  if ( count < 0) { //terminate if this conditional test is true
+    return;  ///don't execute any more code in this function
+  }
+  ///where do we do our task? before the recursive call?
+
+  count--; //make sure our termination variable will meet the termination stop condition
+  recursivePattern( len, c1, count ); //calls itself - recursive call
+
+  ///where do we do our task? after the recursive call?
+}
+
+
+//repeat pattern using a for loop
+void repeatPattern( float len, color c1, int count  ) {
+  for ( int i = 0; i< count; i++) {  //make sure this stops
+    float fraction = map( i, 0, count-1, 1.0, 0.2); //as i goes from small to big, len should go from big to small
+    float hue = hue( c1);
+    float sat = saturation (c1);
+    float bright = brightness( c1);
+    bright *= fraction; //reduce bright each time 
+    color c2 = color( hue, sat, bright);
+    PShape myShape = customShape2( len * fraction, c2); //get a shape based in input values: float len, color c1
+    shape( myShape, 0, 0); //display a shape
+  }
+}
+
+
+PShape customShape2(  float len, color c1) {
+  PShape s = createShape(RECT, 0, 0, len, len);
+  s.setFill( c1 );
+  return s;
+}
+
+
+```
+
+
