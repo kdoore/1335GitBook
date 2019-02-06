@@ -1,5 +1,5 @@
 ###Creating PShapes and using map( )
-In class code for Monday Feb 4, 
+**Overview: In-class code for Monday Feb 4** 
 On Feb 4, We wrote a program to explore using PShapes and the map( ) function.  
 
 We wrote function with the following signature:
@@ -88,14 +88,14 @@ PShape customShape2(  float len, color c1) {
 # Loops, Introduction to Recursion:  
 ### Repeat to create Nested Shapes
 
-Class Code - Feb 6, 2019
+**Overview: Class Code - Feb 6, 2019**
 
 To introduce the idea of Recursion, we first went to look at repeating a single shape, multiple times, each time the mouse is pressed.  Visually, this is more interesting if we have an Asymmetric form, so we're not going to use rectMode(CENTER) in this example. 
 
 In order for a repeat to be visibly noticible, we'd like to have 1 shape drawn at the same position, but we'd like to have each successive shape-motif be slightly smaller and darker than the one drawn previously.  So, as with the code on Feb 4, we want to change len, and the brightness of c1 each time we create and render a shape.
 
 
-
+#Class Code Feb 6
 ```java
 float lenMax, lenMin;
 
@@ -121,6 +121,7 @@ void draw() {
 
 //create a recursivePattern: 
 //recursive function must have a recursive call statement ( where it calls itself)
+
 void recursivePattern(float len, color c1, int count  ) {
   //test for termination - must happen before the recursive call
   if ( count < 0) { //terminate if this conditional test is true
