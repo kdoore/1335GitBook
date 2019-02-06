@@ -1,4 +1,4 @@
-###Class Code - Feb 4
+###Creating PShapes and using map( )
 In class code for Monday Feb 4, 
 On Feb 4, We wrote a program to explore using PShapes and the map( ) function.  
 
