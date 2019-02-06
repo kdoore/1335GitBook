@@ -4,7 +4,7 @@ On Feb 4, We wrote a program to explore using PShapes and the map( ) function.
 
 We wrote function with the following signature:
  
- ` PShape customShape1(float len , color c1 )`
+ ` PShape customShape1(float len , color c1 )` 
  
  This function creates and returns a new PShape object:
    
