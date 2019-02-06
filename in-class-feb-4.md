@@ -66,11 +66,12 @@ PShape customShape2(  float len, color c1) {
   s.setFill( c1 ); //set fill after creating the shape
   
   float len2 = len * 0.8;
-  PShape s2  = createShape( RECT, 0, 0, len2, len2);
   float hue = hue( c1);
   float sat = saturation(c1);
   float bright = brightness( c1);
   color c2 = color( hue, sat, bright * 0.8 );//reduce brightness
+  //create smaller, darker Rectangle
+  PShape s2  = createShape( RECT, 0, 0, len2, len2);
   s2.setFill( c2);  //set fill after creating the shape
 
 
