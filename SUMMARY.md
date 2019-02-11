@@ -22,6 +22,7 @@
 * [Map Function](map-function.md)
 * [Scale Transform for Mirroring](scale-transform-for-mirroring.md)
 * [In Class Code - Feb 4-6](in-class-feb-4.md)
+  * [Code - Feb 11](in-class-feb-4/code-feb-11.md)
 
 ## Grid Based Designs
 
