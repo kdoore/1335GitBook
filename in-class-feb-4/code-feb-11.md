@@ -32,7 +32,7 @@ void draw() {
     //primary color gradient positive Max to min
     color  c3PositiveMax = color(200, 100, 100); //blue
     color  c3PositiveMin = color( 70, 100, 100  ); //bright lime
-  
+
     //Define Parameters used for pattern size, stacking, rotation-count, colors across 2 regions
 
     int recursionCount;  //how many recursive layers per petal?
@@ -43,24 +43,20 @@ void draw() {
     color cVariant;
     float gradientFraction;
 
-    // fraction = map( mouseX, 0, width, 0.0, 1.0);  //
-    // cMain = lerpColor( c3Negative, c1Negative, fraction); //Main lime to purple transition
-    float rand = random( 0.0, 1.0); //generate a random number each frame
-
     //Determine all parameter values before calling Pattern function
     //Left SIDE OF THE BALANCE POINT - POSITIVE COLORS
     //Determine Paramters for the left side: len, cMain, cVariant, 
     if ( mouseX < balancePoint ) {  ///left side  - positive  - flat design
-      recursionCount = int(map( mouseX, 0, balancePoint, 3, 6)); //increasing
+      recursionCount = int(map( mouseX, 0, balancePoint, 3, 6)); //increase recursion (depth) toward balance point
 
       len  = map( mouseX, 0, balancePoint, lenMax, lenMin);
       gradientFraction = map( len, lenMin, lenMax, 0.0, 1.0);  //small to large
 
       cMain = lerpColor( c3PositiveMin, c3PositiveMax, gradientFraction); //min to max
       cVariant = c3PositiveMin; //pop of color
-     
+
     } else {   //Negative emotion - deep and complex
-      recursionCount = int(map( mouseX, balancePoint, width, 5, 12)); //how much depth?
+      recursionCount = int(map( mouseX, balancePoint, width, 5, 12)); //increase recursion away from balance point
 
       len = map( mouseX, balancePoint, width, lenMin, lenMax);
       gradientFraction = map( len, lenMin, lenMax, 0.0, 1.0);  //small to large
@@ -70,7 +66,7 @@ void draw() {
     }
 
     translate( mouseX, mouseY);
-    float randAngle = random( -90, 45);
+    float randAngle = random( 0, 270);
     rotate( radians(randAngle));
     //draw design
     if ( mouseX < balancePoint) {
@@ -131,7 +127,7 @@ void recursivePattern2( float len, int count, color c1, color c2) {
 
   //recursive call
   recursivePattern2( len * 0.8, count - 1, c1, c2); 
-  
+
   //create and draw second shape ( with reversed layer ordering)
   s= shapeRect( -len *.4, calcColor);
   shape(s, 0, 0);
