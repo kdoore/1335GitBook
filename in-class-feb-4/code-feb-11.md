@@ -83,10 +83,9 @@ void draw() {
 } //end draw
 
 
-
-//color gradient within a shapeMotif is defined
-//as fractional value based on len compared to lenMin, lenMax
-//ELLIPSE PATTERN
+/*RECURSIVE PATTERN1- Ellipse
+color gradient within a shapeMotif is defined
+as fractional value based on len compared to lenMin, lenMax */
 void recursivePattern1( float len, int count, color c1, color c2) {
   if ( count < 1) {
     return;  //termination condition
@@ -108,9 +107,10 @@ void recursivePattern1( float len, int count, color c1, color c2) {
   recursivePattern1( len * 0.8, count - 1, c1, c2); ///Recursive Call
 }
 
-//color gradient: brightness, alpha within a shapeMotif is defined
-//as fractional value based on len compared to lenMin, lenMax 
-//RECTANGLE PATTERN
+/*RECURSIVE PATTERN2- Rectangles
+color gradient within a shapeMotif is defined
+as fractional value based on len compared to lenMin, lenMax */
+
 void recursivePattern2( float len, int count, color c1, color c2) {
   if ( count < 1) {
     return;  //termination condition
@@ -130,7 +130,7 @@ void recursivePattern2( float len, int count, color c1, color c2) {
   shape( s, 0, 0);
 
   //recursive call
-  recursivePattern2( len * 0.8, count - 1, c1, c2); ///Recursive Call
+  recursivePattern2( len * 0.8, count - 1, c1, c2); 
   
   //create and draw second shape ( with reversed layer ordering)
   s= shapeRect( -len *.4, calcColor);
