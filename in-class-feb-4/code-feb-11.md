@@ -139,13 +139,13 @@ void recursivePattern2( float len, int count, color c1, color c2) {
 
 
 PShape shapeEllipse(float len, color c) {
-  PShape s = createShape( ELLIPSE, len * .2,0, len *.8, len);
+  PShape s = createShape( ELLIPSE, 0,0, len *.8, len);
   s.setFill(c);
   return s;
 }
 
 PShape shapeRect(float len, color c) {
-  PShape s = createShape( RECT, len* .2, 0, len, len * .7);
+  PShape s = createShape( RECT, 0, 0, len, len * .8);
   s.setFill(c);
   return s;
 }
