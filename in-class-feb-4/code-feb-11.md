@@ -1,8 +1,14 @@
 #Class Code Feb 11
-Simple Recursive Patterns
+Simple Recursive Patterns:
+
+Recursion provides a repeat structure that we're using to create complex patterns from simple shapes. Each customShape function creates and returns a PShape using input parameter values: `float len, color c1.`
+
+Each recursivePattern function creates a complex pattern by repeating the shape multiple times, where len, and brightness are modified before each repeat.
+
 Size gradient using map()
+Brightness Gradients using map( ) function
 Shape determined by region:  left or right of the balance point
-Color Gradients using lerpColor() and map( ) functions
+
 
 ```java
 float lenMax, lenMin;
