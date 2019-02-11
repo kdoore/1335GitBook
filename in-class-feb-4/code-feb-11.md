@@ -79,22 +79,25 @@ void recursiveEllipsePattern(float len, color c1, int count ) {
   if ( count < 0) { //terminate if this conditional test is true
     return; ///don't execute any more code in this function
   }
-  ///where do we do our task? before the recursive call?
-  float fractionBright = map(len, lenMin, lenMax, 1.0, 0.1);
+  //Set variables for the recursive task
+  float fractionBright = map(len, lenMin, lenMax, 1.0, 0.10);
   float hue = hue( c1) ;
   float sat = saturation (c1);
   float bright = brightness( c1);
   bright *= fractionBright; //reduce bright each time
   color c2 = color( hue, sat, bright);
-  PShape myShape = customEllipse( len, c2); //get a shape based in input values: float len, color c1
+ 
+ //Recursive task
+   PShape myShape = customEllipse( len, c2); //get a shape based in input values: float len, color c1
   shape( myShape, 0, 0); //display a shape
   //make sure our termination variable will meet the termination stop condition
   recursiveEllipsePattern( len * 0.8, c1, count-1 ); //calls itself - recursive call
 
+///where do we do our task? after the recursive call?
   myShape = customEllipse( -len *0.4, c2); //get a shape based in input values: float len, color c1
   shape( myShape, 0, 0); //display a shape
 
-  ///where do we do our task? after the recursive call?
+ 
 }
 
 
