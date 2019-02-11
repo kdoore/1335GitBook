@@ -16,3 +16,5 @@ In order to recall our emotions that are associated with our selected event, it'
 
 HourGlass of Emotions
 ![](https://upload.wikimedia.org/wikipedia/commons/6/6b/Hourglass_of_Emotions.png)
+
+Sentic.net
