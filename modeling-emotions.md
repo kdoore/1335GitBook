@@ -9,12 +9,12 @@ In order to recall our emotions that are associated with our selected event, it'
 
 
 
-###Plutchick's Wheel of Emotions 
+##Plutchick's Wheel of Emotions 
 
 ![](https://upload.wikimedia.org/wikipedia/commons/b/bf/Plutchik_dyads.png)
 
 
-HourGlass of Emotions
+##HourGlass of Emotions
 ![](https://upload.wikimedia.org/wikipedia/commons/6/6b/Hourglass_of_Emotions.png)
 
 Sentic.net
