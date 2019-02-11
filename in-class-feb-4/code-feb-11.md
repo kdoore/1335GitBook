@@ -6,145 +6,107 @@ Color Gradients using lerpColor() and map( ) functions
 
 ```java
 
-float lenMax;
-float lenMin;
-PShape s;
+float lenMax, lenMin;
 
 void setup() {
-  size( 600, 600);
-  //fullScreen();
+  size( 1000, 1000);
   colorMode(HSB, 360, 100, 100, 100);
-  lenMax = width/4;  //set lenMax based on canvas width
-  lenMin = width/30; //
-  background(0);
+  //rectMode(CENTER); //remove this code, we want an asymetric form to create interesting patterns
+  background( 0);
+  lenMin = 20;
+  lenMax = 200;
 }
 
 void draw() {
-  if ( mousePressed  &&  frameCount % 10 == 0 ) { //pattern only drawn once per ten frames
-    //draw our pattern
-    float balancePoint = width/2;  //default value is width midpoint 
-    //colors to represent Negative Emotion Range
-    //Negative primary color gradient Max to min
-    color  c1NegativeMax = color(260, 100, 90 ); //dark purple
-    color  c1NegativeMin = color(290, 70, 50); //dark magenta
+  if ( mousePressed && frameCount % 5 == 0 ) { //no remainder happens every 10 frames
+    float balancePoint = width/2;
+    color c2 = color( 31, 100, 100 ); //orange - positive color
+    color c1 = color(270, 100, 100);  //purple - negative color
+    float len; //this will vary depending on region and mouse position
+    int numRepeats = 10;
 
-    //colors to represent Positive Emotion Range
-    //primary color gradient positive Max to min
-    color  c3PositiveMax = color(200, 100, 100); //blue
-    color  c3PositiveMin = color( 70, 100, 100  ); //bright lime
-
-    //Define Parameters used for pattern size, stacking, rotation-count, colors across 2 regions
-
-    int recursionCount;  //how many recursive layers per petal?
-
-    //main input parameters for Recursive Functions
-    float len; //determines size of PShape
-    color cMain;
-    color cVariant;
-    float gradientFraction;
-
-    //Determine all parameter values before calling Pattern function
-    //Left SIDE OF THE BALANCE POINT - POSITIVE COLORS
-    //Determine Paramters for the left side: len, cMain, cVariant, 
-    if ( mouseX < balancePoint ) {  ///left side  - positive  - flat design
-      recursionCount = int(map( mouseX, 0, balancePoint, 3, 6)); //increase recursion (depth) toward balance point
-
-      len  = map( mouseX, 0, balancePoint, lenMax, lenMin);
-      gradientFraction = map( len, lenMin, lenMax, 0.0, 1.0);  //small to large
-
-      cMain = lerpColor( c3PositiveMin, c3PositiveMax, gradientFraction); //min to max
-      cVariant = c3PositiveMin; //pop of color
-
-    } else {   //Negative emotion - deep and complex
-      recursionCount = int(map( mouseX, balancePoint, width, 5, 12)); //increase recursion away from balance point
-
-      len = map( mouseX, balancePoint, width, lenMin, lenMax);
-      gradientFraction = map( len, lenMin, lenMax, 0.0, 1.0);  //small to large
-
-      cMain = lerpColor( c1NegativeMin, c1NegativeMax, gradientFraction); //min to max
-      cVariant = color(150); //
-    }
-
-    translate( mouseX, mouseY);
-    float randAngle = random( 0, 270);
-    rotate( radians(randAngle));
-    //draw design
-    if ( mouseX < balancePoint) {
-      recursivePattern1( len, recursionCount, cMain, cVariant);  //create a single motif
-    } else {
-      recursivePattern2( len, recursionCount, cMain, cVariant);
-    }
-    resetMatrix(); //undo all transforms - (last translation(mouseX, mouseY))
-  }  //end if mousePressed
-} //end draw
-
-
-/*RECURSIVE PATTERN1- Ellipse
-color gradient within a shapeMotif is defined
-as fractional value based on len compared to lenMin, lenMax */
-void recursivePattern1( float len, int count, color c1, color c2) {
-  if ( count < 1) {
-    return;  //termination condition
+    if ( mouseX < balancePoint) { //in the left region of the canvas - Negative
+      len = map(  mouseX, 0, balancePoint, lenMax, lenMin); //as mouseX gets bigger, len gets smaller
+      translate( mouseX, mouseY);
+      rotate(radians( random( 0, 180)));
+      recursivePattern1( len, c1, numRepeats); //rectangle is for netagive
+      resetMatrix();
+    } else { //in the right region - Positive
+      len = map(  mouseX, balancePoint, width, lenMin, lenMax); //as mouseX gets bigger, len gets bigger
+      translate( mouseX, mouseY);
+      rotate(radians( random( 0, 180)));
+      recursivePattern2( len, c2, numRepeats);
+      resetMatrix();
   }
-  float brightFraction = map( len, lenMin, lenMax, 0.6, 1.0); //as len increases, brightfraction increases
-  float alphaFraction = map( len, lenMin, lenMax, 0.1, 1.0); //as len increases, alphaFraction increases
-
-  color calcColor = color( hue(c1), saturation(c1), brightness(c1) *brightFraction, 100 * alphaFraction);
-  float rand = random(0.0, 1.0); //random chance
-  if ( rand < 0.3) {  //small chance of Pop c2
-    calcColor = color( hue(c2), saturation(c2), brightness(c2) * brightFraction, 80 * alphaFraction);
   }
-
-  //Create and draw shape
-  PShape s=shapeEllipse( len, calcColor );  //draw the shape using current value of len
-  shape( s, 0, 0);
-
-  //recursive function call
-  recursivePattern1( len * 0.8, count - 1, c1, c2); ///Recursive Call
 }
 
-/*RECURSIVE PATTERN2- Rectangles
-color gradient within a shapeMotif is defined
-as fractional value based on len compared to lenMin, lenMax */
+//create a recursivePattern: 
+//recursive function must have a recursive call statement ( where it calls itself)
 
-void recursivePattern2( float len, int count, color c1, color c2) {
-  if ( count < 1) {
-    return;  //termination condition
+void recursivePattern1(float len, color c1, int count  ) {
+  //test for termination - must happen before the recursive call
+  if ( count < 0) { //terminate if this conditional test is true
+    return;  ///don't execute any more code in this function
   }
-  PShape s;
-  float brightFraction = map( len, lenMin, lenMax, 1.0, .4); //small len, max brightness
-  float alphaFraction = map( len, lenMin, lenMax, .4, 1.0); //small len, small alpha
+  ///where do we do our task? before the recursive call?
+  float fractionBright = map(len, lenMin, lenMax, 1.0, 0.1);
+  float hue = hue( c1) ;
+  float sat = saturation (c1);
+  float bright = brightness( c1);
+  bright *= fractionBright; //reduce bright each time 
+  color c2 = color( hue, sat, bright);
+  PShape myShape = customShape1( len, c2); //get a shape based in input values: float len, color c1
+  shape( myShape, 0, 0); //display a shape
+  //make sure our termination variable will meet the termination stop condition
+  recursivePattern1( len * 0.8, c1, count-1 ); //calls itself - recursive call
 
-  color calcColor = color( hue(c1), saturation(c1), brightness( c1) * brightFraction, 100 * alphaFraction);
+  myShape = customShape1( -len *0.4, c2); //get a shape based in input values: float len, color c1
+  shape( myShape, 0, 0); //display a shape
 
-  float rand = random(0.0, 1.0); //with randome chance
-  if ( rand < 0.2) {  //small chance of Pop c2
-    calcColor = color( hue(c2), saturation(c2), brightness(c2)* brightFraction, 100 * alphaFraction);
-  }
- //create and draw first shape
-  s =shapeRect( len, calcColor );  //draw the shape using current value of len
-  shape( s, 0, 0);
-
-  //recursive call
-  recursivePattern2( len * 0.8, count - 1, c1, c2); 
-
-  //create and draw second shape ( with reversed layer ordering)
-  s= shapeRect( -len *.4, calcColor);
-  shape(s, 0, 0);
+  ///where do we do our task? after the recursive call?
 }
 
 
-PShape shapeEllipse(float len, color c) {
-  PShape s = createShape( ELLIPSE, 0,0, len *.8, len);
-  s.setFill(c);
+
+void recursivePattern2(float len, color c1, int count  ) {
+  //test for termination - must happen before the recursive call
+  if ( count < 0) { //terminate if this conditional test is true
+    return;  ///don't execute any more code in this function
+  }
+  ///where do we do our task? before the recursive call?
+  float fractionBright = map(len, lenMin, lenMax, 1.0, 0.1);
+  float hue = hue( c1) ;
+  float sat = saturation (c1);
+  float bright = brightness( c1);
+  bright *= fractionBright; //reduce bright each time 
+  color c2 = color( hue, sat, bright);
+  
+  PShape myShape = customShape2( len, c2); //get a shape based in input values: float len, color c1
+  shape( myShape, 0, 0); //display a shape
+  //make sure our termination variable will meet the termination stop condition
+  recursivePattern2( len * 0.8, c1, count-1 ); //calls itself - recursive call
+
+  myShape = customShape2( -len *0.4, c2); //get a shape based in input values: float len, color c1
+  shape( myShape, 0, 0); //display a shape
+
+  ///where do we do our task? after the recursive call?
+}
+
+
+
+PShape customShape2(  float len, color c1) {
+  PShape s = createShape(ELLIPSE, len*.2, len*.3, len *.8, len);
+  s.setFill( c1 );
   return s;
 }
 
-PShape shapeRect(float len, color c) {
-  PShape s = createShape( RECT, 0, 0, len, len * .8);
-  s.setFill(c);
+PShape customShape1(  float len, color c1) {
+  PShape s = createShape(RECT, 0, 0, len *.8, len);
+  s.setFill( c1 );
   return s;
 }
+
 
 ```
 
