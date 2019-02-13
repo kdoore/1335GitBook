@@ -54,10 +54,11 @@ RecursivePattern function parameters are determined in the draw( ) function, dep
      float bright = brightness( c1 ) * brightFraction;
     ```
    ** Recursive Function Call**
-   You must modify count for each recursive call, this can be done when setting the input parameters as below.
-   You will modify len for each recursive call because we are creating nested shapes, multiply by a fractional value.
+   You **must modify count for each recursive call**, this can be done when setting the input parameters as below.
+   You will modify **len** for each recursive call because we are creating nested shapes, multiply by a fractional value.
+
 ```java
- RecursivePattern( len * 0.8, c1, count-1 ); //reduce values: len, count
+     RecursivePattern( len * 0.8, c1, count-1 ); //reduce values: len, count
 
 ```
 
