@@ -38,14 +38,25 @@ RecursivePattern function parameters are determined in the draw( ) function, dep
         - use colorLerp( ), gradientFraction to determine color for current MouseX position
         - `color cMain = colorLerp( lenMax, lenMin, gradientFraction); // negative region`
          - you must determine logic for positive region
-        - determine probability for random pop of color, this can be set for each region, or can vary within each region using map( ) to set value of float randomPopColor
+        - determine probability for random pop of color, this can be set for each region, or can vary within each region using map( ) to set value of float randPopColor
+        - ` float randPopColor = map( mouseX, 0, balancePoint, 0.3, 0.6); //negative region example`
     
     - **int numRepeats** - recursion termination variable 
         use map( ) to vary this value as mouseX changes (optional), or it can be constant across both ranges
-    
-RecursivePattern:
+    - ` float numRepeats = map( mouseX, 0, balancePoint, 8, 4); //negative region example`
+
+**RecursivePattern:**
      Within the RecursivePattern function:
-     
+     - modify brightness 
+         
+    
+    ```java
+     float brightFraction = map( len, lenMin, lenMax, 0.5, 1.0); //example
+     float bright = brightness( c1 ) * brightFraction;
+    ```
+    
+    
+         
     
 
 
