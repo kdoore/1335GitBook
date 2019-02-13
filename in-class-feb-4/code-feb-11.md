@@ -60,11 +60,8 @@ void recursiveRectPattern(float len, color c1, int count ) {
   }
   ///where do we do our task? before the recursive call?
   float fractionBright = map(len, lenMin, lenMax, 1.0, 0.1);
-  float hue = hue( c1) ;
-  float sat = saturation (c1);
-  float bright = brightness( c1);
-  bright *= fractionBright; //reduce bright each time
-  color c2 = color( hue, sat, bright);
+  float bright = brightness( c1) * fractionBright; //reduce bright each time
+  color c2 = color( hue(c1), sat(c1), bright);
   PShape myShape = customRect( len, c2); //get a shape based in input values: float len, color c1
   shape( myShape, 0, 0); //display a shape
   //make sure our termination variable will meet the termination stop condition
@@ -85,16 +82,15 @@ void recursiveEllipsePattern(float len, color c1, int count ) {
   }
   //Set variables for the recursive task
   float fractionBright = map(len, lenMin, lenMax, 1.0, 0.10);
-  float hue = hue( c1) ;
-  float sat = saturation (c1);
-  float bright = brightness( c1);
-  bright *= fractionBright; //reduce bright each time
-  color c2 = color( hue, sat, bright);
+  float bright = brightness( c1) * fractionBright;//reduce bright each time
+  color c2 = color( hue(c1), sat(c1), bright);
  
- //Recursive task
+ //Recursive task - create and display shape
    PShape myShape = customEllipse( len, c2); //get a shape based in input values: float len, color c1
   shape( myShape, 0, 0); //display a shape
   //make sure our termination variable will meet the termination stop condition
+  
+  //RECURSIVE FUNCTION IS CALLED
   recursiveEllipsePattern( len * 0.8, c1, count-1 ); //calls itself - recursive call
 
 ///where do we do our task? after the recursive call?
