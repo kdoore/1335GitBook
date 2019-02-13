@@ -12,7 +12,7 @@ Select a personal situation that has strong associated emotions.  Sketch a mind-
     - Add emotions to each side, position the emotions to indicate the strength of emotion - with the strongest emotions located at the outer edges of the regions, neutral emotions near the central dividing line 
     - Result:  Select at least 5 emotions to represent in your artwork, list these along the bottom of your concept map. 
     
-2. Complete Project Planning Document 
+2. **Complete Project Planning Document** 
  - Tables:
     - Define variables: 
         - colors 
@@ -21,11 +21,11 @@ Select a personal situation that has strong associated emotions.  Sketch a mind-
     - Determine Design Attributes
         - map function parameters for values on both sides of the negative / positive regions: how do values change as mouseX changes?
         
-3.  Use completed planning document as a guide to complete the logic to determine input parameters for each region, negative, positive.  
+3.  **Use planning document as a guide to complete the logic** to determine input parameters the RecursivePattern functions, for each region, negative, positive.  
     - Negative - region:  0 < mouseX < balancePoint
     - Positive - region: balancePoint < mouseX < width
 
-RecursivePattern function parameters are determined in the draw( ) function, depending on which region mouseX is in: 
+3. **RecursivePattern function parameters** are determined in the draw( ) function, depending on which region mouseX is in: 
 
 **These are the main customizations you will do for this project **
     - **float len **- determined by region and mouseX
@@ -69,11 +69,3 @@ RecursivePattern function parameters are determined in the draw( ) function, dep
 
 ```
 
-
-
-    
-         
-    
-
-
-        
