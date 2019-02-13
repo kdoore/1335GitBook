@@ -29,5 +29,5 @@ Hour Glass Emotional Dimensions - [Wikipedia](https://en.wikipedia.org/wiki/Cont
 
 
 
-Sentic.net
+[Sentic.net](http://sentic.net/)
 
