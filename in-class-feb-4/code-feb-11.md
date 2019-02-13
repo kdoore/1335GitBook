@@ -65,13 +65,13 @@ void recursiveRectPattern(float len, color c1, int count ) {
   PShape myShape = customRect( len, c2); //get a shape based in input values: float len, color c1
   shape( myShape, 0, 0); //display a shape
   //make sure our termination variable will meet the termination stop condition
+  //RECURSIVE FUNCTION CALL
   recursiveRectPattern( len * 0.8, c1, count-1 ); //calls itself - recursive call
 
   myShape = customRect( -len *0.4, c2); //get a shape based in input values: float len, color c1
   shape( myShape, 0, 0); //display a shape
 
-  ///where do we do our task? after the recursive call?
-}
+} //end recursiveRectPattern
 
 
 
@@ -95,11 +95,8 @@ void recursiveEllipsePattern(float len, color c1, int count ) {
 
 ///where do we do our task? after the recursive call?
   myShape = customEllipse( -len *0.4, c2); //get a shape based in input values: float len, color c1
-  shape( myShape, 0, 0); //display a shape
-
- 
-}
-
+  shape( myShape, 0, 0); //display a shape 
+} //end RecursiveEllipsePattern
 
 
 PShape customEllipse( float len, color c1) {
