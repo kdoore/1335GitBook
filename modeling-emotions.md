@@ -10,7 +10,10 @@ In order to recall our emotions that are associated with our selected event, it'
 
 ![](https://upload.wikimedia.org/wikipedia/commons/b/bf/Plutchik_dyads.png)
 
-## HourGlass of Emotions
+## Hour Glass of Emotions
+The Hour Glass model of Emotions was created by UX researchers.  This model provides categories of emotion: Sensitivity, Attention, Pleasantness, Aptitude, where Emotions are given a numeric value based on the strength of the emotion.  This dimensional, numeric model has been used to analyze emotional sentiment from written statements such as twitter tweets.  Colors are used in the model to indicate the emotional dimensions.
+
+[Sentic Presentation ](http://sentic.net/seminar/)
 
 ![](https://upload.wikimedia.org/wikipedia/commons/6/6b/Hourglass_of_Emotions.png)
 
