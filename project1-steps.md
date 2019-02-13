@@ -46,6 +46,7 @@ RecursivePattern function parameters are determined in the draw( ) function, dep
     - ` float numRepeats = map( mouseX, 0, balancePoint, 8, 4); //negative region example`
 
 **RecursivePattern Functions:** You will have 2 different ones
+     
      Within the RecursivePattern functions:
      
      - you must modify brightness   
@@ -59,8 +60,7 @@ RecursivePattern function parameters are determined in the draw( ) function, dep
   ```java
     float hue = hue( c1 ) + random( -5,5);  ///add or subtract small amount to get analogous colors 
     ```
-    
-   ** Recursive Function Call**
+** Recursive Function Call**
    You **must modify count for each recursive call**, this can be done when setting the input parameters as below.
    You will modify **len** for each recursive call because we are creating nested shapes, multiply by a fractional value.
 
