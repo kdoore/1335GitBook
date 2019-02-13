@@ -22,7 +22,10 @@ Select a personal situation that has strong associated emotions.  Sketch a mind-
     - Negative - region:  0 < mouseX < balancePoint
     - Positive - region: balancePoint < mouseX < width
 
-RecursivePattern functions:  1. len 
+RecursivePattern function parameters:  
+    len 
+    colorMain, colorVarient
+    
 
 
         
