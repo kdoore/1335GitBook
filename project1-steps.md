@@ -34,7 +34,7 @@ RecursivePattern function parameters are determined in the draw( ) function, dep
         - use colorLerp( ), gradientFraction to determine color for current MouseX position
         - determine probability for random pop of color, this can be set for each region, or can vary within each region using map( ) to set value of float randomPopColor
     
-    - **int numRepeats** - termination variable 
+    - **int numRepeats** - recursion termination variable 
         use map( ) to vary this value as mouseX changes (optional), or it can be constant across both ranges
     
 RecursivePattern:
