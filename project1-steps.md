@@ -30,10 +30,14 @@ RecursivePattern function parameters are determined in the draw( ) function, dep
 **These are the main customizations you will do for this project **
     - **float len **- determined by region and mouseX
         - use map( ) to determine len for each region
-        - `float len = map( mouseX, 0, balancePoint, lenMax, lenMin);  // negative region - determine for positive region`
+        - `float len = map( mouseX, 0, balancePoint, lenMax, lenMin);  // negative region`
+         - you must determine logic for positive region
     - **color c1** - determined by region and mouseX
         - use map( ) to determine gradientFraction
+        - `float gradFraction = map( mouseX, 0, balancePoint, 0.0, 1.0); // negative region`
         - use colorLerp( ), gradientFraction to determine color for current MouseX position
+        - `color cMain = colorLerp( lenMax, lenMin, gradientFraction); // negative region`
+         - you must determine logic for positive region
         - determine probability for random pop of color, this can be set for each region, or can vary within each region using map( ) to set value of float randomPopColor
     
     - **int numRepeats** - recursion termination variable 
