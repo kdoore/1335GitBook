@@ -30,6 +30,7 @@ RecursivePattern function parameters are determined in the draw( ) function, dep
 **These are the main customizations you will do for this project **
     - **float len **- determined by region and mouseX
         - use map( ) to determine len for each region
+        - `float len = map( mouseX, 0, balancePoint, lenMax, lenMin);  // negative region - determine for positive region`
     - **color c1** - determined by region and mouseX
         - use map( ) to determine gradientFraction
         - use colorLerp( ), gradientFraction to determine color for current MouseX position
