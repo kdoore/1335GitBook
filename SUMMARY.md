@@ -18,7 +18,6 @@
 * [Project 1 - VertexShape - Recursion](project-1-pshape-pattern-recursion.md)
 * [Project 1: Recursive Drawing](recursive-drawing.md)
 * [Project 1: Programmatic Variations in Color](programmatic-variations-in-color.md)
-* [VertexShape Centered at Origin](vertex-pattern-centered-at-origin.md)
 * [Map Function](map-function.md)
 * [Scale Transform for Mirroring](scale-transform-for-mirroring.md)
 * [In Class Code - Feb 4-6](in-class-feb-4.md)

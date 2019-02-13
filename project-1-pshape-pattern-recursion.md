@@ -11,9 +11,10 @@ In the code below, we define a Recursive function: `recursivePattern()` that cre
 ```java
     //Draws one PShape each time it is called
     //PShape size is determined by input parameter: len
-    void vertexShape( float len){
+    PShape vertexShape( float len, color c){
         PShape s = createShape();
         s.beginShape();
+        s.fill( c ); //set fill
         s.vertex(0,0);//list points in clockwise order
 
         s.vertex( len, 0); 
@@ -21,7 +22,7 @@ In the code below, we define a Recursive function: `recursivePattern()` that cre
         s.vertex( len * .5, len * .5);
         s.vertex( 0, len);
         s.endShape(CLOSE);
-        shape( s, 0,0); //this displays the shape at the origin
+        return s;  //return the shape
     }
 ```
   
@@ -35,7 +36,8 @@ In the code below, we define a Recursive function: `recursivePattern()` that cre
         if(level <1 ) { //termination condition
             return; //stop function execution by returning from the function
         }
-        vertexShape( length); //- task - draws 1 instance of the pattern
+        PShape s = vertexShape( length); //- task - create PShape by calling the vertexShape function
+        shape( s, 0, 0); //draw the shape on the canvas at x=0,y=0.
         recursivePattern( length - 20, level -1 ); //recursive call
     }
 ```
@@ -69,18 +71,18 @@ Once a design has been developed using grayscale color values as show above, the
         //float len = 100;
         
         //reducing brightness value between vertex points
-        void vertexShape(float len){
+        void vertexShape(float len, color c1){
             PShape s = createShape();
             s.beginShape();
-            s.fill(200, 100, 100 ); // blue, HSB
+            s.fill(c1); // 
             s.vertex( 0, 0 ); //point origin
-            s.fill(200, 100, 80 ); // blue, HSB
+            s.fill(hue(c1), saturation(c1), brightness(c1)*0.8 ); // reduce brightness
             s.vertex( len *.4, 0 ); //point(40,0)
-            s.fill(200, 100, 60 ); // blue, HSB
+           s.fill(hue(c1), saturation(c1), brightness(c1)*0.6 ); // reduce brightness
             s.vertex( len *.6, len*.6 ); //point(60,60);
-            s.fill(200, 100, 40 ); // blue, HSB
+           s.fill(hue(c1), saturation(c1), brightness(c1)*0.4 ); // reduce brightness
             s.vertex( 0, len *.4 ); //point(0,40);
-            s.fill(200, 100, 20 ); // blue, HSB
+            s.fill(hue(c1), saturation(c1), brightness(c1)*0.2 ); // reduce brightness
             s.vertex( 0, 0 );
             s.endShape(CLOSE); //end shape
             shape(s, 0, 0);
