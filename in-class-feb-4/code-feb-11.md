@@ -113,10 +113,11 @@ PShape customRect( float len, color c1) {
 
 
 //Vertex PShape
+//Example custom PShape using vertex( ) points
 PShape customShape3( float len, color c1){
   PShape s = createShape();
   s.beginShape();
-  s.fill( c1);
+  s.fill( c1);  //syntax for fill with vertex shapes
   s.vertex(0,0 ); //1
   s.vertex(.75 * len,.25 * len );//2
   s.vertex(len,.75 * len ); //3
