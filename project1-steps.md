@@ -26,7 +26,13 @@ Select a personal situation that has strong associated emotions.  Sketch a mind-
     - Positive - region: balancePoint < mouseX < width
 
 
-3. **RecursivePattern function parameters** are determined in the draw( ) function, depending on which region mouseX is in: 
+- **RecursivePattern function parameters:  ** are determined in the draw( ) function, depending region and mouseX value: 
+
+```java
+//recursivePattern functions with parameters
+void recursivePattern1(float len, color c1, int count  )
+void recursivePattern2(float len, color c1, int count  )
+```
 
 **These are the main customizations you will do for this project **
     - **float len **- determined by region and mouseX
