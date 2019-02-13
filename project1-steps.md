@@ -26,7 +26,8 @@ Select a personal situation that has strong associated emotions.  Sketch a mind-
     - Positive - region: balancePoint < mouseX < width
 
 RecursivePattern function parameters are determined in the draw( ) function, depending on which region mouseX is in: 
-**This is the main customization you will do for this project **
+
+**These are the main customizations you will do for this project **
     - **float len **- determined by region and mouseX
         - use map( ) to determine len for each region
     - **color c1** - determined by region and mouseX
