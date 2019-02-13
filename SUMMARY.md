@@ -23,6 +23,7 @@
 * [In Class Code - Feb 4-6](in-class-feb-4.md)
   * [Code - Feb 11](in-class-feb-4/code-feb-11.md)
 * [Modeling Emotions](modeling-emotions.md)
+* [Project1-Steps](project1-steps.md)
 
 ## Grid Based Designs
 
