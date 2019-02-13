@@ -58,7 +58,7 @@ void recursivePattern2(float len, color c1, int count  )
      
      - you must modify brightness   
     
-    ```java
+   ```java
      float brightFraction = map( len, lenMin, lenMax, 0.5, 1.0); //example
      float bright = brightness( c1 ) * brightFraction;
     ```
