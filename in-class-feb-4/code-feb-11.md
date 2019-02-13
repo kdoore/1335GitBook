@@ -29,22 +29,26 @@ void draw() {
     color c1 = color(270, 100, 100); //purple - negative color
     float len; //this will vary depending on region and mouse position
     int numRepeats = 10;
+    translate( mouseX, mouseY);
 
     if ( mouseX < balancePoint) { //in the left region of the canvas - Negative
       len = map( mouseX, 0, balancePoint, lenMax, lenMin); //as mouseX gets bigger, len gets smaller
-      translate( mouseX, mouseY);
+      
       rotate(radians( random( 0, 180)));
       recursiveRectPattern( len, c1, numRepeats); //rectangle is for netagive
-      resetMatrix();
-    } else { //in the right region - Positive
+   
+    } 
+    else { //in the right region - Positive
       len = map( mouseX, balancePoint, width, lenMin, lenMax); //as mouseX gets bigger, len gets bigger
-      translate( mouseX, mouseY);
+     
       rotate(radians( random( 0, 180)));
       recursiveEllipsePattern( len, c2, numRepeats);
-      resetMatrix();
-    }
-  }
-}
+      
+    } //end else
+    resetMatrix();
+
+  } //end if mousePRessed
+} //end draw
 
 //create a recursivePattern:
 //recursive function must have a recursive call statement ( where it calls itself)
@@ -114,6 +118,28 @@ PShape customRect( float len, color c1) {
   return s;
 }
 
+
+//Vertex PShape
+PShape customShape3( float len, color c1){
+  PShape s = createShape();
+  s.beginShape();
+  s.fill( c1);
+  s.vertex(0,0 ); //1
+  s.vertex(.75 * len,.25 * len );//2
+  s.vertex(len,.75 * len ); //3
+  s.vertex(.25 * len, len ); //4
+  s.vertex(0,.5 * len ); //5
+  s.vertex(0,0 ); //6
+ 
+  s.beginContour();
+  s.vertex( .25 * len, .25 * len);
+  s.vertex( .25 * len, .5 * len);
+  s.vertex(.5 * len, .5 * len);
+  s.vertex(.5 * len, .25 * len );
+  s.endContour();
+   s.endShape( CLOSE );
+  return s;
+}
 
 ```
 
