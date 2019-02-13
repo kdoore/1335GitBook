@@ -78,9 +78,9 @@ Once a design has been developed using grayscale color values as show above, the
             s.vertex( 0, 0 ); //point origin
             s.fill(hue(c1), saturation(c1), brightness(c1)*0.8 ); // reduce brightness
             s.vertex( len *.4, 0 ); //point(40,0)
-           s.fill(hue(c1), saturation(c1), brightness(c1)*0.6 ); // reduce brightness
+            s.fill(hue(c1), saturation(c1), brightness(c1)*0.6 ); // reduce brightness
             s.vertex( len *.6, len*.6 ); //point(60,60);
-           s.fill(hue(c1), saturation(c1), brightness(c1)*0.4 ); // reduce brightness
+            s.fill(hue(c1), saturation(c1), brightness(c1)*0.4 ); // reduce brightness
             s.vertex( 0, len *.4 ); //point(0,40);
             s.fill(hue(c1), saturation(c1), brightness(c1)*0.2 ); // reduce brightness
             s.vertex( 0, 0 );
