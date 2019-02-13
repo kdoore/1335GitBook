@@ -71,7 +71,7 @@ Once a design has been developed using grayscale color values as show above, the
         //float len = 100;
         
         //reducing brightness value between vertex points
-        void vertexShape(float len, color c1){
+        PShape vertexShape(float len, color c1){
             PShape s = createShape();
             s.beginShape();
             s.fill(c1); // 
@@ -85,7 +85,7 @@ Once a design has been developed using grayscale color values as show above, the
             s.fill(hue(c1), saturation(c1), brightness(c1)*0.2 ); // reduce brightness
             s.vertex( 0, 0 );
             s.endShape(CLOSE); //end shape
-            shape(s, 0, 0);
+            return s;
         }
 ```
 ###Vertex Shading Example
