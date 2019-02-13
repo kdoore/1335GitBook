@@ -48,7 +48,7 @@ void recursivePattern2(float len, color c1, int count  )
         - determine probability for random pop of color, this can be set for each region, or can vary within each region using map( ) to set value of float randPopColor
         - ` float randPopColor = map( mouseX, 0, balancePoint, 0.3, 0.6); //negative region example`
     
-    - **int numRepeats** - recursion termination variable 
+    - **int count** - recursion termination variable 
         use map( ) to vary this value as mouseX changes (optional), or it can be constant across both ranges
     - ` float numRepeats = map( mouseX, 0, balancePoint, 8, 4); //negative region example`
 
