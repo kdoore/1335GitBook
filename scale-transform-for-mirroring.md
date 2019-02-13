@@ -26,29 +26,32 @@ void recursivePattern( float len, int count){
     return;  //termination condition
   }
  
-  float bright = map(len, 0, lenMax, 100,50); //bright changes with len
+  float bright = map(len, lenMin, lenMax, 100,50); //bright changes with len
 
-  fill( 200, 100, bright ); //blue
-  vertexShape( len );  //draw the shape using current value of len -- largest to smallest
+  color c1 = color( 200, 100, bright ); //blue
+  PShape s = vertexShape( len, c1 );  //create shape using current len
+  shape( s, 0, 0);//draw the shape
   
   /////Draw pattern mirrored into region4 
   pushMatrix(); //take snapshot of prior transforms
   scale(1.0, -1.0); //mirror across X-axis //region4
-  vertexShape( len ); 
+  s = vertexShape( len, c1 ); //create shape using current len
+ shape( s, 0, 0);//draw the shape
   popMatrix(); // restore transforms to prior snapshot
   
   /////Draw on pattern mirrored in region2
   pushMatrix(); //take snapshot of prior transforms
   scale(-1.0, +1.0); //mirror across Y-axix //region2
-  vertexShape( len ); 
+  s = vertexShape( len, c1 ); //create shape using current len
+  shape( s, 0, 0);//draw the shape
   popMatrix(); // restore transforms to prior snapshot
   
   recursivePattern( len * 0.8, count - 1); ///RECURISVE CALL
   
   ///shape drawn after recursive call are stacked in reverse order, smallest to largest - asymmetry
-  fill( 200, 100, bright );  //blue
-  vertexShape( -len );   ///we can use -len to draw in region3
-    
+  c1 = color( 200, 100, bright );
+  s= vertexShape( -len ,c1 );   ///we can use -len to draw in region3
+  shape( s, 0, 0); 
 }
 
 ```
