@@ -21,15 +21,20 @@ We can use the Map function to create relationships between features of our prog
 
 In Project 1, we can use the changing value of the length parameter for drawn patterns as the known value that is changing, we can use it to give us changing values of color components, such as hue, saturation, or brightness. 
 
+Example code below shows how we can use the map function to vary size and color of a rectangle drawn at the mouse position. (Include setup() to set size() and colorMode to HSB)
+
 ```java
+void draw(){
   float lenMin = 20;
   float lenMax = 200;
   float len = map( mouseX, 0, width, lenMin, lenMax);
   float hue = map(mouseX, 0,width, 100, 250);
   float bright = map(len, lenMin, lenMax, 100,50);
   float sat = map(len, lenMin, lenMax, 100,20);
- 
+  
   fill( hue, sat, bright );
+  rect( mouseX, mouseY, len, len);
+  }
 ```
 
 
