@@ -48,7 +48,7 @@ void recursivePattern2(float len, color c1, int count  )
 
 
 
-**color c1** - determined by region and mouseX
+**color c1, color cMain** - determined by region and mouseX
 
   - use map\( \) to determine gradientFraction
 
