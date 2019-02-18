@@ -2,6 +2,12 @@
 
 ![](/assets/Screen Shot 2018-09-04 at 12.22.32 PM.png)
 
+The image below shows how vertex points can be specified as a fractional value of len, the input parameter for our PShape functions.
+The drawing shows the points that are specified in the code below.  You will want to draw a similar diagram to determine points for your custom shape vertices.
+
+![](/assets/IMG_3079_V2.jpg)
+
+
 ###PShape with Contour
 The code below shows that PShape can have an inner cutout created using the beginContour(), endContour() functions.  The vertex points specified within those 2 functions will be cut-out of the larger shape that was specified before the beginContour() function.
 
