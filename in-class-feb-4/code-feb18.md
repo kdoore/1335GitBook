@@ -100,8 +100,7 @@ void recursiveEllipsePattern(float len, color c1, int count ) {
 
   //RECURSIVE FUNCTION IS CALLED
   recursiveEllipsePattern( len * 0.8, c1, count-1 ); //calls itself - recursive call
-
-///where do we do our task? after the recursive call?
+  ///we could add another recursive call here to have reversed pattern
 } //end RecursiveEllipsePattern
 
 PShape customEllipse( float len, color c1) {
