@@ -74,7 +74,7 @@ void recursiveRectPattern(float len, color c1, int count ) {
   //make sure our termination variable will meet the termination stop condition
   //RECURSIVE FUNCTION CALL
   recursiveRectPattern( len * 0.8, c1, count-1 ); //calls itself - recursive call
-
+  //this will be reversed stacked pattern since it's after the recursive call
   myShape = customRect( -len *0.4, c2); //get a shape based in input values: float len, color c1
   shape( myShape, 0, 0); //display a shape
 
