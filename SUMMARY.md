@@ -22,6 +22,7 @@
 * [Scale Transform for Mirroring](scale-transform-for-mirroring.md)
 * [In Class Code - Feb 4-6](in-class-feb-4.md)
   * [Code - Feb 11](in-class-feb-4/code-feb-11.md)
+  * [Code - Feb18](in-class-feb-4/code-feb18.md)
 * [Modeling Emotions](modeling-emotions.md)
 * [Project1-Steps](project1-steps.md)
 
