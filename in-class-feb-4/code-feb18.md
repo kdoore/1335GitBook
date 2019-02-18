@@ -2,6 +2,8 @@
 
 ```java
 
+float lenMax, lenMin;
+
 void setup() {
   size( 1000, 1000);
   colorMode(HSB, 360, 100, 100, 100);
@@ -43,12 +45,10 @@ void draw() {
     } 
     else { //in the right region - Positive
       len = map( mouseX, balancePoint, width, lenMin, lenMax); //as mouseX gets bigger, len gets bigger
-      gradFraction = map( mouseX, balancePoint, width, 0.0, 1.0);
-      cMain = lerpColor( c2Min, c2Max, gradFraction);
-       if(rand < .3){ //pop of color
-        cMain = c2Pop;
-      }
-    
+      //Insert code here to modify color for positive region
+      
+      cMain = c2Max;
+      
       recursiveEllipsePattern( len, cMain, numRepeats);
 
     } //end else
@@ -74,7 +74,7 @@ void recursiveRectPattern(float len, color c1, int count ) {
   //make sure our termination variable will meet the termination stop condition
   //RECURSIVE FUNCTION CALL
   recursiveRectPattern( len * 0.8, c1, count-1 ); //calls itself - recursive call
-  //this will be reversed stacked pattern since it's after the recursive call
+
   myShape = customRect( -len *0.4, c2); //get a shape based in input values: float len, color c1
   shape( myShape, 0, 0); //display a shape
 
@@ -100,7 +100,8 @@ void recursiveEllipsePattern(float len, color c1, int count ) {
 
   //RECURSIVE FUNCTION IS CALLED
   recursiveEllipsePattern( len * 0.8, c1, count-1 ); //calls itself - recursive call
-  ///we could add another recursive call here to have reversed pattern
+
+///where do we do our task? after the recursive call?
 } //end RecursiveEllipsePattern
 
 PShape customEllipse( float len, color c1) {
