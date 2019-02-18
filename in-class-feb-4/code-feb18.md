@@ -49,7 +49,7 @@ void draw() {
       len = map( mouseX, balancePoint, width, lenMin, lenMax); //as mouseX gets bigger, len gets bigger
       //Insert code here to modify color for positive region
       
-      cMain = c2Max;
+      cMain = c2Max;  //this code needs to be modified so cMain is determined by lerpColor( );
       
       recursiveEllipsePattern( len, cMain, numRepeats);
 
