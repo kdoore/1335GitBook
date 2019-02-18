@@ -37,7 +37,7 @@ void draw() {
       gradFraction = map( mouseX, 0, balancePoint, 0.0, 1.0);
       cMain = lerpColor( c1Max, c1Min, gradFraction);
       
-      if(rand < .3){ //pop of color
+      if(rand < .3){ //pop of color 30 percent chance
         cMain = c1Variant;
       }
       
