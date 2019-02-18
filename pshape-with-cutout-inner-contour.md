@@ -5,7 +5,7 @@
 The image below shows how vertex points can be specified as a fractional value of len, the input parameter for our PShape functions.
 The drawing shows the points that are specified in the code below.  You will want to draw a similar diagram to determine points for your custom shape vertices.
 
-![](/assets/IMG_3079_V2.jpg)
+![](/assets/IMG_3079.jpg)
 
 
 ###PShape with Contour
