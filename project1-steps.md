@@ -55,7 +55,7 @@ void recursivePattern2(float len, color c1, int count  )
 `float gradFraction = map( mouseX, 0, balancePoint, 0.0, 1.0); // negative region`
   * use colorLerp\( \), gradientFraction to determine color for current MouseX position
 
-`color cMain = colorLerp( lenMax, lenMin, gradientFraction); // negative region`
+`color cMain = colorLerp( colorMax, colorMin, gradientFraction); // negative region`
   * you must determine logic for positive region
 
   * determine probability for random pop of color, this can be set for each region, or can vary within each region using map\( \) to set value of float randPopColor
