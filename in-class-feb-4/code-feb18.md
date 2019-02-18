@@ -17,10 +17,12 @@ void draw() {
     float balancePoint = width/2;
     color c2Max = color( 31, 100, 100 ); //orange - positive color
     color c2Min = color(100,  100, 100);  //green
+    color c2Pop = color( 70, 100, 100); //lime
+    
     color c1Max = color(270, 100, 100); //purple - negative color
     color c1Min = color( 170, 50, 50); //aqua - dark
-    color c1Pop = color(200, 100, 100);
-    color c2Pop = color( 70, 100, 100);
+    color c1Pop = color(200, 100, 100); //blue
+
     
     float len; //this will vary depending on region and mouse position
     int numRepeats = 10;
