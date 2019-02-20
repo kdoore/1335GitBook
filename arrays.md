@@ -53,7 +53,7 @@ When creating a 2 dimensional array, it is customary to have the first bracket i
   size( 600,600);
   int rows = 4;
   int cols = 4;
-  int size=width/cols;
+  int size= width/cols;
   
   int[][] intMatrix ;  //declare 2D array of integers
   intMatrix = new int[rows][cols]; //initialize 
@@ -105,13 +105,13 @@ println( "intVal0: " + intVals[0] ); //intVal0: 12
 //function definitions below
 
 void initializeVals( int[] intArray, int initVal ){
-for( int i=0; i< intArray.length; i++){
-intArray[i] = initVal;
-}
+  for( int i=0; i< intArray.length; i++){
+    intArray[i] = initVal;
+  }
 }
 
 void modifyOneVal_Useless( int val1, int val2){
-val1 = val2;
+  val1 = val2;
 }
 
 
