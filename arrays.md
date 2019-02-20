@@ -46,7 +46,7 @@ for( int i=0; i < myInts.Length; i++){
 
 Syntax:
 
-When creating a 2 dimensional array, it is customary to have the first bracket index represent the rows, with the j index representing columns.  **(WARNING: Shiffman's book does not follow this syntax)** A for-loop is usually used to step through each element in the collection, where intMatrix[i][j]  refers to a single array element in the i'th row and j'th column position.
+When creating a 2 dimensional array, it is customary to have the first bracket index represent the rows, with the j index representing columns.  **(WARNING: Shiffman's book does not follow this convention)** A for-loop is usually used to step through each element in the collection, where intMatrix[i][j]  refers to a single array element in the i'th row and j'th column position.
 
 ```java
 
