@@ -66,6 +66,8 @@ When creating a 2 dimensional array, it is customary to have the first bracket i
       fill(100+(k*30));  //set fill based on k value
       
       rect( xPos, yPos, size, size);
+      fill(0);
+      text( k, xPos+size/2, yPos + size/2);
       xPos += size;  //move xPos across to each new column
     }
     xPos = 0; //reset xPos to 0 for new row
