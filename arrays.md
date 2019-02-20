@@ -1,6 +1,6 @@
 #Arrays
 
-Arrays are an data-structure that can hold multiple values.   We can consider an array to be a list, which can hold values.  We can also consider arrays as multi-dimensional data structures, a 2D array is like a grid, a 3D array can be considered a cubic structure...etc.  
+Arrays are a data-structure that can hold multiple values.   We can consider an array to be a list, which can hold values.  We can also consider arrays as multi-dimensional data structures, a 2D array is like a grid, a 3D array can be considered a cubic structure...etc.  
 
 Arrays are objects in java, so we'll start to learn how to work with objects as we learn to work with arrays.
 
