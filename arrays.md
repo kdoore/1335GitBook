@@ -117,3 +117,41 @@ void modifyOneVal_Useless( int val1, int val2){
 
 ```
 
+
+2D Array Example:
+
+
+
+```java
+void setup(){
+  size( 600, 600);
+  int rows = 4;
+  int cols = 4;
+  int size=width/rows;
+
+  int[][] intMatrix ;  //declare 2D array of integers
+  intMatrix = new int[rows][cols]; //initialize 
+  int xPos = 0;
+  int yPos = 0;
+  //nested for loops to access each element
+  for ( int i=0; i< rows; i++) {
+    for ( int j=0; j<cols; j++) {
+      int k=  i + j;  //create a variable to use for fill logic
+      intMatrix[i][j] = k; //store this value for each cell
+      float grayScale = map( k, 0, (rows + cols)-2, 50, 200);
+      fill(grayScale);  //set fill based on k value
+      
+      rect( xPos, yPos, size, size);
+      fill(0);
+      text("k: " + k + " fill: " + int(grayScale), xPos + size/4, yPos + size/2);
+      xPos += size;  //move xPos across to each new column
+    }
+    xPos = 0; //reset xPos to 0 for new row
+    yPos += size; //move yPos down for the next row
+  }
+  
+  }
+
+
+```
+
