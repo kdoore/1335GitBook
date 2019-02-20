@@ -40,7 +40,7 @@ void setup(){
   //so changes to the array in the function are persisted
   //to the array after the function is done executing
   DoArraySomething( myArray );
-  println("after function myArray[i] " + myArray[i]); //first array element value was permanently changed in the function call
+  println("after function myArray[0] " + myArray[0]); //first array element value was permanently changed in the function call
 
    } //end setup
  
