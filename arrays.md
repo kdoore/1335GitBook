@@ -49,10 +49,11 @@ Syntax:
 When creating a 2 dimensional array, it is customary to have the first bracket index represent the rows, with the j index representing columns.  **(WARNING: Shiffman's book does not follow this convention)** A for-loop is usually used to step through each element in the collection, where intMatrix[i][j]  refers to a single array element in the i'th row and j'th column position.
 
 ```java
-
+  void setup(){
+  size( 600,600);
   int rows = 4;
   int cols = 4;
-  int size=60;
+  int size=width/cols;
   
   int[][] intMatrix ;  //declare 2D array of integers
   intMatrix = new int[rows][cols]; //initialize 
@@ -73,6 +74,7 @@ When creating a 2 dimensional array, it is customary to have the first bracket i
     xPos = 0; //reset xPos to 0 for new row
     yPos += size; //move yPos down for the next row
   }
+  }//end setup
 ```
 ###Grid Index: (rows: i, cols: j )
 The image below shows a grid with row and column indexes
