@@ -84,6 +84,7 @@
 * [Java Syntax](java_syntax.md)
   * [Typed-Variables](typed-variables.md)
   * [Float - Integer Conversion Errors](typed-variables/float-integer-conversion-errors.md)
+  * [Modulus](modulus.md)
   * [Functions](functions.md)
   * [Object Reference Data Types](reference_data_types.md)
   * [Arrays](arrays.md)
