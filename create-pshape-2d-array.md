@@ -8,7 +8,10 @@ In the code below, we'll create a 2D array of PShapes using the Processing PShap
 
 ```java
 
-  int rows = 6;
+ void setup(){
+  size( 600,600);
+  colorMode(HSB, 360, 100, 100);
+ int rows = 6;
   int cols = 6;
   int cellSize = width/cols;
   PShape [][]shapeMatrix = new PShape[rows][cols];
@@ -23,21 +26,22 @@ In the code below, we'll create a 2D array of PShapes using the Processing PShap
          //calculate fill color
          float kFraction = map( k, 0, (rows-1) + (cols-1),0.0, 1.0);
          color c3 = lerpColor(c1, c2, kFraction);
-         
+
         //create the shape 
         PShape curShape = rectPattern( cellSize-10, c3);
-         
+
          //store shape in 2D array
          shapeMatrix[i][j]= curShape;  //store in 2D array
         ///display shape
          shape(curShape, xPos, yPos); 
-           
+
          xPos += cellSize; //increment for drawing the next column
     } //end of inner loop (cols)
     yPos +=cellSize; //move yPos for drawing next row
     xPos = 0;
   } //end of outer loop (rows) 
 }
+
 
 //function to create a PShape rect
 PShape rectPattern( float len, color c1){
