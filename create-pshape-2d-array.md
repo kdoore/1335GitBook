@@ -61,6 +61,9 @@ In the code segments below, we use additional logic, is the value of k odd or ev
 ```java
 //inside setup()
 ////code inside nested for-loop
+void setup(){
+size( 600,600);
+colorMode(HSB, 360, 100, 100);
 
 PShape curShape;
 if( k %2==0){
