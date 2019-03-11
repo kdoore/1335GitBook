@@ -1,7 +1,7 @@
 #Grid Patterns using Nested For-loop index logic
 ![](/assets/Screen Shot 2019-03-11 at 1.25.26 PM.png)
 
-
+Notice that the circles are using fractionl logic for color: k= min( i, j) and this creates concentric color patterns.  The Squares are using logic:  k=i+j, which gives diagonal color gradient pattern. 
 
 ```java
 
