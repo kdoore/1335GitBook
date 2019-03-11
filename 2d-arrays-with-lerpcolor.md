@@ -14,6 +14,9 @@ We can notice that the values of k in the grid forms 2 patterns:
   
   //the following code is in the Procesing Setup function
   colorMode(HSB, 360, 100,100); //corresponds to the color selector
+  void setup(){
+  size(600, 600);
+  colorMode(HSB, 360, 100, 100);
   int rows = 6;
   int cols = 6;
   int cellSize = width/cols;
