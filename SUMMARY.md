@@ -96,3 +96,7 @@
   * [Class](class.md)
   * [Learning Science](learning-science.md)
 
+## Resources and References
+
+* [Resources](resources-and-references/resources.md)
+
