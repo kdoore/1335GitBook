@@ -43,26 +43,7 @@ PShape vertexPattern1( float len, color foreground) {
   return s;
 }  //end createOneShape
 
-//Use PShapes Group to add Background PShape
-PShape vertexPattern2( float len, color foreground, color background) {
-  PShape s1 = createShape( RECT,0,0,len,len);
-  s1.setFill( background);
-  PShape s = createShape( );
-  s.beginShape();
-  s.fill(foreground);
-  s.vertex(len/2, len/2);
-  s.vertex( 0, 0);
-  s.vertex(len, 0);
-  s.vertex( len/2, len/2);
-  s.vertex( len, len);
-  s.vertex(0, len);
-  s.vertex( len/2, len/2);
-  s.endShape(CLOSE);
-  PShape g = createShape(GROUP);
-  g.addChild(s1);
-  g.addChild(s);
-  return g;
-}  //end createOneShape
+
 
 ```
 ###Test and Verify VertexPattern functions
@@ -151,7 +132,7 @@ void displayShapeMatrix(PShape[][] shapes, int x , int y , int rows, int cols, i
 
 **Step 4 Display Grid in Other Regions**
 ###Use Rotate, Translate, Scale to display ShapeMatrix across other Regions.  
-Within these functions, the canvas is transformed prior to calling the displayShapeMatrix code above. An example of using both Rotate and Scale are shown, for creating a ShapeMatrix in Region2.  Similar functions should be created for Region3 and Region4
+Within these functions, the canvas is transformed prior to calling the displayShapeMatrix code above. An example of using Rotate and Scale is shown for creating a ShapeMatrix in Region2.  Similar functions should be created for Region3 and Region4
 
 
 ```java
@@ -164,15 +145,7 @@ void displayRotateRegion2(PShape[][] shapesMatrix,int rows, int cols, int cellSi
   popMatrix();
 }
 
-//display shapeMatrix in Region2, use scale(scaleX, scaleY);
-void displayScaleRegion2(PShape[][] shapesMatrix,int rows, int cols, int cellSize, int artWorkSize){
-  pushMatrix();
-  translate( artWorkSize, 0);
-  scale( -1.0, 1.0);
-  displayShapeMatrix(shapesMatrix, 0 ,0, rows , cols ,cellSize);
-  popMatrix();
-}
-
+//similar code for Scaling in Region2
 ```
 
 ![](/assets/Screenshot 2017-09-28 13.26.58.png)
