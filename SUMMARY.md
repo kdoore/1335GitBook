@@ -52,6 +52,7 @@
 * [Transforms for Position, Rotation, Scale of ShapeMatrix Elements](transforms-for-position-rotation-scale-of-shapematrix-elements.md)
 * [Project 2 - Grid Based Design, Vertex Patterns](project-2-design-using-2d-pshape-array-lerpcolor-processing-transform-functions.md)
   * [March13-Class Code](project-2-design-using-2d-pshape-array-lerpcolor-processing-transform-functions/march13-class-code.md)
+* [Demo Lerp Colors](demo-lerp-colors.md)
 
 ## Object Oriented Programming
 
