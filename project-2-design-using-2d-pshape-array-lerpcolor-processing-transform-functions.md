@@ -28,7 +28,6 @@ Here, PShapes are defined using vertices and the input parameter len , or some m
 ```java
 
 PShape vertexPattern1( float len, color foreground) {
-  //fill(foreground); ///alternative way to set the PShape color
   PShape s = createShape( );
   s.beginShape();
   s.fill(foreground);
