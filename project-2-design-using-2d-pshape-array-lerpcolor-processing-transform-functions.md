@@ -188,10 +188,11 @@ void setup(){
   size(400,400);
   background(0);
   colorMode(HSB, 360,100,100);
+  //DEFINE COLORS: 
   color c1= color( 71, 100, 100); //yellow-green
   color c2 = color(278,95,30);// dark purple
-  color c3 = color(0);
-  color c4=  color(200);
+  color c3 = color(0); //black
+  color c4=  color(200); //gray (white is 360)
   
  int artWorkSize=width;
  int regionWidth = artWorkSize/2;
