@@ -6,15 +6,15 @@ Create a 2D Array of PShape objects,  create grid patterns using HSB colorMode a
 
 **Project Structure: Functions:**
 
-** Step 1 - VertexPattern Functions **   
+** Step 1 - VertexShape Functions **   
 - Create **2 functions** to create PShape vertex objects using float length, color foreground, and optional color: background as input parameters:
 
-    PShape vertexPattern1( float len, color foreground)
+    PShape vertexShape1( float len, color foreground)
     
-    PShape vertexPattern2( float len, color foreground, color background);
+    PShape vertexShape2( float len, color foreground, color background);
    
     
-###Example vertexPattern code using PShape Group 
+###Example vertexShape code using PShape Group 
 The code below uses PShape group functionality.  Multiple PShape objects can be layered to create a single PShape group object.  Below, 3 PShape objects are created, s1 and s are added as child objects to PShape g which is a group object.  The ordering that child objects are added to the group corresponds to the layer ordering for their display, s1 is designed as a background layer.
 
 ###PShape defined using len parameter - 
@@ -27,7 +27,7 @@ Here, PShapes are defined using vertices and the input parameter len , or some m
  
 ```java
 
-PShape vertexPattern1( float len, color foreground) {
+PShape vertexShape1( float len, color foreground) {
   PShape s = createShape( );
   s.beginShape();
   s.fill(foreground);
@@ -54,7 +54,7 @@ void setup(){
 size(600,600);
 colorMode(HSB, 300,100,100);
 color c1 = color(0, 255,255); //red
-PShape testShape = vertexPattern1( 100, c1); //hardcode value for len
+PShape testShape = vertexShape1( 100, c1); //hardcode value for len
 shape( testShape, 300,300);//display at canvas center
 }
 
@@ -73,30 +73,15 @@ PShape[][] populateGradientGrid( int rows, int cols,int size, color c1, color c2
           int k = i + j;  //diagonal index
           float colorAmount = map( k, 0, rows + cols-2, 0.0,1.0);
           color foreground = lerpColor( c1, c2, colorAmount);
-          shapesMatrix[i][j] = vertexPattern1(size,foreground); 
+          shapesMatrix[i][j] = vertexShape1(size,foreground); 
         }
        }
        return shapesMatrix;
 }
 
-PShape[][] populateGradientGrid2( int rows, int cols,int size, color c1, color c2, color c3, color c4 ){
-      PShape[][] shapesMatrix = new PShape[rows][cols];
-      for( int i=0; i < rows; i++){
-        for( int j=0; j< cols; j++){
-          int k = i + j; //diagonal index
-          // adjust the map function variables to change design features
-          float colorAmount = map( k, 0, (rows + cols - 2), 0.0,1.0);
-          color foreground = lerpColor( c1, c2, colorAmount);
-          color background = lerpColor( c3, c4, colorAmount);
-          shapesMatrix[i][j] = vertexPattern2(size,foreground, background ); 
-        }
-       }
-       return shapesMatrix;
-}
 
-//example function call:
-
-PShape[][] shapeMatrix1 = populateGradientGrid1( rows, cols, size, c1, c2);
+//example use of function
+//PShape[][] shapeMatrix1 = populateGradientGrid1( rows, cols, size, c1, c2);
 
 ```
 
