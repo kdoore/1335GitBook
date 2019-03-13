@@ -1,4 +1,4 @@
-#Grid Patterns Using 2D Array Indexes: i, j
+##Grid Patterns Using 2D Array Indexes: i, j
 
 ###Diagonal Color Gradients
 ![](/assets/Screenshot 2017-09-24 08.43.41.png) 
