@@ -9,7 +9,7 @@ Below is a UML (Unified Modeling Language)  Class diagram which gives an overvie
 ![](Screenshot 2016-09-16 08.30.08.png)
 
 
-[Link to Zip file of Example Code Below](https://utdallas.box.com/s/g8u3f5vn1bwn5l5tep0tfhngyo13pqt8)
+[Link to Zip file of Example Code Below](https://utdallas.box.com/shared/static/j0guoj7qop0bxfblniocj4spixqnguuw.zip)
 
 ```java
 //Definition for Ball Class
