@@ -5,6 +5,7 @@ To begin our look at Object oriented programming, we'll look at the simple task 
 First, we'll look at the code in the Ball Class Definition, then we'll look at the main tab code to see how to create an instance of a Ball Class object.
 
 Below is a UML (Unified Modeling Language)  Class diagram which gives an overview of the important information about the Ball class.  In the top section is the class name, the second section shows the instance variables or properties of the class.  The bottom section shows the class methods, which are functions that belong to the class.
+[UML Class Diagram Specification](https://www.uml-diagrams.org/class-diagrams-overview.html)
 
 ![](Screenshot 2016-09-16 08.30.08.png)
 
