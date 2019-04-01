@@ -22,7 +22,7 @@ Object - Class Structure
 
 The image below is a **UML Class Diagram**. [UML](http://www.omg.org/gettingstarted/what_is_uml.htm) *Unified Modeling Language* is modeling language specification that provides formal structures for designing models of systems. The [UML](http://www.omg.org/gettingstarted/what_is_uml.htm) website states that 'modeling is the designing of software applications before coding.'
 
-![](buttonClass.png)
+![](/assets/Screen Shot 2019-04-01 at 7.45.41 AM.png)
 
 The class diagram shows the name of the class, the instance variables, and the methods. In UML, we can use class diagrams to show relationships between several different classes. There are a wide variety of UML diagrams, some are designed to show structure like this class diagram, while other UML diagrams are designed to model behavior and interaction of system entities.
 
@@ -31,7 +31,7 @@ Processing Tabs
 
 Processing provides tabs to allow us to organize our code when using classes, the main tab is the name of the sketch, while each other tab should be the name of the class, such as Button. The image below shows the Button tab with the basic code elements which define the class.
 
-![](Screenshot 2016-02-03 12.48.57.png)
+![](/assets/Screen Shot 2019-04-01 at 7.49.44 AM.png)
 
 When looking at the code in a Class definition, we can see a similarity with the structure of code that we've been writing in our previous examples. The table below shows these similarities, in the left column, we can see that the code we write in the main tab can be though of as having 3 sections, the top of our programs is where we declare global variables, then the setup() function is executed once, while the draw() function is where the main behavior of our program is typically executed. When we write code for a class definition, we are required to write our instance variables at the top, then we must write the constructor functions, these are similar to setup() in that the constructor for an object is a function that is only executed once, when the object is first created and it's used to initialize all of the instance variables for our object. Finally, the bottom of the tab contains all of the functions / methods that we write for our object's behaviors. Within these methods, we can also have local variables, but they will only exist for the duration of that method's execution. The instance variables exist for the life of the object instance, store all of the information about the state and configuration of our object instances throughout the duration of an object's lifetime.
 
