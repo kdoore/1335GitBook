@@ -59,6 +59,7 @@
 * [Introduction to Objects](introduction-to-objects.md)
 * [Button States](button_states.md)
 * [Buttons as Objects](buttons_as_objects.md)
+  * [Button Class](buttons_as_objects/button-class.md)
 * [Create Object Instances](object_references.md)
 * [Button Types](button_types.md)
 * [Modeling Buttons: States and Events](modelingstates_and_events_md.md)
