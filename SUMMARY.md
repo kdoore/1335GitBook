@@ -75,6 +75,7 @@
 ## Project 3
 
 * [Project 3 - Logic, Steps](drawing-application-logic.md)
+  * [Class Code - Apr 8](drawing-application-logic/class-code-apr-8.md)
 * [Project 3 - Class Definitions](project-3-class-definitions.md)
   * [Button](project-3-class-definitions/button.md)
   * [PImageButton](project-3-class-definitions/pimagebutton.md)
