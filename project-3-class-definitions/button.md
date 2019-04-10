@@ -31,7 +31,7 @@ class Button{
   boolean selected;
   color defaultColor, selectedColor, currentColor;
   String label;  ///text to display
-  
+
   /////Constructor Methods
   /////Initialize our instance variables
   ////Overloaded versions of constructors - unique parameter lists
@@ -39,6 +39,18 @@ class Button{
    this(20,20,100,100, color(360), color(100),"");   //call constructor with matching input parameters 
   }
   
+  Button( float _x, float y, float w, float h,  String label){
+    x = _x;   //set value for class variable x, using parameter _x
+    this.y = y;
+    this.w = w; 
+    this.h = h;
+    selectedColor = color(280, 100, 100);
+    defaultColor = color(280, 50,50);
+    currentColor = defaultColor;  ///button is off to begin with, so use default color 
+    selected = false;
+    this.label = label;
+  }
+
   Button( float _x, float y, float w, float h, color onColor, color offColor, String label){
     x = _x;   //set value for class variable x, using parameter _x
     this.y = y;
@@ -50,7 +62,7 @@ class Button{
     selected = false;
     this.label = label;
   }
-  
+
 ////Class Methods
   void display(){
     fill(currentColor);
@@ -60,7 +72,7 @@ class Button{
     textSize(20);
     text(label, x + w/2, y + h/2);  //display label
   }
-  
+
   //checks to see if mouse is within the button geometry
   //returns the final selected state of button //true or false
   boolean clicked(int mx, int my){
@@ -74,19 +86,19 @@ class Button{
     }  //end outer if
     return selected; //returns true if selected 
   } ///end of clicked
-    
+
     //sets the button to off state
     void reset(){
        selected = false;
        currentColor = defaultColor;
     }
-    
+
     //allows us to set a button as active via code
     void setActive(){
          selected = true;
          currentColor = selectedColor;
     }
-    
+
 
 }  ///end of the Button Class
 ```
