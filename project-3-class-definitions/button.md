@@ -35,9 +35,6 @@ class Button{
   /////Constructor Methods
   /////Initialize our instance variables
   ////Overloaded versions of constructors - unique parameter lists
-  Button(  ){    //default constructor
-   this(20,20,100,100, color(360), color(100),"");   //call constructor with matching input parameters 
-  }
   
   Button( float _x, float y, float w, float h,  String label){
     x = _x;   //set value for class variable x, using parameter _x
