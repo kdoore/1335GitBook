@@ -45,7 +45,10 @@ class PImageButton extends Button {
   PImage img;
   
   //CONSTRUCTORS
-  
+  PImageButton(float x, float y, float w, float h, PImage img) {
+    super(x, y, w, h, "");  //call constructor with empty string for label
+    this.img = img;
+  }
   //add comments
   PImageButton(float x, float y, float w, float h, color c1, color c2, PImage img) {
     super(x, y, w, h, c1, c2, "");  //call constructor with empty string for label
