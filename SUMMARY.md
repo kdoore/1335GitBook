@@ -78,6 +78,7 @@
   * [Class Code - Apr 8](drawing-application-logic/class-code-apr-8.md)
     * [Class Code Apr 10](drawing-application-logic/class-code-apr-8/class-code-apr-10.md)
     * [Class Code Apr 15](drawing-application-logic/class-code-apr-8/class-code-apr-15.md)
+    * [Class Code Apr 17](drawing-application-logic/class-code-apr-8/class-code-apr-17.md)
 * [Project 3 - Class Definitions](project-3-class-definitions.md)
   * [Button](project-3-class-definitions/button.md)
   * [PImageButton](project-3-class-definitions/pimagebutton.md)
