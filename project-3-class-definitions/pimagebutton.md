@@ -9,7 +9,9 @@ To use the PImageButton class, you must first have an image in your project fold
 Some newer versions of Processing don't require use of the data folder.
 
 **Use Menu:  Sketch -> Add File..**
-The image below shows how to add an Image File to your Processing Project.  When you select the Add File menu option, Processing will determine if the image needs to be in a separate data folder, or not.  When using in your project, you will use code like the following:  `PImage img1 = loadImage( "eraser.png");`
+The image below shows how to add an Image File to your Processing Project.  When you select the Add File menu option, Processing will determine if the image needs to be in a separate data folder, or not.  When using in your project, you will use code like the following: 
+
+  `PImage img1 = loadImage( "eraser.png");` //Filename must be in quotes.
 
 ![](/assets/Screen Shot 2019-04-28 at 8.13.16 AM.png)
  
