@@ -3,12 +3,24 @@
 ###Class PImageButton
 The PImageButton class is a child-class of the Button class.  The extends keyword in the first line of code in the class definition below shows the syntax for defining this class as a child-class of the Button class.  As a child class, PImageButton inherits all properties and methods of the Button class.  
 
-###Example use:
-To use the PImageButton class, you must first have an image in your project folder that you can use for displaying on the button.  You must create a new folder inside your project folder with the name: data.  See image below, which shows that 2 .png images have been added to the newly created data folder inside the project's sketch folder.
+###PImage: Add an Image to Processing Folder:
+To use the PImageButton class, you must first have an image in your project folder that you can use for displaying on the button.  
+
+Some newer versions of Processing don't require use of the data folder.
+
+**Use Menu:  Sketch -> Add File..**
+The image below shows how to add an Image File to your Processing Project.  When you select the Add File menu option, Processing will determine if the image needs to be in a separate data folder, or not.  When using in your project, you will use code like the following:  `PImage img1 = loadImage( "eraser.png");`
+
+![](/assets/Screen Shot 2019-04-28 at 8.13.16 AM.png)
+ 
+
+**Older Processing versions: Create data folder: ** For older versions of Processing, you must create a new folder inside your project folder with the name: data.  See image below, which shows that 2 .png images have been added to the newly created data folder inside the project's sketch folder.
 
 ![](/assets/Screen Shot 2018-04-07 at 3.08.50 PM.png)  
 
 The images were created by taking screenshots of the canvas after the patterns had been drawn using the mouse.
+
+ 
 
 ```java
 //main tab
