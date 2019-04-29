@@ -70,7 +70,7 @@
 * [Menu of Buttons](menu_buttons.md)
 * [ButtonGroup - Final Version](arrays_of_objects.md)
 * [Slider Controller](slider_controller.md)
-* [Glossary](GLOSSARY.md)
+* [UML Class Diagram](uml-class-diagram.md)
 
 ## Project 3
 
@@ -104,6 +104,7 @@
   * [Class](class.md)
   * [Learning Science](learning-science.md)
 * [UML Class Diagram](uml-class-diagram.md)
+* [Glossary](GLOSSARY.md)
 
 ## Resources and References
 
