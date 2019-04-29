@@ -103,6 +103,7 @@
   * [Ternary Operator](ternary_operator.md)
   * [Class](class.md)
   * [Learning Science](learning-science.md)
+* [UML Class Diagram](uml-class-diagram.md)
 
 ## Resources and References
 
