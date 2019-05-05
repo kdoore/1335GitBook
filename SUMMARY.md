@@ -109,4 +109,5 @@
 ## Resources and References
 
 * [Resources](resources-and-references/resources.md)
+* [Random Inspiration](resources-and-references/random-inspiration.md)
 
