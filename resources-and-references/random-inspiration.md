@@ -8,3 +8,7 @@
 
 
 [Inventing Abstractionism: MOMA Diagram](https://hyperallergic.com/57599/amazing-new-graph-drawing-charts-the-invention-of-abstraction/)
+
+[Visual Code Poetry: ](https://visualcodepoems.tumblr.com/archive) 
+
+[Dan Tapper Sound Design ](https://dantappersounddesign.com/)
