@@ -6,6 +6,14 @@ In this project, we want design an interactive abstract artwork to represent our
 
 In order to recall our emotions that are associated with our selected event, it's helpful to have models of emotion that provide a structure of information about emotions.
 
+##Models of Emotion
+
+
+
+[Article: Fear or Defense Circuit, Dr Joseph Ledoux](https://brainworldmagazine.com/on-fear-emotions-and-memory-an-interview-with-dr-joseph-ledoux/)
+
+[Dr Joseph Ledoux](https://en.wikipedia.org/wiki/Joseph_E._LeDoux)
+
 ### [Contrasting and Categorization of Emotions - Wikipedia](https://en.wikipedia.org/wiki/Contrasting_and_categorization_of_emotions#Plutchik.27s_wheel_of_emotions)
 
 ## Plutchick's Wheel of Emotions
