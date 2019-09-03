@@ -12,7 +12,7 @@ In order to recall our emotions that are associated with our selected event, it'
 
 [Article: Fear or Defense Circuit, Dr Joseph Ledoux](https://brainworldmagazine.com/on-fear-emotions-and-memory-an-interview-with-dr-joseph-ledoux/)
 
-[Dr Joseph Ledoux](https://en.wikipedia.org/wiki/Joseph_E._LeDoux)
+[Dr Joseph Ledoux: Wikipedia](https://en.wikipedia.org/wiki/Joseph_E._LeDoux)
 
 ### [Contrasting and Categorization of Emotions - Wikipedia](https://en.wikipedia.org/wiki/Contrasting_and_categorization_of_emotions#Plutchik.27s_wheel_of_emotions)
 
