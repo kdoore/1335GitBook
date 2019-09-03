@@ -8,6 +8,12 @@ In order to recall our emotions that are associated with our selected event, it'
 
 ##Models of Emotion
 
+[Theory of Constructed Emotion - ](https://en.wikipedia.org/wiki/Theory_of_constructed_emotion)
+
+>In every waking moment, your brain uses past experience, organized as concepts, to guide your actions and give your sensations meaning. When the concepts involved are emotion concepts, your brain constructs instances of emotion.
+
+>...emotions "are not triggered; you create them. They emerge as a combination of the physical properties of your body, a flexible brain that wires itself to whatever environment it develops in, and your culture and upbringing, which provide that environment.
+[Lisa Feldman Barrett: Wikipedia](https://en.wikipedia.org/wiki/Lisa_Feldman_Barrett)
 
 
 [Article: Fear or Defense Circuit, Dr Joseph Ledoux](https://brainworldmagazine.com/on-fear-emotions-and-memory-an-interview-with-dr-joseph-ledoux/)
