@@ -8,7 +8,8 @@ In order to recall our emotions that are associated with our selected event, it'
 
 ##Models of Emotion
 
-[Theory of Constructed Emotion - ](https://en.wikipedia.org/wiki/Theory_of_constructed_emotion)
+###Theory of Constructed Emotion
+[wikipedia](https://en.wikipedia.org/wiki/Theory_of_constructed_emotion)
 
 >In every waking moment, your brain uses past experience, organized as concepts, to guide your actions and give your sensations meaning. When the concepts involved are emotion concepts, your brain constructs instances of emotion.
 
