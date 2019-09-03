@@ -8,6 +8,29 @@ Processing provides functions to allow working with both [RGB and HSB color-spac
 ###HSB Color 
 The image above shows the HSB color-space.  From this diagram, we can see that if we want to understand a specific HSB color, in terms of Hue, Saturation, and Brightness parameter values, it is easiest to read a HSB color starting with the brightness parameter which corresponds to the vertical axis of the color-cone. 
 
+
+**Example Code using HSB colorMode and color compliment logic
+**
+
+```java
+
+float hue;
+void setup(){
+  size(600,600);
+  colorMode(HSB, 360,100,100);
+  rectMode(CENTER); //draw rect from center
+}
+
+void draw(){
+  hue = mouseX  % 360; //insure hue < 360, dependent on mouseX
+  background( hue, 100, 100); //background
+  fill((hue + 180)%360, 100, 100); //complimentary color
+  translate( width/2, height/2);
+  rect(0 ,0, mouseY, mouseY); //size dependent on mouseY position
+}
+```
+![](/assets/Screen Shot 2019-09-03 at 8.00.50 AM.png)
+
 ###Analyze HSB Color in Brightness, Saturation, Hue Order
 When trying to interpret the value associated with an HSB color value, we should start with the Brightness value, If it's non-zero, then we should proceed to analyze the Saturation value, if it's non-zero, then we should consider the Hue value.  If Brightness is 0, then the corresponding HSB color is black.  If B is non-zero, then the color is located higher in the color cone, so we can visualize moving up the cone along the vertical axis, by a value corresponding to the B value.  The Saturation value controls movement outward along the radius of the cone.  If Saturation is 0, then we're at the center-axis and all colors have no saturation, they are grayscale colors. If Saturation is non-zero, then we need to analyze the Hue value to understand the hue color value.  When Hue = 0, or Hue >= 255, the color is Red.  Otherwise, the color follows the Rainbow pattern:  ROYGBIV -
 
