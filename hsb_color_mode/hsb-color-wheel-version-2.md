@@ -1,62 +1,65 @@
-# HSB ColorWheel Version 2
-
-The code in version 1 has several sections of repetitive code in the draw loop, where we're drawing smaller versions of the color-wheel.  How can we use functions and loops to simplify the logic?
+# HSB ColorWheel CS1335.002_F19
 
 ```java
 
+float angleSize=1;
+float sat, bright;
 
-//Global variables
-float hue, sat, bright;
 void setup() {
   size( 600, 600);
   colorMode(HSB, 360, 100, 100);
-  background(0);
   noStroke();
-  sat = 100;
-  bright = 100;
-}
-
-void draw( ) {
-  background(0); //black background
-  if (mousePressed) {
-    brightGradientColorWheel(width);
-  } else {
-    satGradientColorWheel(width);
-  }
-}
-
-//Function to draw 1 full colorWheel
-//parameter size - control size of colorWheel
-//angleSize = 10 degrees
-void drawColorWheel(float size ) {
-  float angleSize = 10;
-  float startDegree =0;
-  int numSlices = int(360/angleSize);
-  noStroke();
-  for (int i = 0; i< numSlices; i++) {
-    float endDegree = startDegree + angleSize;
-    hue = startDegree + (angleSize/2);
-    fill( hue, sat, bright);
-    arc(width/2, width/2, size, size, radians(startDegree), radians( endDegree));
-    startDegree += angleSize;
-  }
-}// end drawColorWheel
-
-//Function to create 20 nested colorWheels with saturation gradient
-void satGradientColorWheel( float size) {
-  bright=100;
-  for ( int i=100; i>0; i-=5) {
-    sat = i;
-    drawColorWheel(size * i/100.0); //what happens if we use 100 on bottom instead of 100.0? We'll have (size * 0)
-  }
-}
-
-//Function to create 20 nested colorWheels with brightness gradient
-void brightGradientColorWheel( float size) {
   sat=100;
-  for ( int i=100; i>0; i-=5) {
+  bright=100;
+  int r = (int)random( 2, 5 );
+
+}
+
+void draw() {
+  background(0);
+  translate( width/2, height/2);
+  angleSize = map( mouseX, 0, width, 1, 90);
+  //angleSize=10;
+  if ( mousePressed) {
+    satGradientColorWheel(width, angleSize);
+  } else {
+    brightGradientColorWheel(width, angleSize);
+  }
+  resetMatrix();
+}
+
+void brightGradientColorWheel( float size, float angleSize ) {
+  sat=100;
+  for ( int i=100; i>0; i -=5) {
     bright = i;
-    drawColorWheel(size * i/100.0); //what happens if we use 100 on bottom instead of 100.0? We'll have (size * 0)
+    drawColorWheel((size * i)/100.0, angleSize);
+  }
+}
+
+
+void satGradientColorWheel(float size, float angleSize) {
+  bright=100;
+  for ( int i=100; i>0; i -=5) {
+    sat = i;
+    drawColorWheel((size * i)/100.0, angleSize);
+  }
+}
+
+
+void drawColorWheel( float size, float angleSize ) {
+  //initialize all of the local variables
+  float hue = 0;
+  float startDegree = 0;
+  float endDegree =  angleSize;
+  int numSlices = int(360/ angleSize); //cast to integer
+  ///repeat
+  for ( int i=0; i< numSlices; i++) {
+    fill( hue, sat, bright);
+    arc( 0, 0, size, size, radians(startDegree), radians(endDegree));
+    ///update all values for each next arc
+    startDegree += angleSize;
+    endDegree += angleSize;
+    hue = startDegree;
   }
 }
 

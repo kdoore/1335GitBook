@@ -7,7 +7,8 @@
 * [HSB Color Mode](hsb_color_mode.md)
   * [HSB Color Wheel](hsb_color_mode/hsb-color-wheel.md)
     * [ColorWheel Class Code\_S19](hsb_color_mode/hsb-color-wheel/colorwheel-class-codes19.md)
-  * [HSB Color Wheel - Version 2](hsb_color_mode/hsb-color-wheel-version-2.md)
+    * [ColorWheel Class Code: Sec002\_F19](hsb_color_mode/hsb-color-wheel-version-2.md)
+    * [ColorWheel Class Code: Sec 001\_F19](hsb_color_mode/hsb-color-wheel/colorwheel-class-code-sec-001f19.md)
   * [HSB Color Palette Tool](hsb_color_mode/hsb-color-wheel-complimentary-color-palatte.md)
 * [Recursion](recursion.md)
 
