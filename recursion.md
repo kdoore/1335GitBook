@@ -97,7 +97,22 @@ The classic Russian nesting dolls provides a nice example of a set of physical o
 
 
 ###Factorial:  N!
-Factorial is a mathematical formula that is used when determining probabilities. One example of the use of factorials can be observed when looking at a distinct set of `n` objects, the objects can be arranged in `n!` different configurations, so there are `n permutations` of arrangements for n distinct objects.    Factorials provide a nice example of a mathematical calculation that can be easily understood, and which can be written using a recursive function, factorial can also be calculated using standard for-loops.  In section 13.6 of Shiffman's book, he provides examples of both types of functions to calculate Factorial values, a recursive version of the factorial program code is included below.  
+Factorial is a mathematical formula that is used when determining probabilities. One example of the use of factorials can be observed when looking at a distinct set of `n` objects, the objects can be arranged in `n!` different configurations, so there are `n permutations` of arrangements for n distinct objects.    Factorials provide a nice example of a mathematical calculation that can be easily understood, and which can be written using a recursive function, factorial can also be calculated using standard for-loops.  In section 13.6 of Shiffman's book, he provides examples of both types of functions to calculate Factorial values, a recursive version of the factorial program code is included below. 
+
+[Shiffman's Factorial Using Loops ](https://natureofcode.com/book/chapter-8-fractals/)
+
+```java
+int factorial(int n) {
+  int f = 1;
+Using a regular loop to compute factorial
+  for (int i = 0; i < n; i++) {
+    f = f * (i+1);
+  }
+  return f;
+} 
+
+```
+
 
 ###Recursion Call-Stack
 When our program is executing, a special section of the computer's memory-space is allocated just for our program called the program's `Call Stack`.  It is important to understand how a program's `Call-Stack` operates, in order to understand how recursive functions behave when they are executing.
