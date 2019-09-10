@@ -68,7 +68,7 @@ recursiveNestedRectangles( 200, 5); //call the function
 ###Guidelines for Writing Recursive Functions
 When writing recursive functions there are several factors to consider:
 1. Identify the base-case or stopping condition
-    ``if(count < 0){ return; }``
+    ``if(count < 1){ return; }``
 2. Insure that the variable that controls the stopping condition will be modified in the recursive function so that it will eventually reach the stopping condition.
    ``count - 1``
 3. Locate the conditional test for the stopping condition before the recursive call to prevent the recursive call from occurring when the stopping condition has been met.
