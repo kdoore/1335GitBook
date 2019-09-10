@@ -14,6 +14,7 @@
 
 ## Project 1
 
+* [Emotions represented using color, form, space](beginshape_-_vertex_shapes/emotions-represented-using-color-form-space.md)
 * [Project 1: PShapes ](beginshape_-_vertex_shapes.md)
 * [PShape with Cutout - Inner Contour](pshape-with-cutout-inner-contour.md)
 * [Project 1 - VertexShape - Recursion](project-1-pshape-pattern-recursion.md)
