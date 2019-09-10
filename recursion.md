@@ -19,14 +19,19 @@ The code below would create a set of nested rectangles, the largest is drawn fir
 
 ```java
 int length = 200;
+fill(length);
 rect( 0, 0, length, length);
 length = length - 20;
+fill(length);
 rect( 0, 0, length, length);
 length = length - 20;
+fill(length);
 rect( 0, 0, length, length);
 length = length - 20;
+fill(length);
 rect( 0, 0, length, length);
 length = length - 20;
+fill(length);
 rect( 0, 0, length, length);
 
 ```
@@ -36,7 +41,8 @@ An experienced programmer would cringe when writing such repetitive code, knowin
 ```java
 int count=5; 
 float length = 200;
-for( int i = count; i < 0 ; i++){ //loop control structure
+for( int i = count; i > 0 ; i--){ //loop control structure
+    fill(length);
     rect( 0, 0, length, length);
     length = length - 20;
 }
