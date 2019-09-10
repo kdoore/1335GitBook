@@ -39,27 +39,28 @@ rect( 0, 0, length, length);
 An experienced programmer would cringe when writing such repetitive code, knowing that loops can provide a cleaner method to implement repetitive code:
 
 ```java
-int count=5; 
-float length = 200;
-for( int i = count; i > 0 ; i--){ //loop control structure
+void loopNestedRectangles( float length, int count) {
+  for ( int i = count; i > 0; i--) { //loop control structure
     fill(length);
-    rect( 0, 0, length, length);
+    rect( 200, 200, length, length);
+    println("length " + length);
     length = length - 20;
+  }
 }
-
 ```
 
 In the code below, the function: ``recursiveNestedRectangles( int length, int count);``, draws a series of nested rectangles, starting with the largest rectangle, stopping when the count variable is less than 0;
 
 ```java
-void recursiveNestedRectangles( int length, int count ){
-    if(count < 0){
-     return;   //termination or end condition
-    }
-    rect( 0, 0, length, length);
-    recursiveNestedRectangles( length-20, count -1 );
+void recursiveNestedRectangles( float length, int count ) {
+  if (count < 1) {
+    return; //termination or end condition
+  }
+  fill(length);
+  rect( 0, 0, length, length);
+  println("length " + length);
+  recursiveNestedRectangles( length-20, count -1 );
 }
-
 
 recursiveNestedRectangles( 200, 5); //call the function
 
