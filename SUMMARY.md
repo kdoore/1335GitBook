@@ -112,4 +112,6 @@
 
 * [Resources](resources-and-references/resources.md)
 * [Random Inspiration](resources-and-references/random-inspiration.md)
+  * [Ulm School](resources-and-references/random-inspiration/ulm-school.md)
+  * [Statistical Uncertainty](resources-and-references/random-inspiration/statistical-uncertainty.md)
 
