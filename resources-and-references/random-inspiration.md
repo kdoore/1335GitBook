@@ -22,3 +22,5 @@
 Through a combination of expanding consumer spending power, the integration of designers and artists into industry, and advances in mass media, mid-century brands like Herman Miller came to project a lifestyle that their consumers could buy into.
 
 >“If the Ulm School were still around today, I believe their primary focus would be the architecture of invisible systems and a democratic approach to the digitalization of our daily lives.”
+
+>Today, a swoosh or an apple can evoke so much more than just a company’s name—they are symbols of how we express our values, tribes, and status. The most successful contemporary brand identities are unforgettable because they are ubiquitous and follow a strict set of systems. Nearly 70 years ago, the HfG channeled the tenants of modernism and “system design” into a radical pedagogy that has had a profound effect on global material culture, from the products we use to the systems that quietly drive us. Positioned between worlds with conflicting political agendas, the school’s visionary founders understood design’s ability to drive a global, ideological vision. 
