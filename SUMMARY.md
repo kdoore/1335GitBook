@@ -17,13 +17,13 @@
 
 * [Emotions represented using color, form, space](beginshape_-_vertex_shapes/emotions-represented-using-color-form-space.md)
 * [Project 1: PShapes ](beginshape_-_vertex_shapes.md)
+  * [Sept 16 - Code](beginshape_-_vertex_shapes/sept-16-code.md)
 * [PShape with Cutout - Inner Contour](pshape-with-cutout-inner-contour.md)
 * [Project 1 - VertexShape - Recursion](project-1-pshape-pattern-recursion.md)
 * [Project 1: Recursive Drawing](recursive-drawing.md)
 * [Project 1: Programmatic Variations in Color](programmatic-variations-in-color.md)
 * [Map Function](map-function.md)
 * [Scale Transform for Mirroring](scale-transform-for-mirroring.md)
-
 * [Modeling Emotions](modeling-emotions.md)
 * [Project1-Steps](project1-steps.md)
 
