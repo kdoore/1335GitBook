@@ -1,10 +1,12 @@
 # Project 1 Steps:
 
-1. Conceptual Art to Express Emotions
-   Determine Emotions to express:
+1. Conceptual Art to Express Emotion / Energy 
+   
+**Step 1: Determine Emotions to express:**
 
 See [Models of Emotion: ](/modeling-emotions.md)
 
+**Create Personal Situation Concept Map**
 Select a personal situation that has strong associated emotions.  Sketch a mind-map / concept-map to brainstorm the concepts and emotions associated with your situation.
 
 * Divide your concept-map sketch into 2 regions:  Negative, Positive
@@ -52,7 +54,7 @@ void recursivePattern2(float len, color c1, int count  )
 
   - use map\( \) to determine gradientFraction
 
-`float gradFraction = map( mouseX, 0, balancePoint, 0.0, 1.0); // negative region`
+`float gradientFraction = map( mouseX, 0, balancePoint, 0.0, 1.0); // negative region`
   * use colorLerp\( \), gradientFraction to determine color for current MouseX position
 
 `color cMain = colorLerp( colorMax, colorMin, gradientFraction); // negative region`
@@ -70,7 +72,7 @@ void recursivePattern2(float len, color c1, int count  )
 **RecursivePattern Functions:** You will have 2 different ones
 
 ```
- Within the RecursivePattern functions:
+ **Modify Brightness within the RecursivePattern functions:**
 
  - you must modify brightness   
 ```
