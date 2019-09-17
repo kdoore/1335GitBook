@@ -10,6 +10,8 @@ Since we're using `float len` as an input parameter to determine the size of the
 ###Map Function
 In the example below, we are creating a relationship between the current value of len, the maximum len value: lenMax, and the max value for brightness to determine the brightness value for a current value of len.  This is exactly what the Map function does, it creates a linear mapping between 2 ranges of values.  So, as long as we have access to the range of each set of values, we can use the processing map function to programmatically determine color for our vertexPatterns.  To control the hue, we're using the map function to create a relationship between the mouseX position and we're constraining the hue to a narrow range between blue and pink (Hue between 200,300);
 
+###LerpColor Function
+Processing provides a function LerpColor(  )  to create gradients of color between 2 color endpoints.  Lerp means Linear interpolation: which means each intermediate color 
 
 ![](/assets/Screen Shot 2018-09-04 at 12.17.58 PM.png)
 
