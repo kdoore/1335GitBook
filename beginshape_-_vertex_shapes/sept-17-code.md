@@ -1,4 +1,4 @@
-#CS1335.002 Sept 17 Class Code - Project 1
+#CS1335.002 Tues Sept 17 Class Code - Project 1
 
 ```java
 
