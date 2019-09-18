@@ -35,22 +35,21 @@ void recursivePattern( float len, int count){
   /////Draw pattern mirrored into region4 
   pushMatrix(); //take snapshot of prior transforms
   scale(1.0, -1.0); //mirror across X-axis //region4
-  s = vertexShape( len, c1 ); //create shape using current len
- shape( s, 0, 0);//draw the shape
+  shape( s, 0, 0);//draw the shape
   popMatrix(); // restore transforms to prior snapshot
   
   /////Draw on pattern mirrored in region2
   pushMatrix(); //take snapshot of prior transforms
-  scale(-1.0, +1.0); //mirror across Y-axix //region2
-  s = vertexShape( len, c1 ); //create shape using current len
+  scale(-1.0, +1.0); //mirror across Y-axis //region2
   shape( s, 0, 0);//draw the shape
   popMatrix(); // restore transforms to prior snapshot
   
-  recursivePattern( len * 0.8, count - 1); ///RECURISVE CALL
+  recursivePattern( len * 0.8, count - 1); ///RECURSIVE CALL
   
   ///shape drawn after recursive call are stacked in reverse order, smallest to largest - asymmetry
   c1 = color( 200, 100, bright );
-  s= vertexShape( -len ,c1 );   ///we can use -len to draw in region3
+  s= vertexShape( len ,c1 );   ///we can use -len to draw in region3
+  scale(-1.0, -1.0); //mirror across X, Y-axis //region2
   shape( s, 0, 0); 
 }
 
