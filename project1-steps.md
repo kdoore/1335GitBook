@@ -19,8 +19,8 @@ Select a personal situation that has strong associated emotions.  Sketch a conce
 
    * Tables:
      * Define variables: 
-       * colors 
-       * length range \(lenMin, lenMax\)
+       * colors ( minimum of 3 custom colors required )
+       * length range \(minLen, maxLen\)
      * Main Emotions: ordered list of 5 emotions
      * Determine Design Attributes
        * map function parameters for values on both sides of the negative / positive regions: how do values change as mouseX changes?
@@ -34,8 +34,8 @@ Select a personal situation that has strong associated emotions.  Sketch a conce
 
 ```java
 //recursivePattern functions with parameters
-void recursivePattern1(float len, color c1, int count  )
-void recursivePattern2(float len, color c1, int count  )
+void recursivePattern1(float len, int count, color c1  )
+void recursivePattern2(float len, int count , color c1 )
 ```
 
 **These are the main customizations you will do for this project **
@@ -44,7 +44,7 @@ void recursivePattern2(float len, color c1, int count  )
 
 - use map\( \) to determine len for each region
 
-`float len = map( mouseX, 0, balancePoint, lenMax, lenMin);  // negative region`
+`float len = map( mouseX, 0, balancePoint, maxLen, minLen);  // negative region`
 
 - you must determine logic for positive region
 
@@ -57,7 +57,7 @@ void recursivePattern2(float len, color c1, int count  )
 `float gradientFraction = map( mouseX, 0, balancePoint, 0.0, 1.0); // negative region`
   * use colorLerp\( \), gradientFraction to determine color for current MouseX position
 
-`color cMain = colorLerp( colorMax, colorMin, gradientFraction); // negative region`
+`color curNegColor = colorLerp( colorMax, colorMin, gradientFraction); // negative region`
   * you must determine logic for positive region
 
   * determine probability for random pop of color, this can be set for each region, or can vary within each region using map\( \) to set value of float randPopColor
@@ -93,7 +93,7 @@ void recursivePattern2(float len, color c1, int count  )
    You will modify **len** for each recursive call because we are creating nested shapes, multiply by a fractional value.
 
 ```java
-     RecursivePattern( len * 0.8, c1, count-1 ); //reduce values: len, count
+     RecursivePattern( len * 0.8,  count-1, c1 ); //reduce values: len, count
 ```
 
 
