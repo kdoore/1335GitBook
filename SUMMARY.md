@@ -25,6 +25,8 @@
 * [Project 1 - VertexShape - Recursion](project-1-pshape-pattern-recursion.md)
 * [Project 1: Recursive Drawing](recursive-drawing.md)
 * [Project 1: Programmatic Variations in Color](programmatic-variations-in-color.md)
+  * [Recursion with rotate, scale](programmatic-variations-in-color/recursion-with-rotate-scale.md)
+  * [Plan Region Size, Color](programmatic-variations-in-color/plan-region-size-color.md)
 * [Map Function](map-function.md)
 * [Scale Transform for Mirroring](scale-transform-for-mirroring.md)
 * [Modeling Emotions](modeling-emotions.md)
