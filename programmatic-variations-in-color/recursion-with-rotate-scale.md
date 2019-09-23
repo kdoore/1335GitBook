@@ -24,25 +24,26 @@ cPos2 = color( 230, 100, 100);//blue
 }
 
 void draw(){
-if(mousePressed && frameCount %5 == 0){
-translate( mouseX, mouseY);
-float dist = dist( mouseX, mouseY, width/2, height/2);
-if( mouseX < width/2 ){
-//determine how color, size change across Negative region
-float curLen = map( mouseX, 0, width/2, maxLen, minLen);
-float lerpFraction = map( mouseX, 0, width/2, 0.0, 1.0);
-color curColor = lerpColor( cNeg1, cNeg2, lerpFraction);
-recursivePattern1( curLen, 5, curColor);
-}//end negative region
-else if( mouseX > width/2 ){ //positive region
-float curLen = map( mouseX, width/2, width, minLen, maxLen);
-float lerpFraction = map( mouseX, width/2, width, 0.0, 1.0);
-color curColor = lerpColor( cPos2, cPos1, lerpFraction);
-recursivePattern2( curLen, 5, curColor);
-} //end if positive region
-resetMatrix();
+    if(mousePressed && frameCount %5 == 0){
+    translate( mouseX, mouseY);
+    float dist = dist( mouseX, mouseY, width/2, height/2);
+    if( mouseX < width/2 ){
+    //determine how color, size change across Negative region
+        float curLen = map( mouseX, 0, width/2, maxLen, minLen);
+        float lerpFraction = map( mouseX, 0, width/2, 0.0, 1.0);
+        color curColor = lerpColor( cNeg1, cNeg2, lerpFraction);
+        
+        recursivePattern1( curLen, 5, curColor);
+    
+    }//end negative region
+    else if( mouseX > width/2 ){ //positive region
+
+    //create similar code for positive region
+
+    } //end if positive region
+    resetMatrix();
+    } //end if mousePressed
 } //end draw
-}
 
 void recursivePattern1(float len, float level, color c1){
 if( level<1){
@@ -50,19 +51,24 @@ return;
 }
 color shapeColor = color( hue(c1), saturation(c1), brightness(c1)*.8 );
 PShape s= createNegShape( len, c1);
-shape( s, 0,0);
+
+shape( s, 0,0); //render shape to canvas
+
 pushMatrix();
-scale( -1.0, 1.0);
-shape( s,0, 0);
+    scale( -1.0, 1.0); //mirror across y-axis
+    shape( s,0, 0);//render shape to canvas
 popMatrix();
+
 pushMatrix();
-scale( 1.0, -1.0);
-shape( s,0, 0);
+    scale( 1.0, -1.0);//mirror across x-axis
+    shape( s,0, 0);//render shape to canvas
 popMatrix();
+
 recursivePattern1( len * .8, level-1, shapeColor);
+
 pushMatrix();
-scale( -1.0, -1.0);
-shape( s,0, 0);
+    scale( -1.0, -1.0); //mirror across x,y axis
+    shape( s,0, 0); //rendered after recursive call, reversed stack order
 popMatrix();
 }
 

@@ -1,10 +1,5 @@
 Class Code: CS1135.002 Thursday Sept 19
 
-
-
-
-
-
 ```java
 //CS1335_002_Sept19_F19
 
