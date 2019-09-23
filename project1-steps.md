@@ -92,7 +92,8 @@ void recursivePattern2(float len, int count , color c1 )
    - You **must modify count for each recursive call**, this can be done when setting the input parameters as below.  
    You will modify **len** for each recursive call because we are creating nested shapes, multiply by a fractional value.
 
-```java
+```java 
+      //Recursive call within Recursive Function - must modify count, len values;
      RecursivePattern( len * 0.8,  count-1, c1 ); //reduce values: len, count
 ```
 
