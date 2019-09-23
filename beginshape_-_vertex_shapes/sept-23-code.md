@@ -89,11 +89,11 @@ void recursivePattern2(  float len, int level, color c1    ) {
   
   ////Let's rotate and render the shape multiple times to create a more complex shape
   pushMatrix();
-  float degree=0;
-  while( degree<360){
+  float degree=0; 
+  while( degree<360){ //test for termination
     rotate( radians( degree));
-  shape( s1, 0, 0); //render the shape on canvas
-  degree += 180; //lower this value to increase number of rotations
+    shape( s1, 0, 0); //render the shape on canvas
+    degree += 180; //lower this value to increase number of rotations
   } //end while
   popMatrix(); 
   
