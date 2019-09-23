@@ -41,10 +41,7 @@ void draw(){
     }//end negative region
     else if( mouseX > width/2  ){ //positive region
       
-      float curLen = map( mouseX, width/2, width, minLen, maxLen);
-      float lerpFraction = map( mouseX, width/2, width, 0.0, 1.0);
-      color curColor = lerpColor( cPos2, cPos1, lerpFraction); 
-      recursivePattern2( curLen, 5, curColor);
+   //add code here for positive region
     
     } //end if positive region
     resetMatrix();
@@ -57,9 +54,9 @@ void recursivePattern1(float len, float level, color c1){
     return;
   }
   color shapeColor = color( hue(c1), saturation(c1), brightness(c1)*.8 );
-  PShape s= createNegShape( len, c1);
+  PShape s= createNegShape( len, shapeColor);
   shape( s, 0,0);
-  recursivePattern1( len * .8, level-1,  shapeColor);
+  recursivePattern1( len * .8, level-1,  c1);
 }
 
 void recursivePattern2(float len, float level, color c1){
@@ -67,10 +64,10 @@ void recursivePattern2(float len, float level, color c1){
     return;
   }
   color shapeColor = color( hue(c1), saturation(c1), brightness(c1)*.8 );
-  PShape s= createPosShape( len, c1);
-  shape( s, 0,0);
+  PShape s= createPosShape( len, shapeColor);
+  shape( s, 0,0); //render shape
 
-  recursivePattern2( len * .8, level-1,  shapeColor);
+  recursivePattern2( len * .8, level-1,  c1);
  } //end recursivePattern2
 
 
