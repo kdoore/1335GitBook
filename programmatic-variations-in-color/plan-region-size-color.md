@@ -4,7 +4,7 @@
 
 The planning document above shows how to define 2 horizontal regions based on a balanceLine which can be set at width/2 by default.
 
-
+Example COde
 
 ```java
 
@@ -29,9 +29,10 @@ void setup(){
 void draw(){
   if(mousePressed && frameCount %5 == 0){
     translate( mouseX, mouseY);
-    float dist = dist( mouseX, mouseY, width/2, height/2);
-    if( mouseX < width/2 ){ 
+   
+    if( mouseX < width/2 ){ //negative region
       //determine how color, size change across Negative region
+      
       float curLen = map( mouseX, 0, width/2, maxLen, minLen);
       float lerpFraction = map( mouseX, 0, width/2, 0.0, 1.0);
       color curColor = lerpColor( cNeg1, cNeg2, lerpFraction); 
@@ -58,10 +59,7 @@ void recursivePattern1(float len, float level, color c1){
   color shapeColor = color( hue(c1), saturation(c1), brightness(c1)*.8 );
   PShape s= createNegShape( len, c1);
   shape( s, 0,0);
- 
-  
   recursivePattern1( len * .8, level-1,  shapeColor);
-  
 }
 
 void recursivePattern2(float len, float level, color c1){
@@ -70,10 +68,13 @@ void recursivePattern2(float len, float level, color c1){
   }
   color shapeColor = color( hue(c1), saturation(c1), brightness(c1)*.8 );
   PShape s= createPosShape( len, c1);
- 
+  shape( s, 0,0);
+
   recursivePattern2( len * .8, level-1,  shapeColor);
- 
-  } //end recursivePattern2
+ } //end recursivePattern2
+
+
+//Complex PShapes
 
 PShape createNegShape(float len, color c1){
   PShape s = createShape();
