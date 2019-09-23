@@ -2,7 +2,9 @@
 
 Final Code for Project 1:
 
-In the code below, I have omitted code for determining how size and color are determined for shapes rendered the positive region of the canvas. Determine the Positive region code ( it is similar to the negative region, except that mouseX will range from balancePoint to width ( mouseX range: 0 ,balancePoint for Negative Region).
+In the code below, I have omitted code to setup the positive region's gradients for size and color for shapes rendered the positive region. 
+
+You must determine the code for Positive region. ( it is similar to the negative region, except that mouseX will range from balancePoint to width ( mouseX range: 0 ,balancePoint for Negative Region).
 
 
 ```java
