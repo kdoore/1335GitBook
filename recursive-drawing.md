@@ -120,6 +120,14 @@ Below is a slight variation on the recursive function, here we're using a global
 //global Variables
 float lenMin = 30;
 float lenMax = 100;
+color c1;
+
+void setup(){
+size( 600, 600);
+colorMode(HSB, 360, 100, 100);
+c1 = color( 270, 100, 100);
+}
+
 
  void recursivePattern( float length){
     if ( length < lenMin ){ //test for termination
@@ -145,18 +153,20 @@ In the code below, we're calling our vertexShape function inside the recursivePa
 ```java
 float lenMax  = 100.0;
 float lenMin = 5.0;
+color c1;
 
 void setup(){
   size( 600,600);
   colorMode(HSB, 360, 100, 100); 
   background(0);//black backgroujd
+  c1 = color( 270, 100, 100);
   }
   
   void draw(){
     if(mousePressed){
       translate(mouseX, mouseY); 
           int numLevels = 5;
-          recursivePattern( lenMax, numLevels );   //call recursive function
+          recursivePattern( lenMax, numLevels, c1 );   //call recursive function
       resetMatrix();
     }
   }
