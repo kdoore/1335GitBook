@@ -161,22 +161,23 @@ void setup(){
   }
   
   //define recursive function
-  void recursivePattern( float length, int level){
+  void recursivePattern( float length, int level, color c1){
     if ( level < 1 ){  //test for termination - termination variable
       return; //termination condition is true
     }
-    float hueVal = map( length, 0, lenMax, 130, 260);
-    float brightVal = map( length, 0, lenMax, 20, 100); 
-    fill( hueVal, 100, brightVal, 100); //alpha is 100 
-    vertexShape( length ); //this is our task
-    recursivePattern( length * 0.8, level-1 ); //call recursive function - reduce value of variables 
+    
+    float fraction = map( length, 0, lenMax, .2, 1.0);
+    color curColor =  color( hue(c1), saturation(c1), brightness( c1)*fraction);
+     vertexShape( length, curColor ); //this is our task
+    recursivePattern( length * 0.8, level-1,c1 ); //call recursive function - reduce value of variables 
     }
     
     
     //Draws one PShape each time it is called
 //PShape size is determined by input parameter: len
-void vertexShape( float len){
+void vertexShape( float len, color c1){
     PShape s = createShape();
+    s.setFill(c1);
     s.beginShape();
     s.vertex(0,0);//list points in clockwise order
     s.vertex( len, 0);
