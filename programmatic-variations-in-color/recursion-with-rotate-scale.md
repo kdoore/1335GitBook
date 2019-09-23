@@ -1,5 +1,7 @@
 #Recursion with Rotate, Scale
 
+![](/assets/Screen Shot 2019-09-22 at 7.42.20 PM.png)
+
 
 ```java
 
