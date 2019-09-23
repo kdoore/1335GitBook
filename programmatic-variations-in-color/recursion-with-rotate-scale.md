@@ -1,5 +1,7 @@
 #Recursion with Rotate, Scale
 
+Using Rotate or Scale( ) within the Recursive Function allows for creating complex shapes using rotation and mirroring.
+
 ![](/assets/Screen Shot 2019-09-22 at 7.42.20 PM.png)
 
 
