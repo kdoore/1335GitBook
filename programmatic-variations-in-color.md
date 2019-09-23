@@ -32,7 +32,7 @@ void draw(){
     //draw nested vertexShapes at mouse position
     if(mousePressed){
       translate(mouseX, mouseY);
-      //can add region logic here
+      //can add region: color, size logic here
       
       recursivePattern(lenMax,5, c1);
       
@@ -50,6 +50,8 @@ void recursivePattern( float len, int count, color c1){
   color curColor = color(hue(c1), saturation(c1), brightness(c1)* fraction);
 
   PShape s= vertexShape( len, curColor); //task - draw shape
+  //can add rotation, scale logic here
+  
   shape( s, 0,0);  //this displays the shape on the canvas at point (0,0)
 
   recursivePattern( len*.8, count-1, c1); //Recursive call
