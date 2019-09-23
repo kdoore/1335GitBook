@@ -30,9 +30,14 @@ void setup(){
 
 void draw(){
     //draw nested vertexShapes at mouse position
+    if(mousePressed){
       translate(mouseX, mouseY);
+      //can add region logic here
+      
       recursivePattern(lenMax,5, c1);
+      
       resetMatrix();
+      }
 }
 
 void recursivePattern( float len, int count, color c1){
