@@ -5,8 +5,6 @@ Final Code for Project 1:
 In the code below, I have omitted code for determining how size and color are determined for shapes rendered the positive region of the canvas. Determine the Positive region code ( it is similar to the negative region, except that mouseX will range from balancePoint to width ( mouseX range: 0 ,balancePoint for Negative Region).
 
 
-
-
 ```java
 
 float maxLen = 100;
@@ -95,11 +93,11 @@ void recursivePattern2(  float len, int level, color c1    ) {
   while( degree<360){
     rotate( radians( degree));
   shape( s1, 0, 0); //render the shape on canvas
-  degree += 45;
+  degree += 90;
   } //end while
   popMatrix(); 
   
-  recursivePattern2( len * 0.8, level-1, c1);
+  recursivePattern2( len * 0.8, level-1, c1); //finally the recursive call
   
 } //end recursivePattern1
 
