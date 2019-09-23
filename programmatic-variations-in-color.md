@@ -18,36 +18,42 @@ Processing provides a function LerpColor(  )  to create gradients of color betwe
 ```java
 
 float lenMax, lenMin;
+color c1;
 
 void setup(){
+    size( 600, 600);
+    colorMode( HSB, 360, 100, 100 ); 
+    c1 = color( 270, 100, 100);
     lenMax = 150;
-    lenMin = 20;
-    colorMode( HSB, 360, 100, 100 );  
+    lenMin = 20; 
 }
 
 void draw(){
     //draw nested vertexShapes at mouse position
       translate(mouseX, mouseY);
-      recursivePattern(lenMax,5);
+      recursivePattern(lenMax,5, c1);
       resetMatrix();
 }
 
-void recursivePattern( float len, int count){
+void recursivePattern( float len, int count, color c1){
   if( count< 1){
     return;
   }
   //set fill before calling vertexShape function
-  float bright = map( len, lenMin, lenMax, 0, 100);
-  float hue = map( mouseX, 0, width, 200, 300);
-  fill(hue, 100, bright);// brightness dependent on the len input parameter.
+  float fraction = map( len, lenMin, lenMax, .2, 1.0);
+  
+  color curColor = color(hue(c1), saturation(c1), brightness(c1)* fraction);
 
-  vertexShape( len); //task - draw shape
-  recursivePattern( len*.8, count-1); //Recursive call
+  PShape s= vertexShape( len, curColor); //task - draw shape
+  shape( s, 0,0);  //this displays the shape on the canvas at point (0,0)
+
+  recursivePattern( len*.8, count-1, c1); //Recursive call
 }
 
-void vertexShape( float len){
+PShape vertexShape( float len, color c1){
+   fill(c1);
    PShape s = createShape(RECT, 10, 10, 100, 100); //placeholder shape
-    shape( s, 0,0);  //this displays the shape on the canvas at point (0,0)
+   return s; 
 }
 
 ```
