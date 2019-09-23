@@ -144,6 +144,7 @@ In the code below, we're calling our vertexShape function inside the recursivePa
 
 ```java
 float lenMax  = 100.0;
+float lenMin = 5.0;
 
 void setup(){
   size( 600,600);
@@ -166,7 +167,7 @@ void setup(){
       return; //termination condition is true
     }
     
-    float fraction = map( length, 0, lenMax, .2, 1.0);
+    float fraction = map( length, lenMin, lenMax, .2, 1.0);
     color curColor =  color( hue(c1), saturation(c1), brightness( c1)*fraction);
      vertexShape( length, curColor ); //this is our task
     recursivePattern( length * 0.8, level-1,c1 ); //call recursive function - reduce value of variables 
