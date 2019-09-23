@@ -46,7 +46,7 @@ void recursivePattern( float len, int count){
 }
 
 void vertexShape( float len){
-   PShape s = createShape(RECT, 10, 10, 100, 100); //placeholder pattern
+   PShape s = createShape(RECT, 10, 10, 100, 100); //placeholder shape
     shape( s, 0,0);  //this displays the shape on the canvas at point (0,0)
 }
 
