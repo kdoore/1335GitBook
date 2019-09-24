@@ -22,6 +22,7 @@
   * [Sept 18 -Code](beginshape_-_vertex_shapes/sept-18-code.md)
   * [Sept 19 - Code](beginshape_-_vertex_shapes/sept-19-code.md)
   * [Sept 23 - Code](beginshape_-_vertex_shapes/sept-23-code.md)
+  * [Diagram & Art Expression](beginshape_-_vertex_shapes/diagram-and-art-expression.md)
 * [PShape with Cutout - Inner Contour](pshape-with-cutout-inner-contour.md)
 * [Project 1 - VertexShape - Recursion](project-1-pshape-pattern-recursion.md)
 * [Project 1: Recursive Drawing](recursive-drawing.md)
