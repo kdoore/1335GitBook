@@ -1,13 +1,11 @@
-#Plan Region Size, Color
+# Plan Region Size, Color
 
-![](/assets/planV1_F19.JPG)
-
+![](/assets/Proj1_F19_1335_img_small.jpg)
 The planning document above shows how to define 2 horizontal regions based on a balanceLine which can be set at width/2 by default.
 
 Example COde
 
 ```java
-
 float maxLen, minLen;
 color cNeg1, cNeg2, cNegPop1, cNegPop2;
 color cPos1, cPos2, cPosPop1, cPosPop2;
@@ -20,33 +18,33 @@ void setup(){
   minLen=1;
   cNeg1 = color( 285, 100,100); //purple
   cNeg2 = color( 260, 100, 100); //blue
- 
+
   cPos1 = color( 185, 100,100); //aqua
   cPos2 = color( 230, 100, 100);//blue
-  
+
 }
 
 void draw(){
   if(mousePressed && frameCount %5 == 0){
     translate( mouseX, mouseY);
-   
+
     if( mouseX < width/2 ){ //negative region
       //determine how color, size change across Negative region
-      
+
       float curLen = map( mouseX, 0, width/2, maxLen, minLen);
       float lerpFraction = map( mouseX, 0, width/2, 0.0, 1.0);
       color curColor = lerpColor( cNeg1, cNeg2, lerpFraction); 
       recursivePattern1( curLen, 5, curColor);
-       
+
     }//end negative region
     else if( mouseX > width/2  ){ //positive region
-      
+
    //add code here for positive region
-    
+
     } //end if positive region
     resetMatrix();
   } //end draw
-  
+
 }
 
 void recursivePattern1(float len, float level, color c1){
@@ -169,8 +167,7 @@ PShape createPosShape(float len, color c1){
   s.endShape(CLOSE);
   return s;
 }
-
-
 ```
+
 
 
