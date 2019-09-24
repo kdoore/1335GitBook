@@ -2,6 +2,8 @@
 
 Using HSB ColorMode allows us to configure and modify colors in our programs based changing values for the Hue, Saturation, or Brightness.
 
+
+
 ###Gradients:
 If we use a gradient (programatic change) for the brightness of an abstract pattern, we can enhance the illusion of depth for 2D designs.  
 
@@ -14,6 +16,10 @@ In the example below, we are creating a relationship between the current value o
 Processing provides a function LerpColor(  )  to create gradients of color between 2 color endpoints.  Lerp means Linear interpolation: which means each intermediate color 
 
 ![](/assets/Screen Shot 2018-09-04 at 12.17.58 PM.png)
+
+
+
+
 
 ```java
 
