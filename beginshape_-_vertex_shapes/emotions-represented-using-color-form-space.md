@@ -2,11 +2,9 @@
 
 ### Modeling Emotions:  Feeling, Context, Experience:
 
+### 
 
-
-
-
-
+### 
 
 ### Recommended Books:
 
@@ -16,8 +14,8 @@
 
 > Lisa Barrett argues that we construct our emotions, based on social context, personal experience, and situational goals. This suggests that individuals can modify emotions to improve well-being.
 
-[The Body Keeps Score:   
-Bessel van der Kolk M.D.   
+[The Body Keeps Score:  
+Bessel van der Kolk M.D.     
 ](https://www.amazon.com/Body-Keeps-Score-Healing-Trauma/dp/0143127748)  
 ![](https://images-na.ssl-images-amazon.com/images/I/71oE1a7BYYL._AC_UL115_.jpg)
 
