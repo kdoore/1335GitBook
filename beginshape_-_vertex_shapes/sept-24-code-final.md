@@ -80,7 +80,6 @@ void recursivePattern1( float len, int level, color c1  ){
 } //end recursivePattern1
 
 
-
 PShape createShape1( float len, color c1  ){
  PShape s = createShape();
   s.beginShape();
