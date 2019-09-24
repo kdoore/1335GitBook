@@ -2,9 +2,13 @@
 
 ### Modeling Emotions:  Feeling, Context, Experience:
 
-### 
+ Recent research in Neuroscience, Cognitive Science, and Computer Science have transformed the understanding of brain, body science.  
+ 
+ [Theory of Constructed Emotions:](https://en.wikipedia.org/wiki/Theory_of_constructed_emotion) 
 
-### 
+ >A scientific theory to explain the experience and perception of emotion. This theory was proposed by Lisa Feldman Barrett to resolve the "emotion paradox," which has perplexed emotion researchers for decades. [Wikipedia](https://en.wikipedia.org/wiki/Theory_of_constructed_emotion) 
+
+>The emotion paradox is as follows. People have vivid and intense experiences of emotion in day-to-day life: they report seeing emotions like "anger", "sadness", and "happiness" in others, and they report experiencing "anger", "sadness" and so on themselves. Nevertheless, psychophysiological and neuroscientific evidence has failed to yield consistent support for the existence of such discrete categories of experience.[4] Instead, the empirical evidence suggests that what exists in the brain and body is affect, and emotions are constructed by multiple brain networks working in tandem.[5][6]
 
 ### Recommended Books:
 
@@ -15,7 +19,7 @@
 > Lisa Barrett argues that we construct our emotions, based on social context, personal experience, and situational goals. This suggests that individuals can modify emotions to improve well-being.
 
 [The Body Keeps Score:  
-Bessel van der Kolk M.D.     
+Bessel van der Kolk M.D.       
 ](https://www.amazon.com/Body-Keeps-Score-Healing-Trauma/dp/0143127748)  
 ![](https://images-na.ssl-images-amazon.com/images/I/71oE1a7BYYL._AC_UL115_.jpg)
 
