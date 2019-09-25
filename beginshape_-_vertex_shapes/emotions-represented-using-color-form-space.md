@@ -13,9 +13,7 @@
 
 **Joseph E. LeDoux**
 ["Feelings: What Are They & How Does the Brain Make Them?" Joseph E. LeDoux (PDF)](https://www.cns.nyu.edu/home/ledoux/pdf/daed_LeDoux_2015.pdf)
->Rational thought has always been treated as a pro d -
-uct of the mind, and emotions were traditionally
-viewed as belonging to the body.
+>Rational thought has always been treated as a product of the mind, and emotions were traditionally viewed as belonging to the body.
 
 ### Recommended Books:
 
