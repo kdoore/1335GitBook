@@ -4,11 +4,18 @@
 
  Recent research in Neuroscience, Cognitive Science, and Computer Science have transformed the understanding of brain, body science.  
  
+
  [Theory of Constructed Emotions:](https://en.wikipedia.org/wiki/Theory_of_constructed_emotion) 
 
  >A scientific theory to explain the experience and perception of emotion. This theory was proposed by Lisa Feldman Barrett to resolve the "emotion paradox," which has perplexed emotion researchers for decades. [Wikipedia](https://en.wikipedia.org/wiki/Theory_of_constructed_emotion) 
 
->The emotion paradox is as follows. People have vivid and intense experiences of emotion in day-to-day life: they report seeing emotions like "anger", "sadness", and "happiness" in others, and they report experiencing "anger", "sadness" and so on themselves. Nevertheless, psychophysiological and neuroscientific evidence has failed to yield consistent support for the existence of such discrete categories of experience.[4] Instead, the empirical evidence suggests that what exists in the brain and body is affect, and emotions are constructed by multiple brain networks working in tandem.[5][6]
+>"In every waking moment, your brain uses past experience, organized as concepts, to guide your actions and give your sensations meaning. When the concepts involved are emotion concepts, your brain constructs instances of emotion."
+
+**Joseph E. LeDoux**
+["Feelings: What Are They & How Does the Brain Make Them?" Joseph E. LeDoux (PDF)](https://www.cns.nyu.edu/home/ledoux/pdf/daed_LeDoux_2015.pdf)
+>Rational thought has always been treated as a pro d -
+uct of the mind, and emotions were traditionally
+viewed as belonging to the body.
 
 ### Recommended Books:
 
