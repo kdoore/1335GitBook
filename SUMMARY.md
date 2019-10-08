@@ -43,7 +43,7 @@
 * [1D - Array of PShapes for Grid Layout](pshapes-in-grid-layout.md)
   * [Truchet Tiling](pshapes-in-grid-layout/truchet-tiling.md)
   * [March 4-6 Class Code](pshapes-in-grid-layout/march4-6-class-code.md)
-  * [Oct 8\_F19\_Code](pshapes-in-grid-layout/oct-8f19-code.md)
+  * [Oct 7,8  F19\_Code](pshapes-in-grid-layout/oct-8f19-code.md)
 * [PShapes in Grid Regions](pshapes-in-grid-regions.md)
 * [Grid Region Logic](grid-region-logic.md)
 * [Pattern Preview - Transforms: Translate & Scale](pattern-preview-transforms-translate-and-scale.md)
