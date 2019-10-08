@@ -1,4 +1,4 @@
-###Class Code - Tuesday Oct 8 F19
+###Class Code - Oct 7, 8 Fall 2019
 
 Function to Create 1D array of PShapes - **populateShapeList**
 
