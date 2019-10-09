@@ -1,9 +1,9 @@
-#Function: PopulateGradientGrid( ) 
+#Function: Populate2DArray( ) 
 
 The code in the previous sections needs should be refactored so it's using functions, this will allow us to separate the code-logic:
 
 - creating the shape-color units using design logic
-  - Notice, there are no `xPos, yPos` variables used in `PopulateGradientGrid`, instead, this function only populates our 2D data-structure.
+  - Notice, there are no `xPos, yPos` variables used in `Populate2DArray`, instead, this function only populates our 2D data-structure.
   
   
 - displaying the shape-color units in a grid layout
@@ -11,8 +11,7 @@ The code in the previous sections needs should be refactored so it's using funct
 
 ```java
 
-PShape[][] PopulateGradientGrid(int rows, int cols, int cellSize){
-  PShape[][] shapeMatrix = new PShape[rows][cols];
+ Populate2DArray(PShape[][] shapeMatrix, int rows, int cols, int cellSize){
   
   color c1=color(157, 83, 56);
   color c2 = color(258, 66, 96);
@@ -37,17 +36,17 @@ PShape[][] PopulateGradientGrid(int rows, int cols, int cellSize){
 }
 
 ```
-###PopulateGradientGrid - with Color input-paramters
+###Populate2DArray - with Color input-paramters
 It might be better to move the endpoint colors for the lerpColor function outside this function, so they can be passed into the function. When the colors are set inside the function, we would need a new function each time we want to use different colors, it's like the colors are hard-coded into this function.  This means we'd need to change the function signature to add the parameters, then, within the function we'd remove the code where we were initializing those colors.  
 
 
 ```java
-PShape[][] PopulateGradientGrid(int rows, int cols, int cellSize, color c1, color c2)
+ Populate2DArray(PShape[][],int rows, int cols, int cellSize, color c1, color c2)
 ```
 
 ###Program using PopulateGradientGrid
 In the code example project below, the following code shows how we call the new function:  So, basic  
-PShape[][] shapeMatrix = PopulateGradientGrid( rows, cols, cellSize);
+PShape[][] shapeMatrix = new PShape[rows][cols]; Populate2DArray(shapeMatrix , rows, cols, cellSize);
 
 
 ```java
@@ -59,7 +58,9 @@ PShape[][] shapeMatrix = PopulateGradientGrid( rows, cols, cellSize);
   
   //Declare and Initialize 2D Matrix by calling refactored code in new function
 
-   PShape[][] shapeMatrix = PopulateGradientGrid( rows, cols, cellSize);
+PShape[][] shapeMatrix = new PShape[rows][cols] ; Populate2DArray(shapeMatrix , rows, cols, cellSize);
+
+
   
   //Code below displays each shapeMatrix item at the corresponding: row, col / x, y position. 
   
