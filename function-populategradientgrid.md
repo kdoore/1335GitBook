@@ -41,7 +41,7 @@ It might be better to move the endpoint colors for the lerpColor function outsid
 
 
 ```java
- Populate2DArray(PShape[][],int rows, int cols, int cellSize, color c1, color c2)
+ Populate2DArray(PShape[][] shapeMatrix,int rows, int cols, int cellSize, color c1, color c2)
 ```
 
 ###Program using PopulateGradientGrid
@@ -56,9 +56,10 @@ PShape[][] shapeMatrix = new PShape[rows][cols]; Populate2DArray(shapeMatrix , r
   int cols = 6;
   int cellSize = width/cols;
   
-  //Declare and Initialize 2D Matrix by calling refactored code in new function
+  //Declare and Initialize 2D PShape array.
 
-PShape[][] shapeMatrix = new PShape[rows][cols] ; Populate2DArray(shapeMatrix , rows, cols, cellSize);
+PShape[][] shapeMatrix = new PShape[rows][cols] ;
+Populate2DArray(shapeMatrix , rows, cols, cellSize);
 
 
   
