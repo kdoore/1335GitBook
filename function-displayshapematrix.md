@@ -6,9 +6,7 @@ The function below is used to determine the grid-layout, and actually calls the 
 
 ```java
 
-void displayShapeMatrix(PShape[][] shapes, int x , int y , int rows, int cols, int size){
- pushMatrix();//save any prior transforms  
- translate( x , y );//change origin location 
+void displayShapeMatrix(PShape[][] shapes,int rows, int cols, int size){
  int xPos=0;  
  int yPos=0;         
  for( int i=0; i< rows; i++){     
@@ -19,7 +17,6 @@ The function below is used to determine the grid-layout, and actually calls the 
     xPos =0;       
     yPos += size;     
   } //end outer for-loop (i:rows)
-  popMatrix(); // undo transforms up to prior pushMatrix()
  } //end function
 ```
 

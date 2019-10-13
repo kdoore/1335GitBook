@@ -44,7 +44,7 @@ It might be better to move the endpoint colors for the lerpColor function outsid
  Populate2DArray(PShape[][] shapeMatrix,int rows, int cols, int cellSize, color c1, color c2)
 ```
 
-###Program using PopulateGradientGrid
+###Program using Populate2DArray
 In the code example project below, the following code shows how we call the new function:  So, basic  
 PShape[][] shapeMatrix = new PShape[rows][cols]; Populate2DArray(shapeMatrix , rows, cols, cellSize);
 
