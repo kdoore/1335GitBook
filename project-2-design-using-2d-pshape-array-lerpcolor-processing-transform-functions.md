@@ -66,7 +66,7 @@ shape( testShape, 300,300);//display at canvas center
 
 ```java
    
-PShape[][] populateGradientGrid( int rows, int cols,int size, color c1, color c2 ){
+PShape[][] populate2DArray( int rows, int cols,int size, color c1, color c2 ){
       PShape[][] shapesMatrix = new PShape[rows][cols];
       for( int i=0; i<rows; i++){
         for( int j=0; j< cols; j++){
@@ -81,7 +81,7 @@ PShape[][] populateGradientGrid( int rows, int cols,int size, color c1, color c2
 
 
 //example use of function
-//PShape[][] shapeMatrix1 = populateGradientGrid1( rows, cols, size, c1, c2);
+//PShape[][] shapeMatrix1 = populate2DArray( rows, cols, size, c1, c2);
 
 ```
 
@@ -160,8 +160,8 @@ void setup(){
   int cellSize = regionWidth/cols;
     
   //create smaller grid sections - 
-  PShape[][] shapesMatrix1 = populateGradientGrid(rows , cols ,cellSize, c1, c2  );
-  PShape[][] shapesMatrix2 = populateGradientGrid2(rows , cols ,cellSize, c1, c2, c3, c4   );
+  PShape[][] shapesMatrix1 = populate2DArray1(rows , cols ,cellSize, c1, c2  );
+  PShape[][] shapesMatrix2 = populate2DArray2(rows , cols ,cellSize, c1, c2, c3, c4   );
   
   //add comments
   displayShapeMatrix(shapesMatrix1, 0 ,0, rows , cols ,cellSize);
