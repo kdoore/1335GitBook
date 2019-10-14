@@ -6,7 +6,7 @@ Create a 2D Array of PShape objects,  create grid patterns using HSB colorMode a
 
 **Project Structure: Functions:**
 
-** Step 1 - VertexShape Functions **   
+###Step 1 - VertexShape Functions 
 - Create **2 functions** to create PShape vertex objects using float length, color foreground, and optional color: background as input parameters:
 
     PShape vertexShape1( float len, color foreground)
@@ -52,8 +52,7 @@ PShape s= createShape1( len, shapeColor);
 
 ```
 
-
-###PShape defined using len parameter - 
+**PShape defined using len parameter** - 
 
 Here, PShapes are defined using vertices and the input parameter len , or some multiplicative factor times len.  Here, many vertices are defined using **len * .5**.  Since all vertices are defined in terms of the len input parameter, then we can vary the value of len when calling the function, and the displayed shape will be the same shape, but scaled at a different size depending on the value of len.
 
@@ -96,14 +95,13 @@ shape( testShape, 300,300);//display at canvas center
 
  ```
  
-** Step 2 - 2D Arrays of PShape Objects **     
+###Step 2 - 2D Arrays of PShape Objects      
  - Create at least 2 functions to create 2-Dimensional Arrays of PShape objects: these are the driver-functions that determine pattern logic, use colorLerp and map functions.  Suggestion: create and return PShape[][] objects within the function.
 
 
 ```java
    
-PShape[][] populate2DArray( int rows, int cols,int size, color c1, color c2 ){
-      PShape[][] shapesMatrix = new PShape[rows][cols];
+populate2DArray(PShape[][] shapes , int rows, int cols,float cellSize, color c1, color c2 ){
       for( int i=0; i<rows; i++){
         for( int j=0; j< cols; j++){
           int k = i + j;  //diagonal index
@@ -111,30 +109,21 @@ PShape[][] populate2DArray( int rows, int cols,int size, color c1, color c2 ){
           color foreground = lerpColor( c1, c2, colorAmount);
           shapesMatrix[i][j] = vertexShape1(size,foreground); 
         }
-       }
-       return shapesMatrix;
-}
-
-
-//example use of function
-//PShape[][] shapeMatrix1 = populate2DArray( rows, cols, size, c1, c2);
+     } //end for-loop i
+}//end function
 
 ```
 
-**Step 3 Display Primary Grid Function**
+###Step 3 Display Primary Grid Function
 - Create functions to display each shapeMatrix.  These functions should take input parameters like:`PShape[][] shapes`, `int xPos`, `int yPos`, `int rows`, `int cols`, `int size`
 
-**Step 4 Display Grid Function**
-
-Use processing transform functions to translate the origin to the position where the shapeMatrix should be displayed.  Add rotation if needed to re-orient the shapeMatrix.  
 
 The code below has simple logic to step through each shapes[][] element and display it using the nested for loop to change the position of x and y across rows and columns.
 
 ```java
 
-void displayShapeMatrix(PShape[][] shapes, int x , int y , int rows, int cols, int size){
-  pushMatrix();
-  translate( x , y );
+void displayShapeMatrix(PShape[][] shapes, int rows, int cols, float  cellSize){
+ 
    int xPos=0;
    int yPos=0;
       for( int i=0; i< rows; i++){
@@ -145,13 +134,13 @@ void displayShapeMatrix(PShape[][] shapes, int x , int y , int rows, int cols, i
         xPos =0;
         yPos += size;
       }
-  popMatrix();
+
 }
 
 ```
 
-**Step 4 Display Grid in Other Regions**
-###Use Rotate, Translate, Scale to display ShapeMatrix across other Regions.  
+
+###Step 4: Use Rotate, Translate, Scale to display ShapeMatrix across other Regions.  
 Within these functions, the canvas is transformed prior to calling the displayShapeMatrix code above. An example of using Rotate and Scale is shown for creating a ShapeMatrix in Region2.  Similar functions should be created for Region3 and Region4
 
 
@@ -170,7 +159,7 @@ void displayRotateRegion2(PShape[][] shapesMatrix,int rows, int cols, int cellSi
 
 ![](/assets/Screenshot 2017-09-28 13.26.58.png)
 
-###Final Code Setup:
+###Final Code: Setup:
 The code below shows the setup function where we're defining our variables and calling our functions, since there's no animation or interactivity in this project, setup can be used for organizing and executing our project logic.  
 
 Now that we're creating smaller grid units and combining those to create a larger artwork, we need new variables to clarify these concepts.  I've decided the larger composition will be called the artWork, it has width = height = artWorkSize.  Each artwork is composed of 4 regions, where a 2D array of PShapes occupy one region of space. Each shapeMatrix in my  artwork has size defined by regionWidth = artworkSize/2, rows = 20, cols = 20. cellSize is defined as regionWidth/cols.
