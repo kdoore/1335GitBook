@@ -46,7 +46,7 @@ void displayRotateRegion2(PShape[][] shapesMatrix,int rows, int cols, int cellSi
   pushMatrix();
   translate( w, 0);
   scale(-1.0, 1.0);
-  displayShapeMatrix(shapesMatrix, 0 ,0, rows , cols ,cellSize);
+  displayShapeMatrix(shapesMatrix, rows , cols ,cellSize);
   popMatrix();
 }
 ```
