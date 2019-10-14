@@ -11,17 +11,53 @@ Create a 2D Array of PShape objects,  create grid patterns using HSB colorMode a
 
     PShape vertexShape1( float len, color foreground)
     
-    PShape vertexShape2( float len, color foreground, color background);
-   
+    PShape vertexShape2( float len, color foreground)
     
-###Example vertexShape code using PShape Group 
-The code below uses PShape group functionality.  Multiple PShape objects can be layered to create a single PShape group object.  Below, 3 PShape objects are created, s1 and s are added as child objects to PShape g which is a group object.  The ordering that child objects are added to the group corresponds to the layer ordering for their display, s1 is designed as a background layer.
+    
+###Example RecursivePattern, vertexShape code using PShape Group 
+
+
+```java
+ //example use of recursive function
+ PShape g = createShape(GROUP);
+ recursivePattern1( g, size,5, foreground ) ;
+ shapes[i][j] = g;   
+
+//recursive function
+void recursivePattern1(PShape g, float len, float level, color c1){
+  if( level<1){
+    return ;
+  }
+  color shapeColor = color( hue(c1), saturation(c1), brightness(c1)*.8, alpha(c1) );
+PShape s= createShape1( len, shapeColor);
+  g.addChild( s); //add to group
+ 
+  //recursive call
+  recursivePattern1( g, len * .8, level-1, shapeColor);
+}
+
+  //PShape motif with 2 shapes  
+  void recursivePattern2(PShape g, float len, float level, color c1){
+  if( level<1){
+    return ;
+  }
+  color shapeColor = color( hue(c1), saturation(c1), brightness(c1)*.8, alpha(c1) );
+  PShape s= createShape1( len, shapeColor);
+  PShape s1= createShape1( len, shapeColor);
+  g.addChild( s);
+  s1.rotate( PI);
+  g.addChild( s1);
+  recursivePattern1( g, len * .8, level-1, shapeColor);
+}
+
+```
+
 
 ###PShape defined using len parameter - 
 
 Here, PShapes are defined using vertices and the input parameter len , or some multiplicative factor times len.  Here, many vertices are defined using **len * .5**.  Since all vertices are defined in terms of the len input parameter, then we can vary the value of len when calling the function, and the displayed shape will be the same shape, but scaled at a different size depending on the value of len.
 
-**Note: to define our vertices, we are using `len * factor`, we are not using `len + factor`.  By using a fractional value for `factor`, we're scaling the size of our pattern, since want to use len to control the size of our pattern.  If we add a factor, `len + factor`, that would create a position offset or `x,y`positioning of our pattern at the time we draw the pattern using the PShape: shape( s, x, y) function. **  
+Note: to define our vertices, we are using `len * factor`, we are not using `len + factor`.  By using a fractional value for `factor`, we're scaling the size of our pattern, since want to use len to control the size of our pattern.  If we add a factor, `len + factor`, that would create a position offset or `x,y`positioning of our pattern at the time we draw the pattern using the PShape: shape( s, x, y) function.  
 
 **PShape fill issues:** Please notice that s.fill(forground) might not work for all computers, in that case, rather than provide color at a vertex level, we should set fill as the first line in the vertexPattern function:  fill(foreground);
  
