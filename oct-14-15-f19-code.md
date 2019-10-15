@@ -7,8 +7,10 @@ void setup() {
   background(0);
   color purple = color( 280, 100, 100);
   color aqua = color(180, 100, 100);
+  
   int rows = 20;
   int cols = 20;
+  
   float cellSize = width/cols;
   PShape[][] myShapes = new PShape[rows][cols]; //num elements is rows*cols
   populate2DArray( myShapes, rows, cols, cellSize, purple, aqua);
