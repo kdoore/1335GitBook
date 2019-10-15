@@ -138,7 +138,7 @@ void displayShapeMatrix(PShape[][] shapes, int rows, int cols, float  cellSize){
 ```
 
 ###Step 4: Use Rotate, Translate, Scale to display ShapeMatrix across other Regions.  
-Within these functions, the canvas is transformed prior to calling the displayShapeMatrix code above. An example of using Rotate and Scale is shown for creating a ShapeMatrix in Region2.  Similar functions should be created for Region3 and Region4
+Within these functions, the canvas is transformed prior to calling the displayShapeMatrix code above. An example of using Rotate and Scale is shown for creating a ShapeMatrix in Region2.  Similar functions should be created for Region3 and Region4 - See [Transforms](/transforms-for-position-rotation-scale-of-shapematrix-elements.md) for more examples
 
 
 ```java

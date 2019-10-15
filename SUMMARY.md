@@ -31,7 +31,7 @@
   * [Recursion with rotate, scale](programmatic-variations-in-color/recursion-with-rotate-scale.md)
   * [Plan Region Size, Color](programmatic-variations-in-color/plan-region-size-color.md)
 * [Map Function](map-function.md)
-* [Scale Transform for Mirroring](scale-transform-for-mirroring.md)
+* [Transforms for Mirroring](scale-transform-for-mirroring.md)
 * [Modeling Emotions](modeling-emotions.md)
 * [Project1-Steps](project1-steps.md)
 
