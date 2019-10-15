@@ -2,6 +2,9 @@
 
 For Project 2, students will create a Processing program to create custom 2D-Grid Artwork using 2 different PShape vertex patterns.  Project 2 builds on understanding learned in Project 1, creating PShape objects by specifying a set of vertex points.
 
+#Inspiration: 
+Examine [inspiration artwork - Victor Vasarely](https://www.google.com/search?q=vasarely+art&sxsrf=ACYBGNR5aOjh-L3KJOhN3rHijlyrhLv15A:1571140401369&source=lnms&tbm=isch&sa=X&ved=0ahUKEwiDxY-Mmp7lAhURlKwKHeNaDGgQ_AUIEygC&biw=1740&bih=1064&dpr=0.75) to observe pattern design rules, then incorporate similar rules in your custom design.  Design rules are implemented when populating the 2D array, using logic to create patterns, see [Grid Patterns](/grid-patterns-using-2d-array-indexes-i-j.md) for examples.
+
 Create a 2D Array of PShape objects,  create grid patterns using HSB colorMode and lerpColor to specify the color used.  If using color-selector tool, specify `colorMode(HSB, 360,100,100); //specify max range values` 
 
 **Project Structure: Functions:**
