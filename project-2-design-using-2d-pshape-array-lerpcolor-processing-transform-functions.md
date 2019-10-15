@@ -152,7 +152,6 @@ void displayRotateRegion2(PShape[][] shapesMatrix,int rows, int cols, float cell
   popMatrix();
 }
 
-//similar code for Scaling in Region2
 ```
 
 ![](/assets/Screenshot 2017-09-28 13.26.58.png)
@@ -174,6 +173,7 @@ void setup(){
   color c3 = color(0); //black
   color c4=  color(200); //gray (white is 360)
   
+  //scale factors - allows custom-sizing 
  int artWorkSize=width;
  int regionWidth = artWorkSize/2;
   
@@ -187,7 +187,7 @@ void setup(){
   PShape[][] shapesMatrix2 = populate2DArray2(rows , cols ,cellSize, c1, c2, c3, c4   );
   
   //add comments
-  displayShapeMatrix(shapesMatrix1, 0 ,0, rows , cols ,cellSize);
+  displayShapeMatrix(shapesMatrix1,  rows , cols ,cellSize);
   displayScaleRegion2(shapesMatrix2, rows , cols , cellSize, artWorkSize);
   displayScaleRegion3(shapesMatrix2, rows , cols , cellSize, artWorkSize);
   displayRotateRegion4(shapesMatrix1, rows , cols , cellSize, artWorkSize);
