@@ -115,9 +115,8 @@ void populate2DArray1(PShape[][] shapes , int rows, int cols,float cellSize, col
 
 ```
 
-###Step 3 Display Grid Function 
+###Step 3 DisplayShapeMatrix Default Region 
 - Create functions to display each shapeMatrix.  These functions should take input parameters like:`PShape[][] shapes`,  `int rows`, `int cols`, `float cellSize`
-
 
 The code below has simple logic to step through each shapes[][] element and display it using the nested for loop to change the position of x and y across rows and columns.
 
@@ -140,8 +139,10 @@ void displayShapeMatrix(PShape[][] shapes, int rows, int cols, float  cellSize){
 
 ```
 
-###Step 4: Use Rotate, Translate, Scale to display ShapeMatrix across other Regions.  
-Within these functions, the canvas is transformed prior to calling the displayShapeMatrix code above. An example of using Rotate and Scale is shown for creating a ShapeMatrix in Region2.  Similar functions should be created for Region3 and Region4 - See [Transforms](/transforms-for-position-rotation-scale-of-shapematrix-elements.md) for more examples
+###Step 4: Use Rotate, Translate, Scale to display in other Regions.  
+**Refactor your code, create functions** to transform, scale, rotate the shapeMatrix into regions 2,3,4.
+
+Within these functions, the canvas is transformed prior to calling the displayShapeMatrix code above. An example of using Rotate is shown for creating a ShapeMatrix in Region2.  Similar functions should be created for Region3 and Region4 - See [Transforms](/transforms-for-position-rotation-scale-of-shapematrix-elements.md) for more examples.  
 
 
 ```java
@@ -153,6 +154,17 @@ void displayRotateRegion2(PShape[][] shapesMatrix,int rows, int cols, float cell
   displayShapeMatrix(shapesMatrix, rows , cols ,cellSize);
   popMatrix();
 }
+
+//display shapeMatrix in region2, use rotate( radians);
+void displayMirrorRegion2(PShape[][] shapesMatrix,int rows, int cols, float cellSize, int artWorkSize){
+  pushMatrix();
+  translate( artWorkSize, 0);
+  scale( -1.0, 1.0 );  //or rotate( radians(90));
+  displayShapeMatrix(shapesMatrix, rows , cols ,cellSize);
+  popMatrix();
+}
+
+
 
 ```
 
