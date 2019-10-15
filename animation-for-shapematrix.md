@@ -1,8 +1,8 @@
 #Animation for ShapeMatrix
 
-In order to animate anything in Processing, the draw( ) function must be included in your project.  Within the draw( ) function, some parameters of the design must be changing over time, such as size, color.  frameCount, modulus can be used to create a timer that controls animation of size, color.
+In order to animate anything in Processing, the draw( ) function must be included in your project.  Within the draw( ) function, some parameters of the design must be changing over time, such as size, color.  frameCount, modulus can be used to create a timer that controls animation of size, color. Mouse horizontal movement is used to modify the hue of the accent color. 
 
-![](http://g.recordit.co/xk85GSXft5.gif)
+![](http://g.recordit.co/kE4Jf0tdPT.gif)
 
 ###Animate: PShape Color, Length (size)
 
@@ -38,7 +38,19 @@ Similar logic can be used to create animated color by using map to create a
 
 float fractionLerp = map(frameCount%maxTime, 0, maxTime, 0.0,1.0) ;  //for lerpColor, keep range: 0.0-1.0
 
+####Interaction - Accent color Hue changes with mouseX movement
+Add the code below into the animation color logic, horizontal mouse movement will change the accent color hue.
 
+
+```
+///use mouseX to create interactive accent color
+  float hueMx = map( mouseX, 0, width, 120,250); //color change with mouseX movement
+  color accentMx = color( hueMx, 100,100);
+  color curColor = lerpColor( accentMx,aqua, fractionColor)
+```
+
+;
+ 
 
 ####Move code into the draw function for animation
 ####Added logic: mousePressed for noLoop(), keyPressed for loop()
