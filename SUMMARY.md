@@ -64,6 +64,7 @@
 * [Animation for ShapeMatrix ](animation-for-shapematrix.md)
 * [Demo Lerp Colors](demo-lerp-colors.md)
 * [Oct 9-10 F19 Code](oct-9-10-code.md)
+* [Oct 14-15 F19 Code](oct-14-15-f19-code.md)
 
 ## Object Oriented Programming
 
