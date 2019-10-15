@@ -37,6 +37,9 @@ Similar logic can be used to create animated color by using map to create a
 float fractionLerp = map(frameCount%maxTime, 0, maxTime, 0.0,1.0) ;  //for lerpColor, keep range: 0.0-1.0
 
 
+![](/assets/Screen Shot 2019-10-15 at 12.02.44 PM.png)
+
+
 ####Move code into the draw function for animation
 ####Added logic: mousePressed for noLoop(), keyPressed for loop()
 
