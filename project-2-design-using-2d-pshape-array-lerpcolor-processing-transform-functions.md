@@ -137,7 +137,6 @@ void displayShapeMatrix(PShape[][] shapes, int rows, int cols, float  cellSize){
 
 ```
 
-
 ###Step 4: Use Rotate, Translate, Scale to display ShapeMatrix across other Regions.  
 Within these functions, the canvas is transformed prior to calling the displayShapeMatrix code above. An example of using Rotate and Scale is shown for creating a ShapeMatrix in Region2.  Similar functions should be created for Region3 and Region4
 
@@ -159,7 +158,7 @@ void displayRotateRegion2(PShape[][] shapesMatrix,int rows, int cols, float cell
 ###Final Code: Setup:
 The code below shows the setup function where we're defining our variables and calling our functions, since there's no animation or interactivity in this project, setup can be used for organizing and executing our project logic.  
 
-Now that we're creating smaller grid units and combining those to create a larger artwork, we need new variables to clarify these concepts.  I've decided the larger composition will be called the artWork, it has width = height = artWorkSize.  Each artwork is composed of 4 regions, where a 2D array of PShapes occupy one region of space. Each shapeMatrix in my  artwork has size defined by regionWidth = artworkSize/2, rows = 20, cols = 20. cellSize is defined as regionWidth/cols.
+Now that we're creating smaller grid units and combining those to create a larger artwork, we need new variables to clarify these concepts.  The larger composition will be called the **artWork**, it has **width = height = artWorkSize**.  Each artwork is composed of 4 regions, where a 2D array of PShapes occupy one region of space. Each shapeMatrix has dimensions defined by regionWidth = artworkSize/2, rows = 20, cols = 20. cellSize is defined as regionWidth/cols.
 
 ```java
 
@@ -180,7 +179,7 @@ void setup(){
   //dimensions for grid motif that occupies 1/4 size of the artWork 
   int rows = 20;
   int cols = rows;
-  int cellSize = regionWidth/cols;
+  float cellSize = float(regionWidth/cols);
     
   //create smaller grid sections - 
   PShape[][] shapesMatrix1 = populate2DArray1(rows , cols ,cellSize, c1, c2  );
