@@ -37,9 +37,10 @@ Similar logic can be used to create animated color by using map to create a
 float fractionLerp = map(frameCount%maxTime, 0, maxTime, 0.0,1.0) ;  //for lerpColor, keep range: 0.0-1.0
 
 
-###Move code into the draw function for animation
+####Move code into the draw function for animation
+####Added logic: mousePressed for noLoop(), keyPressed for loop()
 
-
+##Animation Code:
 
 ```java
 void setup() {
@@ -50,10 +51,23 @@ void setup() {
 }
 
 
+void setup() {
+  size( 400, 400);
+  colorMode(HSB, 360, 100, 100);
+  background(0);
+  
+}
+
+
 void draw(){
    //fade background 
    fill( 0, 5); //transparant black
    rect( 0,0,width, height);
+  
+  if(mousePressed){
+    noLoop();
+  }
+  
   
   float artWorkSize = width;
   float regionSize = artWorkSize/2;
@@ -101,6 +115,11 @@ void draw(){
   scale( -1, -1); //mirror across origin and make smaller
   displayShapeMatrix( myShapes, rows, cols, cellSize);
   popMatrix();
+} //end draw
+
+//press any key to restart animation
+void keyPressed(){
+  loop();
 }
 
 void mirrorRegion2(PShape[][] shapes, int rows, int cols, float cellSize, float artWorkSize  ){
@@ -188,7 +207,6 @@ PShape createPosShape( float len, color c1){
   s.endShape(CLOSE); //end shape
   return s; 
 }
-
 ```
 
 
