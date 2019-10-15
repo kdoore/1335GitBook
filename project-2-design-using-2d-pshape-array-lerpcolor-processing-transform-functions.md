@@ -164,8 +164,6 @@ void displayMirrorRegion2(PShape[][] shapesMatrix,int rows, int cols, float cell
   popMatrix();
 }
 
-
-
 ```
 
 ![](/assets/Screenshot 2017-09-28 13.26.58.png)
