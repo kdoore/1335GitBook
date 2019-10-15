@@ -1,6 +1,6 @@
 #Animation for ShapeMatrix
 
-In order to animate anything in Processing, the draw( ) function must be included in your project.  Within the draw( ) function, some parameters of the design must be changing over time.
+In order to animate anything in Processing, the draw( ) function must be included in your project.  Within the draw( ) function, some parameters of the design must be changing over time, such as size, color.  frameCount, modulus can be used to create a timer that controls animation of size, color.
 
 ###Animate: PShape Color, Length (size)
 
