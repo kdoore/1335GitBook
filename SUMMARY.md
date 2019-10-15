@@ -60,7 +60,7 @@
 * [Function: Populate2DArray\( \)](function-populategradientgrid.md)
 * [Function: DisplayShapeMatrix\(\)](function-displayshapematrix.md)
 * [Transforms for Position, Rotation, Scale of ShapeMatrix Elements](transforms-for-position-rotation-scale-of-shapematrix-elements.md)
-* [Project 2 - Grid Based Design, Vertex Patterns](project-2-design-using-2d-pshape-array-lerpcolor-processing-transform-functions.md)
+* [Project 2 - Steps](project-2-design-using-2d-pshape-array-lerpcolor-processing-transform-functions.md)
 * [Animation for ShapeMatrix ](animation-for-shapematrix.md)
 * [Demo Lerp Colors](demo-lerp-colors.md)
 * [Oct 9-10 F19 Code](oct-9-10-code.md)

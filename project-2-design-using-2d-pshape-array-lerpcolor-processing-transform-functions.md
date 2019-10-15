@@ -1,4 +1,4 @@
-#Project 2 - Design using 2D PShape Array, lerpColor, map, and Processing Transform Functions
+#Project 2 - Steps
 
 For Project 2, students will create a Processing program to create custom 2D-Grid Artwork using 2 different PShape vertex patterns.  Project 2 builds on understanding learned in Project 1, creating PShape objects by specifying a set of vertex points.
 
@@ -13,52 +13,12 @@ Create a 2D Array of PShape objects,  create grid patterns using HSB colorMode a
     
     PShape vertexShape2( float len, color foreground)
     
-    
-###Example RecursivePattern, vertexShape code using PShape Group 
-
-
-```java
- //example use of recursive function
- PShape g = createShape(GROUP);
- recursivePattern1( g, size,5, foreground ) ;
- shapes[i][j] = g;   
-
-//recursive function
-void recursivePattern1(PShape g, float len, float level, color c1){
-  if( level<1){
-    return ;
-  }
-  color shapeColor = color( hue(c1), saturation(c1), brightness(c1)*.8, alpha(c1) );
-PShape s= createShape1( len, shapeColor);
-  g.addChild( s); //add to group
- 
-  //recursive call
-  recursivePattern1( g, len * .8, level-1, shapeColor);
-}
-
-  //PShape motif with 2 shapes  
-  void recursivePattern2(PShape g, float len, float level, color c1){
-  if( level<1){
-    return ;
-  }
-  color shapeColor = color( hue(c1), saturation(c1), brightness(c1)*.8, alpha(c1) );
-  PShape s= createShape1( len, shapeColor);
-  PShape s1= createShape1( len, shapeColor);
-  g.addChild( s);
-  s1.rotate( PI);
-  g.addChild( s1);
-  recursivePattern1( g, len * .8, level-1, shapeColor);
-}
-
-```
 
 **PShape defined using len parameter** - 
 
-Here, PShapes are defined using vertices and the input parameter len , or some multiplicative factor times len.  Here, many vertices are defined using **len * .5**.  Since all vertices are defined in terms of the len input parameter, then we can vary the value of len when calling the function, and the displayed shape will be the same shape, but scaled at a different size depending on the value of len.
+As with Project1, PShapes are defined using vertices and the input parameter len , or some multiplicative factor times len.  Here, many vertices are defined using **len * .5**.  Since all vertices are defined in terms of the len input parameter, then we can vary the value of len when calling the function, and the displayed shape will be the same shape, but scaled at a different size depending on the value of len.
 
 Note: to define our vertices, we are using `len * factor`, we are not using `len + factor`.  By using a fractional value for `factor`, we're scaling the size of our pattern, since want to use len to control the size of our pattern.  If we add a factor, `len + factor`, that would create a position offset or `x,y`positioning of our pattern at the time we draw the pattern using the PShape: shape( s, x, y) function.  
-
-**PShape fill issues:** Please notice that s.fill(forground) might not work for all computers, in that case, rather than provide color at a vertex level, we should set fill as the first line in the vertexPattern function:  fill(foreground);
  
 ```java
 
@@ -80,7 +40,7 @@ PShape vertexShape1( float len, color foreground) {
 
 
 ```
-###Test and Verify VertexPattern functions
+**Verify VertexShape renders correctly**
 After writing the vertexPattern functions, it's a good idea see what one of them looks like and to make sure they are displaying something, we can do this in setup
 
 ```java
@@ -94,20 +54,58 @@ shape( testShape, 300,300);//display at canvas center
 }
 
  ```
- 
-###Step 2 - 2D Arrays of PShape Objects      
- - Create at least 2 functions to create 2-Dimensional Arrays of PShape objects: these are the driver-functions that determine pattern logic, use colorLerp and map functions.  Suggestion: create and return PShape[][] objects within the function.
 
+### RecursivePattern Group-type PShape
+**Group-Type PShape with stacked child PShapes **
+In the first project, the rendering of the PShapes was part of the logic in the Recursive functions, but in this case, we need to **save / store** the 'stacked' Recursive PShapes in the 2D array so they can be rendered later in the displayShapeMatrix functions. We need the recursive function to create a single Group-type PShape that contains the stacked children PShapes. To accomplish this, we create the group-type PShape before calling the RecursivePattern function. The group-type PShape is passed into the RecursivePattern function as an input. After the RecursivePattern function execution is completed, the group-type PShape object contains all of the child PShapes.
+
+```java
+//example use of recursive function
+PShape g = createShape(GROUP); //this will hold stacked child PShapes
+recursivePattern1( g, size,5, foreground ) ;//g is input
+//after function execution, g contains stacked children
+shapes[i][j] = g; //store in the array
+
+//recursive function
+void recursivePattern1(PShape g, float len, float level, color c1){
+if( level<1){
+return ;
+}
+color shapeColor = color( hue(c1), saturation(c1), brightness(c1)*.8, alpha(c1) );
+PShape s= createShape1( len, shapeColor);
+g.addChild( s); //add to group
+//recursive call passes g to the next level recursion
+recursivePattern1( g, len * .8, level-1, shapeColor);
+}
+
+//PShape motif with 2 shapes
+void recursivePattern2(PShape g, float len, float level, color c1){
+if( level<1){
+return ;
+}
+color shapeColor = color( hue(c1), saturation(c1), brightness(c1)*.8, alpha(c1) );
+PShape s= createShape1( len, shapeColor);
+PShape s1= createShape1( len, shapeColor);
+g.addChild( s);
+s1.rotate( PI); //rotate 180 degrees
+g.addChild( s1);
+recursivePattern1( g, len * .8, level-1, shapeColor);
+} //end function
+
+```
+   
+###Step 2 - 2D Arrays of PShape Objects      
+ - Functions to create 2-Dimensional Arrays of PShape objects: these functions have logic that determine color, shape, pattern logic. Use lerpColor and map functions with loop-index variables: i, j.  
 
 ```java
    
-populate2DArray(PShape[][] shapes , int rows, int cols,float cellSize, color c1, color c2 ){
+void populate2DArray1(PShape[][] shapes , int rows, int cols,float cellSize, color c1, color c2 ){
       for( int i=0; i<rows; i++){
         for( int j=0; j< cols; j++){
-          int k = i + j;  //diagonal index
-          float colorAmount = map( k, 0, rows + cols-2, 0.0,1.0);
-          color foreground = lerpColor( c1, c2, colorAmount);
-          shapesMatrix[i][j] = vertexShape1(size,foreground); 
+          int k = i + j;  //diagonal pattern
+          float fractionK = map( k, 0, rows + cols-2, 0.0,1.0);
+          color curColor = lerpColor( c1, c2, fractionK);
+          shapesMatrix[i][j] = vertexShape1(cellSize,curColor); 
         }
      } //end for-loop i
 }//end function
