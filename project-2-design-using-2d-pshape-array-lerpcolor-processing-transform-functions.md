@@ -112,8 +112,8 @@ void populate2DArray1(PShape[][] shapes , int rows, int cols,float cellSize, col
 
 ```
 
-###Step 3 Display Primary Grid Function
-- Create functions to display each shapeMatrix.  These functions should take input parameters like:`PShape[][] shapes`, `int xPos`, `int yPos`, `int rows`, `int cols`, `int size`
+###Step 3 Display Grid Function 
+- Create functions to display each shapeMatrix.  These functions should take input parameters like:`PShape[][] shapes`,  `int rows`, `int cols`, `float cellSize`
 
 
 The code below has simple logic to step through each shapes[][] element and display it using the nested for loop to change the position of x and y across rows and columns.
@@ -144,11 +144,11 @@ Within these functions, the canvas is transformed prior to calling the displaySh
 
 ```java
 //display shapeMatrix in region2, use rotate( radians);
-void displayRotateRegion2(PShape[][] shapesMatrix,int rows, int cols, int cellSize, int artWorkSize){
+void displayRotateRegion2(PShape[][] shapesMatrix,int rows, int cols, float cellSize, int artWorkSize){
   pushMatrix();
   translate( artWorkSize, 0);
   rotate( PI/2);  //or rotate( radians(90));
-  displayShapeMatrix(shapesMatrix, 0 ,0, rows , cols ,cellSize);
+  displayShapeMatrix(shapesMatrix, rows , cols ,cellSize);
   popMatrix();
 }
 
