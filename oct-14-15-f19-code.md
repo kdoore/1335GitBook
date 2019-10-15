@@ -7,7 +7,6 @@ void setup() {
   background(0);
   color purple = color( 280, 100, 100);
   color aqua = color(180, 100, 100);
-  
   int rows = 20;
   int cols = 20;
   
