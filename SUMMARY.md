@@ -65,6 +65,7 @@
 * [Oct 9-10 F19 Code](oct-9-10-code.md)
 * [Oct 14 F19 Code](oct-14-15-f19-code.md)
 * [Oct 15 Code F19](oct15.md)
+* [Animation for ShapeMatrix ](animation-for-shapematrix.md)
 
 ## Object Oriented Programming
 
