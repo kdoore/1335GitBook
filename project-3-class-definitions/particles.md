@@ -161,7 +161,7 @@ void setup(){
    satSlider.hue = hueSlider.sliderVal;
    brightSlider = new Slider( 620, 700, 150, 40, 0, 100, "Bright");
    scaleSlider = new Slider( 850, 700, 130, 40, 0.0, 2.0, "Scale");
-   checkSliders();  //this will set the initial colors and dependency
+
    
 }//in setup
 
