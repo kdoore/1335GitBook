@@ -107,7 +107,8 @@ class ParticleSystem {
 ```
 
 ###Example Main-Tab Code:
-
+Requires use of All Project 3 Classes.
+The main-tab code has been refactored in several ways to 
 
 ```java
 
@@ -130,7 +131,7 @@ void setup(){
   background( bkgColor);///sets the background once with bkgCOlor
   //Initialize Pattern Objects 
   //Place-holder PShapes
-  ps = new ParticleSystem(new PVector(width/2,50));
+  ps = new ParticleSystem(new PVector(width/2,50)); //starting position
   
   PShape s0 = createShape( ELLIPSE, 0,0,10, 10); //this is fine
   //Call constructors to create the objects
