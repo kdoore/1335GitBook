@@ -150,9 +150,9 @@ void setup(){
    btnArray = new Button[4]; //initialize the array so it has 3 button elements
    // PImageButton(float x, float y, float w, float h, PImage img)
    btnArray[0] = new Button( 10, 120, 100, 100, "Eraser" ); 
-   btnArray[1] = new PImageButton( 10, 230, 100, 100, img1 );
+   btnArray[1] = new  Button( 10, 230, 100, 100, "Btn1" );
    btnArray[2] = new Button( 10, 340, 100, 100, "Btn2" );
-   btnArray[3] = new PImageButton( 10, 450, 100, 100, img3);
+   btnArray[3] = new  Button( 10, 450, 100, 100, "Btn3");
    btnGroup = new ButtonGroup(btnArray); //Call constructor for ButtonGroup, pass in array
    //initialize sliders
    hueSlider = new HueSlider( 140, 700,  150, 40, 100, 260);
