@@ -25,7 +25,7 @@ class Pattern{
     if( s.getChildCount() > 0){ //special PSHape, has child shapes
       PShape[] children = s.getChildren();
       for( int i=0; i< children.length; i++){
-        shape( s, 0,0);
+        shape( s, 0,0); 
       }
     }else{ //no children
     s.setFill( fillColor); // different ways to set the fill for a PShape
