@@ -1,6 +1,9 @@
 ###Pattern Class with BrightnessGradient Display of Child PShapes
 
 
+
+
+```java
 class Pattern{
    
   PShape s;
@@ -22,10 +25,6 @@ class Pattern{
     if( s.getChildCount() > 0){ //special PSHape, has child shapes
       PShape[] children = s.getChildren();
       for( int i=0; i< children.length; i++){
-        float fraction = map( i, 0, children.length, 1.0, 0.5);
-        color curColor = color( hue(fillColor), saturation(fillColor), brightness( fillColor) *fraction);
-        s.setFill( curColor);
-        s.setStroke( strokeColor);
         shape( s, 0,0);
       }
     }else{ //no children
@@ -43,3 +42,5 @@ class Pattern{
   }
   
 } //end class Pattern
+```
+
