@@ -9,12 +9,22 @@ Dr. Mihai Nadin was an early proponent of of use of computers as part of the des
 Designing Processes rather than Objects 
 >I think that the most interesting shift in recent design experience is that we have passed from designing objects to designing networks and processes.   [Francesco Cingolani](http://ecosistemaurbano.org/english/francesco-cingolani-eu-collaborators/)
 
-
 ###What is the difference between “parametric design” and “computational design” ?
 >I don’t know. “Computational design” refers to the use of computers and mathematical approach to the generation of geometries, objects and architecture. “Parametric design” is about using parameters to design things. It means that if parameters changes, the result change. Regardless of which expression is the best, what interests me the most is the idea of focusing on design process instead of designed objects.  [Francesco Cingolani](http://www.immaginoteca.com/parametric-vs-computational-design/)
 
 ###Programming as a Design System
  In the introduction to his graduate course: Programing Design Systems, Rune Madsen provides an excellent in-depth article on the [History of Design Systems](http://printingcode.runemadsen.com/lecture-intro/) by Rune Skjoldborg Madsen
+
+
+###Computational Design Spaces
+[Articles by Danil Nagy](https://medium.com/generative-design/introduction-to-computational-design-6c0fdfb3f1)
+Computational strategies for defining design spaces
+Based on our discussion of computer programming so far, we can think of a number of strategies for defining our design spaces computationally:
+Morphological control through continuous variables
+State-change control through discrete variables
+Recursive control through functions and rule sets
+Behavioral control through object-oriented programming
+![](https://miro.medium.com/max/1200/1*B5dB34LLxSgGYCI14faULA.png)
 
 
 ###Parametric Design for our Projects
