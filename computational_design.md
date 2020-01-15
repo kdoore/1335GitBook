@@ -16,15 +16,14 @@ Designing Processes rather than Objects
  In the introduction to his graduate course: Programing Design Systems, Rune Madsen provides an excellent in-depth article on the [History of Design Systems](http://printingcode.runemadsen.com/lecture-intro/) by Rune Skjoldborg Madsen
 
 
-###Computational Design Spaces
+###Computational Strategies for Defining Design Spaces
 [Articles by Danil Nagy](https://medium.com/generative-design/introduction-to-computational-design-6c0fdfb3f1)
-Computational strategies for defining design spaces
 Based on our discussion of computer programming so far, we can think of a number of strategies for defining our design spaces computationally:
 Morphological control through continuous variables
 State-change control through discrete variables
 Recursive control through functions and rule sets
 Behavioral control through object-oriented programming
-![](https://miro.medium.com/max/1200/1*B5dB34LLxSgGYCI14faULA.png)
+![](https://miro.medium.com/max/1497/1*2YzX-pjdz269OZqM9S7F6w.png)
 
 
 ###Parametric Design for our Projects
