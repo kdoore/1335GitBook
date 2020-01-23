@@ -11,8 +11,8 @@
     * [ColorWheel Class Code: Sec 001\_F19](hsb_color_mode/hsb-color-wheel/colorwheel-class-code-sec-001f19.md)
   * [HSB Color Palette Tool](hsb_color_mode/hsb-color-wheel-complimentary-color-palatte.md)
 * [Recursion](recursion.md)
-* Recursion Call-Stack
-* [Example Code](recursion/class-code-sept12f19.md)
+  * Recursion Call-Stack
+  * [Example Code](recursion/class-code-sept12f19.md)
 
 ## Project 1
 
