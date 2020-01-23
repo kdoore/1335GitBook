@@ -7,7 +7,7 @@
 See [Models of Emotion: ](/modeling-emotions.md), [Concept Maps](https://en.wikipedia.org/wiki/Concept_map), [Mental Models](https://en.wikipedia.org/wiki/Mental_model)
 
 **Create Personal Situation Concept Map**
-Select a personal situation that has strong associated emotions.  Sketch a concept-map to brainstorm the concepts and emotions associated with your situation.
+Select a personal situation that has .  Sketch a concept-map to brainstorm the concepts and emotions associated with your situation.
 
 * Divide your concept-map sketch into 2 regions:  Negative, Positive
 * Put 'Situation' as the center concept \( no need to provide specific details about situation \)
@@ -20,7 +20,7 @@ Select a personal situation that has strong associated emotions.  Sketch a conce
    * Tables:
      * Define variables: 
        * colors ( minimum of 3 custom colors required )
-       * length range \(minLen, maxLen\)
+       * Pshape length ranges \(minLen, maxLen\)
      * Main Emotions: ordered list of 5 emotions
      * Determine Design Attributes
        * map function parameters for values on both sides of the negative / positive regions: how do values change as mouseX changes?
@@ -47,8 +47,6 @@ void recursivePattern2(float len, int count , color c1 )
 `float len = map( mouseX, 0, balancePoint, maxLen, minLen);  // negative region`
 
 - you must determine logic for positive region
-
-
 
 **color c1, color cMain** - determined by region and mouseX
 
