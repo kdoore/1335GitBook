@@ -14,7 +14,7 @@ Interactive Data Visualization of the recursion relationships for a growing seri
 ###Recursion in Programming
 Recursive programs refer to programs that contain at least 1 recursive function.  **A recursive function is a function that has a function call to itself within the function definition. **
 
-###Simple Example  - Nested Rectangles - 3 ways
+###Example  - Nested Rectangles - 3 ways
 The code below would create a set of nested rectangles, the largest is drawn first, the value of length is reduced, then a smaller rectangle is drawn...this is repeated 5 times.
 
 ```java
@@ -36,7 +36,8 @@ rect( 0, 0, length, length);
 
 ```
 
-An experienced programmer would cringe when writing such repetitive code, knowing that loops can provide a cleaner method to implement repetitive code:
+##Loops for Repetition
+An experienced programmer would want to **refactor **such repetitive code, knowing that **loops** can provide a cleaner method to implement repetitive code:
 
 ```java
 void loopNestedRectangles( float length, int count) {
@@ -49,6 +50,7 @@ void loopNestedRectangles( float length, int count) {
 }
 ```
 
+##Recursive Function for Repetition
 In the code below, the function: ``recursiveNestedRectangles( int length, int count);``, draws a series of nested rectangles, starting with the largest rectangle, stopping when the count variable is less than 0;
 
 ```java
