@@ -18,7 +18,7 @@
 
 * [Emotions represented using color, form, space](beginshape_-_vertex_shapes/emotions-represented-using-color-form-space.md)
 * [Project 1: PShapes ](beginshape_-_vertex_shapes.md)
-  * [Sept 16 - Code](beginshape_-_vertex_shapes/sept-16-code.md)
+  * [Example Code](beginshape_-_vertex_shapes/sept-16-code.md)
   * [Design Diagram: Art Expression](beginshape_-_vertex_shapes/diagram-and-art-expression.md)
 * [PShape with Cutout - Inner Contour](pshape-with-cutout-inner-contour.md)
 * [Project 1 - VertexShape - Recursion](project-1-pshape-pattern-recursion.md)
@@ -39,8 +39,8 @@
 * [Grid Pattern Design](arrays-for-grid-patterns.md)
 * [1D - Array of PShapes for Grid Layout](pshapes-in-grid-layout.md)
   * [Truchet Tiling](pshapes-in-grid-layout/truchet-tiling.md)
-  * [March 4-6 Class Code](pshapes-in-grid-layout/march4-6-class-code.md)
-  * [Oct 7,8  F19\_Code](pshapes-in-grid-layout/oct-8f19-code.md)
+
+  * [Example Code](pshapes-in-grid-layout/oct-8f19-code.md)
 * [PShapes in Grid Regions](pshapes-in-grid-regions.md)
 * [Grid Region Logic](grid-region-logic.md)
 * [Pattern Preview - Transforms: Translate & Scale](pattern-preview-transforms-translate-and-scale.md)
@@ -50,7 +50,7 @@
 * [Project 2 - 2D Arrays for Gradient Logic](transforms-for-region-logic.md)
   * [2D Array Grid with Labels](transforms-for-region-logic/2d-array-grid-with-labels.md)
 * [Grid Patterns using 2D Array Indexes: i, j](grid-patterns-using-2d-array-indexes-i-j.md)
-  * [March 11 - Class Code](grid-patterns-using-2d-array-indexes-i-j/march-11-class-code.md)
+  * [Example Class Code](grid-patterns-using-2d-array-indexes-i-j/march-11-class-code.md)
 * [lerpColor\( \)  and map\( \) Functions](lerpcolor-and-map.md)
 * [Demo Lerp Colors](demo-lerp-colors.md)
 * [2D Arrays with lerpColor](2d-arrays-with-lerpcolor.md)
