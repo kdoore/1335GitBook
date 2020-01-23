@@ -7,10 +7,9 @@
 * [HSB Color Mode](hsb_color_mode.md)
   * [HSB Color Wheel](hsb_color_mode/hsb-color-wheel.md)
     * [Example Code](hsb_color_mode/hsb-color-wheel/colorwheel-class-codes19.md)
-
   * [HSB Color Palette Tool](hsb_color_mode/hsb-color-wheel-complimentary-color-palatte.md)
 * [Recursion](recursion.md)
-  * Recursion Call-Stack
+  * [Recursion Call-Stack](recursion/recursion-call-stack.md)
   * [Example Code](recursion/class-code-sept12f19.md)
 
 ## Project 1
@@ -38,7 +37,6 @@
 * [Grid Pattern Design](arrays-for-grid-patterns.md)
 * [1D - Array of PShapes for Grid Layout](pshapes-in-grid-layout.md)
   * [Truchet Tiling](pshapes-in-grid-layout/truchet-tiling.md)
-
   * [Example Code](pshapes-in-grid-layout/oct-8f19-code.md)
 * [PShapes in Grid Regions](pshapes-in-grid-regions.md)
 * [Grid Region Logic](grid-region-logic.md)
@@ -82,7 +80,6 @@
 ## Project 3
 
 * [Project 3 - Logic, Steps](drawing-application-logic.md)
-  
 * [Project 3 - Class Definitions](project-3-class-definitions.md)
   * [Button](project-3-class-definitions/button.md)
   * [PImageButton](project-3-class-definitions/pimagebutton.md)
