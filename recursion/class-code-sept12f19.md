@@ -1,11 +1,11 @@
-###Class Code: 1335 Section 002, Sept 12
+###Example Class Code
 
 ###Intro to Recursion and PShapes
 
 ```java
 
 //Recursion and PShapes
-  //Code: CS1335.002 Sept 12 2019
+  //
   
   void setup(){
     size( 600, 600);
