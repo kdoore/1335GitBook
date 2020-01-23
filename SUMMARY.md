@@ -6,9 +6,8 @@
 
 * [HSB Color Mode](hsb_color_mode.md)
   * [HSB Color Wheel](hsb_color_mode/hsb-color-wheel.md)
-    * [ColorWheel Class Code\_S19](hsb_color_mode/hsb-color-wheel/colorwheel-class-codes19.md)
-    * [ColorWheel Class Code: Sec002\_F19](hsb_color_mode/hsb-color-wheel-version-2.md)
-    * [ColorWheel Class Code: Sec 001\_F19](hsb_color_mode/hsb-color-wheel/colorwheel-class-code-sec-001f19.md)
+    * [Example Code](hsb_color_mode/hsb-color-wheel/colorwheel-class-codes19.md)
+
   * [HSB Color Palette Tool](hsb_color_mode/hsb-color-wheel-complimentary-color-palatte.md)
 * [Recursion](recursion.md)
   * Recursion Call-Stack
@@ -59,9 +58,6 @@
 * [Function: DisplayShapeMatrix\(\)](function-displayshapematrix.md)
 * [Transforms for Position, Rotation, Scale of ShapeMatrix Elements](transforms-for-position-rotation-scale-of-shapematrix-elements.md)
 * [Project 2 - Steps](project-2-design-using-2d-pshape-array-lerpcolor-processing-transform-functions.md)
-* [Oct 9-10 F19 Code](oct-9-10-code.md)
-* [Oct 14 F19 Code](oct-14-15-f19-code.md)
-* [Oct 15 Code F19](oct15.md)
 * [Animation for ShapeMatrix ](animation-for-shapematrix.md)
   * [Animation w/Noise](animation-for-shapematrix/animation-wnoise.md)
 
@@ -86,12 +82,7 @@
 ## Project 3
 
 * [Project 3 - Logic, Steps](drawing-application-logic.md)
-  * [Class Code - Apr 8](drawing-application-logic/class-code-apr-8.md)
-    * [Class Code Apr 10](drawing-application-logic/class-code-apr-8/class-code-apr-10.md)
-    * [Class Code Apr 15](drawing-application-logic/class-code-apr-8/class-code-apr-15.md)
-    * [Class Code Apr 17](drawing-application-logic/class-code-apr-8/class-code-apr-17.md)
-    * [Class Code - Apr 22](drawing-application-logic/class-code-apr-8/class-code-apr-22.md)
-    * [Code - Nov 13, 19](drawing-application-logic/class-code-apr-8/code-nov-13-19.md)
+  
 * [Project 3 - Class Definitions](project-3-class-definitions.md)
   * [Button](project-3-class-definitions/button.md)
   * [PImageButton](project-3-class-definitions/pimagebutton.md)
