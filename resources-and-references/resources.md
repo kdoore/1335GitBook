@@ -1,3 +1,9 @@
+Programming Assignments
+
+[Creative Programming Assignments](https://introcs.cs.princeton.edu/java/assignments/)
+
+[Nifty Assignments](http://nifty.stanford.edu/)
+
 Color:
 
 Generative Art Blog using Processing by SigHack
