@@ -26,7 +26,8 @@ void drawRecursiveCircles(float x, float y, float size,  int count  ){
   if( count <0){  //stop repeat - test for termination
     return; //stops execution of the function
   }
-  count--;  //decrease our count variable
+  count--;  //decrease our count variable before recursive call
+  
   float hue = map( size, 0, maxSize, 0, 90);
   fill( hue, 100, 100,30);
   ellipse( x, y, size, size); //task
