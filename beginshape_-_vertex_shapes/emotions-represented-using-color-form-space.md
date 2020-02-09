@@ -1,4 +1,5 @@
 # Emotions Represented using Color, Form, Space
+Wassily Kandinsky 
 
 ### Modeling Emotions:  Feeling, Context, Experience:
 
@@ -14,6 +15,10 @@
 **Joseph E. LeDoux**
 ["Feelings: What Are They & How Does the Brain Make Them?" Joseph E. LeDoux (PDF)](https://www.cns.nyu.edu/home/ledoux/pdf/daed_LeDoux_2015.pdf)
 >Rational thought has always been treated as a product of the mind, and emotions were traditionally viewed as belonging to the body.
+
+**Feeling our Emotions: The Difference between Feelings and Emotions. ** [A. Damasio, Scientific American](https://www.scientificamerican.com/article/feeling-our-emotions/)
+>Damasio: In everyday language we often use the terms interchangeably. This shows how closely connected emotions are with feelings. But for neuroscience, **emotions are more or less the complex reactions the body has to certain stimuli**. When we are afraid of something, our hearts begin to race, our mouths become dry, our skin turns pale and our muscles contract. This emotional reaction occurs automatically and unconsciously. **Feelings occur after we become aware in our brain of such physical changes; only then do we experience the feeling of fear**.
+
 
 ### Recommended Books:
 
