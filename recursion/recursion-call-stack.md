@@ -8,7 +8,7 @@ When our program is executing, a special section of the computer's memory-space 
 
 ![](/stack.png)
 
-Each time a function is called, the code for the function, as well as space for function arguments and return values, is pushed onto the top of the call stack. When the function finishes execution, then that code it is removed or popped-off of the top of the stack. A stack only allows items to be added to the top-end, so it is called a Last-In-First-Out (LIFO) data structure. In contrast, a queue is a First-In-First-Out data structure. In our programs, the draw() function is constantly being pushed onto the stack, then it is popped off the stack when it's completed executing the code. We can imagine other functions may be called by processing, after the draw function has completed executing, to do such tasks as to render our image to the screen. Then the draw() function would be pushed back onto the stack when it was called to execute again. We can imagine the draw() function is being called by processing within a while loop, that stops running when our program is stopped. 
+Each time a function is called, the code for the function, as well as space for function arguments and return values, is pushed onto the top of the call stack. When the function finishes execution, then that code it is removed or popped-off of the top of the stack. A stack only allows items to be added to the top-end, so it is called a Last-In-First-Out (LIFO) data structure. In contrast, a queue is a First-In-First-Out data structure. In our programs, the draw() function is constantly being pushed onto the stack, then it is popped off the stack when it's completed executing the code. 
 
 ###Simplified Stack: Loop vs. Recursive Factorial Function
 
