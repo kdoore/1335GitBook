@@ -15,6 +15,7 @@
 
 ## Project 1
 
+* [Modeling Emotions](modeling-emotions.md)
 * [Emotions represented using color, form, space](beginshape_-_vertex_shapes/emotions-represented-using-color-form-space.md)
   * [Kandinsky Color - Emotion](beginshape_-_vertex_shapes/emotions-represented-using-color-form-space/kandinsky-color-emotion.md)
   * [Emotional Intelligence](beginshape_-_vertex_shapes/emotions-represented-using-color-form-space/emotional-intelligence.md)
@@ -29,7 +30,6 @@
   * [Plan Region Size, Color](programmatic-variations-in-color/plan-region-size-color.md)
 * [Map Function](map-function.md)
 * [Transforms for Mirroring](scale-transform-for-mirroring.md)
-* [Modeling Emotions](modeling-emotions.md)
 * [Project1-Steps](project1-steps.md)
 
 ## Grid Based Designs

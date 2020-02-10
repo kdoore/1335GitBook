@@ -18,6 +18,7 @@ In order to recall our emotions that are associated with our selected experience
 
 
 [Article: Fear or Defense Circuit, Dr Joseph Ledoux](https://brainworldmagazine.com/on-fear-emotions-and-memory-an-interview-with-dr-joseph-ledoux/)
+>emotions are conscious experiences that occur when we find our self in a situation where a challenge or opportunity exist. Some occur when a survival circuit is active — like fear — while others don’t involve survival circuits — like pride. **What defines the emotion is** not whether there’s a survival circuit that’s active but **whether we interpret the situation we’re in as either challenging or potentially beneficial. **
 
 [Dr Joseph Ledoux: Wikipedia](https://en.wikipedia.org/wiki/Joseph_E._LeDoux)
 
