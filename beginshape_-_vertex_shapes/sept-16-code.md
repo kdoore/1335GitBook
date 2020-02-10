@@ -1,8 +1,5 @@
 ###Example Code
 
-
-
-
 ```java
 
 float maxLen = 100;
