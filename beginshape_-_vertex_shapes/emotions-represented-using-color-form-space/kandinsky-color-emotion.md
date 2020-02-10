@@ -2,7 +2,7 @@
 
 Kandinsky - Concerning The Spiritual in Art
 
-[Book Review](https://www.wassilykandinsky.net/)
+[Book Review - WassilyKandinsky.net](https://www.wassilykandinsky.net/)
 >In this remarkable book, anticipating “the spiritual turning-point” Kandinsky reflects on his understanding of progress in this direction. This is not a process that would happen automatically. It requires a lot of work and implies a great responsibility of both artist and viewer. The task of the artist is to find “the principle of the innermost necessity” that he or she can use through expressive means to achieve the goal, “vibration of the human soul.”
 
 >Using captivating analogies, Kandinsky dwells at length on the artistic means: the psychology of color, the compositional interrelation of forms, etc. However, the main goal of an artist still remains to find that very innermost necessity”, that is based on the spiritual foundations of the individual.
