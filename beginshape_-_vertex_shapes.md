@@ -94,5 +94,27 @@ void drawRectangle( float xWidth, float yHeight){
  }
 ```
 
+###Function to Create PShape
+```java
+
+PShape rect = createRect( 100, 200); //call the function
+
+//Function that creates and returns a PShape.
+PShape createRect( float xWidth, float yHeight){
+   PShape s = createShape();
+   s.beginShape();
+   s.vertex( 0,0);
+   s.vertex( xWidth, 0);
+   s.vertex( xWidth, yHeight);
+   s.vertex( 0, yHeight);
+   s.endShape( CLOSE);
+   return s;
+ }
+```
+
+
+
+
+
 
 
