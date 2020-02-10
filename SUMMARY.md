@@ -17,6 +17,7 @@
 
 * [Emotions represented using color, form, space](beginshape_-_vertex_shapes/emotions-represented-using-color-form-space.md)
   * [Kandinsky Color - Emotion](beginshape_-_vertex_shapes/emotions-represented-using-color-form-space/kandinsky-color-emotion.md)
+  * [Emotional Intelligence](beginshape_-_vertex_shapes/emotions-represented-using-color-form-space/emotional-intelligence.md)
 * [Project 1: PShapes ](beginshape_-_vertex_shapes.md)
   * [Example Code](beginshape_-_vertex_shapes/sept-16-code.md)
   * [Design Diagram: Art Expression](beginshape_-_vertex_shapes/diagram-and-art-expression.md)
