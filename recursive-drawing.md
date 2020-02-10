@@ -179,14 +179,15 @@ void setup(){
     
     float fraction = map( length, lenMin, lenMax, .2, 1.0);
     color curColor =  color( hue(c1), saturation(c1), brightness( c1)*fraction);
-     vertexShape( length, curColor ); //this is our task
+     PShape s = vertexShape( length, curColor ); //this is our task
+     shape( s, 0,0); //render the shape to canvas
     recursivePattern( length * 0.8, level-1,c1 ); //call recursive function - reduce value of variables 
     }
     
     
-    //Draws one PShape each time it is called
+    //Create one PShape each time it is called
 //PShape size is determined by input parameter: len
-void vertexShape( float len, color c1){
+PShape vertexShape( float len, color c1){
     PShape s = createShape();
     s.setFill(c1);
     s.beginShape();
@@ -196,7 +197,7 @@ void vertexShape( float len, color c1){
     s.vertex( len * .5, len * .5);
     s.vertex( 0, len);
     s.endShape(CLOSE);
-    shape( s, 0,0); //this displays the shape at the origin
+    return s;
 }
     
     ```
