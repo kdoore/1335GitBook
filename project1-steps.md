@@ -7,7 +7,7 @@
 See [Models of Emotion: ](/modeling-emotions.md), [Concept Maps](https://en.wikipedia.org/wiki/Concept_map), [Mental Models](https://en.wikipedia.org/wiki/Mental_model)
 
 **Create Personal Situation Concept Map**
-Select a personal situation that has .  Sketch a concept-map to brainstorm the concepts and emotions associated with your situation.
+Select a personal situation that has an associated range of positive and negative emotions.  Sketch a concept-map to brainstorm the concepts and emotions associated with your situation.
 
 * Divide your concept-map sketch into 2 regions:  Negative, Positive
 * Put 'Situation' as the center concept \( no need to provide specific details about situation \)
