@@ -38,7 +38,7 @@ In the code below, we define a Recursive function: `recursivePattern()` that cre
         }
         PShape s = vertexShape( length); //- task - create PShape by calling the vertexShape function
         shape( s, 0, 0); //draw the shape on the canvas at x=0,y=0.
-        recursivePattern( length - 20, level -1 ); //recursive call
+        recursivePattern( length* 0.8, level -1 ); //recursive call
     }
 ```
 ### Program using recursivePattern function

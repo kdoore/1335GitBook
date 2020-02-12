@@ -23,7 +23,7 @@ void recursivePattern1(  float len, int level, color c1    ) {
   if ( level<1) { //termination condition
     return;//stops the function from executing
   }
-  //TASK for the recurisve function
+  //TASK for the recursive function
   float fraction = map( len, 0, maxLen, 0.4, 1.0);
   color curColor = color( hue( c1), saturation(c1), brightness(c1) * fraction );
   PShape s1 = createShape1( len, curColor );
@@ -31,7 +31,7 @@ void recursivePattern1(  float len, int level, color c1    ) {
   shape( s1, 0, 0);
 
   recursivePattern1( len * 0.8, level-1, curColor);
-  s1 = createShape1( len, curColor );
+ 
 }
 
 
