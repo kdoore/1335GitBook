@@ -1,4 +1,4 @@
-# Summary
+# Table of contents
 
 * [Introduction](README.md)
 
@@ -11,7 +11,7 @@
 * [Recursion](recursion.md)
   * [Recursion Call-Stack](recursion/recursion-call-stack.md)
   * [Example Code](recursion/class-code-sept12f19.md)
-    * [Example Code Feb 5 S20 ](recursion/class-code-sept12f19/example-code-feb-5-s20.md)
+    * [Example Code Feb 5 S20](recursion/class-code-sept12f19/example-code-feb-5-s20.md)
     * [Feb 12 Code](recursion/class-code-sept12f19/feb-12-code.md)
 
 ## Project 1
@@ -19,8 +19,8 @@
 * [Modeling Emotions](modeling-emotions.md)
 * [Emotions represented using color, form, space](beginshape_-_vertex_shapes/emotions-represented-using-color-form-space.md)
   * [Kandinsky Color - Emotion](beginshape_-_vertex_shapes/emotions-represented-using-color-form-space/kandinsky-color-emotion.md)
-  * [Emotional Intelligence](beginshape_-_vertex_shapes/emotions-represented-using-color-form-space/emotional-intelligence.md)
-* [Project 1: PShapes ](beginshape_-_vertex_shapes.md)
+  * [Emotional Intelligence](project-1/emotions-represented-using-color-form-space/emotional-intelligence.md)
+* [Project 1: PShapes](beginshape_-_vertex_shapes.md)
   * [Example Code](beginshape_-_vertex_shapes/sept-16-code.md)
   * [Inspiration](beginshape_-_vertex_shapes/diagram-and-art-expression.md)
 * [PShape with Cutout - Inner Contour](pshape-with-cutout-inner-contour.md)
@@ -60,7 +60,7 @@
 * [Function: DisplayShapeMatrix\(\)](function-displayshapematrix.md)
 * [Transforms for Position, Rotation, Scale of ShapeMatrix Elements](transforms-for-position-rotation-scale-of-shapematrix-elements.md)
 * [Project 2 - Steps](project-2-design-using-2d-pshape-array-lerpcolor-processing-transform-functions.md)
-* [Animation for ShapeMatrix ](animation-for-shapematrix.md)
+* [Animation for ShapeMatrix](animation-for-shapematrix.md)
   * [Animation w/Noise](animation-for-shapematrix/animation-wnoise.md)
 
 ## Object Oriented Programming
