@@ -1,6 +1,6 @@
 # Table of contents
 
-* [Introduction](README.md)
+* [CS 1335 Computer Science 1](README.md)
 
 ## Getting Started
 
@@ -20,7 +20,7 @@
 * [Emotions represented using color, form, space](beginshape_-_vertex_shapes/emotions-represented-using-color-form-space.md)
   * [Kandinsky Color - Emotion](beginshape_-_vertex_shapes/emotions-represented-using-color-form-space/kandinsky-color-emotion.md)
   * [Emotional Intelligence](project-1/emotions-represented-using-color-form-space/emotional-intelligence.md)
-* [Project 1: PShapes](beginshape_-_vertex_shapes.md)
+* [Project 1: PShapes](project-1/beginshape_-_vertex_shapes/README.md)
   * [Example Code](beginshape_-_vertex_shapes/sept-16-code.md)
   * [Inspiration](beginshape_-_vertex_shapes/diagram-and-art-expression.md)
 * [PShape with Cutout - Inner Contour](pshape-with-cutout-inner-contour.md)
