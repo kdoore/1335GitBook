@@ -1,6 +1,6 @@
 # Table of contents
 
-* [CS 1335 Computer Science 1](README.md)
+* [Introduction](README.md)
 
 ## Getting Started
 
@@ -19,8 +19,8 @@
 * [Modeling Emotions](modeling-emotions.md)
 * [Emotions represented using color, form, space](beginshape_-_vertex_shapes/emotions-represented-using-color-form-space.md)
   * [Kandinsky Color - Emotion](beginshape_-_vertex_shapes/emotions-represented-using-color-form-space/kandinsky-color-emotion.md)
-  * [Emotional Intelligence](project-1/emotions-represented-using-color-form-space/emotional-intelligence.md)
-* [Project 1: PShapes](project-1/beginshape_-_vertex_shapes/README.md)
+  * [Emotional Intelligence](beginshape_-_vertex_shapes/emotions-represented-using-color-form-space/emotional-intelligence.md)
+* [Project 1: PShapes](beginshape_-_vertex_shapes.md)
   * [Example Code](beginshape_-_vertex_shapes/sept-16-code.md)
   * [Inspiration](beginshape_-_vertex_shapes/diagram-and-art-expression.md)
 * [PShape with Cutout - Inner Contour](pshape-with-cutout-inner-contour.md)
@@ -28,7 +28,7 @@
 * [Project 1: Recursive Drawing](recursive-drawing.md)
 * [Project 1: Programmatic Variations in Color](programmatic-variations-in-color.md)
   * [Recursion with rotate, scale](programmatic-variations-in-color/recursion-with-rotate-scale.md)
-  * [Plan Region Size, Color](programmatic-variations-in-color/plan-region-size-color.md)
+  * [Plan Region Size, Color](project-1/programmatic-variations-in-color/plan-region-size-color.md)
 * [Map Function](map-function.md)
 * [Transforms for Mirroring](scale-transform-for-mirroring.md)
 * [Project1-Steps](project1-steps.md)
