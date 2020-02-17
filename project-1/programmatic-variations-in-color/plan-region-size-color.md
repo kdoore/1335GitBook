@@ -1,9 +1,11 @@
 # Plan Region Size, Color
 
+#### Define Global Variables
+
 * Define global variables to determine size range for pattern
-* Define global variable balancePoint - can be animated for more interest
+* Define global variable balancePoint - can be animated for more interest 
 
-
+#### Define Positive, Negative Custom Shape Functions
 
 * Define custom Shape functions:
 * Creates a single shape using len, c1
@@ -11,11 +13,15 @@
   * posCustomShape\( float len, color c1\)
   * negCustomShape\( float len, color c1\)
 
+#### Define  Positive, Negative RecursivePattern Functions
+
 * Define recursive functions: Creates a set of nested shapes - gradient in size, brightness
 * Include Logic to determine changing brightness, changing size for each layered shape.
 
   * posRecursivePattern\( float len, color c1, color c2\)
   * negRecursivePattern\( float len, color c1, color c2\)
+
+#### Define Positive, Negative Pattern Functions
 
 * Define functions:  Creates 1 pattern - at  current mouse position, Gradients in color and size across the positive region
   * positivePattern\( float balancePoint \)
@@ -24,7 +30,7 @@
 Example Code
 
 ```java
-//Feb 17, 2020
+
 float balancePoint;
 float minSize = 1;
 float maxSize = 50;
