@@ -28,8 +28,9 @@
 * [Project 1: Recursive Drawing](project-1/recursive-drawing.md)
 * [Planning Structure: Functions:](project-1/plan-structure--functions.md)
 * [Project 1: Programmatic Variations in Color](project-1/programmatic-variations-in-color/README.md)
-  * [Recursion with rotate, scale](project-1/programmatic-variations-in-color/recursion-with-rotate-scale.md)
-* [Map Function](project-1/map-function.md)
+  * [LerpColor](project-1/programmatic-variations-in-color/lerpcolor.md)
+  * [Map Function](project-1/programmatic-variations-in-color/map-function.md)
+  * [Map with LerpColor](project-1/programmatic-variations-in-color/recursion-with-rotate-scale.md)
 * [Transforms for Mirroring](project-1/scale-transform-for-mirroring.md)
 * [Project1-Steps](project-1/project1-steps.md)
 

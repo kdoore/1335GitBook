@@ -28,8 +28,8 @@ description: Plan structure of functions for Positive and Negative Regions
 #### Define Positive, Negative Pattern Functions
 
 * Define functions:  Creates 1 pattern - at  current mouse position, Gradients in color and size across the positive region
-  * positivePattern\( float balancePoint \)
-  * negativePattern\( float balancePoint\)
+  * positivePattern\( float balancePoint, int mX \)
+  * negativePattern\( float balancePoint, int mX\)
 
 Example Code
 
@@ -125,4 +125,6 @@ PShape customPosShape(  float len, color c1){
 
   
 ```
+
+![](../.gitbook/assets/screenshot-2020-02-17-10.27.53.png)
 
