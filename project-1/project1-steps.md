@@ -127,16 +127,20 @@ void posRecursivePattern( float size, color c1){
 `if(size < minSize)  
 { return; }`
 
-You **must modify  size for each recursive call**, this can be done when setting the input parameters as below. 
-
-`posRecursivePattern( size * 0.8, c1);` 
-
 #### Recursive Function Task: Create, Render Custom PShape
+
+Use map function to determine how brightness should change for each individual PShape layer.  Local variable: fraction changes as size changes, with the smallest size corresponding to the smallest fraction value: 0.2.  Adjust as needed.   
 
 `float fraction = map( size, minSize, maxSize, 0.2, 1.0);   
 color curColor = color( hue(c1), saturation( c1),brightness(c1)*fraction);   
 PShape s1 = customPosShape( size, curColor);    
 shape(s1,0,0); //render the shape at the origin`
+
+#### Recursive Function Call
+
+You **must modify  size for each recursive call**, this can be done when setting the input parameters as below. 
+
+`posRecursivePattern( size * 0.8, c1);` 
 
 ### Step 4. Custom PShapes: Specify Vertex using len  parameter
 
