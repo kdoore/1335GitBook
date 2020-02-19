@@ -84,13 +84,17 @@ void positivePattern(  float balancePoint, int mX){
 
 * you must determine logic for negative region
 
-#### Random Pops of Color - Optional
+#### Optional: Random Pops of Color, Hue Variation 
 
 * Optional:  determine probability for random pop of color, this can be set for each region, or can vary within each region using map\( \) to set value of float randPopColor
 
-  `float randPopColor = map( mouseX, balancePoint, width, 0.3, 0.6); positive`
+  `float randPopColor = map( mouseX, balancePoint, width, 0.2, 0.4);   
+  float randValue = random( 0, 1);  
+  if( randValue < randPopColor){  
+       curColor = color( 250, 100, 100);   
+  }` 
 
-* you can add small variation in hue
+* you can add small variation in hue `float hueVariation = random( -5, 5); curColor = color( hue(curColor) + hueVariation, saturation(curColor), brightness(curColor));`
 
 **Call Recursive Function**
 
