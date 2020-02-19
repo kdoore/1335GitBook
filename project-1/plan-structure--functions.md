@@ -128,3 +128,7 @@ PShape customPosShape(  float len, color c1){
 
 ![](../.gitbook/assets/screenshot-2020-02-17-10.27.53.png)
 
+![Planning Document](../.gitbook/assets/proj1_f19_1335_img_small.jpg)
+
+
+
