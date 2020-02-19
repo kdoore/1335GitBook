@@ -1,8 +1,8 @@
 # Project1-Steps
 
-1. Conceptual Art to Express Emotion / Energy 
+### Conceptual Art to Express Emotion / Energy 
 
-**Step 1: Determine Emotions to express:**
+### **Step 1: Determine Emotions to express:**
 
 See [Models of Emotion: ](modeling-emotions.md), Concept Maps, [Mental Models](https://en.wikipedia.org/wiki/Mental_model)
 
@@ -13,18 +13,16 @@ See [Models of Emotion: ](modeling-emotions.md), Concept Maps, [Mental Models](h
 * Add associated concepts to negative or positive sides
 * Add emotions to each side, position the emotions to indicate the strength of emotion - with the strongest emotions located at the outer edges of the regions, neutral emotions near the central dividing line 
 * Result: Select at least 5 emotions to represent in your artwork, list these along the bottom of your concept map.
-* **Complete Project Planning Document**
-  * Tables:
-    * Define variables: 
-      * colors \( minimum of 4 custom colors required \)
-      * Pshape length ranges \(minLen, maxLen\)
-    * Main Emotions: ordered list of 5 emotions
-    * Determine Design Attributes
-      * map function parameters for values on both sides of the negative / positive regions: how do values change as mouseX changes?
-* **Use planning document as a guide to complete the logic** to determine input parameters the RecursivePattern functions, for each region, negative, positive.
-  * Negative - region:  0 &lt; mouseX &lt; balancePoint
-  * Positive - region: balancePoint &lt; mouseX &lt; width
-* **RecursivePattern function parameters:**  are determined in the positivePattern\( \) , negativePattern\( \) functions, depending region and mouseX value:
+* **Project Planning Document**
+  * Define variables: 
+    * region colors \( minimum of 4 custom colors required \)
+    * PShape length ranges \(minSize, maxSize\)
+  * Main Emotions: ordered list of 5 emotions or feelings
+*  **Planning document as a guide to complete the logic** to determine parameters for the RecursivePattern functions, for each region..
+  * **Negative - region:**  0 &lt; mouseX &lt; balancePoint
+  * **Positive - region:** balancePoint &lt; mouseX &lt; width
+
+## Code Structure:  Function Signatures:
 
 ```java
 //Helper Functions will call Recursive pattern functions
@@ -46,9 +44,9 @@ PShape customPosShape(  float len, color c1)
 PShape customPosShape(  float len, color c1)
 ```
 
-### **PositivePattern, NegativePattern:**   
+### **Step 2:  Region Logic: PositivePattern, NegativePattern:**   
 
-#### **Helper functions: with logic for each region to determine color, size based on mouseX position.**
+#### **Helper functions: with logic for each region to determine color, size based on mouseX position relative to the balancePoint position.**
 
 ```java
 //determine current size, color: gradients across the positive region
@@ -98,7 +96,7 @@ void positivePattern(  float balancePoint, int mX){
 
 `posRecursivePattern( curSize, curColor);`
 
-###  **Recursive Function:**
+###  **Step 3:  Recursive Functions:**
 
 ```java
      //Draws a single motif - nested size and color gradient
@@ -139,4 +137,35 @@ You **must modify  size for each recursive call**, this can be done when setting
 color curColor = color( hue(c1), saturation( c1),brightness(c1)*fraction);   
 PShape s1 = customPosShape( size, curColor);    
 shape(s1,0,0); //render the shape at the origin`
+
+### Step 4. Custom PShapes: Specify Vertex using len  parameter
+
+```java
+//Draws a single shape
+PShape customPosShape(  float len, color c1){
+  PShape s; //declare our first object-type variable //heap - object memory
+  fill( c1);//attempt to set color for the shape
+  s = createShape( );//initialize our shape
+  s.beginShape();
+  s.vertex( 0,0  ); //1 x, y points
+  s.vertex(.5 * len , 0 ); //2
+  s.vertex(len , .5* len ); //3
+  s.vertex(.5 * len , len  );//4
+  s.vertex( 0,  .5* len ); //5
+  s.vertex( 0, 0 ); //6
+  
+  s.beginContour(); //make internal cutout 
+  s.vertex( len*.25,len*.45); //inner cutouts - point 5
+  s.vertex(len*.6, len*.6);  // 
+  s.vertex( len*.45, len*.25); // 
+  s.vertex(0,0);
+  s.endContour(); //end internal cutout
+
+  
+  s.endShape();
+  //shape( s, 0,0);  //render to the canvas
+  return s; //return the PShape
+  
+}
+```
 
