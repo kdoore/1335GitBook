@@ -24,7 +24,7 @@ See [Models of Emotion: ](modeling-emotions.md), Concept Maps, [Mental Models](h
 * **Use planning document as a guide to complete the logic** to determine input parameters the RecursivePattern functions, for each region, negative, positive.
   * Negative - region:  0 &lt; mouseX &lt; balancePoint
   * Positive - region: balancePoint &lt; mouseX &lt; width
-* **RecursivePattern function parameters:**  are determined in the draw\( \) function, depending region and mouseX value:
+* **RecursivePattern function parameters:**  are determined in the positivePattern\( \) , negativePattern\( \) functions, depending region and mouseX value:
 
 ```java
 //Helper Functions will call Recursive pattern functions
@@ -38,6 +38,7 @@ void negativePattern( float balancePoint, int mx)
 void posRecursivePattern(float size,  color c1  )
 void negRecursivePattern(float size,  color c1 )
 
+
 //Custom PShape functions - use vertex points
 //minimum of 8 vertex points per function
 //one shape must have a cutout - inner contour
@@ -45,11 +46,27 @@ PShape customPosShape(  float len, color c1)
 PShape customPosShape(  float len, color c1)
 ```
 
-**These are the main customizations you will do for this project** 
-
 ### **PositivePattern, NegativePattern:**   
 
 #### **Helper functions: with logic for each region to determine color, size based on mouseX position.**
+
+```java
+//determine current size, color: gradients across the positive region
+void positivePattern(  float balancePoint, int mX){
+   
+  color cPos1 = color( 230, 100, 100); //purple
+  color cPos2 = color( 80, 100, 100); //lime
+  
+  //define curColor based on mX relative to balancePoint
+  float fraction = map( mX, balancePoint, width, 0.0, 1.0);
+  color curColor = lerpColor( cPos2, cPos1, fraction); //fraction varies beteween 0.0, 1.0
+  
+  float curSize = map( mX, balancePoint, width, minSize, maxSize );
+  
+  //Call Recursive Function
+  posRecursivePattern( curSize, curColor);
+  }
+```
 
 **float curSize** - determined by region and mouseX
 
@@ -57,7 +74,7 @@ PShape customPosShape(  float len, color c1)
 
 `float curSize = map( mX, balancePoint, width, minSize, maxSize );`
 
-**color c1, color cMain** - determined by region and mouseX
+**colors:  Define 2 colors per region: cPos1, cPos2** - determined by region and mouseX
 
 * use map\( \) to determine color gradient fraction
 
@@ -77,18 +94,49 @@ PShape customPosShape(  float len, color c1)
 
 * you can add small variation in hue
 
-  ```java
-  
-  ```
+**Call Recursive Function**
 
- **Recursive Function Call**
+`posRecursivePattern( curSize, curColor);`
 
-* You **must modify count for each recursive call**, this can be done when setting the input parameters as below.  
-
-  You will modify **len** for each recursive call because we are creating nested shapes, multiply by a fractional value.
+###  **Recursive Function:**
 
 ```java
-      //Recursive call within Recursive Function - must modify count, len values;
-     RecursivePattern( len * 0.8,  count-1, c1 ); //reduce values: len, count
+     //Draws a single motif - nested size and color gradient
+void posRecursivePattern( float size, color c1){
+  //termination test
+  if(size < minSize){
+    return;
+  }
+  //task
+  float fraction = map( size, minSize, maxSize, 0.2, 1.0); //may want to customize
+  color curColor = color( hue(c1), saturation( c1), brightness(c1)*fraction);
+  PShape s1 = customPosShape( size, curColor); //test the shape
+  shape(s1,0,0); //render the shape at the origin
+  
+  //recursive call
+  posRecursivePattern( size * 0.8, c1); 
+  //task - with reversed stacking - mirror across origin
+  pushMatrix();
+  scale( -1, -1);//mirror across the x, y axis (origin)
+  shape( s1, 0, 0);
+  popMatrix();
+}
+
 ```
+
+#### Termination Condition
+
+`if(size < minSize)  
+{ return; }`
+
+You **must modify  size for each recursive call**, this can be done when setting the input parameters as below. 
+
+`posRecursivePattern( size * 0.8, c1);` 
+
+#### Recursive Function Task: Create, Render Custom PShape
+
+`float fraction = map( size, minSize, maxSize, 0.2, 1.0);   
+color curColor = color( hue(c1), saturation( c1),brightness(c1)*fraction);   
+PShape s1 = customPosShape( size, curColor);    
+shape(s1,0,0); //render the shape at the origin`
 
