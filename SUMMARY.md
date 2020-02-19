@@ -27,6 +27,7 @@
 * [VertexShape - Recursion](project-1/project-1-pshape-pattern-recursion.md)
 * [Project 1: Recursive Drawing](project-1/recursive-drawing.md)
 * [Planning Structure: Functions:](project-1/plan-structure--functions.md)
+* [Example Code - Feb 19](project-1/example-code-feb-19.md)
 * [Project 1: Programmatic Variations in Color](project-1/programmatic-variations-in-color/README.md)
   * [LerpColor](project-1/programmatic-variations-in-color/lerpcolor.md)
   * [Map Function](project-1/programmatic-variations-in-color/map-function.md)
