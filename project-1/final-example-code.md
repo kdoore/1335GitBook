@@ -78,21 +78,23 @@ void posRecursivePattern( float size, color c1){
   color curColor = color( hue(c1), saturation( c1), brightness(c1)*fraction);
   
   PShape s1 = customPosShape( size, curColor); //test the shape
-  shape(s1,0,0); //render the shape at the origin
+  
+  shape(s1,0,0); //task1:render the shape at the origin
   
   pushMatrix();
-  scale( -1, 1);   //mirrored across the y axis
+  scale( -1, 1);   //task2: mirrored across the y axis
   shape( s1, 0, 0);
   popMatrix();
   
   pushMatrix();
-  scale( 1, -1);   //mirrored across the x axis
+  scale( 1, -1);   //task3: mirrored across the x axis
   shape( s1, 0, 0);
   popMatrix();
   
   //recursive call
   posRecursivePattern( size * 0.8, c1); //modify size so we terminate
-  //task - with reversed stacking - mirror across origin
+  
+  //task 4 - with reversed stacking - mirror across origin
   pushMatrix();
   scale( -1, -1);//mirror across the x, y axis (origin)
   shape( s1, 0, 0);
