@@ -1,4 +1,10 @@
-# Final Example Code
+---
+description: >-
+  The code below shows example logic for positive region functions along with
+  the function structures for the negative region functions.
+---
+
+# Final Code Structure
 
 ```java
 float minSize, maxSize;
