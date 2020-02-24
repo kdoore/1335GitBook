@@ -1,19 +1,19 @@
-# Project1-Steps
+# Project 1-Steps
 
 ### Conceptual Art to Express Emotion / Energy 
 
 ### **Step 1: Determine Emotions to express:**
 
-See [Models of Emotion: ](modeling-emotions.md), Concept Maps, [Mental Models](https://en.wikipedia.org/wiki/Mental_model)
+See [Models of Emotion: ](modeling-emotions.md), [Concept Maps](https://en.wikipedia.org/wiki/Concept_map), [Mental Models](https://en.wikipedia.org/wiki/Mental_model),[ Mind Map](https://en.wikipedia.org/wiki/Mind_map)
 
-**Create Personal Situation Concept Map.** Select a personal situation that has an associated range of positive and negative emotions. Sketch a concept-map to brainstorm the concepts and emotions associated with your situation.
+**Create Personal Situation Concept Map. \(Submit with Project 1 documents\)** Select a personal situation that has an associated range of positive and negative emotions. Sketch a concept-map to brainstorm the concepts and emotions associated with your situation.
 
 * Divide your concept-map sketch into 2 regions:  Negative, Positive
 * Put 'Situation' as the center concept \( no need to provide specific details about situation \)
 * Add associated concepts to negative or positive sides
 * Add emotions to each side, position the emotions to indicate the strength of emotion - with the strongest emotions located at the outer edges of the regions, neutral emotions near the central dividing line 
 * Result: Select at least 5 emotions to represent in your artwork, list these along the bottom of your concept map.
-* **Project Planning Document**
+* **Project Planning Document - \( does not need to be submitted with Project 1 documents \)**
   * Define variables: 
     * region colors \( minimum of 4 custom colors required \)
     * PShape length ranges \(minSize, maxSize\)

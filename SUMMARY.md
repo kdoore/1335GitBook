@@ -34,7 +34,7 @@
   * [Map Function](project-1/programmatic-variations-in-color/map-function.md)
   * [Map with LerpColor](project-1/programmatic-variations-in-color/recursion-with-rotate-scale.md)
 * [Transforms for Mirroring](project-1/scale-transform-for-mirroring.md)
-* [Project1-Steps](project-1/project1-steps.md)
+* [Project 1-Steps](project-1/project1-steps.md)
 
 ## Grid Based Designs
 
