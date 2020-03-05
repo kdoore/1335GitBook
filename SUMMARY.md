@@ -38,8 +38,7 @@
 
 ## Grid Based Designs
 
-* [Computational Design](grid-based-designs/computational_design/README.md)
-  * [Generative Design](grid-based-designs/computational_design/generative-design.md)
+* [Computational Design](grid-based-designs/computational_design.md)
 * [Artist: Victor Vasarely](grid-based-designs/vasarely.md)
 * [Grid Pattern Design](grid-based-designs/arrays-for-grid-patterns.md)
 * [1D - Array of PShapes for Grid Layout](grid-based-designs/pshapes-in-grid-layout/README.md)
