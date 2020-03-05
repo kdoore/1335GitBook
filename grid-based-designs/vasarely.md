@@ -1,6 +1,6 @@
 # Artist: Victor Vasarely
 
-![Zoeld V    Victor Vasarely 1967](../.gitbook/assets/vasarely-zoeld-v-1967.jpg)
+![Zoeld V , 1967   Victor Vasarely](../.gitbook/assets/vasarely-zoeld-v-1967.jpg)
 
 **Victor Vasarely is considered a pioneer of the op-art movement**.
 
