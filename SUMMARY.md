@@ -43,6 +43,7 @@
 * [Grid Pattern Design](grid-based-designs/arrays-for-grid-patterns.md)
 * [1D - Array of PShapes for Grid Layout](grid-based-designs/pshapes-in-grid-layout/README.md)
   * [Truchet Tiling](grid-based-designs/pshapes-in-grid-layout/truchet-tiling.md)
+  * [Example Code S2020](grid-based-designs/pshapes-in-grid-layout/example-code-s2020.md)
   * [Example Code](grid-based-designs/pshapes-in-grid-layout/oct-8f19-code.md)
 * [PShapes in Grid Regions](grid-based-designs/pshapes-in-grid-regions.md)
 * [Grid Region Logic](grid-based-designs/grid-region-logic.md)
