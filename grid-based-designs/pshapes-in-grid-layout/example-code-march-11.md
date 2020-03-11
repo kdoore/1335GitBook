@@ -1,6 +1,6 @@
 # Example Code March 11
 
-```text
+```java
 //MARCH 11, 2020
 
 //setup is called one time to initialize config and variables
