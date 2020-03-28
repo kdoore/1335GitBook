@@ -6,11 +6,11 @@ For Project 2, students will create a Processing program to create custom 2D-Gri
 
 ### YouTube Video: Overview of Project 2 
 
-{% embed url="https://youtu.be/1bqQiGU7m4s" %}
-
-
+{% embed url="https://www.youtube.com/watch?v=W-ICRs-ERmk" caption="Overview of Project 2" %}
 
 ## Inspiration:
+
+#### 
 
 Examine [inspiration artwork - Victor Vasarely](https://www.google.com/search?q=vasarely+art&sxsrf=ACYBGNR5aOjh-L3KJOhN3rHijlyrhLv15A:1571140401369&source=lnms&tbm=isch&sa=X&ved=0ahUKEwiDxY-Mmp7lAhURlKwKHeNaDGgQ_AUIEygC&biw=1740&bih=1064&dpr=0.75) to observe pattern design rules, then incorporate similar rules in your custom design. Design rules are implemented when populating the 2D array, using logic to create patterns, see [Grid Patterns](grid-patterns-using-2d-array-indexes-i-j/) for examples.
 
