@@ -1,6 +1,6 @@
 # Table of contents
 
-* [Introduction](README.md)
+* [CS 1335 Computer Science 1](README.md)
 
 ## Getting Started
 
@@ -25,27 +25,22 @@
   * [Inspiration](project-1/beginshape_-_vertex_shapes/diagram-and-art-expression.md)
 * [PShape with Cutout - Inner Contour](project-1/pshape-with-cutout-inner-contour.md)
 * [VertexShape - Recursion](project-1/project-1-pshape-pattern-recursion.md)
-* [Recursive Patterns](project-1/recursive-drawing.md)
-* [Planning Structure: Functions:](project-1/plan-structure--functions/README.md)
-  * [Example Code - Feb 19](project-1/plan-structure--functions/example-code-feb-19.md)
-  * [Final Code Structure](project-1/plan-structure--functions/final-example-code.md)
+* [Project 1: Recursive Drawing](project-1/recursive-drawing.md)
 * [Project 1: Programmatic Variations in Color](project-1/programmatic-variations-in-color/README.md)
-  * [LerpColor](project-1/programmatic-variations-in-color/lerpcolor.md)
-  * [Map Function](project-1/programmatic-variations-in-color/map-function.md)
-  * [Map with LerpColor](project-1/programmatic-variations-in-color/recursion-with-rotate-scale.md)
+  * [Recursion with rotate, scale](project-1/programmatic-variations-in-color/recursion-with-rotate-scale.md)
+  * [Plan Region Size, Color](project-1/programmatic-variations-in-color/plan-region-size-color.md)
+* [Map Function](project-1/map-function.md)
 * [Transforms for Mirroring](project-1/scale-transform-for-mirroring.md)
-* [Project 1-Steps](project-1/project1-steps.md)
+* [Project1-Steps](project-1/project1-steps.md)
 
 ## Grid Based Designs
 
-* [Computational Design](grid-based-designs/computational_design.md)
+* [Computational Design](grid-based-designs/computational_design/README.md)
+  * [Generative Design](grid-based-designs/computational_design/generative-design.md)
 * [Artist: Victor Vasarely](grid-based-designs/vasarely.md)
 * [Grid Pattern Design](grid-based-designs/arrays-for-grid-patterns.md)
 * [1D - Array of PShapes for Grid Layout](grid-based-designs/pshapes-in-grid-layout/README.md)
   * [Truchet Tiling](grid-based-designs/pshapes-in-grid-layout/truchet-tiling.md)
-  * [Example Code S2020](grid-based-designs/pshapes-in-grid-layout/example-code-s2020.md)
-  * [Example Code March 11](grid-based-designs/pshapes-in-grid-layout/example-code-march-11.md)
-  * [Example - March9](grid-based-designs/pshapes-in-grid-layout/example-march9.md)
   * [Example Code](grid-based-designs/pshapes-in-grid-layout/oct-8f19-code.md)
 * [PShapes in Grid Regions](grid-based-designs/pshapes-in-grid-regions.md)
 * [Grid Region Logic](grid-based-designs/grid-region-logic.md)
