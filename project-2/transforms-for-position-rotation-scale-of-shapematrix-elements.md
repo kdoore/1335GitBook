@@ -6,7 +6,7 @@ To create a complete artwork, we can take several simple 2D grids and position t
 
 Given a simple grid design element, shown positioned at the origin, repetition of this single motif, using Processing transform functions: `translate( x, y)`, `rotate( angle)`, `scale( scaleX, scaleY)`; can provide a simple way to create an interesting design composition.
 
-![](../.gitbook/assets/screenshot-2017-09-28-09.49.38.png)
+![Asymmetric Square  Unit - Default Region 1 ](../.gitbook/assets/screenshot-2017-09-28-09.49.38.png)
 
 ## Rotation of Grid Units:
 
@@ -61,6 +61,8 @@ void displayRotateRegion2(PShape[][] shapesMatrix,int rows, int cols, int cellSi
 ## Additional Patterns using Rotate and Scale
 
 ![](../.gitbook/assets/screenshot-2017-09-28-12.58.55.png)
+
+### Example Code - TODO: Create 4-Unit Composition
 
 ```java
 //Transforms to create 4-Grid Composition
