@@ -28,8 +28,8 @@ int k= i + j; //i,j are for-loop indexes
 if(k % 2 == 0){
     fill( 100 + k *10); //gradient logic
 }
-    else{
-fill(240); //light gray
+else{
+    fill(240); //light gray
 }
 ```
 
