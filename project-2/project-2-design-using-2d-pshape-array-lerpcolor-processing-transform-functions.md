@@ -4,6 +4,12 @@
 
 For Project 2, students will create a Processing program to create custom 2D-Grid Artwork using 2 different PShape vertex patterns. Project 2 builds on understanding learned in Project 1, creating PShape objects by specifying a set of vertex points.
 
+### YouTube Video: Overview of Project 2 
+
+{% embed url="https://youtu.be/1bqQiGU7m4s" %}
+
+
+
 ## Inspiration:
 
 Examine [inspiration artwork - Victor Vasarely](https://www.google.com/search?q=vasarely+art&sxsrf=ACYBGNR5aOjh-L3KJOhN3rHijlyrhLv15A:1571140401369&source=lnms&tbm=isch&sa=X&ved=0ahUKEwiDxY-Mmp7lAhURlKwKHeNaDGgQ_AUIEygC&biw=1740&bih=1064&dpr=0.75) to observe pattern design rules, then incorporate similar rules in your custom design. Design rules are implemented when populating the 2D array, using logic to create patterns, see [Grid Patterns](grid-patterns-using-2d-array-indexes-i-j/) for examples.
@@ -61,6 +67,9 @@ shape( testShape, 300,300);//display at canvas center
 
 ```java
 //example use of recursive function
+//create the group PShape before calling the recursive function 
+//pass the group PShape into the recursive function
+//after the function has executed, the g PShape object will have all recursive stacked shapes
 PShape g = createShape(GROUP); //this will hold stacked child PShapes
 recursivePattern1( g, size,5, foreground ) ;//g is input
 //after function execution, g contains stacked children
