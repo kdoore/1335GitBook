@@ -59,7 +59,9 @@ k = min\( i, j\);
 
 ## Max\( i, j\);
 
-The logic for the image above uses the fact that along square shaped sections, like the outer bottom-row and the right-column both share the feature that the max value of the i,j index for each element is 5. ![](../../.gitbook/assets/screenshot-2017-09-27-19.40.34.png) The [lerpColor\( \) function](https://kdoore.gitbooks.io/cs1335/content/lerpcolor-and-map.html) can use a factor like k to determine color for each grid cell.
+The logic for the image above uses the fact that along square shaped sections, like the outer bottom-row and the right-column both share the feature that the max value of the i,j index for each element is 5.  The [lerpColor\( \) function](https://kdoore.gitbooks.io/cs1335/content/lerpcolor-and-map.html) can use a factor like k to determine color for each grid cell.
+
+![](../../.gitbook/assets/screenshot-2017-09-27-19.40.34.png)
 
 ```java
 //Code snippet for random logic to determine which shape is created.
