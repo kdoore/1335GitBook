@@ -70,7 +70,7 @@ The image below is drawn using the code above. ![](../../.gitbook/assets/screen-
 
 For the code above, we simply calculated the value of k = i + j, then used it to calculate some grayscale fill. Without much additional effort, we can create color gradients by using map\( \) and lerpColor\( \) functions.
 
-```text
+```java
 void setup(){
   size( 400,400);
   colorMode(HSB, 360, 100,100); //corresponds to the color selector
