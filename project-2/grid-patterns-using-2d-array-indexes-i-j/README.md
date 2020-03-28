@@ -76,5 +76,40 @@ The image below uses logic: color factor k = min\( i, j\). In addition, there ar
 
 ![](../../.gitbook/assets/screenshot-2017-09-27-19.58.32.png)
 
+### Modulus Logic - Odd / Even: k % 2 == 0
+
+```java
+
+ void drawOddEvenLogic( int xPos,int yPos, int i, int j, int size){
+      int k= i + j;
+      if(k % 2 == 0){
+      fill( 100 + k *10);
+      }
+      else{
+        fill(240);
+      }
+      rect(xPos, yPos, size, size);
+}
+ 
+```
+
 ![](../../.gitbook/assets/screenshot-2017-09-24-09.08.55.png)
+
+### Boolean Conditional Modulus Logic: Mod5 or Mod7
+
+![](../../.gitbook/assets/screen-shot-2020-03-28-at-1.46.15-pm.png)
+
+```java
+//Mod 5 or Mod 7
+void drawModLogic( int xPos,int yPos, int i, int j, int size){
+      int k= i + j;
+      if(k % 5 == 0 || k% 7 ==0){
+      fill( 100 + k *10);
+      }
+      else{
+        fill(240);
+      }
+      rect(xPos, yPos, size, size);
+}
+```
 
