@@ -8,6 +8,12 @@ Given a simple grid design element, shown positioned at the origin, repetition o
 
 ![Asymmetric Square  Unit - Default Region 1 ](../.gitbook/assets/screenshot-2017-09-28-09.49.38.png)
 
+### YouTube Video
+
+{% embed url="https://youtu.be/x\_qkTwvOuJo" %}
+
+
+
 ## Rotation of Grid Units:
 
 Given a single grid unit positioned at the canvas origin, let's look at the result of rotations of a single grid unit through 90, 180, and 270 degrees, where rotation always occurs around the canvas origin.
@@ -63,6 +69,8 @@ void displayRotateRegion2(PShape[][] shapesMatrix,int rows, int cols, int cellSi
 ![](../.gitbook/assets/screenshot-2017-09-28-12.58.55.png)
 
 ### Example Code - TODO: Create 4-Unit Composition
+
+See YouTube video for details of the code below
 
 ```java
 //Transforms to create 4-Grid Composition

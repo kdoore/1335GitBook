@@ -1,5 +1,9 @@
 # Grid Patterns using 2D Array Indexes: i, j
 
+The image below uses logic: color factor k = min\( i, j\) in regions 1 and 4. In addition, there are diagonal color gradients blocks in regions 2 and 3. The primary block unit has been repeated 4 times across adjacent regions, where `scale( scaleX, scaleY)` has been used to create [mirror-images](https://kdoore.gitbooks.io/cs1335/content/transforms-for-position-rotation-scale-of-shapematrix-elements.html) of the basic unit
+
+![](../../.gitbook/assets/screenshot-2017-09-28-13.26.58.png)
+
 ## Diagonal Color Gradients
 
 ![](../../.gitbook/assets/screenshot-2017-09-24-08.43.41.png)
@@ -47,22 +51,6 @@ In the images below, we can see that there are 2 different design units, shape1 
 
 We can use the Processing random\(min,max \) function to simulate random events. We define and initialize a random variable: `rand` that will be assigned a decimal value between 0.0 and 2.0. We determine that if `rand > 1`, then we `vertexPattern1( )`, like a coin flip, roughly half the time we'll have `rand < 1` and instead we'll `vertexPattern2( )`.
 
-## Other Patterns based on i, j index
-
-![](../../.gitbook/assets/screenshot-2017-09-27-19.38.40.png)
-
-## min\( i, j\)
-
-The logic for the image above uses the fact that along square shaped sections, like the outer top-row and the left-column both share the feature that the minimum value of the i,j index for each element is 0.
-
-k = min\( i, j\);
-
-## max\( i, j\);
-
-The logic for the image above uses the fact that along square shaped sections, like the outer bottom-row and the right-column both share the feature that the max value of the i,j index for each element is 5.  The [lerpColor\( \) function](https://kdoore.gitbooks.io/cs1335/content/lerpcolor-and-map.html) can use a factor like k to determine color for each grid cell.
-
-![](../../.gitbook/assets/screenshot-2017-09-27-19.40.34.png)
-
 ```java
 //Code snippet for random logic to determine which shape is created.
 float rand= random(0,2);
@@ -74,9 +62,21 @@ else{
 }
 ```
 
-The image below uses logic: color factor k = min\( i, j\). In addition, there are color gradients on both the foreground and background colors. The primary block unit has been repeated 4 times across adjacent regions, where `scale( scaleX, scaleY)` has been used to create [mirror-images](https://kdoore.gitbooks.io/cs1335/content/transforms-for-position-rotation-scale-of-shapematrix-elements.html) of the basic unit
+## Other Patterns based on i, j index
 
-![](../../.gitbook/assets/screenshot-2017-09-27-19.58.32.png)
+## min\( i, j\)
+
+The logic for the image below uses the fact that along square shaped sections, like the outer top-row and the left-column both share the feature that the minimum value of the i,j index for each element is 0.
+
+k = min\( i, j\);
+
+![](../../.gitbook/assets/screenshot-2017-09-27-19.38.40.png)
+
+## max\( i, j\);
+
+The logic for the image below uses the fact that along square shaped sections, like the outer bottom-row and the right-column both share the feature that the max value of the i,j index for each element is 5.  The [lerpColor\( \) function](https://kdoore.gitbooks.io/cs1335/content/lerpcolor-and-map.html) can use a factor like k to determine color for each grid cell.
+
+![](../../.gitbook/assets/screenshot-2017-09-27-19.40.34.png)
 
 ### Boolean Conditional Modulus Logic: Mod5 or Mod7
 
