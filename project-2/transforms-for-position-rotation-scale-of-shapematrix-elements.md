@@ -74,6 +74,7 @@ See YouTube video for details of the code below
 
 ```java
 //Transforms to create 4-Grid Composition
+//updated March 30, 2020
 
 void setup(){
   size( 400, 400);
@@ -86,12 +87,24 @@ void setup(){
  
  //add code using transforms below to generate 4-unit composition
   rotateRegion2( s, artSize);
+ // scaleRegion2( s, artSize);
 }
 
 //render 1 unit in Region2
 void rotateRegion2( PShape s, float artSize){
    pushMatrix();
    translate( artSize, 0);
+   //todo add rotate content
+   rotate( radians( 90));
+   shape(s, 0,0);
+   popMatrix();
+}
+
+void scaleRegion2( PShape s, float artSize){
+   pushMatrix();
+   translate( artSize, 0);
+   //todo add scale logic
+   scale( -1.0, 1.0);
    shape(s, 0,0);
    popMatrix();
 }

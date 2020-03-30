@@ -50,8 +50,6 @@ Add the code below into the animation color logic, horizontal mouse movement wil
   color curColor = lerpColor( accentMx,aqua, fractionColor)
 ```
 
-;
-
 #### Move code into the draw function for animation
 
 #### Added logic: mousePressed for noLoop\(\), keyPressed for loop\(\)
