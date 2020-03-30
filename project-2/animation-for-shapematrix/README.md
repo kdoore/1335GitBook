@@ -59,13 +59,6 @@ Add the code below into the animation color logic, horizontal mouse movement wil
 ## Animation Code:
 
 ```java
-void setup() {
-  size( 800, 800);
-  colorMode(HSB, 360, 100, 100);
-  background(0);
-
-}
-
 
 void setup() {
   size( 400, 400);
