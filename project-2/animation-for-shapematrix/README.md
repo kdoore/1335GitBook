@@ -76,10 +76,18 @@ void draw() {
   if (mousePressed) { 
     noLoop();
   }
+  updateArrayDisplay();
+} //end draw
+
+//press any key to restart animation
+void keyPressed() {
+  loop();
+}
+
+void updateArrayDisplay() {
   //fixed values
   float artWorkSize = width;
   float regionSize = artWorkSize/2;
-
   int rows = 10;
   int cols = 10;
   float cellSize = regionSize/cols;
@@ -121,11 +129,6 @@ void draw() {
   scale( -1, -1); //mirror across origin and make smaller
   displayShapeMatrix( myShapes, rows, cols, cellSize);
   popMatrix();
-} //end draw
-
-//press any key to restart animation
-void keyPressed() {
-  loop();
 }
 
 void mirrorRegion2(PShape[][] shapes, int rows, int cols, float cellSize, float artWorkSize  ) {
@@ -191,8 +194,6 @@ PShape createEllipse( float len, color c1) {
   return s;
 }
 
-
-
 PShape createPosShape( float len, color c1) {
   PShape s = createShape();
   s.beginShape();
@@ -213,6 +214,7 @@ PShape createPosShape( float len, color c1) {
   s.endShape(CLOSE); //end shape
   return s;
 }
+
 
 ```
 
