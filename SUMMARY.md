@@ -65,6 +65,7 @@
 
 ## Object Oriented Programming
 
+* [OOP vs Data-Flow](object-oriented-programming/oop-vs-data-flow.md)
 * [Introduction to Objects](object-oriented-programming/introduction-to-objects.md)
 * [Button States](object-oriented-programming/button_states.md)
 * [Buttons as Objects](object-oriented-programming/buttons_as_objects/README.md)
