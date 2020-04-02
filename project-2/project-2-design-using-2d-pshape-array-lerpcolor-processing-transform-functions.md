@@ -16,6 +16,108 @@ Create a 2D Array of PShape objects, create grid patterns using HSB colorMode an
 
 **Project Structure: Functions:**
 
+#### Here is the basic structure for Project 3.  See Details below on how to complete the missing code within this framework.  You must add your own custom colors and vertexShape functions
+
+```java
+void setup() {
+  size(400, 400);
+  background(0);
+  colorMode(HSB, 360, 100, 100);
+
+//scale factors - allows custom-sizing 
+  int artWorkSize=width;
+  int regionWidth = artWorkSize/2;
+
+  //dimensions for grid motif that occupies 1/4 size of the artWork 
+  int rows = 20;
+  int cols = rows;
+  float cellSize = float(regionWidth/cols);
+
+  //Create the data
+  //create smaller grid sections - 
+  PShape[][] shapesMatrix1 = new PShape[rows][cols];
+  populate2DArray1(shapesMatrix1 ,rows, cols, cellSize  );
+
+  PShape[][] shapesMatrix2 = new PShape[rows][cols];
+  //Create function definition below
+  //populate2DArray1(shapesMatrix2 ,rows, cols, cellSize  );
+
+  //Display the Data
+  //add comments
+  displayShapeMatrix(shapesMatrix1, rows, cols, cellSize);
+  
+  //displayRegion2( shapesMatrix2, rows, cols, cellSize);
+  //add similar function calls for Region3 , Region4
+}
+
+void populate2DArray1(PShape[][] shapeMatrix, int rows, int cols, float cellSize) {
+  color c1=color(0); //DEFINE Your custom colors here
+  color c2 = color(360); //DEFINE Your custom colors here
+  for ( int i=0; i< rows; i++) {
+    for ( int j=0; j< cols; j++) {
+      int k = i + j;
+      //calculate fill color
+      float kFraction = map( k, 0, (rows-1) + (cols-1), 0.0, 1.0);
+      color c3 = lerpColor(c1, c2, kFraction);
+      //fill( c3 ); ///use map? max of k is 10
+      PShape curShape = rectPattern( cellSize, c3);
+      shapeMatrix[i][j]= curShape;  //store in 2D array
+    } //end of inner loop (cols)
+  } //end of outer loop (rows) 
+} //end populate2DArray1
+
+/*  Modify and use this function 
+void populate2DArray2( ...... add parameters.....){
+  
+}
+*/
+
+
+void displayShapeMatrix(PShape[][] shapes, int rows, int cols, float size) {
+  int xPos=0;  
+  int yPos=0;         
+  for ( int i=0; i< rows; i++) {     
+    for ( int j=0; j< cols; j++) {   
+      shape(shapes[i][j], xPos, yPos);         
+      xPos += size;
+    }  //end inner for-loop (j:cols)     
+    xPos =0;       
+    yPos += size;
+  } //end outer for-loop (i:rows)
+} //end function
+
+/*  Other functions - Add params
+void displayRotateRegion2(   ........add params.....){
+  
+}
+
+void displayMirrorRegion2(   ........add params.....){
+  
+}
+
+void displayRotateRegion3(   ........add params.....){
+  
+}
+
+void displayMirrorRegion3(   ........add params.....){
+  
+}
+
+void displayRotateRegion4(   ........add params.....){
+  
+}
+
+*/
+
+//Use Custom Vertex Pattern from Project 1
+PShape rectPattern( float len, color c1) {
+  PShape s = createShape( RECT, 0, 0, len, len);
+  s.setFill(c1);
+  return s;
+}
+
+```
+
 ### Step 1 - VertexShape Functions
 
 * Create **2 functions** to create PShape vertex objects using float length, color foreground, and optional color: background as input parameters:
