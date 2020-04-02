@@ -14,9 +14,11 @@ Examine [inspiration artwork - Victor Vasarely](https://www.google.com/search?q=
 
 Create a 2D Array of PShape objects, create grid patterns using HSB colorMode and lerpColor to specify the color used. If using color-selector tool, specify `colorMode(HSB, 360,100,100); //specify max range values`
 
-**Project Structure: Functions:**
+## **Project Structure: Functions:**
 
-#### Here is the basic structure for Project 3.  See Details below on how to complete the missing code within this framework.  You must add your own custom colors and vertexShape functions
+Below is the basic function structure for Project 3.    
+See Details below on how to complete the missing code within this framework.    
+You must add your own custom colors and vertexShape functions
 
 ```java
 void setup() {
