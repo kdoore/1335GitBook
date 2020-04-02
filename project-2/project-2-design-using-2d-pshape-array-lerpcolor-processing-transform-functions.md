@@ -20,6 +20,8 @@ Below is the basic function structure for Project 3.
 See Details below on how to complete the missing code within this framework.    
 You must add your own custom colors and vertexShape functions
 
+#### Starter Code \(optional\)
+
 ```java
 void setup() {
   size(400, 400);
