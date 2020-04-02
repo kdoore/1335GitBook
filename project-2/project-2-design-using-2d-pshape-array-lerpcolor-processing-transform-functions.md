@@ -179,12 +179,7 @@ void setup(){
   size(400,400);
   background(0);
   colorMode(HSB, 360,100,100);
-  //DEFINE COLORS: 
-  color c1= color( 71, 100, 100); //yellow-green
-  color c2 = color(278,95,30);// dark purple
-  color c3 = color(0); //black
-  color c4=  color(200); //gray (white is 360)
-
+ 
   //scale factors - allows custom-sizing 
  int artWorkSize=width;
  int regionWidth = artWorkSize/2;
@@ -195,8 +190,11 @@ void setup(){
   float cellSize = float(regionWidth/cols);
 
   //create smaller grid sections - 
-  PShape[][] shapesMatrix1 = populate2DArray1(rows , cols ,cellSize, c1, c2  );
-  PShape[][] shapesMatrix2 = populate2DArray2(rows , cols ,cellSize, c1, c2, c3, c4   );
+  PShape[][] shapesMatrix1 = new PShape[rows][cols];
+  populate2DArray1(shapesMatrix1, rows , cols ,cellSize );
+   
+  PShape[][] shapesMatrix2 = new PShape[rows][cols];
+  populate2DArray2(shapesMatrix2,rows , cols ,cellSize  );
 
   //add comments
   displayShapeMatrix(shapesMatrix1,  rows , cols ,cellSize);
