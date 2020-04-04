@@ -174,10 +174,20 @@ shape( testShape, 300,300);//display at canvas center
 //create the group PShape before calling the recursive function 
 //pass the group PShape into the recursive function
 //after the function has executed, the g PShape object will have all recursive stacked shapes
+
+//void Populate2DArray(  -----  ){
+
+//add Custom Code Here
+
 PShape g = createShape(GROUP); //this will hold stacked child PShapes
-recursivePattern1( g, size,5, foreground ) ;//g is input
+recursivePattern1( g, cellSize,5, curColor) ;//g is input
 //after function execution, g contains stacked children
 shapes[i][j] = g; //store in the array
+
+//end custom shape code
+
+
+//} end of Populate2DArray
 
 //recursive function
 void recursivePattern1(PShape g, float len, float level, color c1){
@@ -217,7 +227,11 @@ void populate2DArray1(PShape[][] shapes , int rows, int cols,float cellSize, col
           int k = i + j;  //diagonal pattern
           float fractionK = map( k, 0, rows + cols-2, 0.0,1.0);
           color curColor = lerpColor( c1, c2, fractionK);
+          
+          //add custom shape here
           shapesMatrix[i][j] = vertexShape1(cellSize,curColor); 
+          //end custom shape code
+          
         }
      } //end for-loop i
 }//end function
