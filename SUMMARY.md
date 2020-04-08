@@ -68,6 +68,7 @@
 * [Introduction to Objects](object-oriented-programming/introduction-to-objects.md)
 * [Example Code S2020](object-oriented-programming/example-code-s2020/README.md)
   * [Class Code - 4/1/2020](object-oriented-programming/example-code-s2020/class-code-apr-1.md)
+  * [Class Code Wed Apr 8](object-oriented-programming/example-code-s2020/class-code-wed-apr-8.md)
 * [OOP vs Data-Flow](object-oriented-programming/oop-vs-data-flow.md)
 * [Button States](object-oriented-programming/button_states.md)
 * [Buttons as Objects](object-oriented-programming/buttons_as_objects/README.md)
