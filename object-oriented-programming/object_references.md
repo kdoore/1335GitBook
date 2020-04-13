@@ -37,21 +37,21 @@ Button myButton = new Button();  //create reference variable and call constructo
 Button myButtonPointer = myButton;  // 2 Button reference variables are both `referring` to a single Button object instance.
 ```
 
-1. **Passing Objects into Functions as Parameters**
+**6. Passing Objects into Functions as Parameters**
 
-   When we call a function or a method, if the function has an input parameter which is an object: then the address of the object is passed into the function. So, changes made to the function's local-parameter reference-variable are actually affecting the object, since it points to the same object adddress.
+When we call a function or a method, if the function has an input parameter which is an object: then the address of the object is passed into the function. So, changes made to the function's local-parameter reference-variable are actually affecting the object, since it points to the same object adddress.
 
-   ```text
-   //create function that takes an object as input parameter
-   void myFunction( Button localButton ){
-        localButton.x = 100;
-   }
-   Button myButton = new Button();
-   myButton.x = 5;
-   myFunction( myButton ); 
+```text
+//create function that takes an object as input parameter
+void myFunction( Button localButton ){
+     localButton.x = 100;
+}
+Button myButton = new Button();
+myButton.x = 5;
+myFunction( myButton ); 
 
-   println(myButton.x);  ///myButton.x is now 100, it was modified in the function
-   ```
+println(myButton.x);  ///myButton.x is now 100, it was modified in the function
+```
 
-   When this function completes executing, then the local parameter, localButton, is destroyed, so it's no longer pointing at the object.
+When this function completes executing, then the local parameter, localButton, is destroyed, so it's no longer pointing at the object.
 
