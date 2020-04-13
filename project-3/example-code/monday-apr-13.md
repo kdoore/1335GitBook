@@ -1,5 +1,5 @@
 ---
-description: Started code for PImageButton Class
+description: Started code for PImageButton Child Class
 ---
 
 # Monday Apr 13
@@ -97,6 +97,8 @@ class Button{
 
 ```text
 //This tab will cause errors, it's missing code
+//child class of Button class
+
 class PImageButton extends Button{
   //Variables - Data
   PImage img;
