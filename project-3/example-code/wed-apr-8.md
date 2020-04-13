@@ -1,3 +1,7 @@
+---
+description: First versions of code for Project 3
+---
+
 # Wed Apr 8
 
 Main Tab - Version 1
@@ -31,6 +35,8 @@ void draw(){
 ```
 
 #### Button Class version 1
+
+Does not include code for text label
 
 ```text
 class Button{
