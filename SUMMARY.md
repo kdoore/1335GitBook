@@ -88,6 +88,8 @@
 ## Project 3
 
 * [Project 3 - Logic, Steps](project-3/drawing-application-logic.md)
+* [Example Code](project-3/example-code.md)
+* [Wed Apr 8](project-3/wed-apr-8.md)
 * [Project 3 - Class Definitions](project-3/project-3-class-definitions/README.md)
   * [Button](project-3/project-3-class-definitions/button.md)
   * [PImageButton](project-3/project-3-class-definitions/pimagebutton.md)
