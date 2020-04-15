@@ -1,4 +1,4 @@
-# Class Code Wed Apr 8
+# Code Wed Apr 8 v1
 
 During the class demo, the button's colors didn't show correctly.  It was a classic error, it would be nice if I could say I'd planned to make the error, but it was an honest error.  So a good lesson to be learned:  
 

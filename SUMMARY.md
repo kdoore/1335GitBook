@@ -67,9 +67,7 @@
 
 * [Introduction to Objects](object-oriented-programming/introduction-to-objects.md)
 * [Example Code S2020](object-oriented-programming/example-code-s2020/README.md)
-  * [Class Code - 4/1/2020](object-oriented-programming/example-code-s2020/class-code-apr-1.md)
-  * [Class Code Wed Apr 8](object-oriented-programming/example-code-s2020/class-code-wed-apr-8.md)
-  * [Class Code Apr 15](object-oriented-programming/example-code-s2020/class-code-apr-15.md)
+  * [Code  Wed Apr 1](object-oriented-programming/example-code-s2020/class-code-apr-1.md)
 * [OOP vs Data-Flow](object-oriented-programming/oop-vs-data-flow.md)
 * [Button States](object-oriented-programming/button_states.md)
 * [Buttons as Objects](object-oriented-programming/buttons_as_objects/README.md)
@@ -90,8 +88,10 @@
 
 * [Project 3 - Logic, Steps](project-3/drawing-application-logic.md)
 * [Example Code S20](project-3/example-code/README.md)
-  * [Wed Apr 8](project-3/example-code/wed-apr-8.md)
-  * [Monday Apr 13](project-3/example-code/monday-apr-13.md)
+  * [Code Wed Apr 8 v1](project-3/example-code/class-code-wed-apr-8.md)
+  * [Code Wed Apr 8 v2](project-3/example-code/wed-apr-8.md)
+  * [Code Mon Apr 13](project-3/example-code/monday-apr-13.md)
+  * [Code Wed Apr 15](project-3/example-code/class-code-apr-15.md)
 * [Project 3 - Class Definitions](project-3/project-3-class-definitions/README.md)
   * [Button](project-3/project-3-class-definitions/button.md)
   * [PImageButton](project-3/project-3-class-definitions/pimagebutton.md)
