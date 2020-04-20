@@ -14,11 +14,15 @@ For Project 3, you will create a simple drawing application where 4 buttons allo
 
 ### Setup:  Initialize Global Variables
 
-#### Button\[ \] and ButtonGroup
+#### ButtonGroup
 
-* Create an array of 4 Buttons that function as a ButtonGroup to control which pattern is drawn.
-* Create 4 simple patterns \(PShapes\) that can be drawn at the mouse position, the active pattern can be changed by selecting one of 4 pattern buttons.
-* Add logic to have 1 of the 4 pattern buttons work as an eraser \( draw an ellipse with background color, the eraser color should not be modified by the sliders\)
+* In Setup, create an **array** btnArray of 4 Buttons that function as a ButtonGroup to control which pattern is drawn.
+* Initialize each Button: btnArray\[ i \] by calling the Button or PImageButton constructor.
+* Pass the array of buttons into the ButtonGroup constructor.
+* In draw:  add logic to displayButtons\( \) , each frame.
+* Add logic in mouseClicked\( \) to have btnGroup.clicked\( mouseX, mouseY\) execucted
+* Within mouseClicked, if the activeButton has changed, execute changePattern\( \), custom method. 
+* In the main tab: you will define a function: ChangePattern\( \) that will connect the active button with a corresponding simple Pattern \(PShapes\) that can be drawn at the mouse position, the active pattern can be changed by selecting one of 4 pattern buttons.
 
 #### Individual Button to Clear Canvas
 
@@ -26,7 +30,9 @@ For Project 3, you will create a simple drawing application where 4 buttons allo
 
 #### Pattern Objects to draw patterns
 
-* Create 4 Pattern Object instances. 
+* Create 2 Global Pattern Object variables, Initialize in Setup:  
+  * Pattern eraserPattern; //initialize in setup with PShape eraser, fillColor is backgroundColor
+  * Pattern currentPattern; // will point to current active pattern - set to eraserPattern to initialize in setup
 
 ### draw\( \) 
 
