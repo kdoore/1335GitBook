@@ -14,7 +14,7 @@ description: See Code in Tabs Below
 
 {% tabs %}
 {% tab title="Main Tab" %}
-```text
+```java
 //Main Tab
 //Make objects, objects call methods
 
@@ -44,7 +44,7 @@ void draw(   ){
 {% endtab %}
 
 {% tab title="Button" %}
-```text
+```java
 class Button{
   
   //Variables, Properties, Data stored in memory
