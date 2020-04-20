@@ -1,4 +1,4 @@
-# Code Monday Apr 20
+# Code Mon Apr 20
 
 Class Code - See Tabs:
 

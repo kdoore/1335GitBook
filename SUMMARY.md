@@ -91,7 +91,7 @@
   * [Code Wed Apr 8 v2](project-3/example-code/wed-apr-8.md)
   * [Code Mon Apr 13](project-3/example-code/monday-apr-13.md)
   * [Code Wed Apr 15](project-3/example-code/class-code-apr-15.md)
-  * [Code Monday Apr 20](project-3/example-code/code-monday-apr-20.md)
+  * [Code Mon Apr 20](project-3/example-code/code-monday-apr-20.md)
 * [Project 3 - Class Definitions](project-3/project-3-class-definitions/README.md)
   * [Button](project-3/project-3-class-definitions/button.md)
   * [PImageButton](project-3/project-3-class-definitions/pimagebutton.md)
