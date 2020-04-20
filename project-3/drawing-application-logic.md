@@ -12,6 +12,8 @@ For Project 3, you will create a simple drawing application where 4 buttons allo
 
 ### Overall Project Logic - Including Slider Logic
 
+### Setup:  Initialize Global Variables
+
 #### Button\[ \] and ButtonGroup
 
 * Create an array of 4 Buttons that function as a ButtonGroup to control which pattern is drawn.
@@ -26,20 +28,33 @@ For Project 3, you will create a simple drawing application where 4 buttons allo
 
 * Create 4 Pattern Object instances. 
 
-#### CheckSliders\( \) must occur before drawPattern\( \)
+### draw\( \) 
+
+     -  Checks if Sliders have changed value.  
+Checks if Mouse is pressed.  If so, then 
+
+### CheckSliders\( \) must occur before ChangePattern\( \)
 
 * CheckSlider\( \) method, checks each slider to see if it's value has changed.  Also includes logic for color dependency between sliders:  
   * satSlider's hue is set by the hueSlider's sliderVal;
   * brightSlider's hue is set by the hueSlider's sliderVal;
   * brightSlider's sat is set by the satSlider's sliderVal;
 
-#### DrawPattern\( \) Switch-case Control Structure
+### ChangePattern\( \) Switch-case Control Structure
 
-Switch-case structure allows one pattern to be set as active by using the activeBtnIndex of the ButtonGroup, to set an active pattern to be drawn on the canvas.
+Switch-case structure allows one pattern to be set as active by using the activeBtnIndex of the ButtonGroup, to set an active pattern to be drawn on the canvas. If using a Scale slider, then use a len variable that's modified by the scaleSlider, then used when creating each PShape.
 
-#### Sliders set fillColor for Patterns in drawPattern\( \)
+### **DisplayPattern\( \)**
 
-before displaying the currentPattern, we'll use custom sliders to set the hue, saturation, brightness of the drawn patterns. This logic will be near the bottom of drawPattern\(\), just before displaying the currentPattern. See code details below below:
+Sets the pattern color depending if it's the eraser or not, then calls curPattern.display\(\)
+
+### Sliders set fillColor for Patterns in drawPattern\( \)
+
+Before displaying the currentPattern, we'll use custom sliders to set the hue, saturation, brightness of the globalColor variable that's used when displaying patterns. This logic must be executed before displaying the currentPattern. See code details below below:
+
+### ClearCanvas\( \)
+
+A function to draw a rectangle of canvas-size, and backgroundColor, hides all previous patterns, called from mouseClicked when the clearButton is clicked.  After the clearButton is clicked, this method is executed, then the clearButton must be reset\( \).
 
 ## Main Tab Logic:
 
@@ -121,15 +136,17 @@ Slider hueSlider, satSlider, brightSlider;
 
 * if mousePressed
   * checkSliders\( \);  //check before drawPattern, when mousePressed
+  * changePattern\( \);
   * translate\(mouseX, mouseY\);
-  * drawPattern\( \);
+  * displayPattern\( \);
   * resetMatrix\(\);
-* drawButtonMenu\( \) //always draw menu of Buttons
+* displayButtons\( \) //always draw menu of Buttons
+* displaySliders\( \) //always draw menu of Sliders
 
-#### Logic in drawPattern\( \):
+#### Logic in changePattern\( \):
 
 * connects buttons to determine currentPattern
-* sets fill for currentPattern using slider's sliderVal
+* sets len for currentPattern if  using a scale slider's sliderVal
 * eraserPattern color is not changed by sliders, should have fillColor, strokeColor set to global bkgColor;
 * use switch-case structure
 * switch: check which buttonGroup button is active
@@ -138,9 +155,10 @@ Slider hueSlider, satSlider, brightSlider;
   void drawPattern( ){
 
      Pattern currentPatttern = eraserPattern;
-
+        float len = 100;
      switch(buttonGroup.activeBtnIndex){
-        case 0: 
+        case 0:
+            
              currentPattern.setFill(bkgColor);
              currentPattern.setStroke(bkgColor);
              currentPatttern = eraserPattern;
@@ -161,17 +179,7 @@ Slider hueSlider, satSlider, brightSlider;
         default:
               println("no match");
          }//end switch-case
-        if( currentPattern != eraserPattern){
-            //set color using sliders sliderVal if not the eraserPattern
-          float hue = hueSlider.sliderVal;
-          float sat = satSlider.sliderVal;
-          float bright = brightSlider.sliderVal;
-          color currentColor = color( hue, sat, bright);
-          currentPattern.setFill(currentColor);
-        }
-        currentPattern.display();
-
-    } // end drawPattern();
+   } // end checkPattern();
   ```
 
 #### Logic in drawButtonMenu\( \):
