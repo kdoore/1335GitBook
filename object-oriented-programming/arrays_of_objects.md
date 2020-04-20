@@ -4,16 +4,10 @@
 
 In the previous section, we discussed how to create a group of buttons which behave like radio buttons. In our ButtonGroup class, we created 3 instances of Button objects, then we defined methods which explicitly called each method for the button object instances. This is fine for our first pass at creating the Menu class, but once we figured out the required logic for implementing the button behavior, now we need to step back and analyze the code to see if we can make improvements. We can observe that the main function of the Menu class is to implement the Finite State Machine logic to control the activation of the group of Buttons: only 1 button can be active at any time, we need a state variable to remember which button is the currently active button.
 
-## Observations:
+## Observations: Version 1: Menu of Buttons
 
-```text
-    1. Our ButtonGroup is not very extensible since we have hard-coded the Button creation logic within 
-    the ButtonGroup class, we'd prefer flexibility in the number of buttons in our menu.
-
-    2. When looking at our code, we observe that we're performing the identical operations on each
-    button, this repetition of similar code suggests that using an Array and a loop could simplify
-    our code and could provide more flexibility.
-```
+1. Our first version for the Menu of Buttons is not very extensible since we have hard-coded the Button creation logic within the ButtonGroup class, we'd prefer flexibility in the number of buttons in our menu.
+2. When looking at our code, we observe that we're performing the identical operations on each button, this repetition of similar code suggests that using an Array and a loop could simplify our code and could provide more flexibility.
 
 ## Arrays as Constructor Input Parameters
 
@@ -69,19 +63,76 @@ If we look at the code for our initial attempt at writing the [ButtonGroup class
 Below is the array version of the above code. See comments to indicate that additional code was added to implement the specified functionality.
 
 ```java
-void clicked ( int mx, int my){
-    for( int i=0; i< numButtons; i++){  //for each button in the array of buttons
-      if( buttons[i].selected == false){ //if this button is not currently active
-      if(buttons[i].clicked( mx, my)){  //true if buttons[i].clicked returns true
-          activeBtnIndex = i; //keep track of current active Button
-          for ( int j=0; j< numButtons; j++){ //nested loop to turn off all other buttons
-            if( i != j){
-              buttons[j].reset();  //turn off the non active button
-             } //end if
-          } //end inner for loop
-        } // end is current button clicked == true
-      } //end is current button off
-    } //end outer for loop
-  }  //end clicked
+boolean clicked(int mx, int my){
+    boolean isChanged = false; //has a new button been selected
+     for( int i=0; i< buttons.length; i++){
+        if( buttons[i].selected == false){  //if buttons[i] was not previously selected
+             buttons[i].clicked(mx, my); //check to see if it's been clicked
+             if( buttons[i].selected == true){  // if it's now selected
+                 isChanged = true;
+                 activeBtnIndex = i;
+               for( int j=0; j< buttons.length; j++){  //for all other buttons
+                 if( i != j){    
+                   buttons[j].reset() ;  //turn the buttons off
+                 }
+               } 
+             }
+        }
+
+     }  
+     return isChanged;
+  }//end clicked method 
+```
+
+### Final Version of Button Group
+
+```java
+//add comments
+class ButtonGroup{
+
+  //PROPERTIES
+
+  Button[] buttons;
+  int activeBtnIndex;
+
+  //CONSTRUCTORS
+
+  //add comments
+  ButtonGroup(Button[] buttons){
+    this.buttons = buttons;
+    activeBtnIndex = 0;  //start with no button selected 
+  }
+
+  //METHODS
+
+  //add comments
+  void display(){
+    for( int i=0; i< buttons.length; i++){
+      buttons[i].display();
+    }
+  }
+
+  //add comments
+  boolean clicked(int mx, int my){
+    boolean isChanged = false; //has a new button been selected
+     for( int i=0; i< buttons.length; i++){
+        if( buttons[i].selected == false){  //if buttons[i] was not previously selected
+             buttons[i].clicked(mx, my); //check to see if it's been clicked
+             if( buttons[i].selected == true){  // if it's now selected
+                 isChanged = true;
+                 activeBtnIndex = i;
+               for( int j=0; j< buttons.length; j++){  //for all other buttons
+                 if( i != j){    
+                   buttons[j].reset() ;  //turn the buttons off
+                 }
+               } 
+             }
+        }
+
+     }  
+     return isChanged;
+  }//end clicked method 
+
+} // end class ButtonGroup
 ```
 
