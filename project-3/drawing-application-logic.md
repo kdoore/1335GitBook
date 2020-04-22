@@ -1,20 +1,16 @@
 # Project 3 - Logic, Steps
 
-#### Drawing Application Logic -
-
-#### Initial Logic
-
 For Project 3, you will create a simple drawing application where 4 buttons allow you to choose which pattern to draw. One additional button will clear the drawing canvas. 3 Sliders will be used to change the hue, saturation, brightness of the pattern that's drawn.
 
 **The code on this page, and the image below shows a first iteration for this project**
 
 ![](../.gitbook/assets/screenshot-2017-03-06-12.05.10.png)
 
-### Overall Project Logic - Including Slider Logic
+## Overall Project Logic - Including Slider Logic
 
 ### Setup:  Initialize Global Variables
 
-#### ButtonGroup
+#### ButtonGroup, ClearButton, Sliders, Patterns, Background Color
 
 * In Setup, create an **array** btnArray of 4 Buttons that function as a ButtonGroup to control which pattern is drawn.
 * Initialize each Button: btnArray\[ i \] by calling the Button or PImageButton constructor.
@@ -34,10 +30,10 @@ For Project 3, you will create a simple drawing application where 4 buttons allo
   * Pattern eraserPattern; //initialize in setup with PShape eraser, fillColor is backgroundColor
   * Pattern currentPattern; // will point to current active pattern - set to eraserPattern to initialize in setup
 
-### draw\( \) 
+### draw\( \):  Animation Logic 
 
-     -  Checks if Sliders have changed value.  
-Checks if Mouse is pressed.  If so, then 
+Checks if Sliders have changed value, if using a scale slider, then the patterns must also be changed to reflect the new value of len.  
+Checks if Mouse is pressed.  If so, then display current active pattern, also requires translation of origin to mouse position, patterns are drawn at origin.
 
 ### CheckSliders\( \) must occur before ChangePattern\( \)
 
@@ -176,6 +172,7 @@ Slider hueSlider, satSlider, brightSlider;
 
      Pattern currentPatttern = eraserPattern;
         float len = 100;
+        //Add Logic to modify len if using a scale slider
      switch(buttonGroup.activeBtnIndex){
         case 0:
              currentPatttern = eraserPattern;
@@ -206,7 +203,7 @@ Slider hueSlider, satSlider, brightSlider;
    } // end checkPattern();
   ```
 
-#### Logic in displayPattern\( \) 
+### Logic in displayPattern\( \) 
 
 ```java
 void displayPattern(){
@@ -214,6 +211,8 @@ void displayPattern(){
     currentPattern.fillColor = eraserPattern.fillColor;
     currentPattern.strokeColor = backgroundColor;
   }
+  currentPattern.fillColor = patternFillColor;  // in check sliders
+  currentPattern.strokeColor = color(0);//reset to black
   currentPattern.display();  //sliders will set colors for other patterns
 }
 ```
@@ -272,18 +271,16 @@ Sliders must always be checked for changes in sliderVal before drawing any patte
 * Incorporate Sliders into project using custom functions:
   * void checkSliders\( \);
   * void drawSliders \( \);
-  * in drawPattern\( \) - set currentPattern fillColor using sliderVal right before currentPattern is displayed: `currentPattern.display()`
+  * in displayPattern\( \) - set currentPattern fillColor using patternFillColor right before currentPattern is displayed: `currentPattern.display()`
     * see drawPattern above for integration of this example code:
 
 ```java
-    //Code chunk from drawPattern( ) in main tab
+    
     if( currentPattern != eraserPattern){
     //set color using sliders sliderVal if not the eraserPattern
-    float hue = hueSlider.sliderVal;
-    float sat = satSlider.sliderVal;
-    float bright = brightSlider.sliderVal;
-    color currentColor = color( hue, sat, bright);
-    currentPattern.setFill(currentColor);
+
+    //set 
+    currentPattern.fillColor = patternFillColor;
     }
 ```
 
@@ -306,14 +303,27 @@ void drawSliders( ){
 In CheckSliders, we must check to see if each slider has been pressed. We need to set the hue value for the satSlider using the current sliderVal of the hueSlider since the display of satSlider should change when the hueSlider is changed. Similarly for the brightSlider, it must have it's hue and sat reset to reflect current hueSlider and satSlider values.
 
 ```java
-void checkSliders(){
-  ///update sliders if the mouse has been pressed within their hitbox
-  hueSlider.checkPressed( mouseX, mouseY);
-  satSlider.hue = hueSlider.sliderVal;
-  satSlider.checkPressed( mouseX, mouseY);
-  brightSlider.hue = hueSlider.sliderVal;
-  brightSlider.sat = satSlider.sliderVal;
-  brightSlider.checkPressed( mouseX, mouseY);
+
+boolean checkSliders(){
+ boolean changed = false;
+  if(hueSlider.checkPressed( mouseX, mouseY)){
+    changed = true;
+    satSlider.hue = hueSlider.sliderVal;
+    //add logic for bright slider's hue
+  }
+  if(satSlider.checkPressed( mouseX, mouseY)){
+    changed = true;
+    //add logic for bright slider's hue
+  }
+  
+  if(brightSlider.checkPressed( mouseX, mouseY)){
+    changed=true;
+  }
+  patternFillColor = color( hueSlider.sliderVal, satSlider.sliderVal, brightSlider.sliderVal);
+  if( scaleSlider.checkPressed(mouseX, mouseY)){
+    changed = true;
+  }
+ return changed;
 }
 ```
 
@@ -361,9 +371,9 @@ void mouseClicked(){
 
 #### Logic in clearCanvas\( \):
 
-called when clearBtn has been clicked and has on==true
+called when clearButton has been clicked and has on==true
 
-* set fill to global background color: bkgColor
+* set fill to global background color: backgroundColor
 * draw a rectangle, the size of the entire canvas, to clear the canvas.  `rect( 0, 0, width, height)`
 
 ```java
