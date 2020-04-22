@@ -74,60 +74,74 @@ A function to draw a rectangle of canvas-size, and backgroundColor, hides all pr
 ```java
 //Global Variables
 
-Pattern eraserPattern, pattern1, pattern2, pattern3; 
+//Main Tab
+//Make objects, objects call methods
 
-color bkgColor;   //declare global variable
-Button myClearBtn; ///simple Button for Clear
-ButtonGroup buttonGroup; 
+//Global Variables
+ButtonGroup btnGroup;  //will hold 4 pattern buttons
+Button clearButton;//declare the variable as global - btn is null
+color backgroundColor;
+Pattern currentPattern; //pointer variable keeps track of active Pattern
+Pattern eraserPattern;  //has a PShape circle and background fillColor
 
 Slider hueSlider, satSlider, brightSlider;
 ```
 
-#### Logic In Main Tab:  setup\( \)
+## Logic In Main Tab:  
+
+### Logic to Initialize Objects in setup\( \)
 
 * Set Canvas Size: min: 800 x 600
 * Set colorMode - HSB
 * **Initialize objects by calling constructors:**
   * **declare an Array of Buttons**
 
-    `Button[] buttons;`
+    `Button[] btnArray;`
 
   * **initialize Array of Buttons**
 
-    `buttons = new Button[4];`
+    `btnArray = new Button[4];`
 
   * **initialize each Array element by calling Button , PImageButton Constructors** _You need to figure out Button constructor parameter values so that buttons are positioned in a vertical stack._
 
     ```java
-    color onColor = color(300);  //set custom button colors
-    color offColor = color(100);
-    buttons[0] = new Button( 20, 20, 100, 100, onColor, offColor,"Eraser" );
 
-    //similar parameters for other buttons
-    buttons[1] = new PImageButton( parameters ); 
-    buttons[2] = new PImageButton( parameters ); 
-    buttons[3] = new PImageButton( parameters );
+    Button[] btnArray = new Button[4]; //declare and initialize button array
+      btnArray[0] = new Button( 10, 10, 100, 100, "Eraser");
+  
+      PImage img1 = loadImage( "pattern1Btn.png"); //file name with extension
+      btnArray[1] = new PImageButton( ... parameters ...);
+  
+      btnArray[2] = new PImageButton( ... parameters ...);
+  
+      btnArray[3] = new PImageButton( ... parameters ...);
+  
+      //Initialize ButtonGroup
+      btnGroup = new ButtonGroup( btnArray );
+ 
     ```
 
-  * **initialize buttonGroup** by calling ButtonGroup Constructor and pass buttonArray as a parameter
+  * **initialize btnGroup** by calling ButtonGroup Constructor and pass buttonArray as a parameter
 
-    `buttonGroup = new ButtonGroup( buttons);`
+    `btnGroup = new ButtonGroup( btnArray);`
 
   * **initialize clearButton** by calling Button Constructor - use either Button or PImageButton
 
-    `clearButton = new Button( parameters );`
+    `clearButton = new Button( ...parameters... );`
 
-  * **initialize Pattern Objects**
-    * Create 4 PShapes, pass one to each Pattern Constructor 
+  * **initialize eraserPattern, currentPattern Objects**
+    * Create 1 PShape, pass one to Pattern Constructor 
       * Example initialization for 2 Patterns shown below
-      * 4 pattern objects required
+      * 2 pattern objects required
+        * **`eraserPattern`** initialized with PShape
+        * **`currentPattern`** initialized by pointing to eraserPattern's object data in heap:  sets to same memory address
 
 ```java
-        PShape EraserPShape = createShape( ELLIPSE, 0,0,30,30);
-        EraserPattern = new Pattern( EraserPShape);
-
-        PShape shape1 = createShape( RECT, 0,0,30, 80);
-        Pattern1 = new Pattern( shape1 );
+    PShape EraserPShape = createShape( ELLIPSE, 0,0,30,30);
+    eraserPattern = new Pattern( EraserPShape);
+    
+    //keeps track of current pattern
+    currentPattern = eraserPattern;
 ```
 
 * **Initialize Sliders** Initialize Sliders by calling constructors with proper input parameters to determine position, size, min, max range
@@ -138,48 +152,52 @@ Slider hueSlider, satSlider, brightSlider;
   brightSlider = new BrightSlider(  parameters );
   ```
 
-#### Logic In draw\( \):
+### Logic In draw\( \):
 
-* if mousePressed
+* **if mousePressed**
   * checkSliders\( \);  //check before drawPattern, when mousePressed
-  * changePattern\( \);
+  * changePattern\( \); //if using scale slider and checkSliders returns true
   * translate\(mouseX, mouseY\);
   * displayPattern\( \);
   * resetMatrix\(\);
 * displayButtons\( \) //always draw menu of Buttons
 * displaySliders\( \) //always draw menu of Sliders
 
-#### Logic in changePattern\( \):
+### Logic in changePattern\( \):
 
 * connects buttons to determine currentPattern
-* sets len for currentPattern if  using a scale slider's sliderVal
-* eraserPattern color is not changed by sliders, should have fillColor, strokeColor set to global bkgColor;
+* sets **len** for currentPattern if  using a **scale slider's sliderVal**
+* **eraserPattern** color is not changed by sliders, should have fillColor, strokeColor set to global backgroundColor;
 * use switch-case structure
 * switch: check which buttonGroup button is active
 
   ```java
-  void drawPattern( ){
+  void changePattern( ){
 
      Pattern currentPatttern = eraserPattern;
         float len = 100;
      switch(buttonGroup.activeBtnIndex){
         case 0:
-            
-             currentPattern.setFill(bkgColor);
-             currentPattern.setStroke(bkgColor);
              currentPatttern = eraserPattern;
         break;
 
         case 1:
-             currentPatttern = pattern1;
+             PShape shape1 = createShape( RECT, 0,0,len, len);
+             currentPatttern = new Pattern( shape1 );
         break;
 
         case 2:
-             currentPatttern = pattern2;
+             //call your custom vertex function - remove color parameter
+              //PShape shape2 = createShape( RECT, 0,0,len*0.8, len* 1.2);
+              PShape shape2 = vertexShape2( len );
+              currentPatttern = new Pattern( shape2);
         break;
 
         case 3:
-             currentPatttern = pattern3;
+             //call your custom vertex function - remove color parameter
+             //PShape shape3 = createShape( ELLIPSE, 0,0,len*0.6, len* 1.2);
+              PShape shape3 = vertexShape3( len );
+              currentPatttern = new Pattern( shape3);
         break;
 
         default:
@@ -188,6 +206,18 @@ Slider hueSlider, satSlider, brightSlider;
    } // end checkPattern();
   ```
 
+#### Logic in displayPattern\( \) 
+
+```java
+void displayPattern(){
+  if( currentPattern == eraserPattern){
+    currentPattern.fillColor = eraserPattern.fillColor;
+    currentPattern.strokeColor = backgroundColor;
+  }
+  currentPattern.display();  //sliders will set colors for other patterns
+}
+```
+
 #### Logic in drawButtonMenu\( \):
 
 Draw 5 buttons: 4 buttons in buttonGroup, 1 clearButton
@@ -195,10 +225,10 @@ Draw 5 buttons: 4 buttons in buttonGroup, 1 clearButton
 * draw a menu-background \(rectangle\)
 * buttonGroup.display\(\);
 * clearButton.display\(\);
+*   **Logic In MouseClicked\(  \):**
 
-  **Logic In MouseClicked\(  \):**
-
-* buttonGroup.clicked\( parameters \)
+* btnGroup.clicked\( parameters \)
+* if 
 * clearButton.click\( parameters \)  
 * if clearButton is selected
 
@@ -206,6 +236,22 @@ Draw 5 buttons: 4 buttons in buttonGroup, 1 clearButton
   * reset the clearButton
 
   **Detailed Logic for Adding Sliders to Drawing Application**
+
+```java
+void mouseClicked(   ) {
+//see if the activeButtonIndex has changed to indicate a new button is active
+  boolean isChanged = btnGroup.clicked( mouseX, mouseY);
+  if( isChanged){
+    changePattern();
+  }
+  
+  clearButton.clicked( mouseX, mouseY);
+  if( clearButton.selected ){
+    clearCanvas();  //call custom method to clear canvas
+    clearButton.reset();  //turn clearButton off
+  }
+} //end mouseClicked
+```
 
 In this project, sliders will be used to control Hue, Saturation, Brightness of the patterns drawn.
 
@@ -319,4 +365,11 @@ called when clearBtn has been clicked and has on==true
 
 * set fill to global background color: bkgColor
 * draw a rectangle, the size of the entire canvas, to clear the canvas.  `rect( 0, 0, width, height)`
+
+```java
+void clearCanvas(){
+   //TODO add code to draw a rectangle over the full canvas using background color
+  fill( backgroundColor);
+}//end clearCanvas
+```
 
