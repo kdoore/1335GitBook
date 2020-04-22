@@ -2,7 +2,7 @@
 description: 'Code Wed. Apr 22, 2020'
 ---
 
-# Code Apr 22
+# Code Wed Apr 22
 
 {% tabs %}
 {% tab title="Main Tab" %}
