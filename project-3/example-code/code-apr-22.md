@@ -4,6 +4,8 @@ description: 'Code Wed. Apr 22, 2020'
 
 # Code Wed Apr 22
 
+Code includes some minor changes to slider in the main tab.  The main tab Slider is now a lengthSlider so that integer display of the value makes sense.  There are minor changes to the formatting of background and text labels in the slider class tab so that the numerical display does not overlap the label display.
+
 {% tabs %}
 {% tab title="Main Tab" %}
 ```java
