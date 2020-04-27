@@ -174,7 +174,7 @@ Slider hueSlider, satSlider, brightSlider;
 ### Logic in changePattern\( \):
 
 * connects buttons to determine currentPattern
-* sets **len** for currentPattern if  using a **scale slider's sliderVal**
+* sets **len** for currentPattern if  using a **length slider's sliderVal**
 * **eraserPattern** color is not changed by sliders, should have fillColor, strokeColor set to global backgroundColor;
 * use switch-case structure
 * switch: check which buttonGroup button is active
@@ -185,6 +185,7 @@ Slider hueSlider, satSlider, brightSlider;
      Pattern currentPatttern = eraserPattern;
         float len = 100;
         //Add Logic to modify len if using a scale slider
+        //len = lengthSlider.sliderVal;
      switch(buttonGroup.activeBtnIndex){
         case 0:
              currentPatttern = eraserPattern;
@@ -281,8 +282,9 @@ Sliders must always be checked for changes in sliderVal before drawing any patte
     `hueSlider = new HueSlider( 40, height-100, 200, 50, 0, 360 );`
 
 * Incorporate Sliders into project using custom functions:
-  * void checkSliders\( \);
-  * void drawSliders \( \);
+  * **void checkSliders\( \);**
+  * **void setPatternColor\( \);**
+  * **void drawSliders \( \);**
   * in displayPattern\( \) - set currentPattern fillColor using patternFillColor right before currentPattern is displayed: `currentPattern.display()`
     * see drawPattern above for integration of this example code:
 
@@ -331,9 +333,12 @@ boolean checkSliders(){
   if(brightSlider.checkPressed( mouseX, mouseY)){
     changed=true;
   }
-  patternFillColor = color( hueSlider.sliderVal, satSlider.sliderVal, brightSlider.sliderVal);
+  if( changed == true){
+    setPatternColor();
+  }
   if( scaleSlider.checkPressed(mouseX, mouseY)){
     changed = true;
+    
   }
  return changed;
 }
@@ -393,5 +398,171 @@ void clearCanvas(){
    //TODO add code to draw a rectangle over the full canvas using background color
   fill( backgroundColor);
 }//end clearCanvas
+```
+
+## Main Tab Final Structure
+
+```java
+//Main Tab
+//Make objects, objects call methods
+
+//Global Variables
+ButtonGroup btnGroup;  //will hold 4 pattern buttons
+Button clearButton;//declare the variable as global - btn is null
+color backgroundColor;
+color patternFillColor;  //global
+color patternStrokeColor; //global
+
+Pattern currentPattern; //pointer variable keeps track of active Pattern
+Pattern eraserPattern;  //has a PShape circle and background fillColor
+
+//SLIDERS
+Slider lengthSlider, hueSlider;
+
+void setup() {
+  size( 800, 800);
+  colorMode(HSB, 360, 100, 100, 100);
+  backgroundColor = color( 300); //light gray
+  background( backgroundColor);
+ // Button( float x, float y, float w, float h, String label  )
+  clearButton = new Button( 10, 450, 100, 100, "Clear");  //initialize - move to bottom
+  Button[] btnArray = new Button[4]; //declare and initialize button array
+  btnArray[0] = new Button( 10, 10, 100, 100, "Eraser");
+  
+  PImage img1 = loadImage( "pattern1Btn.png"); //file name with extension
+  btnArray[1] = new PImageButton( 10, 120, 100, 100, img1);
+  //initailize other buttons
+  //btnArray[2]
+ /// btnArray[3]
+  
+  btnGroup = new ButtonGroup( btnArray );
+  
+  //Logic for patterns
+  PShape s0 = createShape( ELLIPSE, 0,0, 50, 50);
+  eraserPattern = new Pattern( s0 ); 
+  eraserPattern.fillColor = color(backgroundColor);//start with Purple
+  eraserPattern.strokeColor = color(backgroundColor);
+  currentPattern = eraserPattern;
+  
+  //Slider(float x, float y, float w, float h, float min, float max, String label ){
+  lengthSlider = new Slider( 40,height - 40, 200, 30, 10, 200, "Length");
+  hueSlider = new Slider( 280, height - 40, 200, 30, 0, 360, "Hue");
+ //initialize other 
+  //checkSliders at beginning to initialize sliders
+  checkSliders();
+  setPatternColor(); //initialize patternFillColor
+} // end setup
+
+void draw(   ) {
+  if( mousePressed){
+    checkSliders( )
+    translate( mouseX, mouseY );
+    displayPattern( ); //draw currentPattern
+    resetMatrix();
+  }
+  displayButtons(); //do after drawing patterns
+  displaySliders();
+} //end draw
+
+void mouseClicked(   ) {
+  boolean isChanged = btnGroup.clicked( mouseX, mouseY);
+  if( isChanged){
+    changePattern();
+  }
+  clearButton.clicked( mouseX, mouseY);
+  if( clearButton.selected ){
+    clearCanvas();
+    clearButton.reset();
+  }
+} //end mouseClicked
+
+void displaySliders(){
+  lengthSlider.display();
+  hueSlider.display();
+}//end displaySliders
+
+boolean checkSliders(){
+   boolean isChanged = false;
+  if( hueSlider.checkPressed( mouseX, mouseY)){
+   //add logic for dependencies between sliders
+       //satSlider.hue = hueSlider.sliderVal
+       //brightSlider.hue = hueSlider.sliderVal
+        isChanged = true;
+   }
+   
+   //if any hue, sat, bright slider has changed, then changePatternColor
+   if( isChanged == true){
+     setPatternColor( ); //always changePatternColor if a slider has changed
+   }
+    if(  lengthSlider.checkPressed( mouseX, mouseY)){
+      changePattern( ) //length must be used to change Pattern
+       isChanged = true;
+   }
+   return isChanged;
+} //end checkSliders
+
+void setPatternColor( ){
+   float hue = hueSlider.sliderVal;
+   float sat = 100;
+   float bright = 100;
+   patternFillColor = color(hue, sat, bright);
+ }
+
+void changePattern(){
+   //TODO add logic to connect buttons to patterns
+   //activeBtnIndex will let us determine which pattern should be the currentPattern
+   //Switch Case Statement
+   float len = 100;  //scale slider will set / modify this value
+   len = lengthSlider.sliderVal;
+   switch( btnGroup.activeBtnIndex){
+      case 0:
+          currentPattern = eraserPattern;
+      break;
+      
+      case 1:
+          PShape s1 = createShape( RECT, 0,0,len *.8 , len);
+          currentPattern = new Pattern( s1);
+      break;
+      
+      case 2:
+          PShape s2 = createShape( RECT, 0,0,len , len);
+          currentPattern = new Pattern( s2);
+      break;
+      
+      case 3:
+          PShape s3 = vertexShape1( len );
+          currentPattern = new Pattern( s3 );
+      break;
+     
+     default:
+         println("No match on switch case");
+     break;
+   }  //end switch-case statement
+} //end changePattern
+
+void displayPattern(){
+  if( currentPattern  != eraserPattern){
+    //patternFillColor = color( 280, 100, 100, 50);
+    //set in the Sliders
+    patternStrokeColor = color( 0, 50);
+    currentPattern.fillColor = patternFillColor;
+    currentPattern.strokeColor = patternStrokeColor;
+  }
+  currentPattern.display();  //sliders will set colors for other patterns
+} //end displayPattern
+
+void clearCanvas(){
+   //TODO add code to draw a rectangle over the full canvas using background color
+  
+}//end clearCanvas
+
+void displayButtons(){
+  fill(0); //black
+  rect( 0,0, 120, height);//background of menu
+  btnGroup.display();
+  clearButton.display();
+} //end displayButtons
+
+
 ```
 
