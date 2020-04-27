@@ -46,11 +46,23 @@ Checks if Mouse is pressed.  If so, then display current active pattern, also re
 
 Switch-case structure allows one pattern to be set as active by using the activeBtnIndex of the ButtonGroup, to set an active pattern to be drawn on the canvas. If using a Scale slider, then use a len variable that's modified by the scaleSlider, then used when creating each PShape.
 
+### ChangePatternColor\( \)
+
+Simple method that changes the values for the global pattern color using the Slider's sliderVal.  
+
+Defines hue, sat, bright values:   
+Uses those values to set the global patternFillColor
+
+* `float hue = hueSlider.sliderVal;`
+* `float sat = 100;  //..initialize using satSlider`
+* `float bright= 100; //..initialize using brightSlider`
+* `patternFillColor = color( hue, sat, bright );//set from slider values`
+
 ### **DisplayPattern\( \)**
 
 Sets the pattern color depending if it's the eraser or not, then calls curPattern.display\(\)
 
-### Sliders set fillColor for Patterns in drawPattern\( \)
+### Sliders modify Color for Patterns in ChangePatternColor\( \)
 
 Before displaying the currentPattern, we'll use custom sliders to set the hue, saturation, brightness of the globalColor variable that's used when displaying patterns. This logic must be executed before displaying the currentPattern. See code details below below:
 
