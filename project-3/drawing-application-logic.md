@@ -171,6 +171,20 @@ Slider hueSlider, satSlider, brightSlider;
 * displayButtons\( \) //always draw menu of Buttons
 * displaySliders\( \) //always draw menu of Sliders
 
+```java
+void draw(   ) {
+  if( mousePressed){
+    checkSliders( )
+    translate( mouseX, mouseY );
+    displayPattern( ); //draw currentPattern
+    resetMatrix();
+  }
+  displayButtons(); //do after drawing patterns
+  displaySliders();
+} //end draw
+
+```
+
 ### Logic in changePattern\( \):
 
 * connects buttons to determine currentPattern
@@ -344,9 +358,9 @@ boolean checkSliders(){
 }
 ```
 
-#### Additional Logic
+### Additional Logic
 
-#### clearButton
+### clearButton
 
 The clearButton is a regular button that is used to clear the canvas. The clearButton must be declared as a global object-reference variable. The clearButton behaves like a door-bell, meaning it never displays that it is in the selected state. When the clearButton is clicked, it clears the canvas, then the reset\( \) method is called to turn the button off.
 
@@ -376,7 +390,7 @@ clearButton.display();
 
 ```java
 void mouseClicked(){
-  buttonGroup.clicked( mouseX, mouseY);
+  btnGroup.clicked( mouseX, mouseY);
   clearButton.clicked( mouseX, mouseY); //check to see if it's been clicked
   if( clearButton.selected){
     //do something
