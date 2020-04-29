@@ -275,7 +275,7 @@ class ButtonGroup{
 
 {% tab title="PImageButton" %}
 ```java
-//This tab will cause errors, it's missing code
+
 class PImageButton extends Button{
   //Variables - Data
   PImage img;

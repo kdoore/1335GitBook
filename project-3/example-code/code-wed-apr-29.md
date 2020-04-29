@@ -55,6 +55,10 @@ void setup() {
   satSlider = new SatSlider( 530, height - 40, 200, 30, 0, 100); 
   brightSlider = new Slider( 790, height - 40, 200, 30, 0, 100,"Bright"); 
   checkSliders();
+   satSlider.hue = hueSlider.sliderVal; //satSlider's hue depends on hueSlider's sliderVal
+   //TODO add similar logic for BrightSlider - 
+   //brightSlider's hue depends on hueSlider's sliderVal
+   //brightSlider's sat depends on satSlider's sliderVal
   setPatternColor( );
 } // end setup
 
@@ -97,9 +101,13 @@ boolean checkSliders(){
       isChanged = true;
       //since the hue slider has changed, must change the hue of the SatSlider
       satSlider.hue = hueSlider.sliderVal;  //dependency between sat, hue slider
+      // TODO  
+      //brightSlider's hue depends on hueSlider's sliderVal
    }
    if(satSlider.checkPressed( mouseX, mouseY)){
       isChanged = true;
+     //TODO
+     //brightSlider's sat depends on satSlider's sliderVal
    }
    if(brightSlider.checkPressed( mouseX, mouseY)){
      isChanged = true;
@@ -342,7 +350,7 @@ class HueSlider extends Slider{
 {% endtab %}
 
 {% tab title="PImageButton" %}
-```
+```java
 //
 class PImageButton extends Button{
   //Variables - Data
@@ -362,6 +370,131 @@ class PImageButton extends Button{
   }
   
 } //end class
+```
+{% endtab %}
+
+{% tab title="Pattern" %}
+```java
+class Pattern{
+   PShape s;
+   color fillColor, strokeColor;
+   boolean isSvg;  //true if loaded from an external file
+   
+  Pattern(  PShape s ){
+    this.s = s;
+  }
+  
+  void display(){
+    if( isSvg){
+      //add some fill logic
+    }else{  //most of the time
+      s.setFill( fillColor);
+      s.setStroke( strokeColor); //black by default
+      shape( s, 0, 0); //assume translated origin to mouseX, mouseY
+    }
+  }
+  
+} //end Pattern class
+```
+{% endtab %}
+
+{% tab title="SatSlider" %}
+```java
+class SatSlider extends Slider{
+  
+  
+  //CONSTRUCTORS
+  // Slider(float x, float y, float w, float h, float min, float max, String label ){
+  SatSlider(float x, float y, float w, float h, float min, float max){
+     super( x, y, w, h, min, max, "SAT");
+  }
+  
+  
+   //METHODS - displays specialized background with ROYGBIV
+  void display(){
+    super.backgroundLayer(); //call base class method
+    for( int i=0; i< w; i++){
+      float satValue = map(i,0,w,min, max);   
+      stroke( hue, satValue, 100);  //hue is 0 by default
+      line(x+i, y, x+i, y+h); 
+    }//end for-loop
+    //Indicator rectangle
+    //reset stroke
+    stroke(0);
+    fill(hue, sliderVal, 100);//indicator rectangle - show current Sat value
+    rect( sliderX-2, y-3, 4, h+6);
+    fill(0); //for text
+    textSize(10);
+    text( (int)sliderVal, sliderX+2, y-4);
+    
+  }//end display
+  
+  
+  
+}//end SatSlider
+```
+{% endtab %}
+
+{% tab title="Slider" %}
+```java
+class Slider{
+  float x,y;   //position
+  float w, h; //size
+  String label;
+  float min, max;  //end points of range
+  
+  float sliderX; //mouseX when slider value changes
+  float sliderVal; //calculate using the map function 
+  
+  float hue, sat, bright; //IMPORTANT REMEMBER THESE ALL HAVE VALUE of 0.0
+  
+  //CONSTRUCTOR
+  Slider(float x, float y, float w, float h, float min, float max, String label ){
+    this.x = x;
+    this.y = y;
+    this.w = w;
+    this.h = h;
+    this.min = min;
+    this.max = max;
+    this.label = label;
+    
+    sliderX = x + w/2.0 ;
+    sliderVal = map( sliderX, x, x+w, min, max);
+  }
+  
+  //Behaviors - Methods 
+  void backgroundLayer(){
+    fill( 200);
+    noStroke();
+    rect( x-5, y-28,w+10, h+34); //larger than inner slider
+    fill(0); //text color
+    textAlign( RIGHT);
+    textSize(10);
+    text( label,x+w, y-16);
+  }
+  
+  void display( ){
+    backgroundLayer( );
+    fill( 150);
+    rect( x,y,w,h);
+    
+    //indicator rectangle 
+    fill(0);//black
+    rect( sliderX-2, y-3, 4, h+6);
+    textSize(10);
+    text( (int)sliderVal, sliderX+2, y-4);
+  }
+  
+  boolean checkPressed( int mx, int my){
+    boolean changed = false;
+    if( mx > x && mx < x+w && my> y && my< y+h){ 
+      sliderX = mx;
+      sliderVal = map( sliderX, x, x+w, min, max);
+      changed = true;
+    } //end if
+    return changed;
+  }//end checkPressed
+} //end class slider
 ```
 {% endtab %}
 {% endtabs %}
