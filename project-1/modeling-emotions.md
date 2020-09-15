@@ -4,7 +4,7 @@ description: 'A design tool for self-exploration of subjective emotions, feeling
 
 # Subjective Modeling of Emotions
 
-This project instructs a design tool for self-exploration of subjective emotions, feelings, abstractions. The idea is to design a parametric tool that is personally encoded by each maker's choice of
+This project is designed to allow users to artisticly process their inner emotions and feelings.  The idea is that an artifact created based on personally experientually design features evokes self-contemplation. The crafting of the tool teaches the user to design tool for self-exploration of subjective emotions, feelings, abstractions. The idea is to design a parametric tool that is personally encoded by each maker's choice of 
 
 ![Computational Design Tool for  Personal Expression of Subjective Emotions](../.gitbook/assets/doorek2.png)
 
