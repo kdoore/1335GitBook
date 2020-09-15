@@ -16,7 +16,7 @@
 
 ## Project 1
 
-* [Modeling Emotions](project-1/modeling-emotions.md)
+* [Subjective Modeling of Emotions](project-1/modeling-emotions.md)
 * [Emotions represented using color, form, space](project-1/emotions-represented-using-color-form-space/README.md)
   * [Kandinsky Color - Emotion](project-1/emotions-represented-using-color-form-space/kandinsky-color-emotion.md)
   * [Emotional Intelligence](project-1/emotions-represented-using-color-form-space/emotional-intelligence.md)
