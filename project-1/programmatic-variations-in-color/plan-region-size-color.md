@@ -1,6 +1,10 @@
 # Plan Region Size, Color
 
-![](../../.gitbook/assets/proj1_f19_1335_img_small.jpg) The planning document above shows how to define 2 horizontal regions based on a balanceLine which can be set at width/2 by default.
+ 
+
+![](../../.gitbook/assets/proj1_f19_1335_img_small.jpg)
+
+The planning document above shows how to define 2 horizontal regions based on a balanceLine which can be set at width/2 by default.
 
 Example Code
 
