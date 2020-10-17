@@ -36,15 +36,15 @@ Classical Models of Emotions
 
 ## Plutchick's Wheel of Emotions
 
-![](https://upload.wikimedia.org/wikipedia/commons/b/bf/Plutchik_dyads.png)
+![](https://upload.wikimedia.org/wikipedia/commons/c/ce/Plutchik-wheel.svg)
+
+[wikipedia link](https://upload.wikimedia.org/wikipedia/commons/c/ce/Plutchik-wheel.svg)
 
 ## Hour Glass of Emotions
 
 The Hour Glass model of Emotions was created by UX researchers. This model provides categories of emotion: Sensitivity, Attention, Pleasantness, Aptitude, where Emotions are given a numeric value based on the strength of the emotion. This dimensional, numeric model has been used to analyze emotional sentiment from written statements such as twitter tweets. Colors are used in the model to indicate the emotional dimensions.
 
 [Sentic Presentation ](http://sentic.net/seminar/) ![](../.gitbook/assets/slide160.jpg)
-
-![](https://upload.wikimedia.org/wikipedia/commons/6/6b/Hourglass_of_Emotions.png)
 
 Hour Glass Emotional Dimensions - [Wikipedia](https://en.wikipedia.org/wiki/Contrasting_and_categorization_of_emotions#Plutchik.27s_wheel_of_emotions)
 
