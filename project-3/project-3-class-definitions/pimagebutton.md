@@ -46,25 +46,34 @@ The images were created by taking screenshots of the canvas after the patterns h
 ## Class Definition Code
 
 ```java
-//This tab will cause errors, it's missing code
-class PImageButton extends Button{
-  //Variables - Data
+//add comments
+class PImageButton extends Button {
+
+  //PROPERTIES
+
   PImage img;
- 
+
   //CONSTRUCTORS
-  //Button( float x, float y, float w, float h, String label  )
-  PImageButton( float x, float y, float w, float h, PImage img ){
-    super( x, y, w,h,"" );  //call to base class constructor
+  PImageButton(float x, float y, float w, float h, PImage img) {
+    super(x, y, w, h, "");  //call constructor with empty string for label
     this.img = img;
-    } //end constructor
-  
-  //METHODS - Behaviours
-  void display(  ){
-    super.display(); //call the base class method
-    image( img, x+10, y+10, w-20, h-20);
   }
-  
-} //end class
+  //add comments
+  PImageButton(float x, float y, float w, float h, color c1, color c2, PImage img) {
+    super(x, y, w, h, c1, c2, "");  //call constructor with empty string for label
+    this.img = img;
+  }
+
+  //METHODS
+
+  //over-ride display() from base-class
+  //add comments
+  void display() {
+    super.display();  //call base-class: button display method to create background button
+    image(img, x+10, y+10, w-20, h-20);  //adjust as needed
+  }
+
+}  //end class PImageButton
 ```
 
 **PImageButtons shown on the Drawing Application** You can adjust the dimensions of the image in the display\( \) method in the PImageButton class, depending on the size of your buttons. The dimensions used in the code above work well for a button that is 100 px x 100 px.

@@ -73,7 +73,7 @@ What code do we need to add to create the radio button behavior?
 
 ## Menu Buttons Finite State Machine
 
-![](../.gitbook/assets/fsm-button2.png)
+![](https://github.com/kdoore/cs1335/tree/9e8e8ed05c8db5e0695fd2711a01f24b372e8118/fsm-button2.png)
 
 In the image above, each circle represents the state of the system when that button is the active button. The arrows or arcs show the events that cause the system to change state. The arc from Button1 to Button2 shows that if Button1 is the current `activeButton`, then if the user clicks on button 2, the system will change state so that Button2 will be the `activeButton`. The arcs also show the other actions that we must implement when the click2 event happens: we must set all other buttons to the off-state. In our code, we'd set `btn1.on=false` and `btn3.on=false`. This means we assign the value of false to the `on` instance variable for the `btn1` and `btn3` objects. Therefore, In the Menu class, we need to implement a state variable: `activeButton` which will store the current-state. In addition, we must supply logic so that when these events happen, the other buttons are de-activated.
 

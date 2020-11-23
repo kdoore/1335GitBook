@@ -29,7 +29,7 @@ void draw(){
 }
 ```
 
-![](../../.gitbook/assets/screen-shot-2019-09-03-at-8.00.50-am.png)
+![](https://github.com/kdoore/cs1335/tree/9e8e8ed05c8db5e0695fd2711a01f24b372e8118/assets/Screen%20Shot%202019-09-03%20at%208.00.50%20AM.png)
 
 ## Analyze HSB Color in Brightness, Saturation, Hue Order
 

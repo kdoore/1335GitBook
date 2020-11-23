@@ -4,123 +4,13 @@
 
 For Project 2, students will create a Processing program to create custom 2D-Grid Artwork using 2 different PShape vertex patterns. Project 2 builds on understanding learned in Project 1, creating PShape objects by specifying a set of vertex points.
 
-### YouTube Video: Overview of Project 2 
-
-{% embed url="https://www.youtube.com/watch?v=W-ICRs-ERmk" caption="Overview of Project 2" %}
-
 ## Inspiration:
 
 Examine [inspiration artwork - Victor Vasarely](https://www.google.com/search?q=vasarely+art&sxsrf=ACYBGNR5aOjh-L3KJOhN3rHijlyrhLv15A:1571140401369&source=lnms&tbm=isch&sa=X&ved=0ahUKEwiDxY-Mmp7lAhURlKwKHeNaDGgQ_AUIEygC&biw=1740&bih=1064&dpr=0.75) to observe pattern design rules, then incorporate similar rules in your custom design. Design rules are implemented when populating the 2D array, using logic to create patterns, see [Grid Patterns](grid-patterns-using-2d-array-indexes-i-j/) for examples.
 
 Create a 2D Array of PShape objects, create grid patterns using HSB colorMode and lerpColor to specify the color used. If using color-selector tool, specify `colorMode(HSB, 360,100,100); //specify max range values`
 
-## **Project Structure: Functions:**
-
-Below is the basic function structure for Project 3.    
-See Details below on how to complete the missing code within this framework.    
-You must add your own custom colors and vertexShape functions
-
-#### Starter Code \(optional\)
-
-```java
-void setup() {
-  size(400, 400);
-  background(0);
-  colorMode(HSB, 360, 100, 100);
-
-//scale factors - allows custom-sizing 
-  int artWorkSize=width;
-  int regionWidth = artWorkSize/2;
-
-  //dimensions for grid motif that occupies 1/4 size of the artWork 
-  int rows = 20;
-  int cols = rows;
-  float cellSize = float(regionWidth/cols);
-
-  //Create the data
-  //create smaller grid sections - 
-  PShape[][] shapesMatrix1 = new PShape[rows][cols];
-  populate2DArray1(shapesMatrix1 ,rows, cols, cellSize  );
-
-  PShape[][] shapesMatrix2 = new PShape[rows][cols];
-  //Create function definition below
-  //populate2DArray1(shapesMatrix2 ,rows, cols, cellSize  );
-
-  //Display the Data
-  //add comments
-  displayShapeMatrix(shapesMatrix1, rows, cols, cellSize);
-  
-  //displayRegion2( shapesMatrix2, rows, cols, cellSize);
-  //add similar function calls for Region3 , Region4
-}
-
-void populate2DArray1(PShape[][] shapeMatrix, int rows, int cols, float cellSize) {
-  color c1=color(0); //DEFINE Your custom colors here
-  color c2 = color(360); //DEFINE Your custom colors here
-  for ( int i=0; i< rows; i++) {
-    for ( int j=0; j< cols; j++) {
-      int k = i + j;
-      //calculate fill color
-      float kFraction = map( k, 0, (rows-1) + (cols-1), 0.0, 1.0);
-      color c3 = lerpColor(c1, c2, kFraction);
-      //fill( c3 ); ///use map? max of k is 10
-      PShape curShape = rectPattern( cellSize, c3);
-      shapeMatrix[i][j]= curShape;  //store in 2D array
-    } //end of inner loop (cols)
-  } //end of outer loop (rows) 
-} //end populate2DArray1
-
-/*  Modify and use this function 
-void populate2DArray2( ...... add parameters.....){
-  
-}
-*/
-
-
-void displayShapeMatrix(PShape[][] shapes, int rows, int cols, float size) {
-  int xPos=0;  
-  int yPos=0;         
-  for ( int i=0; i< rows; i++) {     
-    for ( int j=0; j< cols; j++) {   
-      shape(shapes[i][j], xPos, yPos);         
-      xPos += size;
-    }  //end inner for-loop (j:cols)     
-    xPos =0;       
-    yPos += size;
-  } //end outer for-loop (i:rows)
-} //end function
-
-/*  Other functions - Add params
-void displayRotateRegion2(   ........add params.....){
-  
-}
-
-void displayMirrorRegion2(   ........add params.....){
-  
-}
-
-void displayRotateRegion3(   ........add params.....){
-  
-}
-
-void displayMirrorRegion3(   ........add params.....){
-  
-}
-
-void displayRotateRegion4(   ........add params.....){
-  
-}
-
-*/
-
-//Use Custom Vertex Pattern from Project 1
-PShape rectPattern( float len, color c1) {
-  PShape s = createShape( RECT, 0, 0, len, len);
-  s.setFill(c1);
-  return s;
-}
-
-```
+**Project Structure: Functions:**
 
 ### Step 1 - VertexShape Functions
 
@@ -171,23 +61,10 @@ shape( testShape, 300,300);//display at canvas center
 
 ```java
 //example use of recursive function
-//create the group PShape before calling the recursive function 
-//pass the group PShape into the recursive function
-//after the function has executed, the g PShape object will have all recursive stacked shapes
-
-//void Populate2DArray(  -----  ){
-
-//add Custom Code Here
-
 PShape g = createShape(GROUP); //this will hold stacked child PShapes
-recursivePattern1( g, cellSize,5, curColor) ;//g is input
+recursivePattern1( g, size,5, foreground ) ;//g is input
 //after function execution, g contains stacked children
 shapes[i][j] = g; //store in the array
-
-//end custom shape code
-
-
-//} end of Populate2DArray
 
 //recursive function
 void recursivePattern1(PShape g, float len, float level, color c1){
@@ -227,11 +104,7 @@ void populate2DArray1(PShape[][] shapes , int rows, int cols,float cellSize, col
           int k = i + j;  //diagonal pattern
           float fractionK = map( k, 0, rows + cols-2, 0.0,1.0);
           color curColor = lerpColor( c1, c2, fractionK);
-          
-          //add custom shape here
           shapesMatrix[i][j] = vertexShape1(cellSize,curColor); 
-          //end custom shape code
-          
         }
      } //end for-loop i
 }//end function
@@ -299,7 +172,12 @@ void setup(){
   size(400,400);
   background(0);
   colorMode(HSB, 360,100,100);
- 
+  //DEFINE COLORS: 
+  color c1= color( 71, 100, 100); //yellow-green
+  color c2 = color(278,95,30);// dark purple
+  color c3 = color(0); //black
+  color c4=  color(200); //gray (white is 360)
+
   //scale factors - allows custom-sizing 
  int artWorkSize=width;
  int regionWidth = artWorkSize/2;
@@ -310,11 +188,8 @@ void setup(){
   float cellSize = float(regionWidth/cols);
 
   //create smaller grid sections - 
-  PShape[][] shapesMatrix1 = new PShape[rows][cols];
-  populate2DArray1(shapesMatrix1, rows , cols ,cellSize );
-   
-  PShape[][] shapesMatrix2 = new PShape[rows][cols];
-  populate2DArray2(shapesMatrix2,rows , cols ,cellSize  );
+  PShape[][] shapesMatrix1 = populate2DArray1(rows , cols ,cellSize, c1, c2  );
+  PShape[][] shapesMatrix2 = populate2DArray2(rows , cols ,cellSize, c1, c2, c3, c4   );
 
   //add comments
   displayShapeMatrix(shapesMatrix1,  rows , cols ,cellSize);

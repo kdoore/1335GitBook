@@ -54,7 +54,7 @@ PShape rectPattern( float len, color c1){
 
 In the code segments below, we use additional logic, is the value of k odd or even, calculated using modulus `k % 2` Where we draw a circle or rectangle if odd or even, still using the color gradient logic.
 
-![](../.gitbook/assets/gradientshapes.png)
+![](https://github.com/kdoore/cs1335/tree/9e8e8ed05c8db5e0695fd2711a01f24b372e8118/assets/gradientShapes.png)
 
 ```java
 //inside setup()

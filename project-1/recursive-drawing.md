@@ -1,4 +1,4 @@
-# Project 1: Recursive Drawing
+# Recursive Patterns
 
 ## Recursive Drawing - Patterns:
 
@@ -116,14 +116,15 @@ colorMode(HSB, 360, 100, 100);
 c1 = color( 270, 100, 100);
 }
 
-
+//use length as termination variable
+//specify valid length range as global variables
  void recursivePattern( float length){
     if ( length < lenMin ){ //test for termination
         return; //termination condition is true
     }
     float hueVal = map( length, lenMin, lenMax, 130, 160);
     float brightVal = map( length, lenMin, lenMax, 0, 100);
-    fill( hueVal, 100, brightVal, 100); //alpha is 100
+    fill( hueVal, 100, brightVal); 
     rect( 0, 0, length, length); //draw a pattern based on length parameter
     recursivePattern( length * 0.8 ); //call recursive function
 }
