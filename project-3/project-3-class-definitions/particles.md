@@ -117,7 +117,7 @@ ButtonGroup btnGroup;  //will refer to a ButtonGroup object instance
 Pattern curPattern;
 
 Pattern pattern1, pattern2, pattern3, eraserPattern; ///4 patterns to match 4 buttons
-Slider hueSlider, satSlider, brightSlider, scaleSlider; //base-class variable type
+Slider hueSlider, satSlider, brightSlider, lengthSlider; //base-class variable type
 
 ///Initialize things - variables
 void setup(){
@@ -157,9 +157,10 @@ void setup(){
    satSlider = new SatSlider( 380, 700, 150, 40, 0, 100);
    satSlider.hue = hueSlider.sliderVal;
    brightSlider = new Slider( 620, 700, 150, 40, 0, 100, "Bright");
-   scaleSlider = new Slider( 850, 700, 130, 40, 0.0, 2.0, "Scale");
+   lengthSlider = new Slider( 850, 700, 130, 40, 0.0, 2.0, "Scale");
 
-
+//call checkSliders()
+//call changePatternColor();
 }//in setup
 
 //makes it a frame-based application
@@ -209,27 +210,24 @@ boolean checkSliders(){
     changed = true;
     satSlider.hue = hueSlider.sliderVal;
     brightSlider.hue = hueSlider.sliderVal;
+    changePatternColor();
   }
-  if(satSlider.checkPressed( mouseX, mouseY)){
-    changed = true;
-    brightSlider.sat = satSlider.sliderVal;
-  }
-
-  if(brightSlider.checkPressed( mouseX, mouseY)){
-    changed=true;
-  }
-  globalColor = color( hueSlider.sliderVal, satSlider.sliderVal, brightSlider.sliderVal);
-  if( scaleSlider.checkPressed(mouseX, mouseY)){
+  //add logic for other color sliders 
+if( lengthSlider.checkPressed(mouseX, mouseY)){
     changed = true;
   }
  return changed;
 }
 
+void changePatternColor(){
+  globalColor = color( hueSlider.sliderVal, 100, 100); //color using al colors
+ }
+
 //Contains logic to connect ButtonGroup buttons to control which patterns is drawn
 void changePattern(){
    int activeButton = btnGroup.activeBtnIndex;
    float len = 100;
-   len *= scaleSlider.sliderVal;
+   len = lengthSlider.sliderVal;
   //use global curPattern
  switch( activeButton ){ ///connects the buttons to the patterns
         //active button sets curPattern 

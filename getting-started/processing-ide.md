@@ -1,6 +1,6 @@
 # Processing IDE
 
-This course will use the Java version of the Processing Language.
+Go to Processing.org to download the Processing Development Environment:
 
-Download Processing
+
 

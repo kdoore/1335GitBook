@@ -10,7 +10,7 @@ When we use a physical button, like the on-off button of a light-switch, we unde
 
 ## Object Responsibilities
 
-If we think of our button as a physical object, then it makes sense for our button object to be responsible for it's own behaviors and states. A physical button has a configuration that controls and indicates if it's on or off. For our button, we need to create a _state variable_, `on`, so the button object can remember whether it is currently on or off. Similarly, we want the button to be responsible for responding to user-events whether it is and it's display \(behavior\), and for knowing it's current state, size, position and orientation \(state and configuration\). Then we can have many button instances, each responsible for is own object properties, and the object behaviors \(methods\) will be consistent across all instances.
+If we think of our button as a physical object, then it makes sense for our button object to be responsible for it's own behaviors and states. A physical button has a configuration that controls and indicates if it's on or off. For our button, we need to create a _state variable_, **`selected,`** so the button object can remember whether it is currently on or off. Similarly, we want the button to be responsible for responding to user-events, and it's display \(behavior\), and for knowing it's current state, size, position and orientation \(state and configuration\). Then we can have many button instances, each responsible for is own object properties, and the object behaviors \(methods\) will be consistent across all instances.
 
 ## Objects and Classes
 

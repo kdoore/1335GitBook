@@ -16,7 +16,7 @@ For our project, we'll look at inheritance in 2 cases. We'll first create a gene
 
 The image below shows a Unified Modeling Language \(UML\) Class-diagram for the Button Class. A UML Class Diagram provides a simple graphic representation of the features of a class. The structure of a UML diagram is that the top section lists the name of the class, the second section lists the classes variables or fields. The bottom UML class section shows the classes methods. Some UML diagrams include the class constructors in the specified methods. UML diagrams are also useful for showing relationships between classes. We have already seen an example of a Composition relationship: The MenuArray Class is composed of an array of Button objects.
 
-![](https://github.com/kdoore/cs1335/tree/9e8e8ed05c8db5e0695fd2711a01f24b372e8118/buttonClass.png)
+![](../.gitbook/assets/buttonclass.png)
 
 As seen in the UML class diagram below, the PImageButton and PShapeButton classes are child classes of the base class: Button. They have an inheritance relationship, this is refered to as an 'Is-A' relationship. When we define these classes, we only define new instance variables that are not inherited from the base class. We can also indicate which methods are going to be over-ridden in the child class by listing them in the child class. So, from the diagram below, we see that thePImageButton has a PImage img instance variable and it provides a customzed implementation for display\(\).
 

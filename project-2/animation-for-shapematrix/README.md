@@ -50,8 +50,6 @@ Add the code below into the animation color logic, horizontal mouse movement wil
   color curColor = lerpColor( accentMx,aqua, fractionColor)
 ```
 
-;
-
 #### Move code into the draw function for animation
 
 #### Added logic: mousePressed for noLoop\(\), keyPressed for loop\(\)
@@ -59,92 +57,84 @@ Add the code below into the animation color logic, horizontal mouse movement wil
 ## Animation Code:
 
 ```java
-void setup() {
-  size( 800, 800);
-  colorMode(HSB, 360, 100, 100);
-  background(0);
-
-}
-
 
 void setup() {
   size( 400, 400);
   colorMode(HSB, 360, 100, 100);
   background(0);
-
 }
 
+void draw() {
+  //fade background 
+  fill( 0, 5); //transparant black
+  rect( 0, 0, width, height);
 
-void draw(){
-   //fade background 
-   fill( 0, 5); //transparant black
-   rect( 0,0,width, height);
-
-  if(mousePressed){
+  //mousePress to pause
+  //press any key to restart animation
+  if (mousePressed) { 
     noLoop();
   }
+  updateArrayDisplay();
+} //end draw
 
+//press any key to restart animation
+void keyPressed() {
+  loop();
+}
 
+void updateArrayDisplay() {
+  //fixed values
   float artWorkSize = width;
   float regionSize = artWorkSize/2;
-
   int rows = 10;
   int cols = 10;
   float cellSize = regionSize/cols;
 
-  color purple = color( 290, 100, 100);
-  color aqua = color(180, 100, 100);
-
+  //use changing framecount to change size and color over time
   float maxFC = 100; //max value for frameCount timer
-  float fractionSize = map(frameCount%maxFC,0 , maxFC, .2, 2.0); //makes larger 
-  float fractionColor = map((frameCount%maxFC),0 , maxFC, 0.0, 1.0);
+  float fractionSize = map(frameCount%maxFC, 0, maxFC, 0.2, 2.0); //makes larger than original size
+  float fractionColor = map(frameCount%maxFC, 0, maxFC, 0.0, 1.0); //for lerpColor
 
+  color purple = color( 280, 100, 100);
+  color aqua = color(180, 100, 100);
   ///use mouseX to create interactive accent color
-  float hueMx = map( mouseX, 0, width, 120,250); //color change with mouseX movement
-  color accentMx = color( hueMx, 100,100);
-  color curColor = lerpColor( accentMx,aqua, fractionColor);
+  float hueMx = map( mouseX, 0, width, 120, 250); //color change with mouseX movement
+  color accentMx = color( hueMx, 100, 100);
+  //animated color - changes over time
+  color curColor = lerpColor( accentMx, aqua, fractionColor);
 
   PShape[][] myShapes = new PShape[rows][cols]; //num elements is rows*cols
+  //repopulate data structure every frame
   populate2DArray( myShapes, rows, cols, cellSize* fractionSize, purple, curColor);
 
- //display in region1 at smaller (1/4) scale
-  pushMatrix();
-  scale( 1, 1);
+  //display in region1 
   displayShapeMatrix( myShapes, rows, cols, cellSize);
-  popMatrix();
-
 
   //region2
- mirrorRegion2(myShapes, rows, cols, cellSize, artWorkSize);    
+  mirrorRegion2(myShapes, rows, cols, cellSize, artWorkSize);    
 
 
-  //region3
+  //region3 - TODO change to use a function call
   pushMatrix();
   translate(0, height); //move origin to upper right
   scale( 1, -1); //mirror across x-axix, make smaller
   displayShapeMatrix( myShapes, rows, cols, cellSize);
   popMatrix();
 
-  //region4
+  //region4 - TODO change to use a function call
   pushMatrix();
   translate(width, height); //move origin to upper right
   scale( -1, -1); //mirror across origin and make smaller
   displayShapeMatrix( myShapes, rows, cols, cellSize);
   popMatrix();
-} //end draw
-
-//press any key to restart animation
-void keyPressed(){
-  loop();
 }
 
-void mirrorRegion2(PShape[][] shapes, int rows, int cols, float cellSize, float artWorkSize  ){
-   pushMatrix();
+void mirrorRegion2(PShape[][] shapes, int rows, int cols, float cellSize, float artWorkSize  ) {
+  pushMatrix();
   translate(artWorkSize, 0); //move origin to upper right
   scale( -1, 1); //mirror and scale smaller 
   displayShapeMatrix( shapes, rows, cols, cellSize);
   popMatrix();
-
 }
 
 
@@ -172,7 +162,8 @@ void populate2DArray( PShape[][] shapes, int rows, int cols, float cellSize, col
       //use fractions to create color gradient patterns
       color colorK = lerpColor( c1, c2, fractionk); //diagonal gradient
       color colorL = lerpColor(color(0), c1, fractionl); //concentric color
-      PShape curShape; //create a shape
+      PShape curShape; //temp variable to hold a PShape
+      //odd even logic to determine PShape
       if ( k%2==0) {
         curShape= createPosShape( cellSize* 2.0, colorK); //make cutout shape larger
       } else {
@@ -184,8 +175,8 @@ void populate2DArray( PShape[][] shapes, int rows, int cols, float cellSize, col
   }//end outer for-loop - rows
 }//end function populate2DArray
 
-void recursiveShapes(PShape group,  float len, int level, color c1   ){
-  if( level <0){
+void recursiveShapes(PShape group, float len, int level, color c1   ) {
+  if ( level <0) {
     return;
   }
   color curColor = color( hue( c1), saturation(c1), brightness(c1) *.8);
@@ -195,33 +186,33 @@ void recursiveShapes(PShape group,  float len, int level, color c1   ){
 }
 
 
-PShape createEllipse( float len, color c1){
+PShape createEllipse( float len, color c1) {
   PShape s = createShape(ELLIPSE, 0, 0, len, len); //rect if k is even
   s.setFill(c1);
   return s;
 }
 
-
-
-PShape createPosShape( float len, color c1){
+PShape createPosShape( float len, color c1) {
   PShape s = createShape();
   s.beginShape();
   s.fill(c1 ); //HSB - blue full sat, bright
-  s.vertex( 0,0); //point 1 for outer shape (clock-wise rotation for drawing points)
-  s.vertex( len*.4,0); //point  2
+  s.vertex( 0, 0); //point 1 for outer shape (clock-wise rotation for drawing points)
+  s.vertex( len*.4, 0); //point  2
   s.vertex( len*.6, len*.6); //point 3
   s.vertex( 0, len*.4); //point 4
-  s.vertex( 0,0); //last point for outer shape
+  s.vertex( 0, 0); //last point for outer shape
 
-   ////start of inner cutout - counter-clockwise ordering
+  ////start of inner cutout - counter-clockwise ordering
   s.beginContour(); //make internal cutout 
-  s.vertex( len*.25,len*.45); //inner cutouts - point 5
+  s.vertex( len*.25, len*.45); //inner cutouts - point 5
   s.vertex(len*.5, len*.5);  //point 6
   s.vertex( len*.45, len*.25); //point 7
   s.endContour(); //end internal cutout
 
   s.endShape(CLOSE); //end shape
-  return s; 
+  return s;
 }
+
+
 ```
 

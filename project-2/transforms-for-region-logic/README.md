@@ -10,13 +10,13 @@ Instead of having complex logic within a single display-function's for-loop, let
 
 In the image below, a single grid pattern is used multiple times to create the entire design pattern. The basic grid section is displayed normally in region1. The same grid section is also used in region2, region3 and region4...where rotations, translations, and offsets change the orientation and position. Finally, 4 additional grid sections are used to create the inner design, this section is scaled to quarter size, it's rotated by 45 degrees, and it's translated to the center of the design.
 
-![](https://github.com/kdoore/cs1335/tree/9e8e8ed05c8db5e0695fd2711a01f24b372e8118/assets/Screenshot%202017-09-24%2014.58.17.png)
+![](../../.gitbook/assets/screenshot-2017-09-24-14.58.17.png)
 
 ## 1-Dimensional Arrays - Design Limitations
 
 As seen in the image below, when we have a linear ordering for our colors \(1-Dimensional array\), then when we display those in a grid we see this linear ordering, which we perceive as rows of \(grayscale\) colors. This is a linearity is a limitation if we want more complex color relationships between neighboring cell items.
 
-![](https://github.com/kdoore/cs1335/tree/9e8e8ed05c8db5e0695fd2711a01f24b372e8118/assets/Screenshot%202017-09-24%2013.42.33.png)
+![](../../.gitbook/assets/screenshot-2017-09-24-13.42.33.png)
 
 ## 2-Dimensional Arrays for Storing our Shapes
 
@@ -70,7 +70,7 @@ The image below is drawn using the code above. ![](../../.gitbook/assets/screen-
 
 For the code above, we simply calculated the value of k = i + j, then used it to calculate some grayscale fill. Without much additional effort, we can create color gradients by using map\( \) and lerpColor\( \) functions.
 
-```text
+```java
 void setup(){
   size( 400,400);
   colorMode(HSB, 360, 100,100); //corresponds to the color selector

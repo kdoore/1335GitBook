@@ -1,11 +1,12 @@
 # Table of contents
 
-* [Introduction](README.md)
+* [CS 1335 Computer Science 1](README.md)
 
 ## Getting Started
 
 * [Processing IDE](getting-started/processing-ide.md)
-* [Java Language](getting-started/java-language.md)
+* [Java vs Javascript](getting-started/java-vs-javascript.md)
+* [Review:  Processing, Functions](getting-started/review-processing-functions.md)
 * [HSB Color Mode](getting-started/hsb_color_mode/README.md)
   * [HSB Color Wheel](getting-started/hsb_color_mode/hsb-color-wheel/README.md)
     * [Example Code](getting-started/hsb_color_mode/hsb-color-wheel/colorwheel-class-codes19.md)
@@ -18,7 +19,7 @@
 
 ## Project 1
 
-* [Modeling Emotions](project-1/modeling-emotions.md)
+* [Subjective Modeling of Emotions](project-1/modeling-emotions.md)
 * [Emotions represented using color, form, space](project-1/emotions-represented-using-color-form-space/README.md)
   * [Kandinsky Color - Emotion](project-1/emotions-represented-using-color-form-space/kandinsky-color-emotion.md)
   * [Emotional Intelligence](project-1/emotions-represented-using-color-form-space/emotional-intelligence.md)
@@ -27,27 +28,22 @@
   * [Inspiration](project-1/beginshape_-_vertex_shapes/diagram-and-art-expression.md)
 * [PShape with Cutout - Inner Contour](project-1/pshape-with-cutout-inner-contour.md)
 * [VertexShape - Recursion](project-1/project-1-pshape-pattern-recursion.md)
-* [Recursive Patterns](project-1/recursive-drawing.md)
-* [Planning Structure: Functions:](project-1/plan-structure--functions/README.md)
-  * [Example Code - Feb 19](project-1/plan-structure--functions/example-code-feb-19.md)
-  * [Final Code Structure](project-1/plan-structure--functions/final-example-code.md)
+* [Project 1: Recursive Drawing](project-1/recursive-drawing.md)
 * [Project 1: Programmatic Variations in Color](project-1/programmatic-variations-in-color/README.md)
-  * [LerpColor](project-1/programmatic-variations-in-color/lerpcolor.md)
-  * [Map Function](project-1/programmatic-variations-in-color/map-function.md)
-  * [Map with LerpColor](project-1/programmatic-variations-in-color/recursion-with-rotate-scale.md)
+  * [Recursion with rotate, scale](project-1/programmatic-variations-in-color/recursion-with-rotate-scale.md)
+  * [Plan Region Size, Color](project-1/programmatic-variations-in-color/plan-region-size-color.md)
+* [Map Function](project-1/map-function.md)
 * [Transforms for Mirroring](project-1/scale-transform-for-mirroring.md)
-* [Project 1-Steps](project-1/project1-steps.md)
+* [Project1-Steps](project-1/project1-steps.md)
 
 ## Grid Based Designs
 
-* [Computational Design](grid-based-designs/computational_design.md)
+* [Computational Design](grid-based-designs/computational_design/README.md)
+  * [Generative Design](grid-based-designs/computational_design/generative-design.md)
 * [Artist: Victor Vasarely](grid-based-designs/vasarely.md)
 * [Grid Pattern Design](grid-based-designs/arrays-for-grid-patterns.md)
 * [1D - Array of PShapes for Grid Layout](grid-based-designs/pshapes-in-grid-layout/README.md)
   * [Truchet Tiling](grid-based-designs/pshapes-in-grid-layout/truchet-tiling.md)
-  * [Example Code S2020](grid-based-designs/pshapes-in-grid-layout/example-code-s2020.md)
-  * [Example Code March 11](grid-based-designs/pshapes-in-grid-layout/example-code-march-11.md)
-  * [Example - March9](grid-based-designs/pshapes-in-grid-layout/example-march9.md)
   * [Example Code](grid-based-designs/pshapes-in-grid-layout/oct-8f19-code.md)
 * [PShapes in Grid Regions](grid-based-designs/pshapes-in-grid-regions.md)
 * [Grid Region Logic](grid-based-designs/grid-region-logic.md)
@@ -73,6 +69,7 @@
 ## Object Oriented Programming
 
 * [Introduction to Objects](object-oriented-programming/introduction-to-objects.md)
+* [OOP vs Data-Flow](object-oriented-programming/oop-vs-data-flow.md)
 * [Button States](object-oriented-programming/button_states.md)
 * [Buttons as Objects](object-oriented-programming/buttons_as_objects/README.md)
   * [Button Class](object-oriented-programming/buttons_as_objects/button-class.md)
@@ -91,6 +88,16 @@
 ## Project 3
 
 * [Project 3 - Logic, Steps](project-3/drawing-application-logic.md)
+* [Example Code S20](project-3/example-code/README.md)
+  * [Code  Wed Apr 1](project-3/example-code/class-code-apr-1.md)
+  * [Code Wed Apr 8 v1](project-3/example-code/class-code-wed-apr-8.md)
+  * [Code Wed Apr 8 v2](project-3/example-code/wed-apr-8.md)
+  * [Code Mon Apr 13](project-3/example-code/monday-apr-13.md)
+  * [Code Wed Apr 15](project-3/example-code/class-code-apr-15.md)
+  * [Code Mon Apr 20](project-3/example-code/code-monday-apr-20.md)
+  * [Code Wed Apr 22](project-3/example-code/code-apr-22.md)
+  * [Code Mon Apr 27](project-3/example-code/code-mon-apr-27.md)
+  * [Code Wed Apr 29](project-3/example-code/code-wed-apr-29.md)
 * [Project 3 - Class Definitions](project-3/project-3-class-definitions/README.md)
   * [Button](project-3/project-3-class-definitions/button.md)
   * [PImageButton](project-3/project-3-class-definitions/pimagebutton.md)
