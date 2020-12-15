@@ -5,20 +5,19 @@
 ## Getting Started
 
 * [Processing IDE](getting-started/processing-ide.md)
-* [Java Language](getting-started/java-language.md)
-* [HSB Color Mode](getting-started/hsb_color_mode/README.md)
-  * [HSB Color Wheel](getting-started/hsb_color_mode/hsb-color-wheel/README.md)
-    * [Example Code](getting-started/hsb_color_mode/hsb-color-wheel/colorwheel-class-codes19.md)
-  * [HSB Color Palette Tool](getting-started/hsb_color_mode/hsb-color-wheel-complimentary-color-palatte.md)
-* [Recursion](getting-started/recursion/README.md)
-  * [Recursion Call-Stack](getting-started/recursion/recursion-call-stack.md)
-  * [Example Code](getting-started/recursion/class-code-sept12f19/README.md)
-    * [Example Code Feb 5 S20](getting-started/recursion/class-code-sept12f19/example-code-feb-5-s20.md)
-    * [Feb 12 Code](getting-started/recursion/class-code-sept12f19/feb-12-code.md)
 
 ## Processing - Java, Javascript
 
-* [Untitled](processing-java-javascript/untitled.md)
+* [HSB Color Mode](processing-java-javascript/hsb_color_mode/README.md)
+  * [HSB Color Wheel](processing-java-javascript/hsb_color_mode/hsb-color-wheel/README.md)
+    * [Example Code](processing-java-javascript/hsb_color_mode/hsb-color-wheel/colorwheel-class-codes19.md)
+  * [HSB Color Palette Tool](processing-java-javascript/hsb_color_mode/hsb-color-wheel-complimentary-color-palatte.md)
+* [Java Language](processing-java-javascript/java-language.md)
+* [Recursion](processing-java-javascript/recursion/README.md)
+  * [Recursion Call-Stack](processing-java-javascript/recursion/recursion-call-stack.md)
+  * [Example Code](processing-java-javascript/recursion/class-code-sept12f19/README.md)
+    * [Example Code Feb 5 S20](processing-java-javascript/recursion/class-code-sept12f19/example-code-feb-5-s20.md)
+    * [Feb 12 Code](processing-java-javascript/recursion/class-code-sept12f19/feb-12-code.md)
 
 ## Project 1
 
