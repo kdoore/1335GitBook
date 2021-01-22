@@ -40,5 +40,7 @@ void draw() {
 
 ![Processing Development Environment: Executes to generate the sketch canvas](../.gitbook/assets/screen-shot-2021-01-22-at-2.56.13-pm.png)
 
+Add Tools, Examples, Libraries:  See image below:  Menu &gt; Add Tools
 
+![](../.gitbook/assets/screen-shot-2021-01-22-at-3.51.58-pm.png)
 
