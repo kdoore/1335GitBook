@@ -13,13 +13,7 @@
 * **P5.js:**  Official Javascript version of Processing - Includes functionality to create and modify html.  Ideal for using on web pages
 * **Codepen.io - Online Code Editor - Useful for learning P5.js**
 
-
-
 {% embed url="https://codepen.io/kdoore/professor/WNxeGVz" %}
-
-
-
-
 
 ### Installing Processing: 
 
