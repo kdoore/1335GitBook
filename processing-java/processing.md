@@ -20,7 +20,7 @@
 * [processing.org](http://processing.org) - download processing IDE, reference, examples, tutorials, etc.
 * Open Processing Application
 
-Paste the following code into the code editor:
+Paste the following code into the code editor: then push the play button
 
 ```text
 int xPos;
