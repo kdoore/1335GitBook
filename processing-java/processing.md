@@ -18,7 +18,7 @@
 ### Installing Processing: 
 
 * [processing.org](http://processing.org) - download processing IDE, reference, examples, tutorials, etc.
-* Open Processing Application
+* **Open Processing Application:  PDE - Processing Development Environment**
 
 Paste the following code into the code editor: then push the play button
 
