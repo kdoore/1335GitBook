@@ -1,12 +1,4 @@
----
-description: 'A design tool for self-exploration of subjective emotions, feelings'
----
-
-# Subjective Modeling of Emotions
-
-This project is designed to allow users to artisticly process their inner emotions and feelings.  The idea is that an artifact created based on personally experientually design features evokes self-contemplation. The crafting of the tool teaches the user to design tool for self-exploration of subjective emotions, feelings, abstractions. The idea is to design a parametric tool that is personally encoded by each maker's choice of design features.  It is required for the learner to follow all steps in creation of the object.  
-
-![Computational Design Tool for  Personal Expression of Subjective Emotions](../.gitbook/assets/doorek2.png)
+# Modeling Emotions
 
 In this project, we want design an interactive abstract artwork to represent our personal emotions about some personal event that we remembered as being highly emotional.
 
@@ -36,15 +28,15 @@ Classical Models of Emotions
 
 ## Plutchick's Wheel of Emotions
 
-![](https://upload.wikimedia.org/wikipedia/commons/c/ce/Plutchik-wheel.svg)
-
-[wikipedia link](https://upload.wikimedia.org/wikipedia/commons/c/ce/Plutchik-wheel.svg)
+![](https://upload.wikimedia.org/wikipedia/commons/b/bf/Plutchik_dyads.png)
 
 ## Hour Glass of Emotions
 
 The Hour Glass model of Emotions was created by UX researchers. This model provides categories of emotion: Sensitivity, Attention, Pleasantness, Aptitude, where Emotions are given a numeric value based on the strength of the emotion. This dimensional, numeric model has been used to analyze emotional sentiment from written statements such as twitter tweets. Colors are used in the model to indicate the emotional dimensions.
 
 [Sentic Presentation ](http://sentic.net/seminar/) ![](../.gitbook/assets/slide160.jpg)
+
+![](https://upload.wikimedia.org/wikipedia/commons/6/6b/Hourglass_of_Emotions.png)
 
 Hour Glass Emotional Dimensions - [Wikipedia](https://en.wikipedia.org/wiki/Contrasting_and_categorization_of_emotions#Plutchik.27s_wheel_of_emotions)
 

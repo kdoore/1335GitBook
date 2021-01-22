@@ -1,187 +1,97 @@
-# Recursion with rotate, scale
+---
+description: Use Map and LerpColor to define Color Gradients across a Region
+---
 
-Using Rotate or Scale\( \) within the Recursive Function allows for creating complex shapes using rotation and mirroring.
+# Map with LerpColor
 
-![](../../.gitbook/assets/screen-shot-2019-09-22-at-7.42.20-pm.png)
+Given 2 colors c1, c2, use the map function to calculate how a fraction value changes across a region.  The calculated fraction is used in LerpColor to create a new color: curColor.  See full code below for extended version using similar logic.
 
-```java
-float maxLen, minLen;
-color cNeg1, cNeg2, cNegPop1, cNegPop2;
-color cPos1, cPos2, cPosPop1, cPosPop2;
+```text
+  color c1 = color( 230, 100, 100); //purple 
+  color c2 = color( 80, 100, 100); //lime
+  
+  //define curColor based on mX relative to balancePoint 
+  float fraction = map( mX, 0, width, 0.0, 1.0); 
+  
+  color curColor = lerpColor( c2, c1, fraction); //fraction varies beteween 0.0, 1.0
+  
+ 
+```
 
-void setup(){
-size( 1000, 1000);
-colorMode(HSB, 360, 100, 100, 100);
-background(0);
-maxLen = 50;
-minLen=1;
-cNeg1 = color( 285, 100,100); //purple
-cNeg2 = color( 260, 100, 100); //blue
-cPos1 = color( 185, 100,100); //aqua
-cPos2 = color( 230, 100, 100);//blue
-}
+![](../../.gitbook/assets/screenshot-2020-02-17-10.30.50.png)
 
+```text
 void draw(){
-    if(mousePressed && frameCount %5 == 0){
-    translate( mouseX, mouseY);
-    float dist = dist( mouseX, mouseY, width/2, height/2);
-    if( mouseX < width/2 ){
-    //determine how color, size change across Negative region
-        float curLen = map( mouseX, 0, width/2, maxLen, minLen);
-        float lerpFraction = map( mouseX, 0, width/2, 0.0, 1.0);
-        color curColor = lerpColor( cNeg1, cNeg2, lerpFraction);
+  if(mousePressed){
+    translate( mouseX, mouseY);//translate origin to mouse position
+       positivePattern( balancePoint, mouseX);
+  } //end if-mousePressed
+}//end of draw
 
-        recursivePattern1( curLen, 5, curColor);
 
-    }//end negative region
-    else if( mouseX > width/2 ){ //positive region
 
-    //create similar code for positive region
-
-    } //end if positive region
-    resetMatrix();
-    } //end if mousePressed
-} //end draw
-
-void recursivePattern1(float len, float level, color c1){
-if( level<1){
-return;
-}
-color shapeColor = color( hue(c1), saturation(c1), brightness(c1)*.8 );
-PShape s= createNegShape( len, c1);
-
-shape( s, 0,0); //render shape to canvas
-
-pushMatrix();
-    scale( -1.0, 1.0); //mirror across y-axis
-    shape( s,0, 0);//render shape to canvas
-popMatrix();
-
-pushMatrix();
-    scale( 1.0, -1.0);//mirror across x-axis
-    shape( s,0, 0);//render shape to canvas
-popMatrix();
-
-recursivePattern1( len * .8, level-1, shapeColor);
-
-pushMatrix();
-    scale( -1.0, -1.0); //mirror across x,y axis
-    shape( s,0, 0); //rendered after recursive call, reversed stack order
-popMatrix();
+void positivePattern( float balancePoint, int mX){
+  color cPos1 = color( 230, 100, 100); //purple 
+  color cPos2 = color( 80, 100, 100); //lime
+  
+  //define curColor based on mX relative to balancePoint 
+  float fraction = map( mX, balancePoint, width, 0.0, 1.0); 
+  color curColor = lerpColor( cPos2, cPos1, fraction); //fraction varies beteween 0.0, 1.0
+  
+  //define curSize based on mX relative to balancePoint
+  float curSize = map( mX, balancePoint, width, minSize, maxSize ); 
+  
+  posRecursivePattern( curSize, curColor);
 }
 
-void recursivePattern2(float len, float level, color c1){
-if( level<1){
-return;
-}
-color shapeColor = color( hue(c1), saturation(c1), brightness(c1)*.8 );
-PShape s= createPosShape( len, c1);
-float degrees=0;
-pushMatrix();
-while( degrees< 360){
-rotate( radians( degrees));
-shape( s, 0,0);
-degrees += 45;
-}
-popMatrix();
-recursivePattern2( len * .8, level-1, shapeColor);
-} //end recursivePattern2
-
-PShape createNegShape(float len, color c1){
-PShape s = createShape();
-s.setFill( c1);
-s.beginShape();
-stroke( 30,40);
-s.vertex(0,0 ); //1
-s.vertex(.2*len,.1*len ); //2
-s.vertex(.3*len,0 ); //3
-s.vertex(.7*len,0 ); //4
-s.vertex(.8*len,.1*len); //5
-s.vertex(1.0*len,.1*len); //6
-s.vertex(1.1*len,.2*len ); //7
-s.vertex(1.0*len,.3*len ); //8
-s.vertex(1.1*len,.4*len ); //9
-s.vertex(1.1*len,.5*len); //10
-s.vertex(1.2*len,.6*len); //11
-s.vertex(1.2*len,.7*len); //12
-s.vertex(1.1*len,.8*len); //13
-s.vertex(.9*len,.7*len); //14
-s.vertex(1.0*len,.9*len); //15
-s.vertex(.9*len,1.0*len); //16
-s.vertex(.8*len,.9*len); //17
-s.vertex(.4*len,.9*len); //18
-s.vertex(.3*len,1.0*len); //19
-s.vertex(.1*len,.8*len); //20
-s.vertex(.2*len,.7*len); //21
-s.vertex(.2*len,.6*len); //22
-s.vertex(.1*len,.5*len); //23
-s.vertex(.1*len,.4*len); //24
-s.vertex(0*len,.3*len); //25
-s.vertex(.1*len,.2*len); //26
-s.vertex(0*len,0*len); //back to first point
-s.beginContour();
-s.vertex(.3*len,.3*len ); //1
-s.vertex(.3*len,.4*len); //15
-s.vertex(.4*len,.5*len); //14
-s.vertex(.4*len,.7*len); //13
-s.vertex(.5*len,.8*len); //12
-s.vertex(.7*len,.8*len); //11
-s.vertex(.7*len,.7*len); //10
-s.vertex(.8*len,.7*len ); //9
-s.vertex(.9*len,.6*len ); //8
-s.vertex(.8*len,.5*len ); //7
-s.vertex(.9*len,.4*len); //6
-s.vertex(.8*len,.3*len); //5
-s.vertex(.7*len,.3*len ); //4
-s.vertex(.6*len,.2*len ); //3
-s.vertex(.4*len,.2*len ); //2
-s.vertex(.3*len,.3*len ); //1
-s.endContour();
-s.endShape(CLOSE);
-return s;
+//Draws a single motif - nested size and color gradient
+void posRecursivePattern( float size, color c1){
+  //termination test
+  if(size < minSize){
+    return;
+  }
+  //task
+  float fraction = map( size, minSize, maxSize, 0.2, 1.0); //may want to customize
+  color curColor = color( hue(c1), saturation( c1), brightness(c1)*fraction);
+  PShape s1 = customPosShape( size, curColor); //test the shape
+  shape(s1,0,0); //render the shape at the origin
+  
+  //recursive call
+  posRecursivePattern( size * 0.8, c1); 
+  //task - with reversed stacking - mirror across origin
+  pushMatrix();
+  scale( -1, -1);//mirror across the x, y axis (origin)
+  shape( s1, 0, 0);
+  popMatrix();
 }
 
-PShape createPosShape(float len, color c1){
-PShape s = createShape();
-s.setFill( c1);
-s.beginShape();
-//s.noStroke();
-stroke( 30,20);
-s.vertex(0,0 ); //1
-s.vertex(.1*len,.1*len ); //2
-s.vertex(.3*len,.2*len ); //3
-s.vertex(.3*len,.3*len ); //4
-s.vertex(.5*len,.4*len); //5
-s.vertex(.5*len,.5*len); //6
-s.vertex(.7*len,.6*len ); //7
-s.vertex(.7*len,.7*len ); //8
-s.vertex(.9*len,.8*len ); //9
-s.vertex(1.0*len,1.0*len); //10
-s.vertex(.8*len,.9*len); //11
-s.vertex(.7*len,.8*len); //12
-s.vertex(.6*len,.9*len); //13
-s.vertex(.6*len,.7*len); //14
-s.vertex(.5*len,.6*len); //15
-s.vertex(.4*len,.6*len ); //16
-s.vertex(.4*len,.7*len ); //17
-s.vertex(.5*len,.8*len ); //18
-s.vertex(.5*len,1.0*len ); //19
-s.vertex(.4*len,.8*len); //20
-s.vertex(.3*len,.7*len); //21
-s.vertex(.3*len,.6*len ); //22
-s.vertex(.4*len,.5*len ); //23
-s.vertex(.3*len,.4*len ); //24
-s.vertex(.2*len,.4*len); //25
-s.vertex(.3*len,.5*len); //26
-s.vertex(.2*len,.5*len); //27
-s.vertex(.2*len,.7*len); //28
-s.vertex(.1*len,.5*len); //29
-s.vertex(.1*len,.4*len); //30
-s.vertex(.2*len,.3*len); //31
-s.vertex(.1*len,.4*len); //32
-s.vertex(0,0 ); //1 //back to first point
-s.endShape(CLOSE);
-return s;
+//Draws a single shape
+PShape customPosShape(  float len, color c1){
+  PShape s; //declare our first object-type variable //heap - object memory
+  fill( c1);//attempt to set color for the shape
+  s = createShape( );//initialize our shape
+  s.beginShape();
+  s.vertex( 0,0  ); //1 x, y points
+  s.vertex(.5 * len , 0 ); //2
+  s.vertex(len , .5* len ); //3
+  s.vertex(.5 * len , len  );//4
+  s.vertex( 0,  .5* len ); //5
+  s.vertex( 0, 0 ); //6
+  
+  s.beginContour(); //make internal cutout 
+  s.vertex( len*.25,len*.45); //inner cutouts - point 5
+  s.vertex(len*.6, len*.6);  // 
+  s.vertex( len*.45, len*.25); // 
+  s.vertex(0,0);
+  s.endContour(); //end internal cutout
+
+  
+  s.endShape();
+  //shape( s, 0,0);  //render to the canvas
+  return s; //return the PShape
+  
 }
 ```
+
+
 

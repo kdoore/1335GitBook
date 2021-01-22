@@ -69,10 +69,5 @@ void setup(){
 void draw( ){
   btn1.display(); //have the button instance call it's display( ) method
 }
-
-//add code for mouseClicked
-void mouseClicked( ){
-  btn1.clicked( mouseX, mouseY);
-}
 ```
 

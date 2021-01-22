@@ -6,18 +6,19 @@
 
 * [Processing IDE](getting-started/processing-ide.md)
 
-## Processing - Java, Javascript
+## Processing, Java
 
-* [HSB Color Mode](processing-java-javascript/hsb_color_mode/README.md)
-  * [HSB Color Wheel](processing-java-javascript/hsb_color_mode/hsb-color-wheel/README.md)
-    * [Example Code](processing-java-javascript/hsb_color_mode/hsb-color-wheel/colorwheel-class-codes19.md)
-  * [HSB Color Palette Tool](processing-java-javascript/hsb_color_mode/hsb-color-wheel-complimentary-color-palatte.md)
-* [Java Language](processing-java-javascript/java-language.md)
-* [Recursion](processing-java-javascript/recursion/README.md)
-  * [Recursion Call-Stack](processing-java-javascript/recursion/recursion-call-stack.md)
-  * [Example Code](processing-java-javascript/recursion/class-code-sept12f19/README.md)
-    * [Example Code Feb 5 S20](processing-java-javascript/recursion/class-code-sept12f19/example-code-feb-5-s20.md)
-    * [Feb 12 Code](processing-java-javascript/recursion/class-code-sept12f19/feb-12-code.md)
+* [Processing](processing-java/processing.md)
+* [Java Language](processing-java/java-language.md)
+* [HSB Color Mode](processing-java/hsb_color_mode/README.md)
+  * [HSB Color Wheel](processing-java/hsb_color_mode/hsb-color-wheel/README.md)
+    * [Example Code](processing-java/hsb_color_mode/hsb-color-wheel/colorwheel-class-codes19.md)
+  * [HSB Color Palette Tool](processing-java/hsb_color_mode/hsb-color-wheel-complimentary-color-palatte.md)
+* [Recursion](processing-java/recursion/README.md)
+  * [Recursion Call-Stack](processing-java/recursion/recursion-call-stack.md)
+  * [Example Code](processing-java/recursion/class-code-sept12f19/README.md)
+    * [Example Code Feb 5 S20](processing-java/recursion/class-code-sept12f19/example-code-feb-5-s20.md)
+    * [Feb 12 Code](processing-java/recursion/class-code-sept12f19/feb-12-code.md)
 
 ## Project 1
 

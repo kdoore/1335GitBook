@@ -18,3 +18,5 @@ Kandinsky - Concerning The Spiritual in Art
 
 kdoore 2/4/2020 Kandinsky color: feeling associations
 
+## Emotions vs. Feelings vs. Sensations
+

@@ -1,5 +1,7 @@
 # Emotions represented using color, form, space
 
+Wassily Kandinsky
+
 ## Modeling Emotions:  Feeling, Context, Experience:
 
 Recent research in Neuroscience, Cognitive Science, and Computer Science have transformed the understanding of brain, body science.
