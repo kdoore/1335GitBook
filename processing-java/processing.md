@@ -18,6 +18,27 @@
 ### Installing Processing: 
 
 * [processing.org](http://processing.org) - download processing IDE, reference, examples, tutorials, etc.
+* Open Processing Application
+
+Paste the following code into the code editor:
+
+```text
+int xPos;
+void setup() { 
+  size(800, 400);
+  xPos = 0;
+} 
+
+void draw() { 
+  background(100,50,255);
+  fill(100, 255, 255);//cyan
+  rect( (xPos += 5)% width, 50, 50,50);
+  textSize( 30);
+  text("Example of using java processing", 100,200);
+}
+```
+
+![Processing Development Environment: Executes to generate the sketch canvas](../.gitbook/assets/screen-shot-2021-01-22-at-2.56.13-pm.png)
 
 
 
