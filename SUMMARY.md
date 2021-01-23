@@ -14,6 +14,7 @@
   * [HSB Color Wheel](processing-java/hsb_color_mode/hsb-color-wheel/README.md)
     * [Example Code](processing-java/hsb_color_mode/hsb-color-wheel/colorwheel-class-codes19.md)
   * [HSB Color Palette Tool](processing-java/hsb_color_mode/hsb-color-wheel-complimentary-color-palatte.md)
+* [Assignment 1:](processing-java/assignment-1.md)
 * [Recursion](processing-java/recursion/README.md)
   * [Recursion Call-Stack](processing-java/recursion/recursion-call-stack.md)
   * [Example Code](processing-java/recursion/class-code-sept12f19/README.md)
@@ -125,7 +126,8 @@
 
 ## Resources and References
 
-* [Resources](resources-and-references/resources.md)
+* [Resources](resources-and-references/resources/README.md)
+  * [Games, Rules](resources-and-references/resources/games-rules.md)
 * [Random Inspiration](resources-and-references/random-inspiration/README.md)
   * [Ulm School](resources-and-references/random-inspiration/ulm-school.md)
   * [Heart-Mind, Mind, Body](resources-and-references/random-inspiration/heart-mind-mind-body.md)
