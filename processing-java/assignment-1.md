@@ -6,15 +6,13 @@ description: 'Meta ( High Level of Abstraction, Kindness ) - Expressing Embodied
 
 ### Exploring Subjective Feelings:  Meta
 
-### Meta: Kindness, Higher Levels of Abstraction 
+### Meta, Metta: Higher Levels of Abstraction, Loving Kindness 
 
       **Feeling Flow: Embodied Feelings:** positive affect, calm, low-activation states, low stress 
 
-### 
-
 ## Assignment Tasks:
 
-### 1. Create Gitbook: 
+### 1. Create your Gitbook: 
 
 You will submit screenshot and a link to your gitbook page as part of your assignment submission.
 
@@ -29,10 +27,15 @@ You will submit screenshot and a link to your gitbook page as part of your assig
    1. Provide a link to the song artist, album.
    2. **Example:**  Wildfire by the Wild Feathers
    3. [https://genius.com/The-wild-feathers-wildfire-lyrics](https://genius.com/The-wild-feathers-wildfire-lyrics)
-2. **Hand - Sketch:  Create a Sol Lewitt** Inspired sketch to invoke: **Calm, Pleasant Feelings**
+2. **Hand - Sketch - Conceptual art - Concept: Meta, Metta**
+
+   **Create a Sol Lewitt** inspired sketch to explore the concepts of metta, meta
+
    1. **Create a simple pencil sketch on paper and list the rules,  procedures** used to create the artwork so that someone else could create the same artwork from the listed rules. 
    2. **Gitbook: Take a screenshot** of the sketch, **insert the image** on your gitbook page
    3. **Gitbook:** List the procedure, rules that you followed in making the sketch.
+   4. **Gitbook:**  Include one or two sentences using paragraph markup to explain the connection between the concept - idea, and the artwork - expression
+
 3. **Code - Sketch:  Create simple processing program** that uses shapes, colors to invoke a positive, relaxing, calm feelings.
    1. **Gitbook:**  Take a screenshot of the canvas, insert the image on your gitbook page
    2. **Gitbook:**  Copy and paste as code on your gitbook.
@@ -69,11 +72,9 @@ You will submit screenshot and a link to your gitbook page as part of your assig
 
 {% embed url="http://www.altx.com/vizarts/conceptual.html" %}
 
-[https://monoskop.org/images/3/3d/LeWitt\_Sol\_1967\_1999\_Paragraphs\_on\_Conceptual\_Art.pdf](https://monoskop.org/images/3/3d/LeWitt_Sol_1967_1999_Paragraphs_on_Conceptual_Art.pdf)
+### [Paragraphs on Conceptual Art - Sol Lewitt: pdf](https://monoskop.org/images/3/3d/LeWitt_Sol_1967_1999_Paragraphs_on_Conceptual_Art.pdf)
 
-
-
-> In conceptual art the idea of concept is the most important aspect of the work.1 When an artist uses a conceptual form of art, it means that all of the planning and decisions are made beforehand and the execution is a perfunctory affair. The idea becomes a machine that makes the art. This kind of art is not theoretical or illustrative of theories; it is intuitive, it is involved with all types of mental processes and it is purposeless. It is usually free from the dependence on the skill of the artist as a craftsman. It is the objective of the artist who is concerned with conceptual art to make his work mentally interesting to the spectator, and therefore usually he would want it to become emotionally dry. There is no reason to suppose, however, that the conceptual artist is out to bore the viewer. It is only the expectation of an emotional kick, to which one conditioned to expressionist art is accustomed, that would deter the viewer from perceiving this art
+> In conceptual art the **idea of concept is** the most important aspect of the work.1 When an artist uses a conceptual form of art, it means that all of the planning and decisions are made beforehand and the execution is a perfunctory affair. The **idea becomes a machine that makes the art.** This kind of art is not theoretical or illustrative of theories; it is intuitive, it is involved with all types of mental processes and it is purposeless. It is usually free from the dependence on the skill of the artist as a craftsman. It is the objective of the artist who is concerned with conceptual art to make his work mentally interesting to the spectator, and therefore usually he would want it to become emotionally dry. There is no reason to suppose, however, that the conceptual artist is out to bore the viewer. It is only the expectation of an emotional kick, to which one conditioned to expressionist art is accustomed, that would deter the viewer from perceiving this art
 
 ### 4. [Modeling Creativity:](../resources-and-references/resources/creativity.md#modeling-creativity-tom-d-desmedt)  Tom D. DeSmedt,
 
