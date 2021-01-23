@@ -14,7 +14,7 @@
   * [HSB Color Wheel](processing-java/hsb_color_mode/hsb-color-wheel/README.md)
     * [Example Code](processing-java/hsb_color_mode/hsb-color-wheel/colorwheel-class-codes19.md)
   * [HSB Color Palette Tool](processing-java/hsb_color_mode/hsb-color-wheel-complimentary-color-palatte.md)
-* [Assignment 1:](processing-java/assignment-1.md)
+* [Assignment 1: Meta](processing-java/assignment-1.md)
 * [Recursion](processing-java/recursion/README.md)
   * [Recursion Call-Stack](processing-java/recursion/recursion-call-stack.md)
   * [Example Code](processing-java/recursion/class-code-sept12f19/README.md)
