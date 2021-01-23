@@ -15,14 +15,15 @@ description: 'Meta ( High Level of Abstraction, Kindness ) - Expressing Embodied
 
 Review the assignment tasks,  look at the [**Inspiration**](../project-1/beginshape_-_vertex_shapes/diagram-and-art-expression.md) ****content below to find links, ideas, etc. Complete the tasks to create your gitbook and a gitbook page that documents your process.
 
-### 1. Create your Gitbook: 
+### 1. Create your personal [Gitbook](https://www.gitbook.com/): 
 
 You will submit screenshot and a link to your gitbook page as part of your assignment submission.
 
-1. Create a Gitbook Account
-2. Create a Gitbook - Name it: 
-3. Create a page: Assignment 1:
-4. Find: Share-Link - you'll include this in your submission document 
+1. Recommended: Create a [**GitHub Account**](https://github.com/)\*\*\*\*
+2. Create a [**Gitbook**](https://www.gitbook.com/) Account using your GitHub account.
+3. Create a Gitbook, Use the Personal  - Name it: 
+4. Create a page: Assignment 1:
+5. Find: Share-Link - you'll include this in your submission document 
 
 ### 2. Abstract Concepts - Concrete Feelings: meta, metta, loving kindness 
 
