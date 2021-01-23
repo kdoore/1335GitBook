@@ -1,8 +1,15 @@
----
-description: 'Rule 1:  You will receive a body*'
----
-
 # Assignment 1:
+
+### Inspirations: 
+
+### [If Life is a Game, These are the Rules:](../resources-and-references/resources/games-rules.md)  
+
+Modeling Creativity:
+
+  
+
+
+**Rule 1: You will receive a body**
 
 ### Gitbook: 
 

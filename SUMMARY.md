@@ -127,6 +127,7 @@
 ## Resources and References
 
 * [Resources](resources-and-references/resources/README.md)
+  * [Creativity](resources-and-references/resources/creativity.md)
   * [Games, Rules](resources-and-references/resources/games-rules.md)
 * [Random Inspiration](resources-and-references/random-inspiration/README.md)
   * [Ulm School](resources-and-references/random-inspiration/ulm-school.md)
