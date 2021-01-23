@@ -1,10 +1,10 @@
 ---
-description: 'Meta ( High Level of Abstraction, Kindness ) - Expressing Embodied Feelings'
+description: 'Meta, Metta: Expressing Concepts and Feelings'
 ---
 
-# Assignment 1: Meta
+# Assignment 1: Meta, Metta
 
-### Exploring Concepts, Feelings:  Meta, Metta
+### Exploring and Expressing Concepts, Feelings:  Meta, Metta
 
 ### Meta, Metta: Higher Levels of Abstraction, Loving Kindness 
 
@@ -13,7 +13,7 @@ description: 'Meta ( High Level of Abstraction, Kindness ) - Expressing Embodied
 
 ## Assignment Tasks:
 
-Review the assignment tasks,  look at the [**Inspiration**](../project-1/beginshape_-_vertex_shapes/diagram-and-art-expression.md) ****content below to find links, ideas, etc. Complete the tasks to create your gitbook and a gitbook page that documents your process.
+Review the assignment tasks,  look through the [**Inspiration**](../project-1/beginshape_-_vertex_shapes/diagram-and-art-expression.md) ****content below to find links, ideas, etc. Complete the tasks to create your gitbook and a gitbook page that documents your process. Submit on eLearning using the submission template.
 
 ### 1. Create your personal [Gitbook](https://www.gitbook.com/): 
 
@@ -21,9 +21,10 @@ You will submit screenshot and a link to your gitbook page as part of your assig
 
 1. Recommended: Create a [**GitHub Account**](https://github.com/)\*\*\*\*
 2. Create a [**Gitbook**](https://www.gitbook.com/) Account using your GitHub account.
-3. Create a Gitbook, Use the Personal  - Name it: 
+3. Create a Gitbook, Private, Personal Notes:  Name it: 
 4. Create a page: Assignment 1:
 5. Find: Share-Link - you'll include this in your submission document 
+6. After completing steps below, take **a screenshot** of a portion of your gitbook page using the share link to open as a **web-document** \(not in edit mode\)
 
 ### 2. Abstract Concepts - Concrete Feelings: meta, metta, loving kindness 
 
@@ -77,7 +78,7 @@ You will submit screenshot and a link to your gitbook page as part of your assig
 
 > [LeWitt ](https://en.wikipedia.org/wiki/Sol_LeWitt)is regarded as a founder of both [Minimal](https://en.wikipedia.org/wiki/Minimal_art) and [Conceptual art](https://en.wikipedia.org/wiki/Conceptual_art).[\[4\]](https://en.wikipedia.org/wiki/Sol_LeWitt#cite_note-GuggenheimMuseum-4) His prolific two and three-dimensional work ranges from wall drawings \(over 1200 of which have been executed\) to hundreds of works on paper extending to structures in the form of [towers](https://en.wikipedia.org/wiki/Tower), [pyramids](https://en.wikipedia.org/wiki/Pyramid), geometric forms, and progressions. These works range in size from books and gallery-sized installations to [monumental](https://en.wikipedia.org/wiki/Monument) outdoor pieces. [Wikipedia](https://en.wikipedia.org/wiki/Sol_LeWitt)
 
-> The idea itself, even if not made visual, is as much a work of art as any finished product." Stated LeWitt in 1971. "All intervening steps, scribbles, sketches, drawings, failed work models, studies thoughts, conversations, are of interest. Those that show the thought process of the artist are sometimes more interesting than the final product." \(LeWitt, 'Paragraphs on Conceptual Art', Artforum Vol.5, no. 10, Summer 1967, pp. 79-83\)
+> The idea itself, even if not made visual, is as much a work of art as any finished product." Stated LeWitt in 1971. "All intervening steps, scribbles, sketches, drawings, failed work models, studies thoughts, conversations, are of interest. Those that show the thought process of the artist are sometimes more interesting than the final product." \(LeWitt, '[Paragraphs on Conceptual Art'](../resources-and-references/resources/conceptual-art.md), Artforum Vol.5, no. 10, Summer 1967, pp. 79-83\)
 
 {% embed url="https://massmoca.org/event/walldrawing792/\#title-area" %}
 
