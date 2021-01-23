@@ -4,13 +4,16 @@ description: 'Meta ( High Level of Abstraction, Kindness ) - Expressing Embodied
 
 # Assignment 1: Meta
 
-### Exploring Subjective Feelings:  Meta
+### Exploring Concepts, Feelings:  Meta, Metta
 
 ### Meta, Metta: Higher Levels of Abstraction, Loving Kindness 
 
-      **Feeling Flow: Embodied Feelings:** positive affect, calm, low-activation states, low stress 
+**Feeling Flow: Embodied Feelings:** positive affect, calm, low-activation states, low stress   
+**Express Concept**: Using geometric forms, colors to represent ideas.
 
 ## Assignment Tasks:
+
+Review the assignment tasks,  look at the [**Inspiration**](../project-1/beginshape_-_vertex_shapes/diagram-and-art-expression.md) ****content below to find links, ideas, etc. Complete the tasks to create your gitbook and a gitbook page that documents your process.
 
 ### 1. Create your Gitbook: 
 
@@ -21,25 +24,34 @@ You will submit screenshot and a link to your gitbook page as part of your assig
 3. Create a page: Assignment 1:
 4. Find: Share-Link - you'll include this in your submission document 
 
-### 2. Subjective Feelings:   Pleasant, Calm
+### 2. Abstract Concepts - Concrete Feelings: meta, metta, loving kindness 
 
-1. **SONG:**  Select and list a song that evokes **positive, relaxing, calm feelings** for you: 
-   1. Provide a link to the song artist, album.
+1. **Song:**  Feeling Flow: Select and list a song that evokes **positive, relaxing, calm feelings** for you: 
+   1. Provide a link to the song, artist, lyrics, or album.
    2. **Example:**  Wildfire by the Wild Feathers
    3. [https://genius.com/The-wild-feathers-wildfire-lyrics](https://genius.com/The-wild-feathers-wildfire-lyrics)
-2. **Hand - Sketch - Conceptual art - Concept: Meta, Metta**
+2. **Conceptual art - Concept: Meta, Metta**
 
-   **Create a Sol Lewitt** inspired sketch to explore the concepts of metta, meta
+   **Create a Sol Lewitt** inspired sketch to explore the concepts of metta, and/or meta
 
    1. **Create a simple pencil sketch on paper and list the rules,  procedures** used to create the artwork so that someone else could create the same artwork from the listed rules. 
    2. **Gitbook: Take a screenshot** of the sketch, **insert the image** on your gitbook page
-   3. **Gitbook:** List the procedure, rules that you followed in making the sketch.
-   4. **Gitbook:**  Include one or two sentences using paragraph markup to explain the connection between the concept - idea, and the artwork - expression
+   3. **Gitbook:** **List the procedure, rules** that you followed in making the sketch.
+   4. **Gitbook:**  **Paragraph:** Include one or two sentences using paragraph markup to explain the connection between the concept - idea, and the artwork - expression
 
-3. **Code - Sketch:  Create simple processing program** that uses shapes, colors to invoke a positive, relaxing, calm feelings.
-   1. **Gitbook:**  Take a screenshot of the canvas, insert the image on your gitbook page
-   2. **Gitbook:**  Copy and paste as code on your gitbook.
-   3. **Gitbook:**  Write a description of your subjective moods that your artwork expresses.
+3. **Data-Flow, Nodebox: Procedural, Generative Design**
+   1.  Download, Install Nodebox
+   2.  Open Nodebox, Open Examples from the Edit Menu: 
+   3.  Select an Example program.  
+   4. Take a screenshot of the starting design
+   5. **Customize:** Make Modifications to several nodes, add a node to create your version of the design
+   6. Take a Screenshot of the final design
+   7. **Gitbook:** Insert both images into gitbook.
+   8. **Gitbook:** Write a simple description of some of the changes you made to create your version.
+4. **Code - Java, Processing:  Create simple Processing program** that uses shapes, colors to represent the concepts of **meta and/or metta.**
+   1. **Gitbook:**  Image:  insert a screenshot of your canvas as an image on your gitbook.
+   2. **Gitbook:**  Code: Copy and paste as code on your gitbook.
+   3. **Gitbook:**  Paragraph: Write a description of how your design reflects your concept.
 
 ### Inspirations: 
 
