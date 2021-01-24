@@ -7,7 +7,7 @@
 ## Getting Started
 
 * [Processing](getting-started/processing.md)
-* [PDE - Code Editor](getting-started/untitled.md)
+* [PDE - Code Editor](getting-started/pde-code-editor.md)
 * [Learning Processing](getting-started/learning-processing.md)
 * [HSB Color Mode](getting-started/hsb_color_mode/README.md)
   * [HSB Color Wheel](getting-started/hsb_color_mode/hsb-color-wheel/README.md)
