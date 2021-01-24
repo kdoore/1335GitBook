@@ -1,6 +1,8 @@
 # Table of contents
 
 * [Introduction](README.md)
+* [Assignments](assignments/README.md)
+  * [Assignment 1: Meta, Metta](assignments/assignment-1.md)
 
 ## Getting Started
 
@@ -15,7 +17,6 @@
   * [HSB Color Wheel](processing-java/hsb_color_mode/hsb-color-wheel/README.md)
     * [Example Code](processing-java/hsb_color_mode/hsb-color-wheel/colorwheel-class-codes19.md)
   * [HSB Color Palette Tool](processing-java/hsb_color_mode/hsb-color-wheel-complimentary-color-palatte.md)
-* [Assignment 1: Meta, Metta](processing-java/assignment-1.md)
 * [Recursion](processing-java/recursion/README.md)
   * [Recursion Call-Stack](processing-java/recursion/recursion-call-stack.md)
   * [Example Code](processing-java/recursion/class-code-sept12f19/README.md)
