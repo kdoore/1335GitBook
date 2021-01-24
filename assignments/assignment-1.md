@@ -1,5 +1,5 @@
 ---
-description: 'Expressing Concepts and Feelings: Meta, Metta'
+description: 'Exploration of Concepts and Feelings: Meta, Metta'
 ---
 
 # Assignment 1: Meta, Metta
