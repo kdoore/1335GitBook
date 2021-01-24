@@ -31,8 +31,6 @@ void draw(){
 }
 ```
 
-![](https://github.com/kdoore/cs1335/tree/9e8e8ed05c8db5e0695fd2711a01f24b372e8118/assets/Screen%20Shot%202019-09-03%20at%208.00.50%20AM.png)
-
 ## Analyze HSB Color in Brightness, Saturation, Hue Order
 
 When trying to interpret the value associated with an HSB color value, we should start with the Brightness value, If it's non-zero, then we should proceed to analyze the Saturation value, if it's non-zero, then we should consider the Hue value. If Brightness is 0, then the corresponding HSB color is black. If B is non-zero, then the color is located higher in the color cone, so we can visualize moving up the cone along the vertical axis, by a value corresponding to the B value. The Saturation value controls movement outward along the radius of the cone. If Saturation is 0, then we're at the center-axis and all colors have no saturation, they are grayscale colors. If Saturation is non-zero, then we need to analyze the Hue value to understand the hue color value. When Hue = 0, or Hue &gt;= 255, the color is Red. Otherwise, the color follows the Rainbow pattern: ROYGBIV -
