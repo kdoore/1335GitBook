@@ -6,8 +6,8 @@
 
 ## Getting Started
 
-* [Processing.org](getting-started/processing-ide/README.md)
-  * [Processing](getting-started/processing-ide/processing.md)
+* [Processing](getting-started/processing/README.md)
+  * [Setup Processing](getting-started/processing/processing-ide.md)
 * [Learning Processing](getting-started/learning-processing.md)
 
 ## Processing, Java
