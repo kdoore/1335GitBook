@@ -14,3 +14,17 @@
 
 [Dan Tapper Sound Design ](https://dantappersounddesign.com/)
 
+### Human Relationships: honoring complexity...love
+
+{% embed url="https://www.brainpickings.org/2013/07/02/adrienne-rich-honorable-human-relationship/?mc\_cid=c7a513cfc3&mc\_eid=b3eee28947" %}
+
+> An honorable human relationship — that is, one in which two people have the right to use the word “love” — is a process, delicate, violent, often terrifying to both persons involved, a process of refining the truths they can tell each other.
+>
+> It is important to do this because it breaks down human self-delusion and isolation.
+>
+> It is important to do this because in doing so we do justice to our own complexity.
+>
+> It is important to do this because we can count on so few people to go that hard way with us.  **Adrienne Rich**
+
+
+
