@@ -2,7 +2,14 @@
 
 ### Event-based Programming - Repeated Execution
 
-#### Initialization: setup is executed one time
+### Global Variables:
+
+* Variables declared at the top of the script
+* variables declared outside of any function have global scope
+* Global Variables should be initialized in the setup function
+* Animation Variables - a variable's value gets re-initialized each frame if it is declared inside draw\( \)
+
+### Initialization: setup is executed one time
 
 `void setup( ) {   //code   }`     
  **Processing event function - for initialization - auto-executed once**
