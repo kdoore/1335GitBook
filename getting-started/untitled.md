@@ -2,7 +2,7 @@
 description: Processing Development Environment
 ---
 
-# PDE - Processing
+# PDE - Code Editor
 
 ### Event-based Programming - Repeated Execution
 
