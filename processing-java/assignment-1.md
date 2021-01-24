@@ -4,9 +4,17 @@ description: 'Meta, Metta: Expressing Concepts and Feelings'
 
 # Assignment 1: Meta, Metta
 
-### Creative Exploration, Expression of Concepts, Feelings:  Meta, Metta
+## Exploration of Concepts, Feelings: Meta, Metta 
 
 ### Meta, Metta: Higher Levels of Abstraction, Loving Kindness 
+
+[Meta:  ](http://www.literaturepage.com/read/emersonessays2-17.html#:~:text=Ralph%20Waldo%20Emerson%3A%20Essays%2C%20Second%20Series&text=The%20religions%20of%20the%20world,flow%2C%20and%20not%20to%20freeze.)
+
+{% embed url="https://en.wikipedia.org/wiki/Meta" %}
+
+[Metta](https://en.wikipedia.org/wiki/Maitr%C4%AB) - 
+
+{% embed url="https://en.wikipedia.org/wiki/Maitr%C4%AB" %}
 
 **Feeling Flow: Embodied Feelings:** positive affect, calm, low-activation states, low stress   
 **Express Concept**: Using geometric forms, colors to represent ideas.
