@@ -16,6 +16,19 @@ Primitive-type variables involve a single piece of information like integers: `i
 
 Composite-type values refer to more complex data-types like arrays and objects; the memory-size required storing the data elements for complex variables, is not as easy for the system to determine when the program is being compiled. For this reason, a variable of this type actually refers to the memory-address of the starting location in memory where the data is stored. If the reference-variable does not contain a valid memory address, then it has a value of 'null'. Typically the remainder of the data is stored in adjacent memory locations. Composite-type variables are commonly called `reference` data types, these include Array, ArrayList, String, and custom Class-Objects. `Reference` variables `refer` to a location in memory where the data is stored.
 
+### Default Values:  
+
+Primitive Data-types have language defined default values:
+
+* int, short, long, byte:   0
+* float, double:  0.0f,  0.0
+* char:  ‘/u0000’ 
+* boolean:  false
+
+Reference Data-types have the value: **`null`** as a default value. The keyword **`null`** indicates that the variable's reference memory address does not 'point' to valid object data.  
+
+* String or any object:  **`null`**
+
 ## Primitive vs. Reference Data-types: Function Parameters
 
 A major difference in behavior exists between primitive and reference data-types when they are defined as input parameters for a function. Primitive-type variables are `passed-by-value` into a function, this means that only a copy of the argument value is passed into a function, so any changes made to a local parameter within a function do not modify the value of the original variable. This is related to variable scope, when a primitive-type variable is passed as an argument to a function, changes made to the function parameter within the function body do not impact the original primitive variable. However, when composite, reference-type variables are passed into a function as arguments, then a copy of the reference-type variable is passed into the function, this means the memory address of the object is passed into the function. **Therefore, changes made within the function body to the referenced element are actually being made to the original data element.** However, it's important to notice that _it is a copy of the reference variable_ that is passed into the function, so, changes to the actual local function reference variable, such as setting it to null, do not affect the original data element.
