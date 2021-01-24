@@ -34,7 +34,7 @@ You will submit screenshot and a link to your gitbook page as part of your assig
 
 ### 2. Abstract Concepts - Concrete Feelings: meta, metta, loving kindness 
 
-1. **Song:**  Feeling Flow: Select and list a song that evokes **positive, relaxing, calm feelings** for you: 
+1. **Song:**  **Feeling Flow:** Select and list a song that evokes **positive, relaxing, calm feelings** for you: 
    1. Provide a link to the song, artist, lyrics, or album.
    2. **Example:**  Wildfire by the Wild Feathers
    3. [https://genius.com/The-wild-feathers-wildfire-lyrics](https://genius.com/The-wild-feathers-wildfire-lyrics)
@@ -47,8 +47,8 @@ You will submit screenshot and a link to your gitbook page as part of your assig
    3. **Gitbook:** **List the procedure, rules** that you followed in making the sketch.
    4. **Gitbook:**  **Paragraph:** Include one or two sentences using paragraph markup to explain the connection between the concept - idea, and the artwork - expression
 
-3. **Data-Flow, Nodebox: Procedural, Generative Design**
-   1.  Download, Install Nodebox
+3. \*\*\*\*[**Data-Flow, Nodebox:** ](assignment-1.md#5-nodebox-tom-d-desmedt)**Procedural, Generative Design**
+   1. [ **Download, Install Nodebox**](https://www.nodebox.net/download/)\*\*\*\*
    2.  Open Nodebox, Open Examples from the Edit Menu: 
    3.  Select an Example program.  
    4. Take a screenshot of the starting design
@@ -56,7 +56,7 @@ You will submit screenshot and a link to your gitbook page as part of your assig
    6. Take a Screenshot of the final design
    7. **Gitbook:** Insert both images into gitbook.
    8. **Gitbook:** Write a simple description of some of the changes you made to create your version.
-4. **Code - Java, Processing:  Create simple Processing program** that uses shapes, colors to represent the concepts of **meta and/or metta.**
+4. \*\*\*\*[**Code - Java, Processing:**](../getting-started/pde-code-editor.md)  **Create simple Processing program** that uses shapes, colors to represent the concepts of **meta and/or metta.**
    1. **Gitbook:**  Image:  insert a screenshot of your canvas as an image on your gitbook.
    2. **Gitbook:**  Code: Copy and paste as code on your gitbook.
    3. **Gitbook:**  Paragraph: Write a description of how your design reflects your concept.
