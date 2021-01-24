@@ -9,7 +9,7 @@
 * Global Variables should be initialized in the setup function
 * Animation Variables - a variable's value gets re-initialized each frame if it is declared inside draw\( \)
 
-### Initialization: setup is executed one time
+### Initialization: Setup is executed one time
 
 `void setup( ) {   //code   }`     
  **Processing event function - for initialization - auto-executed once**
@@ -22,9 +22,16 @@
 ### Static vs Active Mode
 
 **static vs. active mode -** all code, other than global variable declaration/ initialization must be within functions.  
-Do not have any code outside of a function definition
+**Do not have any code outside of a function definition**
 
-println\( “label “ + value\)  for debugging
+### Debugging:
 
-comments for labeling and debugging
+**`println( “label “ + value)`**    
+shows in the console when the program is executing  
+helpful for debugging
+
+**Comment syntax**:  Use for labeling and debugging  
+`// single line comment  
+/*  multi  
+line comment */` 
 
