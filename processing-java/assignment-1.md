@@ -8,13 +8,9 @@ description: 'Meta, Metta: Expressing Concepts and Feelings'
 
 ### Meta, Metta: Higher Levels of Abstraction, Loving Kindness 
 
-[Meta:  ](http://www.literaturepage.com/read/emersonessays2-17.html#:~:text=Ralph%20Waldo%20Emerson%3A%20Essays%2C%20Second%20Series&text=The%20religions%20of%20the%20world,flow%2C%20and%20not%20to%20freeze.)
+[**Meta:**  ](http://www.literaturepage.com/read/emersonessays2-17.html#:~:text=Ralph%20Waldo%20Emerson%3A%20Essays%2C%20Second%20Series&text=The%20religions%20of%20the%20world,flow%2C%20and%20not%20to%20freeze.)**Meta** \(from the [Greek](https://en.wikipedia.org/wiki/Ancient_Greek) μετα-, [meta-](https://en.wiktionary.org/wiki/meta-), meaning "after" or "beyond"\) is a prefix meaning more comprehensive or transcending[ \[Wikipedia\]](https://en.wikipedia.org/wiki/Meta)
 
-{% embed url="https://en.wikipedia.org/wiki/Meta" %}
-
-[Metta](https://en.wikipedia.org/wiki/Maitr%C4%AB) - 
-
-{% embed url="https://en.wikipedia.org/wiki/Maitr%C4%AB" %}
+[**Metta**](https://en.wikipedia.org/wiki/Maitr%C4%AB) ****: Mettā is a Pali word, from maitrī itself derived from mitra which, states Monier-Williams, means "friendly, amicable, benevolent, affectionate, kind, good-will",[\[13\]](https://en.wikipedia.org/wiki/Maitr%C4%AB#cite_note-MWD-13) as well as a form of "love, amity, sympathy [\[Wikipedia\]](https://en.wikipedia.org/wiki/Maitr%C4%AB#Maitr%C4%AB_and_Mett%C4%81)
 
 **Feeling Flow: Embodied Feelings:** positive affect, calm, low-activation states, low stress   
 **Express Concept**: Using geometric forms, colors to represent ideas.
