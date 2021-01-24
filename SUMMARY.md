@@ -8,13 +8,12 @@
 
 * [Processing](getting-started/processing.md)
 * [Learning Processing](getting-started/learning-processing.md)
+* [HSB Color Mode](getting-started/hsb_color_mode/README.md)
+  * [HSB Color Wheel](getting-started/hsb_color_mode/hsb-color-wheel/README.md)
+    * [Example Code](getting-started/hsb_color_mode/hsb-color-wheel/colorwheel-class-codes19.md)
+  * [HSB Color Palette Tool](getting-started/hsb_color_mode/hsb-color-wheel-complimentary-color-palatte.md)
 
-## Java Syntax
-
-* [UML Class Diagram](java-syntax/uml-class-diagram.md)
-* [Glossary](java-syntax/glossary.md)
-
-## Java
+## Java Language <a id="java"></a>
 
 * [Java Syntax](java/java_syntax/README.md)
   * [Typed-Variables](java/java_syntax/typed-variables.md)
@@ -27,16 +26,11 @@
   * [Switch-Case Statement](java/java_syntax/switch-case_statement.md)
   * [Ternary Operator](java/java_syntax/ternary_operator.md)
   * [Class](java/java_syntax/class.md)
-* [Java Language](java/java-language.md)
-* [HSB Color Mode](java/hsb_color_mode/README.md)
-  * [HSB Color Wheel](java/hsb_color_mode/hsb-color-wheel/README.md)
-    * [Example Code](java/hsb_color_mode/hsb-color-wheel/colorwheel-class-codes19.md)
-  * [HSB Color Palette Tool](java/hsb_color_mode/hsb-color-wheel-complimentary-color-palatte.md)
 * [Recursion](java/recursion/README.md)
   * [Recursion Call-Stack](java/recursion/recursion-call-stack.md)
-  * [Example Code](java/recursion/class-code-sept12f19/README.md)
-    * [Example Code Feb 5 S20](java/recursion/class-code-sept12f19/example-code-feb-5-s20.md)
-    * [Feb 12 Code](java/recursion/class-code-sept12f19/feb-12-code.md)
+  * [Recursion Examples](java/recursion/class-code-sept12f19/README.md)
+    * [Example Code 1](java/recursion/class-code-sept12f19/example-code.md)
+    * [Example Code 2](java/recursion/class-code-sept12f19/example-code-2.md)
 
 ## Project 1
 
@@ -124,8 +118,13 @@
   * [Slider](project-3/project-3-class-definitions/slider.md)
   * [Particles](project-3/project-3-class-definitions/particles.md)
 
+## Modeling <a id="java-syntax"></a>
+
+* [UML Class Diagram](java-syntax/uml-class-diagram.md)
+
 ## Resources and References
 
+* [Glossary](resources-and-references/glossary.md)
 * [Resources](resources-and-references/resources/README.md)
   * [Learning Science](resources-and-references/resources/learning-science.md)
   * [Creativity](resources-and-references/resources/creativity.md)
