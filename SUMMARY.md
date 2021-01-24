@@ -6,12 +6,12 @@
 
 ## Getting Started
 
-* [Processing IDE](getting-started/processing-ide.md)
+* [Processing IDE](getting-started/processing-ide/README.md)
+  * [Processing](getting-started/processing-ide/processing.md)
 * [Learning Processing](getting-started/learning-processing.md)
 
 ## Processing, Java
 
-* [Processing](processing-java/processing.md)
 * [Java Language](processing-java/java-language.md)
 * [HSB Color Mode](processing-java/hsb_color_mode/README.md)
   * [HSB Color Wheel](processing-java/hsb_color_mode/hsb-color-wheel/README.md)
