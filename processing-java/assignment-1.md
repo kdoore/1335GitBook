@@ -6,6 +6,8 @@ description: 'Meta, Metta: Expressing Concepts and Feelings'
 
 ## Exploration of Concepts, Feelings: Meta, Metta 
 
+> "the quality of the imagination is to flow, and not to freeze" Ralph W. Emerson
+
 ### Meta, Metta: Higher Levels of Abstraction, Loving Kindness 
 
 [**Meta:**  ](http://www.literaturepage.com/read/emersonessays2-17.html#:~:text=Ralph%20Waldo%20Emerson%3A%20Essays%2C%20Second%20Series&text=The%20religions%20of%20the%20world,flow%2C%20and%20not%20to%20freeze.)**Meta** \(from the [Greek](https://en.wikipedia.org/wiki/Ancient_Greek) μετα-, [meta-](https://en.wiktionary.org/wiki/meta-), meaning "after" or "beyond"\) is a prefix meaning more comprehensive or transcending[ \[Wikipedia\]](https://en.wikipedia.org/wiki/Meta)
@@ -14,8 +16,6 @@ description: 'Meta, Metta: Expressing Concepts and Feelings'
 
 **Feeling Flow: Embodied:** positive affect, calm, low-activation states, low stress   
 **Express Concepts**: Using geometric forms, colors to represent ideas.
-
-> "the quality of the imagination is to flow, and not to freeze" Ralph W. Emerson
 
 ## Assignment Tasks:
 
