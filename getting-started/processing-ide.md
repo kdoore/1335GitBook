@@ -11,7 +11,7 @@ This course will use the Java version of the Processing Language.
 * **Installing Tools, Libraries, Modes, Examples**
   * **Extended Code Completion**
   * **Reference Tool**
-  * \*\*\*\*
+  * **Examples: Learning Processing, others**
 
 {% embed url="https://processing.org/reference/" %}
 
