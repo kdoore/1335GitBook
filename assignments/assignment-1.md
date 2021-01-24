@@ -61,9 +61,9 @@ You will submit screenshot and a link to your gitbook page as part of your assig
    2. **Gitbook:**  Code: Copy and paste as code on your gitbook.
    3. **Gitbook:**  Paragraph: Write a description of how your design reflects your concept.
 
-### Inspirations: 
+## Inspirations: 
 
-### [If Life is a Game, These are the Rules:](../resources-and-references/resources/games-rules.md)  
+### Book: [If Life is a Game, These are the Rules:](../resources-and-references/resources/games-rules.md)  **Cherie Carter-Scott**
 
 **Rule 1: You will receive a body**
 
@@ -72,11 +72,13 @@ You will submit screenshot and a link to your gitbook page as part of your assig
 * Respect
 * Pleasure
 
-### 2.  Introduction to Mindfulness:
+### 2.  Introduction to Mindfulness: 
 
-*  [Mindfulness Awareness Research Center](https://www.uclahealth.org/marc/covid19-mindfulness) - Covid Mindfulness Resources
+ [Mindfulness Awareness Research Center](https://www.uclahealth.org/marc/covid19-mindfulness) UCLA MARC- Covid Mindfulness Resources
 
 {% embed url="https://www.uclahealth.org/marc/mpeg/01\_Introduction\_and\_Instructions.mp3" %}
+
+[Metta:  Loving Kindness Meditation](https://www.uclahealth.org/marc/mpeg/05_Loving_Kindness_Meditation.mp3) UCLA MARC - mp3 - audio
 
 ### **3. Inspiration Artist: Sol Lewitt**
 
