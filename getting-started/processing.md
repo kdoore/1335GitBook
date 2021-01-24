@@ -13,10 +13,20 @@
 
 {% embed url="https://codepen.io/kdoore/professor/WNxeGVz" %}
 
-### Installing Processing: 
+### Overview: Processing Development Environment \(PDE\)
 
-* [processing.org](http://processing.org) - download processing IDE, reference, examples, tutorials, etc.
-* **Open Processing Application:  PDE - Processing Development Environment**
+* [**Download Processing**](https://processing.org/download/)\*\*\*\*
+* **Install Processing**
+* **Open the Processing Application** - 
+  * opens by creating a new sketch
+  * save the sketch with a meaningful name.
+* \*\*\*\*[**Processing.org Documentation:**](https://processing.org/reference/) **** Reference, Examples, Tutorials
+* **Installing Tools, Libraries, Modes, Examples**
+  * **Extended Code Completion**
+  * **Reference Tool**
+  * **Examples: Learning Processing, others**
+
+{% embed url="https://processing.org/reference/" %}
 
 Paste the following code into the code editor: then push the play button
 
@@ -36,5 +46,7 @@ void draw() {
 }
 ```
 
-![Processing Development Environment: Executes to generate the sketch canvas](../../.gitbook/assets/screen-shot-2021-01-22-at-2.56.13-pm.png)
+![Processing Development Environment: Executes to generate the sketch canvas](../.gitbook/assets/screen-shot-2021-01-22-at-2.56.13-pm.png)
+
+![Install Tools:  Menu: Tools &amp;gt; Add Tool](../.gitbook/assets/screen-shot-2021-01-24-at-2.18.06-pm.png)
 
