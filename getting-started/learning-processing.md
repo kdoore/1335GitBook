@@ -1,11 +1,11 @@
 ---
-description: Daniel Shiffman
+description: Book by Daniel Shiffman
 ---
 
 # Learning Processing
 
 This course will use some content from the book:   
-Learning Processing, by Daniel Shiffman
+**Learning Processing, by Daniel Shiffman**
 
 [**Learning Processing**](http://learningprocessing.com/) - website with additional content
 

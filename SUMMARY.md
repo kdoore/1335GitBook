@@ -9,18 +9,18 @@
 * [Processing](getting-started/processing.md)
 * [Learning Processing](getting-started/learning-processing.md)
 
-## Processing, Java
+## Java
 
-* [Java Language](processing-java/java-language.md)
-* [HSB Color Mode](processing-java/hsb_color_mode/README.md)
-  * [HSB Color Wheel](processing-java/hsb_color_mode/hsb-color-wheel/README.md)
-    * [Example Code](processing-java/hsb_color_mode/hsb-color-wheel/colorwheel-class-codes19.md)
-  * [HSB Color Palette Tool](processing-java/hsb_color_mode/hsb-color-wheel-complimentary-color-palatte.md)
-* [Recursion](processing-java/recursion/README.md)
-  * [Recursion Call-Stack](processing-java/recursion/recursion-call-stack.md)
-  * [Example Code](processing-java/recursion/class-code-sept12f19/README.md)
-    * [Example Code Feb 5 S20](processing-java/recursion/class-code-sept12f19/example-code-feb-5-s20.md)
-    * [Feb 12 Code](processing-java/recursion/class-code-sept12f19/feb-12-code.md)
+* [Java Language](java/java-language.md)
+* [HSB Color Mode](java/hsb_color_mode/README.md)
+  * [HSB Color Wheel](java/hsb_color_mode/hsb-color-wheel/README.md)
+    * [Example Code](java/hsb_color_mode/hsb-color-wheel/colorwheel-class-codes19.md)
+  * [HSB Color Palette Tool](java/hsb_color_mode/hsb-color-wheel-complimentary-color-palatte.md)
+* [Recursion](java/recursion/README.md)
+  * [Recursion Call-Stack](java/recursion/recursion-call-stack.md)
+  * [Example Code](java/recursion/class-code-sept12f19/README.md)
+    * [Example Code Feb 5 S20](java/recursion/class-code-sept12f19/example-code-feb-5-s20.md)
+    * [Feb 12 Code](java/recursion/class-code-sept12f19/feb-12-code.md)
 
 ## Project 1
 
@@ -121,13 +121,13 @@
   * [Switch-Case Statement](java-syntax/java_syntax/switch-case_statement.md)
   * [Ternary Operator](java-syntax/java_syntax/ternary_operator.md)
   * [Class](java-syntax/java_syntax/class.md)
-  * [Learning Science](java-syntax/java_syntax/learning-science.md)
 * [UML Class Diagram](java-syntax/uml-class-diagram.md)
 * [Glossary](java-syntax/glossary.md)
 
 ## Resources and References
 
 * [Resources](resources-and-references/resources/README.md)
+  * [Learning Science](resources-and-references/resources/learning-science.md)
   * [Creativity](resources-and-references/resources/creativity.md)
   * [Conceptual Art](resources-and-references/resources/conceptual-art.md)
   * [Games, Rules](resources-and-references/resources/games-rules.md)
