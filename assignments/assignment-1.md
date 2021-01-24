@@ -80,13 +80,15 @@ You will submit screenshot and a link to your gitbook page as part of your assig
 
 [Metta:  Loving Kindness Meditation](https://www.uclahealth.org/marc/mpeg/05_Loving_Kindness_Meditation.mp3) UCLA MARC - mp3 - audio
 
-### **3. Inspiration Artist: Sol Lewitt**
+### **3. Inspiration Artist:** 
 
-> The idea is the machine that makes the art   **Sol Lewitt**
+### **Sol Lewitt - Conceptual, Minimal Art**
+
+> The **idea** is the **machine** that makes the art   **Sol Lewitt**
 
 > [LeWitt ](https://en.wikipedia.org/wiki/Sol_LeWitt)is regarded as a founder of both [Minimal](https://en.wikipedia.org/wiki/Minimal_art) and [Conceptual art](https://en.wikipedia.org/wiki/Conceptual_art).[\[4\]](https://en.wikipedia.org/wiki/Sol_LeWitt#cite_note-GuggenheimMuseum-4) His prolific two and three-dimensional work ranges from wall drawings \(over 1200 of which have been executed\) to hundreds of works on paper extending to structures in the form of [towers](https://en.wikipedia.org/wiki/Tower), [pyramids](https://en.wikipedia.org/wiki/Pyramid), geometric forms, and progressions. These works range in size from books and gallery-sized installations to [monumental](https://en.wikipedia.org/wiki/Monument) outdoor pieces. [Wikipedia](https://en.wikipedia.org/wiki/Sol_LeWitt)
 
-> In conceptual art the **idea of concept is** the most important aspect of the work.1 **When an artist uses a conceptual form of art, it means that all of the planning and decisions are made beforehand and the execution is a perfunctory affair.** The **idea becomes a machine that makes the art.** This kind of art is not theoretical or illustrative of theories; **it is intuitive,** it is involved with all types of mental processes and it is purposeless. It is usually free from the dependence on the skill of the artist as a craftsman. It is the **objective of the artist who is concerned with conceptual art to make his work mentally interesting to the spectator, and therefore usually he would want it to become emotionally dry.** There is no reason to suppose, however, that the conceptual artist is out to bore the viewer. It is only the expectation of an emotional kick, to which one conditioned to expressionist art is accustomed, that would deter the viewer from perceiving this art  [Paragraphs on Conceptual Art](../resources-and-references/resources/conceptual-art.md#paragraphs-on-conceptual-art-sol-lewitt), ,
+> In conceptual art the **idea of concept** is the most important aspect of the work.1 **When an artist uses a conceptual form of art, it means that all of the planning and decisions are made beforehand and the execution is a perfunctory affair.** The **idea becomes a machine that makes the art.** This kind of art is not theoretical or illustrative of theories; **it is intuitive,** it is involved with all types of mental processes and it is purposeless. It is usually free from the dependence on the skill of the artist as a craftsman. It is the **objective of the artist who is concerned with conceptual art to make his work mentally interesting to the spectator, and therefore usually he would want it to become emotionally dry.** There is no reason to suppose, however, that the conceptual artist is out to bore the viewer. It is only the expectation of an emotional kick, to which one conditioned to expressionist art is accustomed, that would deter the viewer from perceiving this art  [Paragraphs on Conceptual Art](../resources-and-references/resources/conceptual-art.md#paragraphs-on-conceptual-art-sol-lewitt), ,
 
 {% embed url="https://massmoca.org/event/walldrawing792/\#title-area" %}
 
