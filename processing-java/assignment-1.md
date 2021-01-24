@@ -12,8 +12,10 @@ description: 'Meta, Metta: Expressing Concepts and Feelings'
 
 [**Metta**](https://en.wikipedia.org/wiki/Maitr%C4%AB) ****: Mettā is a Pali word, from maitrī itself derived from mitra which, states Monier-Williams, means "friendly, amicable, benevolent, affectionate, kind, good-will",[\[13\]](https://en.wikipedia.org/wiki/Maitr%C4%AB#cite_note-MWD-13) as well as a form of "love, amity, sympathy [\[Wikipedia\]](https://en.wikipedia.org/wiki/Maitr%C4%AB#Maitr%C4%AB_and_Mett%C4%81)
 
-**Feeling Flow: Embodied Feelings:** positive affect, calm, low-activation states, low stress   
-**Express Concept**: Using geometric forms, colors to represent ideas.
+**Feeling Flow: Embodied:** positive affect, calm, low-activation states, low stress   
+**Express Concepts**: Using geometric forms, colors to represent ideas.
+
+> "the quality of the imagination is to flow, and not to freeze" Ralph W. Emerson
 
 ## Assignment Tasks:
 
