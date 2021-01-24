@@ -6,7 +6,7 @@ description: 'Expressing Concepts and Feelings: Meta, Metta'
 
 ## Exploration of Concepts, Feelings: Meta, Metta 
 
-> "the quality of the imagination is to flow, and not to freeze" Ralph W. Emerson
+> "the quality of the **imagination** is **to** **flow**, and not to freeze" Ralph W. Emerson
 
 **Feeling Flow: Embodied:** positive affect, calm, low-activation states, low stress   
 **Express Concepts**: Using geometric forms, colors to represent ideas.
