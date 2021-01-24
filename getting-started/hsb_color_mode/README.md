@@ -1,12 +1,14 @@
 # HSB Color Mode
 
+### Processing Color Modes
+
+Processing provides functions to allow working with both [RGB and HSB color-spaces](https://processing.org/reference/colorMode_.html). **HSB color-space** is very useful when trying to create visual designs through programming. We will use it extensively in this course.  HSB has color components: Hue, Saturation, Brightness. The HSB parameters are useful for mapping to encode relationships between concepts, interactions. 
+
 ![](../../.gitbook/assets/hsb_cone.png)
 
 Image from: [TomJewett.com](http://www.tomjewett.com/colors/hsb.html)
 
-Processing provides functions to allow working with both [RGB and HSB color-spaces](https://processing.org/reference/colorMode_.html). HSB color-space is very useful when trying to create visual designs through programming.
-
-## HSB Color
+### HSB Color
 
 The image above shows the HSB color-space. From this diagram, we can see that if we want to understand a specific HSB color, in terms of Hue, Saturation, and Brightness parameter values, it is easiest to read a HSB color starting with the brightness parameter which corresponds to the vertical axis of the color-cone.
 
