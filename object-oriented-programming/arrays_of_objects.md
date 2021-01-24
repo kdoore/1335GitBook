@@ -19,7 +19,7 @@ In the previous section, we discussed how to create a group of buttons which beh
 
 For maximum flexibility for collections of objects like our ButtonGroup that is composed of Buttons, one powerful approach is that we can declare an Array of Buttons as an instance variable for the class, then we can have an Array of Buttons as an input parameter for the ButtonGroup Constructor. This allows us to provide more specific configuration details for each button before adding it to the ButtonGroup.
 
-When we pass an object into any function, what we are actually doing is passing the reference, or memory address, of that object into the function. Since a constructor is a special type of function, objects passed to constructors are also _passed by reference_. This is extremely helpful for us. See the section on [Object Reference Data Types](../java-syntax/java_syntax/reference_data_types.md) for more detail on this.
+When we pass an object into any function, what we are actually doing is passing the reference, or memory address, of that object into the function. Since a constructor is a special type of function, objects passed to constructors are also _passed by reference_. This is extremely helpful for us. See the section on [Object Reference Data Types](../java/java_syntax/reference_data_types.md) for more detail on this.
 
 ```java
 //Create Class ButtonGroup

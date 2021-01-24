@@ -9,8 +9,24 @@
 * [Processing](getting-started/processing.md)
 * [Learning Processing](getting-started/learning-processing.md)
 
+## Java Syntax
+
+* [UML Class Diagram](java-syntax/uml-class-diagram.md)
+* [Glossary](java-syntax/glossary.md)
+
 ## Java
 
+* [Java Syntax](java/java_syntax/README.md)
+  * [Typed-Variables](java/java_syntax/typed-variables.md)
+  * [Float - Integer Conversion Errors](java/java_syntax/float-integer-conversion-errors.md)
+  * [Modulus](java/java_syntax/modulus.md)
+  * [Functions](java/java_syntax/functions.md)
+  * [Object Reference Data Types](java/java_syntax/reference_data_types.md)
+  * [Arrays](java/java_syntax/arrays/README.md)
+    * [Class Example Code](java/java_syntax/arrays/class-example-code.md)
+  * [Switch-Case Statement](java/java_syntax/switch-case_statement.md)
+  * [Ternary Operator](java/java_syntax/ternary_operator.md)
+  * [Class](java/java_syntax/class.md)
 * [Java Language](java/java-language.md)
 * [HSB Color Mode](java/hsb_color_mode/README.md)
   * [HSB Color Wheel](java/hsb_color_mode/hsb-color-wheel/README.md)
@@ -107,22 +123,6 @@
     * [Pattern - With Child-PShapes](project-3/project-3-class-definitions/pattern/pattern-with-child-pshapes.md)
   * [Slider](project-3/project-3-class-definitions/slider.md)
   * [Particles](project-3/project-3-class-definitions/particles.md)
-
-## Java Syntax
-
-* [Java Syntax](java-syntax/java_syntax/README.md)
-  * [Typed-Variables](java-syntax/java_syntax/typed-variables.md)
-  * [Float - Integer Conversion Errors](java-syntax/java_syntax/float-integer-conversion-errors.md)
-  * [Modulus](java-syntax/java_syntax/modulus.md)
-  * [Functions](java-syntax/java_syntax/functions.md)
-  * [Object Reference Data Types](java-syntax/java_syntax/reference_data_types.md)
-  * [Arrays](java-syntax/java_syntax/arrays/README.md)
-    * [Class Example Code](java-syntax/java_syntax/arrays/class-example-code.md)
-  * [Switch-Case Statement](java-syntax/java_syntax/switch-case_statement.md)
-  * [Ternary Operator](java-syntax/java_syntax/ternary_operator.md)
-  * [Class](java-syntax/java_syntax/class.md)
-* [UML Class Diagram](java-syntax/uml-class-diagram.md)
-* [Glossary](java-syntax/glossary.md)
 
 ## Resources and References
 
