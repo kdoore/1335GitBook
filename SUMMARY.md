@@ -9,10 +9,6 @@
 * [Processing](getting-started/processing.md)
 * [PDE - Code Editor](getting-started/pde-code-editor.md)
 * [Learning Processing](getting-started/learning-processing.md)
-* [HSB Color Mode](getting-started/hsb_color_mode/README.md)
-  * [HSB Color Wheel](getting-started/hsb_color_mode/hsb-color-wheel/README.md)
-    * [Example Code](getting-started/hsb_color_mode/hsb-color-wheel/colorwheel-class-codes19.md)
-  * [HSB Color Palette Tool](getting-started/hsb_color_mode/hsb-color-wheel-complimentary-color-palatte.md)
 
 ## Java Language <a id="java"></a>
 
@@ -35,6 +31,10 @@
 
 ## Project 1
 
+* [HSB Color Mode](project-1/hsb_color_mode/README.md)
+  * [HSB Color Wheel](project-1/hsb_color_mode/hsb-color-wheel/README.md)
+    * [Example Code](project-1/hsb_color_mode/hsb-color-wheel/colorwheel-class-codes19.md)
+  * [HSB Color Palette Tool](project-1/hsb_color_mode/hsb-color-wheel-complimentary-color-palatte.md)
 * [Modeling Emotions](project-1/modeling-emotions.md)
 * [Emotions represented using color, form, space](project-1/emotions-represented-using-color-form-space/README.md)
   * [Kandinsky Color - Emotion](project-1/emotions-represented-using-color-form-space/kandinsky-color-emotion.md)
