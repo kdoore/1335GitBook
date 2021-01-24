@@ -32,7 +32,9 @@ You will submit screenshot and a link to your gitbook page as part of your assig
 5. Find: Share-Link - you'll include this in your submission document 
 6. After completing steps below, take **a screenshot** of a portion of your gitbook page using the share link to open as a **web-document** \(not in edit mode\)
 
-### 2. Abstract Concepts - Concrete Feelings: meta, metta, loving kindness 
+### 2. Abstract Concepts - Concrete Feelings: 
+
+**Meta:  transcend, higher level order.** **Metta, loving kindness practice**
 
 1. **Song:**  **Feeling Flow:** Select and list a song that evokes **positive, relaxing, calm feelings** for you: 
    1. Provide a link to the song, artist, lyrics, or album.
