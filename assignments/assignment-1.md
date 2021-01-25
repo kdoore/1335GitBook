@@ -4,7 +4,9 @@ description: 'Exploration of Concepts and Feelings: Meta, Metta'
 
 # Assignment 1: Meta, Metta
 
-## Exploration of Concepts, Feelings: Meta, Metta 
+## Experience Design
+
+### Exploration of Concepts, Feelings: Meta, Metta 
 
 > "the quality of the **imagination** is **to** **flow**, and not to freeze" Ralph W. Emerson
 
