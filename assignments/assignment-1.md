@@ -114,5 +114,7 @@ Nodebox is a visual programming application based on the paradigm of data-flow, 
 
 ![Modified Nodebox Example](../.gitbook/assets/screen-shot-2021-01-23-at-3.00.42-pm.png)
 
+### [Computational Experience Design: Experience](https://kdoore.gitbook.io/computational-experience-design/adaptive-systems/humanist-lens/experience) - link
+
 
 
