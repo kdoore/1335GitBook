@@ -4,7 +4,7 @@ In this course, we'll use learn the basics of object oriented programming while 
 
 ### Information Dynamics:  Experience Design and Modeling Creativity
 
-This course will explore computational modeling of Experience, with a focus on learning in adaptive systems, cognition, memory, feelings, emotion, creativity, dynamics of information flow.
+This course will explore computational modeling of Experience using a lens of modeling the dynamics of information flow, with a focus on learning in adaptive systems, cognition, memory, feelings, emotion, creativity as expressed through contemplative art practices,
 
 #### Generative Art 
 
