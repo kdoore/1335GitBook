@@ -2,7 +2,9 @@
 
 In this course, we'll use learn the basics of object oriented programming while learning the Java Language and the Processing Library.
 
-### Modeling Creativity and Experience Design
+### Information Dynamics:  Experience Design and Modeling Creativity
+
+This course will explore computational modeling of Experience, with a focus on learning in adaptive systems, cognition, memory, feelings, emotion, creativity, dynamics of information flow.
 
 #### Generative Art 
 
