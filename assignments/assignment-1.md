@@ -34,6 +34,12 @@ You will submit screenshot and a link to your gitbook page as part of your assig
 5. Find: Share-Link - you'll include this in your submission document 
 6. After completing steps below, take **a screenshot** of a portion of your gitbook page using the share link to open as a **web-document** \(not in edit mode\)
 
+See Example Template Gitbook Page l linked below:
+
+{% embed url="https://neuroscienceofkindness.gitbook.io/learning-cycles/cs1335/cs1335/assignments-s21/assignment-1" %}
+
+
+
 ### 2. Abstract Concepts - Concrete Feelings: 
 
 **Meta:  transcend, higher level order.** **Metta, loving kindness practice**
@@ -61,9 +67,10 @@ You will submit screenshot and a link to your gitbook page as part of your assig
    7. **Gitbook:** Insert both images into gitbook.
    8. **Gitbook:** Write a simple description of some of the changes you made to create your version.
 4. \*\*\*\*[**Code - Java, Processing:**](../getting-started/pde-code-editor.md)   **Create simple Processing program** that uses shapes, colors to represent the concepts of **meta and/or metta.** Use basic processing functions for geometric shapes, fill, stroke.  See processing documentation, examples, tutorials to learn basic code statements for colored shapes.  No animation or interaction required.  Use setup\( \), size\( \) functions to insure the canvas size is 400x400 pixels or larger.  Arrange shapes to represent the concept.  
-5. **Gitbook:**  Image:  insert a screenshot of your canvas as an image on your gitbook.
-6. **Gitbook:**  Code: Copy and paste as code on your gitbook.
-7. **Gitbook:**  Paragraph: Write a description of how your design reflects your concept.
+   1. **Gitbook: Heading H3** List Concept:  Meta, Metta, or both.
+   2. **Gitbook:**  Image:  insert a screenshot of your canvas as an image on your gitbook.
+   3. **Gitbook:**  Code: Copy and paste as code on your gitbook.
+   4. **Gitbook:**  Paragraph: Write a description of how your design reflects your concept.
 
 ## Inspirations: 
 
