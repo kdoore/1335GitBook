@@ -33,6 +33,7 @@ You will submit screenshot and a link to your gitbook page as part of your assig
 4. Create a page: Assignment 1:
 5. Find: Share-Link - you'll include this in your submission document 
 6. After completing steps below, take **a screenshot** of a portion of your gitbook page using the share link to open as a **web-document** \(not in edit mode\)
+7. [Gitbook Quickstart Guide](https://docs.gitbook.com/getting-started/quick-start)
 
 See Example Template Gitbook Page l linked below:
 
