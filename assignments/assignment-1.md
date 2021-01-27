@@ -36,9 +36,7 @@ You will submit screenshot and a link to your gitbook page as part of your assig
 
 See Example Template Gitbook Page l linked below:
 
-{% embed url="https://neuroscienceofkindness.gitbook.io/learning-cycles/cs1335/cs1335/assignments-s21/assignment-1" %}
-
-
+{% embed url="https://neuroscienceofkindness.gitbook.io/learning-cycles/cs1335/cs1335/assignments-s21/assignment-1" caption="Example Gitbook Named: Learning Cycles" %}
 
 ### 2. Abstract Concepts - Concrete Feelings: 
 
