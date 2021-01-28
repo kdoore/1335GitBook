@@ -23,11 +23,6 @@
   * [Switch-Case Statement](java/java_syntax/switch-case_statement.md)
   * [Ternary Operator](java/java_syntax/ternary_operator.md)
   * [Class](java/java_syntax/class.md)
-* [Recursion](java/recursion/README.md)
-  * [Recursion Call-Stack](java/recursion/recursion-call-stack.md)
-  * [Recursion Examples](java/recursion/class-code-sept12f19/README.md)
-    * [Example Code 1](java/recursion/class-code-sept12f19/example-code.md)
-    * [Example Code 2](java/recursion/class-code-sept12f19/example-code-2.md)
 
 ## Project 1
 
@@ -35,6 +30,11 @@
   * [HSB Color Wheel](project-1/hsb_color_mode/hsb-color-wheel/README.md)
     * [Example Code](project-1/hsb_color_mode/hsb-color-wheel/colorwheel-class-codes19.md)
   * [HSB Color Palette Tool](project-1/hsb_color_mode/hsb-color-wheel-complimentary-color-palatte.md)
+* [Recursion](project-1/recursion/README.md)
+  * [Recursion Call-Stack](project-1/recursion/recursion-call-stack.md)
+  * [Recursion Examples](project-1/recursion/class-code-sept12f19/README.md)
+    * [Example Code 1](project-1/recursion/class-code-sept12f19/example-code.md)
+    * [Example Code 2](project-1/recursion/class-code-sept12f19/example-code-2.md)
 * [Modeling Emotions](project-1/modeling-emotions.md)
 * [Emotions represented using color, form, space](project-1/emotions-represented-using-color-form-space/README.md)
   * [Kandinsky Color - Emotion](project-1/emotions-represented-using-color-form-space/kandinsky-color-emotion.md)
