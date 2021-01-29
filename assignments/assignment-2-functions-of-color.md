@@ -11,6 +11,7 @@ description: 'Exploration of Function Design in Java, Interactive Color using HS
 * Along the outside of the circle, write a feeling next to each arc section.
 * Choose a color to associate with each emotion/ feeling, add selected colors to the the corresponding arcs.
 * optional, see [emotions list](../project-1/modeling-emotions.md#hour-glass-emotional-dimensions-wikipedia)
+* **Gitbook:**  Post screenshot on Gitbook
 
 ### 2.  
 
