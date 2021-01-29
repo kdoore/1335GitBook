@@ -6,10 +6,13 @@ description: 'Exploration of Function Design in Java, Interactive Color using HS
 
 ### 1.  Hand Drawing Emotions and Colors Wheel:
 
+* Identifying current feelings can improve emotional self-awareness. 
 * On sketch paper, draw a wheel and divide into 8 arcs.  
 * Along the outside of the circle, write a feeling next to each arc section.
 * Choose a color to associate with each emotion/ feeling, add selected colors to the the corresponding arcs.
-* optional: see [emotions list](../project-1/modeling-emotions.md#hour-glass-emotional-dimensions-wikipedia)
+* optional: [emotions list](../project-1/modeling-emotions.md#hour-glass-emotional-dimensions-wikipedia)
+
+### 2.  
 
 
 
