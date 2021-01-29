@@ -40,7 +40,6 @@
 * [Modeling Emotions](project-1/modeling-emotions.md)
 * [Emotions represented using color, form, space](project-1/emotions-represented-using-color-form-space/README.md)
   * [Kandinsky Color - Emotion](project-1/emotions-represented-using-color-form-space/kandinsky-color-emotion.md)
-  * [Emotional Intelligence](project-1/emotions-represented-using-color-form-space/emotional-intelligence.md)
 * [Project 1: PShapes](project-1/beginshape_-_vertex_shapes/README.md)
   * [Example Code](project-1/beginshape_-_vertex_shapes/sept-16-code.md)
   * [Inspiration](project-1/beginshape_-_vertex_shapes/diagram-and-art-expression.md)
@@ -129,7 +128,8 @@
 
 * [Glossary](resources-and-references/glossary.md)
 * [Resources](resources-and-references/resources/README.md)
-  * [Learning Science](resources-and-references/resources/learning-science.md)
+  * [Learning Science](resources-and-references/resources/learning-science/README.md)
+    * [Emotional Intelligence](resources-and-references/resources/learning-science/emotional-intelligence.md)
   * [Creativity](resources-and-references/resources/creativity.md)
   * [Conceptual Art](resources-and-references/resources/conceptual-art.md)
   * [Books](resources-and-references/resources/books/README.md)

@@ -4,3 +4,5 @@ description: 'Exploration of Function Design in Java, Interactive Color using HS
 
 # Assignment 2: Functions of Color
 
+Wassily Kandinsky:  [Concerning the Spiritual In Art](http://www.public-library.uk/ebooks/22/92.pdf)
+
