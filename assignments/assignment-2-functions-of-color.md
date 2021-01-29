@@ -4,7 +4,7 @@ description: 'Exploration of Function Design in Java, Interactive Color using HS
 
 # Assignment 2: Functions of Color
 
-### 1.  Hand Drawing Emotions and Colors Wheel:
+### 1.  Hand Drawing an Emotions and Colors Wheel:
 
 * Identifying current feelings can improve emotional self-awareness. 
 * On sketch paper, draw a wheel and divide into 8 arcs.  
