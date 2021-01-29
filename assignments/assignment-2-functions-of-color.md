@@ -10,7 +10,7 @@ description: 'Exploration of Function Design in Java, Interactive Color using HS
 * On sketch paper, draw a wheel and divide into 8 arcs.  
 * Along the outside of the circle, write a feeling next to each arc section.
 * Choose a color to associate with each emotion/ feeling, add selected colors to the the corresponding arcs.
-* optional: [emotions list](../project-1/modeling-emotions.md#hour-glass-emotional-dimensions-wikipedia)
+* optional, see [emotions list](../project-1/modeling-emotions.md#hour-glass-emotional-dimensions-wikipedia)
 
 ### 2.  
 
