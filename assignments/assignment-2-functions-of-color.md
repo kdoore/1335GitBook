@@ -8,11 +8,11 @@ description: 'Exploration of Function Design in Java, Interactive Color using HS
 
 Identifying current feelings can improve emotional self-awareness and can improve emotional stress-regulation.
 
-* On sketch paper, draw a wheel and divide into 8 arcs.  
-* Along the outside of the circle, write a feeling next to each arc section.
+* **On sketch paper**, draw a wheel and divide into 8 arcs.  
+* Along the outside of the circle, write a **feeling next to each arc section.**
 * **Choose a color** to associate with each emotion/ feeling, add selected colors to the the corresponding arcs.
 * optional, see [emotions list](../project-1/modeling-emotions.md#hour-glass-emotional-dimensions-wikipedia)
-* **Gitbook:**  Post screenshot on Gitbook
+* **Gitbook:**  Post screenshot of your sketch on Gitbook
 * **Gitbook:**  create a table of your emotions, list as positive or negative valanced
 
 _see example gitbook table below_
