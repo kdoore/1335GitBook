@@ -12,6 +12,12 @@ description: 'Exploration of Function Design in Java, Interactive Color using HS
 * Choose a color to associate with each emotion/ feeling, add selected colors to the the corresponding arcs.
 * optional, see [emotions list](../project-1/modeling-emotions.md#hour-glass-emotional-dimensions-wikipedia)
 * **Gitbook:**  Post screenshot on Gitbook
+* **Gitbook:**  create a table of your emotions, list as positive or negative valanced.
+
+| Positive | Negative |
+| :--- | :--- |
+| Joy | Anger |
+| Serenity | Disgust |
 
 ### 2.  
 
