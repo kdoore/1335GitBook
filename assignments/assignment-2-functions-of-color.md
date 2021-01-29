@@ -46,7 +46,7 @@ Research
 
 > When trying to produce novelty, how can we anticipate the feelings, the emotions, and the aesthetics that our creation will provide our audience based on their previous experiences?
 >
-> According to Leshziner and Brett, imagination, and thus creative possibilities, are not only grounded in symbolic representations but are also tightly connected with previous bodily experiences evoking emotions and memories.  
+> .... **imagination, and thus creative possibilities, are not only grounded in symbolic representations but are also tightly connected with previous bodily experiences evoking emotions and memories**.  
 >   
 > \(15\) \(PDF\) The Microsociology of Creativity and Creative Work. Available from: [https://www.researchgate.net/publication/337053085\_The\_Microsociology\_of\_Creativity\_and\_Creative\_Work](https://www.researchgate.net/publication/337053085_The_Microsociology_of_Creativity_and_Creative_Work) \[accessed Jan 29 2021\].
 
