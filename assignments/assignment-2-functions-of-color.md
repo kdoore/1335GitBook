@@ -4,8 +4,12 @@ description: 'Exploration of Function Design in Java, Interactive Color using HS
 
 # Assignment 2: Functions of Color
 
-### 
+### 1.  Emotions and Colors Wheel:
 
+* On sketch paper, draw a wheel and divide into 8 arcs.  
+* Along the outside of the circle, write a feeling next to each arc section.
+* Choose a color to associate with each emotion/ feeling, add selected colors to the the corresponding arcs.
+* 
 ## Inspiration:
 
 ### **Wassily Kandinsky:**  [Concerning the Spiritual In Art](http://www.public-library.uk/ebooks/22/92.pdf)
