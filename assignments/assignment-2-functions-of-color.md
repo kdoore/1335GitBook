@@ -2,11 +2,11 @@
 description: 'Exploration of Function Design in Java, Interactive Color using HSB colorMode'
 ---
 
-# Assignment 2: Functions of Color
+# Assignment 2: Functions
 
 ### 1.  Hand Drawing an Emotions and Colors Wheel:
 
-Identifying current feelings can improve emotional self-awareness and can improve emotional stress-regulation.
+**Identifying emotions** can improve emotional self-awareness and can be useful in developing skill in cognitive reappraisal to enhance emotional self-regulation. See Below
 
 * **On sketch paper**, draw a wheel and divide into 8 arcs.  
 * Along the outside of the circle, write a **feeling next to each arc section.**
@@ -39,6 +39,13 @@ _see example gitbook table below_
 [Kandinsky Color Summary:  pdf](https://www.mat.ucsb.edu/~g.legrady/academic/courses/12w259/Kandinsky_%20Color%20Theory.pdf)   \([https://www.mat.ucsb.edu](https://www.mat.ucsb.edu/)\)
 
 **Modeling Emotions -** 
+
+### Emotional Regulation
+
+**Emotional self-regulation** or **emotion regulation** is the ability to respond to the ongoing demands of [experience](https://en.wikipedia.org/wiki/Experience) with the range of [emotions](https://en.wikipedia.org/wiki/Emotion) in a manner that is socially tolerable and sufficiently flexible to permit spontaneous reactions as well as the ability to delay spontaneous reactions as needed.[\[1\]](https://en.wikipedia.org/wiki/Emotional_self-regulation#cite_note-1)
+
+**Cognitive change: Reappraisal**  
+Reappraisal, an example of cognitive change, is a late selection strategy, which involves reinterpreting the meaning of an event so as to alter its emotional impact.[\[13\]](https://en.wikipedia.org/wiki/Emotional_self-regulation#cite_note-:3-13) For example, this might involve reinterpreting an event by broadening one's perspective to see "the bigger picture."[\[31\]](https://en.wikipedia.org/wiki/Emotional_self-regulation#cite_note-31) Reappraisal has been shown to effectively reduce physiological,[\[32\]](https://en.wikipedia.org/wiki/Emotional_self-regulation#cite_note-32) subjective,[\[14\]](https://en.wikipedia.org/wiki/Emotional_self-regulation#cite_note-:4-14) and neural[\[33\]](https://en.wikipedia.org/wiki/Emotional_self-regulation#cite_note-33) emotional responding. As opposed to distraction, individuals show a relative preference to engage in reappraisal when facing stimuli of low negative emotional intensity because these stimuli are relatively easy to appraise and process.[\[26\]](https://en.wikipedia.org/wiki/Emotional_self-regulation#cite_note-:5-26)
 
 ### Emotions and Creativity: 
 
