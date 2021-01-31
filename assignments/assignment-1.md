@@ -59,7 +59,7 @@ See Example Template Gitbook Page l linked below:
 3. \*\*\*\*[**Data-Flow, Nodebox:** ](assignment-1.md#5-nodebox-tom-d-desmedt)**Procedural, Generative Design**
    1. [ **Download, Install Nodebox**](https://www.nodebox.net/download/)\*\*\*\*
    2.  Open Nodebox, Open Examples from the Edit Menu: 
-   3.  Select an Example program.  
+   3.  Select an Example program.  \(See images below\)
    4. Take a screenshot of the starting design
    5. **Customize:** Make Modifications to several nodes, add a node to create your version of the design
    6. Take a Screenshot of the final design
