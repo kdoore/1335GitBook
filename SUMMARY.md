@@ -3,7 +3,7 @@
 * [Introduction](README.md)
 * [Assignments](assignments/README.md)
   * [Assignment 1: Meta, Metta](assignments/assignment-1.md)
-  * [Assignment 2: Functions](assignments/assignment-2-functions-of-color.md)
+  * [Assignment 2: Functional Emotions](assignments/assignment-2-functions-of-color.md)
   * [Inspiration](assignments/inspiration.md)
 
 ## Getting Started

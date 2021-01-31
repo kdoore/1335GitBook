@@ -2,7 +2,7 @@
 description: 'Exploration of Function Design in Java, Interactive Color using HSB colorMode'
 ---
 
-# Assignment 2: Functions
+# Assignment 2: Functional Emotions
 
 ### 1.  Hand Draw:  Emotions and Colors Wheel:
 
@@ -12,7 +12,7 @@ description: 'Exploration of Function Design in Java, Interactive Color using HS
 * Along the outside of the circle, write an **emotion / feeling next to each arc section.** 
 * **Choose a color** to associate with each **emotion/ feeling**, add selected colors to the the corresponding arcs.
 * optional, see [emotions list](../project-1/modeling-emotions.md#hour-glass-emotional-dimensions-wikipedia)
-* **Gitbook:  Post screenshot** of your sketch on Gitbook
+* **Gitbook:  Post photo** of your sketch on Gitbook
 * **Gitbook:**  **Create a table:** for each ****of your emotions, determine and list as either positive or negative valanced.
 
 _see example gitbook table below_
@@ -32,11 +32,19 @@ Some models of Emotion consider that emotions can be classified according to 2 o
   * y-axis: arousal: intense, mild
 * Place your emotions in the associated quadrant of the circle based on the affect and arousal level of these emotions.   
 * Select and apply a color for each of the 4 regions of your diagram
+* **Gitbook: post a photo** of your sketch
 
 ### 3.  **Hand Draw:  Custom Shapes for Emotion Regions**
 
-For each region of your diagram: design / sketch a custom motif using combination of shapes, to represent each of the 4 regions of your diagram.  Color the shapes using shades and/or complimentary colors as selected for each region identified in part 2.
+* For each region of your diagram: design / sketch a custom motif using combination of shapes, to represent each of the 4 regions of your diagram. 
+* Color the shapes using shades and/or complimentary colors as selected for each region identified in part 2.
+* **Gitbook: post a photo** of your sketch
 
+### 4.  Processing: Code 
+
+Write a Processing program with the following features:
+
+* 
 ## Inspiration:
 
 ### **Wassily Kandinsky:**  [Concerning the Spiritual In Art](http://www.public-library.uk/ebooks/22/92.pdf)
