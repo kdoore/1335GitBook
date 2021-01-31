@@ -6,11 +6,11 @@ description: 'Exploration of Function Design in Java, Interactive Color using HS
 
 ### 1.  Hand Drawing an Emotions and Colors Wheel:
 
-**Identifying emotions** can improve emotional self-awareness and can be useful in developing skill in cognitive reappraisal to enhance emotional self-regulation. See Below
+**Identifying emotions** can improve emotional self-awareness and can be useful in developing skill in cognitive reappraisal to enhance emotional self-regulation. \([See Below](assignment-2-functions-of-color.md#emotion-classification-dimensional-models-pad-pleasure-arousal-dominance)\) Several models of emotion classification exist that are useful in understanding the nature of emotions. \([See Emotion Classification\)](assignment-2-functions-of-color.md#emotion-classification-dimensional-models-pad-pleasure-arousal-dominance).  [Kandinsky](assignment-2-functions-of-color.md#wassily-kandinsky-concerning-the-spiritual-in-art) developed theories to associate colors with emotion /feelings in the creation of his expressionist art. 
 
 * **On sketch paper**, draw a wheel and divide into 8 arcs.  
-* Along the outside of the circle, write a **feeling next to each arc section.**
-* **Choose a color** to associate with each emotion/ feeling, add selected colors to the the corresponding arcs.
+* Along the outside of the circle, write an **emotion / feeling next to each arc section.**
+* **Choose a color** to associate with each **emotion/ feeling**, add selected colors to the the corresponding arcs.
 * optional, see [emotions list](../project-1/modeling-emotions.md#hour-glass-emotional-dimensions-wikipedia)
 * **Gitbook:**  Post screenshot of your sketch on Gitbook
 * **Gitbook:**  create a table of your emotions, list as positive or negative valanced
@@ -38,7 +38,23 @@ _see example gitbook table below_
 
 [Kandinsky Color Summary:  pdf](https://www.mat.ucsb.edu/~g.legrady/academic/courses/12w259/Kandinsky_%20Color%20Theory.pdf)   \([https://www.mat.ucsb.edu](https://www.mat.ucsb.edu/)\)
 
-**Modeling Emotions -** 
+### **Modeling Emotions:** 
+
+{% embed url="https://en.wikipedia.org/wiki/Emotion\_classification" %}
+
+### Emotion Classification - Dimensional Models: PAD - Pleasure, Arousal, Dominance
+
+> PAD uses three numerical dimensions to represent all [emotions](https://en.wikipedia.org/wiki/Emotion).[\[21\]](https://en.wikipedia.org/wiki/Emotion_classification#cite_note-Mehrabian1-21)[\[22\]](https://en.wikipedia.org/wiki/Emotion_classification#cite_note-22) The PAD dimensions are Pleasure, Arousal and Dominance.
+>
+> The Pleasure-Displeasure Scale measures how pleasant or unpleasant one feels about something. For instance both anger and fear are unpleasant emotions, and both score on the displeasure side. However joy is a pleasant emotion.[\[1\]](https://en.wikipedia.org/wiki/PAD_emotional_state_model#cite_note-Mehrabian1-1)
+>
+> The Arousal-Nonarousal Scale measures how energized or soporific one feels. It is not the intensity of the emotion -- for grief and depression can be low arousal intense feelings. While both anger and rage are unpleasant emotions, rage has a higher intensity or a higher arousal state. However boredom, which is also an unpleasant state, has a low arousal value.[\[1\]](https://en.wikipedia.org/wiki/PAD_emotional_state_model#cite_note-Mehrabian1-1)
+>
+> The Dominance-Submissiveness Scale represents the controlling and dominant versus controlled or submissive one feels. For instance while both fear and anger are unpleasant emotions, anger is a dominant emotion, while fear is a submissive emotion.[\[1\]](https://en.wikipedia.org/wiki/PAD_emotional_state_model#cite_note-Mehrabian1-1)Wikipedia
+>
+> ### Virtual Emotions of Avatars: PAD - FAP
+>
+> Zhang et al. describe how the PAD model can be used to assign specific emotions to the faces of [avatars](https://en.wikipedia.org/wiki/Avatar_%28computing%29). In this approach the PAD model is used as a high level emotional space, and the lower level space is the [MPEG-4](https://en.wikipedia.org/wiki/MPEG-4) [Facial Animation Parameters \(FAP\)](https://en.wikipedia.org/wiki/Face_Animation_Parameter). A mid-level Partial Expression Parameters \(PEP\) space is then used to in a two level structure: the PAD-PEP mapping and the PEP-FAP translation model.[\[14\]](https://en.wikipedia.org/wiki/PAD_emotional_state_model#cite_note-14)
 
 ### Emotional Regulation
 
