@@ -4,9 +4,9 @@ description: 'Exploration of Function Design in Java, Interactive Color using HS
 
 # Assignment 2: Functions
 
-### 1.  Hand Drawing an Emotions and Colors Wheel:
+### 1.  Hand Drawing:  Emotions and Colors Wheel:
 
-**Identifying emotions** can improve emotional self-awareness and can be useful in developing skill in cognitive reappraisal to enhance emotional self-regulation. \([See Below](assignment-2-functions-of-color.md#emotion-classification-dimensional-models-pad-pleasure-arousal-dominance)\) Several models of emotion classification exist that are useful in understanding the nature of emotions. \([See Emotion Classification\)](assignment-2-functions-of-color.md#emotion-classification-dimensional-models-pad-pleasure-arousal-dominance).  [Kandinsky](assignment-2-functions-of-color.md#wassily-kandinsky-concerning-the-spiritual-in-art) developed theories to associate colors with emotion /feelings in the creation of his expressionist art. 
+**Identifying emotions** can improve emotional self-awareness and can be useful in developing skill in cognitive reappraisal to enhance emotional self-regulation. \([See Below](assignment-2-functions-of-color.md#emotion-classification-dimensional-models-pad-pleasure-arousal-dominance)\) Several models of emotion classification exist that are useful in understanding the nature of emotions. \([See Emotion Classification\)](assignment-2-functions-of-color.md#emotion-classification-dimensional-models-pad-pleasure-arousal-dominance).  [Kandinsky](assignment-2-functions-of-color.md#wassily-kandinsky-concerning-the-spiritual-in-art) art theories associate colors with emotion /feelings in the creation of his expressionist art. 
 
 * **On sketch paper**, draw a wheel and divide into 8 arcs.  
 * Along the outside of the circle, write an **emotion / feeling next to each arc section.**
@@ -65,8 +65,6 @@ Reappraisal, an example of cognitive change, is a late selection strategy, which
 
 ### Emotions and Creativity: 
 
-Research
-
 > When trying to produce novelty, how can we anticipate the feelings, the emotions, and the aesthetics that our creation will provide our audience based on their previous experiences?
 >
 > .... **imagination, and thus creative possibilities, are not only grounded in symbolic representations but are also tightly connected with previous bodily experiences evoking emotions and memories**.  
@@ -79,7 +77,4 @@ Research
 >
 > A problem is never solved on its own level; being complex, it must be understood in its total process. To try to solve a problem on only one level, physical or psychological, leads to further conflict and confusion. For the resolution of a problem, there must be this awareness, this passive alertness which reveals its total process.  
 > [J. Krishnamurti](https://jkrishnamurti.org/content/series-i-chapter-41-%E2%80%98awareness%E2%80%99)
-
-> The Great Way is not difficult for those who have no preferences.... **If you wish to see the truth then hold no opinion for or against.** T**he struggle of what one likes and what one dislikes is the disease of the mind**. \(as cited in Osho1994 ,p.  
-> \(21\) \(PDF\) **Transforming Trauma into Healing and Being: a Non-Dual Therapy** Approach. Available from: [https://www.researchgate.net/publication/302919887\_Transforming\_Trauma\_into\_Healing\_and\_Being\_a\_Non-Dual\_Therapy\_Approach](https://www.researchgate.net/publication/302919887_Transforming_Trauma_into_Healing_and_Being_a_Non-Dual_Therapy_Approach) \[accessed Jan 31 2021\].
 
