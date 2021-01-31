@@ -22,7 +22,9 @@ _see example gitbook table below_
 | Joy | Anger |
 | Serenity | Disgust |
 
-### 2.  Non-Dualistic Logic
+### 2.  Non-Dualism
+
+
 
 
 
@@ -77,6 +79,12 @@ Reappraisal, an example of cognitive change, is a late selection strategy, which
 
 > Nondualism primarily refers to a mature state of consciousness, in which the dichotomy of I-other is "transcended", and awareness is described as "centerless" and "without dichotomies"  [Wikipedia](https://en.wikipedia.org/wiki/Nondualism)
 
+### Nondual Awareness
+
+> Ordinary human experience is structured by the duality of subject-object distinctions. However, multiple philosophical and mystical traditions ... point to the possibility that this dichotomy may be transcended in special states of nondual awareness.
+>
+> Nondual awareness \(NDA\) can be defined as a state of consciousness that rests in the background of all conscious experiencing – a background field of awareness that is unified, immutable, and empty of mental content, yet retains a quality of cognizant bliss \(Josipovic, 2014\).   [Research Publication: Nondual Awareness Dimensional Assessment](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6265073/)
+
 ### Choiceless Awareness
 
 > Awareness is the silent and choiceless observation of what is; in this awareness the problem unrolls itself, and thus it is fully and completely understood.
@@ -90,6 +98,8 @@ Reappraisal, an example of cognitive change, is a late selection strategy, which
 >
 > When your spirit is not in the least clouded, when the clouds of bewilderment clear away, there is the true void  
 > [ Miyamoto Musashi](https://en.wikipedia.org/wiki/Miyamoto_Musashi) ****- [The Book of Five Rings](https://en.wikipedia.org/wiki/The_Book_of_Five_Rings)
+
+![](../.gitbook/assets/screen-shot-2021-01-31-at-2.58.40-pm.png)
 
 > Philosophers speak of reality as unencumbered by the dualistic oppositions we so often get lost in; a reality lacking such distinctions as mind/matter, subject/object, reality/appearance, self/other, substance/attribute, essentialism/nihilism, past/future, here/there, true/false, good/evil—all binary pairs that cause fracturing and suffering.  [Science and Non-Duality](https://www.scienceandnonduality.com/nonduality)
 
