@@ -26,6 +26,8 @@ _see example gitbook table below_
 
 
 
+
+
 ## Inspiration:
 
 ### **Wassily Kandinsky:**  [Concerning the Spiritual In Art](http://www.public-library.uk/ebooks/22/92.pdf)
