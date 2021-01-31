@@ -22,9 +22,9 @@ _see example gitbook table below_
 | Joy | Anger |
 | Serenity | Disgust |
 
-### 2.  Non-Dualism
+### 2.  Emotion 
 
-
+![Image from https://open.lib.umn.edu/](../.gitbook/assets/emotionmap.jpg)
 
 
 
