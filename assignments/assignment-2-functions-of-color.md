@@ -22,7 +22,7 @@ _see example gitbook table below_
 | Joy | Anger |
 | Serenity | Disgust |
 
-### 2.  Choiceless Awareness
+### 2.  Non-Dualistic Logic
 
 
 
@@ -71,10 +71,27 @@ Reappraisal, an example of cognitive change, is a late selection strategy, which
 >   
 > \(15\) \(PDF\) The Microsociology of Creativity and Creative Work. Available from: [https://www.researchgate.net/publication/337053085\_The\_Microsociology\_of\_Creativity\_and\_Creative\_Work](https://www.researchgate.net/publication/337053085_The_Microsociology_of_Creativity_and_Creative_Work) \[accessed Jan 29 2021\].
 
+### Non Dualism
+
+> Nondualism primarily refers to a mature state of consciousness, in which the dichotomy of I-other is "transcended", and awareness is described as "centerless" and "without dichotomies"  [Wikipedia](https://en.wikipedia.org/wiki/Nondualism)
+
 ### Choiceless Awareness
 
 > Awareness is the silent and choiceless observation of what is; in this awareness the problem unrolls itself, and thus it is fully and completely understood.
 >
 > A problem is never solved on its own level; being complex, it must be understood in its total process. To try to solve a problem on only one level, physical or psychological, leads to further conflict and confusion. For the resolution of a problem, there must be this awareness, this passive alertness which reveals its total process.  
 > [J. Krishnamurti](https://jkrishnamurti.org/content/series-i-chapter-41-%E2%80%98awareness%E2%80%99)
+
+### **Non-Dual, The Void**
+
+> When you appreciate the power of nature, knowing the rhythm of any situation, you will be able to hit the enemy naturally and strike naturally. All this is the Way of the Void.
+>
+> When your spirit is not in the least clouded, when the clouds of bewilderment clear away, there is the true void  
+> [ Miyamoto Musashi](https://en.wikipedia.org/wiki/Miyamoto_Musashi) ****- [The Book of Five Rings](https://en.wikipedia.org/wiki/The_Book_of_Five_Rings)
+
+> Philosophers speak of reality as unencumbered by the dualistic oppositions we so often get lost in; a reality lacking such distinctions as mind/matter, subject/object, reality/appearance, self/other, substance/attribute, essentialism/nihilism, past/future, here/there, true/false, good/evil—all binary pairs that cause fracturing and suffering.  [Science and Non-Duality](https://www.scienceandnonduality.com/nonduality)
+
+### Less Wrong
+
+{% embed url="https://www.lesswrong.com/posts/3svoavScpwzikaEEG/your-truth-is-not-my-truth?commentId=jjMpTBEHhzovhhtrf" %}
 
