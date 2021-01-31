@@ -99,11 +99,11 @@ Reappraisal, an example of cognitive change, is a late selection strategy, which
 > When your spirit is not in the least clouded, when the clouds of bewilderment clear away, there is the true void  
 > [ Miyamoto Musashi](https://en.wikipedia.org/wiki/Miyamoto_Musashi) ****- [The Book of Five Rings](https://en.wikipedia.org/wiki/The_Book_of_Five_Rings)
 
-![](../.gitbook/assets/screen-shot-2021-01-31-at-2.58.40-pm.png)
-
 > Philosophers speak of reality as unencumbered by the dualistic oppositions we so often get lost in; a reality lacking such distinctions as mind/matter, subject/object, reality/appearance, self/other, substance/attribute, essentialism/nihilism, past/future, here/there, true/false, good/evil—all binary pairs that cause fracturing and suffering.  [Science and Non-Duality](https://www.scienceandnonduality.com/nonduality)
 
 ### Less Wrong
 
 {% embed url="https://www.lesswrong.com/posts/3svoavScpwzikaEEG/your-truth-is-not-my-truth?commentId=jjMpTBEHhzovhhtrf" %}
+
+![image from lesswrong.com](../.gitbook/assets/screen-shot-2021-01-31-at-2.58.59-pm.png)
 
