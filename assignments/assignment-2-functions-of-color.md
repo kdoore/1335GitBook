@@ -4,16 +4,16 @@ description: 'Exploration of Function Design in Java, Interactive Color using HS
 
 # Assignment 2: Functions
 
-### 1.  Hand Drawing:  Emotions and Colors Wheel:
+### 1.  Hand Draw:  Emotions and Colors Wheel:
 
 **Identifying emotions** can improve emotional self-awareness and can be useful in developing skill in cognitive reappraisal to enhance emotional self-regulation. \([See Below](assignment-2-functions-of-color.md#emotion-classification-dimensional-models-pad-pleasure-arousal-dominance)\) Several models of emotion classification exist that are useful in understanding the nature of emotions. \([See Emotion Classification\)](assignment-2-functions-of-color.md#emotion-classification-dimensional-models-pad-pleasure-arousal-dominance).  [Kandinsky](assignment-2-functions-of-color.md#wassily-kandinsky-concerning-the-spiritual-in-art) art theories associate colors with emotion /feelings in the creation of his expressionist art. 
 
-* **On sketch paper**, draw a wheel and divide into 8 arcs.  
-* Along the outside of the circle, write an **emotion / feeling next to each arc section.**
+* **On sketch paper**, draw a wheel and divide into **8 arcs.**  
+* Along the outside of the circle, write an **emotion / feeling next to each arc section.** 
 * **Choose a color** to associate with each **emotion/ feeling**, add selected colors to the the corresponding arcs.
 * optional, see [emotions list](../project-1/modeling-emotions.md#hour-glass-emotional-dimensions-wikipedia)
-* **Gitbook:**  Post screenshot of your sketch on Gitbook
-* **Gitbook:**  create a table of your emotions, list as positive or negative valanced
+* **Gitbook:  Post screenshot** of your sketch on Gitbook
+* **Gitbook:**  **Create a table:** for each ****of your emotions, determine and list as either positive or negative valanced.
 
 _see example gitbook table below_
 
@@ -22,13 +22,20 @@ _see example gitbook table below_
 | Joy | Anger |
 | Serenity | Disgust |
 
-### 2.  Emotion 
+### 2.  Hand Draw: Secondary Emotions: Valence, Arousal
 
-![Image from https://open.lib.umn.edu/](../.gitbook/assets/emotionmap.jpg)
+Some models of Emotion consider that emotions can be classified according to 2 or more dimensions: **affect** \( **unpleasant:** negative,  **pleasant:** positive\), and **arousal:** \(**intense:** positive, **mild:** negative\) , where **valence is positive, negative** as shown in the image below for the [Circumplex Model of Emotions](assignment-2-functions-of-color.md#circumplex-model-of-emotions).  
 
+* Using the 8 emotions that you identified in part 1: 
+* Sketch a circumplex diagram with labeled axis: 
+  * x-axis: affect: unpleasant, pleasant
+  * y-axis: arousal: intense, mild
+* Place your emotions in the associated quadrant of the circle based on the affect and arousal level of these emotions.   
+* Select and apply a color for each of the 4 regions of your diagram
 
+### 3.  **Hand Draw:  Custom Shapes for Emotion Regions**
 
-
+For each region of your diagram: design / sketch a custom motif using combination of shapes, to represent each of the 4 regions of your diagram.  Color the shapes using shades and/or complimentary colors as selected for each region identified in part 2.
 
 ## Inspiration:
 
@@ -45,6 +52,12 @@ _see example gitbook table below_
 ### **Modeling Emotions:** 
 
 {% embed url="https://en.wikipedia.org/wiki/Emotion\_classification" %}
+
+#### **Circumplex Model of Emotions**
+
+> This model suggests that emotions are distributed in a two-dimensional circular space, containing arousal and valence dimensions. Arousal represents the vertical [axis](https://en.wikipedia.org/wiki/Cartesian_coordinate_system) and valence represents the horizontal axis, while the center of the circle represents a neutral valence and a medium level of arousal.[\[9\]](https://en.wikipedia.org/wiki/Emotion_classification#cite_note-Rubin_Telerico-9) In this model, emotional states can be represented at any level of valence and arousal, or at a neutral level of one or both of these factors. Circumplex models have been used most commonly to test stimuli of emotion words, emotional facial expressions, and [affective](https://en.wikipedia.org/wiki/Affect_%28psychology%29) states.[\[11\]](https://en.wikipedia.org/wiki/Emotion_classification#cite_note-Remington-11)     [**Circumplex Model**](https://en.wikipedia.org/wiki/Emotion_classification#Circumplex_model) **- Wikipedia**
+
+![Image from https://open.lib.umn.edu/](../.gitbook/assets/emotionmap.jpg)
 
 ### Emotion Classification - Dimensional Models: PAD - Pleasure, Arousal, Dominance
 
