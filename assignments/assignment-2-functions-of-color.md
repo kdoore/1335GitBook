@@ -22,7 +22,7 @@ _see example gitbook table below_
 | Joy | Anger |
 | Serenity | Disgust |
 
-### 2.  
+### 2.  Choiceless Awareness
 
 
 
@@ -72,4 +72,14 @@ Research
 > .... **imagination, and thus creative possibilities, are not only grounded in symbolic representations but are also tightly connected with previous bodily experiences evoking emotions and memories**.  
 >   
 > \(15\) \(PDF\) The Microsociology of Creativity and Creative Work. Available from: [https://www.researchgate.net/publication/337053085\_The\_Microsociology\_of\_Creativity\_and\_Creative\_Work](https://www.researchgate.net/publication/337053085_The_Microsociology_of_Creativity_and_Creative_Work) \[accessed Jan 29 2021\].
+
+### Choiceless Awareness
+
+> Awareness is the silent and choiceless observation of what is; in this awareness the problem unrolls itself, and thus it is fully and completely understood.
+>
+> A problem is never solved on its own level; being complex, it must be understood in its total process. To try to solve a problem on only one level, physical or psychological, leads to further conflict and confusion. For the resolution of a problem, there must be this awareness, this passive alertness which reveals its total process.  
+> [J. Krishnamurti](https://jkrishnamurti.org/content/series-i-chapter-41-%E2%80%98awareness%E2%80%99)
+
+> The Great Way is not difficult for those who have no preferences.... **If you wish to see the truth then hold no opinion for or against.** T**he struggle of what one likes and what one dislikes is the disease of the mind**. \(as cited in Osho1994 ,p.  
+> \(21\) \(PDF\) **Transforming Trauma into Healing and Being: a Non-Dual Therapy** Approach. Available from: [https://www.researchgate.net/publication/302919887\_Transforming\_Trauma\_into\_Healing\_and\_Being\_a\_Non-Dual\_Therapy\_Approach](https://www.researchgate.net/publication/302919887_Transforming_Trauma_into_Healing_and_Being_a_Non-Dual_Therapy_Approach) \[accessed Jan 31 2021\].
 
