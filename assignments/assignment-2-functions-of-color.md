@@ -88,6 +88,12 @@ Write a Processing program with the following features:
 **Cognitive change: Reappraisal**  
 Reappraisal, an example of cognitive change, is a late selection strategy, which involves reinterpreting the meaning of an event so as to alter its emotional impact.[\[13\]](https://en.wikipedia.org/wiki/Emotional_self-regulation#cite_note-:3-13) For example, this might involve reinterpreting an event by broadening one's perspective to see "the bigger picture."[\[31\]](https://en.wikipedia.org/wiki/Emotional_self-regulation#cite_note-31) Reappraisal has been shown to effectively reduce physiological,[\[32\]](https://en.wikipedia.org/wiki/Emotional_self-regulation#cite_note-32) subjective,[\[14\]](https://en.wikipedia.org/wiki/Emotional_self-regulation#cite_note-:4-14) and neural[\[33\]](https://en.wikipedia.org/wiki/Emotional_self-regulation#cite_note-33) emotional responding. As opposed to distraction, individuals show a relative preference to engage in reappraisal when facing stimuli of low negative emotional intensity because these stimuli are relatively easy to appraise and process.[\[26\]](https://en.wikipedia.org/wiki/Emotional_self-regulation#cite_note-:5-26)
 
+### Research: Emotion Regulation and Wellbeing
+
+> We found that **acceptance and reappraisal were predictive of higher wellbeing,** while **rumination and suppression were predictive of lower wellbeing.** [\[ Pauw et al \]](https://www.researchgate.net/publication/344769724_Emotion_Regulation_and_Wellbeing_A_Cross-Cultural_Study_During_the_COVID-19_Outbreak)
+
+{% file src="../.gitbook/assets/eracrosscultures-preprint.pdf" caption="Emotion Regulation and Wellbeing - COVID" %}
+
 ### Emotions and Creativity: 
 
 > When trying to produce novelty, how can we anticipate the feelings, the emotions, and the aesthetics that our creation will provide our audience based on their previous experiences?
