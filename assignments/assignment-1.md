@@ -21,7 +21,7 @@ description: 'Exploration of Concepts and Feelings: Meta, Metta'
 
 ## Assignment Tasks:
 
-Review the assignment tasks,  look through the [**Inspiration**](../project-1/beginshape_-_vertex_shapes/diagram-and-art-expression.md) ****content below to find links, ideas, etc. Complete the tasks to create your gitbook and a gitbook page that documents your process. Submit on eLearning using the submission template. Remember to upload a zip file your processing project to eLearning
+Review the assignment tasks,  look through the [**Inspiration**](../project-1/beginshape_-_vertex_shapes/sept-16-code/diagram-and-art-expression.md) ****content below to find links, ideas, etc. Complete the tasks to create your gitbook and a gitbook page that documents your process. Submit on eLearning using the submission template. Remember to upload a zip file your processing project to eLearning
 
 ### 1. Create your personal [Gitbook](https://www.gitbook.com/): 
 
