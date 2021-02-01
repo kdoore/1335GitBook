@@ -10,7 +10,9 @@ The image below shows how we can create a simple polygon using the [Processing P
 
 ### Processing Primitive Shapes
 
-There are a variety of ways to create PShape Objects.  The most simple way is to create PShape objects using _Processing_ **primitive shapes**, and the PShape: ****[**createShape\( \)** ](https://processing.org/reference/createShape_.html)method. As shown in the code snipped below, you must first declare a variable of the type: PShape, then you can call the createShape method by using Processing constant
+There are a variety of ways to create PShape Objects.  The most simple way is to create PShape objects using _Processing_ **primitive shapes**, and the PShape: ****[**createShape\( \)** ](https://processing.org/reference/createShape_.html)method. As shown in the code snipped below, you must first declare a variable of the type: PShape, then you can call the **createShape\( \)** method by specifying Processing _constant_ values of **kind:** either POINT, LINE, TRIANGLE, QUAD, RECT, ELLIPSE, ARC, BOX, SPHERE
+
+It is required to input values for the corresponding parameters used to create the Processing shape primitive: ex. **ELLIPSE requires: float x, float y, float w, float h**
 
 ```java
   PShape s = createShape(ELLIPSE, 0, 0, 100, 80);
