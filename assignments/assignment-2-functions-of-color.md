@@ -22,21 +22,23 @@ _see example gitbook table below_
 | Joy | Anger |
 | Serenity | Disgust |
 
-### 2.  Hand Draw: Secondary Emotions: Valence, Arousal
+### 2.  Hand Draw: Secondary Emotions: Affect, Arousal
 
-Some models of Emotion consider that emotions can be classified according to 2 or more dimensions: **affect** \( **unpleasant:** negative,  **pleasant:** positive\), and **arousal:** \(**intense:** positive, **mild:** negative\) , where **valence is positive, negative** as shown in the image below for the [Circumplex Model of Emotions](assignment-2-functions-of-color.md#circumplex-model-of-emotions).  
+Some models of Emotion consider that emotions can be classified according to 2 or more dimensions: **affect** \( **unpleasant:** negative,  **pleasant:** positive\), and **arousal:** \(**intense:** positive, **mild:** negative\) , **valence is positive, negative** as shown in the image below for the [Circumplex Model of Emotions](assignment-2-functions-of-color.md#circumplex-model-of-emotions).  
 
 * Using the 8 emotions that you identified in part 1: 
 * Sketch a circumplex diagram with labeled axis: 
   * x-axis: affect: unpleasant, pleasant
   * y-axis: arousal: intense, mild
 * Place your emotions in the associated quadrant of the circle based on the affect and arousal level of these emotions.   
-* Select and apply a color for each of the 4 regions of your diagram
+* **Select a color** for each of the 4 regions of your diagram 
+* Add **color** to each region using the selected colors
 * **Gitbook: post a photo** of your sketch
 
-### 3.  **Hand Draw:  Custom Shapes for Emotion Regions**
+### 3.  **Hand Draw:  4 Custom Shapes for Emotion Regions**
 
-* For each region of your diagram: design / sketch a custom motif using combination of shapes, to represent each of the 4 regions of your diagram. 
+* For each region of your diagram: design / sketch a custom simple motif using combination of processing primitive shapes or vertex points, to represent each of the 4 regions of your diagram. 
+* Layout the shape using a square grid: recommended use units: 100 \* 100 
 * Color the shapes using shades and/or complimentary colors as selected for each region identified in part 2.
 * **Gitbook: post a photo** of your sketch
 
