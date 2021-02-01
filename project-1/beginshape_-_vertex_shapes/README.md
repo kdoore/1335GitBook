@@ -8,6 +8,16 @@
 
 The image below shows how we can create a simple polygon using the [Processing PShape, createShape\( \), beginShape\( \), endShape\( \)](https://processing.org/reference/beginShape_.html) functions.
 
+### Processing Primitive Shapes
+
+There are a variety of ways to create PShape Objects.  The most simple way is to create PShape objects using _Processing_ **primitive shapes**, and the PShape: ****[**createShape\( \)** ](https://processing.org/reference/createShape_.html)method. As shown in the code snipped below, you must first declare a variable of the type: PShape, then you can call the createShape method by using Processing constant
+
+```java
+  PShape s = createShape(ELLIPSE, 0, 0, 100, 80);
+```
+
+\*\*\*\*
+
 For the code below, we've created a variable: length, which we'll use to constrain the shape to a rectangle of \(length x length \) dimensions. The points must be ordered in clockwise direction, starting from point at the beginning of the shape, listing all intermediate vertices, and ending with s.endShape\( CLOSE\) if we want the shape to have a colored fill.
 
 ![](../../.gitbook/assets/screen-shot-2018-09-04-at-1.47.47-pm.png)
