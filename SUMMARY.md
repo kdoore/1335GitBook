@@ -33,7 +33,7 @@
     * [Example Code](project-1/hsb_color_mode/hsb-color-wheel/colorwheel-class-codes19.md)
   * [HSB Color Palette Tool](project-1/hsb_color_mode/hsb-color-wheel-complimentary-color-palatte.md)
 * [PShape Objects](project-1/beginshape_-_vertex_shapes/README.md)
-  * [Example Code](project-1/beginshape_-_vertex_shapes/sept-16-code.md)
+  * [Example Code: PShape](project-1/beginshape_-_vertex_shapes/sept-16-code.md)
   * [Inspiration](project-1/beginshape_-_vertex_shapes/diagram-and-art-expression.md)
 * [Modeling Emotions](project-1/modeling-emotions/README.md)
   * [Emotions](project-1/modeling-emotions/emotions-represented-using-color-form-space/README.md)
