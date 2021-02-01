@@ -1,6 +1,6 @@
-# Project 1: PShapes
+# PShape Objects
 
-## Project 1: PShapes
+## PShape Objects
 
 ## PShape - Processing
 

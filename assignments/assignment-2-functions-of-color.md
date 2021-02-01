@@ -94,6 +94,18 @@ Reappraisal, an example of cognitive change, is a late selection strategy, which
 
 {% file src="../.gitbook/assets/eracrosscultures-preprint.pdf" caption="Emotion Regulation and Wellbeing - COVID" %}
 
+### Stages of Grief 
+
+{% embed url="https://www.ekrfoundation.org/5-stages-of-grief/change-curve/" %}
+
+### 
+
+![Kubler-Ross Change Curve](../.gitbook/assets/screen-shot-2021-02-01-at-9.27.27-am.png)
+
+{% embed url="https://www.simonandschuster.com/books/Finding-Meaning/David-Kessler/9781501192746" %}
+
+
+
 ### Emotions and Creativity: 
 
 > When trying to produce novelty, how can we anticipate the feelings, the emotions, and the aesthetics that our creation will provide our audience based on their previous experiences?
