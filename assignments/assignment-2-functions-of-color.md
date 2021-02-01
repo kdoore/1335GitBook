@@ -46,7 +46,14 @@ Some models of Emotion consider that emotions can be classified according to 2 o
 
 Write a Processing program with the following features:
 
-* 
+* **Required:**  write **4 custom functions** to create and return a PShape object.  
+* Function signature: _specify a custom function name_ **`PShape myShape1 ( float w, float h, color fillColor );`**
+* **Required:** write **2 custom functions** that will draw your custom PShape, it is suggested that you add loops and random value ranges to draw multiple PShapes with variation in hue, saturation, brightness, width, height, position
+* When the function is executed, it will draw PShapes that correspond to either the  negative or positive affect region: _\( left, right regions of the canvas.\)_
+* * Function signature: _specify a custom function name_ **`void drawNegativeRegionShapes( .float w, float h, color fillColor );`** 
+
+
+
 ## Inspiration:
 
 ### **Wassily Kandinsky:**  [Concerning the Spiritual In Art](http://www.public-library.uk/ebooks/22/92.pdf)
