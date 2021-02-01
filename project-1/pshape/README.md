@@ -1,7 +1,5 @@
 # PShape Objects
 
-## PShape Objects
-
 ## PShape - Processing
 
 [PShape](https://processing.org/reference/PShape.html) is a wrapper class for shapes in processing. It provides a class that can be used to **create objects** using scalable vector graphic format \(.svg\), processing primitive shape functions, and shapes created by specifying vertex points. In this project, we'll use the PShapes created by specifying a set of vertex points. Processing expects the points to be specified in a clockwise rotating pattern.
