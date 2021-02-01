@@ -109,9 +109,9 @@ void drawRectangle( float xWidth, float yHeight){
  }
 ```
 
-### Function to Create PShape
+### Custom Function to create, return a PShape
 
-In the example below, a function is used to create and return a PShape.
+In the example below, a custom function is used to **create and return a PShape object.**
 
 ```java
 PShape rect = createRect( 100, 200); //call the function
