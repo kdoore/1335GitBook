@@ -1,5 +1,7 @@
 # Example Code
 
+The code below shows how to create a custom function that creates and returns a custom PShape object.  The PShape method: **shape\(PShape s, float x, float y \)**  is used in draw\( \) to render the shape by inputing the specified values for parameters:  x, y: 
+
 ```java
 
 void setup( ) {
