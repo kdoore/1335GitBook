@@ -2,7 +2,7 @@
 
 #### Primitive Data-types: well-defined size: 
 
-When we covered Functions, we discussed variable scope, we were discussing how **primitive data** type variables are defined as being visible, or available for use by the executing program. **Primitive data type**s are what we've been using so far: `int, float, boolean, char`.
+When we covered Functions, we discussed variable scope, we were discussing how **primitive data** type variables are defined as being visible, or available for use by the executing program. **Primitive data type**s are what we've been using so far.`int, float, boolean, char`. The data associated with primitive variables is stored in the program's execution stack, which is where the program's code is located when the program is executing.
 
 ## Object Reference-Type Variables: memory address
 
