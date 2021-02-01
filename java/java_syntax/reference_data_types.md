@@ -1,10 +1,10 @@
 # Object Reference Data Types
 
-When we covered Functions, we discussed variable scope, we were discussing how primitive data type variables are defined as being visible, or available for use by the executing program. Primitive data types are what we've been using so far: `int, float, boolean, char`.
+When we covered Functions, we discussed variable scope, we were discussing how **primitive data** type variables are defined as being visible, or available for use by the executing program. **Primitive data type**s are what we've been using so far: `int, float, boolean, char`.
 
-## Reference-Type Variables Hold an Address
+## Object Reference-Type Variables: memory address
 
-It is important to realize that when we pass `object references` into a function, then any modifications we make to that object will be _persisted_ to the object after the function has finished executing. In this respect, the rules of local and global variable scope don't affect objects, in the same way they have applied to the primitive data-types we've been using. Variables used to refer to objects are called reference-type variables instead of primitive-type variables. We now need a different way imagine the labeled-box that stores our variable's value, instead of a primitive-value being stored in our box, in this case, the address of the place in memory where our object's data is located, is the value that is stored in our 'variable-box'. This address points to a specific address or memory location where our object's data is stored. So, we are passing the _address of an object_ into a function, this is why changes made in a function are persisted to the object.
+It is important to realize that when we pass **`object references`** into a function, then any modifications we make to that object will be _persisted_ to the object after the function has finished executing. In this respect, the rules of local and global variable scope don't affect objects, in the same way they have applied to the primitive data-types we've been using. Variables used to refer to objects are called reference-type variables instead of primitive-type variables. We now need a different way imagine the labeled-box that stores our variable's value, instead of a primitive-value being stored in our box, in this case, the address of the place in memory where our object's data is located, is the value that is stored in our 'variable-box'. This address points to a specific address or memory location where our object's data is stored. So, we are passing the _address of an object_ into a function, this is why changes made in a function are persisted to the object.
 
 ## Null - Uninitialized Reference Variable
 
