@@ -13,7 +13,7 @@ Button myButton; //not initialized has default value of null
 myButton = new Button( ); //call a constructor 
 ```
 
-## Null - Uninitialized Reference Variable
+## null - Uninitialized Reference Variable
 
 ```java
 Button myButton; //declare an object reference variable
