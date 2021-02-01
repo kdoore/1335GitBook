@@ -4,7 +4,7 @@
 
 ### **Step 1: Determine Emotions to express:**
 
-See [Models of Emotion: ](modeling-emotions.md), [Concept Maps](https://en.wikipedia.org/wiki/Concept_map), [Mental Models](https://en.wikipedia.org/wiki/Mental_model),[ Mind Map](https://en.wikipedia.org/wiki/Mind_map)
+See [Models of Emotion: ](modeling-emotions/), [Concept Maps](https://en.wikipedia.org/wiki/Concept_map), [Mental Models](https://en.wikipedia.org/wiki/Mental_model),[ Mind Map](https://en.wikipedia.org/wiki/Mind_map)
 
 **Create Personal Situation Concept Map. \(Submit with Project 1 documents\)** Select a personal situation that has an associated range of positive and negative emotions. Sketch a concept-map to brainstorm the concepts and emotions associated with your situation.
 
