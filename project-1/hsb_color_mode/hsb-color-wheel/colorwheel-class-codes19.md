@@ -1,6 +1,6 @@
 # Example Code
 
-This is the code covered in class Starting on Jan 30, 2019
+This is the code covered in class on Jan 30, 2019 to create a function that draws a colorWheel based on parameters of float size, float angleSize.
 
 ```java
 //Spring 2019 - Jan30 Class Code
