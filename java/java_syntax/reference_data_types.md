@@ -6,6 +6,13 @@ When we covered Functions, we discussed variable scope, we were discussing how *
 
 It is important to realize that when we pass **`object references`** into a function, then any modifications we make to that object will be _persisted_ to the object after the function has finished executing. In this respect, the rules of local and global variable scope don't affect objects, in the same way they have applied to the primitive data-types we've been using. Variables used to refer to objects are called reference-type variables instead of primitive-type variables. We now need a different way imagine the labeled-box that stores our variable's value, instead of a primitive-value being stored in our box, in this case, the address of the place in memory where our object's data is located, is the value that is stored in our 'variable-box'. This address points to a specific address or memory location where our object's data is stored. So, we are passing the _address of an object_ into a function, this is why changes made in a function are persisted to the object.
 
+To declare an Object Reference-Type Variable, specify the **class name to specify the data-type**, then provide a custom variable name.  The object reference variable has a default value of **null** which indicates that the variable does not contain the memory address of a valid object. The object reference variable is initialized by calling a special type of **class method:**  **constructor methods** which have a method name that matches the class name: 
+
+```java
+Button myButton; //not initialized has default value of null
+myButton = new Button( ); //call a constructor 
+```
+
 ## Null - Uninitialized Reference Variable
 
 ```java
