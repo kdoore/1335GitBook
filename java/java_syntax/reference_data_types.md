@@ -27,9 +27,9 @@ if( myButton != null){
 }
 ```
 
-## Object Memory-Storage
+## Heap: Object Memory-Storage
 
-This difference in memory-storage architecture is partially because objects represent much more complicated data-structures. When the system executes our program, it may not know exactly how much memory space we need for each object that we create. If we create a Menu object, we may choose to have the menu have 3 buttons, we may choose to have it hold 10 buttons, and we might not even decide how many buttons we want in our Menu object, until the program is executing. In that case, we'd be dynamically determining how large our Menu object is, and that could be different each time our program executes.
+This difference in memory-storage architecture is partially because objects represent much more complicated data-structures. The memory space for holding object data is called 'the Heap'.  While we never write code to directly access The _**Heap**_ is a data-structure with methods to manage the storing  object data. When the system executes our program, it may not know exactly how much memory space we need for each object that we create. If we create a Menu object, we may choose to have the menu have 3 buttons, we may choose to have it hold 10 buttons, and we might not even decide how many buttons we want in our Menu object, until the program is executing. In that case, we'd be dynamically determining how large our Menu object is, and that could be different each time our program executes.
 
 ## Java:  Pass-By-Value
 
