@@ -18,7 +18,9 @@ When trying to interpret the value associated with an HSB color value, we should
 
 ## Processing ColorMode\(HSB\)
 
-To use HSB in processing, we need to set the colorMode property to HSB mode: `colorMode(HSB)`. In addition, processing provides a method for us to set the max range values for HSB colorMode, by default, each value can range from 0-255, just as with RGB. Since the processing color selector tool uses HSB with ranges: Hue: 0-360, Sat: 0-100, Bright: 0-100,  you can add a 4th parameter to specify the max Alpha range. if you'll be using the colorSelector to choose color values, you can set these range max values when you specify colorMode: `colorMode(HSB, 360, 100, 100);` //sets range max so they correspond to the colorSelector tool.
+To use HSB in processing, we need to set the colorMode property to HSB mode: `colorMode(HSB)`. In addition, processing provides a method for us to set the max range values for HSB colorMode, by default, each value can range from 0-255, just as with RGB. The _**Processing**_ **color selector tool** **\(see menu, tools &gt; colorSelector \)** uses HSB with ranges **Hue:** 0-360, **Sat:** 0-100, **Bright:** 0-100,  you can add a 5th parameter to specify the max value for the **Alpha** range. if you'll be using the colorSelector to choose color values, you can set these range max values when you specify colorMode: `colorMode(HSB, 360, 100, 100);` //sets range max so they correspond to the Color Selector tool.    
+
+![Menu &amp;gt; Tools:  Color Selector ](../../.gitbook/assets/screen-shot-2021-02-01-at-3.20.19-pm.png)
 
 **Example Code using HSB colorMode and color compliment logic** 
 
