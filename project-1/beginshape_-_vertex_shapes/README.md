@@ -4,21 +4,24 @@
 
 ## PShape - Processing
 
-[PShape](https://processing.org/reference/PShape.html) is a wrapper class for shapes in processing. It provides a class that can be used to create objects using scalable vector graphic images \(.svg\), processing primitive shape functions, and shapes created by specifying vertex points. In this project, we'll use the PShapes created by specifying a set of vertex points. Processing expects the points to be specified in a clockwise rotating pattern.
+[PShape](https://processing.org/reference/PShape.html) is a wrapper class for shapes in processing. It provides a class that can be used to **create objects** using scalable vector graphic format \(.svg\), processing primitive shape functions, and shapes created by specifying vertex points. In this project, we'll use the PShapes created by specifying a set of vertex points. Processing expects the points to be specified in a clockwise rotating pattern.
 
 The image below shows how we can create a simple polygon using the [Processing PShape, createShape\( \), beginShape\( \), endShape\( \)](https://processing.org/reference/beginShape_.html) functions.
 
-### Processing Primitive Shapes
+### 1. Processing Primitive Shapes
 
 There are a variety of ways to create PShape Objects.  The most simple way is to create PShape objects using _Processing_ **primitive shapes**, and the PShape: ****[**createShape\( \)** ](https://processing.org/reference/createShape_.html)method. As shown in the code snipped below, you must first declare a variable of the type: PShape, then you can call the **createShape\( \)** method by specifying Processing _constant_ values of **kind:** either POINT, LINE, TRIANGLE, QUAD, RECT, ELLIPSE, ARC, BOX, SPHERE
 
 It is required to input values for the corresponding parameters used to create the Processing shape primitive: ex. **ELLIPSE requires: float x, float y, float w, float h**
 
+**Display using  the PShape method:  shape\( PShape s, float x, float y \)**
+
 ```java
   PShape s = createShape(ELLIPSE, 0, 0, 100, 80);
+  shape( s, 100, 100 ) //displays at point ( 100, 100 )
 ```
 
-\*\*\*\*
+### **2. Specify Vertex Points to Create PShape** 
 
 For the code below, we've created a variable: length, which we'll use to constrain the shape to a rectangle of \(length x length \) dimensions. The points must be ordered in clockwise direction, starting from point at the beginning of the shape, listing all intermediate vertices, and ending with s.endShape\( CLOSE\) if we want the shape to have a colored fill.
 
