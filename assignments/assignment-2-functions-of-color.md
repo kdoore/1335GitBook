@@ -6,7 +6,9 @@ description: 'Exploration of Function Design in Java, Interactive Color using HS
 
 ### Overview: Computational Dynamics of Being and Doing
 
-#### Leveling-up in the Game of Life: Emotions, Cognition, Behavior
+### Leveling-up in the Game of Life: 
+
+#### Event-Driven Experience: Emotions, Cognition, Behaviors
 
 According to the Semantic Pointer Architecture Theory of Emotions \(SMA\), emotions can be considered as transient dynamic neural phenomena that are associated with connections between explicit memory's linguistic abstract concepts and implicit memory's stored instances of concrete experiences.
 
