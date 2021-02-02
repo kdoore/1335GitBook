@@ -1,25 +1,8 @@
 # Creativity
 
-### Disruptive Innovation Report - 2021 
+### Modeling Creativity: [Tom D. DeSmedt](https://organisms.be/) \( pdf \) 
 
-
-
-Search
-
-* [VIDEOS](https://www.zdnet.com/video/)
-* [WINDOWS 10](https://www.zdnet.com/topic/windows-10/)
-* [5G](https://www.zdnet.com/topic/5g/)
-* [BEST VPNS](https://www.zdnet.com/article/best-vpn-services/)
-* [CLOUD](https://www.zdnet.com/topic/cloud/)
-* [SECURITY](https://www.zdnet.com/topic/security/)
-* [AI](https://www.zdnet.com/topic/artificial-intelligence/)
-* MORE
-* [NEWSLETTERS](https://www.zdnet.com/newsletters/)
-* [ALL WRITERS](https://www.zdnet.com/blog/)
-* 
- MUST READ: [Ransomware: A company paid millions to get their data back, but forgot to do one thing. So the hackers came back again](https://www.zdnet.com/article/ransomware-this-is-the-first-thing-you-should-think-about-if-you-fall-victim-to-an-attack/)
-
-## Disruptive Innovation 2021: 
+### Disruptive Innovation 2021: 
 
 ARK Invest Big Ideas 2021 annual research report seeks to highlight the latest developments in innovation and offers some of our most provocative research conclusions for the year.
 
@@ -45,7 +28,7 @@ ARK Big Ideas 2021 include the following:
 14. Multi-Cancer Screening
 15. Cell and Gene Therapy: Generation 2
 
-### Modeling Creativity: [Tom D. DeSmedt](https://organisms.be/)
+### Modeling Creativity PDF
 
 {% embed url="https://www.clips.uantwerpen.be/sites/default/files/modeling-creativity.pdf" %}
 
