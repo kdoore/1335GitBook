@@ -25,7 +25,7 @@ Emotions can be considered as dynamic flows of energy.  Emotions can also be con
 
 #### Compass:  Tool for Orienteering and Way-finding: Align with Flows of Hidden Forces
 
-Just as Einstein's curiosity about the alignment of a compass needle to indicate the hidden force-field corresponding to the energy flows of magnetic fields that can be used for orienting in the physical world, emotions can be considered as parameters for a personal embodied compass, a tool for way-finding where emotions need to be attuned to align with hidden force-fields of energy, the energy flows of transformational information integration - learning, adaptation, evolution, leveling-up.  Love Hurts: Change, Suffering, Information-Flows are embedded in the fabric of our growth experiences.  
+Just as Einstein's curiosity about the alignment of a **compass needle** to indicate the hidden force-field corresponding to the **energy flows of magnetic fields** that can be used for orienting in the physical world, emotions can be considered as parameters for a personal embodied compass, a tool for way-finding where emotions need to be attuned to align with hidden force-fields of energy, the energy flows of transformational information integration: growth, learning, adaptation, evolution, leveling-up.  Love Hurts: Change, Suffering, Information-Flows are embedded in the fabric of our experiences.  
 
 ## Creating A Personalized Dynamic Compass to Orient toward Adaptation, Growth, Self-Actualization.
 
