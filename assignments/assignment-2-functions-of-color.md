@@ -85,17 +85,29 @@ Write a Processing program with the following features:
 **1.Functions \(4\) to create PShape objects**
 
 * **Required:**  write **4 custom functions,** each function will **create** and **return** a **PShape object.**  
-* Function signature: _specify a custom function name_ **`PShape myShape1 ( float w, float h, color fillColor );`**
+* **Function signature:** _specify a custom function name_ **`PShape myShape1 ( float w, float h, color fillColor );`**
 
-**2. Functions \(2\) to Display PShape**
+**2. Functions \(2\) to display PShape objects as motifs**
 
-* **Required:** write **2 custom functions** that will draw your custom PShape, it is suggested that you add loops and random value ranges to draw multiple PShapes with variation in hue, saturation, brightness, width, height, position
+* **Required:** write **2 custom functions** that will display your custom PShape, it is suggested that you add loops and random value ranges to draw multiple PShapes with variation in hue, saturation, brightness, width, height, position.  Ex: `void flickerPattern( PShape s, float w, float h, color fillColor)`
 * When the function is executed, it will draw PShapes that correspond to either the  negative or positive affect region: _\( left, right regions of the canvas.\)_
-* Function signature: _specify a custom function name_ **`void drawComplexShapes( PShape s, float w, float h, color fillColor );`**
+* **Function signature:** _specify a custom function name_ **`void drawComplexShapes( PShape s, float w, float h, color fillColor );`**
 
-**3. Use in a Processing program with setup \( \) and draw \( \)**
+**3. Use in a Processing program with setup \( \) and draw \( \):  interactive display**  
+You'll create a simple program to test your PShapes.  You'll have logic to determine if mouse is on the left or right of the center-line.  When the mouse is on the left side, randomly select to display one of the negative region PShapes.
 
-* 
+* setup\( \) - Set canvas size, colorMode\( HSB \)
+* draw\( \) -  if mousePressed logic
+  * translate origin to mouse position
+  * if mouse is on left region, randomly display a negative-region PShapes
+  * if mouse is on right region, randomly display a positive-region PShape
+* optional:  keyPressed\( \) - events
+  * if desired, add logic to have filters, or transparent background added - corresponding to specific keys being pressed.
+
+4. **Gitbook:** **Post a screenshot** of your canvas showing all 4 patterns displayed.  
+5. **Gitbook: Post code** for one of your PShape functions and one of your display functions using the gitbook format for embedding code.  
+5. **Submit zip file** of your code on eLearning using submission template.
+
 ### **Supplemental Content**
 
 #### **Processing javascript - use interactive variable sliders to create complex shape**
