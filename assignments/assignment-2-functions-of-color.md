@@ -4,13 +4,23 @@ description: 'Exploration of Function Design in Java, Interactive Color using HS
 
 # A2: Functions, Emotions
 
-### Dynamics of Being and Doing: Emotions: 
+### Overview: Computational Dynamics of Being and Doing
 
-#### Leveling-up in the Game of Life
+#### Leveling-up in the Game of Life: Emotions, Cognition, Behavior
 
-According to the Semantic Pointer Architecture Theory of Emotions \(SMA\), emotions can be considered as transient dynamic neural phenomena that are associated with relations between explicit memory's linguistic abstract concepts and implicit memory's stored instances of concrete experience
+According to the Semantic Pointer Architecture Theory of Emotions \(SMA\), emotions can be considered as transient dynamic neural phenomena that are associated with connections between explicit memory's linguistic abstract concepts and implicit memory's stored instances of concrete experiences.
 
-Emotions can be considered as dynamic flows of energy.  Emotions can be considered as tunable parameters to help us learn and orient toward personal growth.  Learning how to process emotions associated with difficult situations is the key to learning how to grow toward self-actualization, consider this as leveling-up in life's lessons.
+Emotions can be considered as Dynamic Flows of Energy of Information Integration.  Emotions can be considered as tunable parameters to help us learn and orient toward personal growth.  Learning how to process emotions associated with difficult situations is the key to learning how to grow toward self-actualization, consider this as leveling-up in life's lessons.
+
+{% file src="../.gitbook/assets/kajic.emo\_.cogsys.2019-2-.pdf" caption="Semantic Pointer Theory of Emotions" %}
+
+#### Compass:  Tool for Orienteering and Way-finding: Align with Flows of Hidden Forces
+
+Just as Einstein's curiosity about the alignment of a compass needle to indicate the hidden force-field of flow of magnetic energy that can be used for orienting in the physical world, emotions can be considered as parameters for a personal compass, a tool for way-finding where emotions need to be attuned to align with hidden force-fields of energy, the energy flows of transformational information integration - learning, adaptation, evolution, leveling-up.  Love Hurts: Change, Suffering, Information-Flows are embedded in the fabric of our growth experiences.  
+
+## Creating A Personalized Dynamic Compass to Orient toward Adaptation, Growth, Self-Actualization.
+
+### First Steps - Mapping Emotions to a Spatial Representational Form
 
 ### 1.  Hand Draw:  Emotions and Colors Wheel:
 
