@@ -76,6 +76,16 @@ Write a Processing program with the following features:
 
 ![Image from https://open.lib.umn.edu/](../.gitbook/assets/emotionmap.jpg)
 
+![Geneva Emotion Wheel: https://www.unige.ch/cisa/gew](../.gitbook/assets/emotionwheel.png)
+
+{% file src="../.gitbook/assets/genevaemotionwheelratingstudyreport\_2012\_2.0.pdf" caption="Geneva Emotion Wheel Study Report" %}
+
+### Emotional and Cognitive Appraisals of Events
+
+> “the main way in which c**ognitions and emotions are linked is through appraisals**. When anything happens, we evaluate what it means for us, it's significance to us – this is an emotional appraisal, or an appraisal that leads to an emotional reaction. These appraisals are believed to help us in making fine distinctions about our emotional experiences or in determining the extent or the intensity of the emotion.” [Ogelk pdf 2007](http://www.ogelk.net/dersnot/tip/Emotion_cognition_motivation.pdf)
+
+{% embed url="https://positivepsychology.com/emotion-wheel/" caption="Good Overview of Use of Emotion Wheels" %}
+
 ### Emotion Classification - Dimensional Models: PAD - Pleasure, Arousal, Dominance
 
 > PAD uses three numerical dimensions to represent all [emotions](https://en.wikipedia.org/wiki/Emotion).[\[21\]](https://en.wikipedia.org/wiki/Emotion_classification#cite_note-Mehrabian1-21)[\[22\]](https://en.wikipedia.org/wiki/Emotion_classification#cite_note-22) The PAD dimensions are Pleasure, Arousal and Dominance.
