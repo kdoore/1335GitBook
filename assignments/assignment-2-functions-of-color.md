@@ -6,18 +6,18 @@ description: 'Exploration of Function Design in Java, Interactive Color using HS
 
 ### Overview: Computational Dynamics of Being and Doing
 
-> "Life is a succession of lessons which must be lived to be understood."   
+> "Life is a succession of **lessons** which must be lived to be understood."   
 > Helen Keller
 
 > **Rule 2: "You will be presented with lessons"**   
-> 'You are enrolled in a full-time informal school called "life." Each day in this school you will have the opportunity to learn lessons.  **You may like the lessons or hate them**, but **you have designed** them as a part of your curriculum.'    
+> 'You are enrolled in a full-time informal school called "life." Each day in this school you will have the **opportunity to learn lessons**.  **You may like the lessons or hate them**, but **you have designed** them as a part of your curriculum.'    
 > Cherie Carter Scott:  _If Life is a Game, These are the Rules_
 
 ### Leveling-up in the Game of Life: 
 
 #### Event-Driven Experience: Emotions, Cognition, Behaviors
 
-According to the Semantic Pointer Architecture Theory of Emotions \(SMA\), emotions can be considered as transient, dynamic neural phenomena that are associated with connections between explicit memory's linguistic abstract concepts and implicit memory's stored instances of concrete sensory experiences.
+According to the **Semantic Pointer Architecture Theory of Emotions** \(SMA\), emotions can be considered as transient, dynamic neural phenomena that are associated with connections between explicit memory's linguistic abstract concepts and implicit memory's stored instances of concrete sensory experiences.
 
 Emotions can be considered as Dynamic Flows of Energy.  Emotions can be considered as tunable parameters to help us learn from difficulties and to orient toward personal growth.  Learning how to process emotions associated with difficult situations is an important key to learning how to grow toward self-actualization, consider this as leveling-up in life's lessons.
 
