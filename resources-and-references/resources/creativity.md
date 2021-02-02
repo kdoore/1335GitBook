@@ -1,6 +1,6 @@
 # Creativity
 
-### Modeling Creativity: [Tom D. DeSmedt](https://organisms.be/) \( pdf \) 
+### Modeling Creativity: [Tom D. DeSmedt](https://organisms.be/) [\( pdf \) ](creativity.md#modeling-creativity-pdf)
 
 ### Disruptive Innovation 2021: 
 
