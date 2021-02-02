@@ -96,9 +96,11 @@ Write a Processing program with the following features:
 **3. Use in a Processing program with setup \( \) and draw \( \):  interactive display**  
 You'll create a simple program to test your PShapes.  You'll have logic to determine if mouse is on the left or right of the center-line.  When the mouse is on the left side, randomly select to display one of the negative region PShapes.
 
+* define global variables for 5 colors: background and primary fill for each of your PShape objects.
 * setup\( \) - Set canvas size, colorMode\( HSB \), test your 4 PShape object functions by executing in setup, comment this code out when adding draw\( \) logic.
   * PShape s = myShape1\( ......\); //call your shape function, provide parameters.
   * shape\( s, 100, 100\); //display one time
+  * initialize global colors using the processing color selector tool
 * draw\( \) -  if mousePressed logic
   * translate origin to mouse position
   * if mouse is on left region, randomly display a negative-region PShapes
@@ -108,7 +110,8 @@ You'll create a simple program to test your PShapes.  You'll have logic to deter
 
 4. **Gitbook:** **Post a screenshot** of your canvas showing all 4 patterns displayed.  
 5. **Gitbook: Post code** for one of your PShape functions and one of your display functions using the gitbook format for embedding code.  
-5. **Submit zip file** of your code on eLearning using submission template.
+6.  **Rename** your project to use syntax: **lastname\_netID\_A2.pde**  
+7. **Submit zip file** of your code on eLearning using submission template.
 
 ### **Supplemental Content**
 
