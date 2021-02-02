@@ -70,7 +70,13 @@ Write a Processing program with the following features:
 * When the function is executed, it will draw PShapes that correspond to either the  negative or positive affect region: _\( left, right regions of the canvas.\)_
 * * Function signature: _specify a custom function name_ **`void drawNegativeRegionShapes( .float w, float h, color fillColor );`** 
 
+### **Supplemental Content**
 
+#### **Processing javascript - use interactive variable sliders to create complex shape**
+
+{% embed url="https://www.khanacademy.org/computer-programming/flame/6608254840291328" %}
+
+\*\*\*\*
 
 ## Inspiration:
 
