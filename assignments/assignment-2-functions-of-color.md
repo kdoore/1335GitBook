@@ -106,6 +106,8 @@ Write a Processing program with the following features:
 
 ![Geneva Emotion Wheel: https://www.unige.ch/cisa/gew](../.gitbook/assets/emotionwheel.png)
 
+> Emotions can be defined as multi-componential, including subjective feeling, appraisals, reactions in the service of action preparation and expressions, action tendencies \(including expressions\), and regulation \(compare Scherer, 2005; Frijda, 2007\). A central component of emotions, the “feeling component,” is inherently subjective and can only be assessed with self- report measures, such as the Geneva Emotion Wheel \(GEW; Scherer, 2005\).
+
 {% file src="../.gitbook/assets/genevaemotionwheelratingstudyreport\_2012\_2.0.pdf" caption="Geneva Emotion Wheel Study Report" %}
 
 ### Emotional and Cognitive Appraisals of Events
