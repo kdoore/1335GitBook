@@ -24,7 +24,15 @@ Just as Einstein's curiosity about the alignment of a compass needle to indicate
 
 ### First Steps - Mapping Emotions to a Spatial Representational Form
 
-### 1.  Hand Draw:  Emotions and Colors Wheel:
+#### 
+
+### 1. Song: Emotional Dynamics 
+
+1. **Song:**  **Emotional Dynamics:** Select and list a song that reflects dynamic rhythms that correspond to the changing nature of opposite emotions. 
+2. **Gitbook: Provide a lin**k to the song, artist, lyrics, or album.
+3. **Example:  John Prine:** **That's the way the world goes around** [https://www.youtube.com/watch?v=wvY02SSj450](https://www.youtube.com/watch?v=wvY02SSj450) [https://genius.com/John-prine-thats-the-way-that-the-world-goes-round-lyrics](https://genius.com/John-prine-thats-the-way-that-the-world-goes-round-lyrics)
+
+### 2.  Hand Draw:  Emotions and Colors Wheel:
 
 **Identifying emotions** can improve emotional self-awareness and can be useful in developing skill in cognitive reappraisal to enhance emotional self-regulation. \([See Below](assignment-2-functions-of-color.md#emotion-classification-dimensional-models-pad-pleasure-arousal-dominance)\) Several models of emotion classification exist that are useful in understanding the nature of emotions. \([See Emotion Classification\)](assignment-2-functions-of-color.md#emotion-classification-dimensional-models-pad-pleasure-arousal-dominance).  [Kandinsky](assignment-2-functions-of-color.md#wassily-kandinsky-concerning-the-spiritual-in-art) art theories associate colors with emotion /feelings in the creation of his expressionist art. 
 
@@ -42,7 +50,7 @@ _see example gitbook table below_
 | Joy | Anger |
 | Serenity | Disgust |
 
-### 2.  Hand Draw:  Mapping Emotions: Affect, Arousal
+### 3.  Hand Draw:  Mapping Emotions: Affect, Arousal
 
 Some models of Emotion consider that emotions can be classified according to 2 or more dimensions: **affect** \( **unpleasant:** negative,  **pleasant:** positive\), and **arousal:** \(**intense:** positive, **mild:** negative\) , **valence is positive, negative** as shown in the image below for the [Circumplex Model of Emotions](assignment-2-functions-of-color.md#circumplex-model-of-emotions).  
 
@@ -55,14 +63,14 @@ Some models of Emotion consider that emotions can be classified according to 2 o
 * Add **color** to each region using the selected colors
 * **Gitbook: post a photo** of your sketch
 
-### 3.  **Hand Draw:  4 Custom Shapes for Emotion Regions**
+### 4.  **Hand Draw:  4 Custom Shapes for Emotion Regions**
 
 * For each region of your diagram: design / sketch a custom simple motif using combination of processing primitive shapes or vertex points, to represent each of the 4 regions of your diagram. 
 * Layout the shape using a square grid: recommended use units: 100 \* 100 
 * Color the shapes using shades and/or complimentary colors as selected for each region identified in part 2.
 * **Gitbook: post a photo** of your sketch
 
-### 4.  Processing: Coding Functions to Transform Geometric Objects
+### 5.  Processing: Coding Functions to Transform Geometric Objects
 
 #### Custom Functions to Create, Transform, Display Processing PShape Objects
 
