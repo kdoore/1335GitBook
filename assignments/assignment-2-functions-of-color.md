@@ -4,6 +4,10 @@ description: 'Exploration of Function Design in Java, Interactive Color using HS
 
 # A2: Functions, Emotions
 
+### Dynamics of Being and Doing: Emotions 
+
+According to the Semantic Pointer Architecture theory of Emotions \(SMA\), emotions can be considered as transient dynamic neural phenomena that are associated with relations between explicit memory's linguistic abstract concepts and implicit memory's stored instances of concrete experience
+
 ### 1.  Hand Draw:  Emotions and Colors Wheel:
 
 **Identifying emotions** can improve emotional self-awareness and can be useful in developing skill in cognitive reappraisal to enhance emotional self-regulation. \([See Below](assignment-2-functions-of-color.md#emotion-classification-dimensional-models-pad-pleasure-arousal-dominance)\) Several models of emotion classification exist that are useful in understanding the nature of emotions. \([See Emotion Classification\)](assignment-2-functions-of-color.md#emotion-classification-dimensional-models-pad-pleasure-arousal-dominance).  [Kandinsky](assignment-2-functions-of-color.md#wassily-kandinsky-concerning-the-spiritual-in-art) art theories associate colors with emotion /feelings in the creation of his expressionist art. 
