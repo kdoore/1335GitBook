@@ -57,13 +57,13 @@ _see example gitbook table below_
 
 ### 3.  Hand Draw:  Mapping Emotions: Affect, Arousal
 
-Some models of Emotion consider that emotions can be classified according to 2 or more dimensions: **affect** \( **unpleasant:** negative,  **pleasant:** positive\), and **arousal:** \(**intense:** positive, **mild:** negative\) , **valence is positive, negative** as shown in the image below for the [Circumplex Model of Emotions](assignment-2-functions-of-color.md#circumplex-model-of-emotions).  
+Some models of Emotion consider that emotions can be classified according to 2 or more dimensions: **affect** \( **unpleasant:** negative,  **pleasant:** positive\), and **arousal:** \(**intense:** positive, **mild:** negative\) , _valence is positive, negative_ as shown in the image below for the [Circumplex Model of Emotions](assignment-2-functions-of-color.md#circumplex-model-of-emotions).  
 
 * Using the 8 emotions that you identified in part 1: 
 * Sketch a circumplex diagram with labeled axis: 
-  * x-axis: affect: unpleasant, pleasant
-  * y-axis: arousal: intense, mild
-* Place your emotions in the associated quadrant of the circle based on the affect and arousal level of these emotions.   
+  * **x-axis: affect:** unpleasant \(left\), pleasant \(right\)
+  * **y-axis: arousal:** intense \(up\), mild \(down\)
+* Write your emotions in the associated quadrant of the circle based on the affect and arousal level of these emotions.   
 * **Select a color** for each of the 4 regions of your diagram 
 * Add **color** to each region using the selected colors
 * **Gitbook: post a photo** of your sketch
@@ -72,7 +72,8 @@ Some models of Emotion consider that emotions can be classified according to 2 o
 
 * For each region of your diagram: design / sketch a custom simple motif using combination of processing primitive shapes or vertex points, to represent each of the 4 regions of your diagram. 
 * Layout the shape using a square grid: recommended use units: 100 \* 100 
-* Color the shapes using shades and/or complimentary colors as selected for each region identified in part 2.
+* Color the shapes using shades, analogous colors and/or complimentary colors as selected for each region identified in part 2.
+* Optional: consider inspiration from symbols of cycles such as temporal: [seasons](http://www.symbolism.org/writing/books/sp/4/page2.html), card suits, [Tao Taijitu](https://en.wikipedia.org/wiki/Taijitu), geographic directions.
 * **Gitbook: post a photo** of your sketch
 
 ### 5.  Processing: Coding Functions to Transform Geometric Objects
