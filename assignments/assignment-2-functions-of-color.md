@@ -68,7 +68,7 @@ Write a Processing program with the following features:
 * Function signature: _specify a custom function name_ **`PShape myShape1 ( float w, float h, color fillColor );`**
 * **Required:** write **2 custom functions** that will draw your custom PShape, it is suggested that you add loops and random value ranges to draw multiple PShapes with variation in hue, saturation, brightness, width, height, position
 * When the function is executed, it will draw PShapes that correspond to either the  negative or positive affect region: _\( left, right regions of the canvas.\)_
-* * Function signature: _specify a custom function name_ **`void drawNegativeRegionShapes( .float w, float h, color fillColor );`** 
+* Function signature: _specify a custom function name_ **`void drawComplexShapes( PShape s, float w, float h, color fillColor );`**
 
 ### **Supplemental Content**
 
