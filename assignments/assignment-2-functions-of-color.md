@@ -96,7 +96,9 @@ Write a Processing program with the following features:
 **3. Use in a Processing program with setup \( \) and draw \( \):  interactive display**  
 You'll create a simple program to test your PShapes.  You'll have logic to determine if mouse is on the left or right of the center-line.  When the mouse is on the left side, randomly select to display one of the negative region PShapes.
 
-* setup\( \) - Set canvas size, colorMode\( HSB \)
+* setup\( \) - Set canvas size, colorMode\( HSB \), test your 4 PShape object functions by executing in setup, comment this code out when adding draw\( \) logic.
+  * PShape s = myShape1\( ......\); //call your shape function, provide parameters.
+  * shape\( s, 100, 100\); //display one time
 * draw\( \) -  if mousePressed logic
   * translate origin to mouse position
   * if mouse is on left region, randomly display a negative-region PShapes
