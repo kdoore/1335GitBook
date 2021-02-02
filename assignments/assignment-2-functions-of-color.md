@@ -10,7 +10,7 @@ description: 'Exploration of Function Design in Java, Interactive Color using HS
 
 #### Event-Driven Experience: Emotions, Cognition, Behaviors
 
-According to the Semantic Pointer Architecture Theory of Emotions \(SMA\), emotions can be considered as transient dynamic neural phenomena that are associated with connections between explicit memory's linguistic abstract concepts and implicit memory's stored instances of concrete experiences.
+According to the Semantic Pointer Architecture Theory of Emotions \(SMA\), emotions can be considered as transient, dynamic neural phenomena that are associated with connections between explicit memory's linguistic abstract concepts and implicit memory's stored instances of concrete experiences.
 
 Emotions can be considered as Dynamic Flows of Energy.  Emotions can be considered as tunable parameters to help us learn from difficulties and to orient toward personal growth.  Learning how to process emotions associated with difficult situations is an important key to learning how to grow toward self-actualization, consider this as leveling-up in life's lessons.
 
