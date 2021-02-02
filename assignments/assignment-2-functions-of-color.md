@@ -82,12 +82,20 @@ Some models of Emotion consider that emotions can be classified according to 2 o
 
 Write a Processing program with the following features:
 
-* **Required:**  write **4 custom functions** to create and return a **PShape object.**  
+**1.Functions \(4\) to create PShape objects**
+
+* **Required:**  write **4 custom functions,** each function will **create** and **return** a **PShape object.**  
 * Function signature: _specify a custom function name_ **`PShape myShape1 ( float w, float h, color fillColor );`**
+
+**2. Functions \(2\) to Display PShape**
+
 * **Required:** write **2 custom functions** that will draw your custom PShape, it is suggested that you add loops and random value ranges to draw multiple PShapes with variation in hue, saturation, brightness, width, height, position
 * When the function is executed, it will draw PShapes that correspond to either the  negative or positive affect region: _\( left, right regions of the canvas.\)_
 * Function signature: _specify a custom function name_ **`void drawComplexShapes( PShape s, float w, float h, color fillColor );`**
 
+**3. Use in a Processing program with setup \( \) and draw \( \)**
+
+* 
 ### **Supplemental Content**
 
 #### **Processing javascript - use interactive variable sliders to create complex shape**
