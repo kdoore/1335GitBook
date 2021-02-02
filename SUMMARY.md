@@ -2,8 +2,8 @@
 
 * [Introduction](README.md)
 * [Assignments](assignments/README.md)
-  * [Assignment 1: Meta, Metta](assignments/assignment-1.md)
-  * [Assignment 2: Functions, Emotions](assignments/assignment-2-functions-of-color.md)
+  * [A1: Meta, Metta](assignments/assignment-1.md)
+  * [A2: Functions, Emotions](assignments/assignment-2-functions-of-color.md)
   * [Inspiration](assignments/inspiration.md)
 
 ## Getting Started

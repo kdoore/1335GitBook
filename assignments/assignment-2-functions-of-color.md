@@ -2,7 +2,7 @@
 description: 'Exploration of Function Design in Java, Interactive Color using HSB colorMode'
 ---
 
-# Assignment 2: Functions, Emotions
+# A2: Functions, Emotions
 
 ### 1.  Hand Draw:  Emotions and Colors Wheel:
 

@@ -2,7 +2,7 @@
 description: 'Exploration of Concepts and Feelings: Meta, Metta'
 ---
 
-# Assignment 1: Meta, Metta
+# A1: Meta, Metta
 
 ## Computational Experience Design
 
