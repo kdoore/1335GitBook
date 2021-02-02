@@ -42,7 +42,7 @@ _see example gitbook table below_
 | Joy | Anger |
 | Serenity | Disgust |
 
-### 2.  Hand Draw: Secondary Emotions: Affect, Arousal
+### 2.  Hand Draw:  Mapping Emotions: Affect, Arousal
 
 Some models of Emotion consider that emotions can be classified according to 2 or more dimensions: **affect** \( **unpleasant:** negative,  **pleasant:** positive\), and **arousal:** \(**intense:** positive, **mild:** negative\) , **valence is positive, negative** as shown in the image below for the [Circumplex Model of Emotions](assignment-2-functions-of-color.md#circumplex-model-of-emotions).  
 
@@ -62,11 +62,13 @@ Some models of Emotion consider that emotions can be classified according to 2 o
 * Color the shapes using shades and/or complimentary colors as selected for each region identified in part 2.
 * **Gitbook: post a photo** of your sketch
 
-### 4.  Processing: Code 
+### 4.  Processing: Coding Functions to Transform Geometric Objects
+
+#### Custom Functions to Create, Transform, Display Processing PShape Objects
 
 Write a Processing program with the following features:
 
-* **Required:**  write **4 custom functions** to create and return a PShape object.  
+* **Required:**  write **4 custom functions** to create and return a **PShape object.**  
 * Function signature: _specify a custom function name_ **`PShape myShape1 ( float w, float h, color fillColor );`**
 * **Required:** write **2 custom functions** that will draw your custom PShape, it is suggested that you add loops and random value ranges to draw multiple PShapes with variation in hue, saturation, brightness, width, height, position
 * When the function is executed, it will draw PShapes that correspond to either the  negative or positive affect region: _\( left, right regions of the canvas.\)_
