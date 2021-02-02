@@ -6,6 +6,13 @@ description: 'Exploration of Function Design in Java, Interactive Color using HS
 
 ### Overview: Computational Dynamics of Being and Doing
 
+> "Life is a succession of lessons which must be lived to be understood."   
+> Helen Keller
+
+> **Rule 2: "You will be presented with lessons"**   
+> 'You are enrolled in a full-time informal school called "life." Each day in this school you will have the opportunity to learn lessons.  **You may like the lessons or hate them**, but **you have designed** them as a part of your curriculum.'    
+> Cherie Carter Scott:  _If Life is a Game, These are the Rules_
+
 ### Leveling-up in the Game of Life: 
 
 #### Event-Driven Experience: Emotions, Cognition, Behaviors
@@ -23,8 +30,6 @@ Just as Einstein's curiosity about the alignment of a compass needle to indicate
 ## Creating A Personalized Dynamic Compass to Orient toward Adaptation, Growth, Self-Actualization.
 
 ### First Steps - Mapping Emotions to a Spatial Representational Form
-
-#### 
 
 ### 1. Song: Emotional Dynamics 
 
