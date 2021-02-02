@@ -4,9 +4,13 @@ description: 'Exploration of Function Design in Java, Interactive Color using HS
 
 # A2: Functions, Emotions
 
-### Dynamics of Being and Doing: Emotions 
+### Dynamics of Being and Doing: Emotions: 
 
-According to the Semantic Pointer Architecture theory of Emotions \(SMA\), emotions can be considered as transient dynamic neural phenomena that are associated with relations between explicit memory's linguistic abstract concepts and implicit memory's stored instances of concrete experience
+#### Leveling-up in the Game of Life
+
+According to the Semantic Pointer Architecture Theory of Emotions \(SMA\), emotions can be considered as transient dynamic neural phenomena that are associated with relations between explicit memory's linguistic abstract concepts and implicit memory's stored instances of concrete experience
+
+Emotions can be considered as dynamic flows of energy.  Emotions can be considered as tunable parameters to help us learn and orient toward personal growth.  Learning how to process emotions associated with difficult situations is the key to learning how to grow toward self-actualization, consider this as leveling-up in life's lessons.
 
 ### 1.  Hand Draw:  Emotions and Colors Wheel:
 
