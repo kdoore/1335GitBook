@@ -33,7 +33,7 @@ Just as Einstein's curiosity about the alignment of a **compass needle** to indi
 
 ### 1. Song: Emotional Dynamics 
 
-1. **Song:**  **Emotional Dynamics:** Select and list a song that reflects dynamic rhythms that correspond to the changing nature of opposite emotions. 
+1. **Song:**  **Emotional Dynamics:** Select and list a song that reflects **dynamic rhythms** that correspond to the **changing nature of opposite emotions.** 
 2. **Gitbook: Provide a lin**k to the song, artist, lyrics, or album.
 3. **Example:  John Prine:** **That's the way the world goes around** [https://www.youtube.com/watch?v=wvY02SSj450](https://www.youtube.com/watch?v=wvY02SSj450) [https://genius.com/John-prine-thats-the-way-that-the-world-goes-round-lyrics](https://genius.com/John-prine-thats-the-way-that-the-world-goes-round-lyrics)
 
@@ -55,7 +55,7 @@ _see example gitbook table below_
 | Joy | Anger |
 | Serenity | Disgust |
 
-### 3.  Hand Draw:  Mapping Emotions: Affect, Arousal
+### 3.  Hand Draw:  2D-Mapping Emotions: Affect, Arousal
 
 Some models of Emotion consider that emotions can be classified according to 2 or more dimensions: **affect** \( **unpleasant:** negative,  **pleasant:** positive\), and **arousal:** \(**intense:** positive, **mild:** negative\) , _valence is positive, negative_ as shown in the image below for the [Circumplex Model of Emotions](assignment-2-functions-of-color.md#circumplex-model-of-emotions).  
 
@@ -64,7 +64,7 @@ Some models of Emotion consider that emotions can be classified according to 2 o
   * **x-axis: affect:** unpleasant \(left\), pleasant \(right\)
   * **y-axis: arousal:** intense \(up\), mild \(down\)
 * Write your emotions in the associated quadrant of the circle based on the affect and arousal level of these emotions.   
-* **Select a color** for each of the 4 regions of your diagram 
+* **Select one color** for each of the 4 regions of your diagram 
 * Add **color** to each region using the selected colors
 * **Gitbook: post a photo** of your sketch
 
