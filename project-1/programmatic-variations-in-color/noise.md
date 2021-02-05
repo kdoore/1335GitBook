@@ -1,6 +1,6 @@
 # noise\( \)
 
-Example using Processing noise\( \) function
+Example using [Processing noise\( \)](https://processing.org/reference/noise_.html) function in comparison to using random\( \)
 
 ```java
 //Noise example, input is a continuously increasing value - like framecount
