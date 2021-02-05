@@ -31,7 +31,7 @@
 * [HSB Color Mode](project-1/hsb_color_mode/README.md)
   * [HSB Color Wheel](project-1/hsb_color_mode/hsb-color-wheel/README.md)
     * [HSB Color Palette Tool](project-1/hsb_color_mode/hsb-color-wheel/hsb-color-wheel-complimentary-color-palatte.md)
-    * [Example Code](project-1/hsb_color_mode/hsb-color-wheel/colorwheel-class-codes19.md)
+    * [Dynamic ColorWheel](project-1/hsb_color_mode/hsb-color-wheel/colorwheel-class-codes19.md)
 * [PShape Objects](project-1/pshape/README.md)
   * [Example Code: PShape](project-1/pshape/sept-16-code/README.md)
     * [Inspiration](project-1/pshape/sept-16-code/diagram-and-art-expression.md)

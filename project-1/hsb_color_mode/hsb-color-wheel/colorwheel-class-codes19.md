@@ -1,4 +1,4 @@
-# Example Code
+# Dynamic ColorWheel
 
 This is the code covered in class on Jan 30, 2019 to create a function that draws a colorWheel based on parameters of float size, float angleSize.
 

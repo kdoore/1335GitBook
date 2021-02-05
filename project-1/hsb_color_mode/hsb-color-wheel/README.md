@@ -1,10 +1,14 @@
 # HSB Color Wheel
 
+### Static HSB ColorWheel
+
+### Dynamic HSB ColorWheel, v1
+
 The images below show 2 color wheels, both color-wheels have an outer ring of full saturation and brightness. The first color-wheel has saturation reduced toward the center. The second color-wheel has brightness decreased toward the center.
 
 The programs use a custom function: drawColorWheel\( int size\) that draws a color-wheel using the size input parameter to determine the size of the wheel. For the images below, the function is called multiple times, each time the brightness or saturation is reduced before each smaller color-wheel is drawn.
 
-Can you change the program below so that both versions of the color-wheel can be shown in a single program? Hint, use the draw function, have one version drawn if the mouse is pressed, and the other version drawn if the mouse is not pressed.
+Can you change the program below so that the repeated code logic is placed in a for-loop? 
 
 ![Decreased Saturation](../../../.gitbook/assets/screen-shot-2018-08-27-at-6.55.00-am.png) ![Decreased Brightness](../../../.gitbook/assets/screen-shot-2018-08-27-at-6.53.34-am.png)
 
@@ -63,4 +67,8 @@ void drawColorWheel( float size ) {
   }
 }
 ```
+
+### Coding Challenge
+
+Rewrite the program listed above so that it uses loops to create the nested colorWheels.  Anytime you have repeated lines of code, try to figure out if you can replace that logic using loops.
 
