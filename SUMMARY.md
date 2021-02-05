@@ -53,6 +53,7 @@
   * [LerpColor](project-1/programmatic-variations-in-color/lerpcolor.md)
   * [Map Function](project-1/programmatic-variations-in-color/map-function.md)
   * [Map with LerpColor](project-1/programmatic-variations-in-color/recursion-with-rotate-scale.md)
+  * [noise\( \)](project-1/programmatic-variations-in-color/noise.md)
 * [Transforms for Mirroring](project-1/scale-transform-for-mirroring.md)
 * [Project 1-Steps](project-1/project1-steps.md)
 
