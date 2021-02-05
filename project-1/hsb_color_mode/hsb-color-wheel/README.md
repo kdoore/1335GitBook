@@ -2,7 +2,7 @@
 
 ### drawColorWheel v1
 
-The version of the drawColorWheel function below takes 2 input parameters but has no interactivity.  See other code examples interactive versions.
+The version of the drawColorWheel function below takes 2 input parameters but has no interactivity.  See other code examples interactive versions.  Using HSB colorMode allows use of a while-loop to draw the colorWheel because the Hue value of the fill color corresponds to the startDegree used in creating each arc segment.
 
 ```java
 void setup(){
