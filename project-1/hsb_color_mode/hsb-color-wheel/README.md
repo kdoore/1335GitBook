@@ -1,6 +1,31 @@
 # HSB Color Wheel
 
-### Static HSB ColorWheel
+### drawColorWheel v1
+
+The version of the drawColorWheel function below takes 2 input parameters but has no interactivity.  See other code examples interactive versions.
+
+```java
+void setup(){
+  size( 400,400);
+  colorMode(HSB, 360, 100,100);
+  float arcDegrees = 45;
+  drawColorWheel( width, arcDegrees);
+ }
+
+
+//draws a full color wheel
+void drawColorWheel( float size, float angleSize ) {
+  float startDegree=0; //used for drawing arc, value changes in loop after each arc is drawn
+
+  while( startDegree<= 360) {
+    float endDegree = startDegree + angleSize;
+    float hue = startDegree + ( angleSize / 2); //calculate hue for middle of arc
+    fill( hue, 100, 100); //set fill
+    arc( width/2, height/2, size, size, radians(startDegree), radians( endDegree));
+    startDegree += angleSize; //change startDegree for each new slice to be drawn
+  }
+}
+```
 
 ### Dynamic HSB ColorWheel, v1
 
