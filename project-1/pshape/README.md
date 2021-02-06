@@ -91,6 +91,8 @@ drawRectangle( 100,200 );
 drawRectangle( 200, 300);
 ```
 
+### Custom Function to Create PShape
+
 Below is an example vertex pattern function that takes in 2 input-parameters: xWidth, yHeight. Within the function,  
 those input parameters define the vertices of a rectangle. We've now created a function that will allow us to draw a rectangle of any size, and any location if we use the transform function to move the origin to the desired location prior to calling this function. We've just redesigned the processing rectangle function using PShape objects. What's much more interesting is that we can create functions to generate our own design motifs, as long as we design the pattern using parameters variables to define the actual design geometry.
 
