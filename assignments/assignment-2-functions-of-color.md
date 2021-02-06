@@ -121,7 +121,7 @@ You'll create a simple program to test your PShapes.  Create logic in draw\( \) 
 
 \*\*\*\*
 
-## Inspiration:
+## Inspiration: 
 
 ### **Wassily Kandinsky:**  [Concerning the Spiritual In Art](http://www.public-library.uk/ebooks/22/92.pdf)
 
@@ -183,6 +183,8 @@ Reappraisal, an example of cognitive change, is a late selection strategy, which
 {% file src="../.gitbook/assets/eracrosscultures-preprint.pdf" caption="Emotion Regulation and Wellbeing - COVID" %}
 
 ### Stages of Grief 
+
+{% embed url="https://speakinggrief.org/get-better-at-grief/understanding-grief/no-step-by-step-process" %}
 
 {% embed url="https://www.ekrfoundation.org/5-stages-of-grief/change-curve/" %}
 
