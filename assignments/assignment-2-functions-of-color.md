@@ -4,7 +4,7 @@ description: 'Exploration of Function Design in Java, Interactive Color using HS
 
 # A2: Functions, Emotions
 
-### Overview: Computational Dynamics of Being and Doing
+### Overview: Computational Dynamics of Being _\(and Doing\)_
 
 > "Life is a succession of **lessons** which must be lived to be understood."   
 > Helen Keller
@@ -17,15 +17,13 @@ description: 'Exploration of Function Design in Java, Interactive Color using HS
 
 #### Event-Driven Experience: Emotions, Cognition, Behaviors
 
-According to the **Semantic Pointer Architecture Theory of Emotions** \(SMA\), emotions can be considered as transient, dynamic neural phenomena that are associated with connections between explicit memory's linguistic abstract concepts and implicit memory's stored instances of concrete sensory experiences.
-
-Emotions can be considered as dynamic flows of energy.  Emotions can also be considered as tunable parameters to help us learn from difficulties and to orient toward personal growth.  Learning how to process emotions associated with difficult situations is an important key to learning how to grow toward self-actualization, consider this as leveling-up in life's lessons.  
+According to the **Semantic Pointer Architecture Theory of Emotions** \(SMA\), emotions can be considered as transient, dynamic neural phenomena that are associated with connections between explicit memory's linguistic abstract concepts and implicit memory's stored instances of concrete sensory experiences.  Emotions can be considered as dynamic flows of energy.  Emotions can also be considered as tunable parameters to help us learn from difficulties and to orient toward personal growth.  Learning how to process emotions associated with difficult situations is an important key to learning how to grow toward self-actualization, consider this as leveling-up in life's lessons.  
 
 {% file src="../.gitbook/assets/kajic.emo\_.cogsys.2019-2-.pdf" caption="Semantic Pointer Theory of Emotions" %}
 
 #### Compass:  Tool for Orienteering and Way-finding: Align with Flows of Hidden Forces
 
-Just as Einstein's curiosity about the alignment of a **compass needle** to indicate the hidden force-field corresponding to the **energy flows of magnetic fields** that can be used for orienting in the physical world, emotions can be considered as parameters for a personal embodied compass, a tool for way-finding where emotions need to be attuned to align with hidden force-fields of energy, the energy flows of transformational information integration: growth, learning, adaptation, evolution, leveling-up.  Love Hurts: Change, Suffering, Information-Flows are embedded in the fabric of our experiences.  
+Just as Einstein's curiosity about the alignment of a **compass needle** to indicate the hidden force-field corresponding to the **energy flows of magnetic fields,** useful for orienting in the physical world. E**motions can be considered as parameters for a personal intuition compass,** a tool for way-finding where emotions can be attuned to align with hidden force-fields of energy. The energy flows of transformational information integration: growth, learning, adaptation, evolution, leveling-up.  Information-flows are embedded in the fabric of experience.  
 
 ## Creating A Personalized Dynamic Compass to Orient toward Adaptation, Growth, Self-Actualization.
 
@@ -80,14 +78,23 @@ Some models of Emotion consider that emotions can be classified according to 2 o
 
 #### Custom Functions to Create, Transform, Display Processing PShape Objects
 
-Write a Processing program with the following features:
+{% embed url="https://processing.org/reference/PShape.html" caption="Processing.org PShape Reference" %}
 
-**1.Functions \(4\) to create PShape objects**
+{% embed url="https://processing.org/tutorials/pshape/" caption="See PShape Tutorial on Processing.org" %}
 
-* **Required:**  write **4 custom functions,** each function will **create** and **return** a **PShape object.**  
+
+
+### Write a Processing program with the following features:
+
+1.  **Functions \(create four\) to create PShape objects**
+   1. Two Functions can use PShape primitive shapes
+      1. PShape s = createShape\( KIND, p1,p2, p3, p4\);  //example 
+   2. Tow Functions must use PShape beginShape vertex 
+
+* **Required:**  write code for **4 custom functions,** each function will **create** and **return** a **PShape object.**  
 * **Function signature:** _specify a custom function name_ **`PShape myShape1 ( float w, float h, color fillColor );`**
 
-**2. Functions \(2\) to display PShape objects as motifs**
+**2.  Functions \(create 2 \) to display PShape objects as motifs**
 
 * **Required:** write **2 custom functions** that will display your custom PShapes, it is suggested that you add logic such as for-loops and random value ranges to draw multiple PShapes with variation in hue, saturation, brightness, width, height, position.  Ex: `void flickerPattern( PShape s, float w, float h, color fillColor)`
 * When the function is executed, it will draw PShapes that correspond to either the  negative or positive affect region: _\( left, right regions of the canvas.\)_
@@ -96,30 +103,22 @@ Write a Processing program with the following features:
 **3. Use in a Processing program with setup \( \) and draw \( \):  interactive display**  
 You'll create a simple program to test your PShapes.  Create logic in draw\( \) to determine if mouse is on the left or right of the center-line.  When the mouse is on the left side, randomly select to display one of the negative region PShapes.
 
-* define global variables for 5 colors: background and primary fill for each of your PShape objects.
-* setup\( \) - Set canvas size, colorMode\( HSB \), test your 4 PShape object functions by executing in setup, comment this code out when adding draw\( \) logic.
+* **global Variables**: define global variables for 5 colors: background and primary fill for each of your PShape objects.
+* **setup\( \)** - Set canvas size, colorMode\( HSB \), test your 4 PShape object functions by executing in setup, comment this code out when adding draw\( \) logic.
   * PShape s = myShape1\( ......\); //call your shape function, provide parameters.
   * shape\( s, 100, 100\); //display one time
   * initialize global colors using the processing color selector tool
-* draw\( \) -  if mousePressed logic
+* **draw\( \)** -  if mousePressed logic
   * translate origin to mouse position
   * if mouse is on left region, randomly display a negative-region PShapes
   * if mouse is on right region, randomly display a positive-region PShape
-* optional:  keyPressed\( \) - events
+* optional:  **keyPressed\( \)** - events
   * if desired, add logic to have filters, or transparent background added - corresponding to specific keys being pressed.
 
 4. **Gitbook:** **Post a screenshot** of your canvas showing all 4 patterns displayed.  
 5. **Gitbook: Post code** for one of your PShape functions and one of your display functions using the gitbook format for embedding code.  
 6.  **Rename** your project to use syntax: **lastname\_netID\_A2.pde**  
 7. **Submit zip file** of your code on eLearning using submission template.
-
-### **Supplemental Content**
-
-#### **Processing javascript - use interactive variable sliders to create complex shape**
-
-{% embed url="https://www.khanacademy.org/computer-programming/flame/6608254840291328" %}
-
-\*\*\*\*
 
 ## Inspiration: 
 
