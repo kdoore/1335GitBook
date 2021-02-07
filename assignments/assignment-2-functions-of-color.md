@@ -193,7 +193,9 @@ Reappraisal, an example of cognitive change, is a late selection strategy, which
 
 {% embed url="https://www.simonandschuster.com/books/Finding-Meaning/David-Kessler/9781501192746" %}
 
+### Sailboat - Hierarchy of Needs - Kauffman
 
+{% embed url="https://scottbarrykaufman.com/sailboat-metaphor/" %}
 
 ### Emotions and Creativity: 
 
