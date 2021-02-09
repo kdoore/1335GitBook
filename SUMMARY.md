@@ -136,6 +136,7 @@
   * [Books](resources-and-references/resources/books/README.md)
     * [Art](resources-and-references/resources/books/art.md)
   * [Games, Rules](resources-and-references/resources/games-rules.md)
+  * [Complexity](resources-and-references/resources/complexity.md)
 * [Random Inspiration](resources-and-references/random-inspiration/README.md)
   * [Ulm School](resources-and-references/random-inspiration/ulm-school.md)
   * [Heart-Mind, Mind, Body](resources-and-references/random-inspiration/heart-mind-mind-body.md)
