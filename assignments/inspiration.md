@@ -16,7 +16,11 @@ Emergence has been thought to describe the appearance of patterns, structures or
 
 
 
+### Dynamic Patterns
 
+ Patterns of growth, decay: Morphologies: spiral, star, fan, branching:  decay:  voronoi,  cuboids: Fractals, Recursion, Parametric Design - parameters define relationships between relationships:  metaphors:  
+
+Nature: 
 
 ### Consciousness
 
