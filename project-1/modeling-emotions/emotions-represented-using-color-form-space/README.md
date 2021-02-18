@@ -26,3 +26,9 @@ Recent research in Neuroscience, Cognitive Science, and Computer Science have tr
 
 > Lisa Barrett argues that we construct our emotions, based on social context, personal experience, and situational goals. This suggests that individuals can modify emotions to improve well-being.
 
+#### Positive Emotions vs Pleasure:
+
+{% embed url="https://www.psychologytoday.com/us/blog/happy-together/201807/are-pleasure-and-positive-emotions-the-same" %}
+
+
+
