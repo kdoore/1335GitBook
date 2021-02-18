@@ -30,5 +30,13 @@ Recent research in Neuroscience, Cognitive Science, and Computer Science have tr
 
 {% embed url="https://www.psychologytoday.com/us/blog/happy-together/201807/are-pleasure-and-positive-emotions-the-same" %}
 
+> pleasure tends to narrow our [attention](https://www.psychologytoday.com/us/basics/attention) and draws us inward to our own personal desires and needs.
 
+> **In contrast to pleasure, positive emotions draw us outward. They broaden our attention and open our hearts and minds to possibilities.** 
+>
+> As we mentioned in our previous post, [those who experience more positive emotions tend to be more optimistic, resilient and accepting.](https://www.psychologytoday.com/us/blog/happy-together/201806/what-good-are-positive-emotions) Positive emotions enable us to reach out and connect with others, and forge stronger bonds. When experiencing positive emotions such as curiosity, awe and [gratitude](https://www.psychologytoday.com/us/basics/gratitude), for example, we are more creative and are able to come up with solutions to problems rather than when we are solely focusing on pleasure. We can understand how this openness can help us in our relationships. 
+>
+> **Further, positive emotions aren’t just good for us in the moment; they also have long-term effects.** 
+>
+> While emotional states are fleeting, Fredrickson’s groundbreaking research found positive emotions build psychological and social resources for the future. They can help us get to know the world and others in new ways.  For example, when we are feeling curious or joyful, we tend to be more playful and creative with a desire to explore the world and learn more about our loved ones.
 
