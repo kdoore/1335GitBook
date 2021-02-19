@@ -13,19 +13,15 @@ description: 'Exploration of Function Design in Java, Interactive Color using HS
 > 'You are enrolled in a full-time informal school called "life." Each day in this school you will have the **opportunity to learn lessons**.  **You may like the lessons or hate them**, but **you have designed** them as a part of your curriculum.'    
 > Cherie Carter Scott:  _If Life is a Game, These are the Rules_
 
-### Leveling-up in the Game of Life: 
+## Leveling-up in the Game of Life: 
 
 #### Event-Driven Experience: Emotions, Cognition, Behaviors
 
-According to the **Semantic Pointer Architecture Theory of Emotions** \(SMA\), emotions can be considered as transient, dynamic neural phenomena that are associated with connections between explicit memory's linguistic abstract concepts and implicit memory's stored instances of concrete sensory experiences.  Emotions can be considered as dynamic flows of energy.  Emotions can also be considered as tunable parameters to help us learn from difficulties and to orient toward personal growth.  Learning how to process emotions associated with difficult situations is an important key to learning how to grow toward self-actualization, consider this as leveling-up in life's lessons.  
-
-{% file src="../.gitbook/assets/kajic.emo\_.cogsys.2019-2-.pdf" caption="Semantic Pointer Theory of Emotions" %}
-
 #### Compass:  Tool for Orienteering and Way-finding: Align with Flows of Hidden Forces
 
-Just as Einstein's curiosity about the alignment of a **compass needle** to indicate the hidden force-field corresponding to the **energy flows of magnetic fields,** useful for orienting in the physical world. E**motions can be considered as parameters for a personal intuition compass,** a tool for way-finding where emotions can be attuned to align with hidden force-fields of energy. The energy flows of transformational information integration: growth, learning, adaptation, evolution, leveling-up.  Information-flows are embedded in the fabric of experience.  
+Just as Einstein's curiosity about the alignment of a **compass needle** to indicate the hidden force-field corresponding to the **energy flows of magnetic fields,** useful for orienting in the physical world. **Emotions can be considered as parameters for a personal intuition compass,** a tool for way-finding where emotions can be attuned to align with hidden force-fields of energy. The energy flows of transformational information integration: growth, learning, adaptation, evolution, leveling-up.  Information-flows are embedded in the fabric of experience.  
 
-## Creating A Personalized Dynamic Compass to Orient toward Adaptation, Growth, Self-Actualization.
+## Creating A Personalized Dynamic Compass
 
 ### First Steps - Mapping Emotions to a Spatial Representational Form
 
@@ -39,12 +35,12 @@ Just as Einstein's curiosity about the alignment of a **compass needle** to indi
 
 **Identifying emotions** can improve emotional self-awareness and can be useful in developing skill in cognitive reappraisal to enhance emotional self-regulation. \([See Below](assignment-2-functions-of-color.md#emotion-classification-dimensional-models-pad-pleasure-arousal-dominance)\) Several models of emotion classification exist that are useful in understanding the nature of emotions. \([See Emotion Classification\)](assignment-2-functions-of-color.md#emotion-classification-dimensional-models-pad-pleasure-arousal-dominance).  [Kandinsky](assignment-2-functions-of-color.md#wassily-kandinsky-concerning-the-spiritual-in-art) art theories associate colors with emotion /feelings in the creation of his expressionist art. 
 
-* **On sketch paper**, draw a wheel and divide into **8 arcs.**  
-* Along the outside of the circle, write an **emotion / feeling next to each arc section.** 
-* **Choose a color** to associate with each **emotion/ feeling**, add selected colors to the the corresponding arcs.
-* see: [emotions list](../project-1/modeling-emotions/#hour-glass-emotional-dimensions-wikipedia), [wikipedia list](https://simple.wikipedia.org/wiki/List_of_emotions)
-* **Gitbook:  Post photo** of your sketch on Gitbook
-* **Gitbook:**  **Create a table:** for each ****of your emotions, determine and list as either positive or negative valanced.
+1. **On sketch paper**, draw a wheel and divide into **8 arcs.**  
+2. Along the outside of the circle, write an **emotion / feeling next to each arc section.** 
+3. **Choose a color** to associate with each **emotion/ feeling**, add selected colors to the the corresponding arcs.
+4. see: [emotions list](../project-1/modeling-emotions/#hour-glass-emotional-dimensions-wikipedia), [wikipedia list](https://simple.wikipedia.org/wiki/List_of_emotions)
+5. **Gitbook:  Post photo** of your sketch on Gitbook
+6. **Gitbook:**  **Create a table:** for each ****of your emotions, determine and list as either positive or negative valanced.
 
 _see example gitbook table below_
 
@@ -58,7 +54,7 @@ _see example gitbook table below_
 Some models of Emotion consider that emotions can be classified according to 2 or more dimensions: **affect** \( **unpleasant:** negative,  **pleasant:** positive\), and **arousal:** \(**intense:** positive, **mild:** negative\) , _valence is positive, negative_ as shown in the image below for the [Circumplex Model of Emotions](assignment-2-functions-of-color.md#circumplex-model-of-emotions).  
 
 * Using the 8 emotions that you identified in part 1: 
-* Sketch a circumplex diagram with labeled axis: 
+* Sketch a **circumplex diagram** with labeled axis: 
   * **x-axis: affect:** unpleasant \(left\), pleasant \(right\)
   * **y-axis: arousal:** intense \(up\), mild \(down\)
 * Write your emotions in the associated quadrant of the circle based on the affect and arousal level of these emotions.   
@@ -69,10 +65,12 @@ Some models of Emotion consider that emotions can be classified according to 2 o
 ### 4.  **Hand Draw:  4 Custom Shapes for Emotion Regions**
 
 * For each region of your diagram: design / sketch a custom simple motif using combination of processing primitive shapes or vertex points, to represent each of the 4 regions of your diagram. 
-* Layout the shape using a square grid: recommended use units: 100 \* 100 
-* Color the shapes using shades, analogous colors and/or complimentary colors as selected for each region identified in part 2.
+* 2 Shapes must specify vertex points to create the PShapes
+* 2 Shapes can use processing primitive shapes to create the PShapes
+* Layout the shape on paper using a square grid: recommended use units: 100 \* 100 
+* Color the shapes using colors you specified for the region.
 * Optional: consider inspiration from symbols of cycles such as temporal: [seasons](http://www.symbolism.org/writing/books/sp/4/page2.html), card suits, [Tao Taijitu](https://en.wikipedia.org/wiki/Taijitu), geographic directions.
-* **Gitbook: post a photo** of your sketch
+* **Gitbook: post a photo** of your 4 shape sketches
 
 ### 5.  Processing: Coding Functions to Transform Geometric Objects
 
@@ -86,24 +84,30 @@ Some models of Emotion consider that emotions can be classified according to 2 o
 
 ### Write a Processing program with the following features:
 
-1.  **Functions \(create four\) to create PShape objects**
+1.  **Functions \(create four\) to create custom PShape objects**
    1. Two Functions can use PShape primitive shapes
       1. PShape s = createShape\( KIND, p1,p2, p3, p4\);  //example 
-   2. Tow Functions must use PShape beginShape vertex 
+   2. Two Functions must use PShape beginShape vertex 
 
 * **Required:**  write code for **4 custom functions,** each function will **create** and **return** a **PShape object.**  
 * **Function signature:** _specify a custom function name_ **`PShape myShape1 ( float w, float h, color fillColor );`**
 
-**2.  Functions \(create 2 \) to display PShape objects as motifs**
+**2.  Functions \(create 2 \) to display PShape objects as patterns**
 
 * **Required:** write **2 custom functions** that will display your custom PShapes, it is suggested that you add logic such as for-loops and random value ranges to draw multiple PShapes with variation in hue, saturation, brightness, width, height, position.  Ex: `void mirrorPattern( PShape s, color fillColor)`
 * When the function is executed, it will draw PShapes that correspond to either the  negative or positive affect region: _\( left, right regions of the canvas.\)_
 * **Function signature:** _specify a custom function name - determine parameters to match your requirements_ **`void drawComplexShapes( PShape s, float w, float h, color fillColor );`**
 
 **3. Use in a Processing program with setup \( \) and draw \( \):  interactive display**  
-You'll create a simple program to test your PShapes.  Create logic in draw\( \) to determine if mouse is on the left or right of the center-line.  When the mouse is on the left side, randomly select to display one of the negative region PShapes.
+You'll create a simple program to test your PShapes  
+  
+**Create logic in draw\( \) to determine if mouse is on the left or right of the center-line.**  
 
-* **global Variables**: define global variables for 5 colors: background and primary fill for each of your PShape objects.
+**When the mouse is on the left side,** randomly select to display one of the negative region PShapes. 
+
+**When the mouse is on the right side of the center-line**, randomly display a positive shape.
+
+* **Global Variables**: define global variables for 5 colors: background and primary fill for each of your PShape objects.
 * **setup\( \)** - Set canvas size, colorMode\( HSB \), test your 4 PShape object functions by executing in setup, comment this code out when adding draw\( \) logic.
   * PShape s = myShape1\( ......\); //call your shape function, provide parameters.
   * shape\( s, 100, 100\); //display one time
@@ -121,6 +125,10 @@ You'll create a simple program to test your PShapes.  Create logic in draw\( \) 
 7. **Submit zip file** of your code on eLearning using submission template.
 
 ## Inspiration: 
+
+{% file src="../.gitbook/assets/kajic.emo\_.cogsys.2019-2-.pdf" caption="Semantic Pointer Theory of Emotions" %}
+
+According to the **Semantic Pointer Architecture Theory of Emotions** \(SMA\), emotions can be considered as transient, dynamic neural phenomena that are associated with connections between explicit memory's linguistic abstract concepts and implicit memory's stored instances of concrete sensory experiences.  Emotions can be considered as dynamic flows of energy.  Emotions can also be considered as tunable parameters to help us learn from difficulties and to orient toward personal growth.  Learning how to process emotions associated with difficult situations is an important key to learning how to grow toward self-actualization, consider this as leveling-up in life's lessons.  
 
 ### **Wassily Kandinsky:**  [Concerning the Spiritual In Art](http://www.public-library.uk/ebooks/22/92.pdf)
 
