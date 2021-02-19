@@ -19,17 +19,17 @@ description: 'Exploration of Function Design in Java, Interactive Color using HS
 
 #### Compass:  Tool for Orienteering and Way-finding: Align with Flows of Hidden Forces
 
-Just as Einstein's curiosity about the alignment of a **compass needle** to indicate the hidden force-field corresponding to the **energy flows of magnetic fields,** useful for orienting in the physical world. **Emotions can be considered as parameters for a personal intuition compass,** a tool for way-finding where emotions can be attuned to align with hidden force-fields of energy. The energy flows of transformational information integration: growth, learning, adaptation, evolution, leveling-up.  Information-flows are embedded in the fabric of experience.  
+Just as Einstein's curiosity about the alignment of a **compass needle** to indicate the hidden force-field corresponding to the **energy flows of magnetic fields,** useful for orienting in the physical world. **Emotions can be considered as parameters for a personal intuition compass,** a tool for way-finding where emotions can be attuned to align with energy flows of  information integration: growth, learning, adaptation, evolution, leveling-up.   
 
 ## Creating A Personalized Dynamic Compass
-
-### First Steps - Mapping Emotions to a Spatial Representational Form
 
 ### 1. Song: Emotional Dynamics 
 
 1. **Song:**  **Emotional Dynamics:** Select and list a song that reflects **dynamic rhythms** that correspond to the **changing nature of opposite emotions.** 
 2. **Gitbook: Provide a lin**k to the song, artist, lyrics, or album.
 3. **Example:  John Prine:** **That's the way the world goes around** [https://www.youtube.com/watch?v=wvY02SSj450](https://www.youtube.com/watch?v=wvY02SSj450) [https://genius.com/John-prine-thats-the-way-that-the-world-goes-round-lyrics](https://genius.com/John-prine-thats-the-way-that-the-world-goes-round-lyrics)
+
+#### First Steps - Mapping Emotions to a Spatial Representational Form
 
 ### 2.  Hand Draw:  Emotions and Colors Wheel:
 
@@ -72,7 +72,7 @@ Some models of Emotion consider that emotions can be classified according to 2 o
 * Optional: consider inspiration from symbols of cycles such as temporal: [seasons](http://www.symbolism.org/writing/books/sp/4/page2.html), card suits, [Tao Taijitu](https://en.wikipedia.org/wiki/Taijitu), geographic directions.
 * **Gitbook: post a photo** of your 4 shape sketches
 
-### 5.  Processing: Coding Functions to Transform Geometric Objects
+### 5.  Processing:  Functions to Create PShape Objects
 
 #### Custom Functions to Create, Transform, Display Processing PShape Objects
 
@@ -92,10 +92,10 @@ Some models of Emotion consider that emotions can be classified according to 2 o
 * **Required:**  write code for **4 custom functions,** each function will **create** and **return** a **PShape object.**  
 * **Function signature:** _specify a custom function name_ **`PShape myShape1 ( float w, float h, color fillColor );`**
 
-**2.  Functions \(create 2 \) to display PShape objects as patterns**
+**2.  Functions \(create 2 \) to display PShape objects as Patterns**
 
-* **Required:** write **2 custom functions** that will display your custom PShapes, it is suggested that you add logic such as for-loops and random value ranges to draw multiple PShapes with variation in hue, saturation, brightness, width, height, position.  Ex: `void mirrorPattern( PShape s, color fillColor)`
-* When the function is executed, it will draw PShapes that correspond to either the  negative or positive affect region: _\( left, right regions of the canvas.\)_
+* **Required:** write **2 custom functions** that will **display** your custom **PShapes in some pattern**. It is suggested that you add logic such as for-loops and random value ranges to draw multiple PShapes with variation in hue, saturation, brightness, width, height, position.  Ex: `void mirrorPattern( PShape s, color fillColor)`
+* When the function is executed, it will **display PShapes** that correspond to either the  negative or positive affect region: _\( left, right regions of the canvas.\)_
 * **Function signature:** _specify a custom function name - determine parameters to match your requirements_ **`void drawComplexShapes( PShape s, float w, float h, color fillColor );`**
 
 **3. Use in a Processing program with setup \( \) and draw \( \):  interactive display**  
