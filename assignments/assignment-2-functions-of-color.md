@@ -72,7 +72,7 @@ Some models of Emotion consider that emotions can be classified according to 2 o
 * Optional: consider inspiration from symbols of cycles such as temporal: [seasons](http://www.symbolism.org/writing/books/sp/4/page2.html), card suits, [Tao Taijitu](https://en.wikipedia.org/wiki/Taijitu), geographic directions.
 * **Gitbook: post a photo** of your 4 shape sketches
 
-### 5.  Processing:  Functions to Create PShape Objects
+### 5.  Processing:  Functions to Create, Display PShape Objects
 
 #### Custom Functions to Create, Transform, Display Processing PShape Objects
 
