@@ -4,7 +4,7 @@
 * [Assignments](assignments/README.md)
   * [A1: Meta, Metta](assignments/assignment-1.md)
   * [A2: Functions, Emotions](assignments/assignment-2-functions-of-color.md)
-  * [A3: Recursion](assignments/a3-recursion.md)
+  * [A3: Patterns: Recursion](assignments/a3-recursion.md)
   * [Inspiration](assignments/inspiration.md)
 
 ## Getting Started
