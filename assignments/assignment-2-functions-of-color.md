@@ -38,7 +38,7 @@ Just as Einstein's curiosity about the alignment of a **compass needle** to indi
 1. **On sketch paper**, draw a wheel and divide into **8 arcs.**  
 2. Along the outside of the circle, write an **emotion / feeling next to each arc section.** 
 3. **Choose a color** to associate with each **emotion/ feeling**, add selected colors to the the corresponding arcs.
-4. see: [emotions list](../project-1/modeling-emotions/#hour-glass-emotional-dimensions-wikipedia), [wikipedia list](https://simple.wikipedia.org/wiki/List_of_emotions)
+4. optional see: [emotions list](../project-1/modeling-emotions/#hour-glass-emotional-dimensions-wikipedia), [wikipedia list](https://simple.wikipedia.org/wiki/List_of_emotions)
 5. **Gitbook:  Post photo** of your sketch on Gitbook
 6. **Gitbook:**  **Create a table:** for each ****of your emotions, determine and list as either positive or negative valanced.
 
