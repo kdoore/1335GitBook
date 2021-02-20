@@ -96,17 +96,14 @@ Some models of Emotion consider that emotions can be classified according to 2 o
 
 * **Required:** write **2 custom functions** that will **display** your custom **PShapes in some pattern**. It is suggested that you add logic such as for-loops and random value ranges to draw multiple PShapes with variation in hue, saturation, brightness, width, height, position.  Ex: `void mirrorPattern( PShape s, color fillColor)`
 * When the function is executed, it will **display PShapes** that correspond to either the  negative or positive affect region: _\( left, right regions of the canvas.\)_
-* **Function signature:** _specify a custom function name - determine parameters to match your requirements_ **`void drawComplexShapes( PShape s, float w, float h, color fillColor );`**
+* **Function signature:** _specify a custom function name - determine parameters to match your requirements_ **`void drawComplexShapes1( PShape s, float w, float h, color fillColor ); void drawComplexShapes2( PShape s, color fillColor );`**
 
 **3. Use in a Processing program with setup \( \) and draw \( \):  interactive display**  
-You'll create a simple program to test your PShapes  
-  
-**Create logic in draw\( \) to determine if mouse is on the left or right of the center-line.**  
+You'll create a simple program to test your PShapes ****
 
-**When the mouse is on the left side,** randomly select to display one of the negative region PShapes. 
-
-**When the mouse is on the right side of the center-line**, randomly display a positive shape.
-
+* **Create logic in draw\( \) to determine if mouse is on the left or right of the center-line.**
+  * **When the mouse is on the left side,** randomly select to display one of the negative region PShapes. 
+  * **When the mouse is on the right side of the center-line**, randomly display a positive shape.
 * **Global Variables**: define global variables for 5 colors: background and primary fill for each of your PShape objects.
 * **setup\( \)** - Set canvas size, colorMode\( HSB \), test your 4 PShape object functions by executing in setup, comment this code out when adding draw\( \) logic.
   * PShape s = myShape1\( ......\); //call your shape function, provide parameters.
