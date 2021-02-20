@@ -74,7 +74,7 @@ Some models of Emotion consider that emotions can be classified according to 2 o
 
 #### Examples of custom shapes, emotion diagram, vertex points
 
-![Example of Custom Shapes, Colors arranged on Emotion Diagram](../.gitbook/assets/screen-shot-2021-02-20-at-4.41.28-pm.png)
+![](../.gitbook/assets/screen-shot-2021-02-20-at-4.41.28-pm.png)
 
 ![](../.gitbook/assets/screen-shot-2021-02-20-at-4.40.49-pm%20%281%29.png)
 
