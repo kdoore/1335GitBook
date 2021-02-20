@@ -6,7 +6,7 @@ description: 'Exploration of Function Design in Java, Interactive Color using HS
 
 ### Overview: Computational Dynamics of Being _\(and Doing\)_
 
-> "Life is a succession of **lessons** which must be lived to be understood."   
+> "Life is a succession of **lessons** which must be **lived** to be understood."   
 > Helen Keller
 
 > **Rule 2: "You will be presented with lessons"**   
@@ -125,6 +125,20 @@ You'll create a simple program to test your PShapes ****
 7. **Submit zip file** of your code on eLearning using submission template.
 
 ## Inspiration: 
+
+### **Working Mindfully with Difficulties:    RAIN: Recognize, Allow, Investigate, Nurture - Tara Brach**
+
+> Recognize what is happening;
+>
+> Allow the experience to be there, just as it is;
+>
+> Investigate with interest and care;
+>
+> Nurture with self-compassion
+
+{% embed url="https://www.tarabrach.com/rain/" %}
+
+
 
 {% file src="../.gitbook/assets/kajic.emo\_.cogsys.2019-2-.pdf" caption="Semantic Pointer Theory of Emotions" %}
 

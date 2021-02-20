@@ -4,9 +4,9 @@ description: Creating Recursive Patterns
 
 # A3: Natural Patterns
 
-Behavior:  Pattern: Looping, Fractal  
-Function: Self-Similar Replication  
-Structure: Recursion
+**Behavior:  Pattern:** Looping, Fractal  
+**Function**: Self-Similar Replication  
+**Structure:** Recursion
 
 If Life is a Game, These are the Rules:  _Cherie Carter Scott_
 
