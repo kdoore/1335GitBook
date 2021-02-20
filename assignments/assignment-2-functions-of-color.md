@@ -57,7 +57,7 @@ Some models of Emotion consider that emotions can be classified according to 2 o
 * Sketch a **circumplex diagram** with labeled axis: 
   * **x-axis: affect:** unpleasant \(left\), pleasant \(right\)
   * **y-axis: arousal:** intense \(up\), mild \(down\)
-* Write your emotions in the associated quadrant of the circle based on the affect and arousal level of these emotions.   
+* Write your selected emotions in the associated quadrant of the circle based on the affect and arousal level of these emotions.   
 * **Select one color** for each of the 4 regions of your diagram 
 * Add **color** to each region using the selected colors
 * **Gitbook: post a photo** of your sketch
@@ -84,7 +84,7 @@ Some models of Emotion consider that emotions can be classified according to 2 o
 
 ### Write a Processing program with the following features:
 
-1.  **Functions \(create four\) to create custom PShape objects**
+1.  **Functions \(create four\) to create custom PShape objects See Gitbook** [**Examples: PShape**](../project-1/pshape/)\*\*\*\*
    1. Two Functions can use PShape primitive shapes
       1. PShape s = createShape\( KIND, p1,p2, p3, p4\);  //example 
    2. Two Functions must use PShape beginShape vertex 

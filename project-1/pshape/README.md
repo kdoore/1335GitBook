@@ -113,8 +113,12 @@ void drawRectangle( float xWidth, float yHeight){
 In the example below, a custom function is used to **create and return a PShape object.**
 
 ```java
+void setup(){
+
 PShape rect = createRect( 100, 200); //call the function
 shape( rect, 0,0);//render on canvas at origin
+
+}
 
 //Function that creates and returns a PShape.
 PShape createRect( float xWidth, float yHeight){
