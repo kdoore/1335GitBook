@@ -85,9 +85,12 @@ Some models of Emotion consider that emotions can be classified according to 2 o
 ### Write a Processing program with the following features:
 
 1.  **Functions \(create four\) to create custom PShape objects See Gitbook** [**Examples: PShape**](../project-1/pshape/)\*\*\*\*
-   1. Two Functions can use PShape primitive shapes
-      1. PShape s = createShape\( KIND, p1,p2, p3, p4\);  //example 
-   2. Two Functions must use PShape beginShape vertex 
+   1. **Two Custom Functions can use PShape primitive shapes**
+      1. In the custom function, you will create a PShape using input parameters: w, h 
+      2. example:  PShape s = createShape\( RECT, 0,0, w, h\);  //  uses custom function parameter values w, h
+   2. **Two Custdom Functions must use PShape beginShape\( \), vertex\( \) -** and be specified using fractional values for w, h for each point:  
+      1. The only 'literal' value can be 0
+      2. All other vertex values must be of the form shown below where the x coordinate is defined as a fraction between 0.0 - 1.0, multiplied by the input parameter w. `s.vertex(` **`0.5 * w`**`,` **`0.8 * h`** `);`
 
 * **Required:**  write code for **4 custom functions,** each function will **create** and **return** a **PShape object.**  
 * **Function signature:** _specify a custom function name_ **`PShape myShape1 ( float w, float h, color fillColor );`**
