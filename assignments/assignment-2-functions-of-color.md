@@ -29,7 +29,7 @@ Just as Einstein's curiosity about the alignment of a **compass needle** to indi
 2. **Gitbook: Provide a lin**k to the song, artist, lyrics, or album.
 3. **Example:  John Prine:** **That's the way the world goes around** [https://www.youtube.com/watch?v=wvY02SSj450](https://www.youtube.com/watch?v=wvY02SSj450) [https://genius.com/John-prine-thats-the-way-that-the-world-goes-round-lyrics](https://genius.com/John-prine-thats-the-way-that-the-world-goes-round-lyrics)
 
-#### First Steps - Mapping Emotions to a Spatial Representational Form
+### First Steps - Mapping Emotions to a Spatial Representational Form
 
 ### 2.  Hand Draw:  Emotions and Colors Wheel:
 
