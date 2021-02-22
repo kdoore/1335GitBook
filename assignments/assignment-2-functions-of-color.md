@@ -76,9 +76,7 @@ Some models of Emotion consider that emotions can be classified according to 2 o
 
 {% tabs %}
 {% tab title="Emotions: Affect, Arousal" %}
-#### 
-
-![Affect, Arousal Dimensions of Experience](../.gitbook/assets/screen-shot-2021-02-20-at-4.41.28-pm.png)
+![Example: Affect, Arousal Dimensions of Experience](../.gitbook/assets/screen-shot-2021-02-20-at-4.41.28-pm.png)
 {% endtab %}
 
 {% tab title="PShape Vertex Points" %}
