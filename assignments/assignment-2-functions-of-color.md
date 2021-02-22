@@ -220,8 +220,8 @@ You'll create a simple program to test your PShapes ****
   * **When the mouse is on the right side of the center-line**, randomly display a positive shape.
 * **Global Variables**: define global variables for 5 colors: background and primary fill for each of your PShape objects.
 * **setup\( \)** - Set canvas size, colorMode\( HSB \), test your 4 PShape object functions by executing in setup, comment this code out when adding draw\( \) logic.
-  * PShape s = myShape1\( ......\); //call your shape function, provide parameters.
-  * shape\( s, 100, 100\); //display one time
+  * **`PShape s = myShape1( ......); //call your shape function`**
+  * **`shape( s, 100, 100); //display one time`**
   * initialize global colors using the processing color selector tool
 * **draw\( \)** -  if mousePressed logic
   * translate origin to mouse position
