@@ -88,7 +88,33 @@ Some models of Emotion consider that emotions can be classified according to 2 o
 {% endtab %}
 
 {% tab title="PShape Vertex Function" %}
+![](../.gitbook/assets/screen-shot-2021-02-22-at-1.00.58-pm.png)
 
+```java
+
+void setup(){
+  size( 100, 100);
+  colorMode(HSB, 360, 100, 100, 100); //HSBA
+  background(0);
+  color fallColor = color( 270, 100, 100, 100); 
+  PShape myShape = fallShape( 100, 100, fallColor);
+  shape( myShape, 10, 10);
+}
+
+//create custom PShape usign vertex points
+PShape fallShape( float w, float h, color c1 ) {
+  PShape s = createShape(); //initialize PShape
+  s.beginShape();
+  s.vertex( 0,.25 * h);  //1
+  s.vertex( w*.75, 0);  //2
+  s.vertex( w* .10, h* .50); //3
+  s.vertex( w* .25, h* .75); //4
+  s.vertex( w* 0, h* .75); //5
+  s.endShape(CLOSE);
+  s.setFill( c1);
+  return s;  
+}
+```
 {% endtab %}
 
 {% tab title="Processing PShape Reference" %}
