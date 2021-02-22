@@ -193,7 +193,7 @@ PShape fallShape( float w, float h, color c1 ) {
 
 ### Write a Processing program with the following features:
 
-**See examples in tabs above:**
+**See example code in tabs above:**
 
 1.  **Functions \(create four\) to create custom PShape objects See Gitbook** [**Examples: PShape**](../project-1/pshape/)\*\*\*\*
    1. **Two Custom Functions can use PShape primitive shapes function signature:   `PShape myShape1 ( float w, float h, color fillColor )`**
