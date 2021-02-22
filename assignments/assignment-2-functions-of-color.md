@@ -94,9 +94,9 @@ void setup(){
   size( 100, 100);
   colorMode(HSB, 360, 100, 100, 100); //HSBA
   background(0);
-  color fallColor = color( 270, 100, 100, 100); 
-  PShape myShape = fallShape( 100, 100, fallColor);
-  shape( myShape, 10, 10);
+  color fallColor = color( 270, 100, 100, 100);  //define color
+  PShape myShape = fallShape( 100, 100, fallColor); //create PShape
+  shape( myShape, 10, 10); //display PShape
 }
 
 //create custom PShape usign vertex points
