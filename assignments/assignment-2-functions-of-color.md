@@ -4,7 +4,7 @@ description: 'Exploration of Function Design in Java, Interactive Color using HS
 
 # A2: Functions, Emotions
 
-### Overview: Computational Dynamics of Being _\(and Doing\)_
+### Computational Dynamics of Being _\(and Doing\)_
 
 > "Life is a succession of **lessons** which must be **lived** to be understood."   
 > Helen Keller
