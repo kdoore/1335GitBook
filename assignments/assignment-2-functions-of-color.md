@@ -232,7 +232,7 @@ You'll create a simple program to test your PShapes ****
 
 4. **Gitbook:** **Post a screenshot** of your canvas showing all 4 patterns displayed.  
 5. **Gitbook: Post code** for one of your PShape functions and one of your display functions using the gitbook format for embedding code.  
-6.  **Rename** your project to use syntax: **lastname\_netID\_A2.pde**  
+6.  **Name** your project to use syntax: **lastname\_netID\_A2.pde**  
 7. **Submit zip file** of your code on eLearning using submission template.
 
 ## Inspiration: 
