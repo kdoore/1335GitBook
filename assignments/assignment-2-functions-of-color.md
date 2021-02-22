@@ -69,25 +69,20 @@ Some models of Emotion consider that emotions can be classified according to 2 o
 * Color the shapes using colors you specified for the region.
 * Optional: consider inspiration from symbols of cycles such as temporal: [seasons](http://www.symbolism.org/writing/books/sp/4/page2.html), card suits, [Tao Taijitu](https://en.wikipedia.org/wiki/Taijitu), geographic directions.
 * _**See Example in Tabs Below**_
-* **Gitbook: post a photo** of your 4 shape sketches
+* **Gitbook: post a photo** of your 4 shape sketches  
+
+
+  **Example:  PShape using Vertex Points** 
+
+  **Note: it is recommended to sketch using a 100 x 100 grid** with each column, row representing .10 percent of w, or h.  The sketch below has each column representing .25 percent of w, h.
+
+  ![](../.gitbook/assets/screen-shot-2021-02-22-at-12.48.24-pm.png)
 
 ### Processing PShape Objects:  
 
 ### See Tabs for examples of custom shapes, emotion diagram, vertex points
 
 {% tabs %}
-{% tab title="PShape Vertex Points" %}
-### PShape using Vertex Points
-
-**Note: it is recommended to sketch using a 100 x 100 grid** with each column, row representing .10 percent of w, or h.  The sketch below has each column representing .25 percent of w, h
-
-![](../.gitbook/assets/screen-shot-2021-02-22-at-12.48.24-pm.png)
-{% endtab %}
-
-{% tab title="Emotions: Affect, Arousal" %}
-![Example: Affect, Arousal Dimensions of Experience](../.gitbook/assets/screen-shot-2021-02-20-at-4.41.28-pm.png)
-{% endtab %}
-
 {% tab title="PShape Vertex Function" %}
 ### Custom Function to create PShape using Vertex Points
 
@@ -177,6 +172,10 @@ PShape fallShape( float w, float h, color c1 ) {
 }
 
 ```
+{% endtab %}
+
+{% tab title="Emotions: Affect, Arousal" %}
+![Example: Affect, Arousal Dimensions of Experience](../.gitbook/assets/screen-shot-2021-02-20-at-4.41.28-pm.png)
 {% endtab %}
 
 {% tab title="Processing PShape Reference" %}
