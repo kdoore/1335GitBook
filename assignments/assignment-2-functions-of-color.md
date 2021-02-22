@@ -82,7 +82,15 @@ Some models of Emotion consider that emotions can be classified according to 2 o
 
 #### Custom Functions to Create, Transform, Display Processing PShape Objects
 
-{% embed url="https://processing.org/reference/PShape.html" caption="Processing.org PShape Reference" %}
+{% tabs %}
+{% tab title="Processing PShape Reference" %}
+{% embed url="https://processing.org/reference/PShape.html" %}
+{% endtab %}
+
+{% tab title="Processing.org PShape Tutorial" %}
+{% embed url="https://processing.org/tutorials/pshape/" %}
+{% endtab %}
+{% endtabs %}
 
 ### Write a Processing program with the following features:
 
