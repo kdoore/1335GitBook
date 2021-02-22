@@ -109,10 +109,10 @@ PShape fallShape( float w, float h, color c1 ) {
   PShape s = createShape(); //initialize PShape
   s.beginShape();
   s.vertex( 0,.25 * h);  //1
-  s.vertex( w*.75, 0);  //2
-  s.vertex( w* .10, h* .50); //3
-  s.vertex( w* .25, h* .75); //4
-  s.vertex( w* 0, h* .75); //5
+  s.vertex( w *.75, 0);  //2
+  s.vertex( w * .10, h * .50); //3
+  s.vertex( w * .25, h * .75); //4
+  s.vertex( w * 0, h* .75); //5
   s.endShape(CLOSE);
   s.setFill( c1);
   return s;  
