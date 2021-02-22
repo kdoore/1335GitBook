@@ -82,9 +82,9 @@ Some models of Emotion consider that emotions can be classified according to 2 o
 {% endtab %}
 
 {% tab title="PShape Vertex Points" %}
-PShape using Vertex Points
+**Note: it is recommended to sketch using a 100 x 100 grid** with each column, row representing .10 percent of w, or h.  The sketch below has each column representing .25 percent of w, h
 
-![](../.gitbook/assets/screen-shot-2021-02-20-at-4.40.49-pm%20%281%29.png)
+![](../.gitbook/assets/screen-shot-2021-02-22-at-12.48.24-pm.png)
 {% endtab %}
 
 {% tab title="PShape Vertex Function" %}
