@@ -144,7 +144,6 @@ PShape fallShape( float w, float h, color c1 ) {
    2. **Two Custom Functions must use PShape beginShape\( \), vertex\( \) -** and be specified using fractional values for w, h for each point:  
       1. The only 'literal' value can be 0
       2. All other vertex values must be of the form shown below where the x coordinate is defined as a fraction between 0.0 - 1.0, multiplied by the input parameter w. **`s.vertex (0.5 * w, 0.8 * h );`**
-      3. **See example code in tabs above**
 
 * **Required:**  write code for **4 custom functions,** each function will **create** and **return** a **PShape object.**  
 * **Function signature:** _specify a custom function name_ **`PShape myShape1 ( float w, float h, color fillColor )`**
