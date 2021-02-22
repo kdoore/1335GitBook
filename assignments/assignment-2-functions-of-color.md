@@ -123,6 +123,8 @@ PShape fallShape( float w, float h, color c1 ) {
 {% tab title="Display PShape Pattern" %}
 ### Example Custom Function to Display PShape Pattern
 
+![PShape Pattern using PShape Transform Methods](../.gitbook/assets/screen-shot-2021-02-22-at-1.56.58-pm.png)
+
 ```java
 
 void setup() {
