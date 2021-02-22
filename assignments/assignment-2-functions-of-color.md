@@ -121,7 +121,60 @@ PShape fallShape( float w, float h, color c1 ) {
 {% endtab %}
 
 {% tab title="Display PShape Pattern" %}
+### Example Custom Function to Display PShape Pattern
 
+```java
+
+void setup() {
+  size( 400, 400);
+  colorMode(HSB, 360, 100, 100, 100); //HSBA
+  background(0);
+} //end setup
+
+//when mousePressed, translate origin to mouse position
+//create a PShape using custom function
+//display PShape pattern using custom function
+void draw( ) {
+  if (mousePressed) {
+    color fallColor = color( 270, 100, 100, 80); 
+    PShape myShape = fallShape( 100, 100, fallColor);
+    translate( mouseX, mouseY);
+    drawMirroredShapes( myShape, fallColor);
+    resetMatrix();
+  }
+} //end draw
+
+//Function to display PShapes in a mirrored pattern
+//Color uses small random variations of HSBA color components
+//Using PShape transform methods
+void drawMirroredShapes(PShape s, color c1   ) { 
+  float hue = hue ( c1 ) + random( -15, 15 );
+  float sat = saturation ( c1) - random( 0, 30);
+  float bright = brightness( c1) - random( 0, 30);
+  float alpha = alpha( c1) - random( 0, 40);
+  color curColor = color (hue, sat, bright, alpha);
+  s.setFill(curColor );
+  shape( s, 0, 0); //draw one time
+  s.scale( 1.0, -1.0); //mirror across x-axis
+  shape( s, 0, 0); //draw 2nd  time
+  s.resetMatrix();
+} 
+
+//create custom PShape usign vertex points
+PShape fallShape( float w, float h, color c1 ) {
+  PShape s = createShape(); //initialize PShape
+  s.beginShape();
+  s.vertex( 0, .25 * h);  //1
+  s.vertex( w*.75, 0);  //2
+  s.vertex( w* .10, h* .50); //3
+  s.vertex( w* .25, h* .75); //4
+  s.vertex( w* 0, h* .75); //5
+  s.endShape(CLOSE);
+  s.setFill( c1);
+  return s;
+}
+
+```
 {% endtab %}
 
 {% tab title="Processing PShape Reference" %}
