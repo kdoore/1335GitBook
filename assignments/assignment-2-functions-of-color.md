@@ -87,6 +87,10 @@ PShape using Vertex Points
 ![](../.gitbook/assets/screen-shot-2021-02-20-at-4.40.49-pm%20%281%29.png)
 {% endtab %}
 
+{% tab title="PShape Vertex Function" %}
+
+{% endtab %}
+
 {% tab title="Processing PShape Reference" %}
 {% embed url="https://processing.org/reference/PShape.html" %}
 {% endtab %}
