@@ -140,14 +140,13 @@ PShape fallShape( float w, float h, color c1 ) {
 **See examples in tabs above:**
 
 1.  **Functions \(create four\) to create custom PShape objects See Gitbook** [**Examples: PShape**](../project-1/pshape/)\*\*\*\*
-   1. **Two Custom Functions can use PShape primitive shapes**
-      1. In the custom function, you will create a PShape using input parameters: w, h function signature 
-         *  **`PShape myShape1 ( float w, float h, color fillColor )`**
-      2. example:  PShape s = createShape\( RECT, 0,0, w, h\);  //  uses custom function parameter values w, h
-      3. **See example code in tabs above**
+   1. **Two Custom Functions can use PShape primitive shapes function signature:   `PShape myShape1 ( float w, float h, color fillColor )`**
+      1. In the custom function, you will create a PShape using input parameters: w, h
+      2. example using processing primitive:   **`PShape myShape1 ( float w, float h, color fillColor ){`**`PShape s = createShape( RECT, 0,0, w, h); s.setFill( fillColor); return s;   }`
    2. **Two Custom Functions must use PShape beginShape\( \), vertex\( \) -** and be specified using fractional values for w, h for each point:  
       1. The only 'literal' value can be 0
-      2. All other vertex values must be of the form shown below where the x coordinate is defined as a fraction between 0.0 - 1.0, multiplied by the input parameter w. `s.vertex(` **`0.5 * w`**`,` **`0.8 * h`** `);`
+      2. All other vertex values must be of the form shown below where the x coordinate is defined as a fraction between 0.0 - 1.0, multiplied by the input parameter w. **`s.vertex (0.5 * w, 0.8 * h );`**
+      3. **See example code in tabs above**
 
 * **Required:**  write code for **4 custom functions,** each function will **create** and **return** a **PShape object.**  
 * **Function signature:** _specify a custom function name_ **`PShape myShape1 ( float w, float h, color fillColor )`**
