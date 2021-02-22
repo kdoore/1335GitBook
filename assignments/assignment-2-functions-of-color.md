@@ -120,6 +120,10 @@ PShape fallShape( float w, float h, color c1 ) {
 ```
 {% endtab %}
 
+{% tab title="Display PShape Pattern" %}
+
+{% endtab %}
+
 {% tab title="Processing PShape Reference" %}
 {% embed url="https://processing.org/reference/PShape.html" %}
 {% endtab %}
@@ -150,8 +154,8 @@ PShape fallShape( float w, float h, color c1 ) {
 
 **2.  Functions \(create 2 \) to display PShape objects as Patterns**
 
-* **Required:** write **2 custom functions** that will **display** your custom **PShapes in some pattern**. It is suggested that you add logic such as for-loops and random value ranges to draw multiple PShapes with variation in hue, saturation, brightness, width, height, position.  Ex: `void mirrorPattern( PShape s, color fillColor)`
-* When the function is executed, it will **display PShapes** that correspond to either the  negative or positive affect region: _\( left, right regions of the canvas.\)_
+* **Required:** write **2 custom functions** that will **display** your custom **PShapes in some pattern**. It is suggested that you add logic such as for-loops and random value ranges to draw multiple PShapes with variation in hue, saturation, brightness, width, height, position.  **Example Function Signature: `void mirrorPattern( PShape s, color fillColor)`**
+* When the function is executed, it will **display PShapes** based on the **PShape** that is passed into the function as **parameter.**
 * **Function signature:** _specify a custom function name - determine parameters to match your requirements_ **`void drawComplexShapes1( PShape s, float w, float h, color fillColor ) void drawComplexShapes2( PShape s, color fillColor )`**
 
 **3. Use in a Processing program with setup \( \) and draw \( \):  interactive display**  
