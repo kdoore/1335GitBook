@@ -72,15 +72,21 @@ Some models of Emotion consider that emotions can be classified according to 2 o
 * Optional: consider inspiration from symbols of cycles such as temporal: [seasons](http://www.symbolism.org/writing/books/sp/4/page2.html), card suits, [Tao Taijitu](https://en.wikipedia.org/wiki/Taijitu), geographic directions.
 * **Gitbook: post a photo** of your 4 shape sketches
 
-#### Examples of custom shapes, emotion diagram, vertex points
-
-![](../.gitbook/assets/screen-shot-2021-02-20-at-4.41.28-pm.png)
-
-![](../.gitbook/assets/screen-shot-2021-02-20-at-4.40.49-pm%20%281%29.png)
-
-### Processing PShape Objects
+### Processing PShape ObjectsExamples of custom shapes, emotion diagram, vertex points
 
 {% tabs %}
+{% tab title="Emotions: Affect, Arousal" %}
+#### 
+
+![Affect, Arousal Dimensions of Experience](../.gitbook/assets/screen-shot-2021-02-20-at-4.41.28-pm.png)
+{% endtab %}
+
+{% tab title="PShape Vertex Points" %}
+PShape using Vertex Points
+
+![](../.gitbook/assets/screen-shot-2021-02-20-at-4.40.49-pm%20%281%29.png)
+{% endtab %}
+
 {% tab title="Processing PShape Reference" %}
 {% embed url="https://processing.org/reference/PShape.html" %}
 {% endtab %}
