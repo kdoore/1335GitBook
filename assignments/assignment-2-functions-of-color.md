@@ -72,20 +72,26 @@ Some models of Emotion consider that emotions can be classified according to 2 o
 * Optional: consider inspiration from symbols of cycles such as temporal: [seasons](http://www.symbolism.org/writing/books/sp/4/page2.html), card suits, [Tao Taijitu](https://en.wikipedia.org/wiki/Taijitu), geographic directions.
 * **Gitbook: post a photo** of your 4 shape sketches
 
-### Processing PShape ObjectsExamples of custom shapes, emotion diagram, vertex points
+### Processing PShape Objects:  
+
+### See Tabs for examples of custom shapes, emotion diagram, vertex points
 
 {% tabs %}
-{% tab title="Emotions: Affect, Arousal" %}
-![Example: Affect, Arousal Dimensions of Experience](../.gitbook/assets/screen-shot-2021-02-20-at-4.41.28-pm.png)
-{% endtab %}
-
 {% tab title="PShape Vertex Points" %}
+### PShape using Vertex Points
+
 **Note: it is recommended to sketch using a 100 x 100 grid** with each column, row representing .10 percent of w, or h.  The sketch below has each column representing .25 percent of w, h
 
 ![](../.gitbook/assets/screen-shot-2021-02-22-at-12.48.24-pm.png)
 {% endtab %}
 
+{% tab title="Emotions: Affect, Arousal" %}
+![Example: Affect, Arousal Dimensions of Experience](../.gitbook/assets/screen-shot-2021-02-20-at-4.41.28-pm.png)
+{% endtab %}
+
 {% tab title="PShape Vertex Function" %}
+### Custom Function to create PShape using Vertex Points
+
 ![](../.gitbook/assets/screen-shot-2021-02-22-at-1.00.58-pm.png)
 
 ```java
@@ -134,6 +140,7 @@ PShape fallShape( float w, float h, color c1 ) {
    1. **Two Custom Functions can use PShape primitive shapes**
       1. In the custom function, you will create a PShape using input parameters: w, h 
       2. example:  PShape s = createShape\( RECT, 0,0, w, h\);  //  uses custom function parameter values w, h
+      3. See example in tabs above: [Vertex Points Diagram](assignment-2-functions-of-color.md#processing-pshape-objectsexamples-of-custom-shapes-emotion-diagram-vertex-points), Custom PShape Function
    2. **Two Custdom Functions must use PShape beginShape\( \), vertex\( \) -** and be specified using fractional values for w, h for each point:  
       1. The only 'literal' value can be 0
       2. All other vertex values must be of the form shown below where the x coordinate is defined as a fraction between 0.0 - 1.0, multiplied by the input parameter w. `s.vertex(` **`0.5 * w`**`,` **`0.8 * h`** `);`
