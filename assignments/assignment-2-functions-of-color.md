@@ -51,7 +51,7 @@ _see example gitbook table below_
 
 ### 3.  Hand Draw:  2D-Mapping Emotions: Affect, Arousal
 
-Some models of Emotion consider that emotions can be classified according to 2 or more dimensions: **affect** \( **unpleasant:** negative,  **pleasant:** positive\), and **arousal:** \(**intense:** positive, **mild:** negative\) , _valence is positive, negative_ as shown in the image below for the [Circumplex Model of Emotions](assignment-2-functions-of-color.md#circumplex-model-of-emotions).  
+Some models of Emotion consider that emotions can be classified according to 2 or more dimensions: **affect** \( **unpleasant:** negative,  **pleasant:** positive\), and **arousal:** \(**intense:** positive, **mild:** negative\) , _valence is positive, negative_ as shown in the image below for the [Circumplex Model of Emotions](assignment-2-functions-of-color.md#circumplex-model-of-emotions).  _**See Example in Tabs Below**_
 
 * Using the 8 emotions that you identified in part 1: 
 * Sketch a **circumplex diagram** with labeled axis: 
@@ -70,6 +70,7 @@ Some models of Emotion consider that emotions can be classified according to 2 o
 * Layout the shape on paper using a square grid: recommended use units: 100 \* 100 
 * Color the shapes using colors you specified for the region.
 * Optional: consider inspiration from symbols of cycles such as temporal: [seasons](http://www.symbolism.org/writing/books/sp/4/page2.html), card suits, [Tao Taijitu](https://en.wikipedia.org/wiki/Taijitu), geographic directions.
+* _**See Example in Tabs Below**_
 * **Gitbook: post a photo** of your 4 shape sketches
 
 ### Processing PShape Objects:  
@@ -138,21 +139,22 @@ PShape fallShape( float w, float h, color c1 ) {
 
 1.  **Functions \(create four\) to create custom PShape objects See Gitbook** [**Examples: PShape**](../project-1/pshape/)\*\*\*\*
    1. **Two Custom Functions can use PShape primitive shapes**
-      1. In the custom function, you will create a PShape using input parameters: w, h 
+      1. In the custom function, you will create a PShape using input parameters: w, h function signature 
+         *  **`PShape myShape1 ( float w, float h, color fillColor )`**
       2. example:  PShape s = createShape\( RECT, 0,0, w, h\);  //  uses custom function parameter values w, h
-      3. See example in tabs above: [Vertex Points Diagram](assignment-2-functions-of-color.md#processing-pshape-objectsexamples-of-custom-shapes-emotion-diagram-vertex-points), Custom PShape Function
-   2. **Two Custdom Functions must use PShape beginShape\( \), vertex\( \) -** and be specified using fractional values for w, h for each point:  
+      3. **See example code in tabs above**
+   2. **Two Custom Functions must use PShape beginShape\( \), vertex\( \) -** and be specified using fractional values for w, h for each point:  
       1. The only 'literal' value can be 0
       2. All other vertex values must be of the form shown below where the x coordinate is defined as a fraction between 0.0 - 1.0, multiplied by the input parameter w. `s.vertex(` **`0.5 * w`**`,` **`0.8 * h`** `);`
 
 * **Required:**  write code for **4 custom functions,** each function will **create** and **return** a **PShape object.**  
-* **Function signature:** _specify a custom function name_ **`PShape myShape1 ( float w, float h, color fillColor );`**
+* **Function signature:** _specify a custom function name_ **`PShape myShape1 ( float w, float h, color fillColor )`**
 
 **2.  Functions \(create 2 \) to display PShape objects as Patterns**
 
 * **Required:** write **2 custom functions** that will **display** your custom **PShapes in some pattern**. It is suggested that you add logic such as for-loops and random value ranges to draw multiple PShapes with variation in hue, saturation, brightness, width, height, position.  Ex: `void mirrorPattern( PShape s, color fillColor)`
 * When the function is executed, it will **display PShapes** that correspond to either the  negative or positive affect region: _\( left, right regions of the canvas.\)_
-* **Function signature:** _specify a custom function name - determine parameters to match your requirements_ **`void drawComplexShapes1( PShape s, float w, float h, color fillColor ); void drawComplexShapes2( PShape s, color fillColor );`**
+* **Function signature:** _specify a custom function name - determine parameters to match your requirements_ **`void drawComplexShapes1( PShape s, float w, float h, color fillColor ) void drawComplexShapes2( PShape s, color fillColor )`**
 
 **3. Use in a Processing program with setup \( \) and draw \( \):  interactive display**  
 You'll create a simple program to test your PShapes ****
