@@ -78,9 +78,7 @@ Some models of Emotion consider that emotions can be classified according to 2 o
 
 ![](../.gitbook/assets/screen-shot-2021-02-20-at-4.40.49-pm%20%281%29.png)
 
-### 5.  Processing:  Functions to Create, Display PShape Objects
-
-#### Custom Functions to Create, Transform, Display Processing PShape Objects
+### Processing PShape Objects
 
 {% tabs %}
 {% tab title="Processing PShape Reference" %}
@@ -91,6 +89,10 @@ Some models of Emotion consider that emotions can be classified according to 2 o
 {% embed url="https://processing.org/tutorials/pshape/" %}
 {% endtab %}
 {% endtabs %}
+
+## 5.  Programming:  Functions, PShape Objects
+
+#### Custom Functions to Create, Transform, Display Processing PShape Objects
 
 ### Write a Processing program with the following features:
 
