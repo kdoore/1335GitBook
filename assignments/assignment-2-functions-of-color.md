@@ -4,8 +4,6 @@ description: 'Exploration of Function Design in Java, Interactive Color using HS
 
 # A2: Functions, Emotions
 
-### Computational Dynamics of Being _\(and Doing\)_
-
 > "Life is a succession of **lessons** which must be **lived** to be understood."   
 > Helen Keller
 
@@ -13,7 +11,7 @@ description: 'Exploration of Function Design in Java, Interactive Color using HS
 > 'You are enrolled in a full-time informal school called "life." Each day in this school you will have the **opportunity to learn lessons**.  **You may like the lessons or hate them**, but **you have designed** them as a part of your curriculum.'    
 > Cherie Carter Scott:  _If Life is a Game, These are the Rules_
 
-### Leveling-up in the Game of Life: 
+### Computational Dynamics of Experience: Being, Doing 
 
 #### Event-Driven Experience: Emotions, Cognition, Behaviors
 
