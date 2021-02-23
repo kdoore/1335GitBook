@@ -25,8 +25,10 @@ The Processing random function can be used to determine random probability of an
 float randChance = random( 0.0, 1.0);   //will return values between 0.0, .9999
 if( randChance < 0.5) { //select midpoint of random range 
 println( "option1"); //printed ~50% of the time
+//put other code here if you want it exectued %50 of the time
 }else{
 println( "option2"); //printed ~50% of the time
+//put other code here if you want it exectued %50 of the time
 }
 ```
 
