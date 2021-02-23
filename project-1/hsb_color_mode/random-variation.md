@@ -6,9 +6,13 @@ description: Processing random( ) function
 
 Using random values can add visual interest to artwork.  The Processing `random( )`  function can be used in a variety of ways to create different types of variation.
 
-**`//returns a float value between min, max, does not include the max value  
-float random( float min, float max )  
-float random( float max ) // 0 assumed to be the minimum value`**
+```java
+//returns a float value between min, max, does not include the max value
+//function signatures - 2 overloaded versions
+
+float random( float max ) // 0 assumed to be the minimum value
+float random( float min, float max )
+```
 
 ### Random Probability of Event Likelihoods
 
