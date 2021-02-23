@@ -30,6 +30,7 @@
 ## Project 1
 
 * [HSB Color Mode](project-1/hsb_color_mode/README.md)
+  * [Random Variation](project-1/hsb_color_mode/random-variation.md)
   * [HSB Color Wheel](project-1/hsb_color_mode/hsb-color-wheel/README.md)
     * [Dynamic ColorWheel](project-1/hsb_color_mode/hsb-color-wheel/colorwheel-class-codes19.md)
     * [HSB Color Palette Tool](project-1/hsb_color_mode/hsb-color-wheel/hsb-color-wheel-complimentary-color-palatte.md)
