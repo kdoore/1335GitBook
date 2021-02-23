@@ -225,8 +225,9 @@ You'll create a simple program to test your PShapes ****
   * initialize global colors using the processing color selector tool
 * **draw\( \)** -  if mousePressed logic
   * translate origin to mouse position
-  * if mouse is on left region, randomly display a negative-region PShapes
-  * if mouse is on right region, randomly display a positive-region PShape
+  * **Random event likelihood:**  [**see gitbook**](../project-1/random-variation.md) **examples of using random\( \)**
+    * if mouse is on left region, randomly display a negative-region PShapes
+    * if mouse is on right region, randomly display a positive-region PShape
 * optional:  **keyPressed\( \)** - events
   * if desired, add logic to have filters, or transparent background added - corresponding to specific keys being pressed.
 
