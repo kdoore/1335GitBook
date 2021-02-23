@@ -18,7 +18,7 @@ float random( float min, float max )
 
 The Processing random function can be used to determine random probability of an event occurring, where the event is displaying some differential content each time an event happens.  The event can be the frame-loop in draw, or it can be a user input such as mousePressed, or some combination events.  
 
-**Event Likelihoods:**   In the following example, the random function returns a float value in the range between 0.0, 1.0.  Using if / else conditional logic based on the value of the random value generated, the code below will print "option1" approximately 50% of the time.
+**Random Event Likelihoods:**   In the following example, the random function returns a float value in the range between 0.0, 1.0.  Using if / else conditional logic based on the value of the random value generated, the code below will print "option1" approximately 50% of the time.
 
 ```java
 //random chance example
@@ -32,13 +32,13 @@ println( "option2"); //printed ~50% of the time
 
 ### Random Variation: Color variation
 
-Although random can be used to select all components of a color, such as when using colorMode\(RGB\): example:
+Although random can be used to select all components of a color, such as when using colorMode\(RGB\): **Fully random color example:**
 
 ```java
 fill( random( 255,), random( 255), random(255)); //random color
 ```
 
-It's useful to use random\( \) to generate a small variation in a HSB color by decomposing a given color into it's hue, saturation, brightness, and alpha components and then using random\( \) to create slight variation in each color component value:  
+**Random variation:**  It's useful to use random\( \) to generate a small variation in a HSB color by decomposing a given color into it's hue, saturation, brightness, and alpha components and then using random\( \) to create slight variation in each color component value:  
 example:  color variation if the following code is executed in the draw loop
 
 ```java
