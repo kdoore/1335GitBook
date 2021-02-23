@@ -32,8 +32,11 @@ println( "option2"); //printed ~50% of the time
 
 ### Random Variation: Color variation
 
-Although random can be used to select all components of a color, such as when using colorMode\(RGB\): example:  
- **`fill( random( 255,), random( 255), random(255)); //random color`**
+Although random can be used to select all components of a color, such as when using colorMode\(RGB\): example:
+
+```java
+fill( random( 255,), random( 255), random(255)); //random color
+```
 
 It's useful to use random\( \) to generate a small variation in a HSB color by decomposing a given color into it's hue, saturation, brightness, and alpha components and then using random\( \) to create slight variation in each color component value:  
 example:  color variation if the following code is executed in the draw loop
