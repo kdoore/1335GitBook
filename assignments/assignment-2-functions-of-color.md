@@ -17,7 +17,7 @@ description: 'Exploration of Function Design in Java, Interactive Color using HS
 
 #### Compass:  Tool for Orienteering and Way-finding: Align with Learning Cycles
 
-Just as Einstein's curiosity about the alignment of a **compass needle** to indicate the hidden force-field corresponding to the **energy flows of magnetic fields,** useful for orienting in the physical world. **Emotions can be considered as parameters for a personal intuition compass,** a tool for way-finding where emotions can be attuned to align with energy flows of  information integration: growth, learning, adaptation, evolution, leveling-up.   
+Just as Einstein's curiosity about the alignment of a **compass needle** to indicate the hidden force-field corresponding to the **energy flows of magnetic fields,** useful for orienting in the physical world. **Emotions can be considered as parameters for a personal intuition compass,** a tool for way-finding where emotions can be attuned to align with energy flows of  information integration: growth, learning, adaptation, evolution, leveling-up.  
 
 ## Creating A Personalized Dynamic Compass
 
@@ -27,11 +27,11 @@ Just as Einstein's curiosity about the alignment of a **compass needle** to indi
 2. **Gitbook: Provide a lin**k to the song, artist, lyrics, or album.
 3. **Example:  John Prine:** **That's the way the world goes around** [https://www.youtube.com/watch?v=wvY02SSj450](https://www.youtube.com/watch?v=wvY02SSj450) [https://genius.com/John-prine-thats-the-way-that-the-world-goes-round-lyrics](https://genius.com/John-prine-thats-the-way-that-the-world-goes-round-lyrics)
 
-### First Steps - Mapping Feelings to a Spatial Representational Form
+### First Steps - Modeling Emotions / Feelings: spatial representation
 
 ### 2.  Hand Draw:  Emotions and Colors Wheel:
 
-**Identifying emotions** can improve emotional self-awareness and can be useful in developing skill in cognitive reappraisal to enhance emotional self-regulation. \([See Below](assignment-2-functions-of-color.md#emotion-classification-dimensional-models-pad-pleasure-arousal-dominance)\) Several models of emotion classification exist that are useful in understanding the nature of emotions. \([See Emotion Classification\)](assignment-2-functions-of-color.md#emotion-classification-dimensional-models-pad-pleasure-arousal-dominance).  [Kandinsky](assignment-2-functions-of-color.md#wassily-kandinsky-concerning-the-spiritual-in-art) art theories associate colors with emotion /feelings in the creation of his expressionist art. 
+**Identifying emotions** can improve emotional self-awareness and can be useful in developing skill in cognitive reappraisal to enhance emotional self-regulation. **\(**[**See Below**](assignment-2-functions-of-color.md#emotion-classification-dimensional-models-pad-pleasure-arousal-dominance)**\)** Several models of emotion classification exist that are useful in understanding the nature of emotions. \([See Emotion Classification\)](assignment-2-functions-of-color.md#emotion-classification-dimensional-models-pad-pleasure-arousal-dominance).  [Kandinsky](assignment-2-functions-of-color.md#wassily-kandinsky-concerning-the-spiritual-in-art) art theories associate colors with emotion /feelings in the creation of his expressionist art. 
 
 1. **On sketch paper**, draw a wheel and divide into **8 arcs.**  
 2. Along the outside of the circle, write an **emotion / feeling next to each arc section.** 
