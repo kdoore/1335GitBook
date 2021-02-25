@@ -210,8 +210,8 @@ PShape fallShape( float w, float h, color c1 ) {
 
 **2.  Functions \(create 2 \) to Display PShape objects as Patterns**
 
-* **Required:** write **2 custom functions** that will **Display** your custom **PShapes in some pattern**. It is suggested that you add logic such as for-loops and random value ranges to draw multiple PShapes with variation in hue, saturation, brightness, width, height, position.  _\(see example in tabs above\) - Display PShape_ **Example Function Signature: `void mirrorPattern( PShape s, color fillColor)`**
-* When the function is executed, it will **display PShapes** based on the **PShape object** that is passed into the function as **parameter.**
+* **Required:** write **2 custom functions** that will **Display** your custom **PShapes in some pattern**. It is suggested that you add logic such as for-loops and random value ranges to draw multiple PShapes with variation in hue, saturation, brightness, width, height, position.  _\(see example in tabs above\) - Display PShape_ **Example Function Signature:  `void mirrorPattern( PShape s, color fillColor)`**
+* When the function is executed, it will **display 2 or more PShapes** based on the **PShape object** that is passed into the function as **parameter.**
 * **To display a PShape,** within your custom pattern function, you must use the **PShape method shape\( \), where the signature is below:**  _you can use 0,0  for x, y_ **`shape(  PShape s, float x, float y)`**
 * **Function signature:** _specify a custom function name - determine parameters to match your requirements,_   
 
@@ -228,17 +228,19 @@ You'll create a simple program to test your PShapes ****
   * **`PShape s = myShape1( ......); //call your shape function`**
   * **`shape( s, 100, 100); //display one time`**
   * initialize global colors using the processing color selector tool
-* **draw\( \)** -  if mousePressed logic
+* **draw\( \)** -  
+* **Conditional Logic:**  if mousePressed 
   * **translate origin** to mouse position
-  * **Create logic in draw\( \) to determine if mouse is on the left or right of the center-line.**
-    * **When the mouse is on the left side,** randomly select to display one of the negative region PShapes. 
-    * **When the mouse is on the right side of the center-line**, randomly select one of the positive shapes to display.
-  * **if mouse is on left canvas region:**
-    * **Random event likelihood:**  [**see gitbook**](../project-1/random-variation.md) **examples of using random\( \)**
-      * randomly display one of your 2 negative-region PShapes
-  * **if mouse is on right canvas region:**
-    * **Random event likelihood:**  [**see gitbook**](../project-1/random-variation.md) **examples of using random\( \)**
-      * randomly display one of your 2 positive-region PShapes
+  * **Conditional Logic** \( if-else \) : mouseX and random selection of pattern
+    * **Create logic in draw\( \) to determine if mouse is on the left or right of the center-line.**
+      * **When the mouse is on the left side,** randomly select to display one of the negative region PShapes. 
+      * **When the mouse is on the right side of the center-line**, randomly select one of the positive shapes to display.
+    * **if mouse is on left canvas region:**
+      * **Random event likelihood:**  [**see gitbook**](../project-1/random-variation.md) **examples of using random\( \)**
+        * randomly display one of your 2 negative-region PShapes
+    * **if mouse is on right canvas region:**
+      * **Random event likelihood:**  [**see gitbook**](../project-1/random-variation.md) **examples of using random\( \)**
+        * randomly display one of your 2 positive-region PShapes
 * _optional:  **keyPressed\( \)** - events \( as shown in the video\)_
   * if desired, add logic to have filters, or transparent background added - corresponding to specific keys being pressed.
 
