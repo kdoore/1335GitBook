@@ -17,7 +17,7 @@ description: 'Exploration of Function Design in Java, Interactive Color using HS
 
 #### Compass:  Tool for Orienteering and Way-finding: Align with Learning Cycles
 
-Just as Einstein's curiosity about the alignment of a **compass needle** to indicate the hidden force-field corresponding to the **energy flows of magnetic fields,** useful for orienting in the physical world. **Emotions can be considered as parameters for a personal intuition compass,** a tool for way-finding where emotions can be attuned to align with energy flows of  information integration: growth, learning, adaptation, evolution, leveling-up.  
+Just as Einstein's curiosity about the alignment of a **compass needle** to indicate the hidden force-field corresponding to the **energy flows of magnetic fields,** useful for orienting in the physical world. **Emotions can be considered as parameters for a personal intuition compass,** a tool for way-finding where emotions can be attuned to align with energy flows of  information integration: growth, learning, adaptation,  leveling-up.  
 
 ## Creating A Personalized Dynamic Compass
 
