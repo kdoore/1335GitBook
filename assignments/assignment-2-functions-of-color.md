@@ -237,13 +237,13 @@ You'll create a simple program to test your PShapes ****
 * **if mouse is on right canvas region:**
   * **Random event likelihood:**  [**see gitbook**](../project-1/random-variation.md) **examples of using random\( \)**
     * randomly display one of your 2 positive-region PShapes
-* optional:  **keyPressed\( \)** - events
+* _optional:  **keyPressed\( \)** - events \( as shown in the video\)_
   * if desired, add logic to have filters, or transparent background added - corresponding to specific keys being pressed.
 
 4. **Gitbook:** **Post a screenshot** of your canvas showing all 4 patterns displayed.  
 5. **Gitbook: Post code** for one of your PShape functions and one of your display functions using the gitbook format for embedding code.  
 6.  **Name** your project to use syntax: **lastname\_netID\_A2.pde**  
-7. **Submit zip file** of your code on eLearning.
+7. **Submit zip file** of your Processing Project folder with code on **eLearning.**
 
 **On eLearning:**    
 **Submit a link to your gitbook** along with a screenshot of your gitbook page for Assignment 2  
