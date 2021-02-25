@@ -206,11 +206,17 @@ PShape fallShape( float w, float h, color c1 ) {
 * **Required:**  write code for **4 custom functions,** each function will **create** and **return** a **PShape object.**  
 * **Function signature:** _specify a custom function name_ **`PShape myShape1 ( float w, float h, color fillColor )`**
 
-**2.  Functions \(create 2 \) to display PShape objects as Patterns**
+**2.  Functions \(create 2 \) to Display PShape objects as Patterns**
 
-* **Required:** write **2 custom functions** that will **display** your custom **PShapes in some pattern**. It is suggested that you add logic such as for-loops and random value ranges to draw multiple PShapes with variation in hue, saturation, brightness, width, height, position.  **Example Function Signature: `void mirrorPattern( PShape s, color fillColor)`**
+* **Required:** write **2 custom functions** that will **Display** your custom **PShapes in some pattern**. It is suggested that you add logic such as for-loops and random value ranges to draw multiple PShapes with variation in hue, saturation, brightness, width, height, position.  _\(see example in tabs above\) - Display PShape_ **Example Function Signature: `void mirrorPattern( PShape s, color fillColor)`**
 * When the function is executed, it will **display PShapes** based on the **PShape** that is passed into the function as **parameter.**
-* **Function signature:** _specify a custom function name - determine parameters to match your requirements_ **`void drawComplexShapes1( PShape s, float w, float h, color fillColor ) void drawComplexShapes2( PShape s, color fillColor )`**
+* **To display a PShape,** within your custom pattern function, you must use the **PShape method shape\( \), where the signature is below:**  _you can use 0,0 for x, y_ **`shape(  PShape s, float x, float y)`**
+* **Function signature:** _specify a custom function name - determine parameters to match your requirements,_   
+
+
+  **`void drawComplexShapes1( PShape s, color fillColor )`**
+
+  **`void drawComplexShapes2( PShape s, float w, float h, color fillColor )`**
 
 **3. Use in a Processing program with setup \( \) and draw \( \):  interactive display**  
 You'll create a simple program to test your PShapes ****
@@ -226,12 +232,12 @@ You'll create a simple program to test your PShapes ****
 * **draw\( \)** -  if mousePressed logic
   * translate origin to mouse position
   * **Conditional logic:  if / else: determine if mouse is on left or right of center-line**
-  * if mouse is on left region:
+  * **if mouse is on left canvas region:**
     * **Random event likelihood:**  [**see gitbook**](../project-1/random-variation.md) **examples of using random\( \)**
-      * randomly display a negative-region PShapes
-  * if mouse is on right region:
+      * randomly display one of your 2 negative-region PShapes
+  * **if mouse is on right canvas region:**
     * **Random event likelihood:**  [**see gitbook**](../project-1/random-variation.md) **examples of using random\( \)**
-      * randomly display a positive-region PShape
+      * randomly display one of your 2 positive-region PShapes
 * optional:  **keyPressed\( \)** - events
   * if desired, add logic to have filters, or transparent background added - corresponding to specific keys being pressed.
 
