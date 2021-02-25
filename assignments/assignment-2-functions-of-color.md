@@ -62,12 +62,12 @@ Some models of Emotion consider that emotions can be classified according to 2 o
 
 ### 4.  **Hand Draw:  4 Custom Shapes for Emotion Regions**
 
-* For each region of your diagram: design / sketch a custom simple motif using combination of processing primitive shapes or vertex points, to represent each of the 4 regions of your diagram. 
-* 2 Shapes must specify vertex points to create the PShapes
-* 2 Shapes can use processing primitive shapes to create the PShapes
-* Layout the vertices of the shape on paper using a square grid: recommended use units: 100 \* 100 grid with cols, rows each representing 10% of w, h.   \( see example below \) 
+* For each region of your diagram: design / sketch a custom simple motif using combination of processing primitive shapes or vertex points, to represent each of the 4 regions of your diagram. _- see example below_
+* 2 Shapes must specify **vertex points** to create the **PShapes**
+* 2 Shapes can use processing primitive shapes to create the PShapes - placeholder shapes
+* **Layout the vertices of the shape on paper using a square grid:** recommended use units: 100 \* 100 grid with cols, rows each representing 10% of w, h.   \( see example below \) 
 * Color the shapes using colors you specified for the region.
-* Optional: consider inspiration from symbols of cycles such as temporal: [seasons](http://www.symbolism.org/writing/books/sp/4/page2.html), card suits, [Tao Taijitu](https://en.wikipedia.org/wiki/Taijitu), geographic directions.
+* Optional: consider inspiration from symbols of cycles such as: [seasons](http://www.symbolism.org/writing/books/sp/4/page2.html), card suits, [Tao Taijitu](https://en.wikipedia.org/wiki/Taijitu), geographic directions.
 * _**See Example in Tabs Below**_
 * **Gitbook: post a photo** of your 4 shape sketches  
 
