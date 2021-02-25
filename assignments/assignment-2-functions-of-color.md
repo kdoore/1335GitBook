@@ -221,23 +221,22 @@ PShape fallShape( float w, float h, color c1 ) {
 **3. Use in a Processing program with setup \( \) and draw \( \):  interactive display**  
 You'll create a simple program to test your PShapes ****
 
-* **Create logic in draw\( \) to determine if mouse is on the left or right of the center-line.**
-  * **When the mouse is on the left side,** randomly select to display one of the negative region PShapes. 
-  * **When the mouse is on the right side of the center-line**, randomly display a positive shape.
 * **Global Variables**: define global variables for 5 colors: background and primary fill for each of your PShape objects.
 * **setup\( \)** - Set canvas size, colorMode\( HSB \), test your 4 PShape object functions by executing in setup, comment this code out when adding draw\( \) logic.
   * **`PShape s = myShape1( ......); //call your shape function`**
   * **`shape( s, 100, 100); //display one time`**
   * initialize global colors using the processing color selector tool
 * **draw\( \)** -  if mousePressed logic
-  * translate origin to mouse position
-  * **Conditional logic:  if / else: determine if mouse is on left or right of center-line**
-  * **if mouse is on left canvas region:**
-    * **Random event likelihood:**  [**see gitbook**](../project-1/random-variation.md) **examples of using random\( \)**
-      * randomly display one of your 2 negative-region PShapes
-  * **if mouse is on right canvas region:**
-    * **Random event likelihood:**  [**see gitbook**](../project-1/random-variation.md) **examples of using random\( \)**
-      * randomly display one of your 2 positive-region PShapes
+* **translate origin** to mouse position
+* **Create logic in draw\( \) to determine if mouse is on the left or right of the center-line.**
+  * **When the mouse is on the left side,** randomly select to display one of the negative region PShapes. 
+  * **When the mouse is on the right side of the center-line**, randomly select one of the positive shapes to display.
+* **if mouse is on left canvas region:**
+  * **Random event likelihood:**  [**see gitbook**](../project-1/random-variation.md) **examples of using random\( \)**
+    * randomly display one of your 2 negative-region PShapes
+* **if mouse is on right canvas region:**
+  * **Random event likelihood:**  [**see gitbook**](../project-1/random-variation.md) **examples of using random\( \)**
+    * randomly display one of your 2 positive-region PShapes
 * optional:  **keyPressed\( \)** - events
   * if desired, add logic to have filters, or transparent background added - corresponding to specific keys being pressed.
 
