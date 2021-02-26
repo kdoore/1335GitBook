@@ -178,10 +178,6 @@ PShape fallShape( float w, float h, color c1 ) {
 ```
 {% endtab %}
 
-{% tab title="Emotions: Affect, Arousal" %}
-![Example: Affect, Arousal Dimensions of Experience](../.gitbook/assets/screen-shot-2021-02-20-at-4.41.28-pm.png)
-{% endtab %}
-
 {% tab title="map\( \)" %}
 The image, code below shows use of the map\( \) function to use the for-loop's counting variable to create a **linearly changing fraction variable** that can be used to adjust the size and color of a PShape within a custom pattern function.
 
@@ -213,6 +209,10 @@ for ( int i=1; i < maxCount; i++) {
   }
 
 ```
+{% endtab %}
+
+{% tab title="Emotions: Affect, Arousal" %}
+![Example: Affect, Arousal Dimensions of Experience](../.gitbook/assets/screen-shot-2021-02-20-at-4.41.28-pm.png)
 {% endtab %}
 
 {% tab title="Processing PShape Reference" %}
