@@ -180,6 +180,39 @@ PShape fallShape( float w, float h, color c1 ) {
 ![Example: Affect, Arousal Dimensions of Experience](../.gitbook/assets/screen-shot-2021-02-20-at-4.41.28-pm.png)
 {% endtab %}
 
+{% tab title="map\( \)" %}
+The image below shows use of the map\( \) function to convert the counting variable to a fractional value that can be used to adjust the size and color of a PShape within a custom pattern function.
+
+![](../.gitbook/assets/screen-shot-2021-02-26-at-2.46.25-pm.png)
+
+Creating linear variation in size, color using map\( \).  
+The the variable fraction encodes a linear relationship with the counting variable.  The fraction creates gradient of size, color change which conveys depth better than the random variation of size, color.  
+
+```java
+//example of for-loop used within in a custom Pattern function
+// see use of map( ) to create a gradually changing fraction that can be used to modify 
+// color and size of the PShape each time the loop is executed
+int maxCount = 10;
+for ( int i=1; i < maxCount; i++) {
+    //color, size variation logic using map( )
+    float fraction= map( i, 1, maxCount, 1.0, 0.5); //fraction decreases in value
+    
+    float hue = hue( c1) - ( 60 *fraction);
+    float sat = saturation( c1) - (40 * fraction);
+    float bright = brightness( c1) - ( 50 * fraction);
+    float alpha = alpha( c1) - (40 * fraction);
+    color curColor = color( hue, sat, bright, alpha);
+   
+    //shape variation logic
+    initShape.setFill(curColor);
+    initShape.scale( fraction, fraction); //resize using value mapped to i, maxCount
+    initShape.rotate( PI/10 * i);
+    shape( initShape, 0, 0); //display shape
+  }
+
+```
+{% endtab %}
+
 {% tab title="Processing PShape Reference" %}
 {% embed url="https://processing.org/reference/PShape.html" %}
 {% endtab %}
@@ -213,12 +246,13 @@ PShape fallShape( float w, float h, color c1 ) {
 * **Required:** write **2 custom functions** that will **Display** your custom **PShapes in some pattern**. It is suggested that you add logic such as for-loops and random value ranges to draw multiple PShapes with variation in hue, saturation, brightness, width, height, position.  _\(see example in tabs above\) - Display PShape_ **Example Function Signature:  `void mirrorPattern( PShape s, color fillColor)`**
 * When the function is executed, it will **display 2 or more PShapes** based on the **PShape object** that is passed into the function as **parameter.**
 * **To display a PShape,** within your custom pattern function, you must use the **PShape method shape\( \), where the signature is below:**  _you can use 0,0  for x, y_ **`shape(  PShape s, float x, float y)`**
-* **Function signature:** _specify a custom function name - determine parameters to match your requirements,_   
-
+* **Function signature:** _specify a custom function name - determine parameters to match your requirements,_ 
 
   **`void drawComplexShapes1( PShape s, color fillColor )`**
 
   **`void drawComplexShapes2( PShape s, float w, float h, color fillColor )`**
+
+* **map\( \) function:  optional** see the example within the tabs that shows using a for-loop _\(within a custom pattern function\)  -  t_o create a variable: **fraction** that is used to create linear variation in shape - size, color, rather than using random variation for color
 
 **3. Use in a Processing program with setup \( \) and draw \( \):  interactive display**  
 You'll create a simple program to test your PShapes ****
