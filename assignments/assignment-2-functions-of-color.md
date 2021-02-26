@@ -197,7 +197,7 @@ for ( int i=1; i < maxCount; i++) {
     //color, size variation logic using map( )
     float fraction= map( i, 1, maxCount, 1.0, 0.5); //fraction decreases in value
     
-    float hue = hue( c1) - ( 60 *fraction);
+    float hue = hue( c1) - ( 60 *fraction); // creates linear change in hue
     float sat = saturation( c1) - (40 * fraction);
     float bright = brightness( c1) - ( 50 * fraction);
     float alpha = alpha( c1) - (40 * fraction);
