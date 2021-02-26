@@ -181,9 +181,9 @@ PShape fallShape( float w, float h, color c1 ) {
 {% endtab %}
 
 {% tab title="map\( \)" %}
-The image below shows use of the map\( \) function to convert the counting variable to a fractional value that can be used to adjust the size and color of a PShape within a custom pattern function.
+The image, code below shows use of the map\( \) function to use the for-loop's counting variable to create a **linearly changing fraction variable** that can be used to adjust the size and color of a PShape within a custom pattern function.
 
-![](../.gitbook/assets/screen-shot-2021-02-26-at-2.46.25-pm.png)
+![map\( \) calculates a corresponding value between 2 given ranges of values](../.gitbook/assets/screen-shot-2021-02-26-at-2.46.25-pm.png)
 
 Creating linear variation in size, color using map\( \).  
 The the variable fraction encodes a linear relationship with the counting variable.  The fraction creates gradient of size, color change which conveys depth better than the random variation of size, color.  
