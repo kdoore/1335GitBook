@@ -4,7 +4,7 @@ description: 'Exploration of Function Design in Java, Interactive Color using HS
 
 # A2: Functions, Emotions
 
-![](../.gitbook/assets/screen-shot-2021-02-25-at-6.13.03-pm.png)
+![Artwork by Evelyn 2/25/21](../.gitbook/assets/screen-shot-2021-02-25-at-6.13.03-pm.png)
 
 > "Life is a succession of **lessons** which must be **lived** to be understood."   
 > Helen Keller
