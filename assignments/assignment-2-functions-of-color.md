@@ -120,6 +120,8 @@ PShape fallShape( float w, float h, color c1 ) {
 {% tab title="Display PShape Pattern" %}
 ### Example Custom Function to Display PShape Pattern
 
+_also: see the **tab: map\( \)**  for an optional way to create linear \(rather than random\) color variation when using a for-loop for your pattern logic_
+
 ![PShape Pattern using PShape Transform Methods](../.gitbook/assets/screen-shot-2021-02-22-at-1.56.58-pm.png)
 
 ```java
