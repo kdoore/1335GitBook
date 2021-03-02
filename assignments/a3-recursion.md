@@ -2,7 +2,7 @@
 description: Creating Recursive Patterns
 ---
 
-# A3: Natural Patterns
+# A3: Repeat Patterns
 
 **Behavior:  Pattern:** Looping, Fractal  
 **Function**: Self-Similar Replication  
@@ -22,6 +22,10 @@ If Life is a Game, These are the Rules:  _Cherie Carter Scott_
 > **Challenge:  Identify and release the patterns that you are repeating** 
 >
 > **Cultivate:  Awareness, Willingness, Patience, Acknowledge Causality**
+
+## Assignment 3:  Recursive Functions
+
+Recursion is a structural pattern that can be used to create self-similar repetition.  
 
 ## Inspiration
 
