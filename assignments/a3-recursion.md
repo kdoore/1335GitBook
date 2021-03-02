@@ -1,8 +1,10 @@
 ---
-description: Creating Recursive Patterns
+description: Creating Recursive Functions
 ---
 
 # A3: Repeat Patterns
+
+![Ouroboros: 1478 drawing by Theodoros Pelecanos: Wikimedia](../.gitbook/assets/128px-serpiente_alquimica.jpg)
 
 **Behavior:  Pattern:** Looping, Fractal  
 **Function**: Self-Similar Replication  
@@ -22,6 +24,16 @@ If Life is a Game, These are the Rules:  _Cherie Carter Scott_
 > **Challenge:  Identify and release the patterns that you are repeating** 
 >
 > **Cultivate:  Awareness, Willingness, Patience, Acknowledge Causality**
+
+## Recursion - Definition, Function, Example 
+
+> In mathematics and computer science, a class of objects or methods exhibits recursive behavior when it can be defined by two properties:
+>
+> * A simple **base case** \(or cases\) — a terminating scenario that does not use recursion to produce an answer
+> * A **recursive step** — a set of rules that reduces all successive cases toward the base case.   
+> * A [function](https://en.wikipedia.org/wiki/Function_%28mathematics%29) may be **recursively** defined in terms of itself.  A familiar example is the [Fibonacci number](https://en.wikipedia.org/wiki/Fibonacci_number) sequence: **F\(n\) = F\(n − 1\) + F\(n − 2\).** For such a definition to be useful, it must be reducible to non-recursively defined values: in this case F\(0\) = 0 and F\(1\) = 1.  [Wikipedia](https://en.wikipedia.org/wiki/Recursion)
+
+
 
 ## Assignment 3:  Recursive Functions
 
