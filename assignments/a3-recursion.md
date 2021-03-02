@@ -4,8 +4,6 @@ description: Creating Recursive Functions
 
 # A3: Repeat Patterns
 
-![Ouroboros: 1478 drawing by Theodoros Pelecanos: Wikimedia](../.gitbook/assets/128px-serpiente_alquimica.jpg)
-
 **Behavior:  Pattern:** Looping, Fractal  
 **Function**: Self-Similar Replication  
 **Structure:** Recursion
@@ -33,11 +31,11 @@ If Life is a Game, These are the Rules:  _Cherie Carter Scott_
 > * A **recursive step** — a set of rules that reduces all successive cases toward the base case.   
 > * A [function](https://en.wikipedia.org/wiki/Function_%28mathematics%29) may be **recursively** defined in terms of itself.  A familiar example is the [Fibonacci number](https://en.wikipedia.org/wiki/Fibonacci_number) sequence: **F\(n\) = F\(n − 1\) + F\(n − 2\).** For such a definition to be useful, it must be reducible to non-recursively defined values: in this case F\(0\) = 0 and F\(1\) = 1.  [Wikipedia](https://en.wikipedia.org/wiki/Recursion)
 
-
+![Ouroboros: 1478 drawing by Theodoros Pelecanos: Wikimedia](../.gitbook/assets/128px-serpiente_alquimica.jpg)
 
 ## Assignment 3:  Recursive Functions
 
-Recursion is a structural pattern that can be used to create self-similar repetition.  
+A recursive function is a function that contains an actual function call to the function itself.   
 
 ## Inspiration
 
