@@ -14,7 +14,7 @@ Interactive Data Visualization of the recursion relationships for a growing seri
 
 #### Recursion in Programming
 
-Recursive programs refer to programs that contain at least 1 recursive function. **A recursive function is a function that has a function call to itself within the function definition.** 
+Recursive programs refer to programs that contain at least **1 recursive function**. **A recursive function is a function that has a function call to itself within the function definition.** 
 
 #### Example  - Nested Rectangles - 3 ways
 
@@ -38,7 +38,7 @@ fill(length);
 rect( 0, 0, length, length);
 ```
 
-### Loops for Repetition
+### Loops for Repetition - Iteration
 
 An experienced programmer would want to **refactor** such repetitive code, knowing that **loops** can provide a cleaner method to implement repetitive code:
 
@@ -73,7 +73,9 @@ recursiveNestedRectangles( 200, 5); //call the function
 
 #### Guidelines for Writing Recursive Functions
 
-When writing recursive functions there are several factors to consider: 1. Identify the base-case or stopping condition `if(count < 1){ return; }` 2. Insure that the variable that controls the stopping condition will be modified in the recursive function so that it will eventually reach the stopping condition. `count - 1` 3. Locate the conditional test for the stopping condition before the recursive call to prevent the recursive call from occurring when the stopping condition has been met. 4. Determine whether the function **task** should be performed before or after the recursive call. `rect( 0, 0, length, length );` 5. Insure that input parameters to the recursive function provide all information needed at each step, and be careful when modifying values passed as arguments.
+When writing recursive functions there are several factors to consider: 
+
+1. Identify the base-case or stopping condition `if(count < 1){ return; }` 2. Insure that the variable that controls the stopping condition will be modified in the recursive function so that it will eventually reach the stopping condition. `count - 1` 3. Locate the conditional test for the stopping condition before the recursive call to prevent the recursive call from occurring when the stopping condition has been met. 4. Determine whether the function **task** should be performed before or after the recursive call. `rect( 0, 0, length, length );` 5. Insure that input parameters to the recursive function provide all information needed at each step, and be careful when modifying values passed as arguments.
 
 `recursiveNestedRectangles( length-20, count -1 );`
 
