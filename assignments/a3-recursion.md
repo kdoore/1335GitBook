@@ -4,7 +4,7 @@ description: Creating Recursive Functions
 
 # A3: Repeat Patterns
 
-**Behavior:  Pattern:** Looping, Fractal  
+**Behavior:  Patterns:** Looping, Fractal  
 **Function**: Self-Similar Replication  
 **Structure:** Recursion
 
@@ -23,9 +23,9 @@ If Life is a Game, These are the Rules:  _Cherie Carter Scott_
 >
 > **Cultivate:  Awareness, Willingness, Patience, Acknowledge Causality**
 
-## Recursion - Definition, Function, Example 
+### Recursion - Definition, Function, Example 
 
-> In mathematics and computer science, a class of objects or methods exhibits recursive behavior when it can be defined by two properties:
+> In mathematics and computer science, a class of objects or methods exhibits **recursive behavior** when it can be defined by two properties:
 >
 > * A simple **base case** \(or cases\) — a terminating scenario that does not use recursion to produce an answer
 > * A **recursive step** — a set of rules that reduces all successive cases toward the base case.   
@@ -33,9 +33,19 @@ If Life is a Game, These are the Rules:  _Cherie Carter Scott_
 
 ![Ouroboros: 1478 drawing by Theodoros Pelecanos: Wikimedia](../.gitbook/assets/128px-serpiente_alquimica.jpg)
 
+### Iteration:
+
+> **Iteration** is the repetition of a process in order to generate an outcome.  
+>   
+> **Iteration** in computing is the technique marking out of a block of statements within a [computer program](https://en.wikipedia.org/wiki/Computer_program) **for a defined number of repetitions.** That block of statements is said to be iterated; a computer scientist might also refer to that block of statements as an **"iteration"**.  
+>   
+> The primary difference is that **recursion can be employed as a solution without prior knowledge as to how many times the action will have to repeat,** while a successful **iteration requires that foreknowledge**[  
+> ****Wikipedia](https://en.wikipedia.org/wiki/Iteration)
+
 ## Assignment 3:  Recursive Functions
 
-A recursive function is a function that contains an actual function call to the function itself.   
+Iteration compared to recursion:  
+
 
 ## Inspiration
 
