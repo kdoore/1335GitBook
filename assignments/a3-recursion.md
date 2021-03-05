@@ -1,5 +1,5 @@
 ---
-description: Creating Recursive Functions
+description: Iteration and Recursion for Repeat Patterns
 ---
 
 # A3: Repeat Patterns
