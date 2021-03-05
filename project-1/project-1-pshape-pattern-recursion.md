@@ -2,10 +2,10 @@
 
 In the code below, we define a Recursive function: `recursivePattern()` that creates repeated versions of the vertexPattern.
 
-* parameter: float length - size of the pattern
-* parameter: float level - controls number of repeats - insures termination 
-* recursivePattern\(\) defines the repetition structure
-* vertexPattern\( \) is the task that is repeated
+* **parameter: float length** - size of the pattern
+* **parameter: float level** - controls number of repeats - insures termination 
+* **recursivePattern\(\)** defines the repetition structure
+* **vertexShape\( \)** is the task that is repeated
 
   **vertexShape\( float len\)  function**
 

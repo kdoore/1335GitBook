@@ -1,8 +1,8 @@
 # Transforms for Mirroring
 
-The Processing Scale\( float scaleX, float scaleY\) can be used to create mirroring of shape forms. [Processing reference: Scale](https://processing.org/reference/scale_.html)
+The Processing **Scale\( float scaleX, float scaleY\)** can be used to create mirroring of shape forms. [Processing reference: Scale](https://processing.org/reference/scale_.html)
 
-> Increases or decreases the size of a shape by expanding and contracting vertices. Objects always scale from their relative origin to the coordinate system. Scale values are specified as decimal percentages.
+> Increases or decreases the size of a shape by expanding and contracting vertices. Objects always **scale from their relative origin** to the coordinate system. **Scale values are specified as decimal percentages.**
 
 For example, the function call scale\( 2.0, 1.0 \) increases the dimension of a shape by 200% along the x-dimension, with no change along the y dimension.
 
