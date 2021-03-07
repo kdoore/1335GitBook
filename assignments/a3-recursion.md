@@ -23,7 +23,21 @@ If Life is a Game, These are the Rules:  _Cherie Carter Scott_
 >
 > **Cultivate:  Awareness, Willingness, Patience, Acknowledge Causality**
 
-### Recursion - Definition, Function, Example 
+## Assignment 3:  Recursive Functions
+
+#### 1.  Hand Drawing: Draw A Fibonacci spiral using grid paper with a minimum of 
+
+#### 2.  Hand Drawing:  Draw a branching pattern
+
+#### 3.  Hand Drawing:  Create 2 Vertex Shapes that include a contour
+
+#### 4.  Programming:  Processing Program
+
+1. Write 2 Recursive Functions that take a PShape as an input parameter and display PShapes in a pattern
+2. 
+
+
+### Recursion - Self-similar repetition, base-case, recursive step 
 
 > In mathematics and computer science, a class of objects or methods exhibits **recursive behavior** when it can be defined by two properties:
 >
@@ -33,7 +47,7 @@ If Life is a Game, These are the Rules:  _Cherie Carter Scott_
 
 ![Ouroboros: 1478 drawing by Theodoros Pelecanos: Wikimedia](../.gitbook/assets/128px-serpiente_alquimica.jpg)
 
-### Iteration:
+### Iteration: Repetition of a block of statements
 
 > **Iteration** is the repetition of a process in order to generate an outcome.  
 >   
@@ -42,10 +56,12 @@ If Life is a Game, These are the Rules:  _Cherie Carter Scott_
 > The primary difference is that **recursion can be employed as a solution without prior knowledge as to how many times the action will have to repeat,** while a successful **iteration requires that foreknowledge**[  
 > ****Wikipedia](https://en.wikipedia.org/wiki/Iteration)
 
-## Assignment 3:  Recursive Functions
+#### Youtube Videos about Recursion and Fibonacci Sequence
 
-Iteration compared to recursion:  
-
+1.  [https://www.youtube.com/watch?v=JSyQx9zdQAM](https://www.youtube.com/watch?v=JSyQx9zdQAM)
+2. [https://www.youtube.com/watch?v=SjSHVDfXHQ4](https://www.youtube.com/watch?v=SjSHVDfXHQ4)
+3. [https://www.youtube.com/watch?v=7bod8x0LgJs](https://www.youtube.com/watch?v=7bod8x0LgJs)
+4. [https://www.youtube.com/watch?v=IGJeGOw8TzQ](https://www.youtube.com/watch?v=IGJeGOw8TzQ) 
 
 ## Inspiration
 
