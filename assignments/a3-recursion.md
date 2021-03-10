@@ -105,5 +105,11 @@ Affect: Primary Emotions, Feelings:  _Mark Solms_
 
 Secondary Emotions: guilt, envy, shame, jealousy arise from conflict situations - learnt constructs - hybrids of emotions and cognition
 
-## 
+## Culture as Patterns - 
+
+### Rececca Solnit: Recollections of My Nonexistence - The Ordinary Voiceless
+
+{% embed url="https://www.vanityfair.com/style/2021/03/rebecca-solnit-on-the-ordinary-voiceless" %}
+
+
 
