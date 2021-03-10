@@ -29,7 +29,9 @@ If Life is a Game, These are the Rules:  _Cherie Carter Scott_
 
 #### 2.  Hand Drawing:  Draw a branching pattern
 
-#### 3.  Hand Drawing:  Create 2 Vertex Shapes that include a contour
+#### 3.  Hand Drawing:  Create Vertex Shapes \( you must now have 4 functions that create / return vertex shapes\)
+
+####         One Vertex Shape must include a contour:  
 
 #### 4.  Programming:  Processing Program
 
