@@ -23,20 +23,37 @@ If Life is a Game, These are the Rules:  _Cherie Carter Scott_
 >
 > **Cultivate:  Awareness, Willingness, Patience, Acknowledge Causality**
 
+{% tabs %}
+{% tab title="PShape w/Contour" %}
+![](../.gitbook/assets/screen-shot-2021-03-17-at-3.44.47-pm.png)
+{% endtab %}
+
+{% tab title="Recursive Function" %}
+
+{% endtab %}
+
+{% tab title="Recursive Pattern" %}
+
+{% endtab %}
+{% endtabs %}
+
 ## Assignment 3:  Recursive Functions
 
-#### 1.  Hand Drawing: Draw A Fibonacci spiral using grid paper with a minimum of 
+#### 1.  Hand Drawing: Draw A Fibonacci spiral using grid paper, draw a minimum of 6 cubes.
 
 #### 2.  Hand Drawing:  Draw a branching pattern
 
 #### 3.  Hand Drawing:  Create Vertex Shapes \( you must now have 4 functions that create / return vertex shapes\)
 
-####         One Vertex Shape must include a contour:  
+####         One Vertex Shape must include a contour: \( see tab above\)
+
+####   
 
 #### 4.  Programming:  Processing Program
 
-1. Write 2 Recursive Functions that take a PShape as an input parameter and display PShapes in a pattern
-2. 
+1. Write **2 Recursive Functions** that take a **PShape as an input parameter** and display **PShapes in a pattern**
+2. Function Signature
+
 
 
 ### Recursion - Self-similar repetition, base-case, recursive step 
