@@ -1,25 +1,22 @@
 # PShape with Cutout - Inner Contour
 
+### Processing PShape with Contour
 
-
-![](../.gitbook/assets/screen-shot-2018-09-04-at-12.22.32-pm.png)
-
-The image below shows how vertex points can be specified as a fractional value of len, the input parameter for our PShape functions.
+Examples in the tabs below show details for specifying vertices to create an inner-cutout using the PShape methods: beginContour \( \), endContour\( \).  Note that vertex points specified to create a contour must be listed in reverse rotational order than what was used to specify the initial vertex points for the shape.
 
 {% tabs %}
-{% tab title="PShape w/Contour" %}
+{% tab title="PShape w/Contour ex1" %}
 ![](../.gitbook/assets/screen-shot-2021-03-18-at-2.27.06-pm.png)
+
+Notice: the initial 6 vertex points listed below are specified in **clockwise order**  
+To specify **contour vertex points**, the order must be **reversed - counter-clockwise**.  Often you may choose to repeat points \(see point 6 \), in the code. Note: when specifying contour points, complex shapes can result.
 
 ![](../.gitbook/assets/screen-shot-2021-03-17-at-3.44.47-pm.png)
 {% endtab %}
 
-{% tab title="PShape ex2" %}
-The drawing shows the points that are specified in the code below. You will want to draw a similar diagram to determine points for your custom shape vertices. Notice that points used for the cutout-inner-contour are specified in counter-clockwise manner. The last point for the outershape is \(0,0\), it's not re-numbered in the drawing, instead, the point with label 5 has values: s.vertex\(.25_len, .45_len\), it is located near point 4 on the drawing.
+{% tab title="Code Ex1" %}
+PShape with Contour - example code below corresponds to the images on the previous tab.  Note the use of s.beginContour\( \), s.endContour\( \) methods.  Note that s.endShape\(CLOSE\) is the last line of code required to specify the PShape's form.
 
-![](../.gitbook/assets/img_3079.jpg)
-{% endtab %}
-
-{% tab title="Code" %}
 ```java
 //create custom PShape usign vertex points
 PShape fallShapeContour( float w, float h, color c1 ) {
@@ -44,13 +41,17 @@ PShape fallShapeContour( float w, float h, color c1 ) {
 ```
 {% endtab %}
 
-{% tab title="Code ex2" %}
+{% tab title="PShape Ex2" %}
+![](../.gitbook/assets/screen-shot-2018-09-04-at-12.22.32-pm.png)
 
+The image below shows how vertex points can be specified as a fractional value of len, the input parameter for our PShape functions.
+
+The drawing shows the points that are specified in the code below. You will want to draw a similar diagram to determine points for your custom shape vertices. Notice that points used for the cutout-inner-contour are specified in counter-clockwise manner. The last point for the outershape is \(0,0\), it's not re-numbered in the drawing, instead, the point with label 5 has values: s.vertex\(.25_len, .45_len\), it is located near point 4 on the drawing.
+
+![](../.gitbook/assets/img_3079.jpg)
 {% endtab %}
-{% endtabs %}
 
-
-
+{% tab title="Code Ex2" %}
 ## PShape with Contour
 
 The code below shows that PShape can have an inner cutout created using the beginContour\(\), endContour\(\) functions. The vertex points specified within those 2 functions will be cut-out of the larger shape that was specified before the beginContour\(\) function. The point numbers correspond to the circled numbers in drawing above.
@@ -75,6 +76,8 @@ The code below shows that PShape can have an inner cutout created using the begi
   s.endShape(CLOSE); //end shape
   shape( s, 0,0);  //this displays the shape on the canvas at point (0,0)
 ```
+{% endtab %}
+{% endtabs %}
 
 ## Repeat Pattern using PShape with contour
 
