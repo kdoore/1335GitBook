@@ -1,11 +1,15 @@
 # PShape with Cutout - Inner Contour
 
+
+
 ![](../.gitbook/assets/screen-shot-2018-09-04-at-12.22.32-pm.png)
 
 The image below shows how vertex points can be specified as a fractional value of len, the input parameter for our PShape functions.
 
 {% tabs %}
 {% tab title="PShape w/Contour" %}
+![](../.gitbook/assets/screen-shot-2021-03-18-at-2.27.06-pm.png)
+
 ![](../.gitbook/assets/screen-shot-2021-03-17-at-3.44.47-pm.png)
 {% endtab %}
 
