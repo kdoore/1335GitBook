@@ -1,4 +1,4 @@
-# PShape with Cutout - Inner Contour
+# PShape with Contour
 
 ### Processing PShape with Contour
 
