@@ -1,5 +1,7 @@
 # Recursion
 
+![Complex Pattern created using Recursive Functions and PShapes](../../.gitbook/assets/screen-shot-2021-03-21-at-12.25.55-pm.png)
+
 ## Recursion: Self-Similar Replication, Evolution?
 
 Recursion is a type of repetition. Recursion occurs when a thing is defined in terms of itself or of its type. [Wikipedia](https://en.wikipedia.org/wiki/Recursion)
