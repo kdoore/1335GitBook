@@ -1,10 +1,10 @@
 # Recursion
 
-## Recursion
+## Recursion: Self-Similar Replication
 
 Recursion is a type of repetition. Recursion occurs when a thing is defined in terms of itself or of its type. [Wikipedia](https://en.wikipedia.org/wiki/Recursion)
 
-### Experiential Being, Doing as  Recursive Flow
+## Experiential Being, Doing as  Recursive Flow
 
 When contemplating experiential dynamics, it is useful to consider what recursion feels like.  I suggest that contemplation of recursion can provide a useful analogy for contemplation of the changing nature of experience.  At each point in time, each  self-adaptive system has a possibility for change - from the perspective of an observer, change occurs during an event, the measured features that change can be considered as parameters of a model - where information \(patterns of relational mappings\) are created through dynamic patterns of energy across time, space, and  other dimensions.
 
