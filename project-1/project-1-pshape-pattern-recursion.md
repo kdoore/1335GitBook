@@ -1,47 +1,39 @@
-# VertexShape - Recursion
+# Recursion - PShape
 
-In the code below, we define a Recursive function: `recursivePattern()` that creates repeated versions of the vertexPattern.
+In the code below, we define a Recursive function: `recursivePattern()` that creates repeated versions of the PShape passed in as parameter s.
 
-* **parameter: float length** - size of the pattern
-* **parameter: float level** - controls number of repeats - insures termination 
+* **parameter: PShape s** - shape to be rendered
+* **parameter: int count** - controls number of repeats - insures termination 
 * **recursivePattern\(\)** defines the repetition structure
-* **vertexShape\( \)** is the task that is repeated
-
-  **vertexShape\( float len\)  function**
+* **shape\( s, 0, 0\)** : render the shape, is the task that is repeated
+* createShape1\( float w, float h, color c1\) - used to create customPShape
 
 ```java
-    //Draws one PShape each time it is called
-    //PShape size is determined by input parameter: len
-    PShape vertexShape( float len, color c){
-        PShape s = createShape();
-        s.beginShape();
-        s.fill( c ); //set fill
-        s.vertex(0,0);//list points in clockwise order
-
-        s.vertex( len, 0); 
-        s.vertex( len, len);
-        s.vertex( len * .5, len * .5);
-        s.vertex( 0, len);
-        s.endShape(CLOSE);
-        return s;  //return the shape
-    }
+//simple PShape
+//Rounded rectangle
+PShape createShape1( float w, float h, color c1 ) {
+  PShape s = createShape( RECT, 0, 0, w, h, 10);
+  s.setFill( c1);
+  return s;
+}
 ```
 
-## recursivePattern\(PShape s, float scale, float count, color  c1 \) function
+## recursivePattern\(PShape s, int count, color  c1 \) 
 
 ```java
-    //recursive function to draw nested patterns
-    //scale is input as largest size, smaller patterns are drawn with each recursive call
-    //level determines how many patterns are drawn
-    //level MUST be decremented in each recursive call to insure termination
-    void recursivePattern( PShape s, float scale, float level){
-        if(level <1 ) { //termination condition
-            return; //stop function execution by returning from the function
-        }
-        s.scale( scale, scale) //- task - create PShape by calling the vertexShape function
-        shape( s, 0, 0); //draw the shape on the canvas at x=0,y=0.
-        recursivePattern( scale* 0.8, level -1 ); //recursive call
-    }
+    
+void recursivePattern( PShape s, int count, color c1) {
+  if (count <1 ) { //termination condition
+    return; //stop function execution by returning from the function
+  }
+  float scaleFactor = map( count, maxCount, 1, 1.0, 0.5); 
+  s.scale(scaleFactor, scaleFactor ); //- task - create PShape by calling the vertexShape function
+  color curColor = color ( hue( c1), saturation( c1), brightness( c1) * 0.8, 50);
+  s.setFill( curColor);
+  shape( s, 0, 0); //draw the shape on the canvas at x=0,y=0.
+  s.resetMatrix();
+  recursivePattern( s,  count-1, curColor ); //recursive call - changed values for count, color
+}
 ```
 
 ## Program using recursivePattern function
