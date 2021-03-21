@@ -1,5 +1,7 @@
 # Recursion - PShape
 
+![](../.gitbook/assets/screen-shot-2021-03-21-at-1.10.07-pm.png)
+
 In the code below, we define a Recursive function: `recursivePattern()` that creates repeated versions of the PShape passed in as parameter s.
 
 * **parameter: PShape s** - shape to be rendered
@@ -21,13 +23,15 @@ PShape createShape1( float w, float h, color c1 ) {
 ## recursivePattern\(PShape s, int count, color  c1 \) 
 
 ```java
-    
+//Parameters:  PShape shape to be rendered
+// count - how many to create,  termination variable
+// color - modified at each recursive call
 void recursivePattern( PShape s, int count, color c1) {
   if (count <1 ) { //termination condition
     return; //stop function execution by returning from the function
   }
   float scaleFactor = map( count, maxCount, 1, 1.0, 0.5); 
-  s.scale(scaleFactor, scaleFactor ); //- task - create PShape by calling the vertexShape function
+  s.scale(scaleFactor, scaleFactor ); //- task - 
   color curColor = color ( hue( c1), saturation( c1), brightness( c1) * 0.8, 50);
   s.setFill( curColor);
   shape( s, 0, 0); //draw the shape on the canvas at x=0,y=0.
