@@ -27,15 +27,20 @@ PShape createShape1( float w, float h, color c1 ) {
 // count - how many to create,  termination variable
 // color - modified at each recursive call
 void recursivePattern( PShape s, int count, color c1) {
-  if (count <1 ) { //termination condition
+  if (count <1 ) { //TERMINATION CONDITION
     return; //stop function execution by returning from the function
   }
+  //CHANGE LOGIC to create variation in size, color, rotation...etc
   float scaleFactor = map( count, maxCount, 1, 1.0, 0.5); 
-  s.scale(scaleFactor, scaleFactor ); //- task - 
+  s.scale(scaleFactor, scaleFactor ); // change
   color curColor = color ( hue( c1), saturation( c1), brightness( c1) * 0.8, 50);
   s.setFill( curColor);
+  
+  //TASK: 
   shape( s, 0, 0); //draw the shape on the canvas at x=0,y=0.
-  s.resetMatrix();
+  s.resetMatrix(); //undo shape scaling
+  
+  //RECURSIVE CALL - modify parameter value
   recursivePattern( s,  count-1, curColor ); //recursive call - changed values for count, color
 }
 ```
