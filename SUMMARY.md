@@ -41,7 +41,7 @@
 * [Modeling Emotions](project-1/modeling-emotions/README.md)
   * [Emotions](project-1/modeling-emotions/emotions-represented-using-color-form-space/README.md)
     * [Kandinsky Color - Emotion](project-1/modeling-emotions/emotions-represented-using-color-form-space/kandinsky-color-emotion.md)
-* [PShape with Contour](project-1/pshape-with-cutout-inner-contour.md)
+* [PShape with Contour](project-1/pshape-with-contour.md)
 * [Recursion](project-1/recursion/README.md)
   * [Recursion Call-Stack](project-1/recursion/recursion-call-stack.md)
   * [Recursion Examples](project-1/recursion/class-code-sept12f19/README.md)
