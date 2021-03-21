@@ -1,3 +1,7 @@
+---
+description: Recursion to create Patterns for PShapes
+---
+
 # Recursion - PShape
 
 ![](../.gitbook/assets/screen-shot-2021-03-21-at-1.10.07-pm.png)
