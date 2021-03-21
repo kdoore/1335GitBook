@@ -26,6 +26,30 @@ If Life is a Game, These are the Rules:  _Cherie Carter Scott_
 {% tabs %}
 {% tab title="PShape w/Contour" %}
 ![](../.gitbook/assets/screen-shot-2021-03-17-at-3.44.47-pm.png)
+
+```java
+//Code for shape above - with contour
+//create custom PShape usign vertex points
+PShape fallShapeContour( float w, float h, color c1 ) {
+  PShape s = createShape(); //initialize PShape
+  s.beginShape();
+  s.vertex( 0, .25*h);  //1
+  s.vertex( w*.75, 0);  //2
+  s.vertex( w* .10, h* .50); //3
+  s.vertex( w* .25, h* .75); //4
+  s.vertex( w* 0, h* .75); //5
+  s.vertex( 0, .25*h);  //6
+  s.beginContour();
+  s.vertex( 0, .25*h);  //6
+  s.vertex( w* .10, h* .45); //7
+  s.vertex( w* .40, h* .20); //8
+  s.vertex( w* .10, h* .30); //9
+  s.endContour();
+  s.endShape(CLOSE);
+  s.setFill( c1);
+  return s;
+}
+```
 {% endtab %}
 
 {% tab title="Recursive Function" %}
