@@ -53,10 +53,55 @@ PShape fallShapeContour( float w, float h, color c1 ) {
 {% endtab %}
 
 {% tab title="Recursive Function" %}
+![Simple Recursive Pattern example](../.gitbook/assets/screen-shot-2021-03-21-at-1.38.06-pm.png)
 
+```java
+//Example code to create a simple recursive function
+
+int maxCount = 5;
+color c1 ;
+
+void setup() {
+  size( 600, 600); //use size(600,600,P2D) if possible
+  colorMode( HSB, 360, 100, 100, 100);
+  background(0);
+  c1 = color ( 200, 100, 100);
+}
+
+void draw() {
+  if (mousePressed) {
+    translate(mouseX, mouseY);
+    PShape s = createShape1(100, 100, c1 );
+    recursivePattern( s, maxCount, c1); //here level is initialized at 5 because we decrement it inside the recursive function
+    resetMatrix();
+  }
+}
+
+void recursivePattern( PShape s, int count, color c1) {
+  if (count <1 ) { //termination condition
+    return; //stop function execution by returning from the function
+  }
+  float scaleFactor = map( count, maxCount, 1, 1.0, 0.5); 
+  s.scale(scaleFactor, scaleFactor ); //- task - create PShape by calling the vertexShape function
+  color curColor = color ( hue( c1), saturation( c1), brightness( c1) * 0.8, 50);
+  s.setFill( curColor);
+  shape( s, 0, 0); //draw the shape on the canvas at x=0,y=0.
+  s.resetMatrix();
+  recursivePattern( s,  count-1, curColor ); //recursive call - changed values for count, color
+}
+
+
+//Rounded rectangle
+PShape createShape1( float w, float h, color c1 ) {
+  PShape s = createShape( RECT, 0, 0, w, h, 10);
+  s.setFill( c1);
+  return s;
+}
+
+```
 {% endtab %}
 
-{% tab title="Recursive Pattern" %}
+{% tab title="" %}
 
 {% endtab %}
 {% endtabs %}
