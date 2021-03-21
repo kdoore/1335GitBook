@@ -4,6 +4,8 @@
 
 ## Intro to Recursion and PShapes
 
+The code below provides an example of a simple recursive function that displays a PShape in a pattern.  In this example, the PShape is created within the recursive function. A more modular approach is to create a recursive function that takes the PShape as an input parameter,  as the repeat structure can be applied to any PShape to create a similar pattern. 
+
 ```java
 //Recursion and PShapes
   //

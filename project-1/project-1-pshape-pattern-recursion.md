@@ -27,7 +27,7 @@ In the code below, we define a Recursive function: `recursivePattern()` that cre
     }
 ```
 
-## recursivePattern\( float length, float level \) function
+## recursivePattern\(PShape s, float scale, float count, color  c1 \) function
 
 ```java
     //recursive function to draw nested patterns
