@@ -39,22 +39,23 @@ void recursivePattern( PShape s, int count, color c1) {
 ## Program using recursivePattern function
 
 ```java
-float length=150;
-float scale = 1.0;
+
+int maxCount = 5;
 color c1 ;
 
-void setup(){
-    size( 600,600); //use size(600,600,P2D) if possible
-    c1 = color ( 200, 100, 100);
+void setup() {
+  size( 600, 600); //use size(600,600,P2D) if possible
+  colorMode( HSB, 360, 100, 100, 100);
+  c1 = color ( 200, 100, 100);
 }
 
-void draw(){
-    if(mousePressed){
-        translate(mouseX, mouseY);
-        PShape s = vertexShape( length, c1 )
-        recursivePattern( s, scale,5); //here level is initialized at 5 because we decrement it inside the recursive function
-        resetMatrix();
-    }
+void draw() {
+  if (mousePressed) {
+    translate(mouseX, mouseY);
+    PShape s = createShape1(100, 100, c1 );
+    recursivePattern( s, maxCount, c1); //here level is initialized at 5 because we decrement it inside the recursive function
+    resetMatrix();
+  }
 }
 ```
 
