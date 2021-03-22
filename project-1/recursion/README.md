@@ -18,7 +18,7 @@ When contemplating experiential dynamics, it is useful to consider what recursio
 
 Interactive Data Visualization of the recursion relationships for a growing series of these recursive paintings [visualization link](http://nubleh.github.io/i_painted/)
 
-#### Recursion in Programming
+## Programming Repetition, Loops, Recursion
 
 Recursive programs refer to programs that contain at least **1 recursive function**. **A recursive function is a function that has a function call to itself within the function definition.** 
 
@@ -77,7 +77,7 @@ void recursiveNestedRectangles( float length, int count ) {
 recursiveNestedRectangles( 200, 5); //call the function
 ```
 
-#### Guidelines for Writing Recursive Functions
+## Guidelines for Writing Recursive Functions
 
 When writing recursive functions there are several factors to consider: 
 
