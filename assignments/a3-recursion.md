@@ -122,22 +122,69 @@ PShape createShape1( float w, float h, color c1 ) {
 
 ## Assignment 3 Details:  Recursion
 
-### Recursive Patterns
+### Recursive Patterns - Hand Sketching
 
-* **Hand Drawing:** Draw A **Fibonacci spiral** using grid paper, draw a minimum of 7 cubes.
+* **Hand Drawing:** Draw A [**Fibonacci spiral**](../project-1/recursion/#fibonacci-recursion-cycles-of-energy-flow-greater-than-growth-decay) using grid paper, draw a minimum of 7 cubes. 
   * **Gitbook:  Post photo** of your sketch on Gitbook
-* **Hand Drawing:**  Draw a **simple branching pattern** inspired by recursion
+* **Hand Drawing:**  Draw any **simple branching pattern** inspired by recursion 
   * **Gitbook:  Post photo** of your sketch on Gitbook
 * **Hand Drawing:**  Create **2 new Vertex PShapes** \( you must now have 4 functions that create / return vertex shapes\)
-  * **Draw PShapes** on **grid paper** to specify width, height, vertex points
-    * **One PShape** must include a **contour:** \( see tab above\)
-  * **Gitbook:  Post photo** of your sketch on Gitbook
+  * **Draw 2 new PShapes** on **grid paper** to specify width, height, vertex points
+    * One PShape must include contour 
+    * **Gitbook:  Post photo** of your sketch on Gitbook
 
-### Recursive Functions:  Programming:  Processing Program
 
-1. Write **2 Recursive Functions** that take a **PShape as an input parameter** and display **PShapes in a pattern**
-2. Function Signature
 
+## **Programming:  Processing Code: \(submit as zip file\)**
+
+### Custom PShapes, 2 new functions 
+
+**Total  of 4 functions to create and return a Pshape Object : all PShapes must use vertex points.  Reuse** 2 functions created in assignment 2.  
+**Function signature:**  ``**`PShape myShape1( float w, float h, color c1)`**
+
+**Details:**   One PShape must use include a contour, all PShapes must use vertex points
+
+### **2 – Recursive functions to display PShapes in a Pattern**
+
+Function signature:  **void displayRecursivePattern\( Pshape myShape, color c1, int count\)**
+
+**Required Global variable:**  
+    
+ **int maxCount;** //specify number of recursion repeats – used in map\( \) to control scaleFactor  
+  
+ **setup\(\) logic** – initialize size, colorMode HSB
+
+**draw\( \) logic – \( see diagram above for regions \)**
+
+if mouse is pressed,
+
+            translate origin to mouse position, \(remember to include code to resetMatrix \)
+
+if on the left side of the center-line: regions 1,2
+
+if on the top half: \(region 1\)  
+        display Pshape pattern associated with region 1
+
+If on the bottom half \(region 2\)  
+       display Pshape pattern associated with region 2
+
+if on the right side of the center-line: regions 3, 4
+
+if on the top half: \(region 4\)  
+       display Pshape pattern associated with region 4
+
+If on the bottom half \(region 3\)  
+                   display Pshape pattern associated with region 3  
+  
+ **Custom Functions:** Total of 8  
+  
+ 4 Custom Functions to create PShapes, 1 must include a PShape w/contour
+
+2 Custom Functions to create Patterns using PShapes – \(from Assignment 2\)  
+ 2 Custom Functions to create Recursive Patterns using PShapes \(Assignment 3\)
+
+  **Program:** Include new logic in draw\( \) to have custom pattern drawn in each region of the canvas.  
+  
 
 
 ### Recursion - Self-similar repetition, base-case, recursive step 
