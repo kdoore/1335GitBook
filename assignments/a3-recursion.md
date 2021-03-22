@@ -23,9 +23,9 @@ If Life is a Game, These are the Rules:  _Cherie Carter Scott_
 >
 > **Cultivate:  Awareness, Willingness, Patience, Acknowledge Causality**
 
-## Assignment 3 Overview:
+## Assignment 3 Overview: 
 
-The tabs below show examples for creating a PShape that includes an inner contour.  There is a simple example of a code for a recursive function that creates a PShape pattern 
+The tabs below show examples for creating a **PShape that includes an inner contour**.  See the simple example of a program that includes code for a **recursive function** that creates a PShape pattern 
 
 {% tabs %}
 {% tab title="PShape w/Contour" %}
