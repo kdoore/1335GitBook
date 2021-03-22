@@ -124,34 +124,35 @@ PShape createShape1( float w, float h, color c1 ) {
 
 ### Recursive Patterns - Hand Sketching
 
-* **Hand Drawing:** Draw A [**Fibonacci spiral**](../project-1/recursion/#fibonacci-recursion-cycles-of-energy-flow-greater-than-growth-decay) using grid paper, draw a minimum of 7 cubes. 
-  * **Gitbook:  Post photo** of your sketch on Gitbook
-* **Hand Drawing:**  Draw any **simple branching pattern** inspired by recursion 
-  * **Gitbook:  Post photo** of your sketch on Gitbook
-* **Hand Drawing:**  Create **2 new Vertex PShapes** \( you must now have 4 functions that create / return vertex shapes\)
-  * **Draw 2 new PShapes** on **grid paper** to specify width, height, vertex points
-    * One PShape must include contour 
-    * **Gitbook:  Post photo** of your sketch on Gitbook
+1. **Hand Drawing:** Draw A [**Fibonacci spiral**](../project-1/recursion/#fibonacci-recursion-cycles-of-energy-flow-greater-than-growth-decay) using grid paper, draw a minimum of 7 cubes. 
+   * **Gitbook:  Post photo** of your sketch on Gitbook
+2. **Hand Drawing:**  Draw any **simple branching pattern** inspired by recursion 
+   * **Gitbook:  Post photo** of your sketch on Gitbook
+3. **Hand Drawing:**  Create **2 new Vertex PShapes** \( you must now have 4 functions that create / return vertex shapes\)
+   * **Draw 2 new PShapes** on **grid paper** to specify width, height, vertex points
+     * One PShape must include contour 
+     * **Gitbook:  Post photo** of your sketch on Gitbook
 
 
 
-## **Programming:  Processing Code: \(submit as zip file\)**
+### **Programming:  Processing Code: \(submit as zip file\)**
 
-### Custom PShapes, 2 new functions 
+### 1. Custom PShapes \(2 new functions\)
 
-**Total  of 4 functions to create and return a Pshape Object : all PShapes must use vertex points.  Reuse** 2 functions created in assignment 2.  
-**Function signature:**  ``**`PShape myShape1( float w, float h, color c1)`**
+**Total  of 4 functions to create and return a Pshape Object : all PShapes must use vertex points.  Reuse** 2 functions created in assignment 2. **Details:**   One PShape must use include a contour, all PShapes must use vertex points  
+**Function signature:**  
+  ``**`PShape myShape1( float w, float h, color c1)`**
 
-**Details:**   One PShape must use include a contour, all PShapes must use vertex points
+### **2. Recursive functions \(2 new functions\)  Display PShapes in a Pattern**
 
-### **2 – Recursive functions to display PShapes in a Pattern**
+**Function signature:**  **`void displayRecursivePattern( Pshape myShape, color c1, int count)`**
 
-Function signature:  **void displayRecursivePattern\( Pshape myShape, color c1, int count\)**
+### 3. Overall Program Specification
 
-### Overall Program Specification
+**Program:** Include new logic in **draw\( \)** to have custom pattern drawn in each region of the canvas.
 
 **Required Global variable:**  
-  **int maxCount;** //specify number of recursion repeats – used in map\( \) to control scaleFactor  
+**int maxCount;** //specify number of recursion repeats – used in map\( \) to control scaleFactor  
   
  **setup\(\) logic** – initialize size, colorMode HSB
 
@@ -176,7 +177,7 @@ Function signature:  **void displayRecursivePattern\( Pshape myShape, color c1, 
 
       * display Pshape pattern associated with region 3
 
-#### **Custom Functions:** Total of 8
+#### **Include: Custom Functions:** Total of 8
 
 #### 4 Custom Functions to create PShapes, 1 must include a PShape w/contour \(see above\)
 
@@ -184,8 +185,7 @@ Function signature:  **void displayRecursivePattern\( Pshape myShape, color c1, 
 
 #### 2 Custom Functions to create Recursive Patterns using PShapes \(Assignment 3\)
 
-  **Program:** Include new logic in **draw\( \)** to have custom pattern drawn in each region of the canvas.  
-
+## Supplemental resources for Recursion, Iteration
 
 ### Recursion - Self-similar repetition, base-case, recursive step 
 
