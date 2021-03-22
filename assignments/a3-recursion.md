@@ -148,43 +148,43 @@ PShape createShape1( float w, float h, color c1 ) {
 
 Function signature:  **void displayRecursivePattern\( Pshape myShape, color c1, int count\)**
 
+### Overall Program Specification
+
 **Required Global variable:**  
-    
- **int maxCount;** //specify number of recursion repeats – used in map\( \) to control scaleFactor  
+  **int maxCount;** //specify number of recursion repeats – used in map\( \) to control scaleFactor  
   
  **setup\(\) logic** – initialize size, colorMode HSB
 
 **draw\( \) logic – \( see diagram above for regions \)**
 
-if mouse is pressed,
+* if mouse is pressed
+* translate origin to mouse position, \(remember to include code to resetMatrix \)
+  * if on the left side of the center-line: regions 1,2
+    * if on the top half: \(region 1\)
 
-            translate origin to mouse position, \(remember to include code to resetMatrix \)
+      * display Pshape pattern associated with region 1
 
-if on the left side of the center-line: regions 1,2
+      if on the bottom half \(region 2\)
 
-if on the top half: \(region 1\)  
-        display Pshape pattern associated with region 1
+      * display Pshape pattern associated with region 2
+  * if on the right side of the center-line: regions 3,4
+    * if on the top half: \(region 4\)
 
-If on the bottom half \(region 2\)  
-       display Pshape pattern associated with region 2
+      * display Pshape pattern associated with region 4
 
-if on the right side of the center-line: regions 3, 4
+      if on the bottom half \(region 3\)
 
-if on the top half: \(region 4\)  
-       display Pshape pattern associated with region 4
+      * display Pshape pattern associated with region 3
 
-If on the bottom half \(region 3\)  
-                   display Pshape pattern associated with region 3  
-  
- **Custom Functions:** Total of 8  
-  
- 4 Custom Functions to create PShapes, 1 must include a PShape w/contour
+#### **Custom Functions:** Total of 8
 
-2 Custom Functions to create Patterns using PShapes – \(from Assignment 2\)  
- 2 Custom Functions to create Recursive Patterns using PShapes \(Assignment 3\)
+#### 4 Custom Functions to create PShapes, 1 must include a PShape w/contour \(see above\)
 
-  **Program:** Include new logic in draw\( \) to have custom pattern drawn in each region of the canvas.  
-  
+#### 2 Custom Functions to create Patterns using PShapes – \(from Assignment 2\) 
+
+#### 2 Custom Functions to create Recursive Patterns using PShapes \(Assignment 3\)
+
+  **Program:** Include new logic in **draw\( \)** to have custom pattern drawn in each region of the canvas.  
 
 
 ### Recursion - Self-similar repetition, base-case, recursive step 
