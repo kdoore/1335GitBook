@@ -23,10 +23,16 @@ If Life is a Game, These are the Rules:  _Cherie Carter Scott_
 >
 > **Cultivate:  Awareness, Willingness, Patience, Acknowledge Causality**
 
+## Assignment 3 Overview:
+
+The tabs below show examples for creating a PShape that includes an inner contour.  Also, there is a simple example of a recursive function
+
 {% tabs %}
 {% tab title="PShape w/Contour" %}
 ![](../.gitbook/assets/screen-shot-2021-03-17-at-3.44.47-pm.png)
+{% endtab %}
 
+{% tab title="PShape Contour Code" %}
 ```java
 //Code for shape above - with contour
 //create custom PShape usign vertex points
@@ -100,23 +106,18 @@ PShape createShape1( float w, float h, color c1 ) {
 
 ```
 {% endtab %}
-
-{% tab title="" %}
-
-{% endtab %}
 {% endtabs %}
 
-## Assignment 3:  Recursive Functions
+## Assignment 3 Details:  Recursive Functions
 
-#### 1.  Hand Drawing: Draw A Fibonacci spiral using grid paper, draw a minimum of 6 cubes.
-
-#### 2.  Hand Drawing:  Draw a branching pattern
-
-#### 3.  Hand Drawing:  Create Vertex Shapes \( you must now have 4 functions that create / return vertex shapes\)
-
-####         One Vertex Shape must include a contour: \( see tab above\)
-
-####   
+* **Hand Drawing:** Draw A **Fibonacci spiral** using grid paper, draw a minimum of 7 cubes.
+  * **Gitbook:  Post photo** of your sketch on Gitbook
+* **Hand Drawing:**  Draw a **simple branching pattern** inspired by recursion
+  * **Gitbook:  Post photo** of your sketch on Gitbook
+* **Hand Drawing:**  Create **2 new Vertex PShapes** \( you must now have 4 functions that create / return vertex shapes\)
+  * **Draw PShapes** on **grid paper** to specify width, height, vertex points
+    * **One PShape** must include a **contour:** \( see tab above\)
+  * **Gitbook:  Post photo** of your sketch on Gitbook
 
 #### 4.  Programming:  Processing Program
 
