@@ -4,8 +4,8 @@ description: Iteration and Recursion for Repeat Patterns
 
 # A3: Repeat Patterns
 
-**Behavior:  Patterns:** Looping, Fractal  
-**Function**: Self-Similar Replication  
+**Behavior:  Patterns:** Repetition using loops or recursion  
+**Function**: Recursion:  Self-Similar Replication  
 **Structure:** Recursion
 
 If Life is a Game, These are the Rules:  _Cherie Carter Scott_
@@ -143,7 +143,7 @@ PShape createShape1( float w, float h, color c1 ) {
 **Function signature:**  
   ``**`PShape myShape1( float w, float h, color c1)`**
 
-### **2. Recursive functions \(2 new functions\)  Display PShapes in a Pattern**
+### **2. Recursive functions \(2 new functions\)  to Display PShapes in a Pattern**
 
 **Function signature:**  **`void displayRecursivePattern( Pshape myShape, color c1, int count)`**
 
@@ -154,7 +154,7 @@ PShape createShape1( float w, float h, color c1 ) {
 **Required Global variable:**  
 **int maxCount;** //specify number of recursion repeats – used in map\( \) to control scaleFactor  
   
- **setup\(\) logic** – initialize size, colorMode HSB
+**setup\(\) logic** – initialize size, colorMode HSB
 
 **draw\( \) logic – \( see diagram above for regions \)**
 
@@ -179,11 +179,13 @@ PShape createShape1( float w, float h, color c1 ) {
 
 #### **Include: Custom Functions:** Total of 8
 
-#### 4 Custom Functions to create PShapes, 1 must include a PShape w/contour \(see above\)
-
-#### 2 Custom Functions to create Patterns using PShapes – \(from Assignment 2\) 
-
-#### 2 Custom Functions to create Recursive Patterns using PShapes \(Assignment 3\)
+* 4 Custom Functions to create PShapes, 1 must include a PShape w/contour \(see above\)
+  * 2 PShape functions - using vertex points \(from assignment 2\)
+  * 2 new PShape functions - using vertex points \( Assignment 3\)
+    * One PShape must include an inner contour  \( Assignment 3\)
+* 4 Custom Functions to create Patterns - use PShape as input parameter
+  * 2 Custom Functions to create Patterns using PShapes – \(from Assignment 2\) 
+  * 2 Custom Functions to create Recursive Patterns using PShapes \(Assignment 3\)
 
 ## Supplemental resources for Recursion, Iteration
 
