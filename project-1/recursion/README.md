@@ -93,6 +93,20 @@ When writing recursive functions there are several factors to consider:
 
 6. See info below about **call-stack**: Be aware that each instance of a recursive function call causes a unique instance of the function's code to be placed on the `call-stack`, this can potentially cause **stack-overflow errors** if the program runs out of available program-execution memory space.
 
+## Recursion: Dynamic, Natural Patterns: 
+
+### Fibonacci:  Recursion: Cycles of Energy Flow =&gt; Growth, Decay
+
+The Fibonacci sequence provides an example of a naturally occurring growth pattern where each successive Fibonacci number is calculated by using the sum of the previously 2 calculated values.  Fibonacci sequence has been used to model rabbit population growth, with each Fibonacci Number representing the current population of rabbits, where the current population is dependent on the population of parent and grandparent -prior generations.  
+
+![](../../.gitbook/assets/screen-shot-2021-03-22-at-10.15.31-am.png)
+
+![Branching Recursive Pattern of the Fibonacci Sequence](../../.gitbook/assets/screen-shot-2021-03-22-at-10.23.38-am%20%281%29.png)
+
+### Recursion: Self-Similar Growth, Learning Patterns
+
+Using the lens of adaptive self-learning systems, recursion can be considered as the computational structure capable of expressing processes of energy patterns that show emergent patterns that can lead to evolution.  The structure of recursive functions works well when creating generative art.  Natural patterns observed in nature often display patterns with  self-similar growth, fractals, etc...these represent the recursive processes of universal experience.
+
 #### Recursive Drawing
 
 [Toby Schachman](http://tobyschachman.com/) created an interactive application that provides a visual interface for playing with recursion via 2D shape primitives. It's surprising how quickly the designs become disorienting, illustrating the power of recursion.

@@ -4,6 +4,8 @@
 
 When our program is executing, a special section of the computer's memory-space is allocated just for our program called the program's `Call Stack`. It is important to understand how a program's `Call-Stack` operates, in order to understand how recursive functions behave when they are executing.
 
+![](../../.gitbook/assets/screen-shot-2021-03-22-at-10.14.59-am.png)
+
 ## Simplified Call Stack
 
 ![](../../.gitbook/assets/stack.png)
