@@ -108,7 +108,9 @@ PShape createShape1( float w, float h, color c1 ) {
 {% endtab %}
 {% endtabs %}
 
-## Assignment 3 Details:  Recursive Functions
+## Assignment 3 Details:  Recursion
+
+### Recursive Patterns
 
 * **Hand Drawing:** Draw A **Fibonacci spiral** using grid paper, draw a minimum of 7 cubes.
   * **Gitbook:  Post photo** of your sketch on Gitbook
@@ -119,7 +121,7 @@ PShape createShape1( float w, float h, color c1 ) {
     * **One PShape** must include a **contour:** \( see tab above\)
   * **Gitbook:  Post photo** of your sketch on Gitbook
 
-#### 4.  Programming:  Processing Program
+### Recursive Functions:  Programming:  Processing Program
 
 1. Write **2 Recursive Functions** that take a **PShape as an input parameter** and display **PShapes in a pattern**
 2. Function Signature
