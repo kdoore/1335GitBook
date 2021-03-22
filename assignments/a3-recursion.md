@@ -25,7 +25,7 @@ If Life is a Game, These are the Rules:  _Cherie Carter Scott_
 
 ## Assignment 3 Overview:
 
-The tabs below show examples for creating a PShape that includes an inner contour.  Also, there is a simple example of a recursive function
+The tabs below show examples for creating a PShape that includes an inner contour.  There is a simple example of a code for a recursive function that creates a PShape pattern 
 
 {% tabs %}
 {% tab title="PShape w/Contour" %}
@@ -61,6 +61,10 @@ PShape fallShapeContour( float w, float h, color c1 ) {
 {% tab title="Recursive Function" %}
 ![Simple Recursive Pattern example](../.gitbook/assets/screen-shot-2021-03-21-at-1.38.06-pm.png)
 
+#### Example of Recursive Function  
+
+See [Gitbook Section](../project-1/recursion/) for Details on writing Recursive functions
+
 ```java
 //Example code to create a simple recursive function
 
@@ -74,6 +78,7 @@ void setup() {
   c1 = color ( 200, 100, 100);
 }
 
+//When mouse is pressed, draw pattern at mouse location
 void draw() {
   if (mousePressed) {
     translate(mouseX, mouseY);
@@ -83,6 +88,13 @@ void draw() {
   }
 }
 
+//Simple Recursive Function
+//Parameter: PShape s - rendered on canvas
+//Parameter: int count - specify the number of repeats: recursive calls
+//Parameter: color - reduce brightness - with each recursion
+//task is to set size, color, then render PShape on canvas
+//Terminates when count is less than 0
+//Required - global variable: maxCount - used to determine scaleFactor
 void recursivePattern( PShape s, int count, color c1) {
   if (count <1 ) { //termination condition
     return; //stop function execution by returning from the function
