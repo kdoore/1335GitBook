@@ -107,12 +107,6 @@ The Fibonacci sequence provides an example of a naturally occurring growth patte
 
 Using the lens of adaptive self-learning systems, recursion can be considered as the computational structure capable of expressing processes of energy patterns that show emergent patterns that can lead to evolution.  The structure of recursive functions works well when creating generative art.  Natural patterns observed in nature often display patterns with  self-similar growth, fractals, etc...these represent the recursive processes of universal experience.
 
-#### Recursive Drawing
-
-[Toby Schachman](http://tobyschachman.com/) created an interactive application that provides a visual interface for playing with recursion via 2D shape primitives. It's surprising how quickly the designs become disorienting, illustrating the power of recursion.
-
-![](../../.gitbook/assets/screenshot-2017-08-31-13.08.06.png)
-
 #### Recursive Patterns
 
 When we look in nature, we see frequently see recursive patterning - we see a relationship between several objects - and we understand that these objects have a more complex relationship than simple repetition. Often in recursive patterns, we can observe that some feature has been scaled larger or smaller, where a self-similarity forms patterns across a series of objects. Recursive patterns often include parent-child relationships between objects.
