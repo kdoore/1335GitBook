@@ -91,7 +91,7 @@ When writing recursive functions there are several factors to consider:
 
 **Error below when using postfix decrement operator** `recursiveNestedRectangles( length-20, count-- );` 
 
-6. See info below about **call-stack**: Be aware that each instance of a recursive function call causes a unique instance of the function's code to be placed on the `call-stack`, this can potentially cause **stack-overflow errors** if the program runs out of available program-execution memory space.
+* [See info ](recursion-call-stack.md#recursion-call-stack)about **call-stack**: Be aware that each instance of a recursive function call causes a unique instance of the function's code to be placed on the `call-stack`, this can potentially cause **stack-overflow errors** if the program runs out of available program-execution memory space.
 
 ## Recursion: Dynamic, Natural Patterns: 
 
