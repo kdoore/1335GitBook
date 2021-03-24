@@ -199,9 +199,10 @@ PShape fallShape( float w, float h, color c1 ) {
 2. **Hand Drawing:**  Draw any **simple branching pattern** inspired by recursion 
    * **Gitbook:  Post photo** of your sketch on Gitbook
 3. **Hand Drawing:**  Create **2 new Vertex PShapes** \( you must now have 4 functions that create / return vertex shapes\)
-   * **Draw 2 new PShapes** on **grid paper** to specify width, height, vertex points
-     * One PShape must include contour 
-     * **Gitbook:  Post photo** of your sketch on Gitbook
+   1. * **Draw 2 new PShapes** on **grid paper** to specify width, height, vertex points
+        * One PShape must include contour 
+        * **Gitbook:  Post photo** of your sketch on Gitbook
+4. **Gitbook:  Post an image** of your **Processing project's execution - the sketch canvas** should show patterns shown in each region.
 
 
 
