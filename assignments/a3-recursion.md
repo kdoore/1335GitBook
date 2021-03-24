@@ -118,6 +118,76 @@ PShape createShape1( float w, float h, color c1 ) {
 
 ```
 {% endtab %}
+
+{% tab title="Region Logic" %}
+Region Logic
+
+```java
+int maxCount = 10;
+
+void setup() {
+  size( 600, 600);
+  colorMode(HSB, 360, 100, 100, 100); //HSBA
+  background(0);
+}
+
+void draw( ) {
+  if (mousePressed) { //add region logic here
+    translate( mouseX, mouseY); //in all cases
+    
+    if( mouseX > width/2 && mouseY < height/2){  //region 1
+      color summerColor = color( 70, 100, 100, 100);  //lime
+      PShape myShape = fallShape( 100, 100, summerColor); //create R1 shape
+      drawMirroredShapes( myShape, summerColor); //render R1 pattern
+      } //end region 1
+      
+      /*
+      else if( region 2 logic? ){ //region 2
+          //add code for R2: color, PShape, pattern
+      }
+      else if ( region 3 logic?){ //region 3
+          //add code for R3: color, PShape, pattern
+      }
+      else{ //region 4 logic
+         //add code for R4: color, PShape, pattern
+      }
+    
+    */
+    
+    resetMatrix(); //in all cases
+  }
+}
+//Function to display PShapes in a mirrored pattern
+//Color uses small random variations of HSBA color components
+//Using PShape transform methods
+void drawMirroredShapes(PShape s, color c1   ) { 
+  float hue = hue ( c1 ) + random( -15, 15 );
+  float sat = saturation ( c1) - random( 0, 30);
+  float bright = brightness( c1) - random( 0, 30);
+  float alpha = alpha( c1) - random( 0, 40);
+  color curColor = color (hue, sat, bright, alpha);
+  s.setFill(curColor );
+  shape( s, 0, 0); //draw one time
+  s.scale( 1.0, -1.0); //mirror across x-axis
+  shape( s, 0, 0); //draw 2nd  time
+  s.resetMatrix();
+}
+
+//create custom PShape usign vertex points
+PShape fallShape( float w, float h, color c1 ) {
+  PShape s = createShape(); //initialize PShape
+  s.beginShape();
+  s.vertex( 0, .25 * h);  //1
+  s.vertex( w*.75, 0);  //2
+  s.vertex( w* .10, h* .50); //3
+  s.vertex( w* .25, h* .75); //4
+  s.vertex( w* 0, h* .75); //5
+  s.endShape(CLOSE);
+  s.setFill( c1);
+  return s;
+}
+```
+{% endtab %}
 {% endtabs %}
 
 ## Assignment 3 Details:  Recursion
