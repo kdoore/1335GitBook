@@ -120,7 +120,7 @@ PShape createShape1( float w, float h, color c1 ) {
 {% endtab %}
 
 {% tab title="Region Logic" %}
-Region Logic
+#### Example Basic Code Structure for Defining Region Boundaries
 
 ```java
 int maxCount = 10;
