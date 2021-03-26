@@ -4,6 +4,8 @@ description: Iteration and Recursion for Repeat Patterns
 
 # A3: Repeat Patterns
 
+![Custom Patterns to Express Feelings](../.gitbook/assets/screen-shot-2021-02-25-at-2.57.56-pm%20%281%29.png)
+
 **Behavior:  Patterns:** Repetition using loops or recursion  
 **Function**: Recursion:  Self-Similar Replication  
 **Structure:** Recursion
