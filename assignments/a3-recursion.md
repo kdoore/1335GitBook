@@ -330,7 +330,11 @@ Affect: Primary Emotions, Feelings:  _Mark Solms_
 
 Secondary Emotions: guilt, envy, shame, jealousy arise from conflict situations - learnt constructs - hybrids of emotions and cognition
 
-## Culture as Patterns - 
+
+
+## Culture as Patterns - Impacts of Social Pressures and Influences
+
+{% embed url="https://www.psychologytoday.com/us/blog/talking-about-men/202103/false-self-true-self-the-perils-living-lie-fit-in" %}
 
 ### Rececca Solnit: Recollections of My Nonexistence - The Ordinary Voiceless
 
