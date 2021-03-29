@@ -288,6 +288,50 @@ PShape fallShape( float w, float h, color c1 ) {
 3. [https://www.youtube.com/watch?v=7bod8x0LgJs](https://www.youtube.com/watch?v=7bod8x0LgJs)
 4. [https://www.youtube.com/watch?v=IGJeGOw8TzQ](https://www.youtube.com/watch?v=IGJeGOw8TzQ) 
 
+![](../.gitbook/assets/psychedelic-brain-neurosicenss-public.jpeg)
+
+{% tabs %}
+{% tab title="Negentropy" %}
+{% embed url="https://theconversation.com/a-concept-from-physics-called-negentropy-could-help-your-life-run-smoother-155030" caption="Negentropy - " %}
+{% endtab %}
+
+{% tab title="Negentropic Success" %}
+### Negentropic Success
+
+> ...\(we\).....have studied how energy is [lost or gained in many types of systems](https://www.profoundliving.live/why-picking-up-your-socks-isnt-enough-or-how-negentropy-could-save-the-university) – including in [higher education](https://www.academia.edu/36783647/The_Negentropic_University), [leadership for online education](https://web.b.ebscohost.com/abstract?direct=true&profile=ehost&scope=site&authtype=crawler&jrnl=00349461&AN=138635682&h=vhDUW3VBg%2fzG4HqjKy0oUtlt7BS0ueCezkrAoMB5t8GG1ZJEcV0Auij03UKTMVSkYV7z6N%2fwu4ZTcR%2b2qC2Xqg%3d%3d&crl=f&resultNs=AdminWebAuth&resultLocal=ErrCrlNotAuth&crlhashurl=login.aspx%3fdirect%3dtrue%26profile%3dehost%26scope%3dsite%26authtype%3dcrawler%26jrnl%3d00349461%26AN%3d138635682), [workplace organizations](https://doi.org/10.1007/s11528-019-00448-5) and [online learning settings](https://doi.org/10.1145/3168360.3152716).
+>
+> **Our work suggests that when people keep the idea of negentropy in mind and take actions that limit or reverse energy loss, social systems are** [**more efficient and effective**](https://doi.org/10.1007/s11528-019-00448-5)**.** This might even make it [easier for people to achieve larger goals](https://hbr.org/2011/05/the-power-of-small-wins). In other words, yes, you should pick up that sock, and yes, you should improve your meetings, and doing so may allow you to see other ways to avoid future energy losses.
+{% endtab %}
+
+{% tab title="Steps - Reversing Habitual Energy Loss" %}
+### 5 steps for negentropic success
+
+From my colleagues’ and my research into negentropy, we have come up with five steps to reverse energy loss in in daily life.
+
+1: Find the entropy.
+
+Identify places where energy is lost in the social systems in your daily life. It’s helpful to think of it like a thermal map of the outside of your house that highlights where heat – or energy – is lost. A badly sealed window leaks heat energy. A poorly organized kitchen makes things hard to find. A badly designed new employee onboarding system can lead to serious legal problems later.
+
+2: Prioritize the losses.
+
+Identify the largest or most annoying losses and those that draw your attention most often. For example, perhaps that leaky kitchen faucet drives you crazy. Fixing it might make room in your mind to consider other improvements to your kitchen that would make it more functional.
+
+3: Come up with a plan.
+
+Identify actions that will reverse the energy losses you noted and plan ways to address the highest priorities first. You could start by fixing the leaky faucet or picking up your socks; if pre-pre-planning meetings are causing your organization a lot of trouble, analyze the problem and figure out how to fix it.
+
+4: Try it out and pay attention.
+
+Put the ideas into action, but stay focused on energy gains and losses. As you try to implement negentropic ideas, keep track of what works, how much effort it took and ideas you come up with for future negentropic actions.
+
+5: Go beyond fixing and maintenance.
+
+As you work to reverse energy losses, you may find that at times you are actually maintaining a social system that isn’t beneficial no matter how smoothly it works. Spending time improving an orientation to introduce new workers to a company culture may not be very useful if the culture itself needs to change. The best way to apply the idea of negentropy to social systems is to not only improve the small processes, but also look at the big picture and see if the status quo itself promotes energy loss.
+
+Seeing things through a negentropic lens won’t solve a bad relationship or help you love a job you hate – those are complicated issues. However, if you begin to notice where energy is lost in your life, it will be easier to prioritize and act in ways that can improve the social systems around you.
+{% endtab %}
+{% endtabs %}
+
 ## Inspiration
 
 ### **Feelings are Always Conscious**
