@@ -288,6 +288,8 @@ PShape fallShape( float w, float h, color c1 ) {
 3. [https://www.youtube.com/watch?v=7bod8x0LgJs](https://www.youtube.com/watch?v=7bod8x0LgJs)
 4. [https://www.youtube.com/watch?v=IGJeGOw8TzQ](https://www.youtube.com/watch?v=IGJeGOw8TzQ) 
 
+## Inspiration - Recursive Experiencing
+
 ![](../.gitbook/assets/psychedelic-brain-neurosicenss-public.jpeg)
 
 {% tabs %}
@@ -331,8 +333,6 @@ As you work to reverse energy losses, you may find that at times you are actuall
 Seeing things through a negentropic lens won’t solve a bad relationship or help you love a job you hate – those are complicated issues. However, if you begin to notice where energy is lost in your life, it will be easier to prioritize and act in ways that can improve the social systems around you.
 {% endtab %}
 {% endtabs %}
-
-## Inspiration
 
 ### **Feelings are Always Conscious**
 
