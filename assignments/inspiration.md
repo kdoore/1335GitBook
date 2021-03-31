@@ -1,5 +1,19 @@
 # Inspiration
 
+## Edusemiotics: Learning as Meaning-Making
+
+> The semiotic approach to education challenges the assumptions for learning and education of the linguistic turn, claiming that learning processes occur more broadly in nature. In this view, learning is not construed as a matter of linguistic articulation but, more generally, as meaning-making \(semiosis\)
+
+{% embed url="https://academia.edu/36517808/A\_Short\_Introduction\_to\_Edusemiotics" %}
+
+
+
+## Self-Actualization
+
+{% embed url="https://www.psychologytoday.com/us/blog/click-here-happiness/202103/4-science-based-tips-achieve-self-actualization" %}
+
+
+
 ## Meta-Cognition: Flow vs Stress-Activation - Experiential States: 
 
 ![Lisa Lou: Kitchen: https://whitney.org/collection/works/34855](../.gitbook/assets/screen-shot-2021-03-11-at-12.23.36-pm.png)
