@@ -1,5 +1,15 @@
 # Inspiration
 
+## Introduction to Music Visualization - Processing
+
+{% embed url="https://drive.google.com/file/d/1XNHGHYkoXx8qkkpCw5EuXD7YDbJxz78k/view" %}
+
+{% embed url="https://therewasaguy.github.io/p5-music-viz/" %}
+
+{% embed url="http://musicandcomputersbook.com/" %}
+
+
+
 ## Edusemiotics: Learning as Meaning-Making
 
 > The semiotic approach to education challenges the assumptions for learning and education of the linguistic turn, claiming that learning processes occur more broadly in nature. In this view, learning is not construed as a matter of linguistic articulation but, more generally, as meaning-making \(semiosis\)
