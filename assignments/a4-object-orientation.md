@@ -23,7 +23,7 @@ description: >-
 >   
 > **Flexibility** - "To improve is to change;  to be perfect is to change often."  Winston Churchill
 
-## Objects - Modeling Dynamic Worlds
+## Objects - Attributes and Behaviors
 
 {% tabs %}
 {% tab title="Object Orientation" %}
