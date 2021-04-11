@@ -60,8 +60,20 @@ Human languages provide a way to communicate about human subjective perception o
 
 > For humans, semiosis is an aspect of the wider systems of social interaction in which information is exchanged. It can result in particular types of social encounter, but the process itself can be constrained by social [conventions](https://en.wikipedia.org/wiki/Convention_%28norm%29) such as propriety, privacy, and disclosure. This means that no social encounter is reducible to semiosis alone, and that semiosis can only be understood by identifying and exploring all the conditions that make the transmission and reception of signs possible and effective. When two individuals meet, the ways in which they think, the specific identities they assume, the emotional responses they make, and the beliefs, motives, and purposes they have, will frame the situation as it develops dynamically and potentially test the legitimacy of the outcomes. All these elements are, to a greater or lesser extent, semiotic in nature in that prevailing codes and [values](https://en.wikipedia.org/wiki/Value_%28Semiotics%29) are being applied. Consequently, where the line is drawn between semiosis and semiotics will always be somewhat arbitrary.  
 > [Wikipedia](https://en.wikipedia.org/wiki/Semiosis)
+
+**See also:**  [**Biosemiotics - Wikipedia**](https://en.wikipedia.org/wiki/Biosemiotics)\*\*\*\*
+
+> **Biosemiotics** \(from the [Greek](https://en.wikipedia.org/wiki/Ancient_Greek) βίος bios, "life" and σημειωτικός sēmeiōtikos, "observant of signs"\) is a field of [semiotics](https://en.wikipedia.org/wiki/Semiotics) and [biology](https://en.wikipedia.org/wiki/Biology) that studies the prelinguistic meaning-making, or production and [interpretation](https://en.wikipedia.org/wiki/Interpretation_%28logic%29) of [signs](https://en.wikipedia.org/wiki/Sign_%28semiotics%29) and [codes](https://en.wikipedia.org/wiki/Code_%28semiotics%29) and their [communication](https://en.wikipedia.org/wiki/Communication) in the biological realm.[\[1\]](https://en.wikipedia.org/wiki/Biosemiotics#cite_note-1)
+>
+> Biosemiotics attempts to integrate the findings of biology and semiotics and proposes a [paradigmatic shift](https://en.wikipedia.org/wiki/Paradigm_shift) in the scientific view of [life](https://en.wikipedia.org/wiki/Life), in which [semiosis](https://en.wikipedia.org/wiki/Semiosis) \(sign process, including [meaning](https://en.wikipedia.org/wiki/Meaning_%28semiotics%29) and interpretation\) is one of its immanent and intrinsic features.
+{% endtab %}
+
+{% tab title="Unified Modeling Language" %}
+UML - Class Diagram  
 {% endtab %}
 {% endtabs %}
+
+
 
 ## Inspiration
 
