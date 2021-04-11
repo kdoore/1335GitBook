@@ -1,5 +1,7 @@
 ---
-description: 'Energy, Matter, Time, Space, Mapping relational  meaning in an abstract world'
+description: >-
+  Energy, Matter, Space and Time: Mapping relational meanings in an abstract
+  world
 ---
 
 # A4 - Object - Orientation
