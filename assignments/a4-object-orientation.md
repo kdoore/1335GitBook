@@ -100,10 +100,6 @@ UML Class Diagram - [Wikipedia](https://en.wikipedia.org/wiki/Class_diagram)
 {% endtab %}
 {% endtabs %}
 
-## Assignment 4 - Details:
-
-
-
 ## 
 
 
