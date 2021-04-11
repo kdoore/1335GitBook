@@ -1,7 +1,7 @@
 ---
 description: >-
-  Energy, Matter, Space and Time: Mapping relational meanings in an abstract
-  world
+  Materiality, Matter, Energy, Space and Time: Mapping Relational Meanings in
+  Complex - Dynamic Worlds
 ---
 
 # A4 - Object - Orientation
@@ -22,6 +22,8 @@ description: >-
 > **Humility** - "and when you have reached the mountaintop, then you shall begin to climb." Kahlil Gibran   
 >   
 > **Flexibility** - "To improve is to change;  to be perfect is to change often."  Winston Churchill
+
+## Objects - Modeling Dynamic Worlds
 
 {% tabs %}
 {% tab title="Object Orientation" %}
@@ -69,7 +71,32 @@ Human languages provide a way to communicate about human subjective perception o
 {% endtab %}
 
 {% tab title="Unified Modeling Language" %}
-UML - Class Diagram  
+UML - Class Diagram - [Wikipedia](https://en.wikipedia.org/wiki/Class_diagram)  
+  
+The image below shows the hierarchical view of a series of   
+
+
+![https://commons.wikimedia.org  Uml\_diagram2.png](../.gitbook/assets/uml_diagram2.png)
+
+UML Class Diagram - [Wikipedia](https://en.wikipedia.org/wiki/Class_diagram)
+
+> In [software engineering](https://en.wikipedia.org/wiki/Software_engineering), a **class diagram** in the [Unified Modeling Language](https://en.wikipedia.org/wiki/Unified_Modeling_Language) \(UML\) is a type of **static structure diagram** that describes the structure of a system by showing the system's [classes](https://en.wikipedia.org/wiki/Class_%28computer_science%29), their **attributes, operations \(or methods\), and the relationships among objects.**
+>
+> The class diagram is the main building block of [object-oriented](https://en.wikipedia.org/wiki/Object-oriented_programming) modeling. It is used for general [conceptual modeling](https://en.wikipedia.org/wiki/Conceptual_model) of the structure of the application, and for detailed modeling translating the models into [programming code](https://en.wikipedia.org/wiki/Programming_code). Class diagrams can also be used for [data modeling](https://en.wikipedia.org/wiki/Data_modeling).[\[1\]](https://en.wikipedia.org/wiki/Class_diagram#cite_note-1) The classes in a class diagram represent both the main elements, interactions in the application, and the classes to be programmed.
+>
+> In the diagram, classes are represented with boxes that contain three compartments:
+>
+> * The top compartment contains the **name of the class.** It is printed in bold and centered, and the first letter is capitalized.
+> * The middle compartment contains the **attributes of the class.** They are left-aligned and the first letter is lowercase.
+> * The bottom compartment contains **the operations the class can execute**. They are also left-aligned and the first letter is lowercase.
+>
+> [![](https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/BankAccount1.svg/220px-BankAccount1.svg.png)](https://en.wikipedia.org/wiki/File:BankAccount1.svg)A class with three compartments.
+>
+> In the design of a system, a number of classes are identified and grouped together in a class diagram that helps to determine the static relations between them. With detailed modeling, the classes of the conceptual design are often split into a number of subclasses.
+>
+> In order to further describe the behavior of systems, these class diagrams can be complemented by a [state diagram](https://en.wikipedia.org/wiki/State_diagram) or [UML state machine](https://en.wikipedia.org/wiki/UML_state_machine).[\[2\]](https://en.wikipedia.org/wiki/Class_diagram#cite_note-SWA09-2)
+
+![Base-Class and Child-Class Hierarchy Relationship](../.gitbook/assets/500px-kp-uml-generalization-20060325.svg.png)
 {% endtab %}
 {% endtabs %}
 
