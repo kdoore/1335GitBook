@@ -98,15 +98,17 @@ UML Class Diagram - [Wikipedia](https://en.wikipedia.org/wiki/Class_diagram)
 
 ![Base-Class and Child-Class Hierarchy Relationship](../.gitbook/assets/500px-kp-uml-generalization-20060325.svg.png)
 {% endtab %}
-{% endtabs %}
 
+{% tab title="Dynamic Agents" %}
 ### Objects and Agents
 
-Just as we can consider organic and inorganic forms in the real world, these same concepts are metaphorically mapped  to objects and agents in the world of software design, modeling, and simulation.  Agents are objects that have additional complexity which may have higher order logic such that behavior is dependent on the agent's state, for example: idle, walk, attack, collaborate.
+Just as we can consider organic and inorganic forms in the real world, these same concepts are metaphorically mapped  to objects and agents in the world of software design, modeling, and simulation.  Agents are objects that have additional complexity which may have higher order logic for example, the agent behavior may be dependent on the agent's state, ex: idle, walk, attack, collaborate.
 
 ### Dynamics: Frame-based Paradigm
 
 Simulation Engines and Multimedia Software platforms use frame-based execution to enable programming of dynamic object behaviors.  It is the dynamic nature of the real-world that is sublime and subtle that makes it difficult for humans to understand the elegant sophistication of our own organic hardware / software systems.  When thinking in the context of video games,  it is helpful to consider the nature of the Player, NPC, and other functional and interactive game objects.  It is helpful to use our imagination to contemplate the nature of human experiential reality...it is the interactions between objects that determine changes in the state of gameplay...Whereas the NPC gameObjects have action-states and associated behaviors, the player gameObject 
+{% endtab %}
+{% endtabs %}
 
 ## Assignment 4 - Details:
 
