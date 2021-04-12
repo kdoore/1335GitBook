@@ -100,7 +100,7 @@ UML Class Diagram - [Wikipedia](https://en.wikipedia.org/wiki/Class_diagram)
 {% endtab %}
 {% endtabs %}
 
-### Objects vs. Agents
+### Objects and Agents
 
 Just as we can consider organic and inorganic forms in the real world, these same concepts are .metaphorically mapped  to objects and agents in the world of software design, modeling, and simulation.  
 
