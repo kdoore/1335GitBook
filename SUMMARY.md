@@ -6,6 +6,7 @@
   * [A2: Functions, Emotions](assignments/assignment-2-functions-of-color.md)
   * [A3: Repeat Patterns](assignments/a3-recursion.md)
   * [A4 - Object - Orientation](assignments/a4-object-orientation.md)
+  * [Final Project](assignments/final-project.md)
   * [A?: Grid Patterns](assignments/a4-grid-patterns.md)
   * [Inspiration](assignments/inspiration.md)
 
