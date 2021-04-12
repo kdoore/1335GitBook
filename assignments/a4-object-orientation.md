@@ -102,7 +102,7 @@ UML Class Diagram - [Wikipedia](https://en.wikipedia.org/wiki/Class_diagram)
 
 ### Objects and Agents
 
-Just as we can consider organic and inorganic forms in the real world, these same concepts are .metaphorically mapped  to objects and agents in the world of software design, modeling, and simulation.  
+Just as we can consider organic and inorganic forms in the real world, these same concepts are metaphorically mapped  to objects and agents in the world of software design, modeling, and simulation.  Agents are objects that have additional complexity which may have higher order logic such that behavior is dependent on the agent's state, for example: idle, walk, attack, collaborate.
 
 ### Dynamics: Frame-based Paradigm
 
