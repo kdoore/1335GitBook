@@ -107,24 +107,20 @@ Just as we can consider organic and inorganic forms in the real world, these sam
 ### Dynamics: Frame-based Paradigm
 
 Simulation Engines and Multimedia Software platforms use frame-based execution to enable programming of dynamic object behaviors.  It is the dynamic nature of the real-world that is sublime and subtle that makes it difficult for humans to understand the elegant sophistication of our own organic hardware / software systems.  When thinking in the context of video games,  it is helpful to consider the nature of the Player, NPC, and other functional and interactive game objects.  It is helpful to use our imagination to contemplate the nature of human experiential reality...it is the interactions between objects that determine changes in the state of gameplay...Whereas the NPC gameObjects have action-states and associated behaviors, the player gameObject 
+
+### Modeling Systems of Connected Autonomous Objects:
+
+Here we want to consider the difference between modeling static deterministic processes as compared to systems with non-deterministic behavior....it is these non-linear interactions that most closely reflect the phenomena felt in the 'real' world.    
+  
+We are at a point in time, space, culture, cyber-technical sophisitation that we are rapidly approaching a bifurcation point - a singularity.    
+  
+Computational Generative Art: Modeling Emergence and transformational phenomena - self-adaptive collaborative systems.....that is what humans are.  The neurobiological, evoloutionary ecologies ....capable of describing the nature of reality: ever evolving forms of integrated informational phenomena .... intelligence....the combination of human and machine intelligence.  The question is:  What can we do to impact the outcome .... does it matter?  The Precipice...General AI - Generative Art....able to learn ... the computational nature of optimal decision making:  Understanding the nature of the 'world'.  The world is 
 {% endtab %}
 {% endtabs %}
 
 ## Assignment 4 - Details:
 
-### Modeling Systems of Connected Autonomous Objects:
-
-Here we want to consider the difference between modeling static deterministic processes as compared to systems with non-deterministic behavior....it is these non-linear interactions that most closely reflect the phenomena felt in the 'real' world.  
-
-We are at a point in time, space, culture, cyber-technical sophisitation that we are rapidly approaching a bifurcation point - a singularity.    
-  
-Computational Generative Art: Modeling Emergence and transformational phenomena - self-adaptive collaborative systems.....that is what humans are.  The neurobiological, evoloutionary ecologies ....capable of describing the nature of reality: ever evolving forms of integrated informational phenomena .... intelligence....the combination of human and machine intelligence.  The question is:  What can we do to impact the outcome .... does it matter?  The Precipice...General AI - Generative Art....able to learn ... the computational nature of optimal decision making:  Understanding the nature of the 'world'.  The world is 
-
-
-
-## 
-
-
+### Gitbook: 
 
 ## Inspiration
 
