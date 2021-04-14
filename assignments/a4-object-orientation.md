@@ -124,6 +124,20 @@ Computational Generative Art: Modeling Emergence and transformational phenomena 
 
 ## Inspiration
 
+{% embed url="https://brucelee.com/" %}
+
+
+
+> “To change with change is the changeless state.”  **Bruce Lee**
+
+**Bruce Lee believed that individuals, societies and cultures need to change with change. The world is changing quickly and we want to do what we can to help it be for the better. To spark positive change and growth, there is much work and healing to be done.**
+
+> _**Under the heavens, under the sky, we are all one family.” –Bruce Lee**_
+
+**Bruce Lee was an ally of humanity and believed that if everyone helped his neighbor, no one would be without help.**
+
+> ### "BE WATER, MY FRIEND. Empty your mind. Be formless, shapeless, like water. You put water into a cup, it becomes the cup. You put water into a bottle, it becomes the bottle. You put it into a teapot, it becomes the teapot. Now water can flow or it can crash. Be water, my friend."
+
 ### Designing The Mind - 
 
 {% embed url="https://designingthemind.org/" %}
