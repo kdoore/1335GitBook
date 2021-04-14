@@ -144,10 +144,6 @@ Computational Generative Art: Modeling Emergence and transformational phenomena 
 
 {% embed url="https://www.amazon.com/Task-Brain-Gets-Things-Done/dp/0691175551" %}
 
-
-
-### Designing The Mind - 
-
 {% embed url="https://designingthemind.org/" %}
 
 {% embed url="https://www.airtightinteractive.com/2013/10/making-audio-reactive-visuals/" %}
