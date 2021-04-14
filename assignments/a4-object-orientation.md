@@ -138,6 +138,14 @@ Computational Generative Art: Modeling Emergence and transformational phenomena 
 
 > ### "BE WATER, MY FRIEND. Empty your mind. Be formless, shapeless, like water. You put water into a cup, it becomes the cup. You put water into a bottle, it becomes the bottle. You put it into a teapot, it becomes the teapot. Now water can flow or it can crash. Be water, my friend."
 
+{% embed url="https://www.theartofimpossible.com/" %}
+
+
+
+{% embed url="https://www.amazon.com/Task-Brain-Gets-Things-Done/dp/0691175551" %}
+
+
+
 ### Designing The Mind - 
 
 {% embed url="https://designingthemind.org/" %}
