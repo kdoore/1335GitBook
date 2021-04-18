@@ -148,6 +148,9 @@ Computational Generative Art: Modeling Emergence and transformational phenomena 
 
 {% embed url="https://www.amazon.com/gp/product/B0924V53DV/ref=ppx\_yo\_dt\_b\_d\_asin\_image\_o00?ie=UTF8&psc=1" %}
 
+> **Magic, Error and Terror:**  
+> Modern brain science has produced extraordinary insight into the functioning of the human brain. **This book combines some of these results with the idea of subconscious and conscious models. It then explores how these models often generate magic, sometimes error, and occasionally terror.** **Subconscious models help us understand how psychotherapy changes minds, why fatigue is an emotion, how breathing affects our well-being, and how we may give mind and body a rest.** **Conscious models explain some instances of deception in medicine, economics, politics, and religion.** **Subconscious and conscious models together allow us to identify nonsensical questions.** The age-old question "Do we have free will?" is one such case. Hence, this question cannot be answered. This book offers a kaleidoscope of topics and cases. More ideas about subconscious and conscious models and their effects will surely occur to you as you read.   Klaus Truemper
+
 {% embed url="https://designingthemind.org/" %}
 
 {% embed url="https://www.theartofimpossible.com/" %}
