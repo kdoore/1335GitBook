@@ -23,7 +23,13 @@ description: >-
 >   
 > **Flexibility** - "To improve is to change;  to be perfect is to change often."  Winston Churchill
 
-## Objects - Attributes and Behaviors
+## No Thing: Energy Flows through time, space, alternate realities
+
+## Energy flows of Lives, Learning and Loves - Collaborative Learning Collectives
+
+See videos linked below to learn about Information Dynamics - Energy Flows of Life
+
+## Objects - Things:  Attributes and Behaviors
 
 {% tabs %}
 {% tab title="Object Orientation" %}
