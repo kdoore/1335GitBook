@@ -4,7 +4,7 @@ description: >-
   Complex - Dynamic Worlds
 ---
 
-# A4 - Object - Orientation
+# A4 - Objects:  Things and No Thing
 
 #### If Life is a Game, These are the Rules:  _Cherie Carter Scott_
 
