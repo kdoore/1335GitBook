@@ -120,13 +120,15 @@ Computational Generative Art: Modeling Emergence and transformational phenomena 
 
 ## Assignment 4 - Details:
 
-### Gitbook: 
+#### Watch the Video 
 
-## Inspiration
+#### Submit 2 paragraph document.
+
+## Inspiration: 
+
+## "To Change with Change is the Changeless State"
 
 {% embed url="https://brucelee.com/" %}
-
-
 
 > “To change with change is the changeless state.”  **Bruce Lee**
 
@@ -138,13 +140,13 @@ Computational Generative Art: Modeling Emergence and transformational phenomena 
 
 > ### "BE WATER, MY FRIEND. Empty your mind. Be formless, shapeless, like water. You put water into a cup, it becomes the cup. You put water into a bottle, it becomes the bottle. You put it into a teapot, it becomes the teapot. Now water can flow or it can crash. Be water, my friend."
 
-{% embed url="https://www.theartofimpossible.com/" %}
-
-
-
-{% embed url="https://www.amazon.com/Task-Brain-Gets-Things-Done/dp/0691175551" %}
+{% embed url="https://www.amazon.com/gp/product/B0924V53DV/ref=ppx\_yo\_dt\_b\_d\_asin\_image\_o00?ie=UTF8&psc=1" %}
 
 {% embed url="https://designingthemind.org/" %}
+
+{% embed url="https://www.theartofimpossible.com/" %}
+
+{% embed url="https://www.amazon.com/Task-Brain-Gets-Things-Done/dp/0691175551" %}
 
 {% embed url="https://www.airtightinteractive.com/2013/10/making-audio-reactive-visuals/" %}
 
