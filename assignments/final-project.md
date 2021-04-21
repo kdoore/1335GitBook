@@ -1,4 +1,4 @@
-# Final Project
+# Final Inspirations
 
 There is no final project, please just use your imagination to heal the divisions in the world.
 
