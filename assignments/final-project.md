@@ -18,3 +18,7 @@ There is no final project, please just use your imagination to heal the division
 >
 > “By analyzing how long a person estimates that he or she has been looking at an object, we can determine whether the eye contact between two people is more attention-seeking or emotion-seeking”, says the Geneva-based researcher.
 
+{% embed url="https://us20.campaign-archive.com/?u=af88d7b80802d078748ff2782&id=427469b75e" %}
+
+
+
