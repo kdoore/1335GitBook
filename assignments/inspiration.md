@@ -8,6 +8,10 @@
 
 {% embed url="http://musicandcomputersbook.com/" %}
 
+Atlas of AI
+
+{% embed url="https://www.technologyreview.com/2021/04/23/1023549/kate-crawford-atlas-of-ai-review/" %}
+
 
 
 ## Edusemiotics: Learning as Meaning-Making
