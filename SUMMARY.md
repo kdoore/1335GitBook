@@ -33,6 +33,7 @@
 ## Project 1
 
 * [Random Variation](project-1/random-variation.md)
+* [Noise](project-1/noise.md)
 * [HSB Color Mode](project-1/hsb_color_mode/README.md)
   * [HSB Color Wheel](project-1/hsb_color_mode/hsb-color-wheel/README.md)
     * [Dynamic ColorWheel](project-1/hsb_color_mode/hsb-color-wheel/colorwheel-class-codes19.md)
