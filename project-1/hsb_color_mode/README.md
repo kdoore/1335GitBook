@@ -81,3 +81,9 @@ In a similar manner, we can use map\( \) to determine the hue value based on the
    hueValue=map(mouseX, 0, width, 0, 255);
 ```
 
+### Inspiration:
+
+{% embed url="https://www.wired.com/story/how-pixar-uses-hyper-colors-to-hack-your-brain/" %}
+
+
+
