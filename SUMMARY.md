@@ -135,6 +135,7 @@
 
 * [Glossary](resources-and-references/glossary.md)
 * [Resources](resources-and-references/resources/README.md)
+  * [Sonification](resources-and-references/resources/sonification.md)
   * [Learning Science](resources-and-references/resources/learning-science/README.md)
     * [Emotional Intelligence](resources-and-references/resources/learning-science/emotional-intelligence.md)
   * [Creativity](resources-and-references/resources/creativity.md)
