@@ -49,14 +49,13 @@ See Example Template Gitbook Page l linked below:
    3. [https://genius.com/The-wild-feathers-wildfire-lyrics](https://genius.com/The-wild-feathers-wildfire-lyrics)
 2. **Conceptual art - Concept: Meta, Metta**
 
-   **Create a Sol Lewitt** inspired sketch to explore the concepts of metta, and/or meta
+**Create a Sol Lewitt** inspired sketch to explore the concepts of metta, and/or meta
 
-   1. **Create a simple pencil sketch on paper and list the rules,  procedures** used to create the artwork so that someone else could create the same artwork from the listed rules. 
-   2. **Gitbook: Take a screenshot** of the sketch, **insert the image** on your gitbook page
-   3. **Gitbook:** **List the procedure, rules** that you followed in making the sketch.
-   4. **Gitbook:**  **Paragraph:** Include one or two sentences using paragraph markup to explain the connection between the concept - idea, and the artwork - expression
-
-3. \*\*\*\*[**Data-Flow, Nodebox:** ](assignment-1.md#5-nodebox-tom-d-desmedt)**Procedural, Generative Design**
+1. **Create a simple pencil sketch on paper and list the rules,  procedures** used to create the artwork so that someone else could create the same artwork from the listed rules. 
+2. **Gitbook: Take a screenshot** of the sketch, **insert the image** on your gitbook page
+3. **Gitbook:** **List the procedure, rules** that you followed in making the sketch.
+4. **Gitbook:**  **Paragraph:** Include one or two sentences using paragraph markup to explain the connection between the concept - idea, and the artwork - expression
+5. \*\*\*\*[**Data-Flow, Nodebox:** ](assignment-1.md#5-nodebox-tom-d-desmedt)**Procedural, Generative Design**
    1. [ **Download, Install Nodebox**](https://www.nodebox.net/download/)\*\*\*\*
    2.  Open Nodebox, Open Examples from the Edit Menu: 
    3.  Select an Example program.  \(See images below\)
@@ -106,6 +105,10 @@ See Example Template Gitbook Page l linked below:
 > In conceptual art the **idea of concept** is the most important aspect of the work.1 **When an artist uses a conceptual form of art, it means that all of the planning and decisions are made beforehand and the execution is a perfunctory affair.** The **idea becomes a machine that makes the art.** This kind of art is not theoretical or illustrative of theories; **it is intuitive,** it is involved with all types of mental processes and it is purposeless. It is usually free from the dependence on the skill of the artist as a craftsman. It is the **objective of the artist who is concerned with conceptual art to make his work mentally interesting to the spectator, and therefore usually he would want it to become emotionally dry.** There is no reason to suppose, however, that the conceptual artist is out to bore the viewer. It is only the expectation of an emotional kick, to which one conditioned to expressionist art is accustomed, that would deter the viewer from perceiving this art  [Paragraphs on Conceptual Art](../resources-and-references/resources/conceptual-art.md#paragraphs-on-conceptual-art-sol-lewitt), ,
 
 {% embed url="https://massmoca.org/event/walldrawing792/\#title-area" %}
+
+{% embed url="https://codepen.io/kdoore/pen/QWELMBO" %}
+
+
 
 {% embed url="https://www.lissongallery.com/artists/sol-lewitt" %}
 
