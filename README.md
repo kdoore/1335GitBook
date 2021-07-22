@@ -1,3 +1,7 @@
+---
+description: Experience Modeling and Design
+---
+
 # Introduction
 
 ![Recursive Patterns to Represent Emotions](.gitbook/assets/artexpressionproj1_f19.png)
