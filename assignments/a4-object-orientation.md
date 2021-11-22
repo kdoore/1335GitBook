@@ -164,9 +164,14 @@ Computational Generative Art: Modeling Emergence and transformational phenomena 
 
 {% embed url="https://designingthemind.org/" %}
 
+{% embed url="https://michaelpollan.com/books/how-to-change-your-mind" %}
+
 {% embed url="https://www.theartofimpossible.com/" %}
 
 {% embed url="https://www.amazon.com/Task-Brain-Gets-Things-Done/dp/0691175551" %}
 
 {% embed url="https://www.airtightinteractive.com/2013/10/making-audio-reactive-visuals/" %}
 
+**Mad Mapper - Parametric Real-time Media **
+
+{% embed url="https://www.youtube.com/watch?v=RRqsSfZO5mk" %}
