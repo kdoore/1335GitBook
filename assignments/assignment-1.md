@@ -29,7 +29,7 @@ You will submit screenshot and a link to your gitbook page as part of your assig
 
 1. Recommended: Create a [**GitHub Account**](https://github.com)****
 2. Create a [**Gitbook**](https://www.gitbook.com) Account using your GitHub account.
-3. Create a Gitbook, Private, Personal Notes:  Name it:&#x20;
+3. Create a Gitbook, Public, Personal Notes:  Name it:&#x20;
 4. Create a page: Assignment 1:
 5. Find: Share-Link - you'll include this in your submission document&#x20;
 6. After completing steps below, take **a screenshot** of a portion of your gitbook page using the share link to open as a **web-document** (not in edit mode)
