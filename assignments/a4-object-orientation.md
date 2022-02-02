@@ -10,14 +10,14 @@ description: >-
 
 > **Rule 5 - Learning Does Not End**\
 > ****\
-> **There is no part of life that does not contain lessons **\
-> **     -  if you are alive, there are lessons to be learned.**
+> **There is no part of life that does not contain lessons** \
+> &#x20;    **-  if you are alive, there are lessons to be learned.**
 >
 > **Learn to embrace your role as a perpetual student**
 >
 > &#x20;"**Surrender** - does not obstruct our power, it enhances it" Marianne Williamson\
 > \
-> **Commitment **- "Our greatest weakness lies in giving up.  The most certain way to succeed is always to try just one more time."  Thomas Edison\
+> **Commitment** - "Our greatest weakness lies in giving up.  The most certain way to succeed is always to try just one more time."  Thomas Edison\
 > \
 > **Humility** - "and when you have reached the mountaintop, then you shall begin to climb." Kahlil Gibran \
 > \
@@ -28,13 +28,13 @@ description: >-
 
 #### 1. Watch one of the following videos&#x20;
 
-**Curiosity:  Cassini Nazir **
+**Curiosity:  Cassini Nazir**&#x20;
 
 {% embed url="https://youtu.be/JKShjK4Ywfs" %}
 Designing Curiosity&#x20;
 {% endembed %}
 
-**Objects as Dynamic Energy Traces:  **
+**Objects as Dynamic Energy Traces:** &#x20;
 
 {% embed url="https://youtu.be/FSR1OrwJ7Dc" %}
 
@@ -54,7 +54,7 @@ Designing Curiosity&#x20;
 
 **Humans perceive the world as being composed of objects.**  Human object perception - can be understood as 'snapshots' of transient sensory input associated with a 'system' of condensed matter; matter and energy are different forms of the same phenomena. &#x20;
 
-**Energy  ( change ) flows in continuous waves** - analog oscillations - Energy is a measure of change.  Humans perceive change as a discrete measured difference between observations._ _Measured values can be stored as data. Without **Human observation** - no change can be quantified.   Humans use language to communicate knowledge across time and space.   Discrete **data represents relational** measurements of change phenomena. &#x20;
+**Energy  ( change ) flows in continuous waves** - analog oscillations - Energy is a measure of change.  Humans perceive change as a discrete measured difference between observations. __ Measured values can be stored as data. Without **Human observation** - no change can be quantified.   Humans use language to communicate knowledge across time and space.   Discrete **data represents relational** measurements of change phenomena. &#x20;
 
 Human languages provide a way to communicate about human subjective perception of some observed change. &#x20;
 {% endtab %}
@@ -64,29 +64,29 @@ Human languages provide a way to communicate about human subjective perception o
 
 ### The Situated Function, Behavior, Structure Framework [\[ Wikipedia \] ](https://en.wikipedia.org/wiki/Function-Behaviour-Structure\_ontology#:\~:text=The%20Function%2DBehaviour%2DStructure%20ontology%20is%20the%20basis%20for%20two,and%20structure%2C%20and%20subclasses%20thereof.)
 
-> The basic assumption underpinning the **situated FBS framework** is that designing involves interactions between **three worlds**:** the external world, the interpreted world and the expected world. **
+> The basic assumption underpinning the **situated FBS framework** is that designing involves interactions between **three worlds**: **the external world, the interpreted world and the expected world.**&#x20;
 >
-> * **External world: **contains things in the “outside” world
+> * **External world:** contains things in the “outside” world
 > * **Interpreted world**: contains experiences, percepts and concepts, formed by the designer’s interactions with the external world
-> * **Expected world: **contains expectations of the results of the designer’s actions, driven by goals and hypotheses about the current state of the world
+> * **Expected world:** contains expectations of the results of the designer’s actions, driven by goals and hypotheses about the current state of the world
 >
 > **The three worlds are interconnected by four classes of interaction:**
 >
 > * **Interpretation:** transforms variables sensed in the external world into variables within the interpreted world
 > * **Focussing:** selects subsets of variables in the interpreted world and uses them as goals in the expected world
 > * **Action:** changes the external world according to the goals and hypotheses composing the expected world
-> * **Constructive memory: **produces memories as a result of re-interpreting past experiences.&#x20;
+> * **Constructive memory:** produces memories as a result of re-interpreting past experiences.&#x20;
 {% endtab %}
 
 {% tab title="Meaning - Semiosis" %}
 #### From Sensing to Meaning:  Semiosis
 
-> **Semiosis** (from the [Greek](https://en.wikipedia.org/wiki/Greek\_language): σημείωσις, sēmeíōsis, a derivation of the verb σημειῶ, sēmeiô, "to mark"), or **sign process**, is any form of [activity](https://en.wikipedia.org/wiki/Action\_\(philosophy\)), conduct, or **process that involves **[**signs**](https://en.wikipedia.org/wiki/Sign\_\(semiotics\))**, including the production of **[**meaning**](https://en.wikipedia.org/wiki/Meaning\_\(semiotics\))**.** A sign is anything that communicates a meaning, that is not the sign itself, to the interpreter of the sign. The meaning can be intentional such as a word uttered with a specific meaning, or unintentional, such as a symptom being a sign of a particular medical condition. Signs can communicate through any of the senses, visual, auditory, tactile, olfactory, or taste.
+> **Semiosis** (from the [Greek](https://en.wikipedia.org/wiki/Greek\_language): σημείωσις, sēmeíōsis, a derivation of the verb σημειῶ, sēmeiô, "to mark"), or **sign process**, is any form of [activity](https://en.wikipedia.org/wiki/Action\_\(philosophy\)), conduct, or **process that involves** [**signs**](https://en.wikipedia.org/wiki/Sign\_\(semiotics\))**, including the production of** [**meaning**](https://en.wikipedia.org/wiki/Meaning\_\(semiotics\))**.** A sign is anything that communicates a meaning, that is not the sign itself, to the interpreter of the sign. The meaning can be intentional such as a word uttered with a specific meaning, or unintentional, such as a symptom being a sign of a particular medical condition. Signs can communicate through any of the senses, visual, auditory, tactile, olfactory, or taste.
 
 > For humans, semiosis is an aspect of the wider systems of social interaction in which information is exchanged. It can result in particular types of social encounter, but the process itself can be constrained by social [conventions](https://en.wikipedia.org/wiki/Convention\_\(norm\)) such as propriety, privacy, and disclosure. This means that no social encounter is reducible to semiosis alone, and that semiosis can only be understood by identifying and exploring all the conditions that make the transmission and reception of signs possible and effective. When two individuals meet, the ways in which they think, the specific identities they assume, the emotional responses they make, and the beliefs, motives, and purposes they have, will frame the situation as it develops dynamically and potentially test the legitimacy of the outcomes. All these elements are, to a greater or lesser extent, semiotic in nature in that prevailing codes and [values](https://en.wikipedia.org/wiki/Value\_\(Semiotics\)) are being applied. Consequently, where the line is drawn between semiosis and semiotics will always be somewhat arbitrary.\
 > [Wikipedia](https://en.wikipedia.org/wiki/Semiosis)
 
-**See also:  **[**Biosemiotics - Wikipedia**](https://en.wikipedia.org/wiki/Biosemiotics)****
+**See also:**  [**Biosemiotics - Wikipedia**](https://en.wikipedia.org/wiki/Biosemiotics)****
 
 > **Biosemiotics** (from the [Greek](https://en.wikipedia.org/wiki/Ancient\_Greek) βίος bios, "life" and σημειωτικός sēmeiōtikos, "observant of signs") is a field of [semiotics](https://en.wikipedia.org/wiki/Semiotics) and [biology](https://en.wikipedia.org/wiki/Biology) that studies the prelinguistic meaning-making, or production and [interpretation](https://en.wikipedia.org/wiki/Interpretation\_\(logic\)) of [signs](https://en.wikipedia.org/wiki/Sign\_\(semiotics\)) and [codes](https://en.wikipedia.org/wiki/Code\_\(semiotics\)) and their [communication](https://en.wikipedia.org/wiki/Communication) in the biological realm.[\[1\]](https://en.wikipedia.org/wiki/Biosemiotics#cite\_note-1)
 >
@@ -147,7 +147,7 @@ Computational Generative Art: Modeling Emergence and transformational phenomena 
 
 {% embed url="https://brucelee.com/" %}
 
-> <mark style="color:green;">“To change with change is the changeless state.”</mark><mark style="color:green;">**  Bruce Lee**</mark>
+> <mark style="color:green;">“To change with change is the changeless state.”</mark>  <mark style="color:green;"></mark><mark style="color:green;">**Bruce Lee**</mark>
 
 **Bruce Lee believed that individuals, societies and cultures need to change with change. The world is changing quickly and we want to do what we can to help it be for the better. To spark positive change and growth, there is much work and healing to be done.**
 
@@ -172,6 +172,6 @@ Computational Generative Art: Modeling Emergence and transformational phenomena 
 
 {% embed url="https://www.airtightinteractive.com/2013/10/making-audio-reactive-visuals/" %}
 
-**Mad Mapper - Parametric Real-time Media **
+**Mad Mapper - Parametric Real-time Media**&#x20;
 
 {% embed url="https://www.youtube.com/watch?v=RRqsSfZO5mk" %}

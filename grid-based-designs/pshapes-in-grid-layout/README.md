@@ -6,21 +6,18 @@ The first approach for creating grid designs will use a 1-dimensional `Array` of
 
 The syntax for an array of PShape objects is:
 
-1. **Declare the array:** 
+1.  **Declare the array:**&#x20;
 
-   `PShape[ ] myShapes;`
+    `PShape[ ] myShapes;`
+2.  &#x20;**Initialize the array** by specifying the number of elements.
 
-2.  **Initialize the array** by specifying the number of elements.
+    `myShapes = new PShape[ 10 ];`
+3.  &#x20;**Initialize each element in the array**
 
-   `myShapes = new PShape[ 10 ];`
+    `myShapes[ 0 ] = createShape( RECT, 0,0,30,30);`
+4.  &#x20;**Remember:** array index values range from( 0 to length-1)
 
-3.  **Initialize each element in the array**
-
-   `myShapes[ 0 ] = createShape( RECT, 0,0,30,30);`
-
-4.  **Remember:**  array index values range from\( 0 to length-1\)
-
-   `myShapes[ 1] //is the second element in the array.`
+    `myShapes[ 1] //is the second element in the array.`
 
 ## Array - Declare and Initialize - Example Code
 
@@ -84,7 +81,7 @@ PShape vertexPattern1( float length, int hue) {
 
 ## Display our shapes
 
-In the code above, we've just stored a bunch of PShape objects, but we haven't drawn anything to the canvas using the shape\( s, x, y\) function for PShapes. Our shapes are stored in a 1-Dimensional array, we can think of that as a long vertical list of PShape items, with one PShape item in each row of the list.
+In the code above, we've just stored a bunch of PShape objects, but we haven't drawn anything to the canvas using the shape( s, x, y) function for PShapes. Our shapes are stored in a 1-Dimensional array, we can think of that as a long vertical list of PShape items, with one PShape item in each row of the list.
 
 ## Grid: Nested for-loops
 
@@ -92,15 +89,15 @@ A pair of for-loops will allow us to `iterate` through the array to select each 
 
 We'll create nested for-loops:
 
-the outer for-loop controls which row is being created \[ i \]
+the outer for-loop controls which row is being created \[ i ]
 
-the inner loop creates determines which column \[ j \]
+the inner loop creates determines which column \[ j ]
 
-For a single item in the grid, we can refer to that item as having grid coordinates: \[ row: i, column: j \].
+For a single item in the grid, we can refer to that item as having grid coordinates: \[ row: i, column: j ].
 
 ## Rows: i,  Columns:  j  and Row-Major Order
 
-The code below shows nested for-loops to change xPos and yPos in a grid pattern, each time the inner loop code is executed, a single shape is displayed: NOTE: In the textbook, Shiffman uses the opposite convention for specifying rows, columns in section 13-9. Processing.org examples use the same syntax as I am using. These 2 approaches are termed - row-major, or column-major ordering. [Row and Column Order, wikipedia ](https://en.wikipedia.org/wiki/Row-_and_column-major_order)
+The code below shows nested for-loops to change xPos and yPos in a grid pattern, each time the inner loop code is executed, a single shape is displayed: NOTE: In the textbook, Shiffman uses the opposite convention for specifying rows, columns in section 13-9. Processing.org examples use the same syntax as I am using. These 2 approaches are termed - row-major, or column-major ordering. [Row and Column Order, wikipedia ](https://en.wikipedia.org/wiki/Row-\_and\_column-major\_order)
 
 We will follow the convention that the outer for-loop `(i)` is specifying the rows, and the inner for-loop `(j)` specifies the columns in a grid.
 
@@ -185,4 +182,3 @@ void displayShapes( PShape[] shapes, float cellSize, int rows, int cols) {
   } //end i=loop
 }// end function
 ```
-

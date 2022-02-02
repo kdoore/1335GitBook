@@ -7,29 +7,34 @@ description: Plan structure of functions for Positive and Negative Regions
 #### Define Global Variables
 
 * Define global variables to determine size range for pattern
-* Define global variable balancePoint - can be animated for more interest 
+* Define global variable balancePoint - can be animated for more interest\
+
 
 #### Define Positive, Negative Custom Shape Functions
 
 * Define custom Shape functions:
-* Creates a single shape using len, c1
+*   Creates a single shape using len, c1
 
-  * posCustomShape\( float len, color c1\)
-  * negCustomShape\( float len, color c1\)
+    * posCustomShape( float len, color c1)
+    * negCustomShape( float len, color c1)
+
+
 
 #### Define  Positive, Negative RecursivePattern Functions
 
 * Define recursive functions: Creates a set of nested shapes - gradient in size, brightness
-* Include Logic to determine changing brightness, changing size for each layered shape.
+*   Include Logic to determine changing brightness, changing size for each layered shape.
 
-  * posRecursivePattern\( float len, color c1, color c2\)
-  * negRecursivePattern\( float len, color c1, color c2\)
+    * posRecursivePattern( float len, color c1, color c2)
+    * negRecursivePattern( float len, color c1, color c2)
+
+
 
 #### Define Positive, Negative Pattern Functions
 
 * Define functions:  Creates 1 pattern - at  current mouse position, Gradients in color and size across the positive region
-  * positivePattern\( float balancePoint, int mX \)
-  * negativePattern\( float balancePoint, int mX\)
+  * positivePattern( float balancePoint, int mX )
+  * negativePattern( float balancePoint, int mX)
 
 Example Code
 
@@ -130,7 +135,5 @@ PShape customPosShape(  float len, color c1){
 
 ### Planning Document
 
-![Planning Document](../../.gitbook/assets/proj1_f19_1335_img_small.jpg)
-
-
+![Planning Document](../../.gitbook/assets/proj1\_f19\_1335\_img\_small.jpg)
 

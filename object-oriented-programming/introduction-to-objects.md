@@ -4,28 +4,28 @@
 
 > **An object is just like you, a thing that has properties and can do stuff.**
 >
-> So, how does this relate to programming? **The properties of an object are variables, and the things an object can do are functions**. Object-oriented programming is the marriage of all of the programming fundamentals: data and functionality.  
->   
->   [**Processing Website**](https://processing.org/tutorials/objects/) **- OOP Tutorial - Daniel Shiffman**
+> So, how does this relate to programming? **The properties of an object are variables, and the things an object can do are functions**. Object-oriented programming is the marriage of all of the programming fundamentals: data and functionality.\
+> \
+> &#x20; [**Processing Website**](https://processing.org/tutorials/objects/) **- OOP Tutorial - Daniel Shiffman**
 
-  
-  
+\
+\
 To begin our look at Object oriented programming, we'll look at the simple task of animating a ball moving across the Processing canvas.
 
 First, we'll look at the code in the Ball Class Definition, then we'll look at the main tab code to see how to create an instance of a Ball Class object.
 
-Below is a UML \(Unified Modeling Language\) Class diagram which gives an overview of the important information about the Ball class. In the top section is the class name, the second section shows the instance variables or properties of the class. The bottom section shows the class methods, which are functions that belong to the class. [UML Class Diagram Specification](https://www.uml-diagrams.org/class-diagrams-overview.html)
+Below is a UML (Unified Modeling Language) Class diagram which gives an overview of the important information about the Ball class. In the top section is the class name, the second section shows the instance variables or properties of the class. The bottom section shows the class methods, which are functions that belong to the class. [UML Class Diagram Specification](https://www.uml-diagrams.org/class-diagrams-overview.html)
 
 ![](../.gitbook/assets/screenshot-2016-09-16-08.30.08.png)
 
-## Objects:  Data and Functionality \(Behaviors\)
+## Objects:  Data and Functionality (Behaviors)
 
-A object can be considered as a type of thing that we could classify based on its' features or attributes, where these classification details can be considered as the object's data.  Because humans organize our reality using the concept of objects, it is intuitive to design programs using an object metaphor to organize and structure our code.  
-The object-oriented paradigm considers that objects have functionality or behaviors.  In order to create objects in a program, we must write code to create a **class definition** that specifies all the information required to provide the data and functionality for the object instances created when the program is executing.  
+A object can be considered as a type of thing that we could classify based on its' features or attributes, where these classification details can be considered as the object's data.  Because humans organize our reality using the concept of objects, it is intuitive to design programs using an object metaphor to organize and structure our code.\
+The object-oriented paradigm considers that objects have functionality or behaviors.  In order to create objects in a program, we must write code to create a **class definition** that specifies all the information required to provide the data and functionality for the object instances created when the program is executing. &#x20;
 
 ### Class Definition
 
-The   
+The \
 
 
 [Link to Zip file of Example Code Below](https://utdallas.box.com/shared/static/j0guoj7qop0bxfblniocj4spixqnguuw.zip)
@@ -132,4 +132,3 @@ void draw() {
 
 } //end draw
 ```
-

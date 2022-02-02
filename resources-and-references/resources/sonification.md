@@ -12,7 +12,5 @@ Birdsong Sonification - Signal Processing
 
 #### Furry Logic - Sound Sensation
 
-{% embed url="https://auditoryneuroscience.com/ear/dancing\_hair\_cell" %}
-
-
+{% embed url="https://auditoryneuroscience.com/ear/dancing_hair_cell" %}
 

@@ -2,26 +2,26 @@
 
 ## PShape - Processing
 
-[PShape](https://processing.org/reference/PShape.html) is a wrapper class for shapes in processing. It provides a class that can be used to **create objects** using scalable vector graphic format \(.svg\), processing primitive shape functions, and shapes created by specifying vertex points. In this project, we'll use the PShapes created by specifying a set of vertex points. Processing expects the points to be specified in a clockwise rotating pattern.
+[PShape](https://processing.org/reference/PShape.html) is a wrapper class for shapes in processing. It provides a class that can be used to **create objects** using scalable vector graphic format (.svg), processing primitive shape functions, and shapes created by specifying vertex points. In this project, we'll use the PShapes created by specifying a set of vertex points. Processing expects the points to be specified in a clockwise rotating pattern.
 
-The image below shows how we can create a simple polygon using the [Processing PShape, createShape\( \), beginShape\( \), endShape\( \)](https://processing.org/reference/beginShape_.html) functions.
+The image below shows how we can create a simple polygon using the [Processing PShape, createShape( ), beginShape( ), endShape( )](https://processing.org/reference/beginShape\_.html) functions.
 
 ### 1. Processing Primitive Shapes
 
-There are a variety of ways to create PShape Objects.  The most simple way is to create PShape objects using _Processing_ **primitive shapes**, and the PShape: ****[**createShape\( \)** ](https://processing.org/reference/createShape_.html)method. As shown in the code snipped below, you must first declare a variable of the type: PShape, then you can call the **createShape\( \)** method by specifying Processing _constant_ values of **kind:** either POINT, LINE, TRIANGLE, QUAD, RECT, ELLIPSE, ARC, BOX, SPHERE
+There are a variety of ways to create PShape Objects.  The most simple way is to create PShape objects using _Processing_ **primitive shapes**, and the PShape: **** [**createShape( )** ](https://processing.org/reference/createShape\_.html)method. As shown in the code snipped below, you must first declare a variable of the type: PShape, then you can call the **createShape( )** method by specifying Processing _constant_ values of **kind:** either POINT, LINE, TRIANGLE, QUAD, RECT, ELLIPSE, ARC, BOX, SPHERE
 
 It is required to input values for the corresponding parameters used to create the Processing shape primitive: ex. **ELLIPSE requires: float x, float y, float w, float h**
 
-**Display using  the PShape method:  shape\( PShape s, float x, float y \)**
+**Display using  the PShape method:  shape( PShape s, float x, float y )**
 
 ```java
   PShape s = createShape(ELLIPSE, 0, 0, 100, 80);
   shape( s, 100, 100 ) //displays at point ( 100, 100 )
 ```
 
-### **2. Specify Vertex Points to Create PShape** 
+### **2. Specify Vertex Points to Create PShape**&#x20;
 
-For the code below, we've created a variable: length, which we'll use to constrain the shape to a rectangle of \(length x length \) dimensions. The points must be ordered in clockwise direction, starting from point at the beginning of the shape, listing all intermediate vertices, and ending with s.endShape\( CLOSE\) if we want the shape to have a colored fill.
+For the code below, we've created a variable: length, which we'll use to constrain the shape to a rectangle of (length x length ) dimensions. The points must be ordered in clockwise direction, starting from point at the beginning of the shape, listing all intermediate vertices, and ending with s.endShape( CLOSE) if we want the shape to have a colored fill.
 
 ![](../../.gitbook/assets/screen-shot-2018-09-04-at-1.47.47-pm.png)
 
@@ -41,7 +41,7 @@ For the code below, we've created a variable: length, which we'll use to constra
   shape(s, 0,0); //display shape at origin
 ```
 
-For our recursive pattern project, it will be important to create a simple pattern that can be defined by a location point \(shape's origin point\) and one **len**  value.
+For our recursive pattern project, it will be important to create a simple pattern that can be defined by a location point (shape's origin point) and one **len** value.
 
 `vertexPattern( len );`
 
@@ -49,7 +49,7 @@ If we design our pattern based on points on a rectangle, the code below shows th
 
 Defining the shape based on a variable length means that if length=100, it should create a pattern that is 10 times larger than if we'd set length = 10.
 
-Finally, to simplify further, we can specify the object's position at the canvas origin, \(0,0\), we can use translate\( x, y\) for drawing the object at \(x, y\).
+Finally, to simplify further, we can specify the object's position at the canvas origin, (0,0), we can use translate( x, y) for drawing the object at (x, y).
 
 ```java
   PShape s = createShape();
@@ -82,8 +82,8 @@ Finally, to simplify further, we can specify the object's position at the canvas
 
 ### Custom Draw Rectangles Function using Vertex Points
 
-![](../../.gitbook/assets/screenshot-2017-09-14-18.30.05.png)  
-The image above shows that we could define our own drawRectangle\(w, h\) function, where we define xWidth, xHeight input parameters. This will work just like the processing rectangle function, except that it doesn't take in x,y location input parameters. Instead, we're hard-coding the position vertex at \(0,0\); We can see from the code on the diagram how the input parameters are used to define 4 vertex points that represent the rectangle corners. This way, if we call the function 2 times with different inputs, we'll have 2 different rectangles scaled according to the input values:
+![](../../.gitbook/assets/screenshot-2017-09-14-18.30.05.png)\
+The image above shows that we could define our own drawRectangle(w, h) function, where we define xWidth, xHeight input parameters. This will work just like the processing rectangle function, except that it doesn't take in x,y location input parameters. Instead, we're hard-coding the position vertex at (0,0); We can see from the code on the diagram how the input parameters are used to define 4 vertex points that represent the rectangle corners. This way, if we call the function 2 times with different inputs, we'll have 2 different rectangles scaled according to the input values:
 
 ```java
 //rectangles are scaled using the input parameters: xWidth, xHeight
@@ -132,4 +132,3 @@ PShape createRect( float xWidth, float yHeight){
    return s;
  }
 ```
-

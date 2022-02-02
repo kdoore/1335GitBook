@@ -26,9 +26,10 @@ For an example function that adds 2 `int` values, the function syntax is
 * **function definition:** `the full code specification of a function.`
 * **function name:** `addNumbers`
 * **function return type:** `int  //the variable type of the function's return type must be declared, or it must specified as void if no value will be returned`
-* **function parameters:** `int val1, int val2 //parameters must have a declared variable-type - act as local variables for the function`  
+* **function parameters:** `int val1, int val2 //parameters must have a declared variable-type - act as local variables for the function`\
+  ``&#x20;
 * **function arguments** `when calling a function, the values placed inside the function parentheses are called arguments, the argument values are used to initialize the function's input parameters`
-* **function signature** `the name and parameter list define the signature of a function.  A function's signature specifies information about how to use, or call a function. A compiler compares functions signatures to determine if 2 identically named functions are valid overloaded functions, the parameter lists must be unique, based on data-type or number of parameters.`  
+* **function signature** `the name and parameter list define the signature of a function.  A function's signature specifies information about how to use, or call a function. A compiler compares functions signatures to determine if 2 identically named functions are valid overloaded functions, the parameter lists must be unique, based on data-type or number of parameters.` &#x20;
 
 ```java
 //function definition
@@ -61,7 +62,7 @@ When designing programs and functions, it's important to consider which variable
 
 When designing functions, it's helpful to think of the input parameters as being values that you'd like to have access to, that exist outside the scope of function. Often when designing functions, as you iterate through several design steps, you may decide to add more input parameters to your function so that you have more flexibility when calling the function. If the Processing `rect()` function only had x,y position as input parameters, then we'd be quite limited in how we could use the function. The addition of width and height parameters gives more flexibility. There's also another version of the `rect()` function that takes and additional parameter to specify the radius of corners so you can create rounded rectangles, this is an example of function overloading which is explained below. :
 
-```text
+```
 rect(float x, float y, float width, float height, float radius); // rounded rectangle version of the rect() function
 ```
 
@@ -69,7 +70,7 @@ rect(float x, float y, float width, float height, float radius); // rounded rect
 
 Often when designing functions, we can design multiple versions of a function, where each version of the function takes a different number or type of input parameters. In [Processing](http://processing.org) this conveniently allows for several different versions of the fill function. :
 
-```text
+```
 fill(float grayScale);   //one input parameter corresponds to grayscale colors
 
 fill(float redVal, float greenVal, float blueVal);  //three input parameters corresponds to RGB.
@@ -84,13 +85,13 @@ fill(float hueVal, float saturationVal, float brightnessVal);  // now the fill c
 
 ## Functions with Object-type input parameters
 
-When we define a function that has input parameters that are some type of object, it's important we understand that the memory address of that object is actually passed into the function, so changes to an object within a function are persisted \(permanent\) in the object after the function has completed execution
+When we define a function that has input parameters that are some type of object, it's important we understand that the memory address of that object is actually passed into the function, so changes to an object within a function are persisted (permanent) in the object after the function has completed execution
 
-In the code below, the initializeVals function takes an integer array \(object-type\) as the first input parameter, the second input parameter is a regular primitive-type variable.
+In the code below, the initializeVals function takes an integer array (object-type) as the first input parameter, the second input parameter is a regular primitive-type variable.
 
 When a primitive data-type variable is used as an argument for a function, a copy of that variable's value is actually passed into the function, so the variable itself is unchanged, see `startPos` below
 
-In contrast: when an object-type variable is used as an argument for a function, the object's memory address \(reference\) is passed into the function, so the function modifies the object itself when the function executes. see `xPos` below
+In contrast: when an object-type variable is used as an argument for a function, the object's memory address (reference) is passed into the function, so the function modifies the object itself when the function executes. see `xPos` below
 
 ```java
 void setup(){
@@ -107,4 +108,3 @@ void initializeVals( int[] intArray, int initVal ){
 }
 }
 ```
-

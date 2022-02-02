@@ -2,7 +2,7 @@
 
 [Why We Need to Study Consciousness - Scientific American - Author: Kenneth Shinozuka](https://blogs.scientificamerican.com/observations/why-we-need-to-study-consciousness/)
 
-> If we define **consciousness as the feeling of what it’s like to subjectively experience something,** then there is nothing more deeply familiar. Most of us know what it’s like to feel the pain of a headache, to empathize with another human being, to see the color blue, to hear the soaring melodies of a symphony, and so on. In fact, as philosopher Galen Strawson insightfully pointed out in a New York Times opinion piece, consciousness is “the only thing in the universe whose ultimate intrinsic nature we can claim to know.” ...we experience it through the filter of our consciousness. We have no idea what the color blue really looks like “out there,” only how it appears to us “in here.” Furthermore, as some cognitive scientists like Donald Hoffman have argued in recent years, external reality is likely to be far different from our perceptions of it. The human brain has been optimized, through the process of evolution, to model reality in the way that’s most conducive to its survival, not in the way that most faithfully represents the world. [See also: Meditations on consciousness, Blog by Kenneth Shinozuka](https://blankhorizons.com/)
+> If we define **consciousness as the feeling of what it’s like to subjectively experience something,** then there is nothing more deeply familiar. Most of us know what it’s like to feel the pain of a headache, to empathize with another human being, to see the color blue, to hear the soaring melodies of a symphony, and so on. In fact, as philosopher Galen Strawson insightfully pointed out in a New York Times opinion piece, consciousness is “the only thing in the universe whose ultimate intrinsic nature we can claim to know.” ...we experience it through the filter of our consciousness. We have no idea what the color blue really looks like “out there,” only how it appears to us “in here.” Furthermore, as some cognitive scientists like Donald Hoffman have argued in recent years, external reality is likely to be far different from our perceptions of it. The human brain has been optimized, through the process of evolution, to model reality in the way that’s most conducive to its survival, not in the way that most faithfully represents the world. [See also: Meditations on consciousness, Blog by Kenneth Shinozuka](https://blankhorizons.com)
 
 [From Gloom To Gratitude: 8 Skills To Cultivate Joy: NPR](https://www.npr.org/sections/health-shots/2019/05/05/719780061/from-gloom-to-gratitude-8-skills-to-cultivate-joy)
 
@@ -12,11 +12,11 @@
 
 [Visual Code Poetry: ](https://visualcodepoems.tumblr.com/archive)
 
-[Dan Tapper Sound Design ](https://dantappersounddesign.com/)
+[Dan Tapper Sound Design ](https://dantappersounddesign.com)
 
 ### Human Relationships: honoring complexity...love
 
-{% embed url="https://www.brainpickings.org/2013/07/02/adrienne-rich-honorable-human-relationship/?mc\_cid=c7a513cfc3&mc\_eid=b3eee28947" %}
+{% embed url="https://www.brainpickings.org/2013/07/02/adrienne-rich-honorable-human-relationship/?mc_cid=c7a513cfc3&mc_eid=b3eee28947" %}
 
 > An honorable human relationship — that is, one in which two people have the right to use the word “love” — is a process, delicate, violent, often terrifying to both persons involved, a process of refining the truths they can tell each other.
 >
@@ -24,7 +24,5 @@
 >
 > It is important to do this because in doing so we do justice to our own complexity.
 >
-> It is important to do this because we can count on so few people to go that hard way with us.  **Adrienne Rich**
-
-
+> It is important to do this because we can count on so few people to go that hard way with us. **Adrienne Rich**
 
