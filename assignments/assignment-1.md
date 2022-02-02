@@ -144,3 +144,76 @@ Nodebox is a visual programming application based on the paradigm of data-flow, 
 
 ### [Computational Experience Design: Experience](https://kdoore.gitbook.io/computational-experience-design/adaptive-systems/humanist-lens/experience) - link
 
+```clike
+// Some code
+/*
+	Available uniforms:
+
+		// mm_ModulationColor contains red, green, blue levels & surface opacity in alpha
+		// The multiplication in the fragment shader is done by MadMapper, so you shouldn't need that
+		uniform vec4 mm_ModulationColor;
+
+		// Blend Mode, see possible values in Definitions below. This is handled by default by MadMapper so you should need it
+		uniform int mm_BlendMode;
+
+		// Used to know if we're rendering to the preview or to an output fullscreen / desktop window / syphon-spout-NDI
+		uniform bool mm_IsRenderingPreview;
+
+		// The index of the surface in the project (not recommended to use that)
+		uniform int mm_SurfaceIndex;
+
+	Available inputs:
+
+		// The normalized texture coordinate for this pixel. Should be accessed with "vec4 FX_NORM_PIXEL(vec2 uv)"
+		in vec2 mm_FragNormCoord;
+
+	    // Normalized position of this vertex in the surface output geometry (independent of input rectangle)
+		in vec2 mm_SurfaceCoord;
+
+		// Alpha of this point generated from surface / mask feathering. This is automatically handled by MadMapper and
+		// should not be used in an FX
+		in float mm_Alpha;
+
+
+	Main Fragment Shader calls fxColorForPixel(...) and then apply modulation color and transparency (feathering / masking),
+	then might adjust color depending on blending mode / highlight selection...
+
+*/
+
+/*{
+    "CREDIT": "MadTeam",
+    "TAGS": ["graphics"],
+    "VSN": 1.0,
+    "DESCRIPTION": "Describe your FX here",
+    "MEDIA": {
+        "REQUIRES_TEXTURE": false,
+        "GL_TEXTURE_MIN_FILTER": "LINEAR",
+        "GL_TEXTURE_MAG_FILTER": "LINEAR",
+        "GL_TEXTURE_WRAP": "CLAMP_TO_EDGE",
+    },
+    "INPUTS": [
+        { "LABEL": "Speed", "NAME": "fx_speed", "TYPE": "float", "DEFAULT": 0.1, "MIN": 0.0, "MAX": 1.0 },
+    { "LABEL": "Blend", "NAME": "fx_blend", "TYPE": "float", "DEFAULT": 0.1, "MIN": 0.0, "MAX": 1.0 },
+
+ ],
+    "GENERATORS": [
+        {"NAME": "fx_time", "TYPE": "time_base", "PARAMS": {"speed": "fx_speed", "speed_curve": 2, "link_speed_to_global_bpm":true}},
+    ]
+}*/
+
+#include "MadNoise.glsl"
+
+vec4 fxColorForPixel(vec2 mm_FragNormCoord)
+{
+	vec2 uv;
+	
+    uv.x = fract(mm_FragNormCoord.x+fx_time);
+	uv.y = mm_FragNormCoord.y;
+
+	float n = vnoise(uv * sin(fx_time)) - 0.5;
+    //float 
+    return FX_NORM_PIXEL(uv + mix(0.0,n,fx_blend));
+
+}
+
+```
