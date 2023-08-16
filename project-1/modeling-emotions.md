@@ -1,0 +1,61 @@
+---
+description: A design tool for self-exploration of subjective emotions, feelings
+---
+
+# Subjective Modeling of Emotions
+
+This project is designed to allow users to artisticly process their inner emotions and feelings.  The idea is that an artifact created based on personally experientually design features evokes self-contemplation. The crafting of the tool teaches the user to design tool for self-exploration of subjective emotions, feelings, abstractions. The idea is to design a parametric tool that is personally encoded by each maker's choice of design features.  It is required for the learner to follow all steps in creation of the object. &#x20;
+
+![Computational Design Tool for  Personal Expression of Subjective Emotions](../.gitbook/assets/dooreK2.png)
+
+In this project, we want design an interactive abstract artwork to represent our personal emotions about some personal event that we remembered as being highly emotional.
+
+[Moving from Design-Thinking to Emotional-Thinking - Fast Company Article, 2019](https://www.fastcompany.com/90300071/from-design-thinking-to-emotional-thinking-designing-products-with-e-q)
+
+In order to recall our emotions that are associated with our selected experience, it's helpful to have models of emotion that provide a structure of information about emotions.
+
+## Models of Emotion
+
+### Theory of Constructed Emotion
+
+[wikipedia](https://en.wikipedia.org/wiki/Theory\_of\_constructed\_emotion)
+
+> In every waking moment, your brain uses past experience, organized as concepts, to guide your actions and give your sensations meaning. When the concepts involved are emotion concepts, your brain constructs instances of emotion.
+>
+> ...emotions "are not triggered; you create them. They emerge as a combination of the physical properties of your body, a flexible brain that wires itself to whatever environment it develops in, and your culture and upbringing, which provide that environment. [Lisa Feldman Barrett: Wikipedia](https://en.wikipedia.org/wiki/Lisa\_Feldman\_Barrett)
+
+[Article: Fear or Defense Circuit, Dr Joseph Ledoux](https://brainworldmagazine.com/on-fear-emotions-and-memory-an-interview-with-dr-joseph-ledoux/)
+
+> emotions are conscious experiences that occur when we find our self in a situation where a challenge or opportunity exist. Some occur when a survival circuit is active — like fear — while others don’t involve survival circuits — like pride. **What defines the emotion is** not whether there’s a survival circuit that’s active but **whether we interpret the situation we’re in as either challenging or potentially beneficial.**&#x20;
+
+[Dr Joseph Ledoux: Wikipedia](https://en.wikipedia.org/wiki/Joseph\_E.\_LeDoux)
+
+### [Contrasting and Categorization of Emotions - Wikipedia](https://en.wikipedia.org/wiki/Contrasting\_and\_categorization\_of\_emotions#Plutchik.27s\_wheel\_of\_emotions)
+
+Classical Models of Emotions
+
+## Plutchick's Wheel of Emotions
+
+![](https://upload.wikimedia.org/wikipedia/commons/c/ce/Plutchik-wheel.svg)
+
+[wikipedia link](https://upload.wikimedia.org/wikipedia/commons/c/ce/Plutchik-wheel.svg)
+
+## Hour Glass of Emotions
+
+The Hour Glass model of Emotions was created by UX researchers. This model provides categories of emotion: Sensitivity, Attention, Pleasantness, Aptitude, where Emotions are given a numeric value based on the strength of the emotion. This dimensional, numeric model has been used to analyze emotional sentiment from written statements such as twitter tweets. Colors are used in the model to indicate the emotional dimensions.
+
+[Sentic Presentation ](http://sentic.net/seminar/) ![](../.gitbook/assets/Slide160.jpg)
+
+Hour Glass Emotional Dimensions - [Wikipedia](https://en.wikipedia.org/wiki/Contrasting\_and\_categorization\_of\_emotions#Plutchik.27s\_wheel\_of\_emotions)
+
+| Dimension |
+| --------- |
+
+|                                                            | +3                                                                   | +2                                                                      | +1                                                              | -1                                                          | -2                                                              | -3                                                    |
+| ---------------------------------------------------------- | -------------------------------------------------------------------- | ----------------------------------------------------------------------- | --------------------------------------------------------------- | ----------------------------------------------------------- | --------------------------------------------------------------- | ----------------------------------------------------- |
+| [Sensitivity](https://en.wiktionary.org/wiki/sensitivity)  | [Rage](https://en.wikipedia.org/wiki/Rage\_\(emotion\))              | [Anger](https://en.wikipedia.org/wiki/Anger)                            | [Annoyance](https://en.wikipedia.org/wiki/Annoyance)            | [Apprehension](https://en.wiktionary.org/wiki/apprehension) | [Fear](https://en.wikipedia.org/wiki/Fear)                      | [Terror](https://en.wiktionary.org/wiki/terror)       |
+| [Attention](https://en.wikipedia.org/wiki/Attention)       | [Vigilance](https://en.wikipedia.org/wiki/Vigilance\_\(psychology\)) | [Anticipation](https://en.wikipedia.org/wiki/Anticipation\_\(emotion\)) | [Interest](https://en.wikipedia.org/wiki/Interest\_\(emotion\)) | [Distraction](https://en.wikipedia.org/wiki/Distraction)    | [Surprise](https://en.wikipedia.org/wiki/Surprise\_\(emotion\)) | [Amazement](https://en.wiktionary.org/wiki/amazement) |
+| [Pleasantness](https://en.wikipedia.org/wiki/Pleasantness) | [Ecstasy](https://en.wikipedia.org/wiki/Ecstasy\_\(emotion\))        | [Joy](https://en.wikipedia.org/wiki/Joy)                                | [Serenity](https://en.wiktionary.org/wiki/serenity)             | [Pensiveness](https://en.wikipedia.org/wiki/Melancholia)    | [Sadness](https://en.wikipedia.org/wiki/Sadness)                | [Grief](https://en.wikipedia.org/wiki/Grief)          |
+| [Aptitude](https://en.wikipedia.org/wiki/Aptitude)         | [Admiration](https://en.wikipedia.org/wiki/Admiration)               | [Trust](https://en.wikipedia.org/wiki/Trust\_\(emotion\))               | [Acceptance](https://en.wikipedia.org/wiki/Acceptance)          | [Boredom](https://en.wikipedia.org/wiki/Boredom)            | [Disgust](https://en.wikipedia.org/wiki/Disgust)                | [Loathing](https://en.wiktionary.org/wiki/loathing)   |
+
+[Sentic.net](http://sentic.net/)
